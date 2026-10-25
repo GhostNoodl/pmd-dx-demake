@@ -7,3 +7,11 @@ ItemNameEvoCrystal:
 ItemDescriptionEvoCrystal:
 .string "A crystal that holds the power of evolution.{NEW_LINE}Give it to a Pokémon at Luminous Cave to{NEW_LINE}evolve it. Some Pokémon need two.\n\0"
 .align 2,0
+.global ItemNameEmpowermentSeed
+ItemNameEmpowermentSeed:
+.string "Empower Seed\0"
+.align 2,0
+.global ItemDescriptionEmpowermentSeed
+ItemDescriptionEmpowermentSeed:
+.string "An Empowerment Seed. A Pokémon that eats it{NEW_LINE}becomes Empowered: its Attack, Defense,{NEW_LINE}Sp. Atk, Sp. Def and Speed rise for the floor.\n\0"
+.align 2,0

@@ -38,4 +38,7 @@
 #define DX_MOVE_GROWTH_FALLOFF 3
 #define DX_MOVE_GROWTH_MIN_CHANCE 2
 
+// Empowerment Seed: stat stages gained by an Empowered Pokemon (lasts the floor, like any stat change)
+#define DX_EMPOWER_STAGES 2
+
 #endif // GUARD_DX_TUNING_H

@@ -1,4 +1,7 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rules.h"
+#endif
 #include "globaldata.h"
 #include "dungeon_item_action.h"
 #include "dungeon_8041AD0.h"
@@ -222,6 +225,11 @@ void sub_80479B8(bool8 param_1, bool8 param_2, u8 param_3, Entity *pokemon, Enti
             case ITEM_JOY_SEED:
                 JoySeedItemAction(pokemon,target);
                 break;
+#ifdef DX_RULES
+            case ITEM_EMPOWERMENT_SEED:
+                DxEmpower(pokemon, target);
+                break;
+#endif
             case ITEM_DOOM_SEED:
                 DoomSeedItemAction(pokemon,target);
                 break;

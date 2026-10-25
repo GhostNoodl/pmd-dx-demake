@@ -12,6 +12,7 @@ extern s16 gDxMysteryHouseSpawned;
 extern bool8 gDxForceMysteryHouse;
 bool8 DxRollMysteryHouse(void);
 void DxTryMoveGrowth(EntityInfo *user, Move *move);
+void DxEmpower(Entity *user, Entity *target);
 s32 DxMysteryHouseLevel(void);
 
 #endif // GUARD_DX_RULES_H

@@ -284,6 +284,8 @@
 
 // Rescue Team DX: Red's unused G Machine 6 becomes the Evo Crystal (tools/dxtest/gen_dx_items.py)
 #define ITEM_EVO_CRYSTAL ITEM_G_MACHINE_6
+// ...and G Machine 7 the Empowerment Seed
+#define ITEM_EMPOWERMENT_SEED ITEM_G_MACHINE_7
 
 #define NUMBER_OF_GUMMIS 18
 #define INVENTORY_SIZE 20
