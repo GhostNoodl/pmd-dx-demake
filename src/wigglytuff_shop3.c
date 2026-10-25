@@ -278,7 +278,7 @@ static void UpdateWigglytuffDialogue(void)
             if (uStack_14.hasFriendArea)
                 sWigglytuffShop3Work->fallbackState = WIGGLYTUFF_CHECK_HAS_FRIEND_AREA;
             else {
-                switch (GetFriendAreaUnlockCondition(sWigglytuffShop3Work->chosenFriendArea)) {
+                switch (GetFriendAreaShopCondition(sWigglytuffShop3Work->chosenFriendArea)) {
                     case UNLOCK_SHOP_POST_GAME:
                         if (CheckQuest(QUEST_REACHED_POSTGAME))
                             sWigglytuffShop3Work->fallbackState = WIGGLYTUFF_CHECK_AGAIN;

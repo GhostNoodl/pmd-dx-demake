@@ -192,7 +192,7 @@ static s32 sub_8021664(void)
                 if (gFriendAreas[i])
                     continue;
 
-                switch (GetFriendAreaUnlockCondition(i)) {
+                switch (GetFriendAreaShopCondition(i)) {
                     case UNLOCK_SHOP_STORY:
                         sWigglytuffShop1Work->friendAreas[counter] = i;
                         counter++;
@@ -229,7 +229,7 @@ bool8 sub_8021700(u32 kind)
                 if (gFriendAreas[i])
                     continue;
 
-                switch (GetFriendAreaUnlockCondition(i)) {
+                switch (GetFriendAreaShopCondition(i)) {
                     case UNLOCK_SHOP_STORY:
                         return FALSE;
                     case UNLOCK_SHOP_POST_GAME:

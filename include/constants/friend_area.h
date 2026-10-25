@@ -7,6 +7,9 @@
 #define UNLOCK_WONDER_MAIL 2
 #define UNLOCK_LEGENDARY_REQUEST 3
 
+// dx: price for the former Wonder Mail areas (DX sells them; matches Red's post-game areas)
+#define DX_WONDER_MAIL_AREA_PRICE 5000
+
 #define FRIEND_AREA_NONE                    0
 #define FRIEND_AREA_BOUNTIFUL_SEA           1
 #define FRIEND_AREA_TREASURE_SEA            2

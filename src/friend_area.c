@@ -102,8 +102,26 @@ u8 GetFriendAreaUnlockCondition(u8 index)
 
 s32 GetFriendAreaPrice(u8 index)
 {
+#ifdef DX_RULES
+    // Rescue Team DX sells the old Wonder Mail areas too; they never had a price
+    if (gFriendAreaSettings[index].price == 0 && gFriendAreaSettings[index].unlock_condition == UNLOCK_WONDER_MAIL)
+        return DX_WONDER_MAIL_AREA_PRICE;
+#endif
     return gFriendAreaSettings[index].price;
 }
+
+#ifdef DX_RULES
+// What Wigglytuff's shop checks. Rescue Team DX: every camp except the legendary
+// ones is for sale from the start, with no story or Wonder Mail condition.
+u8 GetFriendAreaShopCondition(u8 index)
+{
+    u8 condition = gFriendAreaSettings[index].unlock_condition;
+
+    if (condition == UNLOCK_SHOP_POST_GAME || condition == UNLOCK_WONDER_MAIL)
+        return UNLOCK_SHOP_STORY;
+    return condition;
+}
+#endif
 
 void sub_8092558(u8 *buffer, u8 index)
 {

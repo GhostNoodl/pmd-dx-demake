@@ -26,6 +26,11 @@ const u8 *GetFriendAreaName(u8 index);
 s32 GetFriendAreaPrice(u8 index);
 bool8 GetFriendAreaStatus(u8 index);
 u8 GetFriendAreaUnlockCondition(u8 index);
+#ifdef DX_RULES
+u8 GetFriendAreaShopCondition(u8 index);
+#else
+#define GetFriendAreaShopCondition GetFriendAreaUnlockCondition
+#endif
 bool8 HasAllFriendAreas(void);
 void InitializeFriendAreas(void);
 void LoadFriendAreas(void);
