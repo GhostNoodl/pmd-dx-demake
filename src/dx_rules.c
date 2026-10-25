@@ -344,7 +344,7 @@ EWRAM_DATA bool8 gDxForceRecruit = FALSE;
 bool8 DxRollMysteryHouse(void)
 {
     s32 i, count = 0;
-    s16 choices[ARRAY_COUNT(sDxMysteryHomes)];
+    s16 choices[ARRAY_COUNT(sDxMysteryHomes) + 1];
     u8 dungeon = gDungeon->unk644.dungeonLocation.id;
 
     gDxMysteryHouseSpecies = 0;
@@ -353,11 +353,25 @@ bool8 DxRollMysteryHouse(void)
         if (sDxMysteryHomes[i].dungeon == dungeon)
             choices[count++] = sDxMysteryHomes[i].species;
     }
+    // DX: Purity Forest's Mystery Houses can also hold a shiny Celebi
+    if (dungeon == DUNGEON_PURITY_FOREST)
+        choices[count++] = MONSTER_CELEBI;
     if (count == 0 || (!gDxForceMysteryHouse && DungeonRandInt(100) >= DX_MYSTERY_HOUSE_CHANCE))
         return FALSE;
     gDxMysteryHouseSpecies = choices[DungeonRandInt(count)];
+    if (gDxForceMysteryHouse == 3) // tests: the last choice (Purity Forest: Celebi)
+        gDxMysteryHouseSpecies = choices[count - 1];
     gDxMysteryHouseFloor = TRUE;
     return TRUE;
+}
+
+// a Mystery House occupant has just spawned
+void DxMysteryHouseSpawned(Entity *mon)
+{
+    gDxMysteryHouseSpawned = gDxMysteryHouseSpecies;
+    gDxMysteryHouseSpecies = 0;
+    if (GetEntInfo(mon)->id == MONSTER_CELEBI)
+        GetEntInfo(mon)->dxShiny = TRUE; // Purity Forest's is always shiny
 }
 
 // the strongest level on this floor's spawn list

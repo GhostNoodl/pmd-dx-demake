@@ -46,6 +46,7 @@ u8 DxPostgameBossKind(u8 monsterBehavior);
 void DxBriefingSummary(u8 dungeonIndex, u8 *buffer);
 struct DxShiny { s16 species; u8 palette; };
 s32 DxShinyPalette(s32 species);
+void DxMysteryHouseSpawned(Entity *mon);
 extern bool8 gDxForceShiny;
 
 #endif // GUARD_DX_RULES_H

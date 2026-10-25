@@ -1,0 +1,43 @@
+#rom debug
+#save after-first-dungeon
+# DX: Purity Forest's Mystery House can hold a Celebi, and it is always shiny (forced house, forced Celebi)
+mash START sMainMenu 4 != 0 3000
+write gDxForceMysteryHouse 1 3
+write gDxTestSeed 4 99991
+wait 60
+press UP
+press A
+wait 30
+press A
+wait 30
+press LEFT
+press UP
+press UP
+press UP
+press UP
+press RIGHT
+press UP
+press UP
+press UP
+press UP
+press UP
+press UP
+press UP
+wait 10
+expect *sDxWarp+0xB0 4 == 47
+shot 1_pick_dungeon
+press A
+wait 30
+wait 10
+expect *sDxWarp+0xB0 4 == 1
+shot 2_pick_floor
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+shot 3_in_dungeon
+expect *gDungeon+@gDxOffDungeonLocation 1 == 62
+expect *gDungeon+@gDxOffDungeonFloor 1 == 1
+expect gDxMysteryHouseSpawned 2 == 276
+expect ***gDungeon+@gDxOffWildPokemon+@gDxOffEntityInfo+@gDxOffInfoId 2 == 276
+expect ***gDungeon+@gDxOffWildPokemon+@gDxOffEntityInfo+@gDxOffInfoShiny 1 == 1
+shot 4_shiny_celebi
