@@ -184,7 +184,7 @@ static void RecruitRange(u32 step, s32 *min, s32 *max, s32 *init)
 {
     if (step == 0) {
         *min = 1;
-        *max = MONSTER_MAX - 1;
+        *max = DX_FIRST_MEGA - 1; // Mega forms only exist while Empowered
         *init = (sDxTool->values[0] > 0) ? sDxTool->values[0] : 1;
     }
     else {
@@ -474,4 +474,5 @@ const u32 gDxOffInfoMaxHP = offsetof(EntityInfo, maxHPStat);
 const u32 gDxOffWindTurns = offsetof(Dungeon, unk644.windTurns);
 const u32 gDxOffWildPokemon = offsetof(Dungeon, wildPokemon);
 const u32 gDxOffInfoStages = offsetof(EntityInfo, offensiveStages);
+const u32 gDxOffInfoApparentId = offsetof(EntityInfo, apparentID);
 #endif // DX_DEBUG

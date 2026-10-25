@@ -21726,5 +21726,2051 @@
             "mainRequirement": "ITEM_G_MACHINE_6",
             "additionalRequirement": 14
         }
+    },
+    {
+        "name": "MonsterNameMegaVenusaur",
+        "category": "MonsterCategorySeed",
+        "overworldPalette": 3,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_GRASS",
+            "TYPE_POISON"
+        ],
+        "friendArea": "FRIEND_AREA_BEAU_PLAINS",
+        "abilities": [
+            "ABILITY_THICK_FAT"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 51,
+        "expYield": 180,
+        "baseAtkSpAtk": [
+            20,
+            15
+        ],
+        "baseDefSpDef": [
+            10,
+            10
+        ],
+        "weight": 332,
+        "size": 48,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            3,
+            3
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            455,
+            455
+        ],
+        "dialogueSprites": "0b0000000000000001"
+    },
+    {
+        "name": "MonsterNameMegaCharizardX",
+        "category": "MonsterCategoryFlame",
+        "overworldPalette": 2,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "dialogueSprites": "0b0001000000000111",
+        "types": [
+            "TYPE_FIRE",
+            "TYPE_DRAGON"
+        ],
+        "movementType": "MOVEMENT_TYPE_LAVA",
+        "friendArea": "FRIEND_AREA_MT_CLEFT",
+        "abilities": [
+            "ABILITY_BLAZE"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 58,
+        "expYield": 200,
+        "baseAtkSpAtk": [
+            12,
+            8
+        ],
+        "baseDefSpDef": [
+            9,
+            10
+        ],
+        "weight": 332,
+        "size": 52,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            6,
+            6
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            456,
+            456
+        ]
+    },
+    {
+        "name": "MonsterNameMegaCharizardY",
+        "category": "MonsterCategoryFlame",
+        "overworldPalette": 2,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "dialogueSprites": "0b0000000000000001",
+        "types": [
+            "TYPE_FIRE",
+            "TYPE_FLYING"
+        ],
+        "movementType": "MOVEMENT_TYPE_LAVA",
+        "friendArea": "FRIEND_AREA_MT_CLEFT",
+        "abilities": [
+            "ABILITY_DROUGHT"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 58,
+        "expYield": 200,
+        "baseAtkSpAtk": [
+            12,
+            8
+        ],
+        "baseDefSpDef": [
+            9,
+            10
+        ],
+        "weight": 332,
+        "size": 52,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            6,
+            6
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            457,
+            457
+        ]
+    },
+    {
+        "name": "MonsterNameMegaBlastoise",
+        "category": "MonsterCategoryShellfish",
+        "overworldPalette": 9,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "dialogueSprites": "0b0000000000000001",
+        "types": [
+            "TYPE_WATER"
+        ],
+        "movementType": "MOVEMENT_TYPE_WATER",
+        "friendArea": "FRIEND_AREA_TURTLESHELL_POND",
+        "abilities": [
+            "ABILITY_TORRENT"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 53,
+        "expYield": 250,
+        "baseAtkSpAtk": [
+            16,
+            18
+        ],
+        "baseDefSpDef": [
+            19,
+            18
+        ],
+        "weight": 332,
+        "size": 51,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            9,
+            9
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            458,
+            458
+        ]
+    },
+    {
+        "name": "MonsterNameMegaBeedrill",
+        "category": "MonsterCategoryPoisonBee",
+        "overworldPalette": 2,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_BUG",
+            "TYPE_POISON"
+        ],
+        "movementType": "MOVEMENT_TYPE_CHASM",
+        "friendArea": "FRIEND_AREA_MIST_RISE_FOREST",
+        "abilities": [
+            "ABILITY_SWARM"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 50,
+        "expYield": 40,
+        "baseAtkSpAtk": [
+            21,
+            22
+        ],
+        "baseDefSpDef": [
+            14,
+            14
+        ],
+        "weight": 179,
+        "size": 39,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            15,
+            15
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            459,
+            459
+        ],
+        "dialogueSprites": "0b0000000000000001"
+    },
+    {
+        "name": "MonsterNameMegaPidgeot",
+        "category": "MonsterCategoryBird",
+        "overworldPalette": 4,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_NORMAL",
+            "TYPE_FLYING"
+        ],
+        "friendArea": "FRIEND_AREA_FLYAWAY_FOREST",
+        "abilities": [
+            "ABILITY_KEEN_EYE"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 52,
+        "expYield": 50,
+        "baseAtkSpAtk": [
+            28,
+            30
+        ],
+        "baseDefSpDef": [
+            16,
+            16
+        ],
+        "weight": 204,
+        "size": 29,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            18,
+            18
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            460,
+            460
+        ],
+        "dialogueSprites": "0b0000000000000001"
+    },
+    {
+        "name": "MonsterNameMegaAlakazam",
+        "category": "MonsterCategoryPsi",
+        "overworldPalette": 2,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "dialogueSprites": "0b0000000000000001",
+        "types": [
+            "TYPE_PSYCHIC"
+        ],
+        "friendArea": "FRIEND_AREA_DECREPIT_LAB",
+        "abilities": [
+            "ABILITY_TRACE"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 0,
+        "baseHP": 80,
+        "expYield": 225,
+        "baseAtkSpAtk": [
+            35,
+            35
+        ],
+        "baseDefSpDef": [
+            40,
+            40
+        ],
+        "weight": 230,
+        "size": 34,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            65,
+            65
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            461,
+            461
+        ]
+    },
+    {
+        "name": "MonsterNameMegaSlowbro",
+        "category": "MonsterCategoryHermitCrab",
+        "overworldPalette": 5,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_WATER",
+            "TYPE_PSYCHIC"
+        ],
+        "movementType": "MOVEMENT_TYPE_WATER",
+        "friendArea": "FRIEND_AREA_BOUNTIFUL_SEA",
+        "abilities": [
+            "ABILITY_SHELL_ARMOR"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 45,
+        "expYield": 90,
+        "baseAtkSpAtk": [
+            18,
+            16
+        ],
+        "baseDefSpDef": [
+            15,
+            17
+        ],
+        "weight": 307,
+        "size": 31,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            80,
+            80
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            462,
+            462
+        ],
+        "dialogueSprites": "0b0001111111111111"
+    },
+    {
+        "name": "MonsterNameMegaGengar",
+        "category": "MonsterCategoryShadow",
+        "overworldPalette": 7,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "dialogueSprites": "0b0000000000000001",
+        "types": [
+            "TYPE_GHOST",
+            "TYPE_POISON"
+        ],
+        "movementType": "MOVEMENT_TYPE_WALL",
+        "friendArea": "FRIEND_AREA_DARKNESS_RIDGE",
+        "abilities": [
+            "ABILITY_SHADOW_TAG"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 53,
+        "expYield": 200,
+        "baseAtkSpAtk": [
+            13,
+            13
+        ],
+        "baseDefSpDef": [
+            8,
+            8
+        ],
+        "weight": 230,
+        "size": 40,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            94,
+            94
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            463,
+            463
+        ]
+    },
+    {
+        "name": "MonsterNameMegaKangaskhan",
+        "category": "MonsterCategoryParent",
+        "overworldPalette": 6,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "dialogueSprites": "0b0000000000000000",
+        "types": [
+            "TYPE_NORMAL"
+        ],
+        "friendArea": "FRIEND_AREA_SAFARI",
+        "abilities": [
+            "ABILITY_EARLY_BIRD"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 0,
+        "baseHP": 40,
+        "expYield": 125,
+        "baseAtkSpAtk": [
+            20,
+            15
+        ],
+        "baseDefSpDef": [
+            15,
+            15
+        ],
+        "weight": 332,
+        "size": 55,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            115,
+            115
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            464,
+            464
+        ]
+    },
+    {
+        "name": "MonsterNameMegaPinsir",
+        "category": "MonsterCategoryStagBeetle",
+        "overworldPalette": 6,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_BUG",
+            "TYPE_FLYING"
+        ],
+        "friendArea": "FRIEND_AREA_OVERGROWN_FOREST",
+        "abilities": [
+            "ABILITY_HYPER_CUTTER"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 20,
+        "baseHP": 25,
+        "expYield": 40,
+        "baseAtkSpAtk": [
+            17,
+            15
+        ],
+        "baseDefSpDef": [
+            6,
+            8
+        ],
+        "weight": 256,
+        "size": 42,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            127,
+            127
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            465,
+            465
+        ],
+        "dialogueSprites": "0b0000000000000001"
+    },
+    {
+        "name": "MonsterNameMegaGyarados",
+        "category": "MonsterCategoryAtrocious",
+        "overworldPalette": 5,
+        "bodySize": 4,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_WATER",
+            "TYPE_DARK"
+        ],
+        "movementType": "MOVEMENT_TYPE_CHASM",
+        "friendArea": "FRIEND_AREA_WATERFALL_LAKE",
+        "abilities": [
+            "ABILITY_INTIMIDATE"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 50,
+        "expYield": 225,
+        "baseAtkSpAtk": [
+            30,
+            30
+        ],
+        "baseDefSpDef": [
+            15,
+            15
+        ],
+        "weight": 358,
+        "size": 116,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            130,
+            130
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            466,
+            466
+        ],
+        "dialogueSprites": "0b0000000000000001"
+    },
+    {
+        "name": "MonsterNameMegaAerodactyl",
+        "category": "MonsterCategoryFossil",
+        "overworldPalette": 7,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_ROCK",
+            "TYPE_FLYING"
+        ],
+        "movementType": "MOVEMENT_TYPE_CHASM",
+        "friendArea": "FRIEND_AREA_ANCIENT_RELIC",
+        "abilities": [
+            "ABILITY_ROCK_HEAD",
+            "ABILITY_PRESSURE"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 52,
+        "expYield": 70,
+        "baseAtkSpAtk": [
+            21,
+            21
+        ],
+        "baseDefSpDef": [
+            12,
+            14
+        ],
+        "weight": 256,
+        "size": 36,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            142,
+            142
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            467,
+            467
+        ],
+        "dialogueSprites": "0b0000000000000001"
+    },
+    {
+        "name": "MonsterNameMegaMewtwoY",
+        "category": "MonsterCategoryGenetic",
+        "overworldPalette": 7,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "dialogueSprites": "0b0000000000000000",
+        "types": [
+            "TYPE_PSYCHIC"
+        ],
+        "friendArea": "FRIEND_AREA_CRYPTIC_CAVE",
+        "abilities": [
+            "ABILITY_INSOMNIA"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 50,
+        "expYield": 250,
+        "baseAtkSpAtk": [
+            25,
+            25
+        ],
+        "baseDefSpDef": [
+            15,
+            15
+        ],
+        "weight": 332,
+        "size": 43,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            150,
+            150
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            468,
+            468
+        ]
+    },
+    {
+        "name": "MonsterNameMegaMewtwoX",
+        "category": "MonsterCategoryGenetic",
+        "overworldPalette": 7,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "dialogueSprites": "0b0000000000000000",
+        "types": [
+            "TYPE_PSYCHIC",
+            "TYPE_FIGHTING"
+        ],
+        "friendArea": "FRIEND_AREA_CRYPTIC_CAVE",
+        "abilities": [
+            "ABILITY_PRESSURE"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 50,
+        "expYield": 250,
+        "baseAtkSpAtk": [
+            25,
+            25
+        ],
+        "baseDefSpDef": [
+            15,
+            15
+        ],
+        "weight": 332,
+        "size": 43,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            150,
+            150
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            469,
+            469
+        ]
+    },
+    {
+        "name": "MonsterNameMegaAmpharos",
+        "category": "MonsterCategoryLight",
+        "overworldPalette": 2,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_ELECTRIC",
+            "TYPE_DRAGON"
+        ],
+        "friendArea": "FRIEND_AREA_THUNDER_MEADOW",
+        "abilities": [
+            "ABILITY_STATIC"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 45,
+        "expYield": 40,
+        "baseAtkSpAtk": [
+            17,
+            15
+        ],
+        "baseDefSpDef": [
+            11,
+            11
+        ],
+        "weight": 281,
+        "size": 29,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            181,
+            181
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            470,
+            470
+        ],
+        "dialogueSprites": "0b0000000000000001"
+    },
+    {
+        "name": "MonsterNameMegaSteelix",
+        "category": "MonsterCategoryIronSnake",
+        "overworldPalette": 5,
+        "bodySize": 4,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_STEEL",
+            "TYPE_GROUND"
+        ],
+        "friendArea": "FRIEND_AREA_BOULDER_CAVE",
+        "abilities": [
+            "ABILITY_ROCK_HEAD",
+            "ABILITY_STURDY"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 50,
+        "expYield": 125,
+        "baseAtkSpAtk": [
+            23,
+            23
+        ],
+        "baseDefSpDef": [
+            12,
+            12
+        ],
+        "weight": 358,
+        "size": 94,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            208,
+            235
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            471,
+            471
+        ],
+        "dialogueSprites": "0b0000000000000001"
+    },
+    {
+        "name": "MonsterNameMegaScizor",
+        "category": "MonsterCategoryPincer",
+        "overworldPalette": 2,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_BUG",
+            "TYPE_STEEL"
+        ],
+        "friendArea": "FRIEND_AREA_OVERGROWN_FOREST",
+        "abilities": [
+            "ABILITY_SWARM"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 56,
+        "expYield": 108,
+        "baseAtkSpAtk": [
+            23,
+            19
+        ],
+        "baseDefSpDef": [
+            13,
+            14
+        ],
+        "weight": 332,
+        "size": 48,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            212,
+            239
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            472,
+            472
+        ],
+        "dialogueSprites": "0b0000000000000001"
+    },
+    {
+        "name": "MonsterNameMegaHeracross",
+        "category": "MonsterCategorySingleHorn",
+        "overworldPalette": 2,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_BUG",
+            "TYPE_FIGHTING"
+        ],
+        "friendArea": "FRIEND_AREA_OVERGROWN_FOREST",
+        "abilities": [
+            "ABILITY_SWARM",
+            "ABILITY_GUTS"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 52,
+        "expYield": 55,
+        "baseAtkSpAtk": [
+            22,
+            22
+        ],
+        "baseDefSpDef": [
+            9,
+            9
+        ],
+        "weight": 256,
+        "size": 37,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            214,
+            241
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            473,
+            473
+        ],
+        "dialogueSprites": "0b0000000000000001"
+    },
+    {
+        "name": "MonsterNameMegaHoundoom",
+        "category": "MonsterCategoryDark",
+        "overworldPalette": 5,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_DARK",
+            "TYPE_FIRE"
+        ],
+        "movementType": "MOVEMENT_TYPE_LAVA",
+        "friendArea": "FRIEND_AREA_RAVAGED_FIELD",
+        "abilities": [
+            "ABILITY_EARLY_BIRD",
+            "ABILITY_FLASH_FIRE"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 0,
+        "baseHP": 45,
+        "expYield": 55,
+        "baseAtkSpAtk": [
+            19,
+            19
+        ],
+        "baseDefSpDef": [
+            12,
+            12
+        ],
+        "weight": 204,
+        "size": 31,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            229,
+            256
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            474,
+            474
+        ],
+        "dialogueSprites": "0b0000000000000001"
+    },
+    {
+        "name": "MonsterNameMegaTyranitar",
+        "category": "MonsterCategoryArmor",
+        "overworldPalette": 3,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "dialogueSprites": "0b0000000000000001",
+        "types": [
+            "TYPE_ROCK",
+            "TYPE_DARK"
+        ],
+        "friendArea": "FRIEND_AREA_MT_CLEFT",
+        "abilities": [
+            "ABILITY_SAND_STREAM"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 80,
+        "expYield": 205,
+        "baseAtkSpAtk": [
+            40,
+            40
+        ],
+        "baseDefSpDef": [
+            26,
+            26
+        ],
+        "weight": 358,
+        "size": 43,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            248,
+            275
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            475,
+            475
+        ]
+    },
+    {
+        "name": "MonsterNameMegaSceptile",
+        "category": "MonsterCategoryForest",
+        "overworldPalette": 3,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_GRASS",
+            "TYPE_DRAGON"
+        ],
+        "friendArea": "FRIEND_AREA_OVERGROWN_FOREST",
+        "abilities": [
+            "ABILITY_OVERGROW"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 55,
+        "expYield": 156,
+        "baseAtkSpAtk": [
+            22,
+            22
+        ],
+        "baseDefSpDef": [
+            22,
+            22
+        ],
+        "weight": 256,
+        "size": 34,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            254,
+            281
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            476,
+            476
+        ],
+        "dialogueSprites": "0b0000000000000111"
+    },
+    {
+        "name": "MonsterNameMegaBlaziken",
+        "category": "MonsterCategoryBlaze",
+        "overworldPalette": 12,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_FIRE",
+            "TYPE_FIGHTING"
+        ],
+        "movementType": "MOVEMENT_TYPE_LAVA",
+        "friendArea": "FRIEND_AREA_SCORCHED_PLAINS",
+        "abilities": [
+            "ABILITY_SPEED_BOOST"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 55,
+        "expYield": 156,
+        "baseAtkSpAtk": [
+            23,
+            20
+        ],
+        "baseDefSpDef": [
+            23,
+            20
+        ],
+        "weight": 256,
+        "size": 36,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            257,
+            284
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            477,
+            477
+        ],
+        "dialogueSprites": "0b0000000000000001"
+    },
+    {
+        "name": "MonsterNameMegaSwampert",
+        "category": "MonsterCategoryMudFish",
+        "overworldPalette": 5,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_WATER",
+            "TYPE_GROUND"
+        ],
+        "movementType": "MOVEMENT_TYPE_WATER",
+        "friendArea": "FRIEND_AREA_PEANUT_SWAMP",
+        "abilities": [
+            "ABILITY_SWIFT_SWIM"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 55,
+        "expYield": 200,
+        "baseAtkSpAtk": [
+            22,
+            30
+        ],
+        "baseDefSpDef": [
+            20,
+            30
+        ],
+        "weight": 332,
+        "size": 40,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            260,
+            287
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            478,
+            478
+        ],
+        "dialogueSprites": "0b0000000000000001"
+    },
+    {
+        "name": "MonsterNameMegaGardevoir",
+        "category": "MonsterCategoryEmbrace",
+        "overworldPalette": 10,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "dialogueSprites": "0b0001111111111111",
+        "types": [
+            "TYPE_PSYCHIC",
+            "TYPE_FAIRY"
+        ],
+        "friendArea": "FRIEND_AREA_SKY_BLUE_PLAINS",
+        "abilities": [
+            "ABILITY_SYNCHRONIZE",
+            "ABILITY_TRACE"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 52,
+        "expYield": 120,
+        "baseAtkSpAtk": [
+            15,
+            15
+        ],
+        "baseDefSpDef": [
+            7,
+            6
+        ],
+        "weight": 230,
+        "size": 29,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            282,
+            309
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            479,
+            479
+        ]
+    },
+    {
+        "name": "MonsterNameMegaSableye",
+        "category": "MonsterCategoryDarkness",
+        "overworldPalette": 3,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_DARK",
+            "TYPE_GHOST"
+        ],
+        "friendArea": "FRIEND_AREA_DARKNESS_RIDGE",
+        "abilities": [
+            "ABILITY_KEEN_EYE"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 20,
+        "expYield": 33,
+        "baseAtkSpAtk": [
+            8,
+            8
+        ],
+        "baseDefSpDef": [
+            8,
+            8
+        ],
+        "weight": 153,
+        "size": 31,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            302,
+            329
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            480,
+            480
+        ],
+        "dialogueSprites": "0b0000110001100111"
+    },
+    {
+        "name": "MonsterNameMegaMawile",
+        "category": "MonsterCategoryDeceiver",
+        "overworldPalette": 11,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_STEEL",
+            "TYPE_FAIRY"
+        ],
+        "friendArea": "FRIEND_AREA_ECHO_CAVE",
+        "abilities": [
+            "ABILITY_HUGE_POWER"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 47,
+        "expYield": 33,
+        "baseAtkSpAtk": [
+            22,
+            20
+        ],
+        "baseDefSpDef": [
+            5,
+            7
+        ],
+        "weight": 153,
+        "size": 31,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            303,
+            330
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            481,
+            481
+        ],
+        "dialogueSprites": "0b0001111111111111"
+    },
+    {
+        "name": "MonsterNameMegaAggron",
+        "category": "MonsterCategoryIronArmor",
+        "overworldPalette": 5,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_STEEL"
+        ],
+        "friendArea": "FRIEND_AREA_MT_CLEFT",
+        "abilities": [
+            "ABILITY_STURDY",
+            "ABILITY_ROCK_HEAD"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 50,
+        "expYield": 165,
+        "baseAtkSpAtk": [
+            25,
+            25
+        ],
+        "baseDefSpDef": [
+            20,
+            20
+        ],
+        "weight": 358,
+        "size": 64,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            306,
+            333
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            482,
+            482
+        ],
+        "dialogueSprites": "0b0000000000000001"
+    },
+    {
+        "name": "MonsterNameMegaMedicham",
+        "category": "MonsterCategoryMeditate",
+        "overworldPalette": 2,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "dialogueSprites": "0b0000000000000001",
+        "types": [
+            "TYPE_FIGHTING",
+            "TYPE_PSYCHIC"
+        ],
+        "friendArea": "FRIEND_AREA_MT_DISCIPLINE",
+        "abilities": [
+            "ABILITY_PURE_POWER"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 38,
+        "expYield": 60,
+        "baseAtkSpAtk": [
+            13,
+            13
+        ],
+        "baseDefSpDef": [
+            8,
+            8
+        ],
+        "weight": 204,
+        "size": 31,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            308,
+            335
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            483,
+            483
+        ]
+    },
+    {
+        "name": "MonsterNameMegaManectric",
+        "category": "MonsterCategoryDischarge",
+        "overworldPalette": 0,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_ELECTRIC"
+        ],
+        "friendArea": "FRIEND_AREA_THUNDER_MEADOW",
+        "abilities": [
+            "ABILITY_INTIMIDATE"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 56,
+        "expYield": 65,
+        "baseAtkSpAtk": [
+            25,
+            25
+        ],
+        "baseDefSpDef": [
+            13,
+            13
+        ],
+        "weight": 230,
+        "size": 27,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            310,
+            337
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            484,
+            484
+        ],
+        "dialogueSprites": "0b0000000000000001"
+    },
+    {
+        "name": "MonsterNameMegaSharpedo",
+        "category": "MonsterCategoryBrutal",
+        "overworldPalette": 2,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_WATER",
+            "TYPE_DARK"
+        ],
+        "movementType": "MOVEMENT_TYPE_WATER",
+        "friendArea": "FRIEND_AREA_TREASURE_SEA",
+        "abilities": [
+            "ABILITY_ROUGH_SKIN"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 50,
+        "expYield": 190,
+        "baseAtkSpAtk": [
+            18,
+            18
+        ],
+        "baseDefSpDef": [
+            15,
+            15
+        ],
+        "weight": 332,
+        "size": 28,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            319,
+            346
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            485,
+            485
+        ],
+        "dialogueSprites": "0b0001111111111111"
+    },
+    {
+        "name": "MonsterNameMegaCamerupt",
+        "category": "MonsterCategoryEruption",
+        "overworldPalette": 5,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_FIRE",
+            "TYPE_GROUND"
+        ],
+        "movementType": "MOVEMENT_TYPE_LAVA",
+        "friendArea": "FRIEND_AREA_CRATER",
+        "abilities": [
+            "ABILITY_MAGMA_ARMOR"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 55,
+        "expYield": 115,
+        "baseAtkSpAtk": [
+            16,
+            16
+        ],
+        "baseDefSpDef": [
+            13,
+            13
+        ],
+        "weight": 358,
+        "size": 37,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            323,
+            350
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            486,
+            486
+        ],
+        "dialogueSprites": "0b0000000000000001"
+    },
+    {
+        "name": "MonsterNameMegaAltaria",
+        "category": "MonsterCategoryHumming",
+        "overworldPalette": 2,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_DRAGON",
+            "TYPE_FAIRY"
+        ],
+        "friendArea": "FRIEND_AREA_FLYAWAY_FOREST",
+        "abilities": [
+            "ABILITY_NATURAL_CURE"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 46,
+        "expYield": 80,
+        "baseAtkSpAtk": [
+            13,
+            15
+        ],
+        "baseDefSpDef": [
+            11,
+            12
+        ],
+        "weight": 179,
+        "size": 35,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            334,
+            361
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            487,
+            487
+        ],
+        "dialogueSprites": "0b0000000100100011"
+    },
+    {
+        "name": "MonsterNameMegaBanette",
+        "category": "MonsterCategoryMarionette",
+        "overworldPalette": 11,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_GHOST"
+        ],
+        "movementType": "MOVEMENT_TYPE_WALL",
+        "friendArea": "FRIEND_AREA_DARKNESS_RIDGE",
+        "abilities": [
+            "ABILITY_INSOMNIA"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 0,
+        "baseHP": 50,
+        "expYield": 105,
+        "baseAtkSpAtk": [
+            15,
+            15
+        ],
+        "baseDefSpDef": [
+            15,
+            15
+        ],
+        "weight": 153,
+        "size": 28,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            354,
+            384
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            488,
+            488
+        ],
+        "dialogueSprites": "0b0001101000010011"
+    },
+    {
+        "name": "MonsterNameMegaAbsol",
+        "category": "MonsterCategoryDisaster",
+        "overworldPalette": 5,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "dialogueSprites": "0b0001111111111111",
+        "unk12": true,
+        "types": [
+            "TYPE_DARK"
+        ],
+        "friendArea": "FRIEND_AREA_DARKNESS_RIDGE",
+        "abilities": [
+            "ABILITY_PRESSURE"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 61,
+        "expYield": 200,
+        "baseAtkSpAtk": [
+            16,
+            15
+        ],
+        "baseDefSpDef": [
+            21,
+            22
+        ],
+        "weight": 230,
+        "size": 33,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            359,
+            389
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            489,
+            489
+        ]
+    },
+    {
+        "name": "MonsterNameMegaGlalie",
+        "category": "MonsterCategoryFace",
+        "overworldPalette": 5,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_ICE"
+        ],
+        "friendArea": "FRIEND_AREA_FRIGID_CAVERN",
+        "abilities": [
+            "ABILITY_INNER_FOCUS"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 37,
+        "expYield": 80,
+        "baseAtkSpAtk": [
+            14,
+            14
+        ],
+        "baseDefSpDef": [
+            16,
+            16
+        ],
+        "weight": 358,
+        "size": 47,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            362,
+            392
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            490,
+            490
+        ],
+        "dialogueSprites": "0b0000000000000001"
+    },
+    {
+        "name": "MonsterNameMegaSalamence",
+        "category": "MonsterCategoryDragon",
+        "overworldPalette": 5,
+        "bodySize": 2,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_DRAGON",
+            "TYPE_FLYING"
+        ],
+        "friendArea": "FRIEND_AREA_DRAGON_CAVE",
+        "abilities": [
+            "ABILITY_INTIMIDATE"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 40,
+        "expYield": 85,
+        "baseAtkSpAtk": [
+            25,
+            25
+        ],
+        "baseDefSpDef": [
+            18,
+            18
+        ],
+        "weight": 332,
+        "size": 92,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            373,
+            403
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            491,
+            491
+        ],
+        "dialogueSprites": "0b0000000000000001"
+    },
+    {
+        "name": "MonsterNameMegaMetagross",
+        "category": "MonsterCategoryIronLeg",
+        "overworldPalette": 11,
+        "bodySize": 2,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_STEEL",
+            "TYPE_PSYCHIC"
+        ],
+        "friendArea": "FRIEND_AREA_MAGNETIC_QUARRY",
+        "abilities": [
+            "ABILITY_CLEAR_BODY"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 5,
+        "baseHP": 44,
+        "expYield": 95,
+        "baseAtkSpAtk": [
+            17,
+            20
+        ],
+        "baseDefSpDef": [
+            12,
+            12
+        ],
+        "weight": 358,
+        "size": 59,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            376,
+            406
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            492,
+            492
+        ],
+        "dialogueSprites": "0b0000000000000001"
+    },
+    {
+        "name": "MonsterNameMegaLatias",
+        "category": "MonsterCategoryEon",
+        "overworldPalette": 11,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "dialogueSprites": "0b0001111111111111",
+        "unk12": true,
+        "types": [
+            "TYPE_DRAGON",
+            "TYPE_PSYCHIC"
+        ],
+        "movementType": "MOVEMENT_TYPE_CHASM",
+        "friendArea": "FRIEND_AREA_SOUTHERN_ISLAND",
+        "abilities": [
+            "ABILITY_LEVITATE"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 50,
+        "expYield": 200,
+        "baseAtkSpAtk": [
+            20,
+            20
+        ],
+        "baseDefSpDef": [
+            15,
+            15
+        ],
+        "weight": 230,
+        "size": 37,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            380,
+            410
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            493,
+            493
+        ]
+    },
+    {
+        "name": "MonsterNameMegaLatios",
+        "category": "MonsterCategoryEon",
+        "overworldPalette": 2,
+        "bodySize": 2,
+        "movementSpeed": 1,
+        "dialogueSprites": "0b0001111111111111",
+        "unk12": true,
+        "types": [
+            "TYPE_DRAGON",
+            "TYPE_PSYCHIC"
+        ],
+        "movementType": "MOVEMENT_TYPE_CHASM",
+        "friendArea": "FRIEND_AREA_SOUTHERN_ISLAND",
+        "abilities": [
+            "ABILITY_LEVITATE"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 50,
+        "expYield": 200,
+        "baseAtkSpAtk": [
+            20,
+            20
+        ],
+        "baseDefSpDef": [
+            15,
+            15
+        ],
+        "weight": 281,
+        "size": 57,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            381,
+            411
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            494,
+            494
+        ]
+    },
+    {
+        "name": "MonsterNameMegaRayquaza",
+        "category": "MonsterCategorySkyHigh",
+        "overworldPalette": 3,
+        "bodySize": 4,
+        "movementSpeed": 1,
+        "dialogueSprites": "0b0000000000000001",
+        "unk12": true,
+        "types": [
+            "TYPE_DRAGON",
+            "TYPE_FLYING"
+        ],
+        "movementType": "MOVEMENT_TYPE_CHASM",
+        "friendArea": "FRIEND_AREA_STRATOS_LOOKOUT",
+        "abilities": [
+            "ABILITY_AIR_LOCK"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 80,
+        "expYield": 230,
+        "baseAtkSpAtk": [
+            20,
+            20
+        ],
+        "baseDefSpDef": [
+            17,
+            17
+        ],
+        "weight": 358,
+        "size": 156,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            384,
+            414
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            495,
+            495
+        ]
+    },
+    {
+        "name": "MonsterNameMegaLucario",
+        "category": "MonsterCategoryAura",
+        "overworldPalette": 5,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "dialogueSprites": "0b0001111111111111",
+        "types": [
+            "TYPE_FIGHTING",
+            "TYPE_STEEL"
+        ],
+        "friendArea": "FRIEND_AREA_MT_DISCIPLINE",
+        "abilities": [
+            "ABILITY_INNER_FOCUS"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 20,
+        "expYield": 47,
+        "baseAtkSpAtk": [
+            3,
+            4
+        ],
+        "baseDefSpDef": [
+            2,
+            2
+        ],
+        "weight": 256,
+        "size": 36,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            448,
+            448
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            496,
+            496
+        ]
+    },
+    {
+        "name": "MonsterNameMegaGallade",
+        "category": "MonsterCategoryBlade",
+        "overworldPalette": 3,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_PSYCHIC",
+            "TYPE_FIGHTING"
+        ],
+        "friendArea": "FRIEND_AREA_SKY_BLUE_PLAINS",
+        "abilities": [
+            "ABILITY_INNER_FOCUS"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 40,
+        "expYield": 103,
+        "baseAtkSpAtk": [
+            18,
+            12
+        ],
+        "baseDefSpDef": [
+            10,
+            10
+        ],
+        "weight": 256,
+        "size": 30,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            475,
+            475
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            497,
+            497
+        ],
+        "dialogueSprites": "0b0001111111111111"
+    },
+    {
+        "name": "MonsterNamePrimalKyogre",
+        "category": "MonsterCategorySeaBasin",
+        "overworldPalette": 11,
+        "bodySize": 4,
+        "movementSpeed": 1,
+        "dialogueSprites": "0b0000000000000001",
+        "unk12": true,
+        "types": [
+            "TYPE_WATER"
+        ],
+        "movementType": "MOVEMENT_TYPE_WATER",
+        "friendArea": "FRIEND_AREA_SEAFLOOR_CAVE",
+        "abilities": [
+            "ABILITY_DRIZZLE"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 75,
+        "expYield": 210,
+        "baseAtkSpAtk": [
+            20,
+            20
+        ],
+        "baseDefSpDef": [
+            15,
+            15
+        ],
+        "weight": 358,
+        "size": 124,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            382,
+            412
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            498,
+            498
+        ]
+    },
+    {
+        "name": "MonsterNamePrimalGroudon",
+        "category": "MonsterCategoryContinent",
+        "overworldPalette": 5,
+        "bodySize": 4,
+        "movementSpeed": 1,
+        "dialogueSprites": "0b0000000000000001",
+        "unk12": true,
+        "types": [
+            "TYPE_GROUND",
+            "TYPE_FIRE"
+        ],
+        "movementType": "MOVEMENT_TYPE_LAVA",
+        "friendArea": "FRIEND_AREA_VOLCANIC_PIT",
+        "abilities": [
+            "ABILITY_DROUGHT"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 78,
+        "expYield": 220,
+        "baseAtkSpAtk": [
+            20,
+            20
+        ],
+        "baseDefSpDef": [
+            15,
+            15
+        ],
+        "weight": 358,
+        "size": 107,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            383,
+            413
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            499,
+            499
+        ]
     }
 ]

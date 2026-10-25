@@ -98,6 +98,36 @@ HOMES = {
 # Red relatives that can't be recruited (-999 etc.) give their evolutions this rate instead (5%)
 FALLBACK_RECRUIT_RATE = 50
 
+# Mega Evolution / Primal Reversion forms (Floor 6): PokeAPI name, base species, SpriteCollab form.
+# Each gets a species id after the newcomers; an Empowered base (Empowerment Seed) takes on its
+# sprite, types and abilities for the floor (dx_rules.c). Megas SpriteCollab has no sprite for yet
+# use the base sprite. One form per base transforms (Charizard and Mewtwo: the first listed).
+MEGAS = [
+    ("venusaur-mega", "VENUSAUR", "0003/0001"), ("charizard-mega-x", "CHARIZARD", "0006/0001"),
+    ("charizard-mega-y", "CHARIZARD", "0006/0002"), ("blastoise-mega", "BLASTOISE", "0009/0001"),
+    ("beedrill-mega", "BEEDRILL", "0015/0001"), ("pidgeot-mega", "PIDGEOT", "0018/0001"),
+    ("alakazam-mega", "ALAKAZAM", "0065/0001"), ("slowbro-mega", "SLOWBRO", "0080/0002"),
+    ("gengar-mega", "GENGAR", "0094/0001"), ("kangaskhan-mega", "KANGASKHAN", "0115/0001"),
+    ("pinsir-mega", "PINSIR", "0127/0001"), ("gyarados-mega", "GYARADOS", "0130/0001"),
+    ("aerodactyl-mega", "AERODACTYL", "0142/0001"), ("mewtwo-mega-y", "MEWTWO", "0150/0002"),
+    ("mewtwo-mega-x", "MEWTWO", "0150/0001"), ("ampharos-mega", "AMPHAROS", "0181/0001"),
+    ("steelix-mega", "STEELIX", "0208/0001"), ("scizor-mega", "SCIZOR", "0212/0001"),
+    ("heracross-mega", "HERACROSS", "0214/0001"), ("houndoom-mega", "HOUNDOOM", "0229/0001"),
+    ("tyranitar-mega", "TYRANITAR", "0248/0001"), ("sceptile-mega", "SCEPTILE", "0254/0001"),
+    ("blaziken-mega", "BLAZIKEN", "0257/0001"), ("swampert-mega", "SWAMPERT", "0260/0001"),
+    ("gardevoir-mega", "GARDEVOIR", "0282/0001"), ("sableye-mega", "SABLEYE", "0302/0001"),
+    ("mawile-mega", "MAWILE", "0303/0001"), ("aggron-mega", "AGGRON", "0306/0001"),
+    ("medicham-mega", "MEDICHAM", "0308/0001"), ("manectric-mega", "MANECTRIC", "0310/0001"),
+    ("sharpedo-mega", "SHARPEDO", "0319/0001"), ("camerupt-mega", "CAMERUPT", "0323/0001"),
+    ("altaria-mega", "ALTARIA", "0334/0001"), ("banette-mega", "BANETTE", "0354/0001"),
+    ("absol-mega", "ABSOL", "0359/0001"), ("glalie-mega", "GLALIE", "0362/0001"),
+    ("salamence-mega", "SALAMENCE", "0373/0001"), ("metagross-mega", "METAGROSS", "0376/0001"),
+    ("latias-mega", "LATIAS", "0380/0001"), ("latios-mega", "LATIOS", "0381/0001"),
+    ("rayquaza-mega", "RAYQUAZA", "0384/0001"), ("lucario-mega", "LUCARIO", "0448/0001"),
+    ("gallade-mega", "GALLADE", "0475/0001"),
+    ("kyogre-primal", "KYOGRE", "0382/0001"), ("groudon-primal", "GROUDON", "0383/0001"),
+]
+
 # DX evolves with Evo Crystals (Red's unused G Machine 6, gen_dx_items.py); Eevee's forms take two
 EVO_CRYSTAL = "ITEM_G_MACHINE_6"
 EVO_REQ_TWO_CRYSTALS = 14  # additionalRequirement handled in pokemon_evolution.c
@@ -121,6 +151,7 @@ def main():
                                                     (ROOT / "include/constants/ability.h").read_text())}
     red_moves = {norm(k): "MOVE_" + k for k in re.findall(r"#define MOVE_(\w+) ", (ROOT / "include/constants/move_id.h").read_text())}
     md = eos_md.by_dex(eos_md.load())
+    abilities_by_name = {k[8:].lower().replace("_", "-"): k for k in abilities.values()}
     red = json.loads((ROOT / "data/monster/monster_data.json").read_text())
     assert len(red) == 424, len(red)
     red_sets = {norm(e["pokemon"]): e for e in json.loads((ROOT / "data/monster/learnset/learnset_data.json").read_text())}
@@ -258,6 +289,68 @@ def main():
             log.append(f"{e['name'][11:]}: evolves from {pre['evolveFrom'][8:].title()} with "
                        + ("two Evo Crystals" if pre["evolveFrom"] == "MONSTER_EEVEE" else "an Evo Crystal"))
 
+    # --- Mega / Primal forms ---
+    forms = pokeapi_dx.fetch_forms([m[0] for m in MEGAS] + sorted({m[0].split("-")[0] for m in MEGAS}))
+    gfx_text = (ROOT / "include/monster_gfx.h").read_text()
+    megas, used_bases = [], set()
+    first_mega = FIRST_NEW_ID + len(SPECIES)
+    for i, (api_name, base, sc_path) in enumerate(MEGAS):
+        kind = "Primal" if api_name.endswith("primal") else "Mega"
+        suffix = api_name.split("-mega-")[1].upper() if "-mega-" in api_name else ""
+        ident = f"{kind}{base.title().replace('_', '')}{suffix}"
+        display = f"{kind} {base.title()}" + (f" {suffix}" if suffix else "")
+        base_id = red_ids.get(base, ident_ids.get(base))
+        base_entry = red[base_id]
+        form, base_form = forms[api_name], forms[api_name.split("-")[0]]
+        m = dict(ident=ident, id=first_mega + i, base=base, display=display, kind=kind, sc=sc_path,
+                 dex=int(sc_path.split("/")[0]))
+        # sprite: SpriteCollab's, sized like the base (the transformed Pokemon keeps its VRAM slot)
+        header = ROOT / f"src/data/ax/dx/{ident.lower()}.h"
+        if not header.exists() and not (ROOT / f"src/data/ax/dx/{ident.lower()}.nosprite").exists():
+            sc_dir = Path.home() / "pmd/spritecollab" / sc_path.replace("/", "_")
+            r = subprocess.run([sys.executable, "-I", str(ROOT / "tools/spritecollab/sc_import.py"), str(sc_dir),
+                                ident.lower(), ident, "--body-size", str(base_entry["bodySize"]), "--fetch", sc_path],
+                               capture_output=True, text=True, cwd=ROOT)
+            if r.returncode == 0:
+                (ROOT / f"src/data/ax/{ident.lower()}.h").replace(header)
+                print(r.stdout.strip())
+            else:  # remember, so later runs don't retry the download
+                (ROOT / f"src/data/ax/dx/{ident.lower()}.nosprite").write_text(r.stderr[-400:])
+        m["gfx"] = f"gAx{ident}" if header.exists() else None
+        if m["gfx"] is None:
+            base_gfx = f"gAx{base_entry['name'][11:]}" if base_id < FIRST_NEW_ID else f"gAx{base.title()}"
+            assert f"extern const SiroArchive {base_gfx};" in gfx_text or base_id >= FIRST_NEW_ID, base_gfx
+            m["base_gfx"] = base_gfx
+        pal = int(re.search(r"OAM3\(0, 3, (\d+)\)", header.read_text()).group(1)) if header.exists() else base_entry["overworldPalette"]
+        kao = ROOT / f"data/kao/dx/{ident.lower()}.inc"
+        r = subprocess.run([sys.executable, "-I", str(ROOT / "tools/spritecollab/sc_portrait.py"), str(kao), ident, sc_path],
+                           capture_output=True, text=True, cwd=ROOT)
+        m["portraits"] = r.stdout.strip() if r.returncode == 0 else "0b0000000000000000"
+        types = [f"TYPE_{t.upper()}" for t in form["types"]]
+        abil = [abilities_by_name[a] for a in form["abilities"] if a in abilities_by_name][:2] or base_entry["abilities"]
+        entry = json.loads(json.dumps(base_entry))
+        entry.pop("preEvolution", None)
+        entry.pop("evolutionRequirements", None)
+        entry.update({"name": f"MonsterName{ident}", "types": types, "abilities": abil, "overworldPalette": pal,
+                      "recruitRate": -999, "dialogueSprites": m["portraits"], "alphabetParent": [m["id"], m["id"]]})
+        assert m["id"] == len(red)
+        red.append(entry)
+        base_ls = next((x for x in learnsets if x["pokemon"].upper() == base), None) or red_sets[norm(base_entry["name"][11:])]
+        learnsets.append({"pokemon": ident, "levelUpMoves": base_ls["levelUpMoves"], "HMTMMoves": base_ls["HMTMMoves"]})
+        names.append((f"MonsterName{ident}", display))
+        # the Mega's edge over its base, as extra stat stages (+1 per 25% more, at most +3)
+        def stage(stat):
+            return max(0, min(3, round((form["stats"][stat] / base_form["stats"][stat] - 1) * 4)))
+        m["stages"] = [stage("attack"), stage("special-attack"), stage("defense"), stage("special-defense")]
+        m["speed"] = form["stats"]["speed"]
+        m["faster"] = form["stats"]["speed"] >= base_form["stats"]["speed"] + 20
+        m["transforms"] = base not in used_bases
+        used_bases.add(base)
+        megas.append(m)
+        log.append(f"{display} #{m['id']}: {types}, {abil}, stages {m['stages']}" + (" +speed" if m["faster"] else "")
+                   + ("" if m["gfx"] else " [no SpriteCollab sprite: base sprite]")
+                   + ("" if m["transforms"] else " [not used: base has an earlier form]"))
+
     # --- write everything ---
     n = len(SPECIES)
     w = lambda p, t: (ROOT / p).write_text(t)
@@ -265,15 +358,25 @@ def main():
     w("include/constants/dx_species.h", hdr + "#ifndef GUARD_CONSTANTS_DX_SPECIES_H\n#define GUARD_CONSTANTS_DX_SPECIES_H\n\n"
       + "".join(f"#define MONSTER_{s['ident'].upper()} {s['id']}\n" for s in SPECIES)
       + f"\n#define DX_FIRST_NEW_SPECIES {FIRST_NEW_ID}\n#define DX_NEW_SPECIES_COUNT {n}\n"
-      + f"#define DX_NEW_PORTRAIT_COUNT {sum(s['portraits'] != '0b0000000000000000' for s in SPECIES)}\n\n#endif\n")
-    kaos = [s for s in SPECIES if s["portraits"] != "0b0000000000000000"]
+      + "".join(f"#define MONSTER_{m['ident'].upper()} {m['id']}\n" for m in megas)
+      + f"#define DX_FIRST_MEGA {first_mega}\n#define DX_MEGA_COUNT {len(megas)}\n"
+      + f"#define DX_NEW_PORTRAIT_COUNT {sum(x['portraits'] != '0b0000000000000000' for x in SPECIES + megas)}\n\n#endif\n")
+    kaos = [x for x in SPECIES + megas if x["portraits"] != "0b0000000000000000"]
     w("include/dx_species_gfx.h", hdr + "".join(f"extern const SiroArchive gAx{s['ident']};\n" for s in SPECIES)
+      + "".join(f"extern const SiroArchive {m['gfx']};\n" for m in megas if m["gfx"])
       + "".join(f"extern const u8 gKao{s['ident']}[];\n" for s in kaos))
     w("src/data/dx_kao_files.h", hdr + "".join(
         f"    [496 + DX_NEW_SPECIES_FILES + {i}] = {{ \"kao{s['id']:03d}\", gKao{s['ident']},}},\n" for i, s in enumerate(kaos)))
-    w("data/kao/dx/all.inc", "@ Generated by tools/dxtest/gen_dx_species.py: DX newcomer portraits\n"
+    w("data/kao/dx/all.inc", "@ Generated by tools/dxtest/gen_dx_species.py: DX newcomer and Mega portraits\n"
       + "".join(f'.include "data/kao/dx/{s["ident"].lower()}.inc"\n' for s in kaos))
-    w("src/data/dx_species_files.h", hdr + "".join(f"    [MONSTER_{s['ident'].upper()} - 1] = {{ \"ax{s['id']:03d}\", &gAx{s['ident']},}},\n" for s in SPECIES))
+    w("src/data/dx_species_files.h", hdr + "".join(f"    [MONSTER_{s['ident'].upper()} - 1] = {{ \"ax{s['id']:03d}\", &gAx{s['ident']},}},\n" for s in SPECIES)
+      + "".join(f"    [MONSTER_{m['ident'].upper()} - 1] = {{ \"ax{m['id']:03d}\", &{m['gfx'] or m['base_gfx']},}},\n" for m in megas))
+    # Mega forms an Empowered Pokemon takes (dx_rules.c)
+    w("src/data/dx_megas.h", hdr + "// base species, Mega/Primal form, extra Atk/SpAtk/Def/SpDef stages, faster, Primal\n"
+      + "static const struct DxMegaForm sDxMegaForms[] = {\n"
+      + "".join(f"    {{ MONSTER_{m['base']}, MONSTER_{m['ident'].upper()}, {{ {', '.join(map(str, m['stages']))} }}, "
+                f"{'TRUE' if m['faster'] else 'FALSE'}, {'TRUE' if m['kind'] == 'Primal' else 'FALSE'} }},\n"
+                for m in megas if m["transforms"]) + "};\n")
     out = ROOT / "data/monster/dx"
     (out / "learnset").mkdir(parents=True, exist_ok=True)
     (out / "monster_data.json").write_text(json.dumps(red, indent=4) + "\n")
@@ -286,7 +389,7 @@ def main():
             txt += [f".global {sym}", f"{sym}:", f'.string "{text}\\0"', ".align 2,0", ""]
     (out / "monster_names_dx.s").write_text("\n".join(txt) + "\n")
     (out / "learnset_ptrs_dx.s").write_text("@ Generated: learnsets for ids 424+\n" + "".join(
-        f".4byte LevelUpMoves{s['ident']}\n.4byte HMTMMoves{s['ident']}\n" for s in SPECIES))
+        f".4byte LevelUpMoves{s['ident']}\n.4byte HMTMMoves{s['ident']}\n" for s in SPECIES + megas))
     (out / "level_table_dx.s").write_text("@ Generated: lvmp files for ids 424+ (the table is name-sorted)\n" + "".join(
         f".4byte gDxLevelName{s['id']}\n.4byte gDxLevel{s['id']}\n" for s in SPECIES))
     s_ = ["@ Generated by tools/dxtest/gen_dx_species.py: level-up data from Explorers of Sky (m_level.bin)",
@@ -306,6 +409,8 @@ def main():
     dex_of[420] = MUNCHLAX["dex"]
     speeds = pokeapi_dx.fetch_speeds(sorted({d for d in dex_of if d}))
     rows = [speeds.get(d, 0) if d else 0 for d in dex_of]
+    for m in megas:
+        rows[m["id"]] = m["speed"]
     w("src/data/dx_base_speed.h", hdr + "// mainline base Speed by species id (PokeAPI); 0 = not a real species\n"
       + "static const u8 sDxBaseSpeed[MONSTER_MAX] = {\n"
       + "".join("    " + ", ".join(str(v) for v in rows[i:i + 16]) + ",\n" for i in range(0, len(rows), 16)) + "};\n")
@@ -325,7 +430,8 @@ def main():
       + "".join(f"    {{ DUNGEON_{d}, MONSTER_{m} }},\n" for d, m in rows) + "};\n")
     # credits manifest
     w("tools/spritecollab/imported.txt", "# <SpriteCollab dex> <name in this repo> [sprite|portrait|both]\n"
-      + "".join(f"{s['dex']:04d} {s['ident'].lower()} both\n" for s in SPECIES))
+      + "".join(f"{s['dex']:04d} {s['ident'].lower()} both\n" for s in SPECIES)
+      + "".join(f"{m['sc']} {m['ident'].lower()} " + ("both" if m["gfx"] else "portrait") + "\n" for m in megas))
     (ROOT / "tools/dxtest/dx_species_log.txt").write_text("\n".join(log) + "\n")
     print("\n".join(log))
 

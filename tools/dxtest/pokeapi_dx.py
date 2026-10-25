@@ -62,6 +62,35 @@ def fetch_speeds(dex_ids):
     return {d: cache[d] for d in dex_ids}
 
 
+FORM_CACHE = CACHE.parent / "pokeapi_forms.json"
+FORM_QUERY = """query($names: [String!]) {
+  pokemon_v2_pokemon(where: {name: {_in: $names}}) {
+    name
+    pokemon_v2_pokemontypes { slot pokemon_v2_type { name } }
+    pokemon_v2_pokemonabilities { slot pokemon_v2_ability { name } }
+    pokemon_v2_pokemonstats { base_stat pokemon_v2_stat { name } }
+  }
+}"""
+
+
+def fetch_forms(names):
+    """Types, abilities and base stats for named Pokemon/forms (e.g. "charizard-mega-x")."""
+    cache = json.loads(FORM_CACHE.read_text()) if FORM_CACHE.exists() else {}
+    missing = [n for n in names if n not in cache]
+    if missing:
+        body = json.dumps({"query": FORM_QUERY, "variables": {"names": missing}}).encode()
+        req = urllib.request.Request(URL, body, {"Content-Type": "application/json", "User-Agent": "pmd-dx-demake-tools/1.0"})
+        for p in json.loads(urllib.request.urlopen(req, timeout=120).read())["data"]["pokemon_v2_pokemon"]:
+            cache[p["name"]] = {
+                "types": [t["pokemon_v2_type"]["name"] for t in sorted(p["pokemon_v2_pokemontypes"], key=lambda t: t["slot"])],
+                "abilities": [a["pokemon_v2_ability"]["name"] for a in sorted(p["pokemon_v2_pokemonabilities"], key=lambda a: a["slot"])],
+                "stats": {s["pokemon_v2_stat"]["name"]: s["base_stat"] for s in p["pokemon_v2_pokemonstats"]},
+            }
+        CACHE.parent.mkdir(exist_ok=True)
+        FORM_CACHE.write_text(json.dumps(cache, indent=1))
+    return {n: cache.get(n) for n in names}
+
+
 if __name__ == "__main__":
     import sys
     for d, v in fetch([int(x) for x in sys.argv[1:]] or [447]).items():
