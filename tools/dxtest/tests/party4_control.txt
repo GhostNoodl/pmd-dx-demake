@@ -6,6 +6,11 @@ wait 60
 press UP
 press A
 wait 30
+# Storage is the 6th debug menu entry
+press DOWN
+press DOWN
+press DOWN
+press DOWN
 press DOWN
 press A
 wait 600
