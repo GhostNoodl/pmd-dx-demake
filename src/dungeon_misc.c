@@ -1,4 +1,7 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rare_quality.h"
+#endif
 #include "globaldata.h"
 #include "dungeon_misc.h"
 #include "dungeon_music.h"
@@ -796,6 +799,11 @@ void SetMonSummaryInfoFromEntity(MonSummaryInfo *param_1, Entity *target)
     u8 *spDefBoost;
 
     EntityInfo *info = GetEntInfo(target);
+#ifdef DX_RULES
+    Pokemon *dxMon = DxEntityPokemon(target);
+
+    param_1->dxQuality = dxMon != NULL ? dxMon->dxQuality : 0;
+#endif
 
     SetMessageArgument_2(param_1->nameBuffer, info, 0);
     param_1->species = info->id;

@@ -47,6 +47,9 @@ typedef struct MonSummaryInfo
     /* R=0x55 | B=???? */ u8 fill55;
     /* R=0x56 | B=???? */ s16 unk56;
     /* R=0x58 | B=???? */ u8 unk58[MON_SUMMARY_UNK58_COUNT];
+#ifdef DX_RULES
+    u8 dxQuality; // Rare Quality, shown on the Features page
+#endif
 } MonSummaryInfo;
 
 // Size: 0x30

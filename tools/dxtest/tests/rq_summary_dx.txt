@@ -1,0 +1,38 @@
+#rom debug
+#save after-first-dungeon
+# DX: a Pokemon's Rare Quality shows on its summary Features page (dungeon Team menu)
+mash START sMainMenu 4 != 0 3000
+write gDxTestSeed 4 99991
+wait 60
+press UP
+press A
+wait 30
+press A
+wait 30
+press A
+wait 30
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+# leader (recruit slot 42) holds Riled Up (23)
+write *gRecruitedPokemonRef+3733 1 23
+press B
+wait 30
+press DOWN
+press DOWN
+press A
+wait 40
+shot 1_team
+press A
+wait 40
+shot 2_member_menu
+press A
+wait 60
+shot 3_summary
+press RIGHT
+wait 30
+shot 4_tab2
+press RIGHT
+wait 30
+shot 5_tab3
+expect *gRecruitedPokemonRef+3733 1 == 23
