@@ -28,6 +28,16 @@ data_learnset: $(LEARNSET_DATA);
 $(LEARNSET_DATA): $(LEARNSET_DIR)/learnset_data.json
 	$(DUNGEONJSON) learnset pmd-red $<
 
+# dx: Rescue Team DX species data (tools/dxtest/gen_dx_species.py), picked by data/system_sbin.s
+DX_MONSTER_DATA = $(MONSTER_DIR)/dx/monster_data.inc
+DX_LEARNSET_DATA = $(MONSTER_DIR)/dx/learnset/learnset_data.inc
+data_monster: $(DX_MONSTER_DATA)
+data_learnset: $(DX_LEARNSET_DATA)
+$(DX_MONSTER_DATA): $(MONSTER_DIR)/dx/monster_data.json $(MONSTER_DATA_INC)
+	$(DUNGEONJSON) monster pmd-red $<
+$(DX_LEARNSET_DATA): $(MONSTER_DIR)/dx/learnset/learnset_data.json
+	$(DUNGEONJSON) learnset pmd-red $<
+
 data_learnset_ptrs: ${LEARNSET_DATA};
 	echo '.4byte 0' > $(LEARNSET_PTRS)
 	echo '.4byte 0' >> $(LEARNSET_PTRS)

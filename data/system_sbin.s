@@ -18243,10 +18243,17 @@ gUnknown_8357B88:
 @ Address 0x357b98
 .global gUnknown_8357B98
 gUnknown_8357B98:
+#ifdef DX_RULES
+#include "monster/dx/monster_data.inc"
+#else
 #include "monster/monster_data.inc"
+#endif
 
 @ Address 0x35f2d8
 #include "monster/monster_names.s"
+#ifdef DX_RULES
+#include "monster/dx/monster_names_dx.s"
+#endif
 
 .global gUnknown_8360BF4
 gUnknown_8360BF4:
@@ -18257,6 +18264,9 @@ gUnknown_8360BF4:
 
 @ Address 0x360c06
 #include "monster/learnset/learnset_data.inc"
+#ifdef DX_RULES
+#include "monster/dx/learnset/learnset_data.inc"
+#endif
 
 .global gUnknown_836791E
 gUnknown_836791E:
@@ -18300,8 +18310,14 @@ gUnknown_83679A0:
 gUnknown_83725F8:
 #include "monster/learnset/learnset_ptrs.s"
 
+@ Munchlax (#420): a real learnset in DX builds
+#ifdef DX_RULES
+.4byte LevelUpMovesMunchlax
+.4byte HMTMMovesMunchlax
+#else
 .4byte gUnknown_836791E
 .4byte gUnknown_836791F
+#endif
 .4byte gUnknown_8367924
 .4byte gUnknown_8367925
 .4byte gUnknown_836799C

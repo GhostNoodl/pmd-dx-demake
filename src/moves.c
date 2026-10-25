@@ -163,8 +163,10 @@ const u8 *GetLevelUpMoves(s16 species)
     s32 id = SpeciesId(species);
     if (species == MONSTER_DECOY || species == MONSTER_NONE)
         return gDummyMoves;
+#ifndef DX_RULES
     if (id == MONSTER_MUNCHLAX)
         return gDummyMoves;
+#endif
 
     return sMoveLearnsets[id].levelUpMoves;
 }
@@ -174,8 +176,10 @@ const u8 *GetHMTMMoves(s16 species)
     s32 id = SpeciesId(species);
     if (species == MONSTER_DECOY || species == MONSTER_NONE)
         return gDummyMoves;
+#ifndef DX_RULES
     if (id == MONSTER_MUNCHLAX)
         return gDummyMoves;
+#endif
 
     return sMoveLearnsets[id].HMTMMoves;
 }
