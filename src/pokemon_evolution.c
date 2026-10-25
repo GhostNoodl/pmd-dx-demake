@@ -9,6 +9,19 @@
 #include "constants/evolve_type.h"
 #include "constants/evolution_status.h"
 
+#ifdef DX_RULES
+static s32 DxCountItemInInventory(u8 id)
+{
+    s32 i, count = 0;
+
+    for (i = 0; i < INVENTORY_SIZE; i++) {
+        if ((gTeamInventoryRef->teamItems[i].flags & ITEM_FLAG_EXISTS) && gTeamInventoryRef->teamItems[i].id == id)
+            count++;
+    }
+    return count;
+}
+#endif
+
 void SetMonEvolveStatus(Pokemon *pokemon, EvolveStatus *evolveStatus, bool8 param_3)
 {
     struct FriendAreaCapacity friendAreaCapacity;
@@ -16,6 +29,9 @@ void SetMonEvolveStatus(Pokemon *pokemon, EvolveStatus *evolveStatus, bool8 para
     s32 index;
 
     evolveStatus->evolutionConditionStatus = 0;
+#ifdef DX_RULES
+    evolveStatus->dxCandidateCount = 0;
+#endif
     for (index = MONSTER_BULBASAUR; index < MONSTER_MAX; index++) {
         s32 speciesId = (s16) index;
         if (speciesId == MONSTER_ALAKAZAM) {
@@ -150,6 +166,20 @@ void SetMonEvolveStatus(Pokemon *pokemon, EvolveStatus *evolveStatus, bool8 para
                 cannotEvolve = TRUE;
             }
         }
+#ifdef DX_RULES
+        else if (evolveConditions.evolutionRequirements.additionalRequirement == DX_EVO_REQ_TWO_CRYSTALS) {
+            if (param_3) {
+                if (evolveStatus->evoItem1 != ITEM_EVO_CRYSTAL || evolveStatus->evoItem2 != ITEM_EVO_CRYSTAL) {
+                    evolveStatus->evolutionConditionStatus |= EVOLUTION_LACK_ITEM;
+                    cannotEvolve = TRUE;
+                }
+            }
+            else if (DxCountItemInInventory(ITEM_EVO_CRYSTAL) < 2) {
+                evolveStatus->evolutionConditionStatus |= EVOLUTION_LACK_ITEM;
+                cannotEvolve = TRUE;
+            }
+        }
+#endif
         else if (evolveConditions.evolutionRequirements.additionalRequirement == 10) {
             if (param_3 != 0) {
                 if ((evolveStatus->evoItem1 != ITEM_BEAUTY_SCARF) && (evolveStatus->evoItem2 != ITEM_BEAUTY_SCARF)) {
@@ -166,6 +196,10 @@ void SetMonEvolveStatus(Pokemon *pokemon, EvolveStatus *evolveStatus, bool8 para
         if (!cannotEvolve) {
             evolveStatus->evolutionConditionStatus |= EVOLUTION_GOOD;
             evolveStatus->targetEvolveSpecies = speciesId;
+#ifdef DX_RULES
+            if (evolveStatus->dxCandidateCount < DX_MAX_EVO_CANDIDATES)
+                evolveStatus->dxCandidates[evolveStatus->dxCandidateCount++] = speciesId;
+#endif
         }
     }
 }

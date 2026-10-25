@@ -12,3 +12,9 @@ data_item: $(ITEM_DATA);
 
 $(ITEM_DATA): $(ITEM_DIR)/item_data.json $(ITEM_DATA_INC)
 	$(DUNGEONJSON) item pmd-red $<
+
+# dx: Rescue Team DX item table (tools/dxtest/gen_dx_items.py), picked by data/system_sbin.s
+DX_ITEM_DATA = $(ITEM_DIR)/dx/item_data.inc
+data_item: $(DX_ITEM_DATA)
+$(DX_ITEM_DATA): $(ITEM_DIR)/dx/item_data.json $(ITEM_DATA_INC)
+	$(DUNGEONJSON) item pmd-red $<

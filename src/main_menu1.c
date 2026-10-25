@@ -8,6 +8,7 @@
 #include "ds_menus.h"
 #include "dx_tools.h"
 #include "dx_warp.h"
+#include "dx_evolve.h"
 #include "friend_rescue.h"
 #include "game_options.h"
 #include "input.h"
@@ -134,6 +135,9 @@ void SetUpMenu(void)
         case MENU_DEBUG_DEBUG_MENU:
             CreateDxToolMenu(sMainMenu->nextMenu - MENU_DEBUG_FIELD);
             break;
+        case MENU_DEBUG_UNKNOWN_1:
+            CreateDxEvolveMenu();
+            break;
 #endif
     }
 
@@ -225,6 +229,9 @@ s32 UpdateMenu(void)
         case MENU_DEBUG_DEBUG_MENU:
             nextMenu = UpdateDxToolMenu();
             break;
+        case MENU_DEBUG_UNKNOWN_1:
+            nextMenu = UpdateDxEvolveMenu();
+            break;
 #endif
     }
 
@@ -302,6 +309,9 @@ void CleanUpMenu(void)
         case MENU_DEBUG_FIELD_SCRIPT:
         case MENU_DEBUG_DEBUG_MENU:
             DeleteDxToolMenu();
+            break;
+        case MENU_DEBUG_UNKNOWN_1:
+            DeleteDxEvolveMenu();
             break;
 #endif
     }

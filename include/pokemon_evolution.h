@@ -12,6 +12,11 @@ enum
 };
 
 // size: 0x8
+#ifdef DX_RULES
+#define DX_MAX_EVO_CANDIDATES 8 // Eevee
+#define DX_EVO_REQ_TWO_CRYSTALS 14 // additionalRequirement: two Evo Crystals (gen_dx_species.py)
+#endif
+
 typedef struct EvolveStatus
 {
     /* 0x0 */ u8 evoItem1;
@@ -21,6 +26,11 @@ typedef struct EvolveStatus
     /* 0x2 */ u8 wurmpleVal;
     /* 0x4 */ u16 evolutionConditionStatus;
     /* 0x6 */ s16 targetEvolveSpecies;
+#ifdef DX_RULES
+    // every form whose conditions are met (DX lets you pick, e.g. Eevee with two Evo Crystals)
+    s16 dxCandidates[DX_MAX_EVO_CANDIDATES];
+    u8 dxCandidateCount;
+#endif
 } EvolveStatus;
 
 void SetMonEvolveStatus(Pokemon *pokemon, EvolveStatus *evolveStatus,bool8 param_3);

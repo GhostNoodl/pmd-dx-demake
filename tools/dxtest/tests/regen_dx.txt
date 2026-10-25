@@ -23,55 +23,8 @@ write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMaxHP 2 200
 write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 50
 read hp0 ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2
 read wind0 *gDungeon+@gDxOffWindTurns 2
-mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
-mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+# hold A+B: pass turns in place (no walking, so the floor layout and wild Pokemon do not matter)
+hold A+B 900
 read wind *gDungeon+@gDxOffWindTurns 2
 read hp ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2
 shot 1_after_walk
@@ -80,5 +33,5 @@ calc gain hp - hp0
 calc turns wind0 - wind
 calc want turns * 3
 cmpreads gain >= want
-calc minturns 0 + 5
+calc minturns 0 + 10
 cmpreads turns >= minturns

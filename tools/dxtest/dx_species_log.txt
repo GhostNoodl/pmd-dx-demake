@@ -30,3 +30,39 @@ Probopass #451: Explorers #476, ['TYPE_ROCK', 'TYPE_STEEL'], ['ABILITY_STURDY', 
 Dusknoir #452: Explorers #477, ['TYPE_GHOST'], ['ABILITY_PRESSURE'], HP 30 15/10/10/15, body 1, palette 2, camp of DUSCLOPS; moves not in Red: ['gravity', 'shadow-sneak', 'payback']
 Froslass #453: Explorers #478, ['TYPE_ICE', 'TYPE_GHOST'], ['ABILITY_INNER_FOCUS'], HP 40 16/16/17/15, body 1, palette 3, camp of SNORUNT; moves not in Red: ['ominous-wind', 'wake-up-slap', 'captivate', 'ice-shard']; Gen 4 abilities only; SNORUNT's ['ABILITY_INNER_FOCUS']
 Sylveon #454: Explorers #196, ['TYPE_FAIRY'], ['ABILITY_CUTE_CHARM'], HP 25 4/3/5/5, body 1, palette 1, camp of EEVEE; moves not in Red: ['disarming-voice', 'fairy-wind', 'draining-kiss', 'misty-terrain', 'moonblast', 'last-resort']
+Raichu: evolves from Pikachu with an Evo Crystal
+Nidoqueen: evolves from Nidorina with an Evo Crystal
+Nidoking: evolves from Nidorino with an Evo Crystal
+Clefable: evolves from Clefairy with an Evo Crystal
+Ninetales: evolves from Vulpix with an Evo Crystal
+Wigglytuff: evolves from Jigglypuff with an Evo Crystal
+Vileplume: evolves from Gloom with an Evo Crystal
+Arcanine: evolves from Growlithe with an Evo Crystal
+Poliwrath: evolves from Poliwhirl with an Evo Crystal
+Alakazam: evolves from Kadabra with an Evo Crystal
+Machamp: evolves from Machoke with an Evo Crystal
+Victreebel: evolves from Weepinbell with an Evo Crystal
+Golem: evolves from Graveler with an Evo Crystal
+Cloyster: evolves from Shellder with an Evo Crystal
+Gengar: evolves from Haunter with an Evo Crystal
+Exeggutor: evolves from Exeggcute with an Evo Crystal
+Starmie: evolves from Staryu with an Evo Crystal
+Vaporeon: evolves from Eevee with two Evo Crystals
+Jolteon: evolves from Eevee with two Evo Crystals
+Flareon: evolves from Eevee with two Evo Crystals
+Bellossom: evolves from Gloom with an Evo Crystal
+Politoed: evolves from Poliwhirl with an Evo Crystal
+Sunflora: evolves from Sunkern with an Evo Crystal
+Espeon: evolves from Eevee with two Evo Crystals
+Umbreon: evolves from Eevee with two Evo Crystals
+Slowking: evolves from Slowpoke with an Evo Crystal
+Steelix: evolves from Onix with an Evo Crystal
+Scizor: evolves from Scyther with an Evo Crystal
+Kingdra: evolves from Seadra with an Evo Crystal
+Porygon2: evolves from Porygon with an Evo Crystal
+Ludicolo: evolves from Lombre with an Evo Crystal
+Shiftry: evolves from Nuzleaf with an Evo Crystal
+Delcatty: evolves from Skitty with an Evo Crystal
+Milotic: evolves from Feebas with an Evo Crystal
+Huntail: evolves from Clamperl with an Evo Crystal
+Gorebyss: evolves from Clamperl with an Evo Crystal

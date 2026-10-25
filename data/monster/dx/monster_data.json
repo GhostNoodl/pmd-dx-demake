@@ -1302,7 +1302,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_THUNDERSTONE"
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             26,
@@ -1539,7 +1539,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_MOON_STONE"
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             31,
@@ -1683,7 +1683,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_MOON_STONE"
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             34,
@@ -1783,7 +1783,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_MOON_STONE"
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             36,
@@ -1879,7 +1879,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_FIRE_STONE"
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             38,
@@ -1980,7 +1980,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_MOON_STONE"
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             40,
@@ -2223,7 +2223,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_LEAF_STONE"
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             45,
@@ -2895,7 +2895,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_FIRE_STONE"
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             59,
@@ -3045,7 +3045,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_WATER_STONE"
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             62,
@@ -3190,11 +3190,10 @@
         "canThrowItems": true,
         "preEvolution": {
             "evolveFrom": "MONSTER_KADABRA",
-            "evolveType": "EVOLVE_TYPE_LINK_CABLE"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 0,
-            "additionalRequirement": 4
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             65,
@@ -3335,11 +3334,10 @@
         "canThrowItems": true,
         "preEvolution": {
             "evolveFrom": "MONSTER_MACHOKE",
-            "evolveType": "EVOLVE_TYPE_LINK_CABLE"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 0,
-            "additionalRequirement": 4
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             68,
@@ -3486,7 +3484,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_LEAF_STONE"
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             71,
@@ -3732,11 +3730,10 @@
         "canThrowItems": true,
         "preEvolution": {
             "evolveFrom": "MONSTER_GRAVELER",
-            "evolveType": "EVOLVE_TYPE_LINK_CABLE"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 0,
-            "additionalRequirement": 4
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             76,
@@ -4461,7 +4458,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_WATER_STONE"
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             91,
@@ -4608,11 +4605,10 @@
         "canThrowItems": true,
         "preEvolution": {
             "evolveFrom": "MONSTER_HAUNTER",
-            "evolveType": "EVOLVE_TYPE_LINK_CABLE"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 0,
-            "additionalRequirement": 4
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             94,
@@ -5037,7 +5033,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_LEAF_STONE"
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             103,
@@ -5899,7 +5895,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_WATER_STONE"
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             121,
@@ -6511,7 +6507,8 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_WATER_STONE"
+            "mainRequirement": "ITEM_G_MACHINE_6",
+            "additionalRequirement": 14
         },
         "dexInternal": [
             134,
@@ -6561,7 +6558,8 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_THUNDERSTONE"
+            "mainRequirement": "ITEM_G_MACHINE_6",
+            "additionalRequirement": 14
         },
         "dexInternal": [
             135,
@@ -6612,7 +6610,8 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_FIRE_STONE"
+            "mainRequirement": "ITEM_G_MACHINE_6",
+            "additionalRequirement": 14
         },
         "dexInternal": [
             136,
@@ -8820,7 +8819,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_SUN_STONE"
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             182,
@@ -9027,8 +9026,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_KINGS_ROCK",
-            "additionalRequirement": 4
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             186,
@@ -9312,7 +9310,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_SUN_STONE"
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             192,
@@ -9504,11 +9502,11 @@
         "canThrowItems": true,
         "preEvolution": {
             "evolveFrom": "MONSTER_EEVEE",
-            "evolveType": "EVOLVE_TYPE_IQ"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 100,
-            "additionalRequirement": 8
+            "mainRequirement": "ITEM_G_MACHINE_6",
+            "additionalRequirement": 14
         },
         "dexInternal": [
             196,
@@ -9555,11 +9553,11 @@
         "canThrowItems": true,
         "preEvolution": {
             "evolveFrom": "MONSTER_EEVEE",
-            "evolveType": "EVOLVE_TYPE_IQ"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 100,
-            "additionalRequirement": 9
+            "mainRequirement": "ITEM_G_MACHINE_6",
+            "additionalRequirement": 14
         },
         "dexInternal": [
             197,
@@ -9656,8 +9654,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_KINGS_ROCK",
-            "additionalRequirement": 4
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             199,
@@ -11177,8 +11174,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_METAL_COAT",
-            "additionalRequirement": 4
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             208,
@@ -11371,8 +11367,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_METAL_COAT",
-            "additionalRequirement": 4
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             212,
@@ -12229,8 +12224,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_DRAGON_SCALE",
-            "additionalRequirement": 4
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             230,
@@ -12374,8 +12368,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_UPGRADE",
-            "additionalRequirement": 4
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             233,
@@ -14231,7 +14224,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_WATER_STONE"
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             272,
@@ -14380,7 +14373,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_LEAF_STONE"
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             275,
@@ -15624,7 +15617,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_MOON_STONE"
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             301,
@@ -17937,11 +17930,10 @@
         "canThrowItems": true,
         "preEvolution": {
             "evolveFrom": "MONSTER_FEEBAS",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 1,
-            "additionalRequirement": 10
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             350,
@@ -18867,8 +18859,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_DEEPSEATOOTH",
-            "additionalRequirement": 4
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             367,
@@ -18919,8 +18910,7 @@
             "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": "ITEM_DEEPSEASCALE",
-            "additionalRequirement": 4
+            "mainRequirement": "ITEM_G_MACHINE_6"
         },
         "dexInternal": [
             368,
@@ -20357,10 +20347,10 @@
         "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_ROSELIA",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 30
+            "mainRequirement": "ITEM_G_MACHINE_6"
         }
     },
     {
@@ -20408,10 +20398,10 @@
         "dialogueSprites": "0b0001000000000011",
         "preEvolution": {
             "evolveFrom": "MONSTER_AIPOM",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 33
+            "mainRequirement": "ITEM_G_MACHINE_6"
         }
     },
     {
@@ -20460,10 +20450,10 @@
         "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_MISDREAVUS",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 30
+            "mainRequirement": "ITEM_G_MACHINE_6"
         }
     },
     {
@@ -20512,10 +20502,10 @@
         "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_MURKROW",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 30
+            "mainRequirement": "ITEM_G_MACHINE_6"
         }
     },
     {
@@ -20790,10 +20780,10 @@
         "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_SNEASEL",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 33
+            "mainRequirement": "ITEM_G_MACHINE_6"
         }
     },
     {
@@ -20844,10 +20834,10 @@
         "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_MAGNETON",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 33
+            "mainRequirement": "ITEM_G_MACHINE_6"
         }
     },
     {
@@ -20896,10 +20886,10 @@
         "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_LICKITUNG",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 33
+            "mainRequirement": "ITEM_G_MACHINE_6"
         }
     },
     {
@@ -20948,10 +20938,10 @@
         "dialogueSprites": "0b0000000010000001",
         "preEvolution": {
             "evolveFrom": "MONSTER_RHYDON",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 50
+            "mainRequirement": "ITEM_G_MACHINE_6"
         }
     },
     {
@@ -20999,10 +20989,10 @@
         "dialogueSprites": "0b0000000000000001",
         "preEvolution": {
             "evolveFrom": "MONSTER_TANGELA",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 33
+            "mainRequirement": "ITEM_G_MACHINE_6"
         }
     },
     {
@@ -21050,10 +21040,10 @@
         "dialogueSprites": "0b0000101000000111",
         "preEvolution": {
             "evolveFrom": "MONSTER_ELECTABUZZ",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 50
+            "mainRequirement": "ITEM_G_MACHINE_6"
         }
     },
     {
@@ -21102,10 +21092,10 @@
         "dialogueSprites": "0b0001000000000001",
         "preEvolution": {
             "evolveFrom": "MONSTER_MAGMAR",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 50
+            "mainRequirement": "ITEM_G_MACHINE_6"
         }
     },
     {
@@ -21155,10 +21145,10 @@
         "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_TOGETIC",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 30
+            "mainRequirement": "ITEM_G_MACHINE_6"
         }
     },
     {
@@ -21208,10 +21198,10 @@
         "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_YANMA",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 33
+            "mainRequirement": "ITEM_G_MACHINE_6"
         }
     },
     {
@@ -21259,10 +21249,11 @@
         ],
         "preEvolution": {
             "evolveFrom": "MONSTER_EEVEE",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 30
+            "mainRequirement": "ITEM_G_MACHINE_6",
+            "additionalRequirement": 14
         }
     },
     {
@@ -21310,10 +21301,11 @@
         ],
         "preEvolution": {
             "evolveFrom": "MONSTER_EEVEE",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 30
+            "mainRequirement": "ITEM_G_MACHINE_6",
+            "additionalRequirement": 14
         }
     },
     {
@@ -21364,10 +21356,10 @@
         "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_GLIGAR",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 33
+            "mainRequirement": "ITEM_G_MACHINE_6"
         }
     },
     {
@@ -21416,10 +21408,10 @@
         "dialogueSprites": "0b0000000000001101",
         "preEvolution": {
             "evolveFrom": "MONSTER_PILOSWINE",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 33
+            "mainRequirement": "ITEM_G_MACHINE_6"
         }
     },
     {
@@ -21468,10 +21460,10 @@
         "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_PORYGON2",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 50
+            "mainRequirement": "ITEM_G_MACHINE_6"
         }
     },
     {
@@ -21521,10 +21513,10 @@
         "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_KIRLIA",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 30
+            "mainRequirement": "ITEM_G_MACHINE_6"
         }
     },
     {
@@ -21574,10 +21566,10 @@
         "dialogueSprites": "0b0000000000000101",
         "preEvolution": {
             "evolveFrom": "MONSTER_NOSEPASS",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 33
+            "mainRequirement": "ITEM_G_MACHINE_6"
         }
     },
     {
@@ -21625,10 +21617,10 @@
         "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_DUSCLOPS",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 50
+            "mainRequirement": "ITEM_G_MACHINE_6"
         }
     },
     {
@@ -21677,10 +21669,10 @@
         "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_SNORUNT",
-            "evolveType": "EVOLVE_TYPE_LEVEL"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 30
+            "mainRequirement": "ITEM_G_MACHINE_6"
         }
     },
     {
@@ -21728,10 +21720,11 @@
         ],
         "preEvolution": {
             "evolveFrom": "MONSTER_EEVEE",
-            "evolveType": "EVOLVE_TYPE_IQ"
+            "evolveType": "EVOLVE_TYPE_ITEM"
         },
         "evolutionRequirements": {
-            "mainRequirement": 200
+            "mainRequirement": "ITEM_G_MACHINE_6",
+            "additionalRequirement": 14
         }
     }
 ]

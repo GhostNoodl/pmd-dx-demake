@@ -48,6 +48,9 @@ enum
     LUMINOUS_CAVE_LACK_IQ,
     LUMINOUS_CAVE_LACK_ITEM,
     LUMINOUS_CAVE_CANT_EVOLVE_YET,
+#ifdef DX_RULES
+    LUMINOUS_CAVE_DX_CHOOSE_FORM, // DX: several forms are possible, so the player picks one
+#endif
 };
 
 enum LuminousCaveMenuActions
@@ -61,6 +64,11 @@ enum LuminousCaveMenuActions
 };
 
 static EWRAM_INIT LuminousCaveWork *sLuminousCaveWork = {NULL};
+
+#ifdef DX_RULES
+#define DX_FORM_ACTION_FIRST 0x40 // menu actions for the form choice: one per candidate
+static const u8 sDxChooseForm[] = _("Which form will you take?");
+#endif
 
 #include "data/luminous_cave.h"
 
@@ -147,6 +155,22 @@ u32 sub_80246F0(void)
         case LUMINOUS_CAVE_FINISH_NAME:
             sub_8025204();
             break;
+#ifdef DX_RULES
+        case LUMINOUS_CAVE_DX_CHOOSE_FORM: {
+            s32 menuAction;
+            if (sub_80144A4(&menuAction) == 0) {
+                EvolveStatus *status = &sLuminousCaveWork->evolveStatus;
+                if (menuAction >= DX_FORM_ACTION_FIRST && menuAction < DX_FORM_ACTION_FIRST + status->dxCandidateCount) {
+                    status->targetEvolveSpecies = status->dxCandidates[menuAction - DX_FORM_ACTION_FIRST];
+                    UpdateLuminousCaveState(LUMINOUS_CAVE_CHANGED_APPEARANCE);
+                }
+                else {
+                    UpdateLuminousCaveState(LUMINOUS_CAVE_SHALL_RETURN);
+                }
+            }
+            break;
+        }
+#endif
         case 4:
             return 3;
         default:
@@ -282,7 +306,12 @@ static void UpdateLuminousCaveDialogue(void)
             sub_8025254();
 
             if((sLuminousCaveWork->evolveStatus.evolutionConditionStatus & EVOLUTION_GOOD))
+#ifdef DX_RULES
+                sLuminousCaveWork->fallbackState = (sLuminousCaveWork->evolveStatus.dxCandidateCount > 1)
+                    ? LUMINOUS_CAVE_DX_CHOOSE_FORM : LUMINOUS_CAVE_CHANGED_APPEARANCE;
+#else
                 sLuminousCaveWork->fallbackState = LUMINOUS_CAVE_CHANGED_APPEARANCE;
+#endif
             else if(sLuminousCaveWork->evolveStatus.evolutionConditionStatus == EVOLUTION_NO_MORE)
                 sLuminousCaveWork->fallbackState = LUMINOUS_CAVE_CANT_EVOLVE_ANYMORE;
             else if(sLuminousCaveWork->evolveStatus.evolutionConditionStatus == EVOLUTION_LACK_LEVEL)
@@ -300,6 +329,23 @@ static void UpdateLuminousCaveDialogue(void)
             FadeOutBGM_(0x3c);
             CreateDialogueBoxAndPortrait(sLetUsBegin,0,0,0x105);
             break;
+#ifdef DX_RULES
+        case LUMINOUS_CAVE_DX_CHOOSE_FORM: {
+            s32 i;
+            EvolveStatus *status = &sLuminousCaveWork->evolveStatus;
+
+            MemoryFill16(sLuminousCaveWork->unk74, 0, sizeof(sLuminousCaveWork->unk74));
+            for (i = 0; i < status->dxCandidateCount; i++) {
+                sLuminousCaveWork->unk34[i].text = GetMonSpecies(status->dxCandidates[i]);
+                sLuminousCaveWork->unk34[i].menuAction = DX_FORM_ACTION_FIRST + i;
+            }
+            sLuminousCaveWork->unk34[i].text = NULL;
+            sLuminousCaveWork->unk34[i].menuAction = LUMINOUS_CAVE_CANCEL;
+            CreateMenuDialogueBoxAndPortrait(sDxChooseForm, 0, DX_FORM_ACTION_FIRST, sLuminousCaveWork->unk34,
+                sLuminousCaveWork->unk74, 4, 0, 0, 5);
+            break;
+        }
+#endif
         case LUMINOUS_CAVE_CHANGED_APPEARANCE:
             PrintColoredPokeNameToBuffer(gFormatBuffer_Names[0],sLuminousCaveWork->pokeStruct, COLOR_CYAN);
             PlaySound(0x1ff);

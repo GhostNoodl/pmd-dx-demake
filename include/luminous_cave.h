@@ -22,8 +22,13 @@ typedef struct LuminousCaveWork
     /* 0x28 */ u32 menuAction1;
     /* 0x2C */ u32 menuAction2;
     /* 0x30 */ u32 menuAction3;
+#ifdef DX_RULES
+    MenuItem unk34[10]; // dx: room for Eevee's eight forms in the form choice
+    u16 unk74[10];
+#else
     MenuItem unk34[8];
     u16 unk74[0x8];
+#endif
     MenuStruct unk84;
     u8 fillD4[0x104 - 0xD4];
     OpenedFile *unk104;
