@@ -38,6 +38,13 @@ if ! make -j"$(nproc)" modern "${make_args[@]}" > build_dxtest.log 2>&1; then
 fi
 echo "   built in $(( ($(date +%s%N) - start) / 1000000 )) ms"
 
+# DX data must not knock Red's word-aligned tables off alignment (tools/dxtest/check_align.py)
+if [[ -f pmd_red.elf ]]; then
+    python3 -I tools/dxtest/check_align.py pmd_red.elf "$elf" || { echo "== ALIGNMENT CHECK FAILED"; exit 1; }
+else
+    echo "   (no pmd_red.elf: run make compare once to enable the alignment check)"
+fi
+
 mkdir -p "$BUILDS_DIR" "$SAVES_DIR"
 cp "$rom" "$BUILDS_DIR/$rom"
 
