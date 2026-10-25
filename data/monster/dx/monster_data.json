@@ -21775,7 +21775,7 @@
     {
         "name": "MonsterNameMegaCharizardX",
         "category": "MonsterCategoryFlame",
-        "overworldPalette": 2,
+        "overworldPalette": 5,
         "bodySize": 1,
         "movementSpeed": 1,
         "dialogueSprites": "0b0001000000000111",
@@ -22047,7 +22047,7 @@
     {
         "name": "MonsterNameMegaSlowbro",
         "category": "MonsterCategoryHermitCrab",
-        "overworldPalette": 5,
+        "overworldPalette": 6,
         "bodySize": 1,
         "movementSpeed": 1,
         "types": [
@@ -23137,7 +23137,7 @@
     {
         "name": "MonsterNameMegaCamerupt",
         "category": "MonsterCategoryEruption",
-        "overworldPalette": 5,
+        "overworldPalette": 6,
         "bodySize": 1,
         "movementSpeed": 1,
         "types": [

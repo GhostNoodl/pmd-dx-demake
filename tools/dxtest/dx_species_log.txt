@@ -67,19 +67,19 @@ Milotic: evolves from Feebas with an Evo Crystal
 Huntail: evolves from Clamperl with an Evo Crystal
 Gorebyss: evolves from Clamperl with an Evo Crystal
 Mega Venusaur #455: ['TYPE_GRASS', 'TYPE_POISON'], ['ABILITY_THICK_FAT'], stages [1, 1, 2, 1] [no SpriteCollab sprite: base sprite]
-Mega Charizard X #456: ['TYPE_FIRE', 'TYPE_DRAGON'], ['ABILITY_BLAZE'], stages [2, 1, 2, 0] [no SpriteCollab sprite: base sprite]
+Mega Charizard X #456: ['TYPE_FIRE', 'TYPE_DRAGON'], ['ABILITY_BLAZE'], stages [2, 1, 2, 0]
 Mega Charizard Y #457: ['TYPE_FIRE', 'TYPE_FLYING'], ['ABILITY_DROUGHT'], stages [1, 2, 0, 1] [no SpriteCollab sprite: base sprite] [not used: base has an earlier form]
 Mega Blastoise #458: ['TYPE_WATER'], ['ABILITY_TORRENT'], stages [1, 2, 1, 0] [no SpriteCollab sprite: base sprite]
 Mega Beedrill #459: ['TYPE_BUG', 'TYPE_POISON'], ['ABILITY_SWARM'], stages [3, 0, 0, 0] +speed [no SpriteCollab sprite: base sprite]
 Mega Pidgeot #460: ['TYPE_NORMAL', 'TYPE_FLYING'], ['ABILITY_KEEN_EYE'], stages [0, 3, 0, 1] +speed [no SpriteCollab sprite: base sprite]
 Mega Alakazam #461: ['TYPE_PSYCHIC'], ['ABILITY_TRACE'], stages [0, 1, 2, 0] +speed
-Mega Slowbro #462: ['TYPE_WATER', 'TYPE_PSYCHIC'], ['ABILITY_SHELL_ARMOR'], stages [0, 1, 3, 0] [no SpriteCollab sprite: base sprite]
+Mega Slowbro #462: ['TYPE_WATER', 'TYPE_PSYCHIC'], ['ABILITY_SHELL_ARMOR'], stages [0, 1, 3, 0]
 Mega Gengar #463: ['TYPE_GHOST', 'TYPE_POISON'], ['ABILITY_SHADOW_TAG'], stages [0, 1, 1, 1] +speed
 Mega Kangaskhan #464: ['TYPE_NORMAL'], ['ABILITY_EARLY_BIRD'], stages [1, 2, 1, 1]
 Mega Pinsir #465: ['TYPE_BUG', 'TYPE_FLYING'], ['ABILITY_HYPER_CUTTER'], stages [1, 1, 1, 1] +speed [no SpriteCollab sprite: base sprite]
 Mega Gyarados #466: ['TYPE_WATER', 'TYPE_DARK'], ['ABILITY_INTIMIDATE'], stages [1, 1, 2, 1] [no SpriteCollab sprite: base sprite]
 Mega Aerodactyl #467: ['TYPE_ROCK', 'TYPE_FLYING'], ['ABILITY_ROCK_HEAD', 'ABILITY_PRESSURE'], stages [1, 1, 1, 1] +speed
-Mega Mewtwo Y #468: ['TYPE_PSYCHIC'], ['ABILITY_INSOMNIA'], stages [1, 1, 0, 1] [no SpriteCollab sprite: base sprite]
+Mega Mewtwo Y #468: ['TYPE_PSYCHIC'], ['ABILITY_INSOMNIA'], stages [1, 1, 0, 1]
 Mega Mewtwo X #469: ['TYPE_PSYCHIC', 'TYPE_FIGHTING'], ['ABILITY_PRESSURE'], stages [3, 0, 0, 0] [no SpriteCollab sprite: base sprite] [not used: base has an earlier form]
 Mega Ampharos #470: ['TYPE_ELECTRIC', 'TYPE_DRAGON'], ['ABILITY_STATIC'], stages [1, 2, 1, 1] [no SpriteCollab sprite: base sprite]
 Mega Steelix #471: ['TYPE_STEEL', 'TYPE_GROUND'], ['ABILITY_ROCK_HEAD', 'ABILITY_STURDY'], stages [2, 0, 1, 2]
@@ -87,7 +87,7 @@ Mega Scizor #472: ['TYPE_BUG', 'TYPE_STEEL'], ['ABILITY_SWARM'], stages [1, 1, 2
 Mega Heracross #473: ['TYPE_BUG', 'TYPE_FIGHTING'], ['ABILITY_SWARM', 'ABILITY_GUTS'], stages [2, 0, 2, 0] [no SpriteCollab sprite: base sprite]
 Mega Houndoom #474: ['TYPE_DARK', 'TYPE_FIRE'], ['ABILITY_EARLY_BIRD', 'ABILITY_FLASH_FIRE'], stages [0, 1, 3, 0] +speed
 Mega Tyranitar #475: ['TYPE_ROCK', 'TYPE_DARK'], ['ABILITY_SAND_STREAM'], stages [1, 0, 1, 1]
-Mega Sceptile #476: ['TYPE_GRASS', 'TYPE_DRAGON'], ['ABILITY_OVERGROW'], stages [1, 2, 1, 0] +speed [no SpriteCollab sprite: base sprite]
+Mega Sceptile #476: ['TYPE_GRASS', 'TYPE_DRAGON'], ['ABILITY_OVERGROW'], stages [1, 2, 1, 0] +speed
 Mega Blaziken #477: ['TYPE_FIRE', 'TYPE_FIGHTING'], ['ABILITY_SPEED_BOOST'], stages [1, 1, 1, 1] +speed [no SpriteCollab sprite: base sprite]
 Mega Swampert #478: ['TYPE_WATER', 'TYPE_GROUND'], ['ABILITY_SWIFT_SWIM'], stages [1, 0, 1, 1] [no SpriteCollab sprite: base sprite]
 Mega Gardevoir #479: ['TYPE_PSYCHIC', 'TYPE_FAIRY'], ['ABILITY_SYNCHRONIZE', 'ABILITY_TRACE'], stages [1, 1, 0, 1] +speed
@@ -96,17 +96,17 @@ Mega Mawile #481: ['TYPE_STEEL', 'TYPE_FAIRY'], ['ABILITY_HUGE_POWER'], stages [
 Mega Aggron #482: ['TYPE_STEEL'], ['ABILITY_STURDY', 'ABILITY_ROCK_HEAD'], stages [1, 0, 1, 1] [no SpriteCollab sprite: base sprite]
 Mega Medicham #483: ['TYPE_FIGHTING', 'TYPE_PSYCHIC'], ['ABILITY_PURE_POWER'], stages [3, 1, 1, 1] +speed
 Mega Manectric #484: ['TYPE_ELECTRIC'], ['ABILITY_INTIMIDATE'], stages [0, 1, 1, 1] +speed
-Mega Sharpedo #485: ['TYPE_WATER', 'TYPE_DARK'], ['ABILITY_ROUGH_SKIN'], stages [1, 1, 3, 2] [no SpriteCollab sprite: base sprite]
-Mega Camerupt #486: ['TYPE_FIRE', 'TYPE_GROUND'], ['ABILITY_MAGMA_ARMOR'], stages [1, 2, 2, 2] [no SpriteCollab sprite: base sprite]
+Mega Sharpedo #485: ['TYPE_WATER', 'TYPE_DARK'], ['ABILITY_ROUGH_SKIN'], stages [1, 1, 3, 2]
+Mega Camerupt #486: ['TYPE_FIRE', 'TYPE_GROUND'], ['ABILITY_MAGMA_ARMOR'], stages [1, 2, 2, 2]
 Mega Altaria #487: ['TYPE_DRAGON', 'TYPE_FAIRY'], ['ABILITY_NATURAL_CURE'], stages [2, 2, 1, 0]
 Mega Banette #488: ['TYPE_GHOST'], ['ABILITY_INSOMNIA'], stages [2, 0, 1, 1]
-Mega Absol #489: ['TYPE_DARK'], ['ABILITY_PRESSURE'], stages [1, 2, 0, 0] +speed [no SpriteCollab sprite: base sprite]
+Mega Absol #489: ['TYPE_DARK'], ['ABILITY_PRESSURE'], stages [1, 2, 0, 0] +speed
 Mega Glalie #490: ['TYPE_ICE'], ['ABILITY_INNER_FOCUS'], stages [2, 2, 0, 0] +speed
 Mega Salamence #491: ['TYPE_DRAGON', 'TYPE_FLYING'], ['ABILITY_INTIMIDATE'], stages [0, 0, 2, 0] +speed [no SpriteCollab sprite: base sprite]
 Mega Metagross #492: ['TYPE_STEEL', 'TYPE_PSYCHIC'], ['ABILITY_CLEAR_BODY'], stages [0, 0, 1, 1] +speed [no SpriteCollab sprite: base sprite]
 Mega Latias #493: ['TYPE_DRAGON', 'TYPE_PSYCHIC'], ['ABILITY_LEVITATE'], stages [1, 1, 1, 1]
 Mega Latios #494: ['TYPE_DRAGON', 'TYPE_PSYCHIC'], ['ABILITY_LEVITATE'], stages [2, 1, 1, 0]
-Mega Rayquaza #495: ['TYPE_DRAGON', 'TYPE_FLYING'], ['ABILITY_AIR_LOCK'], stages [1, 1, 0, 0] +speed [no SpriteCollab sprite: base sprite]
+Mega Rayquaza #495: ['TYPE_DRAGON', 'TYPE_FLYING'], ['ABILITY_AIR_LOCK'], stages [1, 1, 0, 0] +speed
 Mega Lucario #496: ['TYPE_FIGHTING', 'TYPE_STEEL'], ['ABILITY_INNER_FOCUS'], stages [1, 1, 1, 0] +speed
 Mega Gallade #497: ['TYPE_PSYCHIC', 'TYPE_FIGHTING'], ['ABILITY_INNER_FOCUS'], stages [1, 0, 2, 0] +speed
 Primal Kyogre #498: ['TYPE_WATER'], ['ABILITY_DRIZZLE'], stages [2, 1, 0, 1]

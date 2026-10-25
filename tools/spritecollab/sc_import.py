@@ -129,7 +129,14 @@ def main():
     by_index = {a["index"]: a for a in anims if a["index"] is not None}
     missing = [i for i in range(NUM_ANIMS) if i not in by_index]
     if missing:
-        sys.exit(f"SpriteCollab sprite lacks animation indices {missing}")
+        # a partial sprite (common for Megas): missing animations borrow Walk (index 0), or else the
+        # first one the sprite has, so the form still shows its own look
+        if not by_index:
+            sys.exit("SpriteCollab sprite has no usable animations")
+        stand_in = by_index.get(0) or by_index[min(by_index)]
+        for i in missing:
+            by_index[i] = stand_in
+        print(f"(animations {missing} borrowed from {stand_in['name']})", end=" ")
 
     def source(a):
         while a["copy"]:
