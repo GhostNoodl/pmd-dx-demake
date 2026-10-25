@@ -1,4 +1,7 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rules.h"
+#endif
 #include "globaldata.h"
 #include "dungeon_action_execution.h"
 #include "dungeon_ai_leader.h"
@@ -67,6 +70,9 @@ bool8 ExecuteEntityDungeonAction_Async(Entity *entity)
     info = GetEntInfo(entity);
     info->useHeldItem = FALSE;
     info->pickupFlag = FALSE;
+#ifdef DX_RULES
+    info->dxRegenPaused = DxActionPausesRegen(info->action.action);
+#endif
     gDungeon->unkB8 = entity;
     if (gUnknown_80F58F4[(info->action).action][0] != 0) {
         if (info->isTeamLeader) {

@@ -1,4 +1,7 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_tuning.h"
+#endif
 #include "globaldata.h"
 #include "dungeon_config.h"
 #include "math.h"
@@ -215,7 +218,11 @@ UNUSED static const s16 sUnusedConfig2 = 25;
 const s16 gIngrainHealValue = 10;
 const s16 gLeechSeedHealValue = 10;
 const s16 gOranBerryHealValue = 100;
+#ifdef DX_RULES
+const s16 gOranBerryMaxHpRiseValue = DX_ORAN_BERRY_MAX_HP_RISE;
+#else
 const s16 gOranBerryMaxHpRiseValue = 0;
+#endif
 const s16 gSitrusBerryHealValue = 100;
 const s16 gSitrusBerryMaxHpRiseValue = 2;
 const s16 gLifeSeedMaxHpRiseValue = 3;
