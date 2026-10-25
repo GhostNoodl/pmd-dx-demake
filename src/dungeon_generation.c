@@ -176,6 +176,7 @@ void GenerateFloor(void)
     sKecleonShopChance = floorProps->kecleonShopChance;
     sMonsterHouseChance = floorProps->monsterHouseChance;
 #ifdef DX_RULES
+    DxRollStrongFoe();
     if (DxRollMysteryHouse()) {
         // a Kecleon shop would rule the Monster House out
         sMonsterHouseChance = 100;

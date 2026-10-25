@@ -330,6 +330,7 @@ typedef struct EntityInfo
     /* 0x204 */ u8 shadowIndex;
 #ifdef DX_RULES
     bool8 dxRegenPaused; // used a move or item last turn (no natural regen this turn)
+    bool8 dxStrongFoe; // a Strong Foe (dx_rules.c)
 #endif
 } EntityInfo;
 

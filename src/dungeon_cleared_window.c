@@ -1,4 +1,7 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rules.h"
+#endif
 #include "globaldata.h"
 #include "dungeon_cleared_window.h"
 #include "dungeon_info.h"
@@ -14,6 +17,9 @@
 
 void ShowDungeonClearedWindow_Async(void)
 {
+#ifdef DX_RULES
+    DxMarkDungeonCleared(gDungeon->unk644.dungeonLocation.id); // DX: Strong Foes appear after a first clear
+#endif
     WindowHeader header;
     WindowTemplates windows = {
         .id = {

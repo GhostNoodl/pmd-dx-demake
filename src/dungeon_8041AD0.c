@@ -425,6 +425,10 @@ void UpdateStatusIconFlags(Entity *entity)
         (entityInfo->hitChanceStages[1] < DEFAULT_STAT_STAGE)) {
         spriteStatus = spriteStatus | STATUS_SPRITE_STAT_DOWN;
     }
+#ifdef DX_RULES
+    if (entityInfo->dxStrongFoe)
+        spriteStatus |= STATUS_SPRITE_SHIELD_YELLOW; // Strong Foe marker (DX: a yellow triangle)
+#endif
     entityInfo->statusIcons = spriteStatus;
   }
 }

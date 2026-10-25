@@ -1,6 +1,7 @@
 #include "global.h"
 #ifdef DX_RULES
 #include "dx_rules.h"
+#include "dx_tuning.h"
 #endif
 #include "globaldata.h"
 #include "dungeon_mon_spawn.h"
@@ -485,6 +486,15 @@ void SpawnWildMonsOnFloor(void)
                     LoadPokemonSprite(monSpawnInfo.species, FALSE);
                 }
 #endif
+#ifdef DX_RULES
+                else if (gDxStrongFoeSpecies != 0) {
+                    // Strong Foe: the dungeon's, above the floor's level
+                    monSpawnInfo.species = gDxStrongFoeSpecies;
+                    monSpawnInfo.level = DxMysteryHouseLevel() + DX_STRONG_FOE_LEVELS;
+                    monSpawnInfo.unk2 = 0;
+                    LoadPokemonSprite(monSpawnInfo.species, FALSE);
+                }
+#endif
                 else {
                     monSpawnInfo.species = GetRandomFloorMonsterId(0);
                     monSpawnInfo.level = 0;
@@ -496,9 +506,14 @@ void SpawnWildMonsOnFloor(void)
                 monSpawnInfo.pos.x = x;
                 monSpawnInfo.pos.y = y;
                 if (r6 || sub_806AA0C(monSpawnInfo.species, TRUE)) {
-                    if (SpawnWildMon(&monSpawnInfo, FALSE)) {
+                    Entity *spawned = SpawnWildMon(&monSpawnInfo, FALSE);
+                    if (spawned) {
                         r8 = FALSE;
 #ifdef DX_RULES
+                        if (gDxStrongFoeSpecies != 0 && monSpawnInfo.species == gDxStrongFoeSpecies) {
+                            DxMakeStrongFoe(spawned);
+                            gDxStrongFoeSpecies = 0;
+                        }
                         if (monSpawnInfo.species == gDxMysteryHouseSpecies) {
                             gDxMysteryHouseSpawned = gDxMysteryHouseSpecies;
                             gDxMysteryHouseSpecies = 0;
@@ -791,6 +806,9 @@ static void InitEntityFromSpawnInfo(bool8 a0, Entity *entity, struct MonSpawnInf
     ZeroOutItem(&entInfo->heldItem);
     entInfo->unk64 = 0;
     entInfo->statusIcons = 0;
+#ifdef DX_RULES
+    entInfo->dxStrongFoe = FALSE;
+#endif
     entInfo->unk164 = 0xFF;
     entInfo->unk165 = 0xFF;
     entInfo->expGainedInTurn = 0;
