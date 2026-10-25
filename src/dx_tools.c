@@ -480,6 +480,11 @@ const u32 gDxOffInfoLevel = offsetof(EntityInfo, level);
 const u32 gDxOffCanRecruit = offsetof(Dungeon, unk644.canRecruit);
 const u32 gDxOffInfoStrongFoe = offsetof(EntityInfo, dxStrongFoe);
 const u32 gDxOffInfoShiny = offsetof(EntityInfo, dxShiny);
+#include "exclusive_pokemon.h"
+const u32 gDxOffCutsceneFlags = offsetof(ExclusivePokemonData, cutsceneFlags);
+const u32 gDxOffFloorEnd = offsetof(Dungeon, unk2);
+const u32 gDxOffFloorEvent = offsetof(Dungeon, unk4);
+const u32 gDxOffInfoBehavior = offsetof(EntityInfo, monsterBehavior);
 const u32 gDxOffInfoSleep = offsetof(EntityInfo, sleepClassStatus);
 const u32 gDxOffInfoFrozen = offsetof(EntityInfo, frozenClassStatus);
 #endif // DX_DEBUG

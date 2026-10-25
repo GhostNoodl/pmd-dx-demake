@@ -70,4 +70,6 @@
 #define DX_STRONG_FOE_EXP_MULTIPLIER 3
 #define DX_SHINY_CHANCE 10 // % a Strong Foe of a shiny species is shiny (ESTIMATED)
 
+#define DX_BOSS_REMATCH_LEVEL 40 // level of a post-game boss rematch (ESTIMATED)
+
 #endif // GUARD_DX_TUNING_H
