@@ -41,6 +41,8 @@ bool8 DxDungeonHasStrongFoe(u8 dungeon);
 extern bool8 gDxForcePostgame;
 bool8 DxPostgame(void);
 bool8 DxBossRematch(s16 species);
+enum { DX_BOSS_NONE, DX_BOSS_STORY, DX_BOSS_LEGENDARY };
+u8 DxPostgameBossKind(u8 monsterBehavior);
 void DxBriefingSummary(u8 dungeonIndex, u8 *buffer);
 struct DxShiny { s16 species; u8 palette; };
 s32 DxShinyPalette(s32 species);

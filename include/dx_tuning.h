@@ -72,4 +72,6 @@
 
 #define DX_BOSS_REMATCH_LEVEL 40 // level of a post-game boss rematch (ESTIMATED)
 
+#define DX_BOSS_FALLBACK_RECRUIT_RATE 100 // per mille, a post-game story boss Red never lets join (ESTIMATED)
+
 #endif // GUARD_DX_TUNING_H

@@ -84,6 +84,9 @@ bool8 TryRecruitMonster(Entity *attacker, Entity *target)
     EntityInfo *targetInfo = GetEntInfo(target);
     s32 foundIndex = -1;
     s32 size = GetBodySize(targetInfo->apparentID);
+#ifdef DX_RULES
+    u8 bossKind;
+#endif
 
     if (gDungeon->fixedRoomNumber != FIXED_ROOM_FROSTY_GROTTO_ARTICUNO
         && gDungeon->fixedRoomNumber != FIXED_ROOM_MT_BLAZE_PEAK_MOLTRES
@@ -154,6 +157,11 @@ bool8 TryRecruitMonster(Entity *attacker, Entity *target)
     sub_806F910();
     rand = DungeonRandInt(1000);
     recruitRate = GetRecruitRate(targetInfo->id);
+#ifdef DX_RULES
+    bossKind = DxPostgameBossKind(targetInfo->monsterBehavior);
+    if (bossKind == DX_BOSS_STORY && recruitRate <= 0)
+        recruitRate = DX_BOSS_FALLBACK_RECRUIT_RATE;
+#endif
     if (recruitRate == -999)
         return FALSE;
 
@@ -168,12 +176,14 @@ bool8 TryRecruitMonster(Entity *attacker, Entity *target)
         recruitRate += DX_RQ_SQUAD_UP_BONUS * DxTeamSize();
     if (gDxForceRecruit) // tests
         rand = 0;
+    if (bossKind == DX_BOSS_LEGENDARY) // beaten in its boss room: it always offers to join
+        rand = 0;
 #endif
     if (rand >= recruitRate)
         return FALSE;
 #ifdef DX_RULES
-    // DX: it joins if you give it an Apple
-    if (!DxGiveRecruitApple(target))
+    // DX: it joins if you give it an Apple (a defeated legendary needs none)
+    if (bossKind != DX_BOSS_LEGENDARY && !DxGiveRecruitApple(target))
         return FALSE;
 #endif
 

@@ -1,0 +1,93 @@
+#rom debug
+#save after-first-dungeon
+# DX post-game legendary recruiting: Zapdos beaten in its Mt. Thunder Peak room (forced post-game) always offers to join, no Apple needed
+mash START sMainMenu 4 != 0 3000
+write gDxForcePostgame 1 1
+write gDxTestSeed 4 99991
+wait 60
+press UP
+press A
+wait 30
+press A
+wait 30
+press UP
+press UP
+press UP
+press UP
+press UP
+press UP
+wait 10
+expect *sDxWarp+0xB0 4 == 6
+press A
+wait 30
+press UP
+press UP
+wait 10
+expect *sDxWarp+0xB0 4 == 3
+press A
+mash A gDungeon 4 != 0 1800
+wait 200
+shot 1_arrive
+# through Zapdos' post-story scene
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot 2_fight
+expect ***gDungeon+@gDxOffWildPokemon+@gDxOffEntityInfo+@gDxOffInfoId 2 == 145
+# what a post-game save has: Mt. Thunder Peak story fight done (cutscene flags 4-5), recruiting on.
+# No Apple in the toolbox and no forced roll: a beaten legendary always offers to join
+write *gExclusiveMonPtr+@gDxOffCutsceneFlags 1 63
+write *gDungeon+@gDxOffCanRecruit 1 1
+write ***gDungeon+@gDxOffWildPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 999
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMaxHP 2 999
+write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 999
+write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoMaxHP 2 999
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!2 2 63
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!4 1 40
+# the hit, "wants to join" (Yes), "joined the team": 9 presses to the nickname question
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot 3_joined
+expect ***gDungeon+@gDxOffTeamPokemon!8+@gDxOffEntityInfo+@gDxOffInfoId 2 == 145
+expect *gDungeon+@gDxOffFloorEnd 1 == 1
+# "Give it a nickname?" No
+press DOWN
+wait 10
+press A
+mash A gDungeon 4 == 0 3000
+wait 120
+shot 4_dungeon_over
