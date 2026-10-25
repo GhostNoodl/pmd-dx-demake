@@ -6,6 +6,7 @@
 #include "code_8099360.h"
 #include "debug_menu1.h"
 #include "ds_menus.h"
+#include "dx_warp.h"
 #include "friend_rescue.h"
 #include "game_options.h"
 #include "input.h"
@@ -122,6 +123,11 @@ void SetUpMenu(void)
         case MENU_DEBUG:
             CreateDebugMenu();
             break;
+#ifdef DX_DEBUG
+        case MENU_DEBUG_DUNGEON:
+            CreateDxWarpMenu();
+            break;
+#endif
     }
 
     sMainMenu->currMenu = sMainMenu->nextMenu;
@@ -202,6 +208,11 @@ s32 UpdateMenu(void)
         case MENU_DEBUG:
             nextMenu = UpdateDebugMenu();
             break;
+#ifdef DX_DEBUG
+        case MENU_DEBUG_DUNGEON:
+            nextMenu = UpdateDxWarpMenu();
+            break;
+#endif
     }
 
     if (nextMenu != MENU_NO_SCREEN_CHANGE)
@@ -269,6 +280,11 @@ void CleanUpMenu(void)
         case MENU_DEBUG:
             DeleteDebugMenu();
             break;
+#ifdef DX_DEBUG
+        case MENU_DEBUG_DUNGEON:
+            DeleteDxWarpMenu();
+            break;
+#endif
     }
 
     sMainMenu->lastMenu = sMainMenu->nextMenu;

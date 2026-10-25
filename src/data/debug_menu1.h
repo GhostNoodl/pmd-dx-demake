@@ -6,6 +6,26 @@ static const WindowTemplate sUnknown_80E7D40 = {
     0, 0,
     NULL
 };
+#ifdef DX_DEBUG
+// dx: the retail game dropped the screens behind Field/Field Map/Field Script/
+// Debug Menu (choosing them soft-locks), so only our own tools are listed.
+// MENU_DEBUG_MENU_DUNGEONS now opens the dx Warp screen.
+static const WindowTemplate sUnknown_80E7D58 = {
+    0,
+    3,
+    2, 2,
+    9, 5,
+    5, 0,
+    NULL
+};
+
+static const MenuItem sDebugMenuItems[] = {
+    {_("Warp"), MENU_DEBUG_MENU_DUNGEONS},
+    {_("Storage"), MENU_DEBUG_MENU_STORAGE},
+    {_("h-open"), MENU_DEBUG_MENU_H_OPEN},
+    {NULL, 10},
+};
+#else
 static const WindowTemplate sUnknown_80E7D58 = {
     0,
     3,
@@ -25,3 +45,4 @@ static const MenuItem sDebugMenuItems[] = {
     {_("h-open"), MENU_DEBUG_MENU_H_OPEN},
     {NULL, 10},
 };
+#endif // DX_DEBUG

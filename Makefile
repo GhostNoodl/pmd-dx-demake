@@ -155,6 +155,10 @@ MID_BUILDDIR = $(BUILD_DIR)/$(MID_SUBDIR)
 
 C_SRCS_IN := $(wildcard $(C_SUBDIR)/*.c $(C_SUBDIR)/*/*.c $(C_SUBDIR)/*/*/*.c)
 C_SOURCES := $(foreach src,$(C_SRCS_IN),$(if $(findstring .inc.c,$(src)),,$(src)))
+# dx: even an empty object shifts the link layout, so dx tools only exist in DX_DEBUG builds
+ifneq ($(DX_DEBUG),1)
+  C_SOURCES := $(filter-out $(C_SUBDIR)/dx_%.c,$(C_SOURCES))
+endif
 ASM_SOURCES := $(wildcard asm/*.s data/*.s)
 C_ASM_SOURCES := $(wildcard src/*.s)
 SONG_SRCS := $(wildcard sound/songs/*.s)

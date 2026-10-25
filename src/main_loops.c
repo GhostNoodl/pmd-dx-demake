@@ -20,6 +20,7 @@
 #include "decompress_at.h"
 #include "def_filearchives.h"
 #include "dungeon_info.h"
+#include "dx_warp.h"
 #include "event_flag.h"
 #include "exclusive_pokemon.h"
 #include "friend_area.h"
@@ -567,6 +568,23 @@ static u32 RunGameMode_Async(u32 a0)
         struct WorldMapSetupStruct worldMapSetup;
         DungeonSetupStruct dungeonSetup;
         s16 scriptDungeon;
+#ifdef DX_DEBUG
+        s32 dxWarpFloor;
+
+        // dx Warp: enter the chosen dungeon/floor directly, the same way the
+        // world map does, but without the pre-dungeon save to the cartridge
+        if (DxTakePendingWarp(&scriptDungeon, &dxWarpFloor)) {
+            dungeonSetup.info.sub0.unkD = 0;
+            dungeonSetup.info.sub0.unkC = 0;
+            MemoryFill8(&dungeonSetup.info.mon, 0, sizeof(dungeonSetup.info.mon));
+            dungeonSetup.info.mon.speciesNum = 0;
+            sub_80990EC(&dungeonSetup.info, scriptDungeon);
+            dungeonSetup.info.sub0.unk0.floor = dxWarpFloor;
+            SetScriptVarValue(NULL, DUNGEON_ENTER, scriptDungeon);
+            r5 = 7;
+            goto dx_warp_run_dungeon;
+        }
+#endif
 
         if (mode == STARTMODE_FRIEND_AREAS) {
             u8 friendAreaId = MapIdToFriendAreaId(GetScriptVarValue(NULL,GROUND_ENTER));
@@ -806,6 +824,9 @@ static u32 RunGameMode_Async(u32 a0)
                 }
             }
 
+#ifdef DX_DEBUG
+dx_warp_run_dungeon:
+#endif
             sMainLoopsUnk = MAINLOOPS_UNK_1;
             SetFileSystemUnk(FILESYSTEM_UNK_3);
             dungeonSetup.unk0 = 1;

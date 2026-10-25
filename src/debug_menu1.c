@@ -76,20 +76,6 @@ u32 UpdateDebugMenu(void)
     if (sub_8012FD8(&sDebugMenu->unk0[0]) == 0)
         sub_8013114(&sDebugMenu->unk0[0], &debugMenuAction);
 
-#ifdef DX_DEBUG
-    // Dungeons/Field/Field Map/Field Script/Debug Menu lead to screens that
-    // the retail game no longer contains; bounce back to the main menu instead.
-    switch (debugMenuAction) {
-        case MENU_DEBUG_MENU_DUNGEONS:
-        case MENU_DEBUG_MENU_FIELD:
-        case MENU_DEBUG_MENU_FIELD_MAP:
-        case MENU_DEBUG_MENU_FIELD_SCRIPT:
-        case MENU_DEBUG_MENU_DEBUG_MENU:
-        case MENU_DEBUG_MENU_UNKNOWN_1:
-            return MENU_MAIN_SCREEN;
-    }
-#endif
-
     switch (debugMenuAction) {
         case MENU_DEBUG_MENU_DUNGEONS:
             nextMenu = MENU_DEBUG_DUNGEON;
