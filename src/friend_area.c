@@ -141,7 +141,11 @@ void WriteFriendAreaName(u8 *buffer, u8 index, bool8 printPrice)
     u8 priceBuffer[20];
 
     if (printPrice) {
+#ifdef DX_RULES
+        WriteHighDecimal(GetFriendAreaPrice(index), priceBuffer, 1); // the old Wonder Mail areas have a DX price
+#else
         WriteHighDecimal(gFriendAreaSettings[index].price, priceBuffer, 1);
+#endif
         sprintfStatic(buffer, _("%s{MOVE_X_POSITION}%c{COLOR GREEN_RAW}%s{RESET}"), gFriendAreaNames[index], 96, priceBuffer);
     }
     else
