@@ -18,6 +18,8 @@
 //       | @symbol (the u32 stored at symbol, e.g. the debug ROM's gDxOff* struct offsets), @symbol!N adds N
 // KEY: A B SELECT START RIGHT LEFT UP DOWN R L (join with + to press together)
 #include <mgba/core/core.h>
+#include <mgba/debugger/debugger.h>
+#include <mgba/internal/arm/arm.h>
 #include <mgba/core/log.h>
 #include <mgba/internal/arm/arm.h>
 #include <mgba-util/vfs.h>
@@ -115,7 +117,9 @@ static unsigned eval(const char *e)
         tmp[sizeof tmp - 1] = 0;
         char *p = strrchr(tmp, '+');
         if (p) { *p = 0; off = (p[1] == '@') ? eval(p + 1) : strtoul(p + 1, NULL, 0); }
-        return core->busRead32(core, eval(tmp)) + off;
+        // a null pointer (or one into BIOS/IO) stays 0, so writes through it can be skipped
+        unsigned at = eval(tmp), v = at >= 0x02000000 ? core->busRead32(core, at) : 0;
+        return v ? v + off : 0;
     }
     if (isdigit((unsigned char)*e))
         return strtoul(e, NULL, 0);
@@ -186,11 +190,57 @@ static uint32_t keymask(const char *k)
     return m;
 }
 
+// pinned RAM values, rewritten before every frame (pin/unpin commands)
+struct pin { char expr[128]; int size; unsigned value; };
+static struct pin pins[16];
+static int npins;
+
+static void poke(unsigned addr, int size, unsigned v)
+{
+    if (size == 1) core->busWrite8(core, addr, v);
+    else if (size == 2) core->busWrite16(core, addr, v);
+    else core->busWrite32(core, addr, v);
+}
+
+// watch EXPR: log the PC/LR of writes to one address (libmgba watchpoint), for hunting memory corruption
+static struct mDebugger dbg;
+static int watching, watchHits;
+
+static void dbg_entered(struct mDebugger *d, enum mDebuggerEntryReason reason, struct mDebuggerEntryInfo *info)
+{
+    struct ARMCore *cpu = core->cpu;
+    if (reason == DEBUGGER_ENTER_WATCHPOINT && info && watchHits++ < 40)
+        out("WATCH @%08x %08x -> %08x pc=%08x lr=%08x frame=%u\n", info->address, info->type.wp.oldValue,
+            info->type.wp.newValue, cpu->gprs[15], cpu->gprs[14], core->frameCounter(core));
+    if (reason == DEBUGGER_ENTER_WATCHPOINT && watchHits <= 40) {
+        // likely return addresses on the stack (for finding the caller)
+        int k, shown = 0;
+        for (k = 0; k < 64 && shown < 12; k++) {
+            unsigned w = core->busRead32(core, cpu->gprs[13] + 4 * k);
+            if ((w >> 24) == 0x08 && (w & 1)) { out("  stack+%d: %08x\n", 4 * k, w); shown++; }
+        }
+    }
+    d->state = DEBUGGER_RUNNING;
+}
+
+static void dbg_paused(struct mDebugger *d)
+{
+    d->state = DEBUGGER_RUNNING;
+}
+
 static void frames(int n, uint32_t keys)
 {
+    int i;
     core->setKeys(core, keys);
-    while (n-- > 0)
-        core->runFrame(core);
+    while (n-- > 0) {
+        for (i = 0; i < npins; i++) {
+            unsigned addr = eval(pins[i].expr);
+            if (addr >= 0x02000000) // pointer chains read 0 while their object doesn't exist
+                poke(addr, pins[i].size, pins[i].value);
+        }
+        if (watching) mDebuggerRunFrame(&dbg);
+        else core->runFrame(core);
+    }
     core->setKeys(core, 0);
 }
 
@@ -332,14 +382,55 @@ int main(int argc, char **argv)
         else if (!strcmp(cmd, "write") && n >= 4) {
             // write EXPR SIZE VALUE: poke RAM (test setup only)
             unsigned addr = eval(a), v = strtoul(c, NULL, 0);
-            int size = atoi(b);
-            if (size == 1) core->busWrite8(core, addr, v);
-            else if (size == 2) core->busWrite16(core, addr, v);
-            else core->busWrite32(core, addr, v);
+            if (addr < 0x02000000) { out("WRITE skipped: %s is a null pointer\n", a); continue; }
+            poke(addr, atoi(b), v);
             out("WRITE @%08x = %u (0x%x)\n", addr, v, v);
         }
-        else if (!strcmp(cmd, "mash") && n >= 6) {
+        else if (!strcmp(cmd, "pin") && n >= 4 && npins < 16) {
+            // pin EXPR SIZE VALUE: keep rewriting this value before every frame (EXPR re-evaluated each time)
+            snprintf(pins[npins].expr, sizeof(pins[npins].expr), "%s", a);
+            pins[npins].size = atoi(b);
+            pins[npins].value = strtoul(c, NULL, 0);
+            npins++;
+            out("PIN %s = %s\n", a, c);
+        }
+        else if (!strcmp(cmd, "dump") && n >= 2) {
+            // dump NAME: write EWRAM (256 KB) then IWRAM (32 KB) to <outdir>/NAME.bin (for diffing builds)
+            char path[512];
+            FILE *f;
+            unsigned addr;
+            snprintf(path, sizeof path, "%s/%s.bin", outdir, a);
+            f = fopen(path, "wb");
+            for (addr = 0x02000000; f && addr < 0x02040000; addr++) fputc(core->busRead8(core, addr), f);
+            for (addr = 0x03000000; f && addr < 0x03008000; addr++) fputc(core->busRead8(core, addr), f);
+            if (f) fclose(f);
+            out("DUMP %s\n", path);
+        }
+        else if (!strcmp(cmd, "watch") && n >= 2) {
+            struct mWatchpoint wp = { 0 };
+            if (!watching) {
+                memset(&dbg, 0, sizeof dbg);
+                dbg.type = DEBUGGER_CUSTOM;
+                dbg.entered = dbg_entered;
+                dbg.paused = dbg_paused;
+                mDebuggerAttach(&dbg, core);
+                dbg.state = DEBUGGER_RUNNING;
+                watching = 1;
+            }
+            wp.address = eval(a);
+            wp.segment = -1;
+            wp.type = WATCHPOINT_WRITE;
+            dbg.platform->setWatchpoint(dbg.platform, &wp);
+            out("WATCHING %s @%08x\n", a, wp.address);
+        }
+        else if (!strcmp(cmd, "unpin")) {
+            npins = 0;
+            out("UNPIN\n");
+        }
+        else if ((!strcmp(cmd, "mash") || !strcmp(cmd, "mash?")) && n >= 6) {
             // mash KEY EXPR SIZE OP VALUE [MAXFRAMES=3000]: tap KEY every 16 frames until the comparison holds
+            // (mash? is the same, but running out of frames is not a failure)
+            int soft = cmd[4] == '?';
             char f[32] = "";
             int size = atoi(c), max = 3000, i = 0, ok = 0;
             long want = strtol(e, NULL, 0), v = 0;
@@ -353,8 +444,8 @@ int main(int argc, char **argv)
                 frames(12, 0);
                 i += 16;
             }
-            if (!ok) failures++;
-            out("%s line %d: mash %s until %s %s %ld -> %ld after %d frames\n", ok ? "PASS" : "FAIL", lineno, a, b, d, want, v, i);
+            if (!ok && !soft) failures++;
+            out("%s line %d: mash %s until %s %s %ld -> %ld after %d frames\n", ok ? "PASS" : soft ? "SKIP" : "FAIL", lineno, a, b, d, want, v, i);
         }
         else { out("ERROR line %d: bad command: %s\n", lineno, line); failures++; }
     }
