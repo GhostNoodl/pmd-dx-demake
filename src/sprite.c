@@ -437,6 +437,12 @@ static void RegisterSpriteParts_80052BC(const ax_sprite *spritesPtr)
         sUnknown_203B074->byteCount = spritesPtr->byteCount;
         sUnknown_203B074->src = spritesPtr->gfx;
         sUnknown_203B074->dest = sCharMemCursor;
+#ifdef DX_LZ_MON
+        // dx: negative byteCount = LZ77-compressed frame; real size is in the header
+        if (spritesPtr->byteCount < 0)
+            sCharMemCursor += *(const u32 *)spritesPtr->gfx >> 8;
+        else
+#endif
         sCharMemCursor += spritesPtr->byteCount;
         sUnknown_203B074++;
         spritesPtr++;
@@ -449,6 +455,11 @@ void sub_8005304(void)
     unkStruct_20266B0 *s;
 
     for (s = &sUnknown_20266B0[0]; s < sUnknown_203B074; s++) {
+#ifdef DX_LZ_MON
+        if (s->src != NULL && s->byteCount < 0)
+            LZ77UnCompVram(s->src, s->dest);
+        else
+#endif
         if (s->src != NULL)
             CpuCopy(s->dest, s->src, s->byteCount);
         else

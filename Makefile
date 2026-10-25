@@ -117,6 +117,11 @@ else
   ifeq ($(DX_DEBUG),1)
     CPPFLAGS += -DDX_DEBUG=1
   endif
+  # dx C3: monster sprite frames stored LZ77-compressed (decompressed on upload)
+  DX_LZ_MON ?= 1
+  ifeq ($(DX_LZ_MON),1)
+    CPPFLAGS += -DDX_LZ_MON=1
+  endif
 endif
 
 #### Files ####
@@ -279,6 +284,22 @@ define scaninc
 		test -n "$$paths" && echo "$$paths" | xargs printf "\n%s:" >> $@; \
 		echo >> $@; )
 endef
+
+ifeq ($(MODERN)$(DX_LZ_MON),11)
+# dx C3: point monster frame INCBINs at .4bpp.lz files and mark their size negative
+# (= compressed; the real size is in the LZ77 header). Done on the preprocessed text
+# so the 423 src/data/ax headers stay untouched.
+MON_GFX_LZ := $(patsubst %.png,%.4bpp.lz,$(wildcard graphics/ax/mon/*/*.png))
+MON_GFX_OBJS := $(filter $(C_BUILDDIR)/monster_gfx%.o,$(C_OBJECTS))
+$(MON_GFX_OBJS): $(C_BUILDDIR)/monster_gfx%.o: $(C_SUBDIR)/monster_gfx%.c $(MON_GFX_LZ)
+	@$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/monster_gfx$*.i
+	@sed -i -E -f tools/dxtest/lz_mon.sed $(C_BUILDDIR)/monster_gfx$*.i
+	@$(PREPROC) $(C_BUILDDIR)/monster_gfx$*.i charmap.txt | $(CC1) $(CC1FLAGS) -o $(C_BUILDDIR)/monster_gfx$*.s
+	@echo -e ".text\n\t.align\t2, 0\n" >> $(C_BUILDDIR)/monster_gfx$*.s
+	$(AS) $(ASFLAGS) -o $@ $(C_BUILDDIR)/monster_gfx$*.s
+
+$(MON_GFX_LZ): %.4bpp.lz: %.4bpp ; @$(GBAGFX) $< $@
+endif
 
 $(C_BUILDDIR)/%.o: $(C_SUBDIR)/%.c
 	@$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/$*.i
