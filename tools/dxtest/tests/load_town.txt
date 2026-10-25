@@ -1,0 +1,19 @@
+#rom modern
+#save after-first-dungeon
+# Smoke: Continue from the checkpoint and reach the overworld (ground mode)
+mash START sMainMenu 4 != 0 3000
+wait 60
+expect *sMainMenu+4 4 == 1
+shot 1_main_menu
+# Continue -> load screen -> confirm
+press A
+wait 120
+shot 2_load_screen
+# Yes/No defaults to No
+press UP
+press A
+waitfor sMainLoopsUnk 4 == 2 1200
+wait 900
+shot 3_ground
+expect sMainLoopsUnk 4 == 2
+expect gDungeon 4 == 0

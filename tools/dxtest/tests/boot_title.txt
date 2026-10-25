@@ -1,0 +1,7 @@
+#rom modern
+#save -
+# Smoke: fresh boot (no save) reaches the main menu with New Game selected
+mash START sMainMenu 4 != 0 3000
+wait 60
+expect *sMainMenu+4 4 == 1
+shot main_menu
