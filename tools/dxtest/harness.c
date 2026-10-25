@@ -155,6 +155,8 @@ static unsigned eval(const char *e)
 
 static unsigned rd(unsigned addr, int size)
 {
+    if (addr < 0x02000000) // through a null pointer (BIOS/IO): read as 0
+        return 0;
     if (size == 1) return core->busRead8(core, addr);
     if (size == 2) return core->busRead16(core, addr);
     return core->busRead32(core, addr);

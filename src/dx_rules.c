@@ -170,6 +170,8 @@ EWRAM_DATA bool8 gDxMysteryHouseFloor = FALSE;
 // tests: force the roll, and record which newcomer actually spawned
 EWRAM_DATA bool8 gDxForceMysteryHouse = FALSE;
 EWRAM_DATA s16 gDxMysteryHouseSpawned = 0;
+// tests: the next recruit rolls always succeed
+EWRAM_DATA bool8 gDxForceRecruit = FALSE;
 
 // Called as a floor is generated: TRUE forces a Monster House, whose first occupant is the newcomer
 bool8 DxRollMysteryHouse(void)
