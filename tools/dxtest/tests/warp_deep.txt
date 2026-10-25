@@ -30,9 +30,9 @@ wait 10
 shot 2_pick_floor
 expect *sDxWarp+0xB0 4 == 21
 press A
-waitfor *gDungeon+0x1CEC8 4 > 0 1800
+mash A gDungeon 4 != 0 1800
 wait 600
 shot 3_in_dungeon
 expect *gDungeon+0x644 1 == 15
 expect *gDungeon+0x645 1 == 21
-read floorCount *gDungeon+0x1CEC8 4
+read floorCount *gDungeon+0x1D3D0 4

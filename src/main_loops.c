@@ -571,8 +571,8 @@ static u32 RunGameMode_Async(u32 a0)
 #ifdef DX_DEBUG
         s32 dxWarpFloor;
 
-        // dx Warp: enter the chosen dungeon/floor directly, the same way the
-        // world map does, but without the pre-dungeon save to the cartridge
+        // dx Warp: enter the chosen dungeon/floor directly, the same way the world
+        // map does, including the pre-dungeon save, so quicksave/resume behave normally
         if (DxTakePendingWarp(&scriptDungeon, &dxWarpFloor)) {
             dungeonSetup.info.sub0.unkD = 0;
             dungeonSetup.info.sub0.unkC = 0;
@@ -581,8 +581,11 @@ static u32 RunGameMode_Async(u32 a0)
             sub_80990EC(&dungeonSetup.info, scriptDungeon);
             dungeonSetup.info.sub0.unk0.floor = dxWarpFloor;
             SetScriptVarValue(NULL, DUNGEON_ENTER, scriptDungeon);
+            SetScriptVarValue(NULL, DUNGEON_ENTER_INDEX, ScriptDungeonIDToRescueDungeonID(scriptDungeon));
+            SetScriptVarValue(NULL, START_MODE, STARTMODE_CONTINUE_QUICKSAVE);
+            SetScriptVarValue(NULL, DUNGEON_RESULT, STARTMODE_CONTINUE_QUICKSAVE);
             r5 = 7;
-            goto dx_warp_run_dungeon;
+            goto dx_warp_enter_dungeon;
         }
 #endif
 
@@ -803,6 +806,9 @@ static u32 RunGameMode_Async(u32 a0)
         }
 
         if (r5 == 7 || r5 == 8 || r5 == 9 || r5 == 10 || r5 == 0 || r5 == 2 || r5 == 3) {
+#ifdef DX_DEBUG
+dx_warp_enter_dungeon:
+#endif
             if (r5 != 0 && r5 != 2 && r5 != 3) {
                 u8 r6 = sub_8001170();
 
@@ -824,9 +830,6 @@ static u32 RunGameMode_Async(u32 a0)
                 }
             }
 
-#ifdef DX_DEBUG
-dx_warp_run_dungeon:
-#endif
             sMainLoopsUnk = MAINLOOPS_UNK_1;
             SetFileSystemUnk(FILESYSTEM_UNK_3);
             dungeonSetup.unk0 = 1;

@@ -1,0 +1,56 @@
+#rom debug
+#save after-first-dungeon
+# Party of 6 leaves a dungeon (Give Up) and is still a team of 6 at base
+mash START sMainMenu 4 != 0 3000
+wait 60
+press UP
+press A
+wait 30
+# Storage is the 6th debug menu entry
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press A
+wait 600
+shot 1_in_dungeon
+# B menu -> Others -> Quicksave or Give Up -> Give Up
+press B
+wait 30
+press DOWN
+press DOWN
+press DOWN
+press A
+wait 40
+press DOWN
+press A
+wait 40
+press DOWN
+wait 10
+shot 2_give_up
+press A
+wait 120
+shot 3_confirm
+press UP
+press A
+wait 600
+shot 3b_after_give_up
+mash B sMainMenu 4 != 0 1500
+wait 120
+shot 3c_title_after_give_up
+# giving up drops back to the title menu with the cursor on Friend Rescue: Continue -> Yes
+press UP
+press UP
+press UP
+wait 20
+shot 3d_on_continue
+press A
+wait 120
+press UP
+press A
+waitfor sMainLoopsUnk 4 == 2 1800
+wait 600
+shot 4_back_home
+expect sMainLoopsUnk 4 == 2
+expect gDungeon 4 == 0

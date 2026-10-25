@@ -500,7 +500,7 @@ UNUSED static u32 sub_808ECFC(void)
 void sub_808ED00(void)
 {
     if (GAME_VERSION == VERSION_RED) {
-        s32 team[4];
+        s32 team[MAX_TEAM_MEMBERS];
         s32 i;
         s32 length = sub_808D580(team);
 
@@ -551,7 +551,7 @@ s32 SaveRecruitedPokemon(u8 *a1, s32 a2)
     }
 
     // Team members
-    for (i = 0; i < MAX_TEAM_MEMBERS; i++) {
+    for (i = 0; i < VANILLA_TEAM_MEMBERS; i++) {
         u8 data_u8;
         if (PokemonExists(&gRecruitedPokemonRef->team[i]))
             data_u8 = 0xFF;
@@ -568,6 +568,19 @@ s32 SaveRecruitedPokemon(u8 *a1, s32 a2)
 
     // Team leader
     WriteBits(&backup, &teamLeader, 16);
+
+#if MAX_TEAM_MEMBERS > VANILLA_TEAM_MEMBERS
+    // dx: team slots past the original four
+    {
+        u16 magic = DX_SAVE_TAIL_MAGIC;
+        WriteBits(&backup, &magic, 16);
+        for (i = VANILLA_TEAM_MEMBERS; i < MAX_TEAM_MEMBERS; i++) {
+            u8 data_u8 = PokemonExists(&gRecruitedPokemonRef->team[i]) ? 0xFF : 0;
+            WriteBits(&backup, &data_u8, 1);
+            WritePoke1Bits(&backup, &gRecruitedPokemonRef->team[i]);
+        }
+    }
+#endif
 
     FinishBitSerializer(&backup);
     return backup.count;
@@ -588,7 +601,7 @@ s32 RestoreRecruitedPokemon(u8 *a1, s32 a2)
     }
 
     // Team members
-    for (i = 0; i < MAX_TEAM_MEMBERS; i++) {
+    for (i = 0; i < VANILLA_TEAM_MEMBERS; i++) {
         ReadBits(&backup, &data_u8, 1);
         ReadPoke1Bits(&backup, &gRecruitedPokemonRef->team[i]);
         if (data_u8 & 1)
@@ -608,6 +621,22 @@ s32 RestoreRecruitedPokemon(u8 *a1, s32 a2)
     ReadBits(&backup, &data_s16, 16);
     if ((u16)data_s16 < NUM_MONSTERS)
         gRecruitedPokemonRef->pokemon[data_s16].isTeamLeader = TRUE;
+
+#if MAX_TEAM_MEMBERS > VANILLA_TEAM_MEMBERS
+    // dx: team slots past the original four (absent in older saves)
+    ReadBits(&backup, &data_s16, 16);
+    for (i = VANILLA_TEAM_MEMBERS; i < MAX_TEAM_MEMBERS; i++) {
+        gRecruitedPokemonRef->team[i].flags = POKEMON_FLAG_NONE;
+        if ((u16)data_s16 != DX_SAVE_TAIL_MAGIC)
+            continue;
+        ReadBits(&backup, &data_u8, 1);
+        ReadPoke1Bits(&backup, &gRecruitedPokemonRef->team[i]);
+        if (data_u8 & 1)
+            gRecruitedPokemonRef->team[i].flags = POKEMON_FLAG_ON_TEAM | POKEMON_FLAG_EXISTS;
+        else
+            gRecruitedPokemonRef->team[i].flags = POKEMON_FLAG_NONE;
+    }
+#endif
 
     FinishBitSerializer(&backup);
     return backup.count;
@@ -677,8 +706,15 @@ s32 SavePoke2s(u8* buffer, s32 size)
     data_u8_neg1 = -1;
     data_u8_zero = 0;
 
-    for (i = 0; i < 4; i++) {
+    for (i = 0; i < MAX_TEAM_MEMBERS; i++) {
         DungeonMon* pokemon2 = &gRecruitedPokemonRef->dungeonTeam[i];
+#if MAX_TEAM_MEMBERS > VANILLA_TEAM_MEMBERS
+        if (i == VANILLA_TEAM_MEMBERS) {
+            // dx: team slots past the original four
+            u16 magic = DX_SAVE_TAIL_MAGIC;
+            WriteBits(&backup, &magic, 16);
+        }
+#endif
         WriteBits(&backup, &pokemon2->flags, 2);
 
         WriteBits(&backup, pokemon2->isTeamLeader ? &data_u8_neg1 : &data_u8_zero, 1);
@@ -718,11 +754,23 @@ s32 RestorePoke2s(u8* a1, s32 size)
 
     InitBitReader(&backup, a1, size);
 
-    for (i = 0; i < 4; i++) {
+    for (i = 0; i < MAX_TEAM_MEMBERS; i++) {
         DungeonMon* pokemon2 = &gRecruitedPokemonRef->dungeonTeam[i];
         u8 unk2;
 
         memset(pokemon2, 0, sizeof(DungeonMon));
+#if MAX_TEAM_MEMBERS > VANILLA_TEAM_MEMBERS
+        if (i == VANILLA_TEAM_MEMBERS) {
+            // dx: older saves stop after four
+            u16 magic;
+            ReadBits(&backup, &magic, 16);
+            if (magic != DX_SAVE_TAIL_MAGIC) {
+                for (; i < MAX_TEAM_MEMBERS; i++)
+                    memset(&gRecruitedPokemonRef->dungeonTeam[i], 0, sizeof(DungeonMon));
+                break;
+            }
+        }
+#endif
 
         ReadBits(&backup, &pokemon2->flags, 2);
 

@@ -1,0 +1,54 @@
+#rom debug
+#save after-first-dungeon
+# Party of 6 survives an ordinary save + power cycle (Storage recruits and saves; run it twice)
+mash START sMainMenu 4 != 0 3000
+wait 60
+press UP
+press A
+wait 30
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press A
+wait 600
+write *gRecruitedPokemonRef+0 2 3
+write *gRecruitedPokemonRef+88 2 3
+write *gRecruitedPokemonRef+176 2 3
+write *gRecruitedPokemonRef+264 2 3
+# main menu cursor is on Debug Mode, debug menu cursor back on Warp
+press A
+wait 30
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press A
+wait 600
+reset
+mash START sMainMenu 4 != 0 3000
+wait 60
+expect *gRecruitedPokemonRef+0 2 == 3
+expect *gRecruitedPokemonRef+88 2 == 3
+expect *gRecruitedPokemonRef+176 2 == 3
+expect *gRecruitedPokemonRef+264 2 == 3
+# and they all come along into a dungeon
+press UP
+press A
+wait 30
+press A
+wait 30
+press A
+wait 30
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+press B
+wait 30
+press DOWN
+press DOWN
+press A
+wait 40
+shot team_menu

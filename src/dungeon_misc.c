@@ -88,7 +88,7 @@ void LoadDungeonPokemonSprites(void)
     {
         LoadPokemonSprite(gDungeon->unk644.unk44, TRUE);
     }
-    for(index = 0; index < 4; index++)
+    for(index = 0; index < MAX_TEAM_MEMBERS; index++)
     {
         DungeonMon *ptr = &gRecruitedPokemonRef->dungeonTeam[index];
         if(DungeonMonExists(ptr))

@@ -77,6 +77,7 @@ wait 30
 press A
 wait 30
 press A
-wait 900
+mash A gDungeon 4 != 0 1800
+wait 600
 shot 7_in_dungeon
 expect *gDungeon+0x644 1 == 0

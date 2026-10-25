@@ -59,7 +59,7 @@ void InitializeRecruitedPokemon(void)
     for (index = 0; index < NUM_MONSTERS; index++)
         gRecruitedPokemonRef->pokemon[index].flags = 0;
 
-    for (index = 0; index < 4; index++)
+    for (index = 0; index < MAX_TEAM_MEMBERS; index++)
         gRecruitedPokemonRef->dungeonTeam[index].flags = 0;
 
     for (index = 0; index < MAX_TEAM_MEMBERS; index++) {
@@ -530,7 +530,7 @@ UNUSED static bool8 sub_808D6E8(void)
             count++;
         }
     }
-    if ((size_count < 6) && (count < 4)) {
+    if ((size_count < MAX_TEAM_BODY_SIZE) && (count < MAX_TEAM_MEMBERS)) {
         return 1;
     }
     return 0;

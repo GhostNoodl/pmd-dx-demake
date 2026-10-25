@@ -17,6 +17,7 @@
 // KEY: A B SELECT START RIGHT LEFT UP DOWN R L (join with + to press together)
 #include <mgba/core/core.h>
 #include <mgba/core/log.h>
+#include <mgba/internal/arm/arm.h>
 #include <mgba-util/vfs.h>
 #include <png.h>
 #include <ctype.h>
@@ -257,6 +258,29 @@ int main(int argc, char **argv)
             }
             if (!ok) failures++;
             out("%s line %d: waitfor %s %s %ld -> %ld after %d frames\n", ok ? "PASS" : "FAIL", lineno, a, c, want, v, i);
+        }
+        else if (!strcmp(cmd, "reset")) {
+            // reset: power-cycle; the cartridge save survives
+            core->reset(core);
+            out("RESET\n");
+        }
+        else if (!strcmp(cmd, "regs")) {
+            // regs: log pc/lr/sp with the nearest symbols (where is the game stuck?)
+            struct ARMCore *cpu = core->cpu;
+            unsigned r[3] = { (unsigned)cpu->gprs[15], (unsigned)cpu->gprs[14], (unsigned)cpu->gprs[13] };
+            const char *names[3] = { "pc", "lr", "sp" };
+            int k;
+            for (k = 0; k < 3; k++) {
+                const char *best = "?";
+                unsigned bestAddr = 0;
+                int j;
+                for (j = 0; j < nsyms; j++)
+                    if (syms[j].addr <= r[k] && syms[j].addr > bestAddr && (syms[j].addr >> 24) == (r[k] >> 24)) {
+                        bestAddr = syms[j].addr;
+                        best = syms[j].name;
+                    }
+                out("REG %s=%08x %s+0x%x\n", names[k], r[k], best, r[k] - bestAddr);
+            }
         }
         else if (!strcmp(cmd, "write") && n >= 4) {
             // write EXPR SIZE VALUE: poke RAM (test setup only)

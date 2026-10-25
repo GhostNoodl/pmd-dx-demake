@@ -117,6 +117,9 @@ else
   ifeq ($(DX_DEBUG),1)
     CPPFLAGS += -DDX_DEBUG=1
   endif
+  # dx: in-dungeon party size (Rescue Team DX target: 6)
+  DX_PARTY_SIZE ?= 6
+  CPPFLAGS += -DDX_PARTY_SIZE=$(DX_PARTY_SIZE)
   # dx C3: monster sprite frames stored LZ77-compressed (decompressed on upload)
   DX_LZ_MON ?= 1
   ifeq ($(DX_LZ_MON),1)

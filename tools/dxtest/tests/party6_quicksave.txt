@@ -1,0 +1,81 @@
+#rom debug
+#save after-first-dungeon
+# Party of 6 survives a quicksave + power cycle + resume
+mash START sMainMenu 4 != 0 3000
+wait 60
+press UP
+press A
+wait 30
+# Storage is the 6th debug menu entry
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press A
+wait 600
+write *gRecruitedPokemonRef+0 2 3
+write *gRecruitedPokemonRef+88 2 3
+write *gRecruitedPokemonRef+176 2 3
+write *gRecruitedPokemonRef+264 2 3
+# the main menu remembers the cursor on Debug Mode
+press A
+wait 30
+press A
+wait 30
+press A
+wait 30
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+shot 1_in_dungeon
+expect *gDungeon+0x644 1 == 0
+expect *gDungeon+0x645 1 == 1
+# fight a little
+press A 4 30
+press A 4 30
+press A 4 30
+wait 120
+shot 2_fought
+# B menu -> Others -> Quicksave or Give Up
+press B
+wait 30
+press DOWN
+press DOWN
+press DOWN
+press A
+wait 40
+press DOWN
+press A
+wait 40
+shot 3_qs_menu
+press A
+wait 40
+shot 4_qs_confirm
+wait 60
+# Yes/No defaults to No
+press UP
+press A
+wait 900
+shot 5_after_qs
+reset
+mash START sMainMenu 4 != 0 3000
+wait 60
+shot 6_title_menu
+press A
+wait 120
+shot 7_load_screen
+press UP
+press A
+waitfor sMainLoopsUnk 4 == 1 1800
+wait 600
+shot 8_resumed
+expect sMainLoopsUnk 4 == 1
+expect *gDungeon+0x644 1 == 0
+press B
+wait 30
+press DOWN
+press DOWN
+press A
+wait 40
+shot 9_team_menu
