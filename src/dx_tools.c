@@ -485,6 +485,7 @@ const u32 gDxOffCutsceneFlags = offsetof(ExclusivePokemonData, cutsceneFlags);
 const u32 gDxOffFloorEnd = offsetof(Dungeon, unk2);
 const u32 gDxOffFloorEvent = offsetof(Dungeon, unk4);
 const u32 gDxOffInfoBehavior = offsetof(EntityInfo, monsterBehavior);
+const u32 gDxOffInfoBurn = offsetof(EntityInfo, burnClassStatus);
 const u32 gDxOffInfoSleep = offsetof(EntityInfo, sleepClassStatus);
 const u32 gDxOffInfoFrozen = offsetof(EntityInfo, frozenClassStatus);
 #endif // DX_DEBUG

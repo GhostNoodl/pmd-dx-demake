@@ -74,4 +74,8 @@
 
 #define DX_BOSS_FALLBACK_RECRUIT_RATE 100 // per mille, a post-game story boss Red never lets join (ESTIMATED)
 
+#define DX_RQ_TIGHT_FORMATION_PER_MATE 10 // % less damage from wide-ranging moves per adjacent teammate (ESTIMATED)
+#define DX_RQ_TIGHT_FORMATION_MAX 30 // (ESTIMATED)
+#define DX_RQ_FORGE_A_PATH_BELLY 5 // Belly per wall broken (ESTIMATED)
+
 #endif // GUARD_DX_TUNING_H

@@ -1,6 +1,7 @@
 #include "global.h"
 #ifdef DX_RULES
 #include "dx_rules.h"
+#include "dx_rare_quality.h"
 #endif
 #include "globaldata.h"
 #include "dungeon_action_execution.h"
@@ -165,6 +166,13 @@ bool8 ExecuteEntityDungeonAction_Async(Entity *entity)
                         (!HasHeldItem(entity,ITEM_MOBILE_SCARF))) {
                         sub_804AE08(&entity->pos);
                     }
+#ifdef DX_RULES
+                    // DX Forge a Path: the wall walked into breaks, and it costs Belly
+                    else if (info->invisibleClassStatus.status != STATUS_MOBILE && !HasHeldItem(entity, ITEM_MOBILE_SCARF)
+                        && DxCanForgeAPath(entity) && sub_804AE08(&entity->pos)) {
+                        DxForgeAPathCost(entity);
+                    }
+#endif
                     bVar14 = TRUE;
                     break;
                 }

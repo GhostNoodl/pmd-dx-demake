@@ -1403,6 +1403,7 @@ void CalcDamage(Entity *attacker, Entity *target, u8 moveType, s32 movePower, s3
         dmgStruct->dmg = FP48_16_ToS32(&unkSp8);
 #ifdef DX_RULES
         dmgStruct->dmg = dmgStruct->dmg * DxQualityDamagePercent(attacker, moveId) / 100; // Rare Qualities
+        dmgStruct->dmg = dmgStruct->dmg * DxTightFormationPercent(target, moveId) / 100;
 #endif
         dmgStruct->residualDmgType = RESIDUAL_DAMAGE_REGULAR;
         if (dmgStruct->dmg == 0) {

@@ -1,0 +1,96 @@
+#rom debug
+#save after-first-dungeon
+# DX Rare Qualities Leave Half (eating a Big Apple leaves an Apple), Forge a Path (the leader walks through walls,
+# paying Belly) and Shared Happiness (curing one teammate cures another)
+mash START sMainMenu 4 != 0 3000
+write gDxTestSeed 4 99991
+# an empty toolbox, then a Big Apple (83) in slot 0
+write *gTeamInventoryRef+0 1 0
+write *gTeamInventoryRef+4 1 0
+write *gTeamInventoryRef+8 1 0
+write *gTeamInventoryRef+12 1 0
+write *gTeamInventoryRef+16 1 0
+write *gTeamInventoryRef+20 1 0
+write *gTeamInventoryRef+24 1 0
+write *gTeamInventoryRef+28 1 0
+write *gTeamInventoryRef+32 1 0
+write *gTeamInventoryRef+36 1 0
+write *gTeamInventoryRef+40 1 0
+write *gTeamInventoryRef+44 1 0
+write *gTeamInventoryRef+48 1 0
+write *gTeamInventoryRef+52 1 0
+write *gTeamInventoryRef+56 1 0
+write *gTeamInventoryRef+60 1 0
+write *gTeamInventoryRef+64 1 0
+write *gTeamInventoryRef+68 1 0
+write *gTeamInventoryRef+72 1 0
+write *gTeamInventoryRef+76 1 0
+write *gTeamInventoryRef+0 1 1
+write *gTeamInventoryRef+2 1 83
+wait 60
+press UP
+press A
+wait 30
+press A
+wait 30
+press A
+wait 30
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+shot 1_in_dungeon
+# leader (recruit slot 42) gets Leave Half (11)
+write *gRecruitedPokemonRef+3733 1 11
+press B
+wait 30
+press DOWN
+press A
+wait 40
+press A
+wait 40
+shot 2_item_menu
+# Eat
+press A
+wait 200
+shot 3_eaten
+press A
+wait 60
+shot 4_after
+# the Big Apple is gone and an Apple (82) was left
+expect *gTeamInventoryRef+0 1 != 0
+expect *gTeamInventoryRef+2 1 == 82
+# now Forge a Path (7): walk up into the wall above the room
+write *gRecruitedPokemonRef+3733 1 7
+read belly0 ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoBelly 2
+read y0 **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos!2 2
+hold UP 400
+wait 60
+shot 5_tunnel
+read belly1 ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoBelly 2
+read y1 **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos!2 2
+# it went 10+ tiles straight up through the wall, and paid much more Belly than walking does (5 per wall)
+calc climbed y0 - y1
+calc paid belly0 - belly1
+calc ten 10 + 0
+cmpreads climbed >= ten
+cmpreads paid >= ten
+# Shared Happiness (25): leader and partner poisoned; the leader eats a Pecha Berry (66) and both are cured
+write *gRecruitedPokemonRef+3733 1 25
+write *gTeamInventoryRef+2 1 66
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoBurn 1 2
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoBurn!1 1 20
+write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoBurn 1 2
+write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoBurn!1 1 20
+press B
+wait 30
+press DOWN
+press A
+wait 40
+press A
+wait 40
+shot 6_pecha_menu
+press A
+wait 200
+shot 7_cured
+expect ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoBurn 1 == 0
+expect ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoBurn 1 == 0
