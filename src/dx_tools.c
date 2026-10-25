@@ -480,4 +480,6 @@ const u32 gDxOffInfoLevel = offsetof(EntityInfo, level);
 const u32 gDxOffCanRecruit = offsetof(Dungeon, unk644.canRecruit);
 const u32 gDxOffInfoStrongFoe = offsetof(EntityInfo, dxStrongFoe);
 const u32 gDxOffInfoShiny = offsetof(EntityInfo, dxShiny);
+const u32 gDxOffInfoSleep = offsetof(EntityInfo, sleepClassStatus);
+const u32 gDxOffInfoFrozen = offsetof(EntityInfo, frozenClassStatus);
 #endif // DX_DEBUG

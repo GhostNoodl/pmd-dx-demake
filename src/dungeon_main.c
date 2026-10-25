@@ -944,17 +944,22 @@ static bool8 sub_805EC4C(Entity *a0, u8 a1)
     if (entityInfo->frozenClassStatus.status == STATUS_WRAP) return FALSE;
     if (entityInfo->frozenClassStatus.status == STATUS_WRAPPED) return FALSE;
 
+#ifndef DX_RULES
+    // DX: the leader pushes past a teammate whatever its status (asleep, frozen, bound, confused)
     if (tileMonsterInfo->frozenClassStatus.status == STATUS_SHADOW_HOLD) return FALSE;
     if (tileMonsterInfo->frozenClassStatus.status == STATUS_FROZEN) return FALSE;
     if (tileMonsterInfo->frozenClassStatus.status == STATUS_CONSTRICTION) return FALSE;
     if (tileMonsterInfo->frozenClassStatus.status == STATUS_INGRAIN) return FALSE;
     if (tileMonsterInfo->frozenClassStatus.status == STATUS_WRAP) return FALSE;
     if (tileMonsterInfo->frozenClassStatus.status == STATUS_WRAPPED) return FALSE;
+#endif
 
     if (entityInfo->cringeClassStatus.status == STATUS_CONFUSED) return FALSE;
+#ifndef DX_RULES
     if (tileMonsterInfo->cringeClassStatus.status == STATUS_CONFUSED) return FALSE;
 
     if (tileMonsterInfo->sleepClassStatus.status != STATUS_NONE && tileMonsterInfo->sleepClassStatus.status != STATUS_SLEEPLESS && tileMonsterInfo->sleepClassStatus.status != STATUS_YAWNING)  return FALSE;
+#endif
     if (entityInfo->sleepClassStatus.status != STATUS_NONE      && entityInfo->sleepClassStatus.status != STATUS_SLEEPLESS      && entityInfo->sleepClassStatus.status != STATUS_YAWNING)       return FALSE;
 
     if (IsChargingAnyTwoTurnMove(tileMonster, FALSE)) return FALSE;
