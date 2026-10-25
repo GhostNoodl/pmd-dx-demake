@@ -979,6 +979,7 @@ void PokemonToDungeonMon(DungeonMon *dst, Pokemon *src, s32 recruitedPokemonId)
     dst->flags = src->flags;
 #ifdef DX_RULES
     dst->dxFlags = src->dxFlags;
+    dst->dxQuality = src->dxQuality;
 #endif
     dst->level = src->level;
     dst->IQ = src->IQ;
@@ -1027,6 +1028,7 @@ void DungeonMonToPokemon(Pokemon* dst, DungeonMon* src)
     dst->flags = src->flags;
 #ifdef DX_RULES
     dst->dxFlags = src->dxFlags;
+    dst->dxQuality = src->dxQuality;
 #endif
     dst->level = src->level;
     dst->IQ = src->IQ;

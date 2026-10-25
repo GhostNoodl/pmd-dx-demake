@@ -9,6 +9,8 @@
 
 const u8 *DxQualityName(u32 quality);
 Pokemon *DxEntityPokemon(Entity *entity);
+u8 DxEntityQuality(Entity *entity);
+u8 DxRecruitQuality(s16 species, bool8 shiny, Entity *leader);
 bool8 DxTeamHasQuality(u32 quality);
 s32 DxTeamSize(void);
 u32 DxRandomQuality(void);

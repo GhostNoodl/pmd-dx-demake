@@ -5,6 +5,8 @@
 #include "globaldata.h"
 #include "constants/rare_quality.h"
 #include "dx_rare_quality.h"
+#include "text_util.h"
+#include "dx_rules.h"
 #include "structs/str_moves.h"
 #include "items.h"
 #include "move_orb_effects_5.h"
@@ -130,6 +132,30 @@ Pokemon *DxEntityPokemon(Entity *entity)
     return &gRecruitedPokemonRef->pokemon[id];
 }
 
+// a team member's dungeon slot (a new recruit has no Pokemon record until the dungeon ends)
+static DungeonMon *DxEntityDungeonMon(Entity *entity)
+{
+    EntityInfo *info;
+
+    if (!EntityIsValid(entity))
+        return NULL;
+    info = GetEntInfo(entity);
+    if (info->isNotTeamMember || info->teamIndex >= MAX_TEAM_MEMBERS)
+        return NULL;
+    return &gRecruitedPokemonRef->dungeonTeam[info->teamIndex];
+}
+
+u8 DxEntityQuality(Entity *entity)
+{
+    Pokemon *mon = DxEntityPokemon(entity);
+    DungeonMon *dmon;
+
+    if (mon != NULL)
+        return mon->dxQuality;
+    dmon = DxEntityDungeonMon(entity);
+    return dmon != NULL ? dmon->dxQuality : RQ_NONE;
+}
+
 // does anyone on the team hold this quality? (DX: one member's quality works for everyone)
 bool8 DxTeamHasQuality(u32 quality)
 {
@@ -138,11 +164,28 @@ bool8 DxTeamHasQuality(u32 quality)
     if (gDungeon == NULL)
         return FALSE;
     for (i = 0; i < MAX_TEAM_MEMBERS; i++) {
-        Pokemon *mon = DxEntityPokemon(gDungeon->teamPokemon[i]);
-        if (mon != NULL && mon->dxQuality == quality)
+        Entity *mate = gDungeon->teamPokemon[i];
+        if (EntityIsValid(mate) && DxEntityQuality(mate) == quality)
             return TRUE;
     }
     return FALSE;
+}
+
+static const u8 sDxJoinedWithQuality[] = _("{POKEMON_0} has the Rare Quality\n{COLOR CYAN}%s{RESET}!");
+
+// DX: rare recruits (a Mystery House's newcomer, a shiny) join with a Rare Quality
+u8 DxRecruitQuality(s16 species, bool8 shiny, Entity *leader)
+{
+    u8 text[96];
+    u8 quality;
+
+    if (!shiny && (gDxMysteryHouseSpawned == 0 || species != gDxMysteryHouseSpawned))
+        return RQ_NONE;
+    quality = DxRandomQuality();
+    CopyCyanMonsterNametoBuffer(gFormatBuffer_Monsters[0], species);
+    sprintfStatic(text, sDxJoinedWithQuality, DxQualityName(quality));
+    LogMessageByIdWithPopupCheckUser_Async(leader, text);
+    return quality;
 }
 
 s32 DxTeamSize(void)
@@ -164,11 +207,15 @@ u32 DxRandomQuality(void)
 void DxGrantQuality(Entity *user, Entity *target, u32 quality)
 {
     Pokemon *mon = DxEntityPokemon(target);
+    DungeonMon *dmon = DxEntityDungeonMon(target);
     u8 text[96];
 
-    if (mon == NULL || quality == RQ_NONE || mon->dxQuality == quality)
+    if (dmon == NULL || quality == RQ_NONE || DxEntityQuality(target) == quality)
         return;
-    mon->dxQuality = quality;
+    // both copies: the dungeon slot is what goes back to the Pokemon when the dungeon ends
+    if (mon != NULL)
+        mon->dxQuality = quality;
+    dmon->dxQuality = quality;
     SetMessageArgument_2(gFormatBuffer_Monsters[0], GetEntInfo(target), 0);
     sprintfStatic(text, sDxGainedQuality, DxQualityName(quality));
     TryDisplayDungeonLoggableMessage3_Async(user, target, text);

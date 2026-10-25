@@ -77,6 +77,7 @@ typedef struct DungeonMon
     /* R=0x50 | B=0x45 */ u8 tacticIndex;
 #ifdef DX_RULES
     /* R=0x51 */ u8 dxFlags; // DX_FLAG_* (same as Pokemon.dxFlags)
+    /* R=0x52 */ u8 dxQuality; // Rare Quality (same as Pokemon.dxQuality; a new recruit has only this one)
 #endif
     /* R=0x54 | B=0x46 */ HiddenPower hiddenPower;
     /* R=0x58 | B=0x4A */ u8 name[POKEMON_NAME_LENGTH]; // name (other offset)

@@ -346,6 +346,7 @@ bool8 MonsterJoinSequence_Async(Entity *entity1, Entity *entity2, struct unkStru
     dungeonMon->tacticIndex = 0;
 #ifdef DX_RULES
     dungeonMon->dxFlags = param_3->dxShiny ? DX_FLAG_SHINY : 0;
+    dungeonMon->dxQuality = DxRecruitQuality(param_3->id, param_3->dxShiny, entity1);
 #endif
     dungeonMon->recruitedPokemonId = -1;
     dungeonMon->unkC = pokeIndex;
@@ -474,6 +475,7 @@ bool8 HandleSpecialEntityJoinSequence(Entity *entity1,Entity *entity2,Entity **e
     dungeonMon->tacticIndex = 0;
 #ifdef DX_RULES
     dungeonMon->dxFlags = local_74.dxShiny ? DX_FLAG_SHINY : 0;
+    dungeonMon->dxQuality = DxRecruitQuality(local_74.id, local_74.dxShiny, GetLeader());
 #endif
     dungeonMon->recruitedPokemonId = -1;
     dungeonMon->unkC = index;
