@@ -7,7 +7,10 @@
 # Screenshots and results go to <project>/test_out/<name>/.
 set -uo pipefail
 
-PROJECT_DIR="${DX_PROJECT_DIR:-/mnt/c/Users/andrew-pc/Desktop/Coding Projects/Red Rescue Team}"
+# Windows project folder (builds/, saves/, test_out/); set it in tools/dxtest/local.env (gitignored)
+[[ -f "$(dirname "$0")/dxtest/local.env" ]] && source "$(dirname "$0")/dxtest/local.env"
+[[ -f "$(dirname "$0")/local.env" ]] && source "$(dirname "$0")/local.env"
+PROJECT_DIR="${DX_PROJECT_DIR:?set DX_PROJECT_DIR in tools/dxtest/local.env}"
 HERE="$(cd "$(dirname "$0")" && pwd)"
 REPO="$(cd "$HERE/../.." && pwd)"
 SMOKE="boot_title load_town"

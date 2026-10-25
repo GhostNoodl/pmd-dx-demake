@@ -9,7 +9,10 @@
 #                copied in as the ROM's .sav after backing up the current one
 set -euo pipefail
 
-PROJECT_DIR="${DX_PROJECT_DIR:-/mnt/c/Users/andrew-pc/Desktop/Coding Projects/Red Rescue Team}"
+# Windows project folder (builds/, saves/, test_out/); set it in tools/dxtest/local.env (gitignored)
+[[ -f "$(dirname "$0")/dxtest/local.env" ]] && source "$(dirname "$0")/dxtest/local.env"
+[[ -f "$(dirname "$0")/local.env" ]] && source "$(dirname "$0")/local.env"
+PROJECT_DIR="${DX_PROJECT_DIR:?set DX_PROJECT_DIR in tools/dxtest/local.env}"
 BUILDS_DIR="$PROJECT_DIR/builds"
 SAVES_DIR="$PROJECT_DIR/saves"
 

@@ -51,3 +51,4 @@ compile_commands.json
 build_dxtest.log
 pmd_red_debug.*
 tools/dxtest/harness
+tools/dxtest/local.env
