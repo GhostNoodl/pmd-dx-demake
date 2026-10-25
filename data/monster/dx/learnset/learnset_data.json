@@ -2286,5 +2286,3938 @@
             "MOVE_WIDE_SLASH",
             "MOVE_VACUUM_CUT"
         ]
+    },
+    {
+        "pokemon": "MegaVenusaur",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_TACKLE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_VINE_WHIP",
+                "level": 1
+            },
+            {
+                "move": "MOVE_GROWL",
+                "level": 1
+            },
+            {
+                "move": "MOVE_LEECH_SEED",
+                "level": 1
+            },
+            {
+                "move": "MOVE_GROWL",
+                "level": 4
+            },
+            {
+                "move": "MOVE_LEECH_SEED",
+                "level": 7
+            },
+            {
+                "move": "MOVE_VINE_WHIP",
+                "level": 10
+            },
+            {
+                "move": "MOVE_POISONPOWDER",
+                "level": 15
+            },
+            {
+                "move": "MOVE_SLEEP_POWDER",
+                "level": 15
+            },
+            {
+                "move": "MOVE_RAZOR_LEAF",
+                "level": 22
+            },
+            {
+                "move": "MOVE_SWEET_SCENT",
+                "level": 29
+            },
+            {
+                "move": "MOVE_GROWTH",
+                "level": 41
+            },
+            {
+                "move": "MOVE_SYNTHESIS",
+                "level": 53
+            },
+            {
+                "move": "MOVE_SOLARBEAM",
+                "level": 65
+            },
+            {
+                "move": "MOVE_FRENZY_PLANT",
+                "level": 99
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_CUT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_GIGA_DRAIN",
+            "MOVE_EARTHQUAKE",
+            "MOVE_SOLARBEAM",
+            "MOVE_BULLET_SEED",
+            "MOVE_TOXIC",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_FLASH",
+            "MOVE_SLUDGE_BOMB",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaCharizardX",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_SMOKESCREEN",
+                "level": 1
+            },
+            {
+                "move": "MOVE_GROWL",
+                "level": 1
+            },
+            {
+                "move": "MOVE_HEAT_WAVE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_SCRATCH",
+                "level": 1
+            },
+            {
+                "move": "MOVE_EMBER",
+                "level": 2
+            },
+            {
+                "move": "MOVE_METAL_CLAW",
+                "level": 2
+            },
+            {
+                "move": "MOVE_EMBER",
+                "level": 7
+            },
+            {
+                "move": "MOVE_METAL_CLAW",
+                "level": 13
+            },
+            {
+                "move": "MOVE_RAGE",
+                "level": 20
+            },
+            {
+                "move": "MOVE_SMOKESCREEN",
+                "level": 20
+            },
+            {
+                "move": "MOVE_SCARY_FACE",
+                "level": 27
+            },
+            {
+                "move": "MOVE_FLAMETHROWER",
+                "level": 34
+            },
+            {
+                "move": "MOVE_WING_ATTACK",
+                "level": 36
+            },
+            {
+                "move": "MOVE_SLASH",
+                "level": 44
+            },
+            {
+                "move": "MOVE_DRAGON_RAGE",
+                "level": 54
+            },
+            {
+                "move": "MOVE_FIRE_SPIN",
+                "level": 64
+            },
+            {
+                "move": "MOVE_BLAST_BURN",
+                "level": 99
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_IRON_TAIL",
+            "MOVE_DIG",
+            "MOVE_CUT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_OVERHEAT",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_FLAMETHROWER",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_FOCUS_PUNCH",
+            "MOVE_EARTHQUAKE",
+            "MOVE_FLY",
+            "MOVE_FIRE_BLAST",
+            "MOVE_AERIAL_ACE",
+            "MOVE_TOXIC",
+            "MOVE_DRAGON_CLAW",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_STEEL_WING",
+            "MOVE_SECRET_POWER",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaCharizardY",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_SMOKESCREEN",
+                "level": 1
+            },
+            {
+                "move": "MOVE_GROWL",
+                "level": 1
+            },
+            {
+                "move": "MOVE_HEAT_WAVE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_SCRATCH",
+                "level": 1
+            },
+            {
+                "move": "MOVE_EMBER",
+                "level": 2
+            },
+            {
+                "move": "MOVE_METAL_CLAW",
+                "level": 2
+            },
+            {
+                "move": "MOVE_EMBER",
+                "level": 7
+            },
+            {
+                "move": "MOVE_METAL_CLAW",
+                "level": 13
+            },
+            {
+                "move": "MOVE_RAGE",
+                "level": 20
+            },
+            {
+                "move": "MOVE_SMOKESCREEN",
+                "level": 20
+            },
+            {
+                "move": "MOVE_SCARY_FACE",
+                "level": 27
+            },
+            {
+                "move": "MOVE_FLAMETHROWER",
+                "level": 34
+            },
+            {
+                "move": "MOVE_WING_ATTACK",
+                "level": 36
+            },
+            {
+                "move": "MOVE_SLASH",
+                "level": 44
+            },
+            {
+                "move": "MOVE_DRAGON_RAGE",
+                "level": 54
+            },
+            {
+                "move": "MOVE_FIRE_SPIN",
+                "level": 64
+            },
+            {
+                "move": "MOVE_BLAST_BURN",
+                "level": 99
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_IRON_TAIL",
+            "MOVE_DIG",
+            "MOVE_CUT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_OVERHEAT",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_FLAMETHROWER",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_FOCUS_PUNCH",
+            "MOVE_EARTHQUAKE",
+            "MOVE_FLY",
+            "MOVE_FIRE_BLAST",
+            "MOVE_AERIAL_ACE",
+            "MOVE_TOXIC",
+            "MOVE_DRAGON_CLAW",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_STEEL_WING",
+            "MOVE_SECRET_POWER",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaBlastoise",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_BUBBLE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_WITHDRAW",
+                "level": 1
+            },
+            {
+                "move": "MOVE_TAIL_WHIP",
+                "level": 1
+            },
+            {
+                "move": "MOVE_TACKLE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_TAIL_WHIP",
+                "level": 4
+            },
+            {
+                "move": "MOVE_BUBBLE",
+                "level": 7
+            },
+            {
+                "move": "MOVE_WITHDRAW",
+                "level": 10
+            },
+            {
+                "move": "MOVE_WATER_GUN",
+                "level": 13
+            },
+            {
+                "move": "MOVE_BITE",
+                "level": 19
+            },
+            {
+                "move": "MOVE_RAPID_SPIN",
+                "level": 25
+            },
+            {
+                "move": "MOVE_PROTECT",
+                "level": 31
+            },
+            {
+                "move": "MOVE_RAIN_DANCE",
+                "level": 42
+            },
+            {
+                "move": "MOVE_SKULL_BASH",
+                "level": 55
+            },
+            {
+                "move": "MOVE_HYDRO_PUMP",
+                "level": 68
+            },
+            {
+                "move": "MOVE_HYDRO_CANNON",
+                "level": 99
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_IRON_TAIL",
+            "MOVE_DIG",
+            "MOVE_RAIN_DANCE",
+            "MOVE_HAIL",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_FOCUS_PUNCH",
+            "MOVE_EARTHQUAKE",
+            "MOVE_DIVE",
+            "MOVE_WATERFALL",
+            "MOVE_TOXIC",
+            "MOVE_SURF",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_BLIZZARD",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_WATER_PULSE",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_ICE_BEAM",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaBeedrill",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_FURY_ATTACK",
+                "level": 1
+            },
+            {
+                "move": "MOVE_FURY_ATTACK",
+                "level": 10
+            },
+            {
+                "move": "MOVE_FOCUS_ENERGY",
+                "level": 15
+            },
+            {
+                "move": "MOVE_TWINEEDLE",
+                "level": 20
+            },
+            {
+                "move": "MOVE_RAGE",
+                "level": 25
+            },
+            {
+                "move": "MOVE_PURSUIT",
+                "level": 30
+            },
+            {
+                "move": "MOVE_PIN_MISSILE",
+                "level": 35
+            },
+            {
+                "move": "MOVE_AGILITY",
+                "level": 40
+            },
+            {
+                "move": "MOVE_ENDEAVOR",
+                "level": 45
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_CUT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_GIGA_DRAIN",
+            "MOVE_SOLARBEAM",
+            "MOVE_AERIAL_ACE",
+            "MOVE_TOXIC",
+            "MOVE_THIEF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_SLUDGE_BOMB",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaPidgeot",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_GUST",
+                "level": 1
+            },
+            {
+                "move": "MOVE_SAND_ATTACK",
+                "level": 1
+            },
+            {
+                "move": "MOVE_TACKLE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_QUICK_ATTACK",
+                "level": 1
+            },
+            {
+                "move": "MOVE_SAND_ATTACK",
+                "level": 5
+            },
+            {
+                "move": "MOVE_GUST",
+                "level": 9
+            },
+            {
+                "move": "MOVE_QUICK_ATTACK",
+                "level": 13
+            },
+            {
+                "move": "MOVE_WHIRLWIND",
+                "level": 20
+            },
+            {
+                "move": "MOVE_WING_ATTACK",
+                "level": 27
+            },
+            {
+                "move": "MOVE_FEATHERDANCE",
+                "level": 34
+            },
+            {
+                "move": "MOVE_AGILITY",
+                "level": 48
+            },
+            {
+                "move": "MOVE_MIRROR_MOVE",
+                "level": 62
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_RAIN_DANCE",
+            "MOVE_RETURN",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_FLY",
+            "MOVE_AERIAL_ACE",
+            "MOVE_TOXIC",
+            "MOVE_THIEF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_STEEL_WING",
+            "MOVE_SECRET_POWER",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaAlakazam",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_KINESIS",
+                "level": 1
+            },
+            {
+                "move": "MOVE_TELEPORT",
+                "level": 1
+            },
+            {
+                "move": "MOVE_CONFUSION",
+                "level": 1
+            },
+            {
+                "move": "MOVE_CONFUSION",
+                "level": 16
+            },
+            {
+                "move": "MOVE_DISABLE",
+                "level": 18
+            },
+            {
+                "move": "MOVE_PSYBEAM",
+                "level": 21
+            },
+            {
+                "move": "MOVE_REFLECT",
+                "level": 23
+            },
+            {
+                "move": "MOVE_RECOVER",
+                "level": 25
+            },
+            {
+                "move": "MOVE_FUTURE_SIGHT",
+                "level": 30
+            },
+            {
+                "move": "MOVE_CALM_MIND",
+                "level": 33
+            },
+            {
+                "move": "MOVE_PSYCHIC",
+                "level": 36
+            },
+            {
+                "move": "MOVE_TRICK",
+                "level": 43
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_IRON_TAIL",
+            "MOVE_RAIN_DANCE",
+            "MOVE_TORMENT",
+            "MOVE_RETURN",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_FOCUS_PUNCH",
+            "MOVE_PSYCHIC",
+            "MOVE_SHADOW_BALL",
+            "MOVE_SAFEGUARD",
+            "MOVE_SKILL_SWAP",
+            "MOVE_TAUNT",
+            "MOVE_SHOCK_WAVE",
+            "MOVE_TOXIC",
+            "MOVE_THIEF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_LIGHT_SCREEN",
+            "MOVE_SECRET_POWER",
+            "MOVE_FLASH",
+            "MOVE_PROTECT",
+            "MOVE_CALM_MIND",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_SNATCH",
+            "MOVE_REFLECT",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaSlowbro",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_YAWN",
+                "level": 1
+            },
+            {
+                "move": "MOVE_TACKLE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_GROWL",
+                "level": 1
+            },
+            {
+                "move": "MOVE_CURSE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_GROWL",
+                "level": 6
+            },
+            {
+                "move": "MOVE_WATER_GUN",
+                "level": 13
+            },
+            {
+                "move": "MOVE_CONFUSION",
+                "level": 17
+            },
+            {
+                "move": "MOVE_DISABLE",
+                "level": 24
+            },
+            {
+                "move": "MOVE_HEADBUTT",
+                "level": 29
+            },
+            {
+                "move": "MOVE_AMNESIA",
+                "level": 36
+            },
+            {
+                "move": "MOVE_WITHDRAW",
+                "level": 37
+            },
+            {
+                "move": "MOVE_PSYCHIC",
+                "level": 44
+            },
+            {
+                "move": "MOVE_PSYCH_UP",
+                "level": 55
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_IRON_TAIL",
+            "MOVE_DIG",
+            "MOVE_RAIN_DANCE",
+            "MOVE_HAIL",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_FLAMETHROWER",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_FOCUS_PUNCH",
+            "MOVE_PSYCHIC",
+            "MOVE_EARTHQUAKE",
+            "MOVE_SHADOW_BALL",
+            "MOVE_SAFEGUARD",
+            "MOVE_SKILL_SWAP",
+            "MOVE_DIVE",
+            "MOVE_FIRE_BLAST",
+            "MOVE_TOXIC",
+            "MOVE_SURF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_BLIZZARD",
+            "MOVE_FLASH",
+            "MOVE_PROTECT",
+            "MOVE_WATER_PULSE",
+            "MOVE_CALM_MIND",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_ICE_BEAM",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaGengar",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_SPITE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_HYPNOSIS",
+                "level": 1
+            },
+            {
+                "move": "MOVE_LICK",
+                "level": 1
+            },
+            {
+                "move": "MOVE_SPITE",
+                "level": 8
+            },
+            {
+                "move": "MOVE_CURSE",
+                "level": 13
+            },
+            {
+                "move": "MOVE_NIGHT_SHADE",
+                "level": 16
+            },
+            {
+                "move": "MOVE_CONFUSE_RAY",
+                "level": 21
+            },
+            {
+                "move": "MOVE_SHADOW_PUNCH",
+                "level": 25
+            },
+            {
+                "move": "MOVE_DREAM_EATER",
+                "level": 31
+            },
+            {
+                "move": "MOVE_DESTINY_BOND",
+                "level": 39
+            },
+            {
+                "move": "MOVE_SHADOW_BALL",
+                "level": 45
+            },
+            {
+                "move": "MOVE_NIGHTMARE",
+                "level": 53
+            },
+            {
+                "move": "MOVE_MEAN_LOOK",
+                "level": 64
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_RAIN_DANCE",
+            "MOVE_TORMENT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_THUNDER",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_FOCUS_PUNCH",
+            "MOVE_GIGA_DRAIN",
+            "MOVE_PSYCHIC",
+            "MOVE_SHADOW_BALL",
+            "MOVE_THUNDERBOLT",
+            "MOVE_SKILL_SWAP",
+            "MOVE_TAUNT",
+            "MOVE_TOXIC",
+            "MOVE_THIEF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_SLUDGE_BOMB",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_SNATCH",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaKangaskhan",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_LEER",
+                "level": 1
+            },
+            {
+                "move": "MOVE_COMET_PUNCH",
+                "level": 1
+            },
+            {
+                "move": "MOVE_BITE",
+                "level": 7
+            },
+            {
+                "move": "MOVE_TAIL_WHIP",
+                "level": 13
+            },
+            {
+                "move": "MOVE_FAKE_OUT",
+                "level": 19
+            },
+            {
+                "move": "MOVE_MEGA_PUNCH",
+                "level": 25
+            },
+            {
+                "move": "MOVE_RAGE",
+                "level": 31
+            },
+            {
+                "move": "MOVE_ENDURE",
+                "level": 37
+            },
+            {
+                "move": "MOVE_DIZZY_PUNCH",
+                "level": 43
+            },
+            {
+                "move": "MOVE_REVERSAL",
+                "level": 49
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_IRON_TAIL",
+            "MOVE_DIG",
+            "MOVE_RAIN_DANCE",
+            "MOVE_HAIL",
+            "MOVE_CUT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_FLAMETHROWER",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_THUNDER",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_ROCK_TOMB",
+            "MOVE_FOCUS_PUNCH",
+            "MOVE_EARTHQUAKE",
+            "MOVE_SHADOW_BALL",
+            "MOVE_THUNDERBOLT",
+            "MOVE_SANDSTORM",
+            "MOVE_SOLARBEAM",
+            "MOVE_FIRE_BLAST",
+            "MOVE_AERIAL_ACE",
+            "MOVE_SHOCK_WAVE",
+            "MOVE_TOXIC",
+            "MOVE_THIEF",
+            "MOVE_SURF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_BLIZZARD",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_WATER_PULSE",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_ICE_BEAM",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaPinsir",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_FOCUS_ENERGY",
+                "level": 1
+            },
+            {
+                "move": "MOVE_VICEGRIP",
+                "level": 1
+            },
+            {
+                "move": "MOVE_BIND",
+                "level": 7
+            },
+            {
+                "move": "MOVE_SEISMIC_TOSS",
+                "level": 13
+            },
+            {
+                "move": "MOVE_HARDEN",
+                "level": 19
+            },
+            {
+                "move": "MOVE_REVENGE",
+                "level": 25
+            },
+            {
+                "move": "MOVE_BRICK_BREAK",
+                "level": 31
+            },
+            {
+                "move": "MOVE_GUILLOTINE",
+                "level": 37
+            },
+            {
+                "move": "MOVE_SUBMISSION",
+                "level": 43
+            },
+            {
+                "move": "MOVE_SWORDS_DANCE",
+                "level": 49
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_DIG",
+            "MOVE_RAIN_DANCE",
+            "MOVE_CUT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_ROCK_TOMB",
+            "MOVE_FOCUS_PUNCH",
+            "MOVE_EARTHQUAKE",
+            "MOVE_TOXIC",
+            "MOVE_THIEF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_BULK_UP",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaGyarados",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_THRASH",
+                "level": 1
+            },
+            {
+                "move": "MOVE_BITE",
+                "level": 20
+            },
+            {
+                "move": "MOVE_DRAGON_RAGE",
+                "level": 25
+            },
+            {
+                "move": "MOVE_LEER",
+                "level": 30
+            },
+            {
+                "move": "MOVE_TWISTER",
+                "level": 35
+            },
+            {
+                "move": "MOVE_HYDRO_PUMP",
+                "level": 40
+            },
+            {
+                "move": "MOVE_RAIN_DANCE",
+                "level": 45
+            },
+            {
+                "move": "MOVE_DRAGON_DANCE",
+                "level": 50
+            },
+            {
+                "move": "MOVE_HYPER_BEAM",
+                "level": 55
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_RAIN_DANCE",
+            "MOVE_HAIL",
+            "MOVE_TORMENT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_FLAMETHROWER",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_THUNDER",
+            "MOVE_FACADE",
+            "MOVE_EARTHQUAKE",
+            "MOVE_THUNDERBOLT",
+            "MOVE_SANDSTORM",
+            "MOVE_DIVE",
+            "MOVE_FIRE_BLAST",
+            "MOVE_WATERFALL",
+            "MOVE_TAUNT",
+            "MOVE_TOXIC",
+            "MOVE_SURF",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_BLIZZARD",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_WATER_PULSE",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_ICE_BEAM",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaAerodactyl",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_WING_ATTACK",
+                "level": 1
+            },
+            {
+                "move": "MOVE_AGILITY",
+                "level": 8
+            },
+            {
+                "move": "MOVE_BITE",
+                "level": 15
+            },
+            {
+                "move": "MOVE_SUPERSONIC",
+                "level": 22
+            },
+            {
+                "move": "MOVE_ANCIENTPOWER",
+                "level": 29
+            },
+            {
+                "move": "MOVE_SCARY_FACE",
+                "level": 36
+            },
+            {
+                "move": "MOVE_TAKE_DOWN",
+                "level": 43
+            },
+            {
+                "move": "MOVE_HYPER_BEAM",
+                "level": 50
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_IRON_TAIL",
+            "MOVE_RAIN_DANCE",
+            "MOVE_TORMENT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_FLAMETHROWER",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_ROCK_TOMB",
+            "MOVE_EARTHQUAKE",
+            "MOVE_SANDSTORM",
+            "MOVE_FLY",
+            "MOVE_FIRE_BLAST",
+            "MOVE_TAUNT",
+            "MOVE_AERIAL_ACE",
+            "MOVE_TOXIC",
+            "MOVE_DRAGON_CLAW",
+            "MOVE_THIEF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_STEEL_WING",
+            "MOVE_SECRET_POWER",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaMewtwoY",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_DISABLE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_CONFUSION",
+                "level": 1
+            },
+            {
+                "move": "MOVE_BARRIER",
+                "level": 11
+            },
+            {
+                "move": "MOVE_MIST",
+                "level": 22
+            },
+            {
+                "move": "MOVE_SWIFT",
+                "level": 33
+            },
+            {
+                "move": "MOVE_RECOVER",
+                "level": 44
+            },
+            {
+                "move": "MOVE_SAFEGUARD",
+                "level": 55
+            },
+            {
+                "move": "MOVE_PSYCHIC",
+                "level": 66
+            },
+            {
+                "move": "MOVE_PSYCH_UP",
+                "level": 77
+            },
+            {
+                "move": "MOVE_FUTURE_SIGHT",
+                "level": 88
+            },
+            {
+                "move": "MOVE_AMNESIA",
+                "level": 99
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_IRON_TAIL",
+            "MOVE_RAIN_DANCE",
+            "MOVE_HAIL",
+            "MOVE_TORMENT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_FLAMETHROWER",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_THUNDER",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_ROCK_TOMB",
+            "MOVE_FOCUS_PUNCH",
+            "MOVE_PSYCHIC",
+            "MOVE_EARTHQUAKE",
+            "MOVE_SHADOW_BALL",
+            "MOVE_THUNDERBOLT",
+            "MOVE_SAFEGUARD",
+            "MOVE_SKILL_SWAP",
+            "MOVE_SANDSTORM",
+            "MOVE_SOLARBEAM",
+            "MOVE_FIRE_BLAST",
+            "MOVE_TAUNT",
+            "MOVE_AERIAL_ACE",
+            "MOVE_SHOCK_WAVE",
+            "MOVE_TOXIC",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_LIGHT_SCREEN",
+            "MOVE_SECRET_POWER",
+            "MOVE_BULK_UP",
+            "MOVE_BLIZZARD",
+            "MOVE_FLASH",
+            "MOVE_PROTECT",
+            "MOVE_WATER_PULSE",
+            "MOVE_CALM_MIND",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_FRUSTRATION",
+            "MOVE_SNATCH",
+            "MOVE_REFLECT",
+            "MOVE_ICE_BEAM",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaMewtwoX",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_DISABLE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_CONFUSION",
+                "level": 1
+            },
+            {
+                "move": "MOVE_BARRIER",
+                "level": 11
+            },
+            {
+                "move": "MOVE_MIST",
+                "level": 22
+            },
+            {
+                "move": "MOVE_SWIFT",
+                "level": 33
+            },
+            {
+                "move": "MOVE_RECOVER",
+                "level": 44
+            },
+            {
+                "move": "MOVE_SAFEGUARD",
+                "level": 55
+            },
+            {
+                "move": "MOVE_PSYCHIC",
+                "level": 66
+            },
+            {
+                "move": "MOVE_PSYCH_UP",
+                "level": 77
+            },
+            {
+                "move": "MOVE_FUTURE_SIGHT",
+                "level": 88
+            },
+            {
+                "move": "MOVE_AMNESIA",
+                "level": 99
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_IRON_TAIL",
+            "MOVE_RAIN_DANCE",
+            "MOVE_HAIL",
+            "MOVE_TORMENT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_FLAMETHROWER",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_THUNDER",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_ROCK_TOMB",
+            "MOVE_FOCUS_PUNCH",
+            "MOVE_PSYCHIC",
+            "MOVE_EARTHQUAKE",
+            "MOVE_SHADOW_BALL",
+            "MOVE_THUNDERBOLT",
+            "MOVE_SAFEGUARD",
+            "MOVE_SKILL_SWAP",
+            "MOVE_SANDSTORM",
+            "MOVE_SOLARBEAM",
+            "MOVE_FIRE_BLAST",
+            "MOVE_TAUNT",
+            "MOVE_AERIAL_ACE",
+            "MOVE_SHOCK_WAVE",
+            "MOVE_TOXIC",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_LIGHT_SCREEN",
+            "MOVE_SECRET_POWER",
+            "MOVE_BULK_UP",
+            "MOVE_BLIZZARD",
+            "MOVE_FLASH",
+            "MOVE_PROTECT",
+            "MOVE_WATER_PULSE",
+            "MOVE_CALM_MIND",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_FRUSTRATION",
+            "MOVE_SNATCH",
+            "MOVE_REFLECT",
+            "MOVE_ICE_BEAM",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaAmpharos",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_TACKLE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_THUNDERSHOCK",
+                "level": 1
+            },
+            {
+                "move": "MOVE_THUNDER_WAVE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_GROWL",
+                "level": 1
+            },
+            {
+                "move": "MOVE_THUNDERSHOCK",
+                "level": 9
+            },
+            {
+                "move": "MOVE_THUNDER_WAVE",
+                "level": 18
+            },
+            {
+                "move": "MOVE_COTTON_SPORE",
+                "level": 27
+            },
+            {
+                "move": "MOVE_THUNDERPUNCH",
+                "level": 30
+            },
+            {
+                "move": "MOVE_LIGHT_SCREEN",
+                "level": 42
+            },
+            {
+                "move": "MOVE_THUNDER",
+                "level": 57
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_IRON_TAIL",
+            "MOVE_RAIN_DANCE",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_THUNDER",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_FOCUS_PUNCH",
+            "MOVE_THUNDERBOLT",
+            "MOVE_SHOCK_WAVE",
+            "MOVE_TOXIC",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_LIGHT_SCREEN",
+            "MOVE_SECRET_POWER",
+            "MOVE_FLASH",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaSteelix",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_SCREECH",
+                "level": 1
+            },
+            {
+                "move": "MOVE_TACKLE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_BIND",
+                "level": 8
+            },
+            {
+                "move": "MOVE_ROCK_THROW",
+                "level": 12
+            },
+            {
+                "move": "MOVE_HARDEN",
+                "level": 19
+            },
+            {
+                "move": "MOVE_RAGE",
+                "level": 23
+            },
+            {
+                "move": "MOVE_DRAGONBREATH",
+                "level": 30
+            },
+            {
+                "move": "MOVE_SANDSTORM",
+                "level": 34
+            },
+            {
+                "move": "MOVE_SLAM",
+                "level": 41
+            },
+            {
+                "move": "MOVE_IRON_TAIL",
+                "level": 45
+            },
+            {
+                "move": "MOVE_CRUNCH",
+                "level": 52
+            },
+            {
+                "move": "MOVE_DOUBLE_EDGE",
+                "level": 56
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_IRON_TAIL",
+            "MOVE_DIG",
+            "MOVE_CUT",
+            "MOVE_TORMENT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_ROCK_TOMB",
+            "MOVE_EARTHQUAKE",
+            "MOVE_SANDSTORM",
+            "MOVE_TAUNT",
+            "MOVE_TOXIC",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaScizor",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_QUICK_ATTACK",
+                "level": 1
+            },
+            {
+                "move": "MOVE_LEER",
+                "level": 1
+            },
+            {
+                "move": "MOVE_FOCUS_ENERGY",
+                "level": 6
+            },
+            {
+                "move": "MOVE_PURSUIT",
+                "level": 11
+            },
+            {
+                "move": "MOVE_FALSE_SWIPE",
+                "level": 16
+            },
+            {
+                "move": "MOVE_AGILITY",
+                "level": 21
+            },
+            {
+                "move": "MOVE_METAL_CLAW",
+                "level": 26
+            },
+            {
+                "move": "MOVE_SLASH",
+                "level": 31
+            },
+            {
+                "move": "MOVE_SWORDS_DANCE",
+                "level": 36
+            },
+            {
+                "move": "MOVE_DOUBLE_TEAM",
+                "level": 41
+            },
+            {
+                "move": "MOVE_IRON_DEFENSE",
+                "level": 41
+            },
+            {
+                "move": "MOVE_FURY_CUTTER",
+                "level": 46
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_RAIN_DANCE",
+            "MOVE_CUT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_SANDSTORM",
+            "MOVE_AERIAL_ACE",
+            "MOVE_TOXIC",
+            "MOVE_THIEF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_STEEL_WING",
+            "MOVE_SECRET_POWER",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaHeracross",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_TACKLE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_LEER",
+                "level": 1
+            },
+            {
+                "move": "MOVE_HORN_ATTACK",
+                "level": 6
+            },
+            {
+                "move": "MOVE_ENDURE",
+                "level": 11
+            },
+            {
+                "move": "MOVE_FURY_ATTACK",
+                "level": 17
+            },
+            {
+                "move": "MOVE_BRICK_BREAK",
+                "level": 23
+            },
+            {
+                "move": "MOVE_COUNTER",
+                "level": 30
+            },
+            {
+                "move": "MOVE_TAKE_DOWN",
+                "level": 37
+            },
+            {
+                "move": "MOVE_REVERSAL",
+                "level": 45
+            },
+            {
+                "move": "MOVE_MEGAHORN",
+                "level": 53
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_DIG",
+            "MOVE_RAIN_DANCE",
+            "MOVE_CUT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_ROCK_TOMB",
+            "MOVE_FOCUS_PUNCH",
+            "MOVE_EARTHQUAKE",
+            "MOVE_TOXIC",
+            "MOVE_THIEF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_BULK_UP",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaHoundoom",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_HOWL",
+                "level": 1
+            },
+            {
+                "move": "MOVE_LEER",
+                "level": 1
+            },
+            {
+                "move": "MOVE_EMBER",
+                "level": 1
+            },
+            {
+                "move": "MOVE_HOWL",
+                "level": 7
+            },
+            {
+                "move": "MOVE_SMOG",
+                "level": 13
+            },
+            {
+                "move": "MOVE_ROAR",
+                "level": 19
+            },
+            {
+                "move": "MOVE_BITE",
+                "level": 27
+            },
+            {
+                "move": "MOVE_ODOR_SLEUTH",
+                "level": 35
+            },
+            {
+                "move": "MOVE_FAINT_ATTACK",
+                "level": 43
+            },
+            {
+                "move": "MOVE_FLAMETHROWER",
+                "level": 51
+            },
+            {
+                "move": "MOVE_CRUNCH",
+                "level": 59
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_IRON_TAIL",
+            "MOVE_TORMENT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_OVERHEAT",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_FLAMETHROWER",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_SHADOW_BALL",
+            "MOVE_SOLARBEAM",
+            "MOVE_FIRE_BLAST",
+            "MOVE_TAUNT",
+            "MOVE_TOXIC",
+            "MOVE_THIEF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_SLUDGE_BOMB",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_SNATCH",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaTyranitar",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_SCREECH",
+                "level": 1
+            },
+            {
+                "move": "MOVE_BITE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_SANDSTORM",
+                "level": 1
+            },
+            {
+                "move": "MOVE_LEER",
+                "level": 1
+            },
+            {
+                "move": "MOVE_SANDSTORM",
+                "level": 8
+            },
+            {
+                "move": "MOVE_SCREECH",
+                "level": 15
+            },
+            {
+                "move": "MOVE_ROCK_SLIDE",
+                "level": 22
+            },
+            {
+                "move": "MOVE_THRASH",
+                "level": 29
+            },
+            {
+                "move": "MOVE_SCARY_FACE",
+                "level": 38
+            },
+            {
+                "move": "MOVE_CRUNCH",
+                "level": 47
+            },
+            {
+                "move": "MOVE_EARTHQUAKE",
+                "level": 61
+            },
+            {
+                "move": "MOVE_HYPER_BEAM",
+                "level": 75
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_IRON_TAIL",
+            "MOVE_DIG",
+            "MOVE_RAIN_DANCE",
+            "MOVE_CUT",
+            "MOVE_TORMENT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_FLAMETHROWER",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_THUNDER",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_ROCK_TOMB",
+            "MOVE_FOCUS_PUNCH",
+            "MOVE_EARTHQUAKE",
+            "MOVE_THUNDERBOLT",
+            "MOVE_SANDSTORM",
+            "MOVE_FIRE_BLAST",
+            "MOVE_TAUNT",
+            "MOVE_AERIAL_ACE",
+            "MOVE_SHOCK_WAVE",
+            "MOVE_TOXIC",
+            "MOVE_DRAGON_CLAW",
+            "MOVE_SURF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_BLIZZARD",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_WATER_PULSE",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_ICE_BEAM",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaSceptile",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_ABSORB",
+                "level": 1
+            },
+            {
+                "move": "MOVE_QUICK_ATTACK",
+                "level": 1
+            },
+            {
+                "move": "MOVE_LEER",
+                "level": 1
+            },
+            {
+                "move": "MOVE_POUND",
+                "level": 1
+            },
+            {
+                "move": "MOVE_ABSORB",
+                "level": 6
+            },
+            {
+                "move": "MOVE_QUICK_ATTACK",
+                "level": 11
+            },
+            {
+                "move": "MOVE_FURY_CUTTER",
+                "level": 16
+            },
+            {
+                "move": "MOVE_PURSUIT",
+                "level": 17
+            },
+            {
+                "move": "MOVE_SCREECH",
+                "level": 23
+            },
+            {
+                "move": "MOVE_LEAF_BLADE",
+                "level": 29
+            },
+            {
+                "move": "MOVE_AGILITY",
+                "level": 35
+            },
+            {
+                "move": "MOVE_SLAM",
+                "level": 43
+            },
+            {
+                "move": "MOVE_DETECT",
+                "level": 51
+            },
+            {
+                "move": "MOVE_FALSE_SWIPE",
+                "level": 59
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_IRON_TAIL",
+            "MOVE_DIG",
+            "MOVE_CUT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_ROCK_TOMB",
+            "MOVE_FOCUS_PUNCH",
+            "MOVE_GIGA_DRAIN",
+            "MOVE_EARTHQUAKE",
+            "MOVE_SAFEGUARD",
+            "MOVE_SOLARBEAM",
+            "MOVE_BULLET_SEED",
+            "MOVE_AERIAL_ACE",
+            "MOVE_TOXIC",
+            "MOVE_DRAGON_CLAW",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_FLASH",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaBlaziken",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_FOCUS_ENERGY",
+                "level": 1
+            },
+            {
+                "move": "MOVE_GROWL",
+                "level": 1
+            },
+            {
+                "move": "MOVE_SCRATCH",
+                "level": 1
+            },
+            {
+                "move": "MOVE_EMBER",
+                "level": 1
+            },
+            {
+                "move": "MOVE_FIRE_PUNCH",
+                "level": 2
+            },
+            {
+                "move": "MOVE_FOCUS_ENERGY",
+                "level": 7
+            },
+            {
+                "move": "MOVE_EMBER",
+                "level": 13
+            },
+            {
+                "move": "MOVE_DOUBLE_KICK",
+                "level": 16
+            },
+            {
+                "move": "MOVE_PECK",
+                "level": 17
+            },
+            {
+                "move": "MOVE_SAND_ATTACK",
+                "level": 21
+            },
+            {
+                "move": "MOVE_BULK_UP",
+                "level": 28
+            },
+            {
+                "move": "MOVE_QUICK_ATTACK",
+                "level": 32
+            },
+            {
+                "move": "MOVE_BLAZE_KICK",
+                "level": 36
+            },
+            {
+                "move": "MOVE_SLASH",
+                "level": 42
+            },
+            {
+                "move": "MOVE_MIRROR_MOVE",
+                "level": 49
+            },
+            {
+                "move": "MOVE_SKY_UPPERCUT",
+                "level": 59
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_DIG",
+            "MOVE_CUT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_OVERHEAT",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_FLAMETHROWER",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_ROCK_TOMB",
+            "MOVE_FOCUS_PUNCH",
+            "MOVE_EARTHQUAKE",
+            "MOVE_FIRE_BLAST",
+            "MOVE_AERIAL_ACE",
+            "MOVE_TOXIC",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_BULK_UP",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaSwampert",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_TACKLE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_MUD_SLAP",
+                "level": 1
+            },
+            {
+                "move": "MOVE_GROWL",
+                "level": 1
+            },
+            {
+                "move": "MOVE_WATER_GUN",
+                "level": 1
+            },
+            {
+                "move": "MOVE_MUD_SLAP",
+                "level": 6
+            },
+            {
+                "move": "MOVE_WATER_GUN",
+                "level": 10
+            },
+            {
+                "move": "MOVE_BIDE",
+                "level": 15
+            },
+            {
+                "move": "MOVE_MUD_SHOT",
+                "level": 16
+            },
+            {
+                "move": "MOVE_FORESIGHT",
+                "level": 20
+            },
+            {
+                "move": "MOVE_MUD_SPORT",
+                "level": 25
+            },
+            {
+                "move": "MOVE_TAKE_DOWN",
+                "level": 31
+            },
+            {
+                "move": "MOVE_MUDDY_WATER",
+                "level": 39
+            },
+            {
+                "move": "MOVE_PROTECT",
+                "level": 46
+            },
+            {
+                "move": "MOVE_EARTHQUAKE",
+                "level": 52
+            },
+            {
+                "move": "MOVE_ENDEAVOR",
+                "level": 61
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_IRON_TAIL",
+            "MOVE_DIG",
+            "MOVE_RAIN_DANCE",
+            "MOVE_HAIL",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_ROCK_TOMB",
+            "MOVE_FOCUS_PUNCH",
+            "MOVE_EARTHQUAKE",
+            "MOVE_DIVE",
+            "MOVE_WATERFALL",
+            "MOVE_TOXIC",
+            "MOVE_SURF",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_BLIZZARD",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_WATER_PULSE",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_ICE_BEAM",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaGardevoir",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_DOUBLE_TEAM",
+                "level": 1
+            },
+            {
+                "move": "MOVE_TELEPORT",
+                "level": 1
+            },
+            {
+                "move": "MOVE_GROWL",
+                "level": 1
+            },
+            {
+                "move": "MOVE_CONFUSION",
+                "level": 1
+            },
+            {
+                "move": "MOVE_CONFUSION",
+                "level": 6
+            },
+            {
+                "move": "MOVE_DOUBLE_TEAM",
+                "level": 11
+            },
+            {
+                "move": "MOVE_TELEPORT",
+                "level": 16
+            },
+            {
+                "move": "MOVE_CALM_MIND",
+                "level": 21
+            },
+            {
+                "move": "MOVE_PSYCHIC",
+                "level": 26
+            },
+            {
+                "move": "MOVE_IMPRISON",
+                "level": 33
+            },
+            {
+                "move": "MOVE_FUTURE_SIGHT",
+                "level": 42
+            },
+            {
+                "move": "MOVE_HYPNOSIS",
+                "level": 51
+            },
+            {
+                "move": "MOVE_DREAM_EATER",
+                "level": 60
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_RAIN_DANCE",
+            "MOVE_TORMENT",
+            "MOVE_RETURN",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_PSYCHIC",
+            "MOVE_SHADOW_BALL",
+            "MOVE_THUNDERBOLT",
+            "MOVE_SAFEGUARD",
+            "MOVE_SKILL_SWAP",
+            "MOVE_TAUNT",
+            "MOVE_SHOCK_WAVE",
+            "MOVE_TOXIC",
+            "MOVE_THIEF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_LIGHT_SCREEN",
+            "MOVE_SECRET_POWER",
+            "MOVE_FLASH",
+            "MOVE_PROTECT",
+            "MOVE_CALM_MIND",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_SNATCH",
+            "MOVE_REFLECT",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaSableye",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_LEER",
+                "level": 1
+            },
+            {
+                "move": "MOVE_SCRATCH",
+                "level": 1
+            },
+            {
+                "move": "MOVE_FORESIGHT",
+                "level": 5
+            },
+            {
+                "move": "MOVE_NIGHT_SHADE",
+                "level": 9
+            },
+            {
+                "move": "MOVE_ASTONISH",
+                "level": 13
+            },
+            {
+                "move": "MOVE_FURY_SWIPES",
+                "level": 17
+            },
+            {
+                "move": "MOVE_FAKE_OUT",
+                "level": 21
+            },
+            {
+                "move": "MOVE_DETECT",
+                "level": 25
+            },
+            {
+                "move": "MOVE_FAINT_ATTACK",
+                "level": 29
+            },
+            {
+                "move": "MOVE_KNOCK_OFF",
+                "level": 33
+            },
+            {
+                "move": "MOVE_CONFUSE_RAY",
+                "level": 37
+            },
+            {
+                "move": "MOVE_SHADOW_BALL",
+                "level": 41
+            },
+            {
+                "move": "MOVE_MEAN_LOOK",
+                "level": 45
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_DIG",
+            "MOVE_RAIN_DANCE",
+            "MOVE_CUT",
+            "MOVE_TORMENT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_ROCK_TOMB",
+            "MOVE_FOCUS_PUNCH",
+            "MOVE_PSYCHIC",
+            "MOVE_SHADOW_BALL",
+            "MOVE_TAUNT",
+            "MOVE_AERIAL_ACE",
+            "MOVE_SHOCK_WAVE",
+            "MOVE_TOXIC",
+            "MOVE_THIEF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_SECRET_POWER",
+            "MOVE_FLASH",
+            "MOVE_PROTECT",
+            "MOVE_WATER_PULSE",
+            "MOVE_CALM_MIND",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_SNATCH",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaMawile",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_ASTONISH",
+                "level": 1
+            },
+            {
+                "move": "MOVE_FAKE_TEARS",
+                "level": 6
+            },
+            {
+                "move": "MOVE_BITE",
+                "level": 11
+            },
+            {
+                "move": "MOVE_SWEET_SCENT",
+                "level": 16
+            },
+            {
+                "move": "MOVE_VICEGRIP",
+                "level": 21
+            },
+            {
+                "move": "MOVE_FAINT_ATTACK",
+                "level": 26
+            },
+            {
+                "move": "MOVE_BATON_PASS",
+                "level": 31
+            },
+            {
+                "move": "MOVE_CRUNCH",
+                "level": 36
+            },
+            {
+                "move": "MOVE_IRON_DEFENSE",
+                "level": 41
+            },
+            {
+                "move": "MOVE_STOCKPILE",
+                "level": 46
+            },
+            {
+                "move": "MOVE_SWALLOW",
+                "level": 46
+            },
+            {
+                "move": "MOVE_SPIT_UP",
+                "level": 46
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_RAIN_DANCE",
+            "MOVE_TORMENT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_FLAMETHROWER",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_ROCK_TOMB",
+            "MOVE_FOCUS_PUNCH",
+            "MOVE_SANDSTORM",
+            "MOVE_SOLARBEAM",
+            "MOVE_FIRE_BLAST",
+            "MOVE_TAUNT",
+            "MOVE_TOXIC",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_SLUDGE_BOMB",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_ICE_BEAM",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaAggron",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_HARDEN",
+                "level": 1
+            },
+            {
+                "move": "MOVE_HEADBUTT",
+                "level": 1
+            },
+            {
+                "move": "MOVE_TACKLE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_MUD_SLAP",
+                "level": 1
+            },
+            {
+                "move": "MOVE_HARDEN",
+                "level": 4
+            },
+            {
+                "move": "MOVE_MUD_SLAP",
+                "level": 7
+            },
+            {
+                "move": "MOVE_HEADBUTT",
+                "level": 10
+            },
+            {
+                "move": "MOVE_METAL_CLAW",
+                "level": 13
+            },
+            {
+                "move": "MOVE_IRON_DEFENSE",
+                "level": 17
+            },
+            {
+                "move": "MOVE_ROAR",
+                "level": 21
+            },
+            {
+                "move": "MOVE_TAKE_DOWN",
+                "level": 25
+            },
+            {
+                "move": "MOVE_IRON_TAIL",
+                "level": 29
+            },
+            {
+                "move": "MOVE_PROTECT",
+                "level": 37
+            },
+            {
+                "move": "MOVE_METAL_SOUND",
+                "level": 50
+            },
+            {
+                "move": "MOVE_DOUBLE_EDGE",
+                "level": 63
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_IRON_TAIL",
+            "MOVE_DIG",
+            "MOVE_RAIN_DANCE",
+            "MOVE_CUT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_FLAMETHROWER",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_THUNDER",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_ROCK_TOMB",
+            "MOVE_FOCUS_PUNCH",
+            "MOVE_EARTHQUAKE",
+            "MOVE_THUNDERBOLT",
+            "MOVE_SANDSTORM",
+            "MOVE_SOLARBEAM",
+            "MOVE_FIRE_BLAST",
+            "MOVE_TAUNT",
+            "MOVE_AERIAL_ACE",
+            "MOVE_SHOCK_WAVE",
+            "MOVE_TOXIC",
+            "MOVE_DRAGON_CLAW",
+            "MOVE_SURF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_BLIZZARD",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_WATER_PULSE",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_ICE_BEAM",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaMedicham",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_BIDE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_THUNDERPUNCH",
+                "level": 1
+            },
+            {
+                "move": "MOVE_CONFUSION",
+                "level": 1
+            },
+            {
+                "move": "MOVE_FIRE_PUNCH",
+                "level": 1
+            },
+            {
+                "move": "MOVE_DETECT",
+                "level": 2
+            },
+            {
+                "move": "MOVE_MEDITATE",
+                "level": 2
+            },
+            {
+                "move": "MOVE_ICE_PUNCH",
+                "level": 2
+            },
+            {
+                "move": "MOVE_MEDITATE",
+                "level": 4
+            },
+            {
+                "move": "MOVE_CONFUSION",
+                "level": 9
+            },
+            {
+                "move": "MOVE_DETECT",
+                "level": 12
+            },
+            {
+                "move": "MOVE_HIDDEN_POWER",
+                "level": 17
+            },
+            {
+                "move": "MOVE_SWAGGER",
+                "level": 20
+            },
+            {
+                "move": "MOVE_MIND_READER",
+                "level": 25
+            },
+            {
+                "move": "MOVE_CALM_MIND",
+                "level": 28
+            },
+            {
+                "move": "MOVE_HI_JUMP_KICK",
+                "level": 33
+            },
+            {
+                "move": "MOVE_PSYCH_UP",
+                "level": 36
+            },
+            {
+                "move": "MOVE_REVERSAL",
+                "level": 47
+            },
+            {
+                "move": "MOVE_RECOVER",
+                "level": 56
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_RAIN_DANCE",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_ROCK_TOMB",
+            "MOVE_FOCUS_PUNCH",
+            "MOVE_PSYCHIC",
+            "MOVE_SHADOW_BALL",
+            "MOVE_TOXIC",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_LIGHT_SCREEN",
+            "MOVE_SECRET_POWER",
+            "MOVE_BULK_UP",
+            "MOVE_FLASH",
+            "MOVE_PROTECT",
+            "MOVE_CALM_MIND",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_REFLECT",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaManectric",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_TACKLE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_THUNDER_WAVE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_HOWL",
+                "level": 1
+            },
+            {
+                "move": "MOVE_LEER",
+                "level": 1
+            },
+            {
+                "move": "MOVE_THUNDER_WAVE",
+                "level": 4
+            },
+            {
+                "move": "MOVE_LEER",
+                "level": 9
+            },
+            {
+                "move": "MOVE_HOWL",
+                "level": 11
+            },
+            {
+                "move": "MOVE_QUICK_ATTACK",
+                "level": 17
+            },
+            {
+                "move": "MOVE_SPARK",
+                "level": 20
+            },
+            {
+                "move": "MOVE_ODOR_SLEUTH",
+                "level": 25
+            },
+            {
+                "move": "MOVE_ROAR",
+                "level": 31
+            },
+            {
+                "move": "MOVE_BITE",
+                "level": 39
+            },
+            {
+                "move": "MOVE_THUNDER",
+                "level": 45
+            },
+            {
+                "move": "MOVE_CHARGE",
+                "level": 53
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_IRON_TAIL",
+            "MOVE_RAIN_DANCE",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_THUNDER",
+            "MOVE_FACADE",
+            "MOVE_THUNDERBOLT",
+            "MOVE_SHOCK_WAVE",
+            "MOVE_TOXIC",
+            "MOVE_THIEF",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_FLASH",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaSharpedo",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_RAGE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_BITE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_FOCUS_ENERGY",
+                "level": 1
+            },
+            {
+                "move": "MOVE_LEER",
+                "level": 1
+            },
+            {
+                "move": "MOVE_RAGE",
+                "level": 7
+            },
+            {
+                "move": "MOVE_FOCUS_ENERGY",
+                "level": 13
+            },
+            {
+                "move": "MOVE_SCARY_FACE",
+                "level": 16
+            },
+            {
+                "move": "MOVE_CRUNCH",
+                "level": 22
+            },
+            {
+                "move": "MOVE_SCREECH",
+                "level": 28
+            },
+            {
+                "move": "MOVE_SLASH",
+                "level": 33
+            },
+            {
+                "move": "MOVE_TAUNT",
+                "level": 38
+            },
+            {
+                "move": "MOVE_SWAGGER",
+                "level": 43
+            },
+            {
+                "move": "MOVE_SKULL_BASH",
+                "level": 48
+            },
+            {
+                "move": "MOVE_AGILITY",
+                "level": 53
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_RAIN_DANCE",
+            "MOVE_HAIL",
+            "MOVE_TORMENT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_ROCK_TOMB",
+            "MOVE_EARTHQUAKE",
+            "MOVE_DIVE",
+            "MOVE_WATERFALL",
+            "MOVE_TAUNT",
+            "MOVE_TOXIC",
+            "MOVE_THIEF",
+            "MOVE_SURF",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_BLIZZARD",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_WATER_PULSE",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_ICE_BEAM",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaCamerupt",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_TACKLE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_GROWL",
+                "level": 1
+            },
+            {
+                "move": "MOVE_EMBER",
+                "level": 1
+            },
+            {
+                "move": "MOVE_MAGNITUDE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_EMBER",
+                "level": 11
+            },
+            {
+                "move": "MOVE_MAGNITUDE",
+                "level": 19
+            },
+            {
+                "move": "MOVE_FOCUS_ENERGY",
+                "level": 25
+            },
+            {
+                "move": "MOVE_TAKE_DOWN",
+                "level": 29
+            },
+            {
+                "move": "MOVE_AMNESIA",
+                "level": 31
+            },
+            {
+                "move": "MOVE_ROCK_SLIDE",
+                "level": 33
+            },
+            {
+                "move": "MOVE_EARTHQUAKE",
+                "level": 37
+            },
+            {
+                "move": "MOVE_ERUPTION",
+                "level": 45
+            },
+            {
+                "move": "MOVE_FISSURE",
+                "level": 55
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_DIG",
+            "MOVE_ROCK_SMASH",
+            "MOVE_OVERHEAT",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_FLAMETHROWER",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_ROCK_TOMB",
+            "MOVE_EARTHQUAKE",
+            "MOVE_SANDSTORM",
+            "MOVE_FIRE_BLAST",
+            "MOVE_TOXIC",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaAltaria",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_SING",
+                "level": 1
+            },
+            {
+                "move": "MOVE_ASTONISH",
+                "level": 1
+            },
+            {
+                "move": "MOVE_PECK",
+                "level": 1
+            },
+            {
+                "move": "MOVE_GROWL",
+                "level": 1
+            },
+            {
+                "move": "MOVE_ASTONISH",
+                "level": 8
+            },
+            {
+                "move": "MOVE_SING",
+                "level": 11
+            },
+            {
+                "move": "MOVE_FURY_ATTACK",
+                "level": 18
+            },
+            {
+                "move": "MOVE_SAFEGUARD",
+                "level": 21
+            },
+            {
+                "move": "MOVE_MIST",
+                "level": 28
+            },
+            {
+                "move": "MOVE_TAKE_DOWN",
+                "level": 31
+            },
+            {
+                "move": "MOVE_DRAGONBREATH",
+                "level": 35
+            },
+            {
+                "move": "MOVE_DRAGON_DANCE",
+                "level": 40
+            },
+            {
+                "move": "MOVE_REFRESH",
+                "level": 45
+            },
+            {
+                "move": "MOVE_PERISH_SONG",
+                "level": 54
+            },
+            {
+                "move": "MOVE_SKY_ATTACK",
+                "level": 59
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_IRON_TAIL",
+            "MOVE_RAIN_DANCE",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_FLAMETHROWER",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_EARTHQUAKE",
+            "MOVE_SAFEGUARD",
+            "MOVE_SOLARBEAM",
+            "MOVE_FLY",
+            "MOVE_FIRE_BLAST",
+            "MOVE_AERIAL_ACE",
+            "MOVE_TOXIC",
+            "MOVE_DRAGON_CLAW",
+            "MOVE_THIEF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_STEEL_WING",
+            "MOVE_SECRET_POWER",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_ICE_BEAM",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaBanette",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_SCREECH",
+                "level": 1
+            },
+            {
+                "move": "MOVE_NIGHT_SHADE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_CURSE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_KNOCK_OFF",
+                "level": 1
+            },
+            {
+                "move": "MOVE_SCREECH",
+                "level": 8
+            },
+            {
+                "move": "MOVE_SCREECH",
+                "level": 8
+            },
+            {
+                "move": "MOVE_NIGHT_SHADE",
+                "level": 13
+            },
+            {
+                "move": "MOVE_NIGHT_SHADE",
+                "level": 13
+            },
+            {
+                "move": "MOVE_CURSE",
+                "level": 20
+            },
+            {
+                "move": "MOVE_SPITE",
+                "level": 25
+            },
+            {
+                "move": "MOVE_WILL_O_WISP",
+                "level": 32
+            },
+            {
+                "move": "MOVE_FAINT_ATTACK",
+                "level": 39
+            },
+            {
+                "move": "MOVE_SHADOW_BALL",
+                "level": 48
+            },
+            {
+                "move": "MOVE_SNATCH",
+                "level": 55
+            },
+            {
+                "move": "MOVE_GRUDGE",
+                "level": 64
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_RAIN_DANCE",
+            "MOVE_TORMENT",
+            "MOVE_RETURN",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_THUNDER",
+            "MOVE_FACADE",
+            "MOVE_PSYCHIC",
+            "MOVE_SHADOW_BALL",
+            "MOVE_THUNDERBOLT",
+            "MOVE_SKILL_SWAP",
+            "MOVE_TAUNT",
+            "MOVE_SHOCK_WAVE",
+            "MOVE_TOXIC",
+            "MOVE_THIEF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_FLASH",
+            "MOVE_PROTECT",
+            "MOVE_CALM_MIND",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_SNATCH",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaAbsol",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_SCRATCH",
+                "level": 1
+            },
+            {
+                "move": "MOVE_LEER",
+                "level": 5
+            },
+            {
+                "move": "MOVE_TAUNT",
+                "level": 9
+            },
+            {
+                "move": "MOVE_QUICK_ATTACK",
+                "level": 13
+            },
+            {
+                "move": "MOVE_RAZOR_WIND",
+                "level": 17
+            },
+            {
+                "move": "MOVE_BITE",
+                "level": 21
+            },
+            {
+                "move": "MOVE_SWORDS_DANCE",
+                "level": 26
+            },
+            {
+                "move": "MOVE_DOUBLE_TEAM",
+                "level": 31
+            },
+            {
+                "move": "MOVE_SLASH",
+                "level": 36
+            },
+            {
+                "move": "MOVE_FUTURE_SIGHT",
+                "level": 41
+            },
+            {
+                "move": "MOVE_PERISH_SONG",
+                "level": 46
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_IRON_TAIL",
+            "MOVE_RAIN_DANCE",
+            "MOVE_HAIL",
+            "MOVE_CUT",
+            "MOVE_TORMENT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_FLAMETHROWER",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_THUNDER",
+            "MOVE_FACADE",
+            "MOVE_SHADOW_BALL",
+            "MOVE_THUNDERBOLT",
+            "MOVE_SANDSTORM",
+            "MOVE_FIRE_BLAST",
+            "MOVE_TAUNT",
+            "MOVE_AERIAL_ACE",
+            "MOVE_SHOCK_WAVE",
+            "MOVE_TOXIC",
+            "MOVE_THIEF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_BLIZZARD",
+            "MOVE_FLASH",
+            "MOVE_PROTECT",
+            "MOVE_WATER_PULSE",
+            "MOVE_CALM_MIND",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_SNATCH",
+            "MOVE_ICE_BEAM",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaGlalie",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_DOUBLE_TEAM",
+                "level": 1
+            },
+            {
+                "move": "MOVE_BITE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_POWDER_SNOW",
+                "level": 1
+            },
+            {
+                "move": "MOVE_LEER",
+                "level": 1
+            },
+            {
+                "move": "MOVE_DOUBLE_TEAM",
+                "level": 7
+            },
+            {
+                "move": "MOVE_BITE",
+                "level": 10
+            },
+            {
+                "move": "MOVE_ICY_WIND",
+                "level": 16
+            },
+            {
+                "move": "MOVE_HEADBUTT",
+                "level": 19
+            },
+            {
+                "move": "MOVE_PROTECT",
+                "level": 25
+            },
+            {
+                "move": "MOVE_CRUNCH",
+                "level": 28
+            },
+            {
+                "move": "MOVE_ICE_BEAM",
+                "level": 34
+            },
+            {
+                "move": "MOVE_HAIL",
+                "level": 42
+            },
+            {
+                "move": "MOVE_BLIZZARD",
+                "level": 53
+            },
+            {
+                "move": "MOVE_SHEER_COLD",
+                "level": 61
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_RAIN_DANCE",
+            "MOVE_HAIL",
+            "MOVE_TORMENT",
+            "MOVE_RETURN",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_EARTHQUAKE",
+            "MOVE_SHADOW_BALL",
+            "MOVE_SAFEGUARD",
+            "MOVE_TAUNT",
+            "MOVE_TOXIC",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_LIGHT_SCREEN",
+            "MOVE_SECRET_POWER",
+            "MOVE_BLIZZARD",
+            "MOVE_FLASH",
+            "MOVE_PROTECT",
+            "MOVE_WATER_PULSE",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_ICE_BEAM",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaSalamence",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_RAGE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_BITE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_HEADBUTT",
+                "level": 1
+            },
+            {
+                "move": "MOVE_LEER",
+                "level": 1
+            },
+            {
+                "move": "MOVE_BITE",
+                "level": 5
+            },
+            {
+                "move": "MOVE_LEER",
+                "level": 9
+            },
+            {
+                "move": "MOVE_HEADBUTT",
+                "level": 17
+            },
+            {
+                "move": "MOVE_FOCUS_ENERGY",
+                "level": 21
+            },
+            {
+                "move": "MOVE_EMBER",
+                "level": 25
+            },
+            {
+                "move": "MOVE_PROTECT",
+                "level": 30
+            },
+            {
+                "move": "MOVE_DRAGONBREATH",
+                "level": 38
+            },
+            {
+                "move": "MOVE_SCARY_FACE",
+                "level": 47
+            },
+            {
+                "move": "MOVE_FLY",
+                "level": 50
+            },
+            {
+                "move": "MOVE_CRUNCH",
+                "level": 61
+            },
+            {
+                "move": "MOVE_DRAGON_CLAW",
+                "level": 79
+            },
+            {
+                "move": "MOVE_DOUBLE_EDGE",
+                "level": 93
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_IRON_TAIL",
+            "MOVE_RAIN_DANCE",
+            "MOVE_CUT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_FLAMETHROWER",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_ROCK_TOMB",
+            "MOVE_EARTHQUAKE",
+            "MOVE_FLY",
+            "MOVE_FIRE_BLAST",
+            "MOVE_AERIAL_ACE",
+            "MOVE_TOXIC",
+            "MOVE_DRAGON_CLAW",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_STEEL_WING",
+            "MOVE_SECRET_POWER",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaMetagross",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_SCARY_FACE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_TAKE_DOWN",
+                "level": 1
+            },
+            {
+                "move": "MOVE_CONFUSION",
+                "level": 1
+            },
+            {
+                "move": "MOVE_METAL_CLAW",
+                "level": 1
+            },
+            {
+                "move": "MOVE_CONFUSION",
+                "level": 20
+            },
+            {
+                "move": "MOVE_METAL_CLAW",
+                "level": 20
+            },
+            {
+                "move": "MOVE_SCARY_FACE",
+                "level": 26
+            },
+            {
+                "move": "MOVE_PURSUIT",
+                "level": 32
+            },
+            {
+                "move": "MOVE_PSYCHIC",
+                "level": 38
+            },
+            {
+                "move": "MOVE_IRON_DEFENSE",
+                "level": 44
+            },
+            {
+                "move": "MOVE_METEOR_MASH",
+                "level": 55
+            },
+            {
+                "move": "MOVE_AGILITY",
+                "level": 66
+            },
+            {
+                "move": "MOVE_HYPER_BEAM",
+                "level": 77
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_RAIN_DANCE",
+            "MOVE_CUT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_ROCK_TOMB",
+            "MOVE_PSYCHIC",
+            "MOVE_EARTHQUAKE",
+            "MOVE_SHADOW_BALL",
+            "MOVE_SANDSTORM",
+            "MOVE_AERIAL_ACE",
+            "MOVE_TOXIC",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_LIGHT_SCREEN",
+            "MOVE_SECRET_POWER",
+            "MOVE_FLASH",
+            "MOVE_SLUDGE_BOMB",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_FRUSTRATION",
+            "MOVE_REFLECT",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaLatias",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_PSYWAVE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_WISH",
+                "level": 5
+            },
+            {
+                "move": "MOVE_HELPING_HAND",
+                "level": 10
+            },
+            {
+                "move": "MOVE_SAFEGUARD",
+                "level": 15
+            },
+            {
+                "move": "MOVE_DRAGONBREATH",
+                "level": 20
+            },
+            {
+                "move": "MOVE_WATER_SPORT",
+                "level": 25
+            },
+            {
+                "move": "MOVE_REFRESH",
+                "level": 30
+            },
+            {
+                "move": "MOVE_MIST_BALL",
+                "level": 35
+            },
+            {
+                "move": "MOVE_PSYCHIC",
+                "level": 40
+            },
+            {
+                "move": "MOVE_RECOVER",
+                "level": 45
+            },
+            {
+                "move": "MOVE_CHARM",
+                "level": 50
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_RAIN_DANCE",
+            "MOVE_CUT",
+            "MOVE_RETURN",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_THUNDER",
+            "MOVE_FACADE",
+            "MOVE_PSYCHIC",
+            "MOVE_EARTHQUAKE",
+            "MOVE_SHADOW_BALL",
+            "MOVE_THUNDERBOLT",
+            "MOVE_SAFEGUARD",
+            "MOVE_SANDSTORM",
+            "MOVE_SOLARBEAM",
+            "MOVE_FLY",
+            "MOVE_DIVE",
+            "MOVE_WATERFALL",
+            "MOVE_AERIAL_ACE",
+            "MOVE_SHOCK_WAVE",
+            "MOVE_TOXIC",
+            "MOVE_DRAGON_CLAW",
+            "MOVE_SURF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_STEEL_WING",
+            "MOVE_LIGHT_SCREEN",
+            "MOVE_SECRET_POWER",
+            "MOVE_FLASH",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_WATER_PULSE",
+            "MOVE_CALM_MIND",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_REFLECT",
+            "MOVE_ICE_BEAM",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaLatios",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_PSYWAVE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_MEMENTO",
+                "level": 5
+            },
+            {
+                "move": "MOVE_HELPING_HAND",
+                "level": 10
+            },
+            {
+                "move": "MOVE_SAFEGUARD",
+                "level": 15
+            },
+            {
+                "move": "MOVE_DRAGONBREATH",
+                "level": 20
+            },
+            {
+                "move": "MOVE_PROTECT",
+                "level": 25
+            },
+            {
+                "move": "MOVE_REFRESH",
+                "level": 30
+            },
+            {
+                "move": "MOVE_LUSTER_PURGE",
+                "level": 35
+            },
+            {
+                "move": "MOVE_PSYCHIC",
+                "level": 40
+            },
+            {
+                "move": "MOVE_RECOVER",
+                "level": 45
+            },
+            {
+                "move": "MOVE_DRAGON_DANCE",
+                "level": 50
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_RAIN_DANCE",
+            "MOVE_CUT",
+            "MOVE_RETURN",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_THUNDER",
+            "MOVE_FACADE",
+            "MOVE_PSYCHIC",
+            "MOVE_EARTHQUAKE",
+            "MOVE_SHADOW_BALL",
+            "MOVE_THUNDERBOLT",
+            "MOVE_SAFEGUARD",
+            "MOVE_SANDSTORM",
+            "MOVE_SOLARBEAM",
+            "MOVE_FLY",
+            "MOVE_DIVE",
+            "MOVE_WATERFALL",
+            "MOVE_AERIAL_ACE",
+            "MOVE_SHOCK_WAVE",
+            "MOVE_TOXIC",
+            "MOVE_DRAGON_CLAW",
+            "MOVE_SURF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_STEEL_WING",
+            "MOVE_LIGHT_SCREEN",
+            "MOVE_SECRET_POWER",
+            "MOVE_FLASH",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_WATER_PULSE",
+            "MOVE_CALM_MIND",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_REFLECT",
+            "MOVE_ICE_BEAM",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaRayquaza",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_TWISTER",
+                "level": 1
+            },
+            {
+                "move": "MOVE_SCARY_FACE",
+                "level": 5
+            },
+            {
+                "move": "MOVE_ANCIENTPOWER",
+                "level": 15
+            },
+            {
+                "move": "MOVE_DRAGON_CLAW",
+                "level": 20
+            },
+            {
+                "move": "MOVE_DRAGON_DANCE",
+                "level": 30
+            },
+            {
+                "move": "MOVE_CRUNCH",
+                "level": 35
+            },
+            {
+                "move": "MOVE_FLY",
+                "level": 45
+            },
+            {
+                "move": "MOVE_REST",
+                "level": 50
+            },
+            {
+                "move": "MOVE_EXTREMESPEED",
+                "level": 60
+            },
+            {
+                "move": "MOVE_OUTRAGE",
+                "level": 65
+            },
+            {
+                "move": "MOVE_HYPER_BEAM",
+                "level": 75
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_IRON_TAIL",
+            "MOVE_RAIN_DANCE",
+            "MOVE_ROCK_SMASH",
+            "MOVE_OVERHEAT",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_FLAMETHROWER",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_THUNDER",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_EARTHQUAKE",
+            "MOVE_THUNDERBOLT",
+            "MOVE_SANDSTORM",
+            "MOVE_SOLARBEAM",
+            "MOVE_FLY",
+            "MOVE_DIVE",
+            "MOVE_FIRE_BLAST",
+            "MOVE_WATERFALL",
+            "MOVE_AERIAL_ACE",
+            "MOVE_SHOCK_WAVE",
+            "MOVE_TOXIC",
+            "MOVE_DRAGON_CLAW",
+            "MOVE_SURF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_BULK_UP",
+            "MOVE_BLIZZARD",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_WATER_PULSE",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_FRUSTRATION",
+            "MOVE_ICE_BEAM",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaLucario",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_DETECT",
+                "level": 1
+            },
+            {
+                "move": "MOVE_FORESIGHT",
+                "level": 1
+            },
+            {
+                "move": "MOVE_METAL_CLAW",
+                "level": 1
+            },
+            {
+                "move": "MOVE_QUICK_ATTACK",
+                "level": 1
+            },
+            {
+                "move": "MOVE_COUNTER",
+                "level": 6
+            },
+            {
+                "move": "MOVE_BONE_RUSH",
+                "level": 19
+            },
+            {
+                "move": "MOVE_METAL_SOUND",
+                "level": 24
+            },
+            {
+                "move": "MOVE_SWORDS_DANCE",
+                "level": 33
+            },
+            {
+                "move": "MOVE_EXTREMESPEED",
+                "level": 51
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_DIG",
+            "MOVE_RAIN_DANCE",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_FLAMETHROWER",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_ROCK_TOMB",
+            "MOVE_FOCUS_PUNCH",
+            "MOVE_EARTHQUAKE",
+            "MOVE_FIRE_BLAST",
+            "MOVE_TOXIC",
+            "MOVE_THIEF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_SECRET_POWER",
+            "MOVE_BULK_UP",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "MegaGallade",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_CONFUSION",
+                "level": 1
+            },
+            {
+                "move": "MOVE_DOUBLE_TEAM",
+                "level": 1
+            },
+            {
+                "move": "MOVE_LEAF_BLADE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_LEER",
+                "level": 1
+            },
+            {
+                "move": "MOVE_TELEPORT",
+                "level": 1
+            },
+            {
+                "move": "MOVE_FURY_CUTTER",
+                "level": 17
+            },
+            {
+                "move": "MOVE_SLASH",
+                "level": 22
+            },
+            {
+                "move": "MOVE_SWORDS_DANCE",
+                "level": 25
+            },
+            {
+                "move": "MOVE_HELPING_HAND",
+                "level": 36
+            },
+            {
+                "move": "MOVE_FALSE_SWIPE",
+                "level": 45
+            },
+            {
+                "move": "MOVE_PROTECT",
+                "level": 50
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_RAIN_DANCE",
+            "MOVE_TORMENT",
+            "MOVE_RETURN",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_FACADE",
+            "MOVE_PSYCHIC",
+            "MOVE_SHADOW_BALL",
+            "MOVE_THUNDERBOLT",
+            "MOVE_SAFEGUARD",
+            "MOVE_SKILL_SWAP",
+            "MOVE_TAUNT",
+            "MOVE_SHOCK_WAVE",
+            "MOVE_TOXIC",
+            "MOVE_THIEF",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_LIGHT_SCREEN",
+            "MOVE_SECRET_POWER",
+            "MOVE_FLASH",
+            "MOVE_PROTECT",
+            "MOVE_CALM_MIND",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_ATTRACT",
+            "MOVE_FRUSTRATION",
+            "MOVE_SNATCH",
+            "MOVE_REFLECT",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "PrimalKyogre",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_WATER_PULSE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_SCARY_FACE",
+                "level": 5
+            },
+            {
+                "move": "MOVE_ANCIENTPOWER",
+                "level": 15
+            },
+            {
+                "move": "MOVE_BODY_SLAM",
+                "level": 20
+            },
+            {
+                "move": "MOVE_CALM_MIND",
+                "level": 30
+            },
+            {
+                "move": "MOVE_ICE_BEAM",
+                "level": 35
+            },
+            {
+                "move": "MOVE_HYDRO_PUMP",
+                "level": 45
+            },
+            {
+                "move": "MOVE_REST",
+                "level": 50
+            },
+            {
+                "move": "MOVE_SHEER_COLD",
+                "level": 60
+            },
+            {
+                "move": "MOVE_DOUBLE_EDGE",
+                "level": 65
+            },
+            {
+                "move": "MOVE_WATER_SPOUT",
+                "level": 75
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_RAIN_DANCE",
+            "MOVE_HAIL",
+            "MOVE_ROCK_SMASH",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_THUNDER",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_ROCK_TOMB",
+            "MOVE_EARTHQUAKE",
+            "MOVE_THUNDERBOLT",
+            "MOVE_SAFEGUARD",
+            "MOVE_DIVE",
+            "MOVE_WATERFALL",
+            "MOVE_SHOCK_WAVE",
+            "MOVE_TOXIC",
+            "MOVE_SURF",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_BLIZZARD",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_WATER_PULSE",
+            "MOVE_CALM_MIND",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_FRUSTRATION",
+            "MOVE_ICE_BEAM",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
+    },
+    {
+        "pokemon": "PrimalGroudon",
+        "levelUpMoves": [
+            {
+                "move": "MOVE_MUD_SHOT",
+                "level": 1
+            },
+            {
+                "move": "MOVE_SCARY_FACE",
+                "level": 5
+            },
+            {
+                "move": "MOVE_ANCIENTPOWER",
+                "level": 15
+            },
+            {
+                "move": "MOVE_SLASH",
+                "level": 20
+            },
+            {
+                "move": "MOVE_BULK_UP",
+                "level": 30
+            },
+            {
+                "move": "MOVE_EARTHQUAKE",
+                "level": 35
+            },
+            {
+                "move": "MOVE_FIRE_BLAST",
+                "level": 45
+            },
+            {
+                "move": "MOVE_REST",
+                "level": 50
+            },
+            {
+                "move": "MOVE_FISSURE",
+                "level": 60
+            },
+            {
+                "move": "MOVE_SOLARBEAM",
+                "level": 65
+            },
+            {
+                "move": "MOVE_ERUPTION",
+                "level": 75
+            }
+        ],
+        "HMTMMoves": [
+            "MOVE_IRON_TAIL",
+            "MOVE_DIG",
+            "MOVE_CUT",
+            "MOVE_ROCK_SMASH",
+            "MOVE_OVERHEAT",
+            "MOVE_RETURN",
+            "MOVE_STRENGTH",
+            "MOVE_FLAMETHROWER",
+            "MOVE_DOUBLE_TEAM",
+            "MOVE_THUNDER",
+            "MOVE_FACADE",
+            "MOVE_BRICK_BREAK",
+            "MOVE_ROCK_TOMB",
+            "MOVE_EARTHQUAKE",
+            "MOVE_THUNDERBOLT",
+            "MOVE_SAFEGUARD",
+            "MOVE_SANDSTORM",
+            "MOVE_SOLARBEAM",
+            "MOVE_FIRE_BLAST",
+            "MOVE_AERIAL_ACE",
+            "MOVE_SHOCK_WAVE",
+            "MOVE_TOXIC",
+            "MOVE_DRAGON_CLAW",
+            "MOVE_SUNNY_DAY",
+            "MOVE_REST",
+            "MOVE_HYPER_BEAM",
+            "MOVE_SECRET_POWER",
+            "MOVE_BULK_UP",
+            "MOVE_ROAR",
+            "MOVE_PROTECT",
+            "MOVE_HIDDEN_POWER",
+            "MOVE_FRUSTRATION",
+            "MOVE_WIDE_SLASH",
+            "MOVE_VACUUM_CUT"
+        ]
     }
 ]

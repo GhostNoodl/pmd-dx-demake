@@ -13,6 +13,8 @@
 #include "move_orb_effects_1.h"
 #include "dungeon_message.h"
 #include "dungeon_logic.h"
+#include "dungeon_misc.h"
+#include "pokemon.h"
 #include "dungeon_random.h"
 #include "structs/str_dungeon.h"
 
@@ -79,11 +81,66 @@ void DxTryMoveGrowth(EntityInfo *user, Move *move)
 
 // --- Empowerment Seed ---
 static const u8 sDxEmpowered[] = _("{POKEMON_0} became Empowered!");
+static const u8 sDxMegaEvolved[] = _("{POKEMON_0} Mega Evolved!");
+static const u8 sDxPrimal[] = _("{POKEMON_0} underwent Primal Reversion!");
+
+#include "data/dx_megas.h"
+
+static const struct DxMegaForm *DxFindMega(s32 base)
+{
+    s32 i;
+
+    for (i = 0; i < ARRAY_COUNT(sDxMegaForms); i++) {
+        if (sDxMegaForms[i].base == base)
+            return &sDxMegaForms[i];
+    }
+    return NULL;
+}
+
+// a Mega form's base species (any other id is returned as is)
+s32 DxMegaBase(s32 species)
+{
+    s32 i;
+
+    for (i = 0; i < ARRAY_COUNT(sDxMegaForms); i++) {
+        if (sDxMegaForms[i].mega == species)
+            return sDxMegaForms[i].base;
+    }
+    return species;
+}
+
+// The Empowered Pokemon takes on its Mega/Primal form for the floor: sprite, types and abilities
+// come from the form (its species id stays the base's, so name, data and saves are unchanged),
+// and the form's stat edge is extra stat stages.
+static void DxMegaEvolve(Entity *user, Entity *target, const struct DxMegaForm *form)
+{
+    EntityInfo *info = GetEntInfo(target);
+    StatIndex physical = {STAT_INDEX_PHYSICAL}, special = {STAT_INDEX_SPECIAL};
+    s32 i;
+
+    LoadPokemonSprite(form->mega, FALSE);
+    info->apparentID = form->mega;
+    target->axObj.spriteFile = GetSpriteData(form->mega);
+    for (i = 0; i < 2; i++) {
+        info->types[i] = GetPokemonType(form->mega, i);
+        info->abilities[i] = GetPokemonAbility(form->mega, i);
+    }
+    SetMessageArgument_2(gFormatBuffer_Monsters[0], info, 0);
+    TryDisplayDungeonLoggableMessage3_Async(user, target, form->primal ? sDxPrimal : sDxMegaEvolved);
+    if (form->stages[0]) BoostOffensiveStat(user, target, physical, form->stages[0]);
+    if (form->stages[1]) BoostOffensiveStat(user, target, special, form->stages[1]);
+    if (form->stages[2]) BoostDefensiveStat(user, target, physical, form->stages[2]);
+    if (form->stages[3]) BoostDefensiveStat(user, target, special, form->stages[3]);
+    if (form->faster)
+        BoostSpeed(user, target, 0, TRUE);
+    gDungeon->unkC = 1; // abilities changed: re-check weather abilities (Drizzle, Drought...)
+}
 
 // Rescue Team DX: an Empowered Pokemon's stats all rise (Mega forms come on top of this)
 void DxEmpower(Entity *user, Entity *target)
 {
     StatIndex physical = {STAT_INDEX_PHYSICAL}, special = {STAT_INDEX_SPECIAL};
+    const struct DxMegaForm *form;
 
     if (!EntityIsValid(target))
         return;
@@ -94,6 +151,10 @@ void DxEmpower(Entity *user, Entity *target)
     BoostDefensiveStat(user, target, physical, DX_EMPOWER_STAGES);
     BoostDefensiveStat(user, target, special, DX_EMPOWER_STAGES);
     BoostSpeed(user, target, 0, TRUE);
+
+    form = DxFindMega(GetEntInfo(target)->id);
+    if (form != NULL && GetEntInfo(target)->apparentID != form->mega)
+        DxMegaEvolve(user, target, form);
 }
 
 // --- Mystery Houses ---

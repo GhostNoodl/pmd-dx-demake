@@ -1308,6 +1308,7 @@ struct UnkTalkFileStruct
 
 #ifdef DX_RULES
 #include "data/dx_talk_as.h"
+#include "dx_rules.h"
 #endif
 
 void sub_806A3D4(u8 *dst, s32 _a1, s32 id, bool32 _a3)
@@ -1321,7 +1322,9 @@ void sub_806A3D4(u8 *dst, s32 _a1, s32 id, bool32 _a3)
 
 #ifdef DX_RULES
     // Red's talk files end at its own species: newcomers use their Red relative's lines
-    if (a1 >= DX_FIRST_NEW_SPECIES && a1 < MONSTER_MAX)
+    if (a1 >= DX_FIRST_MEGA)
+        a1 = DxMegaBase(a1);
+    if (a1 >= DX_FIRST_NEW_SPECIES && a1 < DX_FIRST_NEW_SPECIES + DX_NEW_SPECIES_COUNT)
         a1 = sDxTalkAs[a1 - DX_FIRST_NEW_SPECIES];
 #endif
     if (a3) {

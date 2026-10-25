@@ -274,3 +274,228 @@ MonsterCategoryIntertwining:
 .string "Intertwining\0"
 .align 2,0
 
+.global MonsterNameMegaVenusaur
+MonsterNameMegaVenusaur:
+.string "Mega Venusaur\0"
+.align 2,0
+
+.global MonsterNameMegaCharizardX
+MonsterNameMegaCharizardX:
+.string "Mega Charizard X\0"
+.align 2,0
+
+.global MonsterNameMegaCharizardY
+MonsterNameMegaCharizardY:
+.string "Mega Charizard Y\0"
+.align 2,0
+
+.global MonsterNameMegaBlastoise
+MonsterNameMegaBlastoise:
+.string "Mega Blastoise\0"
+.align 2,0
+
+.global MonsterNameMegaBeedrill
+MonsterNameMegaBeedrill:
+.string "Mega Beedrill\0"
+.align 2,0
+
+.global MonsterNameMegaPidgeot
+MonsterNameMegaPidgeot:
+.string "Mega Pidgeot\0"
+.align 2,0
+
+.global MonsterNameMegaAlakazam
+MonsterNameMegaAlakazam:
+.string "Mega Alakazam\0"
+.align 2,0
+
+.global MonsterNameMegaSlowbro
+MonsterNameMegaSlowbro:
+.string "Mega Slowbro\0"
+.align 2,0
+
+.global MonsterNameMegaGengar
+MonsterNameMegaGengar:
+.string "Mega Gengar\0"
+.align 2,0
+
+.global MonsterNameMegaKangaskhan
+MonsterNameMegaKangaskhan:
+.string "Mega Kangaskhan\0"
+.align 2,0
+
+.global MonsterNameMegaPinsir
+MonsterNameMegaPinsir:
+.string "Mega Pinsir\0"
+.align 2,0
+
+.global MonsterNameMegaGyarados
+MonsterNameMegaGyarados:
+.string "Mega Gyarados\0"
+.align 2,0
+
+.global MonsterNameMegaAerodactyl
+MonsterNameMegaAerodactyl:
+.string "Mega Aerodactyl\0"
+.align 2,0
+
+.global MonsterNameMegaMewtwoY
+MonsterNameMegaMewtwoY:
+.string "Mega Mewtwo Y\0"
+.align 2,0
+
+.global MonsterNameMegaMewtwoX
+MonsterNameMegaMewtwoX:
+.string "Mega Mewtwo X\0"
+.align 2,0
+
+.global MonsterNameMegaAmpharos
+MonsterNameMegaAmpharos:
+.string "Mega Ampharos\0"
+.align 2,0
+
+.global MonsterNameMegaSteelix
+MonsterNameMegaSteelix:
+.string "Mega Steelix\0"
+.align 2,0
+
+.global MonsterNameMegaScizor
+MonsterNameMegaScizor:
+.string "Mega Scizor\0"
+.align 2,0
+
+.global MonsterNameMegaHeracross
+MonsterNameMegaHeracross:
+.string "Mega Heracross\0"
+.align 2,0
+
+.global MonsterNameMegaHoundoom
+MonsterNameMegaHoundoom:
+.string "Mega Houndoom\0"
+.align 2,0
+
+.global MonsterNameMegaTyranitar
+MonsterNameMegaTyranitar:
+.string "Mega Tyranitar\0"
+.align 2,0
+
+.global MonsterNameMegaSceptile
+MonsterNameMegaSceptile:
+.string "Mega Sceptile\0"
+.align 2,0
+
+.global MonsterNameMegaBlaziken
+MonsterNameMegaBlaziken:
+.string "Mega Blaziken\0"
+.align 2,0
+
+.global MonsterNameMegaSwampert
+MonsterNameMegaSwampert:
+.string "Mega Swampert\0"
+.align 2,0
+
+.global MonsterNameMegaGardevoir
+MonsterNameMegaGardevoir:
+.string "Mega Gardevoir\0"
+.align 2,0
+
+.global MonsterNameMegaSableye
+MonsterNameMegaSableye:
+.string "Mega Sableye\0"
+.align 2,0
+
+.global MonsterNameMegaMawile
+MonsterNameMegaMawile:
+.string "Mega Mawile\0"
+.align 2,0
+
+.global MonsterNameMegaAggron
+MonsterNameMegaAggron:
+.string "Mega Aggron\0"
+.align 2,0
+
+.global MonsterNameMegaMedicham
+MonsterNameMegaMedicham:
+.string "Mega Medicham\0"
+.align 2,0
+
+.global MonsterNameMegaManectric
+MonsterNameMegaManectric:
+.string "Mega Manectric\0"
+.align 2,0
+
+.global MonsterNameMegaSharpedo
+MonsterNameMegaSharpedo:
+.string "Mega Sharpedo\0"
+.align 2,0
+
+.global MonsterNameMegaCamerupt
+MonsterNameMegaCamerupt:
+.string "Mega Camerupt\0"
+.align 2,0
+
+.global MonsterNameMegaAltaria
+MonsterNameMegaAltaria:
+.string "Mega Altaria\0"
+.align 2,0
+
+.global MonsterNameMegaBanette
+MonsterNameMegaBanette:
+.string "Mega Banette\0"
+.align 2,0
+
+.global MonsterNameMegaAbsol
+MonsterNameMegaAbsol:
+.string "Mega Absol\0"
+.align 2,0
+
+.global MonsterNameMegaGlalie
+MonsterNameMegaGlalie:
+.string "Mega Glalie\0"
+.align 2,0
+
+.global MonsterNameMegaSalamence
+MonsterNameMegaSalamence:
+.string "Mega Salamence\0"
+.align 2,0
+
+.global MonsterNameMegaMetagross
+MonsterNameMegaMetagross:
+.string "Mega Metagross\0"
+.align 2,0
+
+.global MonsterNameMegaLatias
+MonsterNameMegaLatias:
+.string "Mega Latias\0"
+.align 2,0
+
+.global MonsterNameMegaLatios
+MonsterNameMegaLatios:
+.string "Mega Latios\0"
+.align 2,0
+
+.global MonsterNameMegaRayquaza
+MonsterNameMegaRayquaza:
+.string "Mega Rayquaza\0"
+.align 2,0
+
+.global MonsterNameMegaLucario
+MonsterNameMegaLucario:
+.string "Mega Lucario\0"
+.align 2,0
+
+.global MonsterNameMegaGallade
+MonsterNameMegaGallade:
+.string "Mega Gallade\0"
+.align 2,0
+
+.global MonsterNamePrimalKyogre
+MonsterNamePrimalKyogre:
+.string "Primal Kyogre\0"
+.align 2,0
+
+.global MonsterNamePrimalGroudon
+MonsterNamePrimalGroudon:
+.string "Primal Groudon\0"
+.align 2,0
+
