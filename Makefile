@@ -27,6 +27,8 @@ endif
 
 # Builds the ROM using a modern compiler
 MODERN      ?= 0
+# dx: text substitution for the modern build (a no-op for the matching build)
+DX_TEXT     := true
 # dx: DX_DEBUG=1 (modern only) exposes the developers' debug menu on the main menu
 DX_DEBUG    ?= 0
 ifeq (modern,$(MAKECMDGOALS))
@@ -119,6 +121,9 @@ else
   endif
   # dx: Rescue Team DX gameplay rules (see DX_LOG.md)
   CPPFLAGS += -DDX_RULES=1
+  # dx: Rescue Team DX calls Friend Areas "Rescue Camps". Applied to the preprocessed C (no comments
+  # left; identifiers have no spaces), so only text changes; the names are the same length.
+  DX_TEXT := sed -i -e 's/Friend Area/Rescue Camp/g' -e 's/Friend area/Rescue camp/g' -e 's/friend area/rescue camp/g' -e 's/FRIEND AREA/RESCUE CAMP/g' -e 's/Friend\\n\(" *"\)Area/Rescue\\n\1Camp/g'
   # dx: Rescue Team DX dungeon floor counts (tools/dxtest/gen_dx_floors.py)
   CPPFLAGS += -DDX_FLOORS=1
   # dx: in-dungeon party size (Rescue Team DX target: 6)
@@ -323,6 +328,7 @@ endif
 
 $(C_BUILDDIR)/%.o: $(C_SUBDIR)/%.c
 	@$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/$*.i
+	@$(DX_TEXT) $(C_BUILDDIR)/$*.i
 	@$(PREPROC) $(C_BUILDDIR)/$*.i charmap.txt | $(CC1) $(CC1FLAGS) -o $(C_BUILDDIR)/$*.s
 	@echo -e ".text\n\t.align\t2, 0\n" >> $(C_BUILDDIR)/$*.s
 	$(AS) $(ASFLAGS) -o $@ $(C_BUILDDIR)/$*.s
