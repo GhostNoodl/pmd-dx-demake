@@ -1,0 +1,440 @@
+#rom debug
+#save after-first-dungeon
+# DX Apple recruiting: a foe defeated near the leader joins when given an Apple (any teammate may KO it)
+# (forced one-room Monster House floor; foes on 1 HP, a Lv. 100 Friendly leader so the roll succeeds)
+mash START sMainMenu 4 != 0 3000
+write gDxForceMysteryHouse 1 2
+# toolbox: one Apple (82)
+write *gTeamInventoryRef+0 1 1
+write *gTeamInventoryRef+2 1 82
+wait 60
+press UP
+press A
+wait 30
+press A
+wait 30
+press UP
+press UP
+wait 10
+expect *sDxWarp+0xB0 4 == 2
+shot 1_pick_dungeon
+press A
+wait 30
+wait 10
+expect *sDxWarp+0xB0 4 == 1
+shot 2_pick_floor
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+shot 3_in_dungeon
+expect *gDungeon+@gDxOffDungeonLocation 1 == 2
+expect *gDungeon+@gDxOffDungeonFloor 1 == 1
+write *gRecruitedPokemonRef+3733 1 8
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoLevel 1 100
+# this early save has not unlocked recruiting yet; and take the luck out of the recruit roll
+write gDxForceRecruit 1 1
+write *gDungeon+@gDxOffCanRecruit 1 1
+# the leader only knows status moves: give it Tackle
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!2 2 154
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!4 1 40
+# (HP is set once per round: pinning it every frame would keep the foes from fainting)
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+write ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash? A *gTeamInventoryRef+2 1 != 82 250
+wait 120
+shot 4_joined
+# answer the join prompt (Yes) and wait for the third team slot to fill
+mash A ***gDungeon+@gDxOffTeamPokemon!8+@gDxOffEntityInfo+@gDxOffInfoId 2 != 0 1500
+wait 60
+shot 5_team
+read apple *gTeamInventoryRef+2 1
+expect *gTeamInventoryRef+2 1 != 82
+read newmember ***gDungeon+@gDxOffTeamPokemon!8+@gDxOffEntityInfo+@gDxOffInfoId 2
+expect ***gDungeon+@gDxOffTeamPokemon!8+@gDxOffEntityInfo+@gDxOffInfoId 2 != 0

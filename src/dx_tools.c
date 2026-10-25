@@ -476,4 +476,6 @@ const u32 gDxOffWildPokemon = offsetof(Dungeon, wildPokemon);
 const u32 gDxOffInfoStages = offsetof(EntityInfo, offensiveStages);
 const u32 gDxOffInfoApparentId = offsetof(EntityInfo, apparentID);
 const u32 gDxOffInfoBelly = offsetof(EntityInfo, belly);
+const u32 gDxOffInfoLevel = offsetof(EntityInfo, level);
+const u32 gDxOffCanRecruit = offsetof(Dungeon, unk644.canRecruit);
 #endif // DX_DEBUG

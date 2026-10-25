@@ -11,6 +11,7 @@ extern s16 gDxMysteryHouseSpecies;
 extern bool8 gDxMysteryHouseFloor;
 extern s16 gDxMysteryHouseSpawned;
 extern bool8 gDxForceMysteryHouse;
+extern bool8 gDxForceRecruit;
 bool8 DxRollMysteryHouse(void);
 void DxTryMoveGrowth(EntityInfo *user, Move *move);
 void DxEmpower(Entity *user, Entity *target);

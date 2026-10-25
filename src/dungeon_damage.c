@@ -718,8 +718,14 @@ static bool8 HandleDealingDamageInternal_Async(Entity *attacker, Entity *target,
         }
     }
 
+#ifdef DX_RULES
+    // DX Apple recruiting: any team member may land the KO (TryRecruitMonster checks the leader is close)
+    if (EntityIsValid(attacker) && GetEntityType(attacker) == ENTITY_MONSTER && GetEntInfo(attacker)->isNotTeamMember)
+        r10 = FALSE;
+#else
     if (EntityIsValid(attacker) && GetEntityType(attacker) == ENTITY_MONSTER && !GetEntInfo(attacker)->isTeamLeader)
         r10 = FALSE;
+#endif
 
     if (r10) {
         struct unkStruct_8069D4C sp;

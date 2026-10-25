@@ -1,7 +1,15 @@
 #include "global.h"
 #ifdef DX_RULES
+#include "items.h"
+#include "dungeon_message.h"
+#include "dungeon_logic.h"
+#include "string_format.h"
+#include "dungeon_range.h"
+#endif
+#ifdef DX_RULES
 #include "dx_rare_quality.h"
 #include "dx_tuning.h"
+#include "dx_rules.h"
 #endif
 #include "globaldata.h"
 #include "dungeon_mon_recruit.h"
@@ -37,6 +45,33 @@
 #include "adventure_info.h"
 
 static void nullsub_96(Entity *pokemon,Entity *target);
+
+#ifdef DX_RULES
+static const u8 sDxGaveApple[] = _("You gave {POKEMON_0} an Apple!");
+static const u8 sDxNoApple[] = _("{POKEMON_0} wanted to be friends, but you\nhad no Apple to give it...");
+static const u8 sDxApples[] = {ITEM_APPLE, ITEM_BIG_APPLE, ITEM_HUGE_APPLE};
+
+// Rescue Team DX Apple recruiting: the cheapest Apple in the Toolbox wins the Pokemon over
+static bool8 DxGiveRecruitApple(Entity *target)
+{
+    s32 a, i;
+
+    SetMessageArgument_2(gFormatBuffer_Monsters[0], GetEntInfo(target), 0);
+    for (a = 0; a < ARRAY_COUNT(sDxApples); a++) {
+        for (i = 0; i < INVENTORY_SIZE; i++) {
+            Item *item = &gTeamInventoryRef->teamItems[i];
+            if ((item->flags & ITEM_FLAG_EXISTS) && item->id == sDxApples[a]) {
+                ClearItemSlotAt(i);
+                FillInventoryGaps();
+                LogMessageByIdWithPopupCheckUser_Async(GetLeader(), sDxGaveApple);
+                return TRUE;
+            }
+        }
+    }
+    LogMessageByIdWithPopupCheckUser_Async(GetLeader(), sDxNoApple);
+    return FALSE;
+}
+#endif
 static void sub_806F910(void);
 
 bool8 TryRecruitMonster(Entity *attacker, Entity *target)
@@ -93,8 +128,18 @@ bool8 TryRecruitMonster(Entity *attacker, Entity *target)
 
     if (!IsMonsterRecruitable(targetInfo->id))
         return FALSE;
+#ifdef DX_RULES
+    // DX: the defeated Pokemon has to be within 2 tiles of the leader (whoever landed the KO)
+    if (GetLeader() == NULL)
+        return FALSE;
+    attacker = GetLeader();
+    attackerInfo = GetEntInfo(attacker);
+    if (abs((attacker->pos).x - (target->pos).x) > 2 || abs((attacker->pos).y - (target->pos).y) > 2)
+        return FALSE;
+#else
     if (abs((attacker->pos).x - (target->pos).x) >= 2 || abs((attacker->pos).y - (target->pos).y) >= 2)
         return FALSE;
+#endif
     if (targetInfo->joinedAt.id == DUNGEON_JOIN_LOCATION_CLIENT_POKEMON)
         return FALSE;
     if (targetInfo->monsterBehavior == 1)
@@ -117,9 +162,16 @@ bool8 TryRecruitMonster(Entity *attacker, Entity *target)
         recruitRate += DX_RQ_FRIENDLY_BONUS;
     if (DxTeamHasQuality(RQ_SQUAD_UP))
         recruitRate += DX_RQ_SQUAD_UP_BONUS * DxTeamSize();
+    if (gDxForceRecruit) // tests
+        rand = 0;
 #endif
     if (rand >= recruitRate)
         return FALSE;
+#ifdef DX_RULES
+    // DX: it joins if you give it an Apple
+    if (!DxGiveRecruitApple(target))
+        return FALSE;
+#endif
 
     for (i = 0; i <= (MAX_TEAM_BODY_SIZE - size); i++) {
         s32 j;
