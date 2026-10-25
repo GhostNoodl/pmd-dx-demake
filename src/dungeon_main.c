@@ -61,6 +61,8 @@
 #ifdef DX_RULES
 #include "constants/targeting.h"
 #include "dungeon_ai_attack.h"
+#include "dungeon_ai_movement.h"
+#include "position_util.h"
 #endif
 #include "dungeon_strings.h"
 #include "dungeon_entity_movement.h"
@@ -84,6 +86,32 @@ static bool8 sub_805EC4C(Entity *a0, u8 a1);
 static bool8 sub_805EF60(Entity *a0, EntityInfo *a1);
 #ifdef DX_RULES
 static void DxSmartAButton(Entity *leader, EntityInfo *leaderInfo);
+static bool8 DxAutoExploreStep(Entity *leader, EntityInfo *leaderInfo);
+static EWRAM_DATA bool8 sDxAutoExplore = FALSE;
+static EWRAM_DATA u8 sDxLHeldFrames = 0;
+static EWRAM_DATA bool8 sDxLAlone = FALSE;
+
+// A short press of L on its own (L is otherwise only a modifier for A/R/the D-pad).
+// Same 2..11 frame window the game uses for B and R short presses.
+static bool8 DxTappedL(void)
+{
+    bool8 tapped = FALSE;
+
+    if (gRealInputs.held & L_BUTTON) {
+        if (sDxLHeldFrames == 0)
+            sDxLAlone = TRUE;
+        if (sDxLHeldFrames < 100)
+            sDxLHeldFrames++;
+        if (gRealInputs.held & ~L_BUTTON)
+            sDxLAlone = FALSE;
+    }
+    else {
+        tapped = (sDxLAlone && sDxLHeldFrames > 1 && sDxLHeldFrames < 12);
+        sDxLHeldFrames = 0;
+        sDxLAlone = FALSE;
+    }
+    return tapped;
+}
 #endif
 static void ShowMainMenu(bool8 fromBPress, bool8 a1);
 static void PrintOnMainMenu(bool8 printAll);
@@ -158,6 +186,23 @@ void DungeonHandlePlayerInput(void)
             bool32 highlightTiles, tryItemThrow;
             bool32 bPress, rPress, unkBool; // Always FALSE, might've been used in Blue.
             s32 directionNew;
+
+#ifdef DX_RULES
+            // Rescue Team DX auto-mode: tap L to explore on your own, any button stops it
+            if (sDxAutoExplore && (gRealInputs.pressed & (A_BUTTON | B_BUTTON | L_BUTTON | R_BUTTON | START_BUTTON | SELECT_BUTTON | DPAD_ANY))) {
+                sDxAutoExplore = FALSE;
+                ResetRepeatTimers();
+                ResetUnusedInputStruct();
+            }
+            else if (!sDxAutoExplore && DxTappedL()) {
+                sDxAutoExplore = TRUE;
+            }
+            if (sDxAutoExplore) {
+                if (DxAutoExploreStep(leader, leaderInfo))
+                    break;
+                sDxAutoExplore = FALSE;
+            }
+#endif
 
             sArrowsFrames++;
             if (unkPtr->unk1821A != 0) {
@@ -1684,5 +1729,48 @@ static void DxSmartAButton(Entity *leader, EntityInfo *leaderInfo)
     }
     // Checking takes the turn, like swinging at the air did
     SetMonsterActionFields(&leaderInfo->action, ACTION_PASS_TURN);
+}
+
+ALIGNED(4) static const u8 sDxAutoFoe[] = _("Auto-mode stopped: a foe is near.");
+ALIGNED(4) static const u8 sDxAutoStairs[] = _("Auto-mode stopped: found the stairs.");
+ALIGNED(4) static const u8 sDxAutoHurt[] = _("Auto-mode stopped: HP is low.");
+ALIGNED(4) static const u8 sDxAutoDone[] = _("Auto-mode stopped: nowhere left to go.");
+
+// One auto-mode turn for the leader, using the same movement AI as teammates
+// (picks up items, otherwise explores). FALSE = stop auto-mode.
+static bool8 DxAutoExploreStep(Entity *leader, EntityInfo *leaderInfo)
+{
+    s32 i;
+    const Tile *tile = GetTile(leader->pos.x, leader->pos.y);
+
+    for (i = 0; i < DUNGEON_MAX_WILD_POKEMON; i++) {
+        Entity *foe = gDungeon->wildPokemon[i];
+
+        if (EntityIsValid(foe) && GetDistance(&leader->pos, &foe->pos) <= 2
+            && GetTreatmentBetweenMonsters(leader, foe, FALSE, FALSE) == TREATMENT_TREAT_AS_ENEMY) {
+            LogMessageByIdWithPopupCheckUser_Async(leader, sDxAutoFoe);
+            return FALSE;
+        }
+    }
+    if (tile->terrainFlags & TERRAIN_TYPE_STAIRS) {
+        LogMessageByIdWithPopupCheckUser_Async(leader, sDxAutoStairs);
+        return FALSE;
+    }
+    if (leaderInfo->HP <= leaderInfo->maxHPStat / 4) {
+        LogMessageByIdWithPopupCheckUser_Async(leader, sDxAutoHurt);
+        return FALSE;
+    }
+
+    AIMovement(leader, FALSE);
+    // The AI's walk doesn't pick things up; the leader's does
+    if (leaderInfo->action.action == ACTION_WALK)
+        leaderInfo->action.actionParameters[0].actionUseIndex = 1;
+    else if (leaderInfo->action.action == ACTION_PICK_UP_AI)
+        SetMonsterActionFields(&leaderInfo->action, ACTION_PICK_UP_PLAYER);
+    if (leaderInfo->action.action == ACTION_NOTHING) {
+        LogMessageByIdWithPopupCheckUser_Async(leader, sDxAutoDone);
+        return FALSE;
+    }
+    return TRUE;
 }
 #endif // DX_RULES
