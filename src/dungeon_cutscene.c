@@ -548,6 +548,9 @@ void HandleBossFaint_Async(Entity *entity, u8 monsterBehavior, bool8 transformed
             break;
         case CUTSCENE_SINISTER_WOODS_ATTEMPT1:
         case CUTSCENE_SINISTER_WOODS_ATTEMPT2:
+#ifdef DX_RULES
+        case CUTSCENE_SINISTER_WOODS_POSTSTORY: // the post-game rematch
+#endif
             HandleMeaniesBossFaint(monsterBehavior, gDungeon->cutscene);
             break;
         case CUTSCENE_MT_THUNDER_PEAK_ATTEMPT1:
@@ -577,6 +580,9 @@ void HandleBossFaint_Async(Entity *entity, u8 monsterBehavior, bool8 transformed
             break;
         case CUTSCENE_UPROAR_FOREST_ATTEMPT1:
         case CUTSCENE_UPROAR_FOREST_ATTEMPT2:
+#ifdef DX_RULES
+        case CUTSCENE_UPROAR_FOREST_POSTSTORY: // the post-game rematch
+#endif
             HandleMankeyBossFaint(entity, monsterBehavior, gDungeon->cutscene);
             break;
         case CUTSCENE_WESTERN_CAVE_ATTEMPT1:
