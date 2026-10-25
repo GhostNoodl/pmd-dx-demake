@@ -429,8 +429,7 @@ extern const SiroArchive gAxDecoy;
 extern const SiroArchive gAxStatue;
 extern const SiroArchive gAxRayquazaCutscene;
 #ifdef DX_RULES
-extern const SiroArchive gAxRiolu;
-extern const SiroArchive gAxLucario;
+#include "dx_species_gfx.h"
 #endif
 extern const u8 gKaoBulbasaur[];
 extern const u8 gKaoCharmander[];

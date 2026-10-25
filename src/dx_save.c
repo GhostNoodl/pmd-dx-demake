@@ -1,4 +1,5 @@
 #include "global.h"
+#include <stddef.h>
 
 #ifdef DX_RULES
 
@@ -15,7 +16,10 @@
 // there, which reads as "nothing extra yet".
 #define DX_SAVE_SECTOR 24
 #define DX_SAVE_MAGIC 0x56534458 // "DXSV"
-#define DX_SAVE_VERSION 2
+#define DX_SAVE_VERSION 3
+// room for every planned newcomer, so adding species doesn't change the layout
+#define DX_SEEN_CAPACITY 64
+#define DX_SAVE_V2_SEEN 2 // v2 (Riolu/Lucario builds) stored exactly 2 seen flags
 
 typedef struct DxSaveExt
 {
@@ -26,8 +30,10 @@ typedef struct DxSaveExt
     u16 pokemonSize;
     u16 pad;
     Pokemon extraRecruits[DX_EXTRA_RECRUIT_SLOTS];
-    u8 newSpeciesSeen[DX_NEW_SPECIES_COUNT]; // Red's save only has seen flags for Red's species
+    u8 newSpeciesSeen[DX_SEEN_CAPACITY]; // Red's save only has seen flags for Red's species
 } DxSaveExt;
+
+typedef char DxSeenCapacityCheck[DX_NEW_SPECIES_COUNT <= DX_SEEN_CAPACITY ? 1 : -1];
 
 void DxSaveExtWrite(void)
 {
@@ -50,15 +56,20 @@ void DxSaveExtWrite(void)
 void DxSaveExtRead(void)
 {
     s32 i;
+    s32 seenCount = -1;
     s32 sector = DX_SAVE_SECTOR;
     DxSaveExt *ext = MemoryAlloc(sizeof(DxSaveExt), MEMALLOC_GROUP_5);
     Pokemon *extras = &gRecruitedPokemonRef->pokemon[VANILLA_RECRUIT_SLOTS];
 
     if (ReadSaveSector(&sector, (u8 *)ext, sizeof(DxSaveExt)) == READ_SAVE_VALID
-        && ext->magic == DX_SAVE_MAGIC && ext->version == DX_SAVE_VERSION
-        && ext->extraSlots == DX_EXTRA_RECRUIT_SLOTS && ext->pokemonSize == sizeof(Pokemon)) {
+        && ext->magic == DX_SAVE_MAGIC && ext->version == DX_SAVE_VERSION)
+        seenCount = DX_NEW_SPECIES_COUNT;
+    else if (ReadSaveSector(&sector, (u8 *)ext, offsetof(DxSaveExt, newSpeciesSeen) + DX_SAVE_V2_SEEN) == READ_SAVE_VALID
+        && ext->magic == DX_SAVE_MAGIC && ext->version == 2)
+        seenCount = DX_SAVE_V2_SEEN;
+    if (seenCount >= 0 && ext->extraSlots == DX_EXTRA_RECRUIT_SLOTS && ext->pokemonSize == sizeof(Pokemon)) {
         MemoryCopy8(extras, ext->extraRecruits, sizeof(ext->extraRecruits));
-        for (i = 0; i < DX_NEW_SPECIES_COUNT; i++) {
+        for (i = 0; i < seenCount; i++) {
             if (ext->newSpeciesSeen[i])
                 SetMonSeenFlag(DX_FIRST_NEW_SPECIES + i);
         }

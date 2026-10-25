@@ -5525,7 +5525,14 @@
         "alphabetParent": [
             45,
             113
-        ]
+        ],
+        "preEvolution": {
+            "evolveFrom": "MONSTER_HAPPINY",
+            "evolveType": "EVOLVE_TYPE_IQ"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 200
+        }
     },
     {
         "name": "MonsterNameTangela",
@@ -5945,7 +5952,14 @@
         "alphabetParent": [
             217,
             122
-        ]
+        ],
+        "preEvolution": {
+            "evolveFrom": "MONSTER_MIMEJR",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 18
+        }
     },
     {
         "name": "MonsterNameScyther",
@@ -8964,7 +8978,14 @@
         "alphabetParent": [
             335,
             185
-        ]
+        ],
+        "preEvolution": {
+            "evolveFrom": "MONSTER_BONSLY",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 17
+        }
     },
     {
         "name": "MonsterNamePolitoed",
@@ -12014,7 +12035,14 @@
         "alphabetParent": [
             195,
             253
-        ]
+        ],
+        "preEvolution": {
+            "evolveFrom": "MONSTER_MANTYKE",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 20
+        }
     },
     {
         "name": "MonsterNameSkarmory",
@@ -16253,7 +16281,14 @@
         "alphabetParent": [
             284,
             342
-        ]
+        ],
+        "preEvolution": {
+            "evolveFrom": "MONSTER_BUDEW",
+            "evolveType": "EVOLVE_TYPE_IQ"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 200
+        }
     },
     {
         "name": "MonsterNameGulpin",
@@ -18409,7 +18444,14 @@
         "alphabetParent": [
             50,
             385
-        ]
+        ],
+        "preEvolution": {
+            "evolveFrom": "MONSTER_CHINGLING",
+            "evolveType": "EVOLVE_TYPE_IQ"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 200
+        }
     },
     {
         "name": "MonsterNameAbsol",
@@ -20132,6 +20174,7 @@
         "overworldPalette": 5,
         "bodySize": 1,
         "movementSpeed": 1,
+        "dialogueSprites": "0b0000000000000000",
         "types": [
             "TYPE_FIGHTING"
         ],
@@ -20139,7 +20182,7 @@
         "abilities": [
             "ABILITY_INNER_FOCUS"
         ],
-        "shadowSize": 2,
+        "shadowSize": 1,
         "regenSpeed": 100,
         "canMove": true,
         "chanceAsleep": 8,
@@ -20163,12 +20206,11 @@
             447,
             447
         ],
-        "recruitRate": 30,
+        "recruitRate": 105,
         "alphabetParent": [
             424,
             424
-        ],
-        "dialogueSprites": "0b0000000000000000"
+        ]
     },
     {
         "name": "MonsterNameLucario",
@@ -20176,6 +20218,7 @@
         "overworldPalette": 5,
         "bodySize": 1,
         "movementSpeed": 1,
+        "dialogueSprites": "0b0000000000000000",
         "types": [
             "TYPE_FIGHTING",
             "TYPE_STEEL"
@@ -20184,7 +20227,7 @@
         "abilities": [
             "ABILITY_INNER_FOCUS"
         ],
-        "shadowSize": 2,
+        "shadowSize": 1,
         "regenSpeed": 100,
         "canMove": true,
         "chanceAsleep": 8,
@@ -20208,14 +20251,1483 @@
             448,
             448
         ],
-        "recruitRate": 0,
+        "recruitRate": 105,
         "alphabetParent": [
             425,
             425
         ],
-        "dialogueSprites": "0b0000000000000000",
         "preEvolution": {
             "evolveFrom": "MONSTER_RIOLU",
+            "evolveType": "EVOLVE_TYPE_IQ"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 200
+        }
+    },
+    {
+        "name": "MonsterNameBudew",
+        "category": "MonsterCategoryBud",
+        "overworldPalette": 3,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_GRASS",
+            "TYPE_POISON"
+        ],
+        "friendArea": "FRIEND_AREA_BEAU_PLAINS",
+        "abilities": [
+            "ABILITY_NATURAL_CURE",
+            "ABILITY_POISON_POINT"
+        ],
+        "shadowSize": 0,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 25,
+        "expYield": 49,
+        "baseAtkSpAtk": [
+            12,
+            12
+        ],
+        "baseDefSpDef": [
+            7,
+            7
+        ],
+        "weight": 153,
+        "size": 15,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            406,
+            406
+        ],
+        "recruitRate": 70,
+        "alphabetParent": [
+            426,
+            426
+        ],
+        "dialogueSprites": "0b0000000000000000"
+    },
+    {
+        "name": "MonsterNameRoserade",
+        "category": "MonsterCategoryBouquet",
+        "overworldPalette": 3,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_GRASS",
+            "TYPE_POISON"
+        ],
+        "friendArea": "FRIEND_AREA_BEAU_PLAINS",
+        "abilities": [
+            "ABILITY_NATURAL_CURE",
+            "ABILITY_POISON_POINT"
+        ],
+        "shadowSize": 0,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 40,
+        "expYield": 90,
+        "baseAtkSpAtk": [
+            16,
+            21
+        ],
+        "baseDefSpDef": [
+            15,
+            15
+        ],
+        "weight": 153,
+        "size": 42,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            407,
+            407
+        ],
+        "recruitRate": 70,
+        "alphabetParent": [
+            427,
+            427
+        ],
+        "dialogueSprites": "0b0000000000000000",
+        "preEvolution": {
+            "evolveFrom": "MONSTER_ROSELIA",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 30
+        }
+    },
+    {
+        "name": "MonsterNameAmbipom",
+        "category": "MonsterCategoryLongTail",
+        "overworldPalette": 7,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_NORMAL"
+        ],
+        "friendArea": "FRIEND_AREA_ENERGETIC_FOREST",
+        "abilities": [
+            "ABILITY_PICKUP"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 48,
+        "expYield": 81,
+        "baseAtkSpAtk": [
+            13,
+            13
+        ],
+        "baseDefSpDef": [
+            12,
+            12
+        ],
+        "weight": 179,
+        "size": 18,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            424,
+            424
+        ],
+        "recruitRate": 72,
+        "alphabetParent": [
+            428,
+            428
+        ],
+        "dialogueSprites": "0b0000000000000000",
+        "preEvolution": {
+            "evolveFrom": "MONSTER_AIPOM",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 33
+        }
+    },
+    {
+        "name": "MonsterNameMismagius",
+        "category": "MonsterCategoryMagical",
+        "overworldPalette": 11,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_GHOST"
+        ],
+        "movementType": "MOVEMENT_TYPE_WALL",
+        "friendArea": "FRIEND_AREA_DARKNESS_RIDGE",
+        "abilities": [
+            "ABILITY_LEVITATE"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 46,
+        "expYield": 99,
+        "baseAtkSpAtk": [
+            14,
+            15
+        ],
+        "baseDefSpDef": [
+            8,
+            8
+        ],
+        "weight": 153,
+        "size": 29,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            429,
+            429
+        ],
+        "recruitRate": 88,
+        "alphabetParent": [
+            429,
+            429
+        ],
+        "dialogueSprites": "0b0000000000000000",
+        "preEvolution": {
+            "evolveFrom": "MONSTER_MISDREAVUS",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 30
+        }
+    },
+    {
+        "name": "MonsterNameHonchkrow",
+        "category": "MonsterCategoryBigBoss",
+        "overworldPalette": 2,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_DARK",
+            "TYPE_FLYING"
+        ],
+        "friendArea": "FRIEND_AREA_FLYAWAY_FOREST",
+        "abilities": [
+            "ABILITY_INSOMNIA"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 45,
+        "expYield": 105,
+        "baseAtkSpAtk": [
+            23,
+            20
+        ],
+        "baseDefSpDef": [
+            21,
+            20
+        ],
+        "weight": 179,
+        "size": 46,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            430,
+            430
+        ],
+        "recruitRate": 72,
+        "alphabetParent": [
+            430,
+            430
+        ],
+        "dialogueSprites": "0b0000000000000000",
+        "preEvolution": {
+            "evolveFrom": "MONSTER_MURKROW",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 30
+        }
+    },
+    {
+        "name": "MonsterNameChingling",
+        "category": "MonsterCategoryBell",
+        "overworldPalette": 2,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_PSYCHIC"
+        ],
+        "movementType": "MOVEMENT_TYPE_CHASM",
+        "friendArea": "FRIEND_AREA_THUNDER_MEADOW",
+        "abilities": [
+            "ABILITY_LEVITATE"
+        ],
+        "shadowSize": 0,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 21,
+        "expYield": 28,
+        "baseAtkSpAtk": [
+            12,
+            10
+        ],
+        "baseDefSpDef": [
+            6,
+            6
+        ],
+        "weight": 153,
+        "size": 19,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            433,
+            433
+        ],
+        "recruitRate": 69,
+        "alphabetParent": [
+            431,
+            431
+        ],
+        "dialogueSprites": "0b0000000000000000"
+    },
+    {
+        "name": "MonsterNameBonsly",
+        "category": "MonsterCategoryBonsai",
+        "overworldPalette": 8,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_ROCK"
+        ],
+        "friendArea": "FRIEND_AREA_OVERGROWN_FOREST",
+        "abilities": [
+            "ABILITY_STURDY",
+            "ABILITY_ROCK_HEAD"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 23,
+        "expYield": 45,
+        "baseAtkSpAtk": [
+            11,
+            12
+        ],
+        "baseDefSpDef": [
+            4,
+            4
+        ],
+        "weight": 153,
+        "size": 24,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            438,
+            438
+        ],
+        "recruitRate": 104,
+        "alphabetParent": [
+            432,
+            432
+        ],
+        "dialogueSprites": "0b0000000000000000"
+    },
+    {
+        "name": "MonsterNameMimeJr",
+        "category": "MonsterCategoryMime",
+        "overworldPalette": 11,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_PSYCHIC"
+        ],
+        "friendArea": "FRIEND_AREA_DECREPIT_LAB",
+        "abilities": [
+            "ABILITY_SOUNDPROOF"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 44,
+        "expYield": 80,
+        "baseAtkSpAtk": [
+            15,
+            15
+        ],
+        "baseDefSpDef": [
+            10,
+            10
+        ],
+        "weight": 153,
+        "size": 30,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            439,
+            439
+        ],
+        "recruitRate": 74,
+        "alphabetParent": [
+            433,
+            433
+        ],
+        "dialogueSprites": "0b0000000000000000"
+    },
+    {
+        "name": "MonsterNameHappiny",
+        "category": "MonsterCategoryPlayhouse",
+        "overworldPalette": 11,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_NORMAL"
+        ],
+        "friendArea": "FRIEND_AREA_SKY_BLUE_PLAINS",
+        "abilities": [
+            "ABILITY_NATURAL_CURE",
+            "ABILITY_SERENE_GRACE"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 35,
+        "expYield": 103,
+        "baseAtkSpAtk": [
+            13,
+            12
+        ],
+        "baseDefSpDef": [
+            11,
+            10
+        ],
+        "weight": 179,
+        "size": 24,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            440,
+            440
+        ],
+        "recruitRate": 69,
+        "alphabetParent": [
+            434,
+            434
+        ],
+        "dialogueSprites": "0b0000000000000000"
+    },
+    {
+        "name": "MonsterNameMantyke",
+        "category": "MonsterCategoryKite",
+        "overworldPalette": 5,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_WATER",
+            "TYPE_FLYING"
+        ],
+        "movementType": "MOVEMENT_TYPE_CHASM",
+        "friendArea": "FRIEND_AREA_SERENE_SEA",
+        "abilities": [
+            "ABILITY_SWIFT_SWIM",
+            "ABILITY_WATER_ABSORB"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 30,
+        "expYield": 55,
+        "baseAtkSpAtk": [
+            15,
+            20
+        ],
+        "baseDefSpDef": [
+            10,
+            8
+        ],
+        "weight": 281,
+        "size": 28,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            458,
+            458
+        ],
+        "recruitRate": 95,
+        "alphabetParent": [
+            435,
+            435
+        ],
+        "dialogueSprites": "0b0000000000000000"
+    },
+    {
+        "name": "MonsterNameWeavile",
+        "category": "MonsterCategorySharpClaw",
+        "overworldPalette": 2,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_DARK",
+            "TYPE_ICE"
+        ],
+        "friendArea": "FRIEND_AREA_DARKNESS_RIDGE",
+        "abilities": [
+            "ABILITY_PRESSURE"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 27,
+        "expYield": 94,
+        "baseAtkSpAtk": [
+            14,
+            10
+        ],
+        "baseDefSpDef": [
+            8,
+            10
+        ],
+        "weight": 204,
+        "size": 52,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            461,
+            461
+        ],
+        "recruitRate": 77,
+        "alphabetParent": [
+            436,
+            436
+        ],
+        "dialogueSprites": "0b0000000000000000",
+        "preEvolution": {
+            "evolveFrom": "MONSTER_SNEASEL",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 33
+        }
+    },
+    {
+        "name": "MonsterNameMagnezone",
+        "category": "MonsterCategoryMagnetArea",
+        "overworldPalette": 2,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_ELECTRIC",
+            "TYPE_STEEL"
+        ],
+        "movementType": "MOVEMENT_TYPE_CHASM",
+        "friendArea": "FRIEND_AREA_POWER_PLANT",
+        "abilities": [
+            "ABILITY_MAGNET_PULL",
+            "ABILITY_STURDY"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 44,
+        "expYield": 117,
+        "baseAtkSpAtk": [
+            14,
+            20
+        ],
+        "baseDefSpDef": [
+            14,
+            14
+        ],
+        "weight": 332,
+        "size": 50,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            462,
+            462
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            437,
+            437
+        ],
+        "dialogueSprites": "0b0000000000000000",
+        "preEvolution": {
+            "evolveFrom": "MONSTER_MAGNETON",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 33
+        }
+    },
+    {
+        "name": "MonsterNameLickilicky",
+        "category": "MonsterCategoryLicking",
+        "overworldPalette": 10,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_NORMAL"
+        ],
+        "friendArea": "FRIEND_AREA_SKY_BLUE_PLAINS",
+        "abilities": [
+            "ABILITY_OWN_TEMPO",
+            "ABILITY_OBLIVIOUS"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 45,
+        "expYield": 95,
+        "baseAtkSpAtk": [
+            13,
+            12
+        ],
+        "baseDefSpDef": [
+            10,
+            10
+        ],
+        "weight": 332,
+        "size": 53,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            463,
+            463
+        ],
+        "recruitRate": 86,
+        "alphabetParent": [
+            438,
+            438
+        ],
+        "dialogueSprites": "0b0000000000000000",
+        "preEvolution": {
+            "evolveFrom": "MONSTER_LICKITUNG",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 33
+        }
+    },
+    {
+        "name": "MonsterNameRhyperior",
+        "category": "MonsterCategoryDrill",
+        "overworldPalette": 6,
+        "bodySize": 2,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_GROUND",
+            "TYPE_ROCK"
+        ],
+        "friendArea": "FRIEND_AREA_SAFARI",
+        "abilities": [
+            "ABILITY_LIGHTNINGROD"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 20,
+        "expYield": 100,
+        "baseAtkSpAtk": [
+            19,
+            10
+        ],
+        "baseDefSpDef": [
+            15,
+            15
+        ],
+        "weight": 358,
+        "size": 18,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            464,
+            464
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            439,
+            439
+        ],
+        "dialogueSprites": "0b0000000000000000",
+        "preEvolution": {
+            "evolveFrom": "MONSTER_RHYDON",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 50
+        }
+    },
+    {
+        "name": "MonsterNameTangrowth",
+        "category": "MonsterCategoryVine",
+        "overworldPalette": 5,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_GRASS"
+        ],
+        "friendArea": "FRIEND_AREA_JUNGLE",
+        "abilities": [
+            "ABILITY_CHLOROPHYLL"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 32,
+        "expYield": 119,
+        "baseAtkSpAtk": [
+            3,
+            9
+        ],
+        "baseDefSpDef": [
+            1,
+            2
+        ],
+        "weight": 332,
+        "size": 59,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            465,
+            465
+        ],
+        "recruitRate": 74,
+        "alphabetParent": [
+            440,
+            440
+        ],
+        "dialogueSprites": "0b0000000000000000",
+        "preEvolution": {
+            "evolveFrom": "MONSTER_TANGELA",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 33
+        }
+    },
+    {
+        "name": "MonsterNameElectivire",
+        "category": "MonsterCategoryThunderbolt",
+        "overworldPalette": 2,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_ELECTRIC"
+        ],
+        "friendArea": "FRIEND_AREA_POWER_PLANT",
+        "abilities": [
+            "ABILITY_STATIC"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 38,
+        "expYield": 118,
+        "baseAtkSpAtk": [
+            16,
+            13
+        ],
+        "baseDefSpDef": [
+            13,
+            14
+        ],
+        "weight": 332,
+        "size": 64,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            466,
+            466
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            441,
+            441
+        ],
+        "dialogueSprites": "0b0000000000000000",
+        "preEvolution": {
+            "evolveFrom": "MONSTER_ELECTABUZZ",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 50
+        }
+    },
+    {
+        "name": "MonsterNameMagmortar",
+        "category": "MonsterCategoryBlast",
+        "overworldPalette": 2,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_FIRE"
+        ],
+        "movementType": "MOVEMENT_TYPE_LAVA",
+        "friendArea": "FRIEND_AREA_CRATER",
+        "abilities": [
+            "ABILITY_FLAME_BODY"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 39,
+        "expYield": 108,
+        "baseAtkSpAtk": [
+            13,
+            16
+        ],
+        "baseDefSpDef": [
+            11,
+            16
+        ],
+        "weight": 281,
+        "size": 54,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            467,
+            467
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            442,
+            442
+        ],
+        "dialogueSprites": "0b0000000000000000",
+        "preEvolution": {
+            "evolveFrom": "MONSTER_MAGMAR",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 50
+        }
+    },
+    {
+        "name": "MonsterNameTogekiss",
+        "category": "MonsterCategoryJubilee",
+        "overworldPalette": 5,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_NORMAL",
+            "TYPE_FLYING"
+        ],
+        "friendArea": "FRIEND_AREA_FLYAWAY_FOREST",
+        "abilities": [
+            "ABILITY_HUSTLE",
+            "ABILITY_SERENE_GRACE"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 50,
+        "expYield": 110,
+        "baseAtkSpAtk": [
+            22,
+            25
+        ],
+        "baseDefSpDef": [
+            12,
+            14
+        ],
+        "weight": 204,
+        "size": 35,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            468,
+            468
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            443,
+            443
+        ],
+        "dialogueSprites": "0b0000000000000000",
+        "preEvolution": {
+            "evolveFrom": "MONSTER_TOGETIC",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 30
+        }
+    },
+    {
+        "name": "MonsterNameYanmega",
+        "category": "MonsterCategoryOgreDarner",
+        "overworldPalette": 3,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_BUG",
+            "TYPE_FLYING"
+        ],
+        "movementType": "MOVEMENT_TYPE_CHASM",
+        "friendArea": "FRIEND_AREA_MIST_RISE_FOREST",
+        "abilities": [
+            "ABILITY_SPEED_BOOST"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 40,
+        "expYield": 85,
+        "baseAtkSpAtk": [
+            19,
+            18
+        ],
+        "baseDefSpDef": [
+            11,
+            9
+        ],
+        "weight": 256,
+        "size": 45,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            469,
+            469
+        ],
+        "recruitRate": 74,
+        "alphabetParent": [
+            444,
+            444
+        ],
+        "dialogueSprites": "0b0000000000000000",
+        "preEvolution": {
+            "evolveFrom": "MONSTER_YANMA",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 33
+        }
+    },
+    {
+        "name": "MonsterNameLeafeon",
+        "category": "MonsterCategoryVerdant",
+        "overworldPalette": 6,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "dialogueSprites": "0b0000000000000000",
+        "types": [
+            "TYPE_GRASS"
+        ],
+        "friendArea": "FRIEND_AREA_TRANSFORM_FOREST",
+        "abilities": [
+            "ABILITY_RUN_AWAY"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 25,
+        "expYield": 44,
+        "baseAtkSpAtk": [
+            4,
+            3
+        ],
+        "baseDefSpDef": [
+            5,
+            5
+        ],
+        "weight": 179,
+        "size": 32,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            470,
+            470
+        ],
+        "recruitRate": 102,
+        "alphabetParent": [
+            445,
+            445
+        ],
+        "preEvolution": {
+            "evolveFrom": "MONSTER_EEVEE",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 30
+        }
+    },
+    {
+        "name": "MonsterNameGlaceon",
+        "category": "MonsterCategoryFreshSnow",
+        "overworldPalette": 5,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "dialogueSprites": "0b0000000000000000",
+        "types": [
+            "TYPE_ICE"
+        ],
+        "friendArea": "FRIEND_AREA_TRANSFORM_FOREST",
+        "abilities": [
+            "ABILITY_RUN_AWAY"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 25,
+        "expYield": 44,
+        "baseAtkSpAtk": [
+            4,
+            3
+        ],
+        "baseDefSpDef": [
+            5,
+            5
+        ],
+        "weight": 179,
+        "size": 30,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            471,
+            471
+        ],
+        "recruitRate": 102,
+        "alphabetParent": [
+            446,
+            446
+        ],
+        "preEvolution": {
+            "evolveFrom": "MONSTER_EEVEE",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 30
+        }
+    },
+    {
+        "name": "MonsterNameGliscor",
+        "category": "MonsterCategoryFangScorpion",
+        "overworldPalette": 2,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_GROUND",
+            "TYPE_FLYING"
+        ],
+        "movementType": "MOVEMENT_TYPE_CHASM",
+        "friendArea": "FRIEND_AREA_MT_DEEPGREEN",
+        "abilities": [
+            "ABILITY_HYPER_CUTTER",
+            "ABILITY_SAND_VEIL"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 27,
+        "expYield": 118,
+        "baseAtkSpAtk": [
+            6,
+            10
+        ],
+        "baseDefSpDef": [
+            15,
+            9
+        ],
+        "weight": 230,
+        "size": 53,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            472,
+            472
+        ],
+        "recruitRate": 85,
+        "alphabetParent": [
+            447,
+            447
+        ],
+        "dialogueSprites": "0b0000000000000000",
+        "preEvolution": {
+            "evolveFrom": "MONSTER_GLIGAR",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 33
+        }
+    },
+    {
+        "name": "MonsterNameMamoswine",
+        "category": "MonsterCategoryTwinTusk",
+        "overworldPalette": 0,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_ICE",
+            "TYPE_GROUND"
+        ],
+        "friendArea": "FRIEND_AREA_FRIGID_CAVERN",
+        "abilities": [
+            "ABILITY_OBLIVIOUS"
+        ],
+        "shadowSize": 2,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 30,
+        "expYield": 108,
+        "baseAtkSpAtk": [
+            18,
+            13
+        ],
+        "baseDefSpDef": [
+            13,
+            15
+        ],
+        "weight": 358,
+        "size": 58,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            473,
+            473
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            448,
+            448
+        ],
+        "dialogueSprites": "0b0000000000000000",
+        "preEvolution": {
+            "evolveFrom": "MONSTER_PILOSWINE",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 33
+        }
+    },
+    {
+        "name": "MonsterNamePorygonZ",
+        "category": "MonsterCategoryVirtual",
+        "overworldPalette": 0,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_NORMAL"
+        ],
+        "movementType": "MOVEMENT_TYPE_WATER",
+        "friendArea": "FRIEND_AREA_DECREPIT_LAB",
+        "abilities": [
+            "ABILITY_TRACE"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 48,
+        "expYield": 98,
+        "baseAtkSpAtk": [
+            12,
+            15
+        ],
+        "baseDefSpDef": [
+            11,
+            13
+        ],
+        "weight": 204,
+        "size": 24,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            474,
+            474
+        ],
+        "recruitRate": 100,
+        "alphabetParent": [
+            449,
+            449
+        ],
+        "dialogueSprites": "0b0000000000000000",
+        "preEvolution": {
+            "evolveFrom": "MONSTER_PORYGON2",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 50
+        }
+    },
+    {
+        "name": "MonsterNameGallade",
+        "category": "MonsterCategoryBlade",
+        "overworldPalette": 3,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_PSYCHIC",
+            "TYPE_FIGHTING"
+        ],
+        "friendArea": "FRIEND_AREA_SKY_BLUE_PLAINS",
+        "abilities": [
+            "ABILITY_SYNCHRONIZE",
+            "ABILITY_TRACE"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 40,
+        "expYield": 103,
+        "baseAtkSpAtk": [
+            18,
+            12
+        ],
+        "baseDefSpDef": [
+            10,
+            10
+        ],
+        "weight": 256,
+        "size": 30,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            475,
+            475
+        ],
+        "recruitRate": -190,
+        "alphabetParent": [
+            450,
+            450
+        ],
+        "dialogueSprites": "0b0000000000000000",
+        "preEvolution": {
+            "evolveFrom": "MONSTER_KIRLIA",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 30
+        }
+    },
+    {
+        "name": "MonsterNameProbopass",
+        "category": "MonsterCategoryCompass",
+        "overworldPalette": 5,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_ROCK",
+            "TYPE_STEEL"
+        ],
+        "friendArea": "FRIEND_AREA_ECHO_CAVE",
+        "abilities": [
+            "ABILITY_STURDY",
+            "ABILITY_MAGNET_PULL"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 45,
+        "expYield": 119,
+        "baseAtkSpAtk": [
+            18,
+            16
+        ],
+        "baseDefSpDef": [
+            20,
+            20
+        ],
+        "weight": 358,
+        "size": 47,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            476,
+            476
+        ],
+        "recruitRate": 74,
+        "alphabetParent": [
+            451,
+            451
+        ],
+        "dialogueSprites": "0b0000000000000000",
+        "preEvolution": {
+            "evolveFrom": "MONSTER_NOSEPASS",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 33
+        }
+    },
+    {
+        "name": "MonsterNameDusknoir",
+        "category": "MonsterCategoryGripper",
+        "overworldPalette": 2,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_GHOST"
+        ],
+        "friendArea": "FRIEND_AREA_DARKNESS_RIDGE",
+        "abilities": [
+            "ABILITY_PRESSURE"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 30,
+        "expYield": 139,
+        "baseAtkSpAtk": [
+            15,
+            10
+        ],
+        "baseDefSpDef": [
+            10,
+            15
+        ],
+        "weight": 332,
+        "size": 56,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            477,
+            477
+        ],
+        "recruitRate": -999,
+        "alphabetParent": [
+            452,
+            452
+        ],
+        "dialogueSprites": "0b0000000000000000",
+        "preEvolution": {
+            "evolveFrom": "MONSTER_DUSCLOPS",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 50
+        }
+    },
+    {
+        "name": "MonsterNameFroslass",
+        "category": "MonsterCategorySnowLand",
+        "overworldPalette": 3,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "types": [
+            "TYPE_ICE",
+            "TYPE_GHOST"
+        ],
+        "friendArea": "FRIEND_AREA_FRIGID_CAVERN",
+        "abilities": [
+            "ABILITY_INNER_FOCUS"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 40,
+        "expYield": 114,
+        "baseAtkSpAtk": [
+            16,
+            16
+        ],
+        "baseDefSpDef": [
+            17,
+            15
+        ],
+        "weight": 179,
+        "size": 29,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            478,
+            478
+        ],
+        "recruitRate": 75,
+        "alphabetParent": [
+            453,
+            453
+        ],
+        "dialogueSprites": "0b0000000000000000",
+        "preEvolution": {
+            "evolveFrom": "MONSTER_SNORUNT",
+            "evolveType": "EVOLVE_TYPE_LEVEL"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 30
+        }
+    },
+    {
+        "name": "MonsterNameSylveon",
+        "category": "MonsterCategoryIntertwining",
+        "overworldPalette": 1,
+        "bodySize": 1,
+        "movementSpeed": 1,
+        "dialogueSprites": "0b0000000000000000",
+        "types": [
+            "TYPE_FAIRY"
+        ],
+        "friendArea": "FRIEND_AREA_TRANSFORM_FOREST",
+        "abilities": [
+            "ABILITY_CUTE_CHARM"
+        ],
+        "shadowSize": 1,
+        "regenSpeed": 100,
+        "canMove": true,
+        "chanceAsleep": 8,
+        "baseHP": 25,
+        "expYield": 44,
+        "baseAtkSpAtk": [
+            4,
+            3
+        ],
+        "baseDefSpDef": [
+            5,
+            5
+        ],
+        "weight": 179,
+        "size": 35,
+        "unk30": 10,
+        "unk31": 10,
+        "unk32": 24,
+        "canThrowItems": true,
+        "dexInternal": [
+            700,
+            700
+        ],
+        "recruitRate": 102,
+        "alphabetParent": [
+            454,
+            454
+        ],
+        "preEvolution": {
+            "evolveFrom": "MONSTER_EEVEE",
             "evolveType": "EVOLVE_TYPE_IQ"
         },
         "evolutionRequirements": {

@@ -1,0 +1,52 @@
+#rom debug
+#save after-first-dungeon
+# Recruit tool: #454 Sylveon (generated newcomer) at Lv. 30 joins with Explorers of Sky growth (HP shown)
+mash START sMainMenu 4 != 0 3000
+wait 60
+press UP
+press A
+wait 30
+press DOWN
+press DOWN
+press A
+wait 30
+# species 1 -> 454: hundreds +4 (401), tens +5 (451), ones +3 (454)
+press LEFT
+press LEFT
+press UP
+press UP
+press UP
+press UP
+press RIGHT
+press UP
+press UP
+press UP
+press UP
+press UP
+press RIGHT
+press UP
+press UP
+press UP
+wait 10
+shot 1_species
+press A
+wait 20
+# level 5 -> 30: tens +3 (35), ones -5 (30)
+press LEFT
+press UP
+press UP
+press UP
+press RIGHT
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+wait 10
+press A
+wait 30
+shot 2_joined
+read slot194 *gRecruitedPokemonRef+17080 2
+# Eevee camp (Sylveon lives there): first free slot 194
+expect *gRecruitedPokemonRef+17080 2 == 454
+expect *gRecruitedPokemonRef+17075 1 == 30

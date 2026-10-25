@@ -1,4 +1,32 @@
 # <SpriteCollab dex> <name in this repo> [sprite|portrait|both]
-# Pikachu was re-imported only to validate the importer (the shipped sprite is still Red's)
 0447 riolu sprite
 0448 lucario sprite
+0406 budew sprite
+0407 roserade sprite
+0424 ambipom sprite
+0429 mismagius sprite
+0430 honchkrow sprite
+0433 chingling sprite
+0438 bonsly sprite
+0439 mimejr sprite
+0440 happiny sprite
+0458 mantyke sprite
+0461 weavile sprite
+0462 magnezone sprite
+0463 lickilicky sprite
+0464 rhyperior sprite
+0465 tangrowth sprite
+0466 electivire sprite
+0467 magmortar sprite
+0468 togekiss sprite
+0469 yanmega sprite
+0470 leafeon sprite
+0471 glaceon sprite
+0472 gliscor sprite
+0473 mamoswine sprite
+0474 porygonz sprite
+0475 gallade sprite
+0476 probopass sprite
+0477 dusknoir sprite
+0478 froslass sprite
+0700 sylveon sprite

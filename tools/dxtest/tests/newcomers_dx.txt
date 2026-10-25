@@ -1,0 +1,59 @@
+#rom debug
+#save after-first-dungeon
+# Generated DX newcomers in a party of 6: Sylveon (#454, Fairy), Togekiss (#443), Dusknoir (#452), Mamoswine (#448) load, draw and walk in Tiny Woods
+mash START sMainMenu 4 != 0 3000
+wait 60
+press UP
+press A
+wait 30
+# Storage is the 6th debug menu entry
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press A
+wait 600
+write *gRecruitedPokemonRef+8 2 454
+write *gRecruitedPokemonRef+0 2 3
+write *gRecruitedPokemonRef+96 2 443
+write *gRecruitedPokemonRef+88 2 3
+write *gRecruitedPokemonRef+184 2 452
+write *gRecruitedPokemonRef+176 2 3
+write *gRecruitedPokemonRef+272 2 448
+write *gRecruitedPokemonRef+264 2 3
+# the main menu remembers the cursor on Debug Mode
+press A
+wait 30
+press A
+wait 30
+press A
+wait 30
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+shot 1_in_dungeon
+expect *gDungeon+@gDxOffDungeonLocation 1 == 0
+read s2 ***gDungeon+@gDxOffTeamPokemon!8+@gDxOffEntityInfo+@gDxOffInfoId 2
+read s3 ***gDungeon+@gDxOffTeamPokemon!12+@gDxOffEntityInfo+@gDxOffInfoId 2
+read s4 ***gDungeon+@gDxOffTeamPokemon!16+@gDxOffEntityInfo+@gDxOffInfoId 2
+read s5 ***gDungeon+@gDxOffTeamPokemon!20+@gDxOffEntityInfo+@gDxOffInfoId 2
+expect ***gDungeon+@gDxOffTeamPokemon!8+@gDxOffEntityInfo+@gDxOffInfoId 2 == 454
+expect ***gDungeon+@gDxOffTeamPokemon!8+@gDxOffEntityInfo+@gDxOffInfoTypes 1 == 18
+expect ***gDungeon+@gDxOffTeamPokemon!12+@gDxOffEntityInfo+@gDxOffInfoId 2 == 443
+expect ***gDungeon+@gDxOffTeamPokemon!16+@gDxOffEntityInfo+@gDxOffInfoId 2 == 452
+expect ***gDungeon+@gDxOffTeamPokemon!20+@gDxOffEntityInfo+@gDxOffInfoId 2 == 448
+expect ***gDungeon+@gDxOffTeamPokemon!20+@gDxOffEntityInfo+@gDxOffInfoHP 2 > 0
+hold RIGHT 60
+wait 60
+shot 2_walk
+hold DOWN 60
+wait 120
+shot 3_walk
+press B
+wait 30
+press DOWN
+press DOWN
+press A
+wait 40
+shot 4_team_menu
