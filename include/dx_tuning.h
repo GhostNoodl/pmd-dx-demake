@@ -41,4 +41,13 @@
 // Empowerment Seed: stat stages gained by an Empowered Pokemon (lasts the floor, like any stat change)
 #define DX_EMPOWER_STAGES 2
 
+// Rare Qualities (ESTIMATED strengths; DX's numbers aren't published)
+#define DX_RAINBOW_GUMMI_QUALITY_CHANCE 25 // % a Rainbow Gummi also grants a quality
+#define DX_GUMMI_STAT_RAISE 1              // a Gummi raises one random stat by this much
+#define DX_RQ_XP_BOOST_PERCENT 150         // XP Boost: Exp. from defeated enemies
+#define DX_RQ_HEALING_PERCENT 50           // Notorious Healing: regen speed (lower = faster)
+#define DX_RQ_FUNNEL_PERCENT 33            // Funnel Fun: regen speed in corridors
+#define DX_RQ_FRIENDLY_BONUS 100           // Friendly: recruit rate (out of 1000)
+#define DX_RQ_SQUAD_UP_BONUS 25            // Squad Up: recruit rate per team member
+
 #endif // GUARD_DX_TUNING_H

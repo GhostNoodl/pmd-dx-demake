@@ -35,6 +35,10 @@ typedef struct Pokemon
     /* R=0x1C | B=0x14 */ u32 currExp;
     /* R=0x20 | B=0x18 */ IqSkillFlags IQSkills;
     /* R=0x24 | B=0x1B */ u8 tacticIndex;
+#ifdef DX_RULES
+    /* R=0x25 */ u8 dxQuality; // Rare Quality (constants/rare_quality.h), saved in the DX save block
+    /* R=0x26 */ u8 dxFlags;
+#endif
     /* R=0x28 | B=0x1C */ BulkItem heldItem;
     /* R=0x2C | B=0x1E */ Move moves[MAX_MON_MOVES];
     /* R=0x4C | B=0x36 */ u8 name[POKEMON_NAME_LENGTH];

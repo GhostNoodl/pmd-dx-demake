@@ -379,71 +379,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 527
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 527
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 527
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 527
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 527
-                    },
-                    {
-                        "item": "ITEM_ROYAL_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 527
+                        "itemProbability": 8948
                     },
                     {
                         "item": "ITEM_BANANA",
@@ -863,11 +799,7 @@
                 "items": [
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 5000
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 5000
+                        "itemProbability": 10000
                     }
                 ]
             },
@@ -959,11 +891,7 @@
                 "items": [
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 5000
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 5000
+                        "itemProbability": 10000
                     }
                 ]
             },
@@ -1055,11 +983,7 @@
                 "items": [
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 5000
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 5000
+                        "itemProbability": 10000
                     }
                 ]
             },
@@ -1153,47 +1077,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 371
-                    },
-                    {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 371
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 371
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 371
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 370
+                        "itemProbability": 4074
                     }
                 ]
             },
@@ -1295,47 +1179,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 371
-                    },
-                    {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 371
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 371
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 371
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 370
+                        "itemProbability": 4074
                     }
                 ]
             },
@@ -1443,43 +1287,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 417
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 417
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 416
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 417
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 417
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 416
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 417
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 417
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 416
-                    },
-                    {
-                        "item": "ITEM_ROYAL_GUMMI",
-                        "itemProbability": 417
+                        "itemProbability": 4167
                     }
                 ]
             },
@@ -1597,43 +1405,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 417
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 417
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 416
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 417
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 417
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 416
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 417
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 417
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 416
-                    },
-                    {
-                        "item": "ITEM_ROYAL_GUMMI",
-                        "itemProbability": 417
+                        "itemProbability": 4167
                     }
                 ]
             },
@@ -1747,51 +1519,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 357
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 358
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 357
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 357
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 357
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 357
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 357
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 357
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 358
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 357
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 357
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 357
+                        "itemProbability": 4286
                     }
                 ]
             },
@@ -1971,51 +1699,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 357
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 358
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 357
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 357
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 357
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 357
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 357
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 357
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 358
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 357
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 357
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 357
+                        "itemProbability": 4286
                     }
                 ]
             },
@@ -2173,47 +1857,7 @@
                 "items": [
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 833
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 834
-                    },
-                    {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 833
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 1667
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 833
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 833
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 834
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 833
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 833
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 834
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 833
+                        "itemProbability": 10000
                     }
                 ]
             },
@@ -2283,47 +1927,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 400
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 400
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 400
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 400
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 400
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 400
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 400
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 400
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 400
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 400
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 400
+                        "itemProbability": 4400
                     }
                 ]
             },
@@ -2505,71 +2109,7 @@
                 "items": [
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 589
-                    },
-                    {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 589
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 589
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_ROYAL_GUMMI",
-                        "itemProbability": 589
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 588
+                        "itemProbability": 10000
                     }
                 ]
             },
@@ -2721,47 +2261,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 400
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 400
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 400
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 400
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 400
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 400
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 400
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 400
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 400
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 400
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 400
+                        "itemProbability": 4400
                     }
                 ]
             },
@@ -2937,51 +2437,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 371
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 371
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 371
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 371
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 370
+                        "itemProbability": 4444
                     }
                 ]
             },
@@ -3143,51 +2599,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 371
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 371
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 371
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 371
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 370
+                        "itemProbability": 4444
                     }
                 ]
             },
@@ -3349,51 +2761,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 371
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 371
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 371
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 370
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 371
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 370
+                        "itemProbability": 4444
                     }
                 ]
             },
@@ -3546,32 +2914,8 @@
                 "categoryProbability": 705,
                 "items": [
                     {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 1429
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 1428
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 1429
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 1428
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 1429
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 1428
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 1429
+                        "item": "ITEM_WHITE_GUMMI",
+                        "itemProbability": 10000
                     }
                 ]
             },
@@ -3716,32 +3060,8 @@
                 "categoryProbability": 705,
                 "items": [
                     {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 1429
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 1428
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 1429
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 1428
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 1429
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 1428
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 1429
+                        "item": "ITEM_WHITE_GUMMI",
+                        "itemProbability": 10000
                     }
                 ]
             },
@@ -3876,7 +3196,7 @@
                 "categoryProbability": 2500,
                 "items": [
                     {
-                        "item": "ITEM_RED_GUMMI",
+                        "item": "ITEM_WHITE_GUMMI",
                         "itemProbability": 10000
                     }
                 ]
@@ -3943,47 +3263,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 385
+                        "itemProbability": 4231
                     }
                 ]
             },
@@ -4265,47 +3545,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 385
+                        "itemProbability": 4231
                     }
                 ]
             },
@@ -4470,12 +3710,8 @@
                 "categoryProbability": 2500,
                 "items": [
                     {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 5000
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 5000
+                        "item": "ITEM_WHITE_GUMMI",
+                        "itemProbability": 10000
                     }
                 ]
             },
@@ -4522,12 +3758,8 @@
                 "categoryProbability": 2500,
                 "items": [
                     {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 5000
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 5000
+                        "item": "ITEM_WHITE_GUMMI",
+                        "itemProbability": 10000
                     }
                 ]
             },
@@ -4607,47 +3839,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 385
+                        "itemProbability": 4231
                     }
                 ]
             },
@@ -4861,59 +4053,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 345
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 345
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 345
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 345
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 345
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 344
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 345
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 345
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 345
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 345
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 345
-                    },
-                    {
-                        "item": "ITEM_ROYAL_GUMMI",
-                        "itemProbability": 344
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 345
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 345
+                        "itemProbability": 4828
                     }
                 ]
             },
@@ -5095,47 +4235,7 @@
                 "items": [
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 714
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 2857
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 715
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 714
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 714
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 715
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 714
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 714
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 714
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 715
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 714
+                        "itemProbability": 10000
                     }
                 ]
             },
@@ -5183,47 +4283,7 @@
                 "items": [
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 714
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 2857
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 715
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 714
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 714
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 715
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 714
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 714
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 714
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 715
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 714
+                        "itemProbability": 10000
                     }
                 ]
             },
@@ -5276,20 +4336,8 @@
                         "itemProbability": 1429
                     },
                     {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 4285
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 1429
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 1428
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 1429
+                        "item": "ITEM_WHITE_GUMMI",
+                        "itemProbability": 8571
                     }
                 ]
             },
@@ -5658,20 +4706,8 @@
                         "itemProbability": 1429
                     },
                     {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 4285
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 1429
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 1428
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 1429
+                        "item": "ITEM_WHITE_GUMMI",
+                        "itemProbability": 8571
                     }
                 ]
             },
@@ -5898,20 +4934,8 @@
                         "itemProbability": 1429
                     },
                     {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 4285
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 1429
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 1428
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 1429
+                        "item": "ITEM_WHITE_GUMMI",
+                        "itemProbability": 8571
                     }
                 ]
             },
@@ -6144,24 +5168,8 @@
                         "itemProbability": 1667
                     },
                     {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 1666
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 1667
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 1667
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 1666
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 1667
+                        "item": "ITEM_WHITE_GUMMI",
+                        "itemProbability": 8333
                     }
                 ]
             },
@@ -6402,24 +5410,8 @@
                         "itemProbability": 1667
                     },
                     {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 1666
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 1667
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 1667
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 1666
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 1667
+                        "item": "ITEM_WHITE_GUMMI",
+                        "itemProbability": 8333
                     }
                 ]
             },
@@ -7101,71 +6093,7 @@
                 "items": [
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 1351
-                    },
-                    {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_ROYAL_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 541
+                        "itemProbability": 10000
                     }
                 ]
             },
@@ -7713,71 +6641,7 @@
                 "items": [
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 1351
-                    },
-                    {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_ROYAL_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 541
+                        "itemProbability": 10000
                     }
                 ]
             },
@@ -8067,71 +6931,7 @@
                 "items": [
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 1351
-                    },
-                    {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_ROYAL_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 541
+                        "itemProbability": 10000
                     }
                 ]
             },
@@ -8421,71 +7221,7 @@
                 "items": [
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 1351
-                    },
-                    {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_ROYAL_GUMMI",
-                        "itemProbability": 541
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 540
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 541
+                        "itemProbability": 10000
                     }
                 ]
             },
@@ -8811,11 +7547,15 @@
                 "items": [
                     {
                         "item": "ITEM_GRIMY_FOOD",
-                        "itemProbability": 5000
+                        "itemProbability": 4900
                     },
                     {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 5000
+                        "item": "ITEM_WHITE_GUMMI",
+                        "itemProbability": 4900
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -9151,11 +7891,15 @@
                 "items": [
                     {
                         "item": "ITEM_GRIMY_FOOD",
-                        "itemProbability": 5000
+                        "itemProbability": 4900
                     },
                     {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 5000
+                        "item": "ITEM_WHITE_GUMMI",
+                        "itemProbability": 4900
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -9445,11 +8189,15 @@
                 "items": [
                     {
                         "item": "ITEM_GRIMY_FOOD",
-                        "itemProbability": 5000
+                        "itemProbability": 4900
                     },
                     {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 5000
+                        "item": "ITEM_WHITE_GUMMI",
+                        "itemProbability": 4900
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -10677,71 +9425,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 527
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 527
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 527
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 527
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 527
-                    },
-                    {
-                        "item": "ITEM_ROYAL_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 527
+                        "itemProbability": 8948
                     },
                     {
                         "item": "ITEM_BANANA",
@@ -11099,71 +9783,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_ROYAL_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 556
+                        "itemProbability": 9444
                     }
                 ]
             }
@@ -11639,71 +10259,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_ROYAL_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 556
+                        "itemProbability": 9444
                     }
                 ]
             },
@@ -12983,7 +11539,11 @@
                 "items": [
                     {
                         "item": "ITEM_HUGE_APPLE",
-                        "itemProbability": 10000
+                        "itemProbability": 9800
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -13511,71 +12071,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_ROYAL_GUMMI",
-                        "itemProbability": 556
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 555
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 556
+                        "itemProbability": 9444
                     }
                 ]
             },
@@ -13873,7 +12369,11 @@
                 "items": [
                     {
                         "item": "ITEM_HUGE_APPLE",
-                        "itemProbability": 10000
+                        "itemProbability": 9800
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -14321,71 +12821,7 @@
                 "items": [
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 589
-                    },
-                    {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 589
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 589
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_ROYAL_GUMMI",
-                        "itemProbability": 589
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 588
+                        "itemProbability": 10000
                     }
                 ]
             },
@@ -14537,7 +12973,11 @@
                 "items": [
                     {
                         "item": "ITEM_HUGE_APPLE",
-                        "itemProbability": 10000
+                        "itemProbability": 9800
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -15071,7 +13511,11 @@
                 "items": [
                     {
                         "item": "ITEM_APPLE",
-                        "itemProbability": 10000
+                        "itemProbability": 9800
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -15839,7 +14283,11 @@
                 "items": [
                     {
                         "item": "ITEM_APPLE",
-                        "itemProbability": 10000
+                        "itemProbability": 9800
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -17669,71 +16117,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_ROYAL_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 250
+                        "itemProbability": 4250
                     },
                     {
                         "item": "ITEM_BANANA",
@@ -18137,71 +16521,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_ROYAL_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 250
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 250
+                        "itemProbability": 4250
                     },
                     {
                         "item": "ITEM_BANANA",
@@ -18698,12 +17018,8 @@
                         "itemProbability": 6667
                     },
                     {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 1666
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 1667
+                        "item": "ITEM_WHITE_GUMMI",
+                        "itemProbability": 3333
                     }
                 ]
             }
@@ -18793,71 +17109,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 527
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 527
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 527
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 527
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 527
-                    },
-                    {
-                        "item": "ITEM_ROYAL_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 527
+                        "itemProbability": 8948
                     },
                     {
                         "item": "ITEM_BANANA",
@@ -19379,7 +17631,11 @@
                 "items": [
                     {
                         "item": "ITEM_BIG_APPLE",
-                        "itemProbability": 10000
+                        "itemProbability": 9800
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -20069,7 +18325,11 @@
                 "items": [
                     {
                         "item": "ITEM_BIG_APPLE",
-                        "itemProbability": 10000
+                        "itemProbability": 9800
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -20459,7 +18719,11 @@
                 "items": [
                     {
                         "item": "ITEM_BIG_APPLE",
-                        "itemProbability": 10000
+                        "itemProbability": 9800
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -20875,7 +19139,11 @@
                 "items": [
                     {
                         "item": "ITEM_APPLE",
-                        "itemProbability": 10000
+                        "itemProbability": 9800
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -21419,7 +19687,11 @@
                 "items": [
                     {
                         "item": "ITEM_APPLE",
-                        "itemProbability": 10000
+                        "itemProbability": 9800
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -22781,7 +21053,11 @@
                 "items": [
                     {
                         "item": "ITEM_APPLE",
-                        "itemProbability": 10000
+                        "itemProbability": 9800
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -23151,7 +21427,11 @@
                 "items": [
                     {
                         "item": "ITEM_GRIMY_FOOD",
-                        "itemProbability": 10000
+                        "itemProbability": 9800
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -23865,7 +22145,11 @@
                 "items": [
                     {
                         "item": "ITEM_GRIMY_FOOD",
-                        "itemProbability": 10000
+                        "itemProbability": 9800
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -24872,12 +23156,8 @@
                         "itemProbability": 3333
                     },
                     {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 3334
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 3333
+                        "item": "ITEM_WHITE_GUMMI",
+                        "itemProbability": 6667
                     }
                 ]
             },
@@ -24932,12 +23212,8 @@
                         "itemProbability": 3333
                     },
                     {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 3334
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 3333
+                        "item": "ITEM_WHITE_GUMMI",
+                        "itemProbability": 6667
                     }
                 ]
             },
@@ -25069,47 +23345,15 @@
                 "items": [
                     {
                         "item": "ITEM_APPLE",
-                        "itemProbability": 4118
+                        "itemProbability": 4036
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 588
+                        "itemProbability": 5764
                     },
                     {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 589
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 589
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_ROYAL_GUMMI",
-                        "itemProbability": 588
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -25271,47 +23515,15 @@
                 "items": [
                     {
                         "item": "ITEM_APPLE",
-                        "itemProbability": 4118
+                        "itemProbability": 4036
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 588
+                        "itemProbability": 5764
                     },
                     {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 589
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 589
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 588
-                    },
-                    {
-                        "item": "ITEM_ROYAL_GUMMI",
-                        "itemProbability": 588
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -26807,71 +25019,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_ROYAL_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 385
+                        "itemProbability": 6539
                     },
                     {
                         "item": "ITEM_BANANA",
@@ -27179,71 +25327,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_ROYAL_GUMMI",
-                        "itemProbability": 385
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 384
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 385
+                        "itemProbability": 6539
                     },
                     {
                         "item": "ITEM_BANANA",
@@ -27520,7 +25604,7 @@
                 "categoryProbability": 1667,
                 "items": [
                     {
-                        "item": "ITEM_RED_GUMMI",
+                        "item": "ITEM_WHITE_GUMMI",
                         "itemProbability": 10000
                     }
                 ]
@@ -27574,7 +25658,7 @@
                 "categoryProbability": 1667,
                 "items": [
                     {
-                        "item": "ITEM_BLUE_GUMMI",
+                        "item": "ITEM_WHITE_GUMMI",
                         "itemProbability": 10000
                     }
                 ]
@@ -27628,7 +25712,7 @@
                 "categoryProbability": 1667,
                 "items": [
                     {
-                        "item": "ITEM_GRASS_GUMMI",
+                        "item": "ITEM_WHITE_GUMMI",
                         "itemProbability": 10000
                     }
                 ]
@@ -27682,7 +25766,7 @@
                 "categoryProbability": 1667,
                 "items": [
                     {
-                        "item": "ITEM_YELLOW_GUMMI",
+                        "item": "ITEM_WHITE_GUMMI",
                         "itemProbability": 10000
                     }
                 ]
@@ -27736,7 +25820,7 @@
                 "categoryProbability": 1667,
                 "items": [
                     {
-                        "item": "ITEM_CLEAR_GUMMI",
+                        "item": "ITEM_WHITE_GUMMI",
                         "itemProbability": 10000
                     }
                 ]
@@ -27790,7 +25874,7 @@
                 "categoryProbability": 1667,
                 "items": [
                     {
-                        "item": "ITEM_ORANGE_GUMMI",
+                        "item": "ITEM_WHITE_GUMMI",
                         "itemProbability": 10000
                     }
                 ]
@@ -27844,7 +25928,7 @@
                 "categoryProbability": 1667,
                 "items": [
                     {
-                        "item": "ITEM_BROWN_GUMMI",
+                        "item": "ITEM_WHITE_GUMMI",
                         "itemProbability": 10000
                     }
                 ]
@@ -27898,7 +25982,7 @@
                 "categoryProbability": 1667,
                 "items": [
                     {
-                        "item": "ITEM_SKY_GUMMI",
+                        "item": "ITEM_WHITE_GUMMI",
                         "itemProbability": 10000
                     }
                 ]
@@ -27952,7 +26036,7 @@
                 "categoryProbability": 1667,
                 "items": [
                     {
-                        "item": "ITEM_GOLD_GUMMI",
+                        "item": "ITEM_WHITE_GUMMI",
                         "itemProbability": 10000
                     }
                 ]
@@ -28006,7 +26090,7 @@
                 "categoryProbability": 1667,
                 "items": [
                     {
-                        "item": "ITEM_PINK_GUMMI",
+                        "item": "ITEM_WHITE_GUMMI",
                         "itemProbability": 10000
                     }
                 ]
@@ -28052,7 +26136,7 @@
                 "categoryProbability": 1667,
                 "items": [
                     {
-                        "item": "ITEM_GREEN_GUMMI",
+                        "item": "ITEM_WHITE_GUMMI",
                         "itemProbability": 10000
                     }
                 ]
@@ -28098,7 +26182,7 @@
                 "categoryProbability": 1667,
                 "items": [
                     {
-                        "item": "ITEM_GRAY_GUMMI",
+                        "item": "ITEM_WHITE_GUMMI",
                         "itemProbability": 10000
                     }
                 ]
@@ -28144,7 +26228,7 @@
                 "categoryProbability": 1667,
                 "items": [
                     {
-                        "item": "ITEM_PURPLE_GUMMI",
+                        "item": "ITEM_WHITE_GUMMI",
                         "itemProbability": 10000
                     }
                 ]
@@ -28190,7 +26274,7 @@
                 "categoryProbability": 1667,
                 "items": [
                     {
-                        "item": "ITEM_ROYAL_GUMMI",
+                        "item": "ITEM_WHITE_GUMMI",
                         "itemProbability": 10000
                     }
                 ]
@@ -28236,7 +26320,7 @@
                 "categoryProbability": 1667,
                 "items": [
                     {
-                        "item": "ITEM_BLACK_GUMMI",
+                        "item": "ITEM_WHITE_GUMMI",
                         "itemProbability": 10000
                     }
                 ]
@@ -28282,7 +26366,7 @@
                 "categoryProbability": 1667,
                 "items": [
                     {
-                        "item": "ITEM_SILVER_GUMMI",
+                        "item": "ITEM_WHITE_GUMMI",
                         "itemProbability": 10000
                     }
                 ]
@@ -28403,27 +26487,15 @@
                 "items": [
                     {
                         "item": "ITEM_APPLE",
-                        "itemProbability": 2857
+                        "itemProbability": 2800
                     },
                     {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 1429
+                        "item": "ITEM_WHITE_GUMMI",
+                        "itemProbability": 7000
                     },
                     {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 1428
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 1429
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 1428
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 1429
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -28713,27 +26785,15 @@
                 "items": [
                     {
                         "item": "ITEM_APPLE",
-                        "itemProbability": 2857
+                        "itemProbability": 2800
                     },
                     {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 1429
+                        "item": "ITEM_WHITE_GUMMI",
+                        "itemProbability": 7000
                     },
                     {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 1428
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 1429
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 1428
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 1429
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -29023,27 +27083,15 @@
                 "items": [
                     {
                         "item": "ITEM_APPLE",
-                        "itemProbability": 2857
+                        "itemProbability": 2800
                     },
                     {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 1429
+                        "item": "ITEM_WHITE_GUMMI",
+                        "itemProbability": 7000
                     },
                     {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 1428
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 1429
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 1428
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 1429
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -29675,71 +27723,7 @@
                     },
                     {
                         "item": "ITEM_WHITE_GUMMI",
-                        "itemProbability": 527
-                    },
-                    {
-                        "item": "ITEM_RED_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_BLUE_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_GRASS_GUMMI",
-                        "itemProbability": 527
-                    },
-                    {
-                        "item": "ITEM_YELLOW_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_CLEAR_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_ORANGE_GUMMI",
-                        "itemProbability": 527
-                    },
-                    {
-                        "item": "ITEM_PINK_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_BROWN_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_SKY_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_GOLD_GUMMI",
-                        "itemProbability": 527
-                    },
-                    {
-                        "item": "ITEM_GREEN_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_GRAY_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_PURPLE_GUMMI",
-                        "itemProbability": 527
-                    },
-                    {
-                        "item": "ITEM_ROYAL_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_BLACK_GUMMI",
-                        "itemProbability": 526
-                    },
-                    {
-                        "item": "ITEM_SILVER_GUMMI",
-                        "itemProbability": 527
+                        "itemProbability": 8948
                     },
                     {
                         "item": "ITEM_BANANA",
@@ -30335,11 +28319,15 @@
                 "items": [
                     {
                         "item": "ITEM_BIG_APPLE",
-                        "itemProbability": 7143
+                        "itemProbability": 7001
                     },
                     {
                         "item": "ITEM_HUGE_APPLE",
-                        "itemProbability": 2857
+                        "itemProbability": 2799
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -31407,11 +29395,15 @@
                 "items": [
                     {
                         "item": "ITEM_BIG_APPLE",
-                        "itemProbability": 7143
+                        "itemProbability": 7001
                     },
                     {
                         "item": "ITEM_HUGE_APPLE",
-                        "itemProbability": 2857
+                        "itemProbability": 2799
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -31971,11 +29963,15 @@
                 "items": [
                     {
                         "item": "ITEM_BIG_APPLE",
-                        "itemProbability": 7143
+                        "itemProbability": 7001
                     },
                     {
                         "item": "ITEM_HUGE_APPLE",
-                        "itemProbability": 2857
+                        "itemProbability": 2799
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -32535,11 +30531,15 @@
                 "items": [
                     {
                         "item": "ITEM_BIG_APPLE",
-                        "itemProbability": 7143
+                        "itemProbability": 7001
                     },
                     {
                         "item": "ITEM_HUGE_APPLE",
-                        "itemProbability": 2857
+                        "itemProbability": 2799
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -33099,11 +31099,15 @@
                 "items": [
                     {
                         "item": "ITEM_BIG_APPLE",
-                        "itemProbability": 7143
+                        "itemProbability": 7001
                     },
                     {
                         "item": "ITEM_HUGE_APPLE",
-                        "itemProbability": 2857
+                        "itemProbability": 2799
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -33653,11 +31657,15 @@
                 "items": [
                     {
                         "item": "ITEM_BIG_APPLE",
-                        "itemProbability": 7143
+                        "itemProbability": 7001
                     },
                     {
                         "item": "ITEM_HUGE_APPLE",
-                        "itemProbability": 2857
+                        "itemProbability": 2799
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -35009,15 +33017,19 @@
                 "items": [
                     {
                         "item": "ITEM_APPLE",
-                        "itemProbability": 2000
+                        "itemProbability": 1960
                     },
                     {
                         "item": "ITEM_BIG_APPLE",
-                        "itemProbability": 5000
+                        "itemProbability": 4900
                     },
                     {
                         "item": "ITEM_GRIMY_FOOD",
-                        "itemProbability": 3000
+                        "itemProbability": 2940
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -36401,15 +34413,19 @@
                 "items": [
                     {
                         "item": "ITEM_APPLE",
-                        "itemProbability": 2000
+                        "itemProbability": 1960
                     },
                     {
                         "item": "ITEM_BIG_APPLE",
-                        "itemProbability": 5000
+                        "itemProbability": 4900
                     },
                     {
                         "item": "ITEM_GRIMY_FOOD",
-                        "itemProbability": 3000
+                        "itemProbability": 2940
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -37335,15 +35351,19 @@
                 "items": [
                     {
                         "item": "ITEM_APPLE",
-                        "itemProbability": 2000
+                        "itemProbability": 1960
                     },
                     {
                         "item": "ITEM_BIG_APPLE",
-                        "itemProbability": 5000
+                        "itemProbability": 4900
                     },
                     {
                         "item": "ITEM_GRIMY_FOOD",
-                        "itemProbability": 3000
+                        "itemProbability": 2940
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -37975,15 +35995,19 @@
                 "items": [
                     {
                         "item": "ITEM_APPLE",
-                        "itemProbability": 2000
+                        "itemProbability": 1960
                     },
                     {
                         "item": "ITEM_BIG_APPLE",
-                        "itemProbability": 5000
+                        "itemProbability": 4900
                     },
                     {
                         "item": "ITEM_GRIMY_FOOD",
-                        "itemProbability": 3000
+                        "itemProbability": 2940
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_8",
+                        "itemProbability": 200
                     }
                 ]
             },

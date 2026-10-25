@@ -475,4 +475,5 @@ const u32 gDxOffWindTurns = offsetof(Dungeon, unk644.windTurns);
 const u32 gDxOffWildPokemon = offsetof(Dungeon, wildPokemon);
 const u32 gDxOffInfoStages = offsetof(EntityInfo, offensiveStages);
 const u32 gDxOffInfoApparentId = offsetof(EntityInfo, apparentID);
+const u32 gDxOffInfoBelly = offsetof(EntityInfo, belly);
 #endif // DX_DEBUG

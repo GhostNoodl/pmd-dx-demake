@@ -1,4 +1,8 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rare_quality.h"
+#include "dx_tuning.h"
+#endif
 #include "globaldata.h"
 #include "dungeon_mon_recruit.h"
 #include "constants/dungeon_exit.h"
@@ -108,6 +112,12 @@ bool8 TryRecruitMonster(Entity *attacker, Entity *target)
         recruitRate += gFriendBowRecruitRateUpValue;
 
     recruitRate += gRecruitRateByLevel[attackerInfo->level];
+#ifdef DX_RULES
+    if (DxTeamHasQuality(RQ_FRIENDLY))
+        recruitRate += DX_RQ_FRIENDLY_BONUS;
+    if (DxTeamHasQuality(RQ_SQUAD_UP))
+        recruitRate += DX_RQ_SQUAD_UP_BONUS * DxTeamSize();
+#endif
     if (rand >= recruitRate)
         return FALSE;
 

@@ -7,6 +7,22 @@ ItemNameEvoCrystal:
 ItemDescriptionEvoCrystal:
 .string "A crystal that holds the power of evolution.{NEW_LINE}Give it to a Pokémon at Luminous Cave to{NEW_LINE}evolve it. Some Pokémon need two.\n\0"
 .align 2,0
+.global ItemNameRainbowGummi
+ItemNameRainbowGummi:
+.string "Rainbow Gummi\0"
+.align 2,0
+.global ItemDescriptionRainbowGummi
+ItemDescriptionRainbowGummi:
+.string "A Gummi of every color. It raises one of the{NEW_LINE}Pokémon's stats, and it may also give it a{NEW_LINE}Rare Quality.\n\0"
+.align 2,0
+.global ItemNameDxGummi
+ItemNameDxGummi:
+.string "DX Gummi\0"
+.align 2,0
+.global ItemDescriptionDxGummi
+ItemDescriptionDxGummi:
+.string "A deluxe Gummi. It raises one of the Pokémon's{NEW_LINE}stats and always gives it a Rare Quality.\n\0"
+.align 2,0
 .global ItemNameEmpowermentSeed
 ItemNameEmpowermentSeed:
 .string "Empower Seed\0"

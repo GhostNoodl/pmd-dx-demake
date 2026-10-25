@@ -10,6 +10,7 @@
 #include "dungeon_floor_spawns.h"
 #include "pokemon_3.h"
 #include "moves.h"
+#include "dx_rare_quality.h"
 #include "move_orb_effects_1.h"
 #include "dungeon_message.h"
 #include "dungeon_logic.h"
@@ -75,6 +76,8 @@ void DxTryMoveGrowth(EntityInfo *user, Move *move)
     chance = DX_MOVE_GROWTH_BASE_CHANCE - DX_MOVE_GROWTH_FALLOFF * move->ginseng;
     if (chance < DX_MOVE_GROWTH_MIN_CHANCE)
         chance = DX_MOVE_GROWTH_MIN_CHANCE;
+    if (DxTeamHasQuality(RQ_MOVING_UP))
+        chance *= 2;
     if (DungeonRandInt(100) < chance)
         move->ginseng++;
 }

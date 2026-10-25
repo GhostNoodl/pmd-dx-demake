@@ -1,4 +1,8 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rare_quality.h"
+static void DxFillBelly(Entity *pokemon, Entity *target, u32 bellyIncrement, s32 maxBellyIncrement, bool8 displayMessage);
+#endif
 #include "globaldata.h"
 #include "move_orb_effects_2.h"
 #include "dungeon_vram.h"
@@ -723,6 +727,16 @@ void sub_8078A58(Entity *pokemon, Entity *target, s32 param_3, s32 param_4)
 }
 
 void sub_8078B5C(Entity *pokemon, Entity *target, u32 bellyIncrement, s32 maxBellyIncrement, bool8 displayMessage)
+#ifdef DX_RULES
+{
+    // Small Stomach: whatever you eat fills the Belly completely
+    if (bellyIncrement != 0 && EntityIsValid(target) && !GetEntInfo(target)->isNotTeamMember && DxTeamHasQuality(RQ_SMALL_STOMACH))
+        bellyIncrement = 999;
+    DxFillBelly(pokemon, target, bellyIncrement, maxBellyIncrement, displayMessage);
+}
+
+static void DxFillBelly(Entity *pokemon, Entity *target, u32 bellyIncrement, s32 maxBellyIncrement, bool8 displayMessage)
+#endif
 {
     bool8 bellySizeIncreased;
     FixedPoint oldBelly;
