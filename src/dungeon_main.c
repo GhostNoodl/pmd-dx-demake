@@ -58,6 +58,10 @@
 #include "dungeon_kecleon_shop.h"
 #include "dungeon_engine.h"
 #include "dungeon_item_action.h"
+#ifdef DX_RULES
+#include "constants/targeting.h"
+#include "dungeon_ai_attack.h"
+#endif
 #include "dungeon_strings.h"
 #include "dungeon_entity_movement.h"
 #include "dungeon_8041AD0.h"
@@ -78,6 +82,9 @@ static bool8 sub_805E874(void);
 static bool8 sub_805EC2C(Entity *a0, s32 x, s32 y);
 static bool8 sub_805EC4C(Entity *a0, u8 a1);
 static bool8 sub_805EF60(Entity *a0, EntityInfo *a1);
+#ifdef DX_RULES
+static void DxSmartAButton(Entity *leader, EntityInfo *leaderInfo);
+#endif
 static void ShowMainMenu(bool8 fromBPress, bool8 a1);
 static void PrintOnMainMenu(bool8 printAll);
 
@@ -243,7 +250,11 @@ void DungeonHandlePlayerInput(void)
                 }
                 else {
                     if (!sub_805EF60(leader, leaderInfo)) {
+#ifdef DX_RULES
+                        DxSmartAButton(leader, leaderInfo);
+#else
                         SetMonsterActionFields(&leaderInfo->action, ACTION_REGULAR_ATTACK);
+#endif
                     }
                     break;
                 }
@@ -1592,3 +1603,86 @@ bool8 DungeonGiveNameToRecruitedMon(u8 *name)
 
     return FALSE;
 }
+
+#ifdef DX_RULES
+ALIGNED(4) static const u8 sDxFoundTraps[] = _("{POKEMON_0} found a hidden trap!");
+ALIGNED(4) static const u8 sDxNoTraps[] = _("{POKEMON_0} checked for traps. Nothing here.");
+
+// Rescue Team DX has no regular attack. A next to a foe uses the move the game rates
+// best (the same scoring the AI uses); otherwise A checks the 8 tiles around for traps.
+static void DxSmartAButton(Entity *leader, EntityInfo *leaderInfo)
+{
+    s32 i, dir;
+    s32 best = -1, bestWeight = 0;
+    u8 bestDir = leaderInfo->action.direction;
+    bool8 foeAdjacent = FALSE;
+    bool8 anyPP = FALSE;
+    s32 found = 0;
+
+    for (dir = 0; dir < NUM_DIRECTIONS; dir++) {
+        const Tile *tile = GetTile(leader->pos.x + gAdjacentTileOffsets[dir].x, leader->pos.y + gAdjacentTileOffsets[dir].y);
+        Entity *mon = tile->monster;
+
+        if (EntityIsValid(mon) && GetEntityType(mon) == ENTITY_MONSTER
+            && GetTreatmentBetweenMonsters(leader, mon, FALSE, FALSE) == TREATMENT_TREAT_AS_ENEMY)
+            foeAdjacent = TRUE;
+    }
+
+    if (foeAdjacent) {
+        for (i = 0; i < MAX_MON_MOVES; i++) {
+            Move *move = &leaderInfo->moves.moves[i];
+            struct AIPossibleMove possible;
+            s32 weight;
+
+            if (!MoveFlagExists(move) || MOVE_FLAG_LINK_CHAIN(move))
+                continue;
+            if (move->PP != 0)
+                anyPP = TRUE;
+            if (!CanAIUseMove(leader, i, TRUE))
+                continue;
+            weight = AIConsiderMove(&possible, leader, move);
+            if (possible.canBeUsed && weight > bestWeight) {
+                bestWeight = weight;
+                best = i;
+                bestDir = possible.direction;
+            }
+        }
+
+        if (best >= 0) {
+            SetMonsterActionFields(&leaderInfo->action, ACTION_USE_MOVE_PLAYER);
+            leaderInfo->action.actionParameters[0].actionUseIndex = GetTeamMemberEntityIndex(leader);
+            leaderInfo->action.actionParameters[1].actionUseIndex = best;
+            leaderInfo->action.direction = bestDir & DIRECTION_MASK;
+        }
+        else if (!anyPP) {
+            SetMonsterActionFields(&leaderInfo->action, ACTION_STRUGGLE);
+        }
+        else {
+            // No move reaches the foe (e.g. only status moves left): swing at it the old way
+            SetMonsterActionFields(&leaderInfo->action, ACTION_REGULAR_ATTACK);
+        }
+        return;
+    }
+
+    for (dir = 0; dir < NUM_DIRECTIONS; dir++) {
+        const Tile *tile = GetTile(leader->pos.x + gAdjacentTileOffsets[dir].x, leader->pos.y + gAdjacentTileOffsets[dir].y);
+        Entity *object = tile->object;
+
+        if (object != NULL && GetEntityType(object) == ENTITY_TRAP && !object->isVisible) {
+            object->isVisible = TRUE;
+            found++;
+        }
+    }
+
+    SetMessageArgument_2(gFormatBuffer_Monsters[0], leaderInfo, 0);
+    if (found != 0) {
+        UpdateTrapsVisibility();
+        LogMessageByIdWithPopupCheckUser_Async(leader, sDxFoundTraps);
+    }
+    else {
+        LogMessageByIdWithPopupCheckUser_Async(leader, sDxNoTraps);
+    }
+    // Checking takes the turn, like swinging at the air did
+    SetMonsterActionFields(&leaderInfo->action, ACTION_PASS_TURN);
+}
+#endif // DX_RULES

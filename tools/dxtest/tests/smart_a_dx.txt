@@ -1,0 +1,108 @@
+#rom debug
+#save after-first-dungeon
+# DX smart A: no foe next to you -> trap check; foes around -> A uses moves (PP drops)
+# Dungeon offsets (modern ABI): +0x644 dungeon id, +0x645 floor, +0x1D3D0 floor count
+mash START sMainMenu 4 != 0 3000
+wait 60
+press UP
+press A
+wait 30
+press A
+wait 30
+shot 1_pick_dungeon
+press A
+wait 30
+shot 2_pick_floor
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+press A
+wait 60
+shot 1_trap_check
+read m0pp ***gDungeon+0x1398C+0x70+0x11C 1
+read m1pp ***gDungeon+0x1398C+0x70+0x124 1
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+hold RIGHT 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+press A 4 30
+shot 2_after_mashing
+read m0pp_after ***gDungeon+0x1398C+0x70+0x11C 1
+read m1pp_after ***gDungeon+0x1398C+0x70+0x124 1
+expect ***gDungeon+0x1398C+0x70+0x11C 1 < 20
