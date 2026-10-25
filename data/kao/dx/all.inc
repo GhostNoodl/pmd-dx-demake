@@ -42,6 +42,8 @@
 .include "data/kao/dx/megapinsir.inc"
 .include "data/kao/dx/megagyarados.inc"
 .include "data/kao/dx/megaaerodactyl.inc"
+.include "data/kao/dx/megamewtwoy.inc"
+.include "data/kao/dx/megamewtwox.inc"
 .include "data/kao/dx/megaampharos.inc"
 .include "data/kao/dx/megasteelix.inc"
 .include "data/kao/dx/megascizor.inc"
