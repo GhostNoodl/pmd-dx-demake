@@ -2611,7 +2611,7 @@ u32 BufferDungeonRequirementsText(u8 dungeonIndex, s32 speciesId_, u8 *buffer, b
         s32 i, bodySize;
 
         CopyCyanMonsterNametoBuffer(gFormatBuffer_Monsters[0],speciesId);
-        if (counter > 3) {
+        if (counter > MAX_TEAM_MEMBERS - 1) {
             FormatString((requirementFailed) ? gText_AlsoClientCouldNotJoinTooManyMembers : gText_ClientCouldNotJoinTooManyMembers, text, &text[TXT_BUFFER_LEN], 0);
             AppendWithNewLines(buffer,text);
             requirementFailed = TRUE;
@@ -2624,7 +2624,7 @@ u32 BufferDungeonRequirementsText(u8 dungeonIndex, s32 speciesId_, u8 *buffer, b
                 bodySize += GetBodySize(mon->speciesNum);
             }
         }
-        if (bodySize > 6) {
+        if (bodySize > MAX_TEAM_BODY_SIZE) {
             FormatString((requirementFailed) ? gText_AlsoClientCouldNotJoinNoSpace : gText_ClientCouldNotJoinNoSpace, text, &text[TXT_BUFFER_LEN], 0);
             AppendWithNewLines(buffer,text);
             requirementFailed = TRUE;

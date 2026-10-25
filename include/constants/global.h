@@ -6,7 +6,9 @@
 #ifdef DX_PARTY_SIZE
 // dx: bigger in-dungeon party (Rescue Team DX allows up to 8 with no body-size limit)
 #define MAX_TEAM_MEMBERS DX_PARTY_SIZE
-#define MAX_TEAM_BODY_SIZE (DX_PARTY_SIZE * 3 / 2)
+// Rescue Team DX has no body-size limit: room for every member (and a mission client)
+// at the largest body size (4)
+#define MAX_TEAM_BODY_SIZE ((DX_PARTY_SIZE + 1) * 4)
 #else
 #define MAX_TEAM_MEMBERS 4
 #define MAX_TEAM_BODY_SIZE 6
