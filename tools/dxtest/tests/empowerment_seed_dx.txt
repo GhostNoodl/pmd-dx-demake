@@ -1,0 +1,48 @@
+#rom debug
+#save after-first-dungeon
+# DX Empowerment Seed: eating it raises Atk/SpAtk/Def/SpDef by 2 stages and Speed
+# Dungeon offsets come from the debug ROM's gDxOff* symbols
+mash START sMainMenu 4 != 0 3000
+wait 60
+# first toolbox slot = Empowerment Seed (id 238)
+write *gTeamInventoryRef+0 1 1
+write *gTeamInventoryRef+2 1 238
+press UP
+press A
+wait 30
+press A
+wait 30
+shot 1_pick_dungeon
+press A
+wait 30
+shot 2_pick_floor
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+press B
+wait 30
+press DOWN
+press A
+wait 40
+shot 1_items
+press A
+wait 40
+shot 2_item_menu
+wait 30
+# Eat
+press A
+wait 200
+shot 3_eaten
+press A
+wait 60
+shot 4_after
+read atk ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoStages 2
+read spatk ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoStages!2 2
+read def ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoStages!4 2
+read spdef ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoStages!6 2
+expect ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoStages 2 == 12
+expect ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoStages!2 2 == 12
+expect ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoStages!4 2 == 12
+expect ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoStages!6 2 == 12
+read slot0 *gTeamInventoryRef+2 1
+expect *gTeamInventoryRef+2 1 != 238

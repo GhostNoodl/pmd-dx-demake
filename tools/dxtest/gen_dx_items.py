@@ -3,7 +3,8 @@
 
   data/item/dx/item_data.json             Red's item table with ITEM_G_MACHINE_6 (unused in Red)
                                           turned into the Evo Crystal
-  data/item/dx/item_names_dx.s            its name and description
+                                          and ITEM_G_MACHINE_7 into the Empowerment Seed
+  data/item/dx/item_names_dx.s            their names and descriptions
   data/dungeon/dx/dungeon_item_data.json  dungeon loot: evolution items are obsolete in DX, so
                                           their chance goes to Evo Crystals
 
@@ -15,6 +16,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 CRYSTAL = "ITEM_G_MACHINE_6"
+EMPOWERMENT_SEED = "ITEM_G_MACHINE_7"  # also unused in Red
 # items Red uses only to evolve (DX evolves with Evo Crystals instead)
 EVOLUTION_ITEMS = {
     "ITEM_UPGRADE", "ITEM_KINGS_ROCK", "ITEM_THUNDERSTONE", "ITEM_DEEPSEASCALE", "ITEM_DEEPSEATOOTH",
@@ -39,6 +41,12 @@ def main():
         "description": "ItemDescriptionEvoCrystal", "actionType": fire["actionType"],
         "order": fire["order"],
     })
+    joy = items[ids["ITEM_JOY_SEED"]]
+    seed = items[ids[EMPOWERMENT_SEED]]
+    seed.clear()
+    seed.update(joy)
+    seed.update({"name": "ItemNameEmpowermentSeed", "buyPrice": 5000, "sellPrice": 500, "paletteID": 9,
+                 "description": "ItemDescriptionEmpowermentSeed", "aiFlags": [False, False, False]})
     out = ROOT / "data/item/dx"
     out.mkdir(parents=True, exist_ok=True)
     (out / "item_data.json").write_text(json.dumps(items, indent=4) + "\n")
@@ -48,6 +56,11 @@ def main():
         ".global ItemDescriptionEvoCrystal", "ItemDescriptionEvoCrystal:",
         '.string "A crystal that holds the power of evolution.{NEW_LINE}'
         'Give it to a Pokémon at Luminous Cave to{NEW_LINE}evolve it. Some Pokémon need two.\\n\\0"',
+        ".align 2,0",
+        ".global ItemNameEmpowermentSeed", "ItemNameEmpowermentSeed:", '.string "Empower Seed\\0"', ".align 2,0",
+        ".global ItemDescriptionEmpowermentSeed", "ItemDescriptionEmpowermentSeed:",
+        '.string "An Empowerment Seed. A Pokémon that eats it{NEW_LINE}'
+        'becomes Empowered: its Attack, Defense,{NEW_LINE}Sp. Atk, Sp. Def and Speed rise for the floor.\\n\\0"',
         ".align 2,0", ""]))
 
     loot = json.loads((ROOT / "data/dungeon/dungeon_item_data.json").read_text())

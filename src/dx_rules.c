@@ -10,6 +10,9 @@
 #include "dungeon_floor_spawns.h"
 #include "pokemon_3.h"
 #include "moves.h"
+#include "move_orb_effects_1.h"
+#include "dungeon_message.h"
+#include "dungeon_logic.h"
 #include "dungeon_random.h"
 #include "structs/str_dungeon.h"
 
@@ -72,6 +75,25 @@ void DxTryMoveGrowth(EntityInfo *user, Move *move)
         chance = DX_MOVE_GROWTH_MIN_CHANCE;
     if (DungeonRandInt(100) < chance)
         move->ginseng++;
+}
+
+// --- Empowerment Seed ---
+static const u8 sDxEmpowered[] = _("{POKEMON_0} became Empowered!");
+
+// Rescue Team DX: an Empowered Pokemon's stats all rise (Mega forms come on top of this)
+void DxEmpower(Entity *user, Entity *target)
+{
+    StatIndex physical = {STAT_INDEX_PHYSICAL}, special = {STAT_INDEX_SPECIAL};
+
+    if (!EntityIsValid(target))
+        return;
+    SetMessageArgument_2(gFormatBuffer_Monsters[0], GetEntInfo(target), 0);
+    TryDisplayDungeonLoggableMessage3_Async(user, target, sDxEmpowered);
+    BoostOffensiveStat(user, target, physical, DX_EMPOWER_STAGES);
+    BoostOffensiveStat(user, target, special, DX_EMPOWER_STAGES);
+    BoostDefensiveStat(user, target, physical, DX_EMPOWER_STAGES);
+    BoostDefensiveStat(user, target, special, DX_EMPOWER_STAGES);
+    BoostSpeed(user, target, 0, TRUE);
 }
 
 // --- Mystery Houses ---

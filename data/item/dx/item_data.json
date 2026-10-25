@@ -2973,15 +2973,20 @@
         "actionType": "ITEM_ACTION_TYPE_MISC"
     },
     {
-        "name": "ItemNameGMachine7",
-        "buyPrice": 8000,
+        "name": "ItemNameEmpowermentSeed",
+        "buyPrice": 5000,
         "sellPrice": 500,
-        "category": "CATEGORY_LINK_BOX",
-        "spriteID": 10,
-        "description": "ItemDescriptionPlaceholder",
-        "order": 233,
-        "paletteID": 0,
-        "actionType": "ITEM_ACTION_TYPE_LINK_BOX"
+        "category": "CATEGORY_BERRIES_SEEDS_VITAMINS",
+        "spriteID": 14,
+        "description": "ItemDescriptionEmpowermentSeed",
+        "aiFlags": [
+            false,
+            false,
+            false
+        ],
+        "order": 89,
+        "paletteID": 9,
+        "actionType": "ITEM_ACTION_TYPE_FOOD"
     },
     {
         "name": "ItemNameGMachine8",
