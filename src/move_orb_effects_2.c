@@ -1,6 +1,7 @@
 #include "global.h"
 #ifdef DX_RULES
 #include "dx_rare_quality.h"
+#include "dx_tuning.h"
 static void DxFillBelly(Entity *pokemon, Entity *target, u32 bellyIncrement, s32 maxBellyIncrement, bool8 displayMessage);
 #endif
 #include "globaldata.h"
@@ -109,6 +110,10 @@ void HealTargetHP(Entity *pokemon, Entity *target, s32 param_3, s32 param_4, boo
     if (!EntityIsValid(target)) {
         return;
     }
+#ifdef DX_RULES
+    if (DxTeamMemberHas(target, RQ_NOTORIOUS_RESTORATION))
+        param_3 = param_3 * DX_RQ_RESTORATION_PERCENT / 100;
+#endif
 
     entityInfo = GetEntInfo(target);
     maxHPStat = entityInfo->maxHPStat;
@@ -732,6 +737,8 @@ void sub_8078B5C(Entity *pokemon, Entity *target, u32 bellyIncrement, s32 maxBel
     // Small Stomach: whatever you eat fills the Belly completely
     if (bellyIncrement != 0 && EntityIsValid(target) && !GetEntInfo(target)->isNotTeamMember && DxTeamHasQuality(RQ_SMALL_STOMACH))
         bellyIncrement = 999;
+    else if (DxTeamMemberHas(target, RQ_NOTORIOUS_RESTORATION))
+        bellyIncrement = bellyIncrement * DX_RQ_RESTORATION_PERCENT / 100;
     DxFillBelly(pokemon, target, bellyIncrement, maxBellyIncrement, displayMessage);
 }
 

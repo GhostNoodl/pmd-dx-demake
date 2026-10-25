@@ -70,6 +70,8 @@ static const u8 sDxQualitiesInPlay[] = {
     RQ_NARROW_FOCUS, RQ_RAPID_BULLS_EYES, RQ_STEAMROLL, RQ_LONELY_COURAGE, RQ_BRAWL, RQ_LINK_BOOST,
     RQ_RECOIL_BOOST, RQ_RILED_UP, RQ_STRIKE_BACK, RQ_DEFENSIVE_RHYTHM, RQ_EVASIVE_RHYTHM,
     RQ_BLAST_CONTROL, RQ_PP_POUCH,
+    RQ_WARY_WALK, RQ_SQUEEZE_OUT, RQ_NOTORIOUS_RESTORATION, RQ_MIND_OVER_MATTER, RQ_BARGAIN, RQ_SALES_PITCH,
+    RQ_THROWN_ITEM_BOOST, RQ_FOOD_FINDER,
 };
 
 static const u16 sDxRecoilMoves[] = {
@@ -231,6 +233,8 @@ s32 DxQualityDamagePercent(Entity *attacker, u16 moveId)
         percent += info->usedLinkedMovesCounter * DX_RQ_LINK_BOOST_PER_MOVE;
     if (DxTeamHasQuality(RQ_RECOIL_BOOST) && DxMoveIn(sDxRecoilMoves, ARRAY_COUNT(sDxRecoilMoves), moveId))
         percent += DX_RQ_RECOIL_BOOST_BONUS;
+    if (DxTeamHasQuality(RQ_THROWN_ITEM_BOOST) && moveId == MOVE_PROJECTILE) // thrown spikes
+        percent = percent * DX_RQ_THROWN_PERCENT / 100;
     return percent;
 }
 
@@ -283,6 +287,40 @@ void DxQualityOnDefeat(Entity *attacker)
         if ((move->moveFlags & MOVE_FLAG_EXISTS) && move->PP < GetMoveBasePP(move))
             move->PP++;
     }
+}
+
+// a team member holds (or the team shares) this quality and the entity is on the team
+bool8 DxTeamMemberHas(Entity *entity, u32 quality)
+{
+    return DxOnTeam(entity) && DxTeamHasQuality(quality);
+}
+
+// Squeeze Out: now and then a move with no PP left gets 1 back (each turn)
+void DxSqueezeOut(Entity *entity)
+{
+    s32 i;
+    EntityInfo *info;
+
+    if (!DxTeamMemberHas(entity, RQ_SQUEEZE_OUT))
+        return;
+    info = GetEntInfo(entity);
+    for (i = 0; i < MAX_MON_MOVES; i++) {
+        Move *move = &info->moves.moves[i];
+        if ((move->moveFlags & MOVE_FLAG_EXISTS) && move->PP == 0 && DungeonRandInt(100) < DX_RQ_SQUEEZE_OUT_CHANCE)
+            move->PP = 1;
+    }
+}
+
+// Bargain / Sales Pitch: shop prices in dungeons (Kecleon)
+s32 DxShopPrice(s32 price, bool8 selling)
+{
+    if (gDungeon == NULL)
+        return price;
+    if (!selling && DxTeamHasQuality(RQ_BARGAIN))
+        return price * DX_RQ_BARGAIN_PERCENT / 100;
+    if (selling && DxTeamHasQuality(RQ_SALES_PITCH))
+        return price * DX_RQ_SALES_PITCH_PERCENT / 100;
+    return price;
 }
 
 #endif // DX_RULES

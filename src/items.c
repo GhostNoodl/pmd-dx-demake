@@ -1,4 +1,9 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rare_quality.h"
+static s32 RedActualBuyPrice(Item *param_1);
+static s32 RedActualSellPrice(Item *param_1);
+#endif
 #include "globaldata.h"
 #include "status_strings.h"
 #include "constants/colors.h"
@@ -266,6 +271,13 @@ s32 GetStackSellValue(Item *param_1)
 
 // arm9.bin::02060C7C
 s32 GetActualBuyPrice(Item *param_1)
+#ifdef DX_RULES
+{
+    return DxShopPrice(RedActualBuyPrice(param_1), FALSE); // Rare Quality Bargain
+}
+
+static s32 RedActualBuyPrice(Item *param_1)
+#endif
 {
     if (!IsShoppableItem(param_1->id))
         return 0;
@@ -277,6 +289,13 @@ s32 GetActualBuyPrice(Item *param_1)
 
 // arm9.bin::02060C18
 s32 GetActualSellPrice(Item *param_1)
+#ifdef DX_RULES
+{
+    return DxShopPrice(RedActualSellPrice(param_1), TRUE); // Rare Quality Sales Pitch
+}
+
+static s32 RedActualSellPrice(Item *param_1)
+#endif
 {
     if (!IsShoppableItem(param_1->id))
         return 0;

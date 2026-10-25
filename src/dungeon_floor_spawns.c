@@ -1,4 +1,8 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rare_quality.h"
+#include "dx_tuning.h"
+#endif
 #include "globaldata.h"
 #include "dungeon_floor_spawns.h"
 #include "constants/dungeon.h"
@@ -109,6 +113,11 @@ u8 GetRandomFloorItem(s32 spawnType)
     s32 i;
     s32 rand = DungeonRandInt(ITEM_SETS_RANDOM_CAP + 1);
     u8 category = NUM_ITEM_CATEGORIES;
+#ifdef DX_RULES
+    // Rare Quality Food Finder: more food lying around (DX: Tiny Apples; Red has plain Apples)
+    if (spawnType == ITEM_SPAWN_NORMAL && DxTeamHasQuality(RQ_FOOD_FINDER) && DungeonRandInt(100) < DX_RQ_FOOD_FINDER_CHANCE)
+        return ITEM_APPLE;
+#endif
     for (i = 0; i < NUM_ITEM_CATEGORIES; i++) {
         if (gDungeon->itemSpawns[spawnType].categoryValues[i] != 0 && gDungeon->itemSpawns[spawnType].categoryValues[i] >= rand) {
             category = i;
