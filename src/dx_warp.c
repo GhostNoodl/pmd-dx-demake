@@ -199,7 +199,7 @@ static void DxWarpSetState(u32 state)
         input->unk8 = 1;
         input->unkC = GetDungeonFloorCount(DxWarpDungeonId(sDxWarpLastIndex));
     }
-    input->unk10 = 2;
+    input->unk10 = (input->unkC >= 100) ? 3 : 2; // Wish Cave has 100 floors
     input->unk14 = INPUT_WINDOW;
     input->unk18 = &sDxWarp->windows.id[INPUT_WINDOW];
     input->unk1C = 60;

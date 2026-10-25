@@ -160,6 +160,11 @@ ifneq ($(DX_DEBUG),1)
   C_SOURCES := $(filter-out $(C_SUBDIR)/dx_%.c,$(C_SOURCES))
 endif
 ASM_SOURCES := $(wildcard asm/*.s data/*.s)
+# dx C2: data blobs nothing references; dropped from modern builds only (matching keeps them)
+DX_DROP_DATA ?= unk_9D02950 unk_96BD7AC unk_9fbd5d0 unk_98589A4 unk_9E7EB08
+ifeq ($(MODERN),1)
+  ASM_SOURCES := $(filter-out $(DX_DROP_DATA:%=data/%.s),$(ASM_SOURCES))
+endif
 C_ASM_SOURCES := $(wildcard src/*.s)
 SONG_SRCS := $(wildcard sound/songs/*.s)
 
