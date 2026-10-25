@@ -3,6 +3,8 @@
 # DX auto-mode: tap L and the leader explores on its own
 # Dungeon offsets come from the debug ROM's gDxOff* symbols
 mash START sMainMenu 4 != 0 3000
+# fixed dungeon seed: Red seeds floors from timing, so layouts otherwise shift between builds
+write gDxTestSeed 4 99991
 wait 60
 press UP
 press A

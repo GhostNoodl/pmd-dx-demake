@@ -539,6 +539,9 @@ static bool8 PlayerEnterDungeonPrompt_Async(u8 *str)
             height += 12;
     }
     height += 11;
+#ifdef DX_RULES
+    height += 7; // round up: the DX briefing runs to five lines
+#endif
     height /= 8;
 
     sWorldMapWindows.id[0].pos.y = 19 - height;

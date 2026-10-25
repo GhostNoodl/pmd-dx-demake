@@ -574,6 +574,11 @@ static u32 RunGameMode_Async(u32 a0)
         // dx Warp: enter the chosen dungeon/floor directly, the same way the world
         // map does, including the pre-dungeon save, so quicksave/resume behave normally
         if (DxTakePendingWarp(&scriptDungeon, &dxWarpFloor)) {
+            if (gDxWarpViaMap) {
+                SetScriptVarValue(NULL, DUNGEON_SELECT, scriptDungeon);
+                mode = STARTMODE_DUNGEON_FROM_WORLD_MAP;
+                continue;
+            }
             dungeonSetup.info.sub0.unkD = 0;
             dungeonSetup.info.sub0.unkC = 0;
             MemoryFill8(&dungeonSetup.info.mon, 0, sizeof(dungeonSetup.info.mon));

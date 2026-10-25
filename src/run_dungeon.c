@@ -64,6 +64,9 @@
 #include "dungeon_mon_sprite_render.h"
 #include "adventure_info.h"
 #include "decompress_sir.h"
+#ifdef DX_DEBUG
+#include "dx_warp.h"
+#endif
 
 EWRAM_INIT struct UnkStruct_203B414 *gUnknown_203B414 = NULL;
 EWRAM_INIT Dungeon *gDungeon = NULL;
@@ -249,6 +252,10 @@ void RunDungeon_Async(DungeonSetupStruct *setupPtr)
         gDungeon->unk0 = 0;
         if (!r6) {
             gDungeon->unk644.unk3C = GenerateDungeonRNGSeed();
+#ifdef DX_DEBUG
+            if (gDxTestSeed != 0)
+                gDungeon->unk644.unk3C = gDxTestSeed;
+#endif
             gDungeon->unk644.unk24 = 10;
             InitDungeonRNG(gDungeon->unk644.unk3C);
         }

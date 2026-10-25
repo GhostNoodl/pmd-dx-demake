@@ -8,6 +8,7 @@
 #include "code_80A26CC.h"
 #include "dungeon_info.h"
 #include "dx_warp.h"
+#include "dx_rules.h"
 #include "input.h"
 #include "memory.h"
 #include "menu_input.h"
@@ -56,8 +57,8 @@ static const WindowTemplate sDxWarpInfoWindow = {
     0,
     3,
     2, 2,
-    26, 5,
-    5, 0,
+    26, 6,
+    6, 0,
     NULL
 };
 
@@ -163,6 +164,9 @@ u32 UpdateDxWarpMenu(void)
     return MENU_NO_SCREEN_CHANGE;
 }
 
+EWRAM_DATA bool8 gDxWarpViaMap = FALSE;
+EWRAM_DATA u32 gDxTestSeed = 0;
+
 bool8 DxTakePendingWarp(s16 *scriptDungeon, s32 *floor)
 {
     if (!sDxWarpPending)
@@ -226,6 +230,8 @@ static void DxWarpDraw(void)
     PrintStringOnWindow(4, 14, buffer, INFO_WINDOW, 0);
     sprintfStatic((char *)buffer, (const char *)sDxFmtFloors, GetDungeonFloorCount(dungeonId));
     PrintStringOnWindow(4, 26, buffer, INFO_WINDOW, 0);
+    DxBriefingSummary(dungeonId, buffer); // the DX briefing, in short
+    PrintStringOnWindow(4, 38, buffer, INFO_WINDOW, 0);
     sub_80073E0(INFO_WINDOW);
 
     CallPrepareTextbox_8008C54(INPUT_WINDOW);

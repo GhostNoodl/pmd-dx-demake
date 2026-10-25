@@ -4,6 +4,8 @@
 # (forced one-room Monster House floor: foes all around)
 mash START sMainMenu 4 != 0 3000
 write gDxForceMysteryHouse 1 2
+# fixed dungeon seed: Red seeds floors from timing, so layouts otherwise shift between builds
+write gDxTestSeed 4 99991
 wait 60
 press UP
 press A
