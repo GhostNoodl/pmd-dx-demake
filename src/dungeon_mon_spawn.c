@@ -1,4 +1,7 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rules.h"
+#endif
 #include "globaldata.h"
 #include "dungeon_mon_spawn.h"
 #include "constants/ability.h"
@@ -471,6 +474,17 @@ void SpawnWildMonsOnFloor(void)
                     monSpawnInfo.unk2 = 1;
                     r6 = TRUE;
                 }
+#ifdef DX_RULES
+                // Mystery House on a forced Monster House layout: its occupants spawn with the floor
+                // (an ordinary house's newcomer drops in when it's triggered, dungeon_monster_house.c)
+                else if (gDxMysteryHouseSpecies != 0 && gDungeon->forceMonsterHouse
+                    && (GetTile(x, y)->terrainFlags & TERRAIN_TYPE_IN_MONSTER_HOUSE)) {
+                    monSpawnInfo.species = gDxMysteryHouseSpecies;
+                    monSpawnInfo.level = DxMysteryHouseLevel();
+                    monSpawnInfo.unk2 = 0;
+                    LoadPokemonSprite(monSpawnInfo.species, FALSE);
+                }
+#endif
                 else {
                     monSpawnInfo.species = GetRandomFloorMonsterId(0);
                     monSpawnInfo.level = 0;
@@ -484,6 +498,12 @@ void SpawnWildMonsOnFloor(void)
                 if (r6 || sub_806AA0C(monSpawnInfo.species, TRUE)) {
                     if (SpawnWildMon(&monSpawnInfo, FALSE)) {
                         r8 = FALSE;
+#ifdef DX_RULES
+                        if (monSpawnInfo.species == gDxMysteryHouseSpecies) {
+                            gDxMysteryHouseSpawned = gDxMysteryHouseSpecies;
+                            gDxMysteryHouseSpecies = 0;
+                        }
+#endif
                     }
                 }
             }

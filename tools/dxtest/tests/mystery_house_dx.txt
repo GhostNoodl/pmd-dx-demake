@@ -1,0 +1,50 @@
+#rom debug
+#save after-first-dungeon
+# DX Mystery House: forced on Mt. Steel 1F (Riolu's home) as a one-room Monster House: Riolu (#424) is among the occupants
+mash START sMainMenu 4 != 0 3000
+write gDxForceMysteryHouse 1 2
+wait 60
+press UP
+press A
+wait 30
+press A
+wait 30
+press UP
+press UP
+wait 10
+expect *sDxWarp+0xB0 4 == 2
+shot 1_pick_dungeon
+press A
+wait 30
+wait 10
+expect *sDxWarp+0xB0 4 == 1
+shot 2_pick_floor
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+shot 3_in_dungeon
+expect *gDungeon+@gDxOffDungeonLocation 1 == 2
+expect *gDungeon+@gDxOffDungeonFloor 1 == 1
+read pending gDxMysteryHouseSpecies 2
+hold RIGHT 30
+wait 600
+shot 4_house
+read spawned gDxMysteryHouseSpawned 2
+expect gDxMysteryHouseSpawned 2 == 424
+read wild0 ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoId 2
+expect ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoId 2 == 424
+read wild1 ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoId 2
+read wild2 ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoId 2
+read wild3 ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoId 2
+read wild4 ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoId 2
+read wild5 ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoId 2
+read wild6 ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoId 2
+read wild7 ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoId 2
+read wild8 ***gDungeon+@gDxOffWildPokemon!32+@gDxOffEntityInfo+@gDxOffInfoId 2
+read wild9 ***gDungeon+@gDxOffWildPokemon!36+@gDxOffEntityInfo+@gDxOffInfoId 2
+read wild10 ***gDungeon+@gDxOffWildPokemon!40+@gDxOffEntityInfo+@gDxOffInfoId 2
+read wild11 ***gDungeon+@gDxOffWildPokemon!44+@gDxOffEntityInfo+@gDxOffInfoId 2
+read wild12 ***gDungeon+@gDxOffWildPokemon!48+@gDxOffEntityInfo+@gDxOffInfoId 2
+read wild13 ***gDungeon+@gDxOffWildPokemon!52+@gDxOffEntityInfo+@gDxOffInfoId 2
+read wild14 ***gDungeon+@gDxOffWildPokemon!56+@gDxOffEntityInfo+@gDxOffInfoId 2
+read wild15 ***gDungeon+@gDxOffWildPokemon!60+@gDxOffEntityInfo+@gDxOffInfoId 2
