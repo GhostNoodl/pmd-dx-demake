@@ -27,6 +27,8 @@ endif
 
 # Builds the ROM using a modern compiler
 MODERN      ?= 0
+# dx: DX_DEBUG=1 (modern only) exposes the developers' debug menu on the main menu
+DX_DEBUG    ?= 0
 ifeq (modern,$(MAKECMDGOALS))
   MODERN := 1
 endif
@@ -112,15 +114,21 @@ else
   INCLUDE_CPP_ARGS := $(INCLUDE_DIRS:%=-iquote %)
   INCLUDE_PATHS := $(INCLUDE_DIRS:%=-I %)
   CPPFLAGS := $(INCLUDE_CPP_ARGS) -Wno-trigraphs -DMODERN=$(MODERN)
+  ifeq ($(DX_DEBUG),1)
+    CPPFLAGS += -DDX_DEBUG=1
+  endif
 endif
 
 #### Files ####
 BUILD_NAME_NORMAL = red
 BUILD_NAME_MODERN = red_modern
+BUILD_NAME_DEBUG = red_debug
 BUILD_DIR_NORMAL := build/pmd_$(BUILD_NAME_NORMAL)
 BUILD_DIR_MODERN := build/pmd_$(BUILD_NAME_MODERN)
 ifeq ($(MODERN),0)
   BUILD_NAME = $(BUILD_NAME_NORMAL)
+else ifeq ($(DX_DEBUG),1)
+  BUILD_NAME = $(BUILD_NAME_DEBUG)
 else
   BUILD_NAME = $(BUILD_NAME_MODERN)
 endif
@@ -241,7 +249,7 @@ clean-tools:
 tidy:
 	$(RM) -f $(ROM) $(ELF) $(MAP) $(SYM)
 	$(RM) -r $(BUILD_DIR_NORMAL)
-	$(RM) -r $(BUILD_DIR_MODERN)
+	$(RM) -r $(BUILD_DIR_MODERN) build/pmd_$(BUILD_NAME_DEBUG)
 	$(RM) -f $(ITEM_DATA)
 	$(RM) -f $(MOVE_DATA)
 	$(RM) -f $(MONSTER_DATA)

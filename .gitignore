@@ -46,3 +46,7 @@ __pycache__/
 .cache
 build-cmake-*
 compile_commands.json
+
+# dx test kit
+build_dxtest.log
+pmd_red_debug.*

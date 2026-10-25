@@ -12,12 +12,50 @@
 #include "text_1.h"
 
 static EWRAM_INIT MainMenu2Work *sUnknown_203B34C = {NULL};
+#ifdef DX_DEBUG
+// Start the cursor on the first entry rather than on Debug Mode
+static EWRAM_INIT u32 sUnknown_203B350 = {MENU_CONTINUE};
+#else
 static EWRAM_INIT u32 sUnknown_203B350 = {MENU_DEBUG};
+#endif
 static EWRAM_INIT u32 sUnknown_203B354 = {MENU_SEND_ITEMS};
 
 #include "data/main_menu2.h"
 
 static void SetMainMenuItems(void);
+
+#ifdef DX_DEBUG
+#define DX_MAX_MAIN_MENU_ITEMS 8
+
+ALIGNED(4) static const u8 sDxDebugModeText[] = _("Debug Mode");
+static EWRAM_DATA MenuItem sDxMenuItems[DX_MAX_MAIN_MENU_ITEMS + 2] = {0};
+static EWRAM_DATA WindowTemplate sDxMenuWindow = {0};
+
+// Copies a retail main menu list, inserts "Debug Mode" before the terminator,
+// and grows the window by one line (menu lines are 12px, windows are in 8px tiles).
+static void DxSetMainMenuItemsWithDebug(MenuStruct *a0, WindowTemplates *a1, s32 index, const WindowTemplate *a3, const MenuItem *menuItems, bool8 a5, u32 menuAction, bool8 unused)
+{
+    s32 n = 0;
+
+    while (menuItems[n].text != NULL && n < DX_MAX_MAIN_MENU_ITEMS) {
+        sDxMenuItems[n] = menuItems[n];
+        n++;
+    }
+    sDxMenuItems[n].text = sDxDebugModeText;
+    sDxMenuItems[n].menuAction = MENU_DEBUG;
+    sDxMenuItems[n + 1] = menuItems[n];
+    n++;
+
+    sDxMenuWindow = *a3;
+    sDxMenuWindow.height = (n * 12 + 7) / 8;
+    sDxMenuWindow.totalHeight = sDxMenuWindow.height;
+    SetMenuItems(a0, a1, index, &sDxMenuWindow, sDxMenuItems, a5, menuAction, unused);
+}
+
+#define SetMenuItems(a0, a1, index, a3, items, a5, action, unused) \
+    (((index) == 0) ? DxSetMainMenuItemsWithDebug(a0, a1, index, a3, items, a5, action, unused) \
+                    : SetMenuItems(a0, a1, index, a3, items, a5, action, unused))
+#endif // DX_DEBUG
 static bool8 SetMainMenuText(void);
 
 static void sub_803623C(void);
