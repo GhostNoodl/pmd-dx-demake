@@ -167,6 +167,14 @@ u32 UpdateDxWarpMenu(void)
 EWRAM_DATA bool8 gDxWarpViaMap = FALSE;
 EWRAM_DATA u32 gDxTestSeed = 0;
 
+// a warp queued from code (the Scenarios tool), taken like the Warp tool's
+void DxRequestWarp(s16 scriptDungeon, s32 floor)
+{
+    sDxWarpPending = TRUE;
+    sDxWarpScriptDungeon = scriptDungeon;
+    sDxWarpFloor = floor;
+}
+
 bool8 DxTakePendingWarp(s16 *scriptDungeon, s32 *floor)
 {
     if (!sDxWarpPending)

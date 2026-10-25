@@ -10,8 +10,11 @@ enum DxToolId
     DX_TOOL_RECRUIT,
     DX_TOOL_SET_LEVEL,
     DX_TOOL_STORY,
+    DX_TOOL_SCENARIO,
     DX_TOOL_COUNT,
 };
+
+extern u8 gDxScenario; // the Scenarios tool's last pick (0 = none)
 
 void CreateDxToolMenu(u32 tool);
 u32 UpdateDxToolMenu(void);

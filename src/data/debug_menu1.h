@@ -14,8 +14,8 @@ static const WindowTemplate sUnknown_80E7D58 = {
     0,
     3,
     2, 2,
-    9, 13,
-    13, 0,
+    9, 15,
+    15, 0,
     NULL
 };
 
@@ -27,6 +27,7 @@ static const MenuItem sDebugMenuItems[] = {
     {_("Story"), MENU_DEBUG_MENU_DEBUG_MENU},
     {_("Storage"), MENU_DEBUG_MENU_STORAGE},
     {_("Evolve"), MENU_DEBUG_MENU_UNKNOWN_1},
+    {_("Scenarios"), 7},
     {_("h-open"), MENU_DEBUG_MENU_H_OPEN},
     {NULL, 10},
 };

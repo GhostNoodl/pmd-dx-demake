@@ -138,6 +138,9 @@ void SetUpMenu(void)
         case MENU_DEBUG_UNKNOWN_1:
             CreateDxEvolveMenu();
             break;
+        case MENU_DEBUG_SCENARIOS:
+            CreateDxToolMenu(DX_TOOL_SCENARIO);
+            break;
 #endif
     }
 
@@ -232,6 +235,9 @@ s32 UpdateMenu(void)
         case MENU_DEBUG_UNKNOWN_1:
             nextMenu = UpdateDxEvolveMenu();
             break;
+        case MENU_DEBUG_SCENARIOS:
+            nextMenu = UpdateDxToolMenu();
+            break;
 #endif
     }
 
@@ -308,6 +314,7 @@ void CleanUpMenu(void)
         case MENU_DEBUG_FIELD_MAP:
         case MENU_DEBUG_FIELD_SCRIPT:
         case MENU_DEBUG_DEBUG_MENU:
+        case MENU_DEBUG_SCENARIOS:
             DeleteDxToolMenu();
             break;
         case MENU_DEBUG_UNKNOWN_1:
