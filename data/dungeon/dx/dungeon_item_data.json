@@ -8765,39 +8765,43 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 476
+                        "itemProbability": 468
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 2381
+                        "itemProbability": 2333
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 794
+                        "itemProbability": 778
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 793
+                        "itemProbability": 777
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 794
+                        "itemProbability": 778
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 794
+                        "itemProbability": 778
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 793
+                        "itemProbability": 777
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 794
+                        "itemProbability": 778
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 2381
+                        "itemProbability": 2333
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -9101,39 +9105,43 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 476
+                        "itemProbability": 468
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 2381
+                        "itemProbability": 2333
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 794
+                        "itemProbability": 778
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 793
+                        "itemProbability": 777
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 794
+                        "itemProbability": 778
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 794
+                        "itemProbability": 778
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 793
+                        "itemProbability": 777
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 794
+                        "itemProbability": 778
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 2381
+                        "itemProbability": 2333
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -10989,39 +10997,43 @@
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 1172
+                        "itemProbability": 1148
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 1172
+                        "itemProbability": 1148
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 1172
+                        "itemProbability": 1148
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 1172
+                        "itemProbability": 1148
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 391
+                        "itemProbability": 383
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 1171
+                        "itemProbability": 1147
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 1172
+                        "itemProbability": 1148
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 1172
+                        "itemProbability": 1148
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 1172
+                        "itemProbability": 1148
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -11231,59 +11243,63 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 214
+                        "itemProbability": 216
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 1072
+                        "itemProbability": 1050
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 1071
+                        "itemProbability": 1049
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 1072
+                        "itemProbability": 1050
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 1071
+                        "itemProbability": 1049
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 357
+                        "itemProbability": 349
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 1072
+                        "itemProbability": 1050
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 1071
+                        "itemProbability": 1049
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 1071
+                        "itemProbability": 1049
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 1072
+                        "itemProbability": 1050
                     },
                     {
                         "item": "ITEM_PROTEIN",
-                        "itemProbability": 286
+                        "itemProbability": 280
                     },
                     {
                         "item": "ITEM_CALCIUM",
-                        "itemProbability": 285
+                        "itemProbability": 279
                     },
                     {
                         "item": "ITEM_IRON",
-                        "itemProbability": 143
+                        "itemProbability": 140
                     },
                     {
                         "item": "ITEM_ZINC",
-                        "itemProbability": 143
+                        "itemProbability": 140
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -11319,59 +11335,63 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 174
+                        "itemProbability": 178
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 873
+                        "itemProbability": 855
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 872
+                        "itemProbability": 854
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 872
+                        "itemProbability": 854
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 872
+                        "itemProbability": 854
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 290
+                        "itemProbability": 284
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 873
+                        "itemProbability": 855
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 872
+                        "itemProbability": 854
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 872
+                        "itemProbability": 854
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 872
+                        "itemProbability": 854
                     },
                     {
                         "item": "ITEM_PROTEIN",
-                        "itemProbability": 872
+                        "itemProbability": 854
                     },
                     {
                         "item": "ITEM_CALCIUM",
-                        "itemProbability": 872
+                        "itemProbability": 854
                     },
                     {
                         "item": "ITEM_IRON",
-                        "itemProbability": 407
+                        "itemProbability": 398
                     },
                     {
                         "item": "ITEM_ZINC",
-                        "itemProbability": 407
+                        "itemProbability": 398
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -12881,75 +12901,79 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 169
+                        "itemProbability": 172
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 1685
+                        "itemProbability": 1651
                     },
                     {
                         "item": "ITEM_SITRUS_BERRY",
-                        "itemProbability": 843
+                        "itemProbability": 826
                     },
                     {
                         "item": "ITEM_EYEDROP_SEED",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 280
+                        "itemProbability": 274
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 843
+                        "itemProbability": 826
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 561
+                        "itemProbability": 549
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 562
+                        "itemProbability": 550
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 843
+                        "itemProbability": 826
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 1124
+                        "itemProbability": 1101
                     },
                     {
                         "item": "ITEM_CHESTO_BERRY",
-                        "itemProbability": 280
+                        "itemProbability": 274
                     },
                     {
                         "item": "ITEM_STUN_SEED",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 843
+                        "itemProbability": 826
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -13767,75 +13791,79 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 169
+                        "itemProbability": 172
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 1685
+                        "itemProbability": 1651
                     },
                     {
                         "item": "ITEM_SITRUS_BERRY",
-                        "itemProbability": 843
+                        "itemProbability": 826
                     },
                     {
                         "item": "ITEM_EYEDROP_SEED",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 280
+                        "itemProbability": 274
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 843
+                        "itemProbability": 826
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 561
+                        "itemProbability": 549
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 562
+                        "itemProbability": 550
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 843
+                        "itemProbability": 826
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 1124
+                        "itemProbability": 1101
                     },
                     {
                         "item": "ITEM_CHESTO_BERRY",
-                        "itemProbability": 280
+                        "itemProbability": 274
                     },
                     {
                         "item": "ITEM_STUN_SEED",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 843
+                        "itemProbability": 826
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -14427,75 +14455,79 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 169
+                        "itemProbability": 172
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 1685
+                        "itemProbability": 1651
                     },
                     {
                         "item": "ITEM_SITRUS_BERRY",
-                        "itemProbability": 843
+                        "itemProbability": 826
                     },
                     {
                         "item": "ITEM_EYEDROP_SEED",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 280
+                        "itemProbability": 274
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 843
+                        "itemProbability": 826
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 561
+                        "itemProbability": 549
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 562
+                        "itemProbability": 550
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 843
+                        "itemProbability": 826
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 1124
+                        "itemProbability": 1101
                     },
                     {
                         "item": "ITEM_CHESTO_BERRY",
-                        "itemProbability": 280
+                        "itemProbability": 274
                     },
                     {
                         "item": "ITEM_STUN_SEED",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 843
+                        "itemProbability": 826
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -14957,75 +14989,79 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 169
+                        "itemProbability": 172
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 1685
+                        "itemProbability": 1651
                     },
                     {
                         "item": "ITEM_SITRUS_BERRY",
-                        "itemProbability": 843
+                        "itemProbability": 826
                     },
                     {
                         "item": "ITEM_EYEDROP_SEED",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 280
+                        "itemProbability": 274
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 843
+                        "itemProbability": 826
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 561
+                        "itemProbability": 549
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 562
+                        "itemProbability": 550
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 843
+                        "itemProbability": 826
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 1124
+                        "itemProbability": 1101
                     },
                     {
                         "item": "ITEM_CHESTO_BERRY",
-                        "itemProbability": 280
+                        "itemProbability": 274
                     },
                     {
                         "item": "ITEM_STUN_SEED",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 843
+                        "itemProbability": 826
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -15721,75 +15757,79 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 169
+                        "itemProbability": 172
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 1685
+                        "itemProbability": 1651
                     },
                     {
                         "item": "ITEM_SITRUS_BERRY",
-                        "itemProbability": 843
+                        "itemProbability": 826
                     },
                     {
                         "item": "ITEM_EYEDROP_SEED",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 280
+                        "itemProbability": 274
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 843
+                        "itemProbability": 826
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 561
+                        "itemProbability": 549
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 562
+                        "itemProbability": 550
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 843
+                        "itemProbability": 826
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 1124
+                        "itemProbability": 1101
                     },
                     {
                         "item": "ITEM_CHESTO_BERRY",
-                        "itemProbability": 280
+                        "itemProbability": 274
                     },
                     {
                         "item": "ITEM_STUN_SEED",
-                        "itemProbability": 281
+                        "itemProbability": 275
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 843
+                        "itemProbability": 826
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -16449,43 +16489,47 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 313
+                        "itemProbability": 311
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 1562
+                        "itemProbability": 1530
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 313
+                        "itemProbability": 306
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 1562
+                        "itemProbability": 1530
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 1042
+                        "itemProbability": 1021
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 1041
+                        "itemProbability": 1020
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 1042
+                        "itemProbability": 1021
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 521
+                        "itemProbability": 510
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 1562
+                        "itemProbability": 1530
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 1042
+                        "itemProbability": 1021
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -16789,43 +16833,47 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 313
+                        "itemProbability": 311
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 1562
+                        "itemProbability": 1530
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 313
+                        "itemProbability": 306
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 1562
+                        "itemProbability": 1530
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 1042
+                        "itemProbability": 1021
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 1041
+                        "itemProbability": 1020
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 1042
+                        "itemProbability": 1021
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 521
+                        "itemProbability": 510
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 1562
+                        "itemProbability": 1530
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 1042
+                        "itemProbability": 1021
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -17129,43 +17177,47 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 313
+                        "itemProbability": 311
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 1562
+                        "itemProbability": 1530
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 313
+                        "itemProbability": 306
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 1562
+                        "itemProbability": 1530
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 1042
+                        "itemProbability": 1021
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 1041
+                        "itemProbability": 1020
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 1042
+                        "itemProbability": 1021
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 521
+                        "itemProbability": 510
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 1562
+                        "itemProbability": 1530
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 1042
+                        "itemProbability": 1021
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -19301,19 +19353,23 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 1071
+                        "itemProbability": 1051
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 5358
+                        "itemProbability": 5250
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 1785
+                        "itemProbability": 1749
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 1786
+                        "itemProbability": 1750
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -19931,75 +19987,79 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 121
+                        "itemProbability": 134
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_EYEDROP_SEED",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 604
+                        "itemProbability": 591
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 201
+                        "itemProbability": 196
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 604
+                        "itemProbability": 591
                     },
                     {
                         "item": "ITEM_CHESTO_BERRY",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_STUN_SEED",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 605
+                        "itemProbability": 592
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -20317,75 +20377,79 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 121
+                        "itemProbability": 134
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_EYEDROP_SEED",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 604
+                        "itemProbability": 591
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 201
+                        "itemProbability": 196
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 604
+                        "itemProbability": 591
                     },
                     {
                         "item": "ITEM_CHESTO_BERRY",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_STUN_SEED",
-                        "itemProbability": 605
+                        "itemProbability": 592
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 605
+                        "itemProbability": 592
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -20713,91 +20777,95 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 112
+                        "itemProbability": 124
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_EYEDROP_SEED",
-                        "itemProbability": 559
+                        "itemProbability": 547
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 559
+                        "itemProbability": 547
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 559
+                        "itemProbability": 547
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 187
+                        "itemProbability": 183
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 559
+                        "itemProbability": 547
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_CHESTO_BERRY",
-                        "itemProbability": 559
+                        "itemProbability": 547
                     },
                     {
                         "item": "ITEM_STUN_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_PROTEIN",
-                        "itemProbability": 186
+                        "itemProbability": 182
                     },
                     {
                         "item": "ITEM_CALCIUM",
-                        "itemProbability": 187
+                        "itemProbability": 183
                     },
                     {
                         "item": "ITEM_IRON",
-                        "itemProbability": 186
+                        "itemProbability": 182
                     },
                     {
                         "item": "ITEM_ZINC",
-                        "itemProbability": 187
+                        "itemProbability": 183
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -21253,91 +21321,95 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 112
+                        "itemProbability": 124
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_EYEDROP_SEED",
-                        "itemProbability": 559
+                        "itemProbability": 547
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 559
+                        "itemProbability": 547
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 559
+                        "itemProbability": 547
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 187
+                        "itemProbability": 183
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 559
+                        "itemProbability": 547
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_CHESTO_BERRY",
-                        "itemProbability": 559
+                        "itemProbability": 547
                     },
                     {
                         "item": "ITEM_STUN_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_PROTEIN",
-                        "itemProbability": 186
+                        "itemProbability": 182
                     },
                     {
                         "item": "ITEM_CALCIUM",
-                        "itemProbability": 187
+                        "itemProbability": 183
                     },
                     {
                         "item": "ITEM_IRON",
-                        "itemProbability": 186
+                        "itemProbability": 182
                     },
                     {
                         "item": "ITEM_ZINC",
-                        "itemProbability": 187
+                        "itemProbability": 183
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -21655,31 +21727,35 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 411
+                        "itemProbability": 407
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 2055
+                        "itemProbability": 2013
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 2055
+                        "itemProbability": 2013
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 2054
+                        "itemProbability": 2012
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 685
+                        "itemProbability": 671
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 1370
+                        "itemProbability": 1342
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 1370
+                        "itemProbability": 1342
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -22607,91 +22683,95 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 112
+                        "itemProbability": 124
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_EYEDROP_SEED",
-                        "itemProbability": 559
+                        "itemProbability": 547
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 559
+                        "itemProbability": 547
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 559
+                        "itemProbability": 547
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 187
+                        "itemProbability": 183
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 559
+                        "itemProbability": 547
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_CHESTO_BERRY",
-                        "itemProbability": 559
+                        "itemProbability": 547
                     },
                     {
                         "item": "ITEM_STUN_SEED",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 560
+                        "itemProbability": 548
                     },
                     {
                         "item": "ITEM_PROTEIN",
-                        "itemProbability": 186
+                        "itemProbability": 182
                     },
                     {
                         "item": "ITEM_CALCIUM",
-                        "itemProbability": 187
+                        "itemProbability": 183
                     },
                     {
                         "item": "ITEM_IRON",
-                        "itemProbability": 186
+                        "itemProbability": 182
                     },
                     {
                         "item": "ITEM_ZINC",
-                        "itemProbability": 187
+                        "itemProbability": 183
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -23025,39 +23105,43 @@
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 1172
+                        "itemProbability": 1148
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 1172
+                        "itemProbability": 1148
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 1172
+                        "itemProbability": 1148
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 1172
+                        "itemProbability": 1148
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 391
+                        "itemProbability": 383
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 1171
+                        "itemProbability": 1147
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 1172
+                        "itemProbability": 1148
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 1172
+                        "itemProbability": 1148
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 1172
+                        "itemProbability": 1148
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -23735,39 +23819,43 @@
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 1172
+                        "itemProbability": 1148
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 1172
+                        "itemProbability": 1148
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 1172
+                        "itemProbability": 1148
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 1172
+                        "itemProbability": 1148
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 391
+                        "itemProbability": 383
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 1171
+                        "itemProbability": 1147
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 1172
+                        "itemProbability": 1148
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 1172
+                        "itemProbability": 1148
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 1172
+                        "itemProbability": 1148
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -24093,27 +24181,31 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 789
+                        "itemProbability": 776
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 1316
+                        "itemProbability": 1289
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 1316
+                        "itemProbability": 1289
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 1316
+                        "itemProbability": 1289
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 2631
+                        "itemProbability": 2578
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 2632
+                        "itemProbability": 2579
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -24427,27 +24519,31 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 789
+                        "itemProbability": 776
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 1316
+                        "itemProbability": 1289
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 1316
+                        "itemProbability": 1289
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 1316
+                        "itemProbability": 1289
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 2631
+                        "itemProbability": 2578
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 2632
+                        "itemProbability": 2579
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -24935,31 +25031,35 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 484
+                        "itemProbability": 479
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 3871
+                        "itemProbability": 3793
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 806
+                        "itemProbability": 789
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 1613
+                        "itemProbability": 1580
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 807
+                        "itemProbability": 790
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 1613
+                        "itemProbability": 1580
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 806
+                        "itemProbability": 789
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -25133,31 +25233,35 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 484
+                        "itemProbability": 479
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 3871
+                        "itemProbability": 3793
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 806
+                        "itemProbability": 789
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 1613
+                        "itemProbability": 1580
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 807
+                        "itemProbability": 790
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 1613
+                        "itemProbability": 1580
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 806
+                        "itemProbability": 789
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -25335,27 +25439,31 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 789
+                        "itemProbability": 776
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 1316
+                        "itemProbability": 1289
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 1316
+                        "itemProbability": 1289
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 1316
+                        "itemProbability": 1289
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 2631
+                        "itemProbability": 2578
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 2632
+                        "itemProbability": 2579
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -25547,27 +25655,31 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 789
+                        "itemProbability": 776
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 1316
+                        "itemProbability": 1289
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 1316
+                        "itemProbability": 1289
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 1316
+                        "itemProbability": 1289
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 2631
+                        "itemProbability": 2578
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 2632
+                        "itemProbability": 2579
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -28233,51 +28345,55 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 244
+                        "itemProbability": 247
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 1219
+                        "itemProbability": 1194
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 813
+                        "itemProbability": 796
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 813
+                        "itemProbability": 796
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 813
+                        "itemProbability": 796
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 813
+                        "itemProbability": 796
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 1220
+                        "itemProbability": 1195
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 406
+                        "itemProbability": 397
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 813
+                        "itemProbability": 796
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 1220
+                        "itemProbability": 1195
                     },
                     {
                         "item": "ITEM_CHESTO_BERRY",
-                        "itemProbability": 813
+                        "itemProbability": 796
                     },
                     {
                         "item": "ITEM_STUN_SEED",
-                        "itemProbability": 813
+                        "itemProbability": 796
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -28539,51 +28655,55 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 244
+                        "itemProbability": 247
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 1219
+                        "itemProbability": 1194
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 813
+                        "itemProbability": 796
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 813
+                        "itemProbability": 796
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 813
+                        "itemProbability": 796
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 813
+                        "itemProbability": 796
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 1220
+                        "itemProbability": 1195
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 406
+                        "itemProbability": 397
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 813
+                        "itemProbability": 796
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 1220
+                        "itemProbability": 1195
                     },
                     {
                         "item": "ITEM_CHESTO_BERRY",
-                        "itemProbability": 813
+                        "itemProbability": 796
                     },
                     {
                         "item": "ITEM_STUN_SEED",
-                        "itemProbability": 813
+                        "itemProbability": 796
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -28845,51 +28965,55 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 244
+                        "itemProbability": 247
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 1219
+                        "itemProbability": 1194
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 813
+                        "itemProbability": 796
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 813
+                        "itemProbability": 796
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 813
+                        "itemProbability": 796
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 813
+                        "itemProbability": 796
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 1220
+                        "itemProbability": 1195
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 406
+                        "itemProbability": 397
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 813
+                        "itemProbability": 796
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 1220
+                        "itemProbability": 1195
                     },
                     {
                         "item": "ITEM_CHESTO_BERRY",
-                        "itemProbability": 813
+                        "itemProbability": 796
                     },
                     {
                         "item": "ITEM_STUN_SEED",
-                        "itemProbability": 813
+                        "itemProbability": 796
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -29161,31 +29285,35 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 361
+                        "itemProbability": 359
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 3615
+                        "itemProbability": 3542
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 1205
+                        "itemProbability": 1180
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 602
+                        "itemProbability": 589
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 1807
+                        "itemProbability": 1770
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 603
+                        "itemProbability": 590
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 1807
+                        "itemProbability": 1770
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -29221,31 +29349,35 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 361
+                        "itemProbability": 359
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 3615
+                        "itemProbability": 3542
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 1205
+                        "itemProbability": 1180
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 602
+                        "itemProbability": 589
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 1807
+                        "itemProbability": 1770
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 603
+                        "itemProbability": 590
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 1807
+                        "itemProbability": 1770
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -29281,31 +29413,35 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 361
+                        "itemProbability": 359
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 3615
+                        "itemProbability": 3542
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 1205
+                        "itemProbability": 1180
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 602
+                        "itemProbability": 589
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 1807
+                        "itemProbability": 1770
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 603
+                        "itemProbability": 590
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 1807
+                        "itemProbability": 1770
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -29345,31 +29481,35 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 341
+                        "itemProbability": 339
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 3409
+                        "itemProbability": 3340
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 1705
+                        "itemProbability": 1670
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 568
+                        "itemProbability": 556
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 568
+                        "itemProbability": 556
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 1704
+                        "itemProbability": 1669
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 1705
+                        "itemProbability": 1670
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -29949,31 +30089,35 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 341
+                        "itemProbability": 339
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 3409
+                        "itemProbability": 3340
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 1705
+                        "itemProbability": 1670
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 568
+                        "itemProbability": 556
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 568
+                        "itemProbability": 556
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 1704
+                        "itemProbability": 1669
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 1705
+                        "itemProbability": 1670
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -30097,87 +30241,91 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 155
+                        "itemProbability": 165
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 778
+                        "itemProbability": 762
                     },
                     {
                         "item": "ITEM_SITRUS_BERRY",
-                        "itemProbability": 777
+                        "itemProbability": 761
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 777
+                        "itemProbability": 761
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 260
+                        "itemProbability": 254
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 777
+                        "itemProbability": 761
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_JOY_SEED",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 777
+                        "itemProbability": 761
                     },
                     {
                         "item": "ITEM_PROTEIN",
-                        "itemProbability": 519
+                        "itemProbability": 508
                     },
                     {
                         "item": "ITEM_CALCIUM",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_IRON",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_ZINC",
-                        "itemProbability": 518
+                        "itemProbability": 507
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -31165,87 +31313,91 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 155
+                        "itemProbability": 165
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 778
+                        "itemProbability": 762
                     },
                     {
                         "item": "ITEM_SITRUS_BERRY",
-                        "itemProbability": 777
+                        "itemProbability": 761
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 777
+                        "itemProbability": 761
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 260
+                        "itemProbability": 254
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 777
+                        "itemProbability": 761
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_JOY_SEED",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 777
+                        "itemProbability": 761
                     },
                     {
                         "item": "ITEM_PROTEIN",
-                        "itemProbability": 519
+                        "itemProbability": 508
                     },
                     {
                         "item": "ITEM_CALCIUM",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_IRON",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_ZINC",
-                        "itemProbability": 518
+                        "itemProbability": 507
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -31725,87 +31877,91 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 155
+                        "itemProbability": 165
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 778
+                        "itemProbability": 762
                     },
                     {
                         "item": "ITEM_SITRUS_BERRY",
-                        "itemProbability": 777
+                        "itemProbability": 761
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 777
+                        "itemProbability": 761
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 260
+                        "itemProbability": 254
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 777
+                        "itemProbability": 761
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_JOY_SEED",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 777
+                        "itemProbability": 761
                     },
                     {
                         "item": "ITEM_PROTEIN",
-                        "itemProbability": 519
+                        "itemProbability": 508
                     },
                     {
                         "item": "ITEM_CALCIUM",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_IRON",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_ZINC",
-                        "itemProbability": 518
+                        "itemProbability": 507
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -32285,87 +32441,91 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 155
+                        "itemProbability": 165
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 778
+                        "itemProbability": 762
                     },
                     {
                         "item": "ITEM_SITRUS_BERRY",
-                        "itemProbability": 777
+                        "itemProbability": 761
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 777
+                        "itemProbability": 761
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 260
+                        "itemProbability": 254
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 777
+                        "itemProbability": 761
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_JOY_SEED",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 777
+                        "itemProbability": 761
                     },
                     {
                         "item": "ITEM_PROTEIN",
-                        "itemProbability": 519
+                        "itemProbability": 508
                     },
                     {
                         "item": "ITEM_CALCIUM",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_IRON",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_ZINC",
-                        "itemProbability": 518
+                        "itemProbability": 507
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -32849,83 +33009,87 @@
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 739
+                        "itemProbability": 724
                     },
                     {
                         "item": "ITEM_SITRUS_BERRY",
-                        "itemProbability": 739
+                        "itemProbability": 724
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 246
+                        "itemProbability": 241
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 246
+                        "itemProbability": 241
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 247
+                        "itemProbability": 242
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 246
+                        "itemProbability": 241
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 246
+                        "itemProbability": 241
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 739
+                        "itemProbability": 724
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 246
+                        "itemProbability": 241
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 247
+                        "itemProbability": 242
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 492
+                        "itemProbability": 482
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 493
+                        "itemProbability": 483
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 739
+                        "itemProbability": 724
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 492
+                        "itemProbability": 482
                     },
                     {
                         "item": "ITEM_JOY_SEED",
-                        "itemProbability": 986
+                        "itemProbability": 966
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 739
+                        "itemProbability": 724
                     },
                     {
                         "item": "ITEM_PROTEIN",
-                        "itemProbability": 492
+                        "itemProbability": 482
                     },
                     {
                         "item": "ITEM_CALCIUM",
-                        "itemProbability": 493
+                        "itemProbability": 483
                     },
                     {
                         "item": "ITEM_IRON",
-                        "itemProbability": 492
+                        "itemProbability": 482
                     },
                     {
                         "item": "ITEM_ZINC",
-                        "itemProbability": 493
+                        "itemProbability": 483
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -33395,87 +33559,91 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 144
+                        "itemProbability": 149
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 721
+                        "itemProbability": 706
                     },
                     {
                         "item": "ITEM_SITRUS_BERRY",
-                        "itemProbability": 722
+                        "itemProbability": 707
                     },
                     {
                         "item": "ITEM_REVIVER_SEED",
-                        "itemProbability": 240
+                        "itemProbability": 235
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 240
+                        "itemProbability": 235
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 241
+                        "itemProbability": 236
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 240
+                        "itemProbability": 235
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 240
+                        "itemProbability": 235
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 722
+                        "itemProbability": 707
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 240
+                        "itemProbability": 235
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 240
+                        "itemProbability": 235
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 481
+                        "itemProbability": 471
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 481
+                        "itemProbability": 471
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 721
+                        "itemProbability": 706
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 481
+                        "itemProbability": 471
                     },
                     {
                         "item": "ITEM_JOY_SEED",
-                        "itemProbability": 1202
+                        "itemProbability": 1177
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 721
+                        "itemProbability": 706
                     },
                     {
                         "item": "ITEM_PROTEIN",
-                        "itemProbability": 481
+                        "itemProbability": 471
                     },
                     {
                         "item": "ITEM_CALCIUM",
-                        "itemProbability": 480
+                        "itemProbability": 470
                     },
                     {
                         "item": "ITEM_IRON",
-                        "itemProbability": 481
+                        "itemProbability": 471
                     },
                     {
                         "item": "ITEM_ZINC",
-                        "itemProbability": 481
+                        "itemProbability": 471
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -33927,27 +34095,31 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 789
+                        "itemProbability": 776
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 1316
+                        "itemProbability": 1289
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 1316
+                        "itemProbability": 1289
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 1316
+                        "itemProbability": 1289
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 2631
+                        "itemProbability": 2578
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 2632
+                        "itemProbability": 2579
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -34261,27 +34433,31 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 789
+                        "itemProbability": 776
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 1316
+                        "itemProbability": 1289
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 1316
+                        "itemProbability": 1289
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 1316
+                        "itemProbability": 1289
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 2631
+                        "itemProbability": 2578
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 2632
+                        "itemProbability": 2579
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -34595,31 +34771,35 @@
                 "items": [
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 833
+                        "itemProbability": 819
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 834
+                        "itemProbability": 817
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 833
+                        "itemProbability": 816
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 833
+                        "itemProbability": 816
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 1667
+                        "itemProbability": 1633
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 1667
+                        "itemProbability": 1633
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 3333
+                        "itemProbability": 3266
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -34645,31 +34825,35 @@
                 "items": [
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 833
+                        "itemProbability": 819
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 834
+                        "itemProbability": 817
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 833
+                        "itemProbability": 816
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 833
+                        "itemProbability": 816
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 1667
+                        "itemProbability": 1633
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 1667
+                        "itemProbability": 1633
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 3333
+                        "itemProbability": 3266
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -34727,91 +34911,95 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 155
+                        "itemProbability": 167
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 1296
+                        "itemProbability": 1270
                     },
                     {
                         "item": "ITEM_SITRUS_BERRY",
-                        "itemProbability": 777
+                        "itemProbability": 761
                     },
                     {
                         "item": "ITEM_EYEDROP_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_DOOM_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_LIFE_SEED",
-                        "itemProbability": 518
+                        "itemProbability": 507
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 260
+                        "itemProbability": 254
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 777
+                        "itemProbability": 761
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 414
+                        "itemProbability": 405
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 519
+                        "itemProbability": 508
                     },
                     {
                         "item": "ITEM_GINSENG",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_JOY_SEED",
-                        "itemProbability": 362
+                        "itemProbability": 354
                     },
                     {
                         "item": "ITEM_CHESTO_BERRY",
-                        "itemProbability": 519
+                        "itemProbability": 508
                     },
                     {
                         "item": "ITEM_STUN_SEED",
-                        "itemProbability": 259
+                        "itemProbability": 253
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 1554
+                        "itemProbability": 1522
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -36115,91 +36303,95 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 138
+                        "itemProbability": 145
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 1383
+                        "itemProbability": 1355
                     },
                     {
                         "item": "ITEM_SITRUS_BERRY",
-                        "itemProbability": 691
+                        "itemProbability": 677
                     },
                     {
                         "item": "ITEM_EYEDROP_SEED",
-                        "itemProbability": 230
+                        "itemProbability": 225
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 231
+                        "itemProbability": 226
                     },
                     {
                         "item": "ITEM_DOOM_SEED",
-                        "itemProbability": 230
+                        "itemProbability": 225
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 231
+                        "itemProbability": 226
                     },
                     {
                         "item": "ITEM_LIFE_SEED",
-                        "itemProbability": 460
+                        "itemProbability": 450
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 231
+                        "itemProbability": 226
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 230
+                        "itemProbability": 225
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 692
+                        "itemProbability": 678
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 230
+                        "itemProbability": 225
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 230
+                        "itemProbability": 225
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 461
+                        "itemProbability": 451
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 461
+                        "itemProbability": 451
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 691
+                        "itemProbability": 677
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 553
+                        "itemProbability": 541
                     },
                     {
                         "item": "ITEM_GINSENG",
-                        "itemProbability": 231
+                        "itemProbability": 226
                     },
                     {
                         "item": "ITEM_JOY_SEED",
-                        "itemProbability": 322
+                        "itemProbability": 315
                     },
                     {
                         "item": "ITEM_CHESTO_BERRY",
-                        "itemProbability": 461
+                        "itemProbability": 451
                     },
                     {
                         "item": "ITEM_STUN_SEED",
-                        "itemProbability": 231
+                        "itemProbability": 226
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 1382
+                        "itemProbability": 1354
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -37045,91 +37237,95 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 138
+                        "itemProbability": 145
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 1383
+                        "itemProbability": 1355
                     },
                     {
                         "item": "ITEM_SITRUS_BERRY",
-                        "itemProbability": 691
+                        "itemProbability": 677
                     },
                     {
                         "item": "ITEM_EYEDROP_SEED",
-                        "itemProbability": 230
+                        "itemProbability": 225
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 231
+                        "itemProbability": 226
                     },
                     {
                         "item": "ITEM_DOOM_SEED",
-                        "itemProbability": 230
+                        "itemProbability": 225
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 231
+                        "itemProbability": 226
                     },
                     {
                         "item": "ITEM_LIFE_SEED",
-                        "itemProbability": 460
+                        "itemProbability": 450
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 231
+                        "itemProbability": 226
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 230
+                        "itemProbability": 225
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 692
+                        "itemProbability": 678
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 230
+                        "itemProbability": 225
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 230
+                        "itemProbability": 225
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 461
+                        "itemProbability": 451
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 461
+                        "itemProbability": 451
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 691
+                        "itemProbability": 677
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 553
+                        "itemProbability": 541
                     },
                     {
                         "item": "ITEM_GINSENG",
-                        "itemProbability": 231
+                        "itemProbability": 226
                     },
                     {
                         "item": "ITEM_JOY_SEED",
-                        "itemProbability": 322
+                        "itemProbability": 315
                     },
                     {
                         "item": "ITEM_CHESTO_BERRY",
-                        "itemProbability": 461
+                        "itemProbability": 451
                     },
                     {
                         "item": "ITEM_STUN_SEED",
-                        "itemProbability": 231
+                        "itemProbability": 226
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 1382
+                        "itemProbability": 1354
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },
@@ -37681,91 +37877,95 @@
                 "items": [
                     {
                         "item": "ITEM_HEAL_SEED",
-                        "itemProbability": 142
+                        "itemProbability": 149
                     },
                     {
                         "item": "ITEM_ORAN_BERRY",
-                        "itemProbability": 1415
+                        "itemProbability": 1386
                     },
                     {
                         "item": "ITEM_SITRUS_BERRY",
-                        "itemProbability": 707
+                        "itemProbability": 692
                     },
                     {
                         "item": "ITEM_EYEDROP_SEED",
-                        "itemProbability": 236
+                        "itemProbability": 231
                     },
                     {
                         "item": "ITEM_BLINKER_SEED",
-                        "itemProbability": 236
+                        "itemProbability": 231
                     },
                     {
                         "item": "ITEM_DOOM_SEED",
-                        "itemProbability": 236
+                        "itemProbability": 231
                     },
                     {
                         "item": "ITEM_ALLURE_SEED",
-                        "itemProbability": 236
+                        "itemProbability": 231
                     },
                     {
                         "item": "ITEM_LIFE_SEED",
-                        "itemProbability": 471
+                        "itemProbability": 461
                     },
                     {
                         "item": "ITEM_RAWST_BERRY",
-                        "itemProbability": 236
+                        "itemProbability": 231
                     },
                     {
                         "item": "ITEM_HUNGER_SEED",
-                        "itemProbability": 236
+                        "itemProbability": 231
                     },
                     {
                         "item": "ITEM_QUICK_SEED",
-                        "itemProbability": 707
+                        "itemProbability": 692
                     },
                     {
                         "item": "ITEM_PECHA_BERRY",
-                        "itemProbability": 236
+                        "itemProbability": 231
                     },
                     {
                         "item": "ITEM_CHERI_BERRY",
-                        "itemProbability": 236
+                        "itemProbability": 231
                     },
                     {
                         "item": "ITEM_TOTTER_SEED",
-                        "itemProbability": 472
+                        "itemProbability": 462
                     },
                     {
                         "item": "ITEM_SLEEP_SEED",
-                        "itemProbability": 472
+                        "itemProbability": 462
                     },
                     {
                         "item": "ITEM_WARP_SEED",
-                        "itemProbability": 707
+                        "itemProbability": 692
                     },
                     {
                         "item": "ITEM_BLAST_SEED",
-                        "itemProbability": 566
+                        "itemProbability": 554
                     },
                     {
                         "item": "ITEM_GINSENG",
-                        "itemProbability": 236
+                        "itemProbability": 231
                     },
                     {
                         "item": "ITEM_JOY_SEED",
-                        "itemProbability": 330
+                        "itemProbability": 323
                     },
                     {
                         "item": "ITEM_CHESTO_BERRY",
-                        "itemProbability": 472
+                        "itemProbability": 462
                     },
                     {
                         "item": "ITEM_STUN_SEED",
-                        "itemProbability": 236
+                        "itemProbability": 231
                     },
                     {
                         "item": "ITEM_MAX_ELIXIR",
-                        "itemProbability": 1179
+                        "itemProbability": 1155
+                    },
+                    {
+                        "item": "ITEM_G_MACHINE_7",
+                        "itemProbability": 200
                     }
                 ]
             },

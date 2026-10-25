@@ -17,6 +17,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 CRYSTAL = "ITEM_G_MACHINE_6"
 EMPOWERMENT_SEED = "ITEM_G_MACHINE_7"  # also unused in Red
+# Empowerment Seeds turn up in the post-game dungeons: ESTIMATED 2% of their seed category
+EMPOWER_SHARE = 200  # of 10000
+POSTGAME_DUNGEONS = ("Wish Cave", "Buried Relic", "Pitfall Valley", "Desert Region", "Southern Cavern", "Wyvern Hill",
+                     "Fiery Field", "Northwind Field", "Solar Cave", "Lightning Field", "Darknight Relic", "Murky Cave",
+                     "Joyous Tower", "Far-off Sea", "Mt. Faraway", "Purity Forest", "Western Cave", "Silver Trench",
+                     "Meteor Cave", "Howling Forest", "Waterfall Pond", "Unown Relic", "Grand Sea", "Oddity Cave",
+                     "Marvelous Sea")
 # items Red uses only to evolve (DX evolves with Evo Crystals instead)
 EVOLUTION_ITEMS = {
     "ITEM_UPGRADE", "ITEM_KINGS_ROCK", "ITEM_THUNDERSTONE", "ITEM_DEEPSEASCALE", "ITEM_DEEPSEATOOTH",
@@ -82,10 +89,25 @@ def main():
                     keep.append({"item": CRYSTAL, "itemProbability": gained})
                 keep.sort(key=lambda it: ids.get(it["item"], 0))
                 cat["items"] = keep
+    seeded = 0
+    for table in loot:
+        if not table.get("description", "").startswith(POSTGAME_DUNGEONS):
+            continue
+        for cat in table["categories"]:
+            if cat["category"] != "CATEGORY_BERRIES_SEEDS_VITAMINS" or not cat["items"]:
+                continue
+            total = sum(it["itemProbability"] for it in cat["items"])
+            scaled = [dict(it, itemProbability=it["itemProbability"] * (10000 - EMPOWER_SHARE) // 10000) for it in cat["items"]]
+            scaled[0]["itemProbability"] += (total - EMPOWER_SHARE) - sum(it["itemProbability"] for it in scaled)
+            scaled.append({"item": EMPOWERMENT_SEED, "itemProbability": EMPOWER_SHARE})
+            scaled.sort(key=lambda it: ids.get(it["item"], 0))
+            cat["items"] = scaled
+            seeded += 1
     dout = ROOT / "data/dungeon/dx"
     dout.mkdir(parents=True, exist_ok=True)
     (dout / "dungeon_item_data.json").write_text(json.dumps(loot, indent=4) + "\n")
     print(f"Evo Crystal = {CRYSTAL} (#{ids[CRYSTAL]}); {moved} loot categories now drop it instead of evolution items")
+    print(f"Empowerment Seed = {EMPOWERMENT_SEED} (#{ids[EMPOWERMENT_SEED]}); in {seeded} post-game seed categories")
 
 
 if __name__ == "__main__":
