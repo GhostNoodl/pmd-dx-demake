@@ -1,0 +1,63 @@
+#rom debug
+#save after-first-dungeon
+# DX Rescue Camps for sale: Wigglytuff's shop (SELECT in a debug tool opens it, as in town) sells the former
+# Wonder Mail areas from the start, priced 5000. Buy Mt. Moonview (Friend Area 10).
+mash START sMainMenu 4 != 0 3000
+wait 60
+press UP
+press A
+wait 30
+press DOWN
+press A
+wait 30
+expect *sMainMenu+4 4 == 48
+write *gTeamInventoryRef+0x260 4 20000
+expect *gFriendAreas+10 1 == 0
+press SELECT
+wait 120
+shot 1_shop
+# Buy, through the two lines, to the list
+press A
+wait 60
+press A
+wait 60
+press A
+wait 60
+shot 2_list
+press DOWN
+wait 10
+press DOWN
+wait 10
+press DOWN
+wait 10
+press DOWN
+wait 10
+press DOWN
+wait 10
+shot 3_moonview
+press A
+wait 60
+shot b0
+press A
+wait 60
+shot b1
+press A
+wait 60
+shot b2
+press A
+wait 60
+shot b3
+press A
+wait 60
+shot b4
+press A
+wait 60
+shot b5
+press A
+wait 60
+shot b6
+press A
+wait 60
+shot b7
+expect *gTeamInventoryRef+0x260 4 == 15000
+expect *gFriendAreas+10 1 == 1

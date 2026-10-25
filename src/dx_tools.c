@@ -8,6 +8,7 @@
 #include "constants/item.h"
 #include "constants/main_menu.h"
 #include "dx_tools.h"
+#include "wigglytuff_shop3.h"
 #include "event_flag.h"
 #include "friend_area.h"
 #include "input.h"
@@ -33,6 +34,7 @@ typedef struct DxToolWork
     s32 count;                      // entries in list[] (tools that pick from a list)
     s16 list[NUM_MONSTERS];
     u8 status[48];                  // result of the last apply, shown under the title
+    bool8 shopOpen;                 // SELECT: Wigglytuff's Friend Area shop, as in town
     unkStructFor8013AA0 input;
     WindowTemplates windows;
 } DxToolWork;
@@ -371,6 +373,20 @@ u32 UpdateDxToolMenu(void)
     // Every tool edits the loaded save, so there has to be one
     if (sub_8011C34() == -1)
         return MENU_MAIN_SCREEN;
+
+    // SELECT opens Wigglytuff's shop (the town's, run the same way its textbox runs it)
+    if (sDxTool->shopOpen) {
+        if (sub_8021C5C() >= 2) {
+            CleanWigglytuffShop();
+            sDxTool->shopOpen = FALSE;
+            DxToolSetStep(sDxTool->step);
+        }
+        return MENU_NO_SCREEN_CHANGE;
+    }
+    if ((gRealInputs.pressed & SELECT_BUTTON) && CreateWigglytuffShop(0)) {
+        sDxTool->shopOpen = TRUE;
+        return MENU_NO_SCREEN_CHANGE;
+    }
 
     switch (sub_8013BBC(&sDxTool->input)) {
         case 1:
