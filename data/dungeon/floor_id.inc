@@ -3,17 +3,33 @@
 #include "MtSteel/floor_id.inc"
 #include "SinisterWoods/floor_id.inc"
 #include "SilentChasm/floor_id.inc"
+#ifdef DX_FLOORS
+#include "MtThunder/dx/floor_id.inc"
+#else
 #include "MtThunder/floor_id.inc"
+#endif
 #include "MtThunderPeak/floor_id.inc"
 #include "GreatCanyon/floor_id.inc"
 #include "LapisCave/floor_id.inc"
+#ifdef DX_FLOORS
+#include "MtBlaze/dx/floor_id.inc"
+#else
 #include "MtBlaze/floor_id.inc"
+#endif
 #include "MtBlazePeak/floor_id.inc"
+#ifdef DX_FLOORS
+#include "FrostyForest/dx/floor_id.inc"
+#else
 #include "FrostyForest/floor_id.inc"
+#endif
 #include "FrostyGrotto/floor_id.inc"
 #include "MtFreeze/floor_id.inc"
 #include "MtFreezePeak/floor_id.inc"
+#ifdef DX_FLOORS
+#include "MagmaCavern/dx/floor_id.inc"
+#else
 #include "MagmaCavern/floor_id.inc"
+#endif
 #include "MagmaCavernPit/floor_id.inc"
 #include "SkyTower/floor_id.inc"
 #include "SkyTowerSummit/floor_id.inc"
@@ -21,7 +37,11 @@
 #include "SilverTrench/floor_id.inc"
 #include "MeteorCave/floor_id.inc"
 #include "MtFreezePeakAlt/floor_id.inc"
+#ifdef DX_FLOORS
+#include "WesternCave/dx/floor_id.inc"
+#else
 #include "WesternCave/floor_id.inc"
+#endif
 #include "Boss3/floor_id.inc" 
 #include "Boss4/floor_id.inc" 
 #include "WishCave/floor_id.inc" 
@@ -40,11 +60,31 @@
 #include "WondrousSea/floor_id.inc"
 #include "MurkyCave/floor_id.inc"
 #include "GrandSea/floor_id.inc"
+#ifdef DX_FLOORS
+#include "UproarForest/dx/floor_id.inc"
+#else
 #include "UproarForest/floor_id.inc"
+#endif
+#ifdef DX_FLOORS
+#include "OddityCave/dx/floor_id.inc"
+#else
 #include "OddityCave/floor_id.inc"
+#endif
+#ifdef DX_FLOORS
+#include "RemainsIsland/dx/floor_id.inc"
+#else
 #include "RemainsIsland/floor_id.inc"
+#endif
+#ifdef DX_FLOORS
+#include "MarvelousSea/dx/floor_id.inc"
+#else
 #include "MarvelousSea/floor_id.inc"
+#endif
+#ifdef DX_FLOORS
+#include "FantasyStrait/dx/floor_id.inc"
+#else
 #include "FantasyStrait/floor_id.inc"
+#endif
 #include "RockPath/floor_id.inc"
 #include "SnowPath/floor_id.inc"
 #include "Autopilot/floor_id.inc"
@@ -58,7 +98,11 @@
 #include "UnownRelic/floor_id.inc"
 #include "JoyousTower/floor_id.inc"
 #include "FaroffSea/floor_id.inc"
+#ifdef DX_FLOORS
+#include "MtFaraway/dx/floor_id.inc"
+#else
 #include "MtFaraway/floor_id.inc"
+#endif
 #include "D61/floor_id.inc"
 #include "PurityForest/floor_id.inc"
 #include "D63/floor_id.inc"

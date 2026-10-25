@@ -14,6 +14,10 @@
 #include "strings.h"
 #include "dungeon_data.h"
 
+#ifdef DX_FLOORS
+#include "data/dx_floors.h"
+#endif
+
 static void AppendWithNewLines(u8 *dst, const u8 *src);
 static bool8 TeamMonWithMove(u16 moveID);
 
@@ -82,6 +86,9 @@ static const u8 sDungeonFloorCount[] = {
     [DUNGEON_D61]                       = 100,
     [DUNGEON_PURITY_FOREST]             = 100,
     [DUNGEON_OUT_ON_RESCUE]             = 2,
+#ifdef DX_FLOORS
+    DX_FLOOR_COUNT_OVERRIDES
+#endif
 };
 
 // All dungeons always start at the first floor.
@@ -152,6 +159,7 @@ static const u8 sDungeonStartingFloor[] = {
     [DUNGEON_OUT_ON_RESCUE]             = 0,
 };
 
+#ifndef DX_FLOORS
 static const DungeonLocation gUnknown_8107828[] =
 {
     { .id = DUNGEON_MT_STEEL, .floor = 9 },
@@ -233,6 +241,7 @@ static const DungeonLocation gUnknown_8107828[] =
     { .id = DUNGEON_PURITY_FOREST, .floor = 99 },
     { .id = DUNGEON_OUT_ON_RESCUE, .floor = 255 }
 };
+#endif
 
 // These correspond to mission difficulty with 1 being the easiest(F) and 15 being the highest (*)
 static const u8 sFloorMissionDifficulty_TinyWoods[] = {
@@ -631,6 +640,9 @@ static const u8 *const sDungeonMissionDifficulty[] = {
     [DUNGEON_D61] = sFloorMissionDifficulty_D61,
     [DUNGEON_PURITY_FOREST] = sFloorMissionDifficulty_PurityForest,
     [DUNGEON_OUT_ON_RESCUE] = sFloorMissionDifficulty_OutOnRescue,
+#ifdef DX_FLOORS
+    DX_MISSION_DIFFICULTY_OVERRIDES
+#endif
 };
 
 // These item sets are used for KecleonShop Inventory and maybe item rewards from dungeon missions?
