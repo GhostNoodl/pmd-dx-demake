@@ -1,6 +1,7 @@
 #include "global.h"
-#include "structs/str_dungeon.h"
+#include "structs/str_pokemon.h"
 #include <stddef.h>
-const int dungeonLocation = offsetof(Dungeon, unk644.dungeonLocation);
-const int floorCount = offsetof(Dungeon, unk1CEC8);
-const int dungeonSize = sizeof(Dungeon);
+const int monSize = sizeof(Pokemon);
+const int monFlags = offsetof(Pokemon, flags);
+const int monSpecies = offsetof(Pokemon, speciesNum);
+const int monLevel = offsetof(Pokemon, level);

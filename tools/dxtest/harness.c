@@ -11,6 +11,7 @@
 //   expect EXPR SIZE OP VALUE    read and compare (OP: == != < <= > >=), logs PASS/FAIL
 //   waitfor EXPR SIZE OP VALUE MAXFRAMES   run frames until the comparison holds (FAIL on timeout)
 //   mash KEY EXPR SIZE OP VALUE [MAXFRAMES]   tap KEY every 16 frames until the comparison holds
+//   write EXPR SIZE VALUE        poke RAM (test setup only)
 //   log TEXT                     echo TEXT into the results
 // EXPR: number (0x.. ok) | symbol | symbol+off | *EXPR (dereference a 32-bit pointer) e.g. *gDungeon+0x644
 // KEY: A B SELECT START RIGHT LEFT UP DOWN R L (join with + to press together)
@@ -256,6 +257,15 @@ int main(int argc, char **argv)
             }
             if (!ok) failures++;
             out("%s line %d: waitfor %s %s %ld -> %ld after %d frames\n", ok ? "PASS" : "FAIL", lineno, a, c, want, v, i);
+        }
+        else if (!strcmp(cmd, "write") && n >= 4) {
+            // write EXPR SIZE VALUE: poke RAM (test setup only)
+            unsigned addr = eval(a), v = strtoul(c, NULL, 0);
+            int size = atoi(b);
+            if (size == 1) core->busWrite8(core, addr, v);
+            else if (size == 2) core->busWrite16(core, addr, v);
+            else core->busWrite32(core, addr, v);
+            out("WRITE @%08x = %u (0x%x)\n", addr, v, v);
         }
         else if (!strcmp(cmd, "mash") && n >= 6) {
             // mash KEY EXPR SIZE OP VALUE [MAXFRAMES=3000]: tap KEY every 16 frames until the comparison holds

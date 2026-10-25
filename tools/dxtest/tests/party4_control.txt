@@ -1,0 +1,34 @@
+#rom debug
+#save after-first-dungeon
+# C5 control (normal 4-member build): Storage recruits, mark slots 0-3 as on-team, warp to Tiny Woods 1F
+mash START sMainMenu 4 != 0 3000
+wait 60
+press UP
+press A
+wait 30
+press DOWN
+press A
+wait 600
+write *gRecruitedPokemonRef+0 2 3
+write *gRecruitedPokemonRef+88 2 3
+# the main menu remembers the cursor on Debug Mode
+press A
+wait 30
+press A
+wait 30
+press A
+wait 30
+press A
+wait 900
+shot 1_in_dungeon
+expect *gDungeon+0x644 1 == 0
+expect *gDungeon+0x645 1 == 1
+hold RIGHT 60
+wait 60
+shot 2_walk
+hold DOWN 60
+wait 120
+shot 3_walk
+hold LEFT 90
+wait 120
+shot 4_walk
