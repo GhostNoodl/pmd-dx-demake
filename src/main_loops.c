@@ -107,7 +107,7 @@ static void LoadTitleScreen(void);
 static void MainLoops_RunFrameActions(u32 unused);
 static void NDS_LoadOverlay_GroundMain();
 static void RemoveAllMoneyAndItems(void);
-static void RemoveMoneyAndRandomItems(void);
+UNUSED static void RemoveMoneyAndRandomItems(void);
 static u32 RunGameMode_Async(u32 param_1);
 static u32 xxx_script_related_8001334_Async(u32 startMode);
 static u8 sub_8001170(void);
@@ -669,7 +669,12 @@ static u32 RunGameMode_Async(u32 a0)
                 RemoveAllMoneyAndItems();
             }
             else if (mode == STARTMODE_DUNGEON_LOST) {
+#ifdef DX_RULES
+                // Rescue Team DX: fainting loses the whole toolbox, held items and all Poke
+                RemoveAllMoneyAndItems();
+#else
                 RemoveMoneyAndRandomItems();
+#endif
             }
             sMainLoopsUnk = MAINLOOPS_UNK_2;
             SetFileSystemUnk(FILESYSTEM_UNK_4);
@@ -1062,7 +1067,7 @@ static void sub_80011E8(DungeonSetupSubstruct *info)
 }
 
 // arm9.bin::0200CC4C
-static void RemoveMoneyAndRandomItems(void)
+UNUSED static void RemoveMoneyAndRandomItems(void)
 {
     s32 i;
 

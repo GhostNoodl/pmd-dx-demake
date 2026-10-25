@@ -1,0 +1,60 @@
+#rom debug
+#save after-first-dungeon
+# DX faint penalty: defeated in Tiny Woods -> whole toolbox and all Poke lost (Red keeps about half the items)
+mash START sMainMenu 4 != 0 3000
+wait 60
+# 1234 Poke and 8 toolbox items (Oran Berries, flags=exists)
+write *gTeamInventoryRef+0x260 4 1234
+write *gTeamInventoryRef+0 4 0x00370001
+write *gTeamInventoryRef+4 4 0x00370001
+write *gTeamInventoryRef+8 4 0x00370001
+write *gTeamInventoryRef+12 4 0x00370001
+write *gTeamInventoryRef+16 4 0x00370001
+write *gTeamInventoryRef+20 4 0x00370001
+write *gTeamInventoryRef+24 4 0x00370001
+write *gTeamInventoryRef+28 4 0x00370001
+press UP
+press A
+wait 30
+# Debug Mode -> Warp -> Tiny Woods -> 1F
+press A
+wait 30
+press A
+wait 30
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+shot 1_in_dungeon
+expect sMainLoopsUnk 4 == 1
+read money_in *gTeamInventoryRef+0x260 4
+expect *gTeamInventoryRef+0 1 == 1
+# drop the team to 1 HP before each attempt, so the first hit on the leader ends the run
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+hold RIGHT 120
+mash? A gDungeon 4 == 0 600
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+hold DOWN 120
+mash? A gDungeon 4 == 0 600
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+hold LEFT 120
+mash? A gDungeon 4 == 0 600
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+hold UP 120
+mash? A gDungeon 4 == 0 600
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+mash A gDungeon 4 == 0 3000
+shot 2_defeated
+mash A sMainLoopsUnk 4 == 2 6000
+wait 300
+shot 3_back_in_town
+read money *gTeamInventoryRef+0x260 4
+read slot0 *gTeamInventoryRef+0 1
+read slot7 *gTeamInventoryRef+28 1
+expect *gTeamInventoryRef+0x260 4 == 0
+expect *gTeamInventoryRef+0 1 == 0
+expect *gTeamInventoryRef+28 1 == 0
