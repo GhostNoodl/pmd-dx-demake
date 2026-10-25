@@ -37,6 +37,10 @@ void DxRollStrongFoe(void);
 void DxMakeStrongFoe(Entity *entity);
 void DxStrongFoeReward(Entity *foe);
 bool8 DxDungeonHasStrongFoe(u8 dungeon);
+// post-game boss rematches
+extern bool8 gDxForcePostgame;
+bool8 DxPostgame(void);
+bool8 DxBossRematch(s16 species);
 void DxBriefingSummary(u8 dungeonIndex, u8 *buffer);
 struct DxShiny { s16 species; u8 palette; };
 s32 DxShinyPalette(s32 species);

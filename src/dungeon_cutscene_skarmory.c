@@ -28,6 +28,9 @@
 #include "trap.h"
 #include "math.h"
 #include "dungeon_config.h"
+#include "dungeon_leveling.h"
+#include "dx_tuning.h"
+#include "dx_rules.h"
 #include "dungeon_boss_dialogue.h"
 
 
@@ -64,6 +67,21 @@ void sub_8086B94(void)
   diglettEntity = GetEntityFromMonsterBehavior(BEHAVIOR_DIGLETT);
   skarmoryEntity = GetEntityFromMonsterBehavior(BEHAVIOR_SKARMORY);
 
+#ifdef DX_RULES
+  if (DxBossRematch(MONSTER_SKARMORY)) {
+    // DX: Skarmory is back for a rematch (and can be recruited)
+    HandleFaint_Async(diglettEntity,DUNGEON_EXIT_DELETED_FOR_EVENT,0);
+    sub_80854D4();
+    sub_8085930(DIRECTION_NORTH);
+    sub_80855E4(sub_8086A3C);
+    LevelUpTarget(skarmoryEntity,skarmoryEntity,DX_BOSS_REMATCH_LEVEL,0,0);
+    SetFacingDirection(skarmoryEntity,DIRECTION_SOUTH);
+    sub_8086A3C(skarmoryEntity);
+    sub_8085860(leaderEntity->pos.x,leaderEntity->pos.y - 2);
+    CopyMonsterNameToBuffer(gFormatBuffer_Monsters[3], MONSTER_SKARMORY);
+    return;
+  }
+#endif
   HandleFaint_Async(skarmoryEntity,DUNGEON_EXIT_DELETED_FOR_EVENT,0);
   HandleFaint_Async(diglettEntity,DUNGEON_EXIT_DELETED_FOR_EVENT,0);
   sub_80854D4();
@@ -73,6 +91,12 @@ void sub_8086B94(void)
 
 void HandleSkarmoryBossFaint(u8 monsterBehavior, u8 cutscene)
 {
+#ifdef DX_RULES
+    if (cutscene == CUTSCENE_MT_STEEL_POSTSTORY && monsterBehavior == BEHAVIOR_SKARMORY) {
+        gDungeon->unk2 = DUNGEON_UNK2_1; // rematch won
+        return;
+    }
+#endif
     if ((cutscene == CUTSCENE_MT_STEEL_ATTEMPT1 || cutscene == CUTSCENE_MT_STEEL_ATTEMPT2) && monsterBehavior == BEHAVIOR_SKARMORY) {
         SetTempCutsceneFlag(CUTSCENE_FLAG_MT_STEEL_COMPLETE);
         gDungeon->unk2 = DUNGEON_UNK2_1;
@@ -166,6 +190,12 @@ void SkarmoryReFightDialogue(void)
 
 void sub_8086E40(void)
 {
+#ifdef DX_RULES
+    if (GetEntityFromMonsterBehavior(BEHAVIOR_SKARMORY) != NULL) {
+        SkarmoryReFightDialogue(); // the rematch
+        return;
+    }
+#endif
     CutsceneLookAroundEffect_Async(CutsceneGetLeader());
     DungeonWaitFrames_Async(10, 70);
     DisplayDungeonDialogue_Async(&gUnknown_8100D3C);

@@ -1,6 +1,9 @@
 #include "global.h"
 #include "globaldata.h"
 #include "dungeon_cutscene.h"
+#ifdef DX_RULES
+#include "dx_rules.h"
+#endif
 #include "constants/dungeon.h"
 #include "constants/direction.h"
 #include "constants/dungeon.h"
@@ -152,6 +155,10 @@ static void sub_8084854(const FixedRoomCutsceneData *data)
             SetTempCutsceneFlag(data->cutscene2Flag);
     }
 
+#ifdef DX_RULES
+    if (gDxForcePostgame)
+        gDungeon->cutscene = data->cutscene3;
+#endif
     gDungeon->unk644.unk31 = 1;
     sub_807E5E4(WEATHER_CLEAR);
 }
@@ -534,6 +541,9 @@ void HandleBossFaint_Async(Entity *entity, u8 monsterBehavior, bool8 transformed
             break;
         case CUTSCENE_MT_STEEL_ATTEMPT1:
         case CUTSCENE_MT_STEEL_ATTEMPT2:
+#ifdef DX_RULES
+        case CUTSCENE_MT_STEEL_POSTSTORY: // the post-game rematch
+#endif
             HandleSkarmoryBossFaint(monsterBehavior, gDungeon->cutscene);
             break;
         case CUTSCENE_SINISTER_WOODS_ATTEMPT1:

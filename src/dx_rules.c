@@ -3,6 +3,8 @@
 #ifdef DX_RULES
 
 #include "dx_rules.h"
+#include "dungeon_cutscene.h"
+#include "event_flag.h"
 #include "dx_tuning.h"
 #include "constants/dungeon.h"
 #include "constants/dungeon_action.h"
@@ -203,6 +205,20 @@ bool8 DxDungeonCleared(u8 dungeon)
 }
 
 // for the briefing: a cleared dungeon with a Strong Foe
+// tests: act as if the credits have rolled (and boss rooms are in their post-story state)
+EWRAM_DATA bool8 gDxForcePostgame = FALSE;
+
+bool8 DxPostgame(void)
+{
+    return gDxForcePostgame || CheckQuest(QUEST_REACHED_POSTGAME);
+}
+
+// DX: after the credits, a story boss waits in its room again for a rematch, until it has joined
+bool8 DxBossRematch(s16 species)
+{
+    return DxPostgame() && !HasRecruitedMon(species);
+}
+
 bool8 DxDungeonHasStrongFoe(u8 dungeon)
 {
     s32 i;
