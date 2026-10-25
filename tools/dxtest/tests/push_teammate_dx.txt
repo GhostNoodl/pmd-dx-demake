@@ -1,0 +1,33 @@
+#rom debug
+#save after-first-dungeon
+# DX push: the leader swaps places with a teammate even while it is asleep (Red refuses)
+mash START sMainMenu 4 != 0 3000
+write gDxTestSeed 4 99991
+wait 60
+press UP
+press A
+wait 30
+press A
+wait 30
+press A
+wait 30
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+shot 1_in_dungeon
+read lx0 **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos 2
+read px0 **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos 2
+read py0 **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos!2 2
+# with this seed the partner starts just left of the leader; put it to sleep for 50 turns
+expect **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos 2 == 18
+expect **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos 2 == 19
+write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoSleep 1 1
+write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoSleep!1 1 50
+wait 30
+shot 2_partner_asleep
+press LEFT
+wait 90
+shot 3_pushed_past
+expect **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos 2 == 18
+expect **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos 2 == 19
+expect ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoSleep 1 == 1
