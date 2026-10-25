@@ -1,6 +1,8 @@
 #include "global.h"
 #ifdef DX_RULES
 #include "dx_rules.h"
+#include "dx_rare_quality.h"
+#include "constants/move_id.h"
 #endif
 #include "globaldata.h"
 #include "dungeon_wind.h"
@@ -33,6 +35,15 @@ void UpdateWindTurns(void)
         return;
 #ifdef DX_RULES
     gDxAdventureTurns++;
+#endif
+#ifdef DX_DEBUG
+    if (gDxTestProbe) {
+        gDxTestProbe = FALSE;
+        gDxTestOut[0] = DxTightFormationPercent(leader, MOVE_EARTHQUAKE); // room-wide
+        gDxTestOut[1] = DxTightFormationPercent(leader, MOVE_TACKLE);     // one tile
+        gDxTestOut[2] = DxBossRecruitRate(-999, BEHAVIOR_GENGAR);
+        gDxTestOut[3] = DxBossRecruitRate(-999, BEHAVIOR_FIXED_ENEMY);
+    }
 #endif
 
     if (gDungeon->unk644.windTurns <= 0 || --gDungeon->unk644.windTurns < 1) {

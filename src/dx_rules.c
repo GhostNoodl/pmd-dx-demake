@@ -259,6 +259,14 @@ u8 DxPostgameBossKind(u8 monsterBehavior)
     return DX_BOSS_NONE;
 }
 
+// a post-game story boss Red never lets join (Gengar: -999) can join at a fallback rate
+s32 DxBossRecruitRate(s32 recruitRate, u8 monsterBehavior)
+{
+    if (DxPostgameBossKind(monsterBehavior) == DX_BOSS_STORY && recruitRate <= 0)
+        return DX_BOSS_FALLBACK_RECRUIT_RATE;
+    return recruitRate;
+}
+
 bool8 DxDungeonHasStrongFoe(u8 dungeon)
 {
     s32 i;
@@ -448,6 +456,11 @@ void DxPayVisitors(u8 friendArea)
 #define DX_MAX_LEVEL 100
 // Exp. the leader earned this adventure (AddExpPoints)
 EWRAM_DATA s32 gDxAdventureExp = 0;
+#ifdef DX_DEBUG
+// tests: set gDxTestProbe and the next turn stores a few rule results (dungeon_wind.c)
+EWRAM_DATA bool8 gDxTestProbe = FALSE;
+EWRAM_DATA s16 gDxTestOut[8] = {0};
+#endif
 
 static u8 DxStat(s32 v)
 {

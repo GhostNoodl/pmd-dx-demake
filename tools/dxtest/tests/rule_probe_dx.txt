@@ -1,0 +1,33 @@
+#rom debug
+#save after-first-dungeon
+# DX rule checks through a debug probe (gDxTestProbe: the next turn stores what a few rules work out):
+# Tight Formation (Tiny Woods 1F, seed 99991: the partner starts next to the leader) and the
+# post-game fallback recruit rate for a story boss Red never lets join (Gengar)
+mash START sMainMenu 4 != 0 3000
+write gDxTestSeed 4 99991
+write gDxForcePostgame 1 1
+wait 60
+press UP
+press A
+wait 30
+press A
+wait 30
+press A
+wait 30
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+expect **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos 2 == 19
+expect **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos 2 == 18
+# leader (recruit slot 42) holds Tight Formation (32)
+write *gRecruitedPokemonRef+3733 1 32
+write gDxTestProbe 1 1
+hold A+B 60
+wait 30
+expect gDxTestProbe 1 == 0
+# Earthquake (hits the whole room): 10% less with one teammate adjacent; Tackle (one tile): unchanged
+expect gDxTestOut 2 == 90
+expect gDxTestOut+2 2 == 100
+# Gengar (-999 in Red) gets the 10% fallback after the credits; an ordinary foe keeps -999
+expect gDxTestOut+4 2 == 100
+expect gDxTestOut+6 2 == -999

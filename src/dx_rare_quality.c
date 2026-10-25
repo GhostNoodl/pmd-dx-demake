@@ -5,6 +5,7 @@
 #include "globaldata.h"
 #include "constants/rare_quality.h"
 #include "dx_rare_quality.h"
+#include "dungeon_vram.h"
 #include "dungeon_move_util.h"
 #include "dungeon_misc.h"
 #include "dungeon_pos_data.h"
@@ -554,5 +555,16 @@ void DxLeapAhead(Entity *leader)
     for (i = 0; i <= MAX_MOVE_TARGETS; i++)
         targets[i] = NULL;
     targets[0] = foe;
+    // the leap: over the leader to the front, the strike, and back (a tile is 24 pixels)
+    for (i = 0; i < 12; i++) {
+        IncreaseEntityPixelPos(mate, gAdjacentTileOffsets[dir].x * 0x200, gAdjacentTileOffsets[dir].y * 0x200);
+        DungeonRunFrameActions(0x46);
+    }
     UseMoveAgainstTargets(targets, mate, &move, 0, FALSE);
+    if (EntityIsValid(mate)) {
+        for (i = 0; i < 12; i++) {
+            IncreaseEntityPixelPos(mate, -gAdjacentTileOffsets[dir].x * 0x200, -gAdjacentTileOffsets[dir].y * 0x200);
+            DungeonRunFrameActions(0x46);
+        }
+    }
 }
