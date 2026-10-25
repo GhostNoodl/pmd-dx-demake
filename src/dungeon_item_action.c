@@ -2,6 +2,7 @@
 #ifdef DX_RULES
 #include "dx_rules.h"
 #include "dx_rare_quality.h"
+#include "dx_tuning.h"
 #endif
 #include "globaldata.h"
 #include "dungeon_item_action.h"
@@ -391,6 +392,10 @@ static void sub_80482FC(Entity *pokemon, Entity *target, u32 pp, u8 param_4)
 
 static void sub_8048340(Entity *pokemon, Entity *target, u32 r2)
 {
+#ifdef DX_RULES
+    if (DxTeamMemberHas(pokemon, RQ_THROWN_ITEM_BOOST))
+        r2 = r2 * DX_RQ_THROWN_PERCENT / 100;
+#endif
     sub_806F370_Async(pokemon, target, r2, 1, 0, 0, DUNGEON_EXIT_FELLED_BY_THROWN_ROCK, RESIDUAL_DAMAGE_REGULAR, 0, 0);
 }
 

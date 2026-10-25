@@ -20,6 +20,9 @@ s32 DxQualityDamagePercent(Entity *attacker, u16 moveId);
 s32 DxBlastDamage(Entity *target, s32 dmg, s32 dungeonExitReason);
 void DxQualityOnTeamHit(Entity *attacker, Entity *target);
 void DxQualityOnDefeat(Entity *attacker);
+bool8 DxTeamMemberHas(Entity *entity, u32 quality);
+void DxSqueezeOut(Entity *entity);
+s32 DxShopPrice(s32 price, bool8 selling);
 
 #endif // DX_RULES
 

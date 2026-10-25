@@ -1,4 +1,10 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rare_quality.h"
+#include "dx_tuning.h"
+#include "move_orb_effects_2.h"
+#include "move_orb_effects_5.h"
+#endif
 #include "globaldata.h"
 #include "trap.h"
 #include "dungeon_tilemap.h"
@@ -289,6 +295,11 @@ void TryTriggerTrap(Entity *pokemon, DungeonPos *pos, s32 param_3, u8 param_4)
         if (HasHeldItem(target, ITEM_TRAP_SCARF)) {
             text = gUnknown_80FDB5C;
         }
+#ifdef DX_RULES
+        else if (DxTeamMemberHas(target, RQ_WARY_WALK) && DungeonRandInt(100) < DX_RQ_WARY_WALK_CHANCE) {
+            text = gUnknown_80FDB5C; // Wary Walk
+        }
+#endif
         if ((flag == TRUE) || (gDungeon->unk181e8.showInvisibleTrapsMonsters != 0)) {
             if (rand < 0) text = gUnknown_80FDB7C;
         }
@@ -700,6 +711,10 @@ void HandlePPZeroTrap(Entity *param_1,Entity *param_2)
 void HandleWonderTile(Entity *pokemon, Entity *target)
 {
     sub_8079E34(pokemon, target, FALSE);
+#ifdef DX_RULES
+    if (DxTeamMemberHas(target, RQ_MIND_OVER_MATTER))
+        sub_8079F20(pokemon, target, 1, 0); // Mind Over Matter: cured as by a Heal Seed
+#endif
 }
 
 void HandleSealTrap(Entity *param_1,Entity *param_2)

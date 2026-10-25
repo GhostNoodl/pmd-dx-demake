@@ -54,5 +54,12 @@
 #define DX_RQ_BRAWL_MAX_FOES 5             // ...counting at most this many
 #define DX_RQ_LINK_BOOST_PER_MOVE 10       // Link Boost: % more damage per linked move used
 #define DX_RQ_RECOIL_BOOST_BONUS 50        // Recoil Boost: % more damage for recoil/crash moves
+#define DX_RQ_WARY_WALK_CHANCE 50          // Wary Walk: % a trap a team member steps on does nothing
+#define DX_RQ_SQUEEZE_OUT_CHANCE 5         // Squeeze Out: % per turn a 0 PP move gets 1 PP back
+#define DX_RQ_RESTORATION_PERCENT 150      // Notorious Restoration: HP / Belly from items
+#define DX_RQ_BARGAIN_PERCENT 75           // Bargain: dungeon shop buying prices
+#define DX_RQ_SALES_PITCH_PERCENT 125      // Sales Pitch: dungeon shop selling prices
+#define DX_RQ_THROWN_PERCENT 150           // Thrown Item Boost: stone and spike damage
+#define DX_RQ_FOOD_FINDER_CHANCE 15        // Food Finder: % of floor items that become an Apple
 
 #endif // GUARD_DX_TUNING_H

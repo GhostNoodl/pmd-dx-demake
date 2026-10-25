@@ -417,6 +417,9 @@ void TickStatusAndHealthRegen(Entity *entity)
 
     sub_805229C();
     entityInfo = GetEntInfo(entity);
+#ifdef DX_RULES
+    DxSqueezeOut(entity); // Rare Quality Squeeze Out
+#endif
 
     // HP heal
     if (!entityInfo->bellyEmpty && entityInfo->burnClassStatus.status != STATUS_POISONED && entityInfo->burnClassStatus.status != STATUS_BADLY_POISONED) {
