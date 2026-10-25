@@ -1,6 +1,8 @@
 #include "global.h"
 #ifdef DX_RULES
 #include "dx_rare_quality.h"
+#include "dx_tuning.h"
+#include "dx_rules.h"
 #endif
 #include "globaldata.h"
 #include "dungeon_damage.h"
@@ -696,6 +698,12 @@ static bool8 HandleDealingDamageInternal_Async(Entity *attacker, Entity *target,
                 if (targetData->isNotTeamMember) {
                     s32 i;
 
+#ifdef DX_RULES
+                    if (targetData->dxStrongFoe) {
+                        exp *= DX_STRONG_FOE_EXP_MULTIPLIER;
+                        DxStrongFoeReward(target);
+                    }
+#endif
                     AddExpPoints(attacker, attacker, exp);
 #ifdef DX_RULES
                     DxQualityOnDefeat(attacker); // PP Pouch

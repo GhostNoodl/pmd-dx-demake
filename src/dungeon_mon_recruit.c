@@ -129,6 +129,8 @@ bool8 TryRecruitMonster(Entity *attacker, Entity *target)
     if (!IsMonsterRecruitable(targetInfo->id))
         return FALSE;
 #ifdef DX_RULES
+    if (targetInfo->dxStrongFoe) // DX: only shiny Strong Foes can be recruited
+        return FALSE;
     // DX: the defeated Pokemon has to be within 2 tiles of the leader (whoever landed the KO)
     if (GetLeader() == NULL)
         return FALSE;

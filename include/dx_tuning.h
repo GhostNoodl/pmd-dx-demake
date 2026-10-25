@@ -62,4 +62,11 @@
 #define DX_RQ_THROWN_PERCENT 150           // Thrown Item Boost: stone and spike damage
 #define DX_RQ_FOOD_FINDER_CHANCE 15        // Food Finder: % of floor items that become an Apple
 
+// Strong Foes (ESTIMATED): chance per floor of a cleared dungeon, level over the floor's top level,
+// stat stages, and Exp. multiplier
+#define DX_STRONG_FOE_CHANCE 15
+#define DX_STRONG_FOE_LEVELS 5
+#define DX_STRONG_FOE_STAGES 2
+#define DX_STRONG_FOE_EXP_MULTIPLIER 3
+
 #endif // GUARD_DX_TUNING_H

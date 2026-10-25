@@ -1,0 +1,48 @@
+#rom debug
+#save after-first-dungeon
+# DX Strong Foes: Mt. Steel's is Rapidash (#78), marked, +2 stages, and not recruitable (forced here)
+mash START sMainMenu 4 != 0 3000
+write gDxForceStrongFoe 1 1
+wait 60
+press UP
+press A
+wait 30
+press A
+wait 30
+press UP
+press UP
+wait 10
+expect *sDxWarp+0xB0 4 == 2
+shot 1_pick_dungeon
+press A
+wait 30
+wait 10
+expect *sDxWarp+0xB0 4 == 1
+shot 2_pick_floor
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+shot 3_in_dungeon
+expect *gDungeon+@gDxOffDungeonLocation 1 == 2
+expect *gDungeon+@gDxOffDungeonFloor 1 == 1
+read wild0 ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoId 2
+read strong0 ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoStrongFoe 1
+read wild1 ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoId 2
+read strong1 ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoStrongFoe 1
+read wild2 ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoId 2
+read strong2 ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoStrongFoe 1
+read wild3 ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoId 2
+read strong3 ***gDungeon+@gDxOffWildPokemon!12+@gDxOffEntityInfo+@gDxOffInfoStrongFoe 1
+read wild4 ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoId 2
+read strong4 ***gDungeon+@gDxOffWildPokemon!16+@gDxOffEntityInfo+@gDxOffInfoStrongFoe 1
+read wild5 ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoId 2
+read strong5 ***gDungeon+@gDxOffWildPokemon!20+@gDxOffEntityInfo+@gDxOffInfoStrongFoe 1
+read wild6 ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoId 2
+read strong6 ***gDungeon+@gDxOffWildPokemon!24+@gDxOffEntityInfo+@gDxOffInfoStrongFoe 1
+read wild7 ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoId 2
+read strong7 ***gDungeon+@gDxOffWildPokemon!28+@gDxOffEntityInfo+@gDxOffInfoStrongFoe 1
+# (spawn order is fixed, so the Strong Foe is wild slot 0)
+expect ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoId 2 == 78
+expect ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoStrongFoe 1 == 1
+expect ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoStages 2 == 12
+expect ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoStages!4 2 == 12

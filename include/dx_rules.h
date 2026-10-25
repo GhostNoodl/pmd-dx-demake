@@ -27,4 +27,14 @@ struct DxMegaForm
 };
 s32 DxMysteryHouseLevel(void);
 
+struct DxStrongFoe { u8 dungeon; s16 species; };
+extern u8 gDxClearedDungeons[16];
+extern s16 gDxStrongFoeSpecies;
+extern bool8 gDxForceStrongFoe;
+void DxMarkDungeonCleared(u8 dungeon);
+bool8 DxDungeonCleared(u8 dungeon);
+void DxRollStrongFoe(void);
+void DxMakeStrongFoe(Entity *entity);
+void DxStrongFoeReward(Entity *foe);
+
 #endif // GUARD_DX_RULES_H

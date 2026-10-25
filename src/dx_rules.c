@@ -15,6 +15,8 @@
 #include "dungeon_message.h"
 #include "dungeon_logic.h"
 #include "dungeon_misc.h"
+#include "dungeon_items.h"
+#include "items.h"
 #include "pokemon.h"
 #include "dungeon_random.h"
 #include "structs/str_dungeon.h"
@@ -158,6 +160,65 @@ void DxEmpower(Entity *user, Entity *target)
     form = DxFindMega(GetEntInfo(target)->id);
     if (form != NULL && GetEntInfo(target)->apparentID != form->mega)
         DxMegaEvolve(user, target, form);
+}
+
+// --- Strong Foes ---
+#include "data/dx_strong_foes.h"
+
+// dungeons cleared at least once (saved in the DX save block): DX's Strong Foes need a first clear
+EWRAM_DATA u8 gDxClearedDungeons[16] = {0};
+// this floor's Strong Foe, waiting to spawn (0 = none)
+EWRAM_DATA s16 gDxStrongFoeSpecies = 0;
+// tests: a Strong Foe on every floor, cleared or not
+EWRAM_DATA bool8 gDxForceStrongFoe = FALSE;
+
+void DxMarkDungeonCleared(u8 dungeon)
+{
+    if (dungeon < 128)
+        gDxClearedDungeons[dungeon / 8] |= 1 << (dungeon % 8);
+}
+
+bool8 DxDungeonCleared(u8 dungeon)
+{
+    return dungeon < 128 && (gDxClearedDungeons[dungeon / 8] & (1 << (dungeon % 8)));
+}
+
+// as a floor is generated: does a Strong Foe show up here?
+void DxRollStrongFoe(void)
+{
+    s32 i;
+    u8 dungeon = gDungeon->unk644.dungeonLocation.id;
+
+    gDxStrongFoeSpecies = 0;
+    if (!gDxForceStrongFoe && (!DxDungeonCleared(dungeon) || DungeonRandInt(100) >= DX_STRONG_FOE_CHANCE))
+        return;
+    for (i = 0; i < ARRAY_COUNT(sDxStrongFoes); i++) {
+        if (sDxStrongFoes[i].dungeon == dungeon) {
+            gDxStrongFoeSpecies = sDxStrongFoes[i].species;
+            return;
+        }
+    }
+}
+
+// a freshly spawned Strong Foe: tougher, marked, and worth more
+void DxMakeStrongFoe(Entity *entity)
+{
+    EntityInfo *info = GetEntInfo(entity);
+
+    info->dxStrongFoe = TRUE;
+    info->offensiveStages[0] += DX_STRONG_FOE_STAGES;
+    info->offensiveStages[1] += DX_STRONG_FOE_STAGES;
+    info->defensiveStages[0] += DX_STRONG_FOE_STAGES;
+    info->defensiveStages[1] += DX_STRONG_FOE_STAGES;
+}
+
+// DX: a defeated Strong Foe leaves a chest of rare items (here: a DX Gummi on its tile)
+void DxStrongFoeReward(Entity *foe)
+{
+    Item item;
+
+    CreateItemWithStickyChance(&item, ITEM_DX_GUMMI, FORCE_STICKY_NEVER);
+    SpawnItem(&foe->pos, &item, TRUE);
 }
 
 // --- Mystery Houses ---
