@@ -5,6 +5,13 @@
 #include "globaldata.h"
 #include "constants/rare_quality.h"
 #include "dx_rare_quality.h"
+#include "dungeon_move_util.h"
+#include "dungeon_misc.h"
+#include "dungeon_pos_data.h"
+#include "structs/map.h"
+#include "constants/direction.h"
+#include "dungeon_engine.h"
+#include "dungeon_move.h"
 #include "text_util.h"
 #include "dx_rules.h"
 #include "structs/str_moves.h"
@@ -470,4 +477,82 @@ void DxForgeAPathCost(Entity *entity)
         info->belly = IntToFixedPoint(0);
     else
         info->belly = FixedPoint_Subtract(info->belly, IntToFixedPoint(DX_RQ_FORGE_A_PATH_BELLY));
+}
+
+static const u8 sDxLeaptAhead[] = _("{POKEMON_0} leapt ahead!");
+// tests: how many times a teammate leapt ahead
+EWRAM_DATA u8 gDxLeapAheadCount = 0;
+#ifdef DX_DEBUG
+EWRAM_DATA bool8 gDxTestFoeInFront = FALSE;
+#endif
+
+// Leap Ahead: when the leader attacks a foe in front of it in a corridor, the teammate right behind
+// it leaps in and uses a 1-tile move on that foe too (its first damaging one with PP, or a regular
+// attack), then is back in its place
+void DxLeapAhead(Entity *leader)
+{
+    EntityInfo *info, *mateInfo;
+    Entity *foe, *mate;
+    Entity *targets[MAX_MOVE_TARGETS + 1];
+    Move move;
+    s32 i, dir;
+
+    if (!EntityIsValid(leader) || IsFloorOver() || !DxTeamMemberHas(leader, RQ_LEAP_AHEAD))
+        return;
+    info = GetEntInfo(leader);
+    if (!info->isTeamLeader || GetTile(leader->pos.x, leader->pos.y)->room != CORRIDOR_ROOM)
+        return;
+    dir = info->action.direction & DIRECTION_MASK;
+#ifdef DX_DEBUG
+    // tests: set the scene. Face the leader along the corridor (the teammate behind it, an open
+    // tile in front) and bring a wild Pokemon onto that tile.
+    if (gDxTestFoeInFront) {
+        s32 d;
+        gDxTestFoeInFront = FALSE;
+        for (d = 0; d < NUM_DIRECTIONS; d += 2) {
+            const Tile *front = GetTile(leader->pos.x + gAdjacentTileOffsets[d].x, leader->pos.y + gAdjacentTileOffsets[d].y);
+            Entity *back = GetTile(leader->pos.x - gAdjacentTileOffsets[d].x, leader->pos.y - gAdjacentTileOffsets[d].y)->monster;
+            if (front->monster == NULL && (front->terrainFlags & TERRAIN_TYPE_NORMAL) && EntityIsValid(back)
+                && GetEntityType(back) == ENTITY_MONSTER && !GetEntInfo(back)->isNotTeamMember) {
+                for (i = 0; i < DUNGEON_MAX_WILD_POKEMON; i++) {
+                    if (EntityIsValid(gDungeon->wildPokemon[i])) {
+                        sub_80694C0(gDungeon->wildPokemon[i], leader->pos.x + gAdjacentTileOffsets[d].x, leader->pos.y + gAdjacentTileOffsets[d].y, 0);
+                        info->action.direction = d;
+                        dir = d;
+                        break;
+                    }
+                }
+                break;
+            }
+        }
+    }
+#endif
+    foe = GetTile(leader->pos.x + gAdjacentTileOffsets[dir].x, leader->pos.y + gAdjacentTileOffsets[dir].y)->monster;
+    if (!EntityIsValid(foe) || GetEntityType(foe) != ENTITY_MONSTER || !GetEntInfo(foe)->isNotTeamMember)
+        return;
+    mate = GetTile(leader->pos.x - gAdjacentTileOffsets[dir].x, leader->pos.y - gAdjacentTileOffsets[dir].y)->monster;
+    if (!EntityIsValid(mate) || GetEntityType(mate) != ENTITY_MONSTER || GetEntInfo(mate)->isNotTeamMember)
+        return;
+    mateInfo = GetEntInfo(mate);
+    if (CheckVariousStatuses(mate) || IsChargingAnyTwoTurnMove(mate, FALSE))
+        return; // asleep, frozen, mid-Fly and the like
+
+    InitPokemonMove(&move, MOVE_REGULAR_ATTACK);
+    for (i = 0; i < MAX_MON_MOVES; i++) {
+        Move *m = &mateInfo->moves.moves[i];
+        if ((m->moveFlags & MOVE_FLAG_EXISTS) && m->PP != 0 && GetMoveBasePower(m) > 0
+            && (GetMoveTargetAndRange(m, FALSE) & 0xFF) == (TARGETING_FLAG_TARGET_OTHER)) {
+            move = *m;
+            m->PP--;
+            break;
+        }
+    }
+    gDxLeapAheadCount++;
+    SubstitutePlaceholderStringTags(gFormatBuffer_Monsters[0], mate, 0);
+    LogMessageByIdWithPopupCheckUser_Async(mate, sDxLeaptAhead);
+    mateInfo->action.direction = dir;
+    for (i = 0; i <= MAX_MOVE_TARGETS; i++)
+        targets[i] = NULL;
+    targets[0] = foe;
+    UseMoveAgainstTargets(targets, mate, &move, 0, FALSE);
 }
