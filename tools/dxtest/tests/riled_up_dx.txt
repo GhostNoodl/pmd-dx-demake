@@ -1,0 +1,40 @@
+#rom debug
+#save after-first-dungeon
+# DX Rare Quality Riled Up: a team member hit by enemies gets Attack and Sp. Atk boosts
+# (forced one-room Monster House floor: foes all around)
+mash START sMainMenu 4 != 0 3000
+write gDxForceMysteryHouse 1 2
+wait 60
+press UP
+press A
+wait 30
+press A
+wait 30
+press UP
+press UP
+wait 10
+expect *sDxWarp+0xB0 4 == 2
+shot 1_pick_dungeon
+press A
+wait 30
+wait 10
+expect *sDxWarp+0xB0 4 == 1
+shot 2_pick_floor
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+shot 3_in_dungeon
+expect *gDungeon+@gDxOffDungeonLocation 1 == 2
+expect *gDungeon+@gDxOffDungeonFloor 1 == 1
+# leader (recruit slot 42) holds Riled Up (23); lots of HP so the run goes on
+write *gRecruitedPokemonRef+3733 1 23
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMaxHP 2 400
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 400
+hold A+B 600
+shot 4_after
+read atkstage ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoStages 2
+read spatkstage ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoStages!2 2
+# (wild Pokemon may lower Attack again with Growl, so check the two together)
+calc stages atkstage + spatkstage
+calc base 0 + 20
+cmpreads stages > base

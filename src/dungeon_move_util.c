@@ -1,6 +1,7 @@
 #include "global.h"
 #ifdef DX_RULES
 #include "dx_rules.h"
+#include "dx_rare_quality.h"
 #endif
 #include "globaldata.h"
 #include "dungeon_move_util.h"
@@ -749,6 +750,10 @@ bool8 AccuracyCalc(Entity *attacker, Entity *target, Move *move, s32 accuracyTyp
 
     if (selfAlwaysHits && attacker == target)
         return TRUE;
+#ifdef DX_RULES
+    if (DxQualityAlwaysHits(attacker, move->id)) // Narrow Focus, Rapid Bull's-Eyes
+        return TRUE;
+#endif
     if (move->id == MOVE_REGULAR_ATTACK && IqSkillIsEnabled(attacker, IQ_SURE_HIT_ATTACKER))
         return TRUE;
     if (attackerInfo->sureShotClassStatus.status == STATUS_SURE_SHOT)

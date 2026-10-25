@@ -1,4 +1,7 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rare_quality.h"
+#endif
 #include "globaldata.h"
 #include "dungeon_damage.h"
 #include "constants/ability.h"
@@ -74,6 +77,9 @@ void HandleDealingDamage_Async(Entity *attacker, Entity *target, struct DamageSt
     s32 dungeonExitReason = dungeonExitReason_;
     s32 returnDmg = 0;
 
+#ifdef DX_RULES
+    dmgStruct->dmg = DxBlastDamage(target, dmgStruct->dmg, dungeonExitReason); // Blast Control
+#endif
     if (HandleDealingDamageInternal_Async(attacker, target, dmgStruct, isFalseSwipe, giveExp, dungeonExitReason, argC))
         return;
     if (dmgStruct->tookNoDamage)
@@ -99,6 +105,9 @@ void HandleDealingDamage_Async(Entity *attacker, Entity *target, struct DamageSt
     if (GetEntInfo(target)->bideClassStatus.status == STATUS_ENRAGED) {
         BoostOffensiveStat(attacker, target, gStatIndexAtkDef, 1);
     }
+#ifdef DX_RULES
+    DxQualityOnTeamHit(attacker, target); // Riled Up, Strike Back, Defensive/Evasive Rhythm
+#endif
 
     if (!EntityIsValid(attacker) || !EntityIsValid(target))
         return;
@@ -688,6 +697,9 @@ static bool8 HandleDealingDamageInternal_Async(Entity *attacker, Entity *target,
                     s32 i;
 
                     AddExpPoints(attacker, attacker, exp);
+#ifdef DX_RULES
+                    DxQualityOnDefeat(attacker); // PP Pouch
+#endif
                     for (i = 0; i < MAX_TEAM_MEMBERS; i++) {
                         Entity *teamMember = gDungeon->teamPokemon[i];
                         if (EntityIsValid(teamMember) && teamMember != attacker) {
@@ -782,6 +794,10 @@ static bool8 sub_806E100(s48_16 *param_1, Entity *pokemon, Entity *target, u8 ty
       else {
             effectiveness = gTypeEffectivenessChart[type][targetInfo->types[index]];
       }
+#ifdef DX_RULES
+      if (effectiveness < EFFECTIVENESS_NEUTRAL && DxSteamroll(pokemon)) // Steamroll
+        effectiveness = EFFECTIVENESS_NEUTRAL;
+#endif
       if (effectiveness != EFFECTIVENESS_NEUTRAL) {
         F48_16_SMul(param_1,param_1,local_48[effectiveness]);
       }
@@ -1371,6 +1387,9 @@ void CalcDamage(Entity *attacker, Entity *target, u8 moveType, s32 movePower, s3
         gDungeon->damageCalcWorkingValues.unk158 = FP48_16_ToS32(&unkSp9);
 
         dmgStruct->dmg = FP48_16_ToS32(&unkSp8);
+#ifdef DX_RULES
+        dmgStruct->dmg = dmgStruct->dmg * DxQualityDamagePercent(attacker, moveId) / 100; // Rare Qualities
+#endif
         dmgStruct->residualDmgType = RESIDUAL_DAMAGE_REGULAR;
         if (dmgStruct->dmg == 0) {
             dmgStruct->isCrit = FALSE;

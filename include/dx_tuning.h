@@ -49,5 +49,10 @@
 #define DX_RQ_FUNNEL_PERCENT 33            // Funnel Fun: regen speed in corridors
 #define DX_RQ_FRIENDLY_BONUS 100           // Friendly: recruit rate (out of 1000)
 #define DX_RQ_SQUAD_UP_BONUS 25            // Squad Up: recruit rate per team member
+#define DX_RQ_LONELY_COURAGE_BONUS 50      // Lonely Courage: % more damage with no teammate within 2 tiles
+#define DX_RQ_BRAWL_PER_FOE 10             // Brawl: % more damage per enemy in the room...
+#define DX_RQ_BRAWL_MAX_FOES 5             // ...counting at most this many
+#define DX_RQ_LINK_BOOST_PER_MOVE 10       // Link Boost: % more damage per linked move used
+#define DX_RQ_RECOIL_BOOST_BONUS 50        // Recoil Boost: % more damage for recoil/crash moves
 
 #endif // GUARD_DX_TUNING_H
