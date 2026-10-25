@@ -19,6 +19,11 @@
 #define TYPE_DRAGON 0xF
 #define TYPE_DARK 0x10
 #define TYPE_STEEL 0x11
+#ifdef DX_RULES
+#define TYPE_FAIRY 0x12 // Rescue Team DX
+#define NUM_TYPES 0x13
+#else
 #define NUM_TYPES 0x12
+#endif
 
 #endif

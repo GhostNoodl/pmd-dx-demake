@@ -148,6 +148,11 @@ s16 GetMoveTargetAndRange(Move *move, bool32 isAI)
 // arm9.bin::02063CE4
 u8 GetMoveType(Move *move)
 {
+#ifdef DX_RULES
+    // Rescue Team DX (Gen 6): these became Fairy-type
+    if (move->id == MOVE_CHARM || move->id == MOVE_SWEET_KISS || move->id == MOVE_MOONLIGHT)
+        return TYPE_FAIRY;
+#endif
     return sMovesData[move->id].type;
 }
 

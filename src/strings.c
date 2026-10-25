@@ -31,6 +31,9 @@ const char * const gUnformattedTypeStrings[NUM_TYPES] =
     [TYPE_DRAGON] = _("Dragon"),
     [TYPE_DARK] = _("Dark"),
     [TYPE_STEEL] = _("Steel"),
+#ifdef DX_RULES
+    [TYPE_FAIRY] = _("Fairy"),
+#endif
 };
 
 const char * const gFormattedTypeStrings[NUM_TYPES] =
@@ -53,6 +56,9 @@ const char * const gFormattedTypeStrings[NUM_TYPES] =
     [TYPE_DRAGON] = _("{color YELLOW}Dragon{reset}"),
     [TYPE_DARK] = _("{color YELLOW}Dark{reset}"),
     [TYPE_STEEL] = _("{color YELLOW}Steel{reset}"),
+#ifdef DX_RULES
+    [TYPE_FAIRY] = _("{color YELLOW}Fairy{reset}"),
+#endif
 };
 
 const u8 *const gUnknown_810AF50[20] = {

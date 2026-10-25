@@ -827,9 +827,41 @@ s32 GetBaseDefensiveStat(s32 index, u32 r1)
 }
 
 // arm9.bin::0205AE2C
+#ifdef DX_RULES
+// Rescue Team DX (Gen 6) retypes: {species, type1, type2}
+static const s16 sDxRetypes[][3] = {
+    {MONSTER_CLEFAIRY, TYPE_FAIRY, TYPE_NONE},
+    {MONSTER_CLEFABLE, TYPE_FAIRY, TYPE_NONE},
+    {MONSTER_CLEFFA, TYPE_FAIRY, TYPE_NONE},
+    {MONSTER_JIGGLYPUFF, TYPE_NORMAL, TYPE_FAIRY},
+    {MONSTER_WIGGLYTUFF, TYPE_NORMAL, TYPE_FAIRY},
+    {MONSTER_IGGLYBUFF, TYPE_NORMAL, TYPE_FAIRY},
+    {MONSTER_TOGEPI, TYPE_FAIRY, TYPE_NONE},
+    {MONSTER_TOGETIC, TYPE_FAIRY, TYPE_FLYING},
+    {MONSTER_SNUBBULL, TYPE_FAIRY, TYPE_NONE},
+    {MONSTER_GRANBULL, TYPE_FAIRY, TYPE_NONE},
+    {MONSTER_MARILL, TYPE_WATER, TYPE_FAIRY},
+    {MONSTER_AZUMARILL, TYPE_WATER, TYPE_FAIRY},
+    {MONSTER_AZURILL, TYPE_NORMAL, TYPE_FAIRY},
+    {MONSTER_MR_MIME, TYPE_PSYCHIC, TYPE_FAIRY},
+    {MONSTER_RALTS, TYPE_PSYCHIC, TYPE_FAIRY},
+    {MONSTER_KIRLIA, TYPE_PSYCHIC, TYPE_FAIRY},
+    {MONSTER_GARDEVOIR, TYPE_PSYCHIC, TYPE_FAIRY},
+    {MONSTER_MAWILE, TYPE_STEEL, TYPE_FAIRY},
+};
+#endif
+
 u8 GetPokemonType(s32 index, u32 typeIndex)
 {
     s16 newIndex = index;
+#ifdef DX_RULES
+    s32 i;
+
+    for (i = 0; i < ARRAY_COUNT(sDxRetypes); i++) {
+        if (sDxRetypes[i][0] == newIndex)
+            return sDxRetypes[i][1 + typeIndex];
+    }
+#endif
     return sMonsterParameters[newIndex].types[typeIndex];
 }
 
