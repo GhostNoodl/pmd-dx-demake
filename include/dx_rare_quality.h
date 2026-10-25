@@ -14,6 +14,12 @@ s32 DxTeamSize(void);
 u32 DxRandomQuality(void);
 void DxGrantQuality(Entity *user, Entity *target, u32 quality);
 void DxGummiItemAction(Entity *user, Entity *target, bool8 alwaysQuality);
+bool8 DxQualityAlwaysHits(Entity *attacker, u16 moveId);
+bool8 DxSteamroll(Entity *attacker);
+s32 DxQualityDamagePercent(Entity *attacker, u16 moveId);
+s32 DxBlastDamage(Entity *target, s32 dmg, s32 dungeonExitReason);
+void DxQualityOnTeamHit(Entity *attacker, Entity *target);
+void DxQualityOnDefeat(Entity *attacker);
 
 #endif // DX_RULES
 
