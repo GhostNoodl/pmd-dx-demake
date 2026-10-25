@@ -504,5 +504,8 @@ const File gMonsterFiles[MONSTER_FILES_COUNT] = {
     [493 + DX_NEW_SPECIES_FILES] = { "kao414", gKaoDeoxysNormal,},
     [494 + DX_NEW_SPECIES_FILES] = { "kao420", gKaoMunchlax,},
     [495 + DX_NEW_SPECIES_FILES] = { "kao423", gKaoRayquazaCutscene,},
-    [496 + DX_NEW_SPECIES_FILES] = { "palet", gAxMonsPalette,},
+#ifdef DX_RULES
+#include "data/dx_kao_files.h"
+#endif
+    [496 + DX_NEW_SPECIES_FILES + DX_NEW_KAO_FILES] = { "palet", gAxMonsPalette,},
 };

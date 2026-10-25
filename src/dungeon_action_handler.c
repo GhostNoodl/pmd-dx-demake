@@ -1,4 +1,5 @@
 #include "global.h"
+#include "constants/emotions.h"
 #include "globaldata.h"
 #include "dungeon_action_handler.h"
 #include "constants/dungeon.h"
@@ -671,7 +672,19 @@ static void sub_8067558(Entity *entity, Entity *targetEntity, s32 a2)
             }
 
             sub_806A3D4(txt, speciesId,  r2, r6);
+#ifdef DX_RULES
+            {
+                // DX shows the teammate's portrait: pained when low on HP, worried when hurt
+                struct MonDialogueSpriteInfo face;
+                face.species = info2->apparentID;
+                face.spriteId = (r2 == 2) ? EMOTION_PAINED : (r2 == 1) ? EMOTION_WORRIED : EMOTION_NORMAL;
+                if (!IsPokemonDialogueSpriteAvail(face.species, face.spriteId))
+                    face.spriteId = EMOTION_NORMAL;
+                DisplayDungeonMessage_Async(&face, txt, TRUE);
+            }
+#else
             DisplayDungeonMessage_Async(NULL, txt, TRUE);
+#endif
         }
     }
     else {

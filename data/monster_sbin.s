@@ -91,3 +91,6 @@
 .include "data/kao/deoxysnormal.inc"
 .include "data/kao/munchlax.inc"
 .include "data/kao/rayquazacutscene.inc"
+#ifdef DX_RULES
+.include "data/kao/dx/all.inc"
+#endif
