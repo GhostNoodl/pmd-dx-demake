@@ -1,0 +1,112 @@
+#rom debug
+#save after-first-dungeon
+# DX camp Exp.: a Pokemon resting in a camp grows while the team is out. A Lv. 5 Bulbasaur waits in camp
+# (recruit slot 0) while the team clears the Skarmory rematch; it gets 20% of the leader's Exp.
+mash START sMainMenu 4 != 0 3000
+write gDxForcePostgame 1 1
+write gDxTestSeed 4 99991
+# an Apple to hand over (DX recruiting)
+write *gTeamInventoryRef+0 1 1
+write *gTeamInventoryRef+2 1 82
+# a resting camp Pokemon: recruit slot 0 = Bulbasaur (1), exists but not on the team, Lv. 5, Exp. 0
+write *gRecruitedPokemonRef+0 2 1
+write *gRecruitedPokemonRef+8 2 1
+write *gRecruitedPokemonRef+@gDxOffMonLevel 1 5
+write *gRecruitedPokemonRef+@gDxOffMonExp 4 0
+wait 60
+press UP
+press A
+wait 30
+press A
+wait 30
+press UP
+press UP
+wait 10
+expect *sDxWarp+0xB0 4 == 2
+press A
+wait 30
+press UP
+press UP
+press UP
+press UP
+press UP
+press UP
+press UP
+press UP
+wait 10
+expect *sDxWarp+0xB0 4 == 9
+shot 1_pick_floor
+press A
+mash A gDungeon 4 != 0 1800
+wait 200
+shot 2_arrive
+wait 300
+shot 3_cutscene
+# through the rematch dialogue
+mash? A gDxForcePostgame 1 == 9 240
+shot 4_after_dialogue
+expect **gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo 4 != 0
+expect ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoId 2 == 252
+expect ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoLevel 1 >= 40
+# a 1 HP Skarmory, a sure recruit roll and a tough leader: step up and strike
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 999
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMaxHP 2 999
+write gDxForceRecruit 1 1
+# what a post-game save has: Mt. Steel story fight done (flags 0-1), Ravaged Field (52) owned, recruiting on
+write *gExclusiveMonPtr+@gDxOffCutsceneFlags 1 3
+write *gFriendAreas+52 1 1
+write *gDungeon+@gDxOffCanRecruit 1 1
+press UP
+wait 60
+shot 5_closer
+press A
+wait 240
+shot 6_hit
+# the fight, the Apple, "wants to join" (Yes), "joined the team": 15 presses to the nickname question
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot 7_nickname_question
+# Skarmory joined the team (slot 3), and winning the rematch ends the floor
+expect ***gDungeon+@gDxOffTeamPokemon!8+@gDxOffEntityInfo+@gDxOffInfoId 2 == 252
+expect *gDungeon+@gDxOffFloorEnd 1 == 1
+# "Give it a nickname?" No
+press DOWN
+wait 10
+press A
+mash A gDungeon 4 == 0 3000
+wait 120
+shot 8_dungeon_over
+expect *gRecruitedPokemonRef+0 2 == 1
+expect *gRecruitedPokemonRef+@gDxOffMonExp 4 > 0
+expect *gRecruitedPokemonRef+@gDxOffMonLevel 1 > 5
+read campExp *gRecruitedPokemonRef+@gDxOffMonExp 4
+read campLevel *gRecruitedPokemonRef+@gDxOffMonLevel 1

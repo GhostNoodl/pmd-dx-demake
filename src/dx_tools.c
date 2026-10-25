@@ -505,6 +505,8 @@ const u32 gDxOffInfoBurn = offsetof(EntityInfo, burnClassStatus);
 const u32 gDxOffDMon2Quality = offsetof(RecruitedMon, dungeonTeam[2].dxQuality);
 const u32 gDxOffInfoHeldItem = offsetof(EntityInfo, heldItem);
 const u32 gDxOffInfoDirection = offsetof(EntityInfo, action.direction);
+const u32 gDxOffMonLevel = offsetof(Pokemon, level);
+const u32 gDxOffMonExp = offsetof(Pokemon, currExp);
 const u32 gDxOffInfoSleep = offsetof(EntityInfo, sleepClassStatus);
 const u32 gDxOffInfoFrozen = offsetof(EntityInfo, frozenClassStatus);
 #endif // DX_DEBUG

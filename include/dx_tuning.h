@@ -82,4 +82,6 @@
 #define DX_VISITOR_POKE_MIN 50     // (ESTIMATED)
 #define DX_VISITOR_POKE_MAX 1500   // (ESTIMATED)
 
+#define DX_CAMP_EXP_PERCENT 20 // % of the leader's adventure Exp. each Pokemon resting in a camp gets (ESTIMATED)
+
 #endif // GUARD_DX_TUNING_H

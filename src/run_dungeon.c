@@ -144,6 +144,7 @@ void RunDungeon_Async(DungeonSetupStruct *setupPtr)
         gDungeon->unk644.windPhase = 0;
 #ifdef DX_RULES
         gDxAdventureTurns = 0;
+        gDxAdventureExp = 0;
 #endif
         gDungeon->unk644.unk37 = GetRescuesAllowed(setupPtr->info.sub0.unk0.id);
     }
