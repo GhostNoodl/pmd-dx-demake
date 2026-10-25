@@ -800,9 +800,7 @@ void SetMonSummaryInfoFromEntity(MonSummaryInfo *param_1, Entity *target)
 
     EntityInfo *info = GetEntInfo(target);
 #ifdef DX_RULES
-    Pokemon *dxMon = DxEntityPokemon(target);
-
-    param_1->dxQuality = dxMon != NULL ? dxMon->dxQuality : 0;
+    param_1->dxQuality = DxEntityQuality(target);
 #endif
 
     SetMessageArgument_2(param_1->nameBuffer, info, 0);
