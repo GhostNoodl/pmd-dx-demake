@@ -3,10 +3,12 @@
 
 #ifdef DX_RULES
 #define DX_NEW_SPECIES_FILES DX_NEW_SPECIES_COUNT
+#define DX_NEW_KAO_FILES DX_NEW_PORTRAIT_COUNT // kao424+ sort after kao423, before palet
 #else
 #define DX_NEW_SPECIES_FILES 0
+#define DX_NEW_KAO_FILES 0
 #endif
-#define MONSTER_FILES_COUNT (497 + DX_NEW_SPECIES_FILES)
+#define MONSTER_FILES_COUNT (497 + DX_NEW_SPECIES_FILES + DX_NEW_KAO_FILES)
 
 #include "structs/str_file_system.h"
 

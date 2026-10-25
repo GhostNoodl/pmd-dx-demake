@@ -36,5 +36,6 @@
 
 #define DX_FIRST_NEW_SPECIES 424
 #define DX_NEW_SPECIES_COUNT 31
+#define DX_NEW_PORTRAIT_COUNT 31
 
 #endif

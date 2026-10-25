@@ -20174,7 +20174,7 @@
         "overworldPalette": 5,
         "bodySize": 1,
         "movementSpeed": 1,
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0001111111111111",
         "types": [
             "TYPE_FIGHTING"
         ],
@@ -20218,7 +20218,7 @@
         "overworldPalette": 5,
         "bodySize": 1,
         "movementSpeed": 1,
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0001111111111111",
         "types": [
             "TYPE_FIGHTING",
             "TYPE_STEEL"
@@ -20308,7 +20308,7 @@
             426,
             426
         ],
-        "dialogueSprites": "0b0000000000000000"
+        "dialogueSprites": "0b0001111111111111"
     },
     {
         "name": "MonsterNameRoserade",
@@ -20354,7 +20354,7 @@
             427,
             427
         ],
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_ROSELIA",
             "evolveType": "EVOLVE_TYPE_LEVEL"
@@ -20405,7 +20405,7 @@
             428,
             428
         ],
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0001000000000011",
         "preEvolution": {
             "evolveFrom": "MONSTER_AIPOM",
             "evolveType": "EVOLVE_TYPE_LEVEL"
@@ -20457,7 +20457,7 @@
             429,
             429
         ],
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_MISDREAVUS",
             "evolveType": "EVOLVE_TYPE_LEVEL"
@@ -20509,7 +20509,7 @@
             430,
             430
         ],
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_MURKROW",
             "evolveType": "EVOLVE_TYPE_LEVEL"
@@ -20561,7 +20561,7 @@
             431,
             431
         ],
-        "dialogueSprites": "0b0000000000000000"
+        "dialogueSprites": "0b0001111111111111"
     },
     {
         "name": "MonsterNameBonsly",
@@ -20606,7 +20606,7 @@
             432,
             432
         ],
-        "dialogueSprites": "0b0000000000000000"
+        "dialogueSprites": "0b0000000000100001"
     },
     {
         "name": "MonsterNameMimeJr",
@@ -20650,7 +20650,7 @@
             433,
             433
         ],
-        "dialogueSprites": "0b0000000000000000"
+        "dialogueSprites": "0b0001111111111111"
     },
     {
         "name": "MonsterNameHappiny",
@@ -20695,7 +20695,7 @@
             434,
             434
         ],
-        "dialogueSprites": "0b0000000000000000"
+        "dialogueSprites": "0b0001111111111111"
     },
     {
         "name": "MonsterNameMantyke",
@@ -20742,7 +20742,7 @@
             435,
             435
         ],
-        "dialogueSprites": "0b0000000000000000"
+        "dialogueSprites": "0b0001110110000011"
     },
     {
         "name": "MonsterNameWeavile",
@@ -20787,7 +20787,7 @@
             436,
             436
         ],
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_SNEASEL",
             "evolveType": "EVOLVE_TYPE_LEVEL"
@@ -20841,7 +20841,7 @@
             437,
             437
         ],
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_MAGNETON",
             "evolveType": "EVOLVE_TYPE_LEVEL"
@@ -20893,7 +20893,7 @@
             438,
             438
         ],
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_LICKITUNG",
             "evolveType": "EVOLVE_TYPE_LEVEL"
@@ -20945,7 +20945,7 @@
             439,
             439
         ],
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0000000010000001",
         "preEvolution": {
             "evolveFrom": "MONSTER_RHYDON",
             "evolveType": "EVOLVE_TYPE_LEVEL"
@@ -20996,7 +20996,7 @@
             440,
             440
         ],
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0000000000000001",
         "preEvolution": {
             "evolveFrom": "MONSTER_TANGELA",
             "evolveType": "EVOLVE_TYPE_LEVEL"
@@ -21047,7 +21047,7 @@
             441,
             441
         ],
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0000101000000111",
         "preEvolution": {
             "evolveFrom": "MONSTER_ELECTABUZZ",
             "evolveType": "EVOLVE_TYPE_LEVEL"
@@ -21099,7 +21099,7 @@
             442,
             442
         ],
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0001000000000001",
         "preEvolution": {
             "evolveFrom": "MONSTER_MAGMAR",
             "evolveType": "EVOLVE_TYPE_LEVEL"
@@ -21152,7 +21152,7 @@
             443,
             443
         ],
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_TOGETIC",
             "evolveType": "EVOLVE_TYPE_LEVEL"
@@ -21205,7 +21205,7 @@
             444,
             444
         ],
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_YANMA",
             "evolveType": "EVOLVE_TYPE_LEVEL"
@@ -21220,7 +21220,7 @@
         "overworldPalette": 6,
         "bodySize": 1,
         "movementSpeed": 1,
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0001111111111111",
         "types": [
             "TYPE_GRASS"
         ],
@@ -21271,7 +21271,7 @@
         "overworldPalette": 5,
         "bodySize": 1,
         "movementSpeed": 1,
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0001111111111111",
         "types": [
             "TYPE_ICE"
         ],
@@ -21361,7 +21361,7 @@
             447,
             447
         ],
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_GLIGAR",
             "evolveType": "EVOLVE_TYPE_LEVEL"
@@ -21413,7 +21413,7 @@
             448,
             448
         ],
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0000000000001101",
         "preEvolution": {
             "evolveFrom": "MONSTER_PILOSWINE",
             "evolveType": "EVOLVE_TYPE_LEVEL"
@@ -21465,7 +21465,7 @@
             449,
             449
         ],
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_PORYGON2",
             "evolveType": "EVOLVE_TYPE_LEVEL"
@@ -21518,7 +21518,7 @@
             450,
             450
         ],
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_KIRLIA",
             "evolveType": "EVOLVE_TYPE_LEVEL"
@@ -21571,7 +21571,7 @@
             451,
             451
         ],
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0000000000000101",
         "preEvolution": {
             "evolveFrom": "MONSTER_NOSEPASS",
             "evolveType": "EVOLVE_TYPE_LEVEL"
@@ -21622,7 +21622,7 @@
             452,
             452
         ],
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_DUSCLOPS",
             "evolveType": "EVOLVE_TYPE_LEVEL"
@@ -21674,7 +21674,7 @@
             453,
             453
         ],
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0001111111111111",
         "preEvolution": {
             "evolveFrom": "MONSTER_SNORUNT",
             "evolveType": "EVOLVE_TYPE_LEVEL"
@@ -21689,7 +21689,7 @@
         "overworldPalette": 1,
         "bodySize": 1,
         "movementSpeed": 1,
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0001111111111111",
         "types": [
             "TYPE_FAIRY"
         ],

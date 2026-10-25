@@ -1,0 +1,61 @@
+#rom debug
+#save after-first-dungeon
+# DX Talk: talking to a newcomer teammate (Mamoswine #448) shows its SpriteCollab portrait and borrowed Red talk lines (Piloswine)
+mash START sMainMenu 4 != 0 3000
+wait 60
+press UP
+press A
+wait 30
+# Storage is the 6th debug menu entry
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press A
+wait 600
+write *gRecruitedPokemonRef+8 2 454
+write *gRecruitedPokemonRef+0 2 3
+write *gRecruitedPokemonRef+96 2 443
+write *gRecruitedPokemonRef+88 2 3
+write *gRecruitedPokemonRef+184 2 452
+write *gRecruitedPokemonRef+176 2 3
+write *gRecruitedPokemonRef+272 2 448
+write *gRecruitedPokemonRef+264 2 3
+# the main menu remembers the cursor on Debug Mode
+press A
+wait 30
+press A
+wait 30
+press A
+wait 30
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+shot 1_in_dungeon
+wait 60
+wait 120
+press B
+wait 30
+press DOWN
+press DOWN
+press A
+wait 40
+shot 4_team_menu
+press DOWN
+press DOWN
+wait 20
+press A
+wait 40
+shot 5_member_menu
+press DOWN
+press DOWN
+press DOWN
+wait 10
+press A
+wait 90
+shot 6_talk
+press A
+wait 60
+shot 7_talk2
+expect sMainLoopsUnk 4 == 1
