@@ -175,10 +175,8 @@ void TriggerMonsterHouse_Async(Entity *entity, bool8 forcedMonsterHouse)
             if (sub_806AA0C(spawnStruct.species, 1)) {
                 Entity *newMonster = SpawnWildMon(&spawnStruct, FALSE);
 #ifdef DX_RULES
-                if (EntityIsValid(newMonster) && spawnStruct.species == gDxMysteryHouseSpecies) {
-                    gDxMysteryHouseSpawned = gDxMysteryHouseSpecies;
-                    gDxMysteryHouseSpecies = 0;
-                }
+                if (EntityIsValid(newMonster) && spawnStruct.species == gDxMysteryHouseSpecies)
+                    DxMysteryHouseSpawned(newMonster);
 #endif
                 if (EntityIsValid(newMonster)) {
                     newMonster->elevation = IntToF248(200);

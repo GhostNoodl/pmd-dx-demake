@@ -232,7 +232,7 @@ void GenerateFloor(void)
                 s32 attempts;
                 u8 layout = floorProps->layout;
 #ifdef DX_RULES
-                if (gDxForceMysteryHouse == 2 && gDxMysteryHouseSpecies != 0)
+                if (gDxForceMysteryHouse >= 2 && gDxMysteryHouseSpecies != 0)
                     layout = LAYOUT_ONE_ROOM_MONSTER_HOUSE;
 #endif
 

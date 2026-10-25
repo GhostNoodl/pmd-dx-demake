@@ -515,10 +515,8 @@ void SpawnWildMonsOnFloor(void)
                             DxMakeStrongFoe(spawned);
                             gDxStrongFoeSpecies = 0;
                         }
-                        if (monSpawnInfo.species == gDxMysteryHouseSpecies) {
-                            gDxMysteryHouseSpawned = gDxMysteryHouseSpecies;
-                            gDxMysteryHouseSpecies = 0;
-                        }
+                        if (monSpawnInfo.species == gDxMysteryHouseSpecies)
+                            DxMysteryHouseSpawned(spawned);
 #endif
                     }
                 }
