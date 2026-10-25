@@ -27,4 +27,8 @@
 #define DX_DOUBLE_MOVE_SPEED_PER_PERCENT 4
 #define DX_DOUBLE_MOVE_MAX_CHANCE 30
 
+// Mystery Houses: on a newcomer's home dungeon (gen_dx_species.py HOMES), each floor has this
+// chance to force a Monster House with that newcomer inside, at the floor's top spawn level
+#define DX_MYSTERY_HOUSE_CHANCE 8
+
 #endif // GUARD_DX_TUNING_H

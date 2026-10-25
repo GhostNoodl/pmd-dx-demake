@@ -1,4 +1,7 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rules.h"
+#endif
 #include "globaldata.h"
 #include "def_filearchives.h"
 #include "dungeon_generation.h"
@@ -172,6 +175,13 @@ void GenerateFloor(void)
     sFloorSize = 0;
     sKecleonShopChance = floorProps->kecleonShopChance;
     sMonsterHouseChance = floorProps->monsterHouseChance;
+#ifdef DX_RULES
+    if (DxRollMysteryHouse()) {
+        // a Kecleon shop would rule the Monster House out
+        sMonsterHouseChance = 100;
+        sKecleonShopChance = 0;
+    }
+#endif
     sSecondSpawn = TRUE;
     sKecleonShopPosition.minX = -1;
     sKecleonShopPosition.maxX = -1;
@@ -220,6 +230,10 @@ void GenerateFloor(void)
                 s32 gridSizeX, gridSizeY;
                 s32 attempts;
                 u8 layout = floorProps->layout;
+#ifdef DX_RULES
+                if (gDxForceMysteryHouse == 2 && gDxMysteryHouseSpecies != 0)
+                    layout = LAYOUT_ONE_ROOM_MONSTER_HOUSE;
+#endif
 
                 // Attempt to generate random grid dimensions
                 attempts = 32;

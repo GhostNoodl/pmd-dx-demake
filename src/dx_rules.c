@@ -4,8 +4,13 @@
 
 #include "dx_rules.h"
 #include "dx_tuning.h"
+#include "constants/dungeon.h"
 #include "constants/dungeon_action.h"
 #include "dungeon_util.h"
+#include "dungeon_floor_spawns.h"
+#include "pokemon_3.h"
+#include "dungeon_random.h"
+#include "structs/str_dungeon.h"
 
 // mainline base Speed per species id (Red has no Speed stat), from tools/dxtest/gen_dx_species.py
 #include "data/dx_base_speed.h"
@@ -51,6 +56,46 @@ s32 DxDoubleMoveChance(Entity *attacker, Entity *target)
         return 0;
     chance = DX_DOUBLE_MOVE_BASE_CHANCE + (lead - DX_DOUBLE_MOVE_SPEED_GAP) / DX_DOUBLE_MOVE_SPEED_PER_PERCENT;
     return chance > DX_DOUBLE_MOVE_MAX_CHANCE ? DX_DOUBLE_MOVE_MAX_CHANCE : chance;
+}
+
+// --- Mystery Houses ---
+#include "data/dx_mystery_houses.h"
+
+// the newcomer waiting in this floor's Mystery House (0 = none)
+EWRAM_DATA s16 gDxMysteryHouseSpecies = 0;
+// tests: force the roll, and record which newcomer actually spawned
+EWRAM_DATA bool8 gDxForceMysteryHouse = FALSE;
+EWRAM_DATA s16 gDxMysteryHouseSpawned = 0;
+
+// Called as a floor is generated: TRUE forces a Monster House, whose first occupant is the newcomer
+bool8 DxRollMysteryHouse(void)
+{
+    s32 i, count = 0;
+    s16 choices[ARRAY_COUNT(sDxMysteryHomes)];
+    u8 dungeon = gDungeon->unk644.dungeonLocation.id;
+
+    gDxMysteryHouseSpecies = 0;
+    for (i = 0; i < ARRAY_COUNT(sDxMysteryHomes); i++) {
+        if (sDxMysteryHomes[i].dungeon == dungeon)
+            choices[count++] = sDxMysteryHomes[i].species;
+    }
+    if (count == 0 || (!gDxForceMysteryHouse && DungeonRandInt(100) >= DX_MYSTERY_HOUSE_CHANCE))
+        return FALSE;
+    gDxMysteryHouseSpecies = choices[DungeonRandInt(count)];
+    return TRUE;
+}
+
+// the strongest level on this floor's spawn list
+s32 DxMysteryHouseLevel(void)
+{
+    s32 i, level = 1;
+
+    for (i = 0; i < gDungeon->currFloorMonsterSpawnsCount; i++) {
+        s32 l = ExtractLevel(&gDungeon->monsterSpawns[i]);
+        if (gDungeon->monsterSpawns[i].randNum[0] != 0 && l > level)
+            level = l;
+    }
+    return level;
 }
 
 #endif // DX_RULES

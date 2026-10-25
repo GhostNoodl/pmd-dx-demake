@@ -30,6 +30,9 @@
 #include "dungeon_mon_spawn.h"
 #include "move_orb_effects_5.h"
 #include "dungeon_8041AD0.h"
+#ifdef DX_RULES
+#include "dx_rules.h"
+#endif
 
 void TryWakeSleepingWildPokemon(void)
 {
@@ -156,6 +159,14 @@ void TriggerMonsterHouse_Async(Entity *entity, bool8 forcedMonsterHouse)
 
             spawnStruct.species = GetRandomFloorMonsterId(1);
             spawnStruct.level = 0;
+#ifdef DX_RULES
+            // Mystery House: its newcomer drops in first (dx_rules.c)
+            if (gDxMysteryHouseSpecies != 0) {
+                spawnStruct.species = gDxMysteryHouseSpecies;
+                spawnStruct.level = DxMysteryHouseLevel();
+                LoadPokemonSprite(spawnStruct.species, FALSE);
+            }
+#endif
             spawnStruct.unk2 = 0;
             spawnStruct.unk4 = 0;
             spawnStruct.unk10 = 1;
@@ -163,6 +174,12 @@ void TriggerMonsterHouse_Async(Entity *entity, bool8 forcedMonsterHouse)
             spawnStruct.pos.y = positions[rndId].y;
             if (sub_806AA0C(spawnStruct.species, 1)) {
                 Entity *newMonster = SpawnWildMon(&spawnStruct, FALSE);
+#ifdef DX_RULES
+                if (EntityIsValid(newMonster) && spawnStruct.species == gDxMysteryHouseSpecies) {
+                    gDxMysteryHouseSpawned = gDxMysteryHouseSpecies;
+                    gDxMysteryHouseSpecies = 0;
+                }
+#endif
                 if (EntityIsValid(newMonster)) {
                     newMonster->elevation = IntToF248(200);
                     for (j = 0; j < 100; j++) {

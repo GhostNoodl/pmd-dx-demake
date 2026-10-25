@@ -79,6 +79,25 @@ SPECIES = [
          types=["TYPE_FAIRY"], abilities=["ABILITY_CUTE_CHARM"]),
 ]
 
+# Mystery House homes (DUNGEON_* without the prefix). DX's real Mystery House locations aren't
+# documented, so these are picked by type and level: base forms in story dungeons, evolved forms in
+# later ones. A newcomer only appears in a Mystery House on its home dungeons (dx_rules.c).
+HOMES = {
+    "Riolu": ["MT_STEEL"], "Lucario": ["MT_FARAWAY"], "Munchlax": ["HOWLING_FOREST"],
+    "Budew": ["SINISTER_WOODS"], "Roserade": ["PURITY_FOREST"], "Ambipom": ["NORTHERN_RANGE"],
+    "Mismagius": ["DARKNIGHT_RELIC"], "Honchkrow": ["WYVERN_HILL"], "Chingling": ["ODDITY_CAVE"],
+    "Bonsly": ["GREAT_CANYON"], "MimeJr": ["UPROAR_FOREST"], "Happiny": ["LAPIS_CAVE"],
+    "Mantyke": ["STORMY_SEA"], "Weavile": ["MT_FREEZE"], "Magnezone": ["LIGHTNING_FIELD"],
+    "Lickilicky": ["WISH_CAVE"], "Rhyperior": ["DESERT_REGION"], "Tangrowth": ["NORTHWIND_FIELD"],
+    "Electivire": ["LIGHTNING_FIELD"], "Magmortar": ["FIERY_FIELD"], "Togekiss": ["REMAINS_ISLAND"],
+    "Yanmega": ["SOUTHERN_CAVERN"], "Leafeon": ["PURITY_FOREST"], "Glaceon": ["NORTHERN_RANGE"],
+    "Gliscor": ["WYVERN_HILL"], "Mamoswine": ["SILVER_TRENCH"], "PorygonZ": ["BURIED_RELIC"],
+    "Gallade": ["WESTERN_CAVE"], "Probopass": ["DESERT_REGION"], "Dusknoir": ["DARKNIGHT_RELIC"],
+    "Froslass": ["MT_FREEZE"], "Sylveon": ["JOYOUS_TOWER"],
+}
+# Red relatives that can't be recruited (-999 etc.) give their evolutions this rate instead (5%)
+FALLBACK_RECRUIT_RATE = 50
+
 # Munchlax already exists in Red (#420) with placeholder data
 MUNCHLAX = dict(dex=446, ident="Munchlax", camp="SNORLAX", tms="Snorlax", recruit=50)
 
@@ -183,7 +202,8 @@ def main():
             entry["bodySize"] = s["body"]
         entry.update({
             "name": f"MonsterName{s['ident']}", "category": cat_sym, "overworldPalette": pal,
-            "friendArea": rel["friendArea"], "recruitRate": rel["recruitRate"],
+            "friendArea": rel["friendArea"],
+            "recruitRate": rel["recruitRate"] if rel["recruitRate"] > 0 else FALLBACK_RECRUIT_RATE,
             "dialogueSprites": "0b0000000000000000",  # no portraits yet
             "alphabetParent": [s["id"], s["id"]],
         })
@@ -251,6 +271,11 @@ def main():
     w("src/data/dx_base_speed.h", hdr + "// mainline base Speed by species id (PokeAPI); 0 = not a real species\n"
       + "static const u8 sDxBaseSpeed[MONSTER_MAX] = {\n"
       + "".join("    " + ", ".join(str(v) for v in rows[i:i + 16]) + ",\n" for i in range(0, len(rows), 16)) + "};\n")
+    # Mystery House homes
+    rows = [(d, "MUNCHLAX" if n == "Munchlax" else n.upper()) for n, ds in HOMES.items() for d in ds]
+    w("src/data/dx_mystery_houses.h", hdr + "// Mystery House homes (gen_dx_species.py HOMES): dungeon, newcomer\n"
+      + "static const struct DxMysteryHome sDxMysteryHomes[] = {\n"
+      + "".join(f"    {{ DUNGEON_{d}, MONSTER_{m} }},\n" for d, m in rows) + "};\n")
     # credits manifest
     w("tools/spritecollab/imported.txt", "# <SpriteCollab dex> <name in this repo> [sprite|portrait|both]\n"
       + "".join(f"{s['dex']:04d} {s['ident'].lower()} sprite\n" for s in SPECIES))

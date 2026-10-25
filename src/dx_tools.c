@@ -472,4 +472,5 @@ const u32 gDxOffInfoMoves = offsetof(EntityInfo, moves);
 const u32 gDxOffInfoHP = offsetof(EntityInfo, HP);
 const u32 gDxOffInfoMaxHP = offsetof(EntityInfo, maxHPStat);
 const u32 gDxOffWindTurns = offsetof(Dungeon, unk644.windTurns);
+const u32 gDxOffWildPokemon = offsetof(Dungeon, wildPokemon);
 #endif // DX_DEBUG
