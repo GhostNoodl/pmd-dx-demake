@@ -1,4 +1,9 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rare_quality.h"
+#include "constants/rare_quality.h"
+#include "text_util.h"
+#endif
 #include "globaldata.h"
 #include "pokemon_summary_window.h"
 #include "string_format.h"
@@ -134,6 +139,16 @@ void ShowPokemonSummaryWindow(s32 which, s32 currSubWindowId, MonSummaryInfo *mo
                 PrintFormattedStringOnWindow(96, y, GetFormattedTypeString(monInfo->types[1]), windowId, '\0');
 
             y += 12;
+#ifdef DX_RULES
+            // DX: the Rare Quality takes the header's line (the abilities are named in colour anyway)
+            if (monInfo->dxQuality != RQ_NONE) {
+                u8 line[48];
+
+                sprintfStatic(line, _("Rare Quality: {COLOR CYAN}%s{RESET}"), DxQualityName(monInfo->dxQuality));
+                PrintFormattedStringOnWindow(4, y, line, windowId, '\0');
+            }
+            else
+#endif
             PrintFormattedStringOnWindow(4, y, _("Special Abilities:"), windowId, '\0');
 
             y += 12;
@@ -256,6 +271,9 @@ void SetMonSummaryInfo(MonSummaryInfo *dst, Pokemon *pokemon, bool8 unlockedEvol
     s32 index;
 
     PrintColoredPokeNameToBuffer(dst->nameBuffer, pokemon, COLOR_WHITE);
+#ifdef DX_RULES
+    dst->dxQuality = pokemon->dxQuality;
+#endif
     dst->species = pokemon->speciesNum;
     dst->HP1 = pokemon->pokeHP;
     dst->HP2 = pokemon->pokeHP;
