@@ -160,8 +160,7 @@ bool8 TryRecruitMonster(Entity *attacker, Entity *target)
     recruitRate = GetRecruitRate(targetInfo->id);
 #ifdef DX_RULES
     bossKind = DxPostgameBossKind(targetInfo->monsterBehavior);
-    if (bossKind == DX_BOSS_STORY && recruitRate <= 0)
-        recruitRate = DX_BOSS_FALLBACK_RECRUIT_RATE;
+    recruitRate = DxBossRecruitRate(recruitRate, targetInfo->monsterBehavior);
 #endif
     if (recruitRate == -999)
         return FALSE;

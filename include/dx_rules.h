@@ -44,6 +44,7 @@ bool8 DxPostgame(void);
 bool8 DxBossRematch(s16 species);
 enum { DX_BOSS_NONE, DX_BOSS_STORY, DX_BOSS_LEGENDARY };
 u8 DxPostgameBossKind(u8 monsterBehavior);
+s32 DxBossRecruitRate(s32 recruitRate, u8 monsterBehavior);
 void DxBriefingSummary(u8 dungeonIndex, u8 *buffer);
 struct DxShiny { s16 species; u8 palette; };
 s32 DxShinyPalette(s32 species);
@@ -54,6 +55,10 @@ void DxMarkVisitor(s32 teamSlot, DungeonMon *dmon);
 void DxPayVisitors(u8 friendArea);
 // camp Exp. (DX): Pokemon resting in camps grow while the team is out
 extern s32 gDxAdventureExp;
+#ifdef DX_DEBUG
+extern bool8 gDxTestProbe;
+extern s16 gDxTestOut[8];
+#endif
 void DxGivePokemonExp(Pokemon *mon, s32 exp);
 void DxGiveCampExp(void);
 void DxMysteryHouseSpawned(Entity *mon);
