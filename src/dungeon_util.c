@@ -305,7 +305,7 @@ Entity *sub_804550C(s32 _species)
                 entity->axObj.info.monster->isNotTeamMember = TRUE;
 
                 entity->axObj.spriteFile = GetSpriteData((s16)GetMonsterApparentID(NULL, species));
-                entity->axObj.unk40_maybeAnimTimer = ((validId + 6) * 16) + 0x40;
+                entity->axObj.unk40_maybeAnimTimer = ((validId + MAX_TEAM_BODY_SIZE) * 16) + 0x40;
                 entity->axObj.unk42_animId1 = 7;
                 entity->axObj.unk44_direction1 = 0;
                 entity->axObj.unk43_animId2 = 0xFF;
