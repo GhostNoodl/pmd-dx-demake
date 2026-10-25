@@ -293,6 +293,16 @@ void DxRollStrongFoe(void)
 EWRAM_DATA bool8 gDxForceShiny = FALSE;
 
 // the shared palette a shiny is drawn with (-1: no shiny form)
+// a recruited Pokemon's sprite palette outside dungeons (towns, camps, the maps): its shiny one if it is shiny
+u8 DxPokemonPalette(Pokemon *mon)
+{
+    u8 pal = GetPokemonOverworldPalette(mon->speciesNum, FALSE);
+
+    if ((mon->dxFlags & DX_FLAG_SHINY) && DxShinyPalette(mon->speciesNum) >= 0)
+        pal = DxShinyPalette(mon->speciesNum);
+    return pal;
+}
+
 s32 DxShinyPalette(s32 species)
 {
     s32 i;

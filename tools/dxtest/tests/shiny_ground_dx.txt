@@ -1,0 +1,23 @@
+#rom modern
+#save after-first-dungeon
+# DX shinies outside dungeons: a shiny recruited Pokemon keeps its shiny colours in town and camps.
+# The leader becomes a shiny Rapidash as the save loads; the team base screenshot shows it pink
+# (its shiny palette swap) instead of cream and orange.
+mash START sMainMenu 4 != 0 3000
+wait 60
+expect *sMainMenu+4 4 == 1
+# Continue -> load screen -> Yes
+press A
+wait 120
+press UP
+press A
+# as soon as the save is in memory: the leader (recruit slot 42) becomes a shiny (dxFlags bit 0) Rapidash (78)
+waitfor *gRecruitedPokemonRef+3704 2 != 0 1200
+write *gRecruitedPokemonRef+3704 2 78
+write *gRecruitedPokemonRef+3734 1 1
+waitfor sMainLoopsUnk 4 == 2 1200
+wait 900
+shot 1_shiny_leader_in_base
+expect sMainLoopsUnk 4 == 2
+expect *gRecruitedPokemonRef+3704 2 == 78
+expect *gRecruitedPokemonRef+3734 1 == 1

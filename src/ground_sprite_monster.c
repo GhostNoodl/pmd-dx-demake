@@ -1,4 +1,8 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rules.h"
+#include "ground_lives.h"
+#endif
 #include "globaldata.h"
 #include "ground_sprite_monster.h"
 #include "def_filearchives.h"
@@ -29,6 +33,14 @@ void sub_80A7428(struct UnkGroundSpriteStruct *ptr, s32 a1_, s32 monsterId_, s32
     else {
         bool32 kecleonShop = (a1 == 71);
         spStruct.unk2 = GetPokemonOverworldPalette(monsterId, kecleonShop);
+#ifdef DX_RULES
+        {
+            // the team and camp residents are recruited Pokemon: a shiny one keeps its shiny colours
+            Pokemon *mon = sub_80A8D54(a1);
+            if (mon != NULL && mon->speciesNum == monsterId)
+                spStruct.unk2 = DxPokemonPalette(mon);
+        }
+#endif
     }
     spStruct.axmain = (axmain *) file->data;
     sub_80A67CC(ptr, &spStruct, a3);
