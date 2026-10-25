@@ -21,6 +21,7 @@
 #include "def_filearchives.h"
 #include "dungeon_info.h"
 #include "dx_warp.h"
+#include "dx_rules.h"
 #include "event_flag.h"
 #include "exclusive_pokemon.h"
 #include "friend_area.h"
@@ -1060,6 +1061,10 @@ static void sub_80011CC(DungeonSetupSubstruct *info, u8 dungId)
 static void sub_80011E8(DungeonSetupSubstruct *info)
 {
     info->canChangeLeader = CheckQuest(QUEST_CAN_CHANGE_LEADER);
+#ifdef DX_DEBUG
+    if (gDxForcePostgame) // tests: a post-game save can switch leaders
+        info->canChangeLeader = TRUE;
+#endif
     info->canRecruit = CheckQuest(QUEST_CAN_RECRUIT);
     info->unlockedEvolutions = CheckQuest(QUEST_UNLOCKED_EVOLUTIONS);
     info->hasInventory = CheckQuest(QUEST_SET_TEAM_NAME);

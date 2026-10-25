@@ -219,6 +219,44 @@ bool8 DxBossRematch(s16 species)
     return DxPostgame() && !HasRecruitedMon(species);
 }
 
+// DX recruiting after the credits: a story boss can be recruited like anyone (with a fallback rate
+// for the ones Red never lets join), and a legendary beaten in its boss room always offers to join
+u8 DxPostgameBossKind(u8 monsterBehavior)
+{
+    if (!DxPostgame())
+        return DX_BOSS_NONE;
+    switch (monsterBehavior) {
+        case BEHAVIOR_SKARMORY:
+        case BEHAVIOR_GENGAR:
+        case BEHAVIOR_EKANS:
+        case BEHAVIOR_MEDICHAM:
+        case BEHAVIOR_MANKEY:
+            return DX_BOSS_STORY;
+        case BEHAVIOR_ZAPDOS:
+        case BEHAVIOR_MOLTRES:
+        case BEHAVIOR_ARTICUNO:
+        case BEHAVIOR_GROUDON_1:
+        case BEHAVIOR_GROUDON_2:
+        case BEHAVIOR_RAYQUAZA:
+        case BEHAVIOR_MEWTWO:
+        case BEHAVIOR_ENTEI:
+        case BEHAVIOR_RAIKOU:
+        case BEHAVIOR_SUICUNE:
+        case BEHAVIOR_HO_OH:
+        case BEHAVIOR_LATIOS:
+        case BEHAVIOR_REGIROCK:
+        case BEHAVIOR_REGICE:
+        case BEHAVIOR_REGISTEEL:
+        case BEHAVIOR_JIRACHI:
+        case BEHAVIOR_LUGIA:
+        case BEHAVIOR_KYOGRE:
+        case BEHAVIOR_DEOXYS_NORMAL:
+        case BEHAVIOR_CELEBI:
+            return DX_BOSS_LEGENDARY;
+    }
+    return DX_BOSS_NONE;
+}
+
 bool8 DxDungeonHasStrongFoe(u8 dungeon)
 {
     s32 i;

@@ -96,6 +96,6 @@ expect *gDungeon+@gDxOffFloorEnd 1 == 1
 press DOWN
 wait 10
 press A
-mash B gDungeon 4 == 0 3000
+mash A gDungeon 4 == 0 3000
 wait 120
 shot 8_dungeon_over
