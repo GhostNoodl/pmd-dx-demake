@@ -162,6 +162,8 @@ void DxEmpower(Entity *user, Entity *target)
 
 // the newcomer waiting in this floor's Mystery House (0 = none)
 EWRAM_DATA s16 gDxMysteryHouseSpecies = 0;
+// this floor rolled a Mystery House (for its message, even after the newcomer has spawned)
+EWRAM_DATA bool8 gDxMysteryHouseFloor = FALSE;
 // tests: force the roll, and record which newcomer actually spawned
 EWRAM_DATA bool8 gDxForceMysteryHouse = FALSE;
 EWRAM_DATA s16 gDxMysteryHouseSpawned = 0;
@@ -174,6 +176,7 @@ bool8 DxRollMysteryHouse(void)
     u8 dungeon = gDungeon->unk644.dungeonLocation.id;
 
     gDxMysteryHouseSpecies = 0;
+    gDxMysteryHouseFloor = FALSE;
     for (i = 0; i < ARRAY_COUNT(sDxMysteryHomes); i++) {
         if (sDxMysteryHomes[i].dungeon == dungeon)
             choices[count++] = sDxMysteryHomes[i].species;
@@ -181,6 +184,7 @@ bool8 DxRollMysteryHouse(void)
     if (count == 0 || (!gDxForceMysteryHouse && DungeonRandInt(100) >= DX_MYSTERY_HOUSE_CHANCE))
         return FALSE;
     gDxMysteryHouseSpecies = choices[DungeonRandInt(count)];
+    gDxMysteryHouseFloor = TRUE;
     return TRUE;
 }
 

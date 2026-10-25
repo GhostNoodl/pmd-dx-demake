@@ -1,4 +1,8 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rules.h"
+static const u8 sDxItsAMysteryHouse[] = _("It's a Mystery House!");
+#endif
 #include "globaldata.h"
 #include "dungeon_entity_movement.h"
 #include "constants/iq_skill.h"
@@ -475,7 +479,12 @@ void TryTriggerMonsterHouseWithMsg_Async(Entity *pokemon, bool8 forcedMonsterHou
         && (GetTileAtEntitySafe(pokemon)->terrainFlags & TERRAIN_TYPE_IN_MONSTER_HOUSE))
     {
         // It's a monster house!
+#ifdef DX_RULES
+        // (or a Mystery House, if a newcomer waits inside: dx_rules.c)
+        LogMessageByIdWithPopupCheckUser_Async(GetLeader(), gDxMysteryHouseFloor ? sDxItsAMysteryHouse : gPtrItsaMonsterHouseMessage);
+#else
         LogMessageByIdWithPopupCheckUser_Async(GetLeader(), gPtrItsaMonsterHouseMessage);
+#endif
         gDungeon->unk644.monsterHouseTriggeredEvent = TRUE;
         TriggerMonsterHouse_Async(pokemon, forcedMonsterHouse);
         sub_8041888(0);
