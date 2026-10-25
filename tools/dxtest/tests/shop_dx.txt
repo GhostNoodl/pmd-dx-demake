@@ -23,6 +23,7 @@ press A
 wait 60
 press A
 wait 60
+# the list header reads "Rescue Camps" (DX name, modern build text substitution)
 shot 2_list
 press DOWN
 wait 10
