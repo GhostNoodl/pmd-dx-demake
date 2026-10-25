@@ -19968,18 +19968,18 @@
         "regenSpeed": 100,
         "canMove": true,
         "chanceAsleep": 8,
-        "baseHP": 28,
-        "expYield": 60,
+        "baseHP": 30,
+        "expYield": 20,
         "baseAtkSpAtk": [
             5,
             5
         ],
         "baseDefSpDef": [
-            5,
-            5
+            3,
+            3
         ],
         "weight": 332,
-        "size": 31,
+        "size": 29,
         "unk30": 10,
         "unk31": 10,
         "unk32": 24,
@@ -20132,7 +20132,6 @@
         "overworldPalette": 5,
         "bodySize": 1,
         "movementSpeed": 1,
-        "dialogueSprites": "0b0000000000000000",
         "types": [
             "TYPE_FIGHTING"
         ],
@@ -20140,22 +20139,22 @@
         "abilities": [
             "ABILITY_INNER_FOCUS"
         ],
-        "shadowSize": 1,
+        "shadowSize": 2,
         "regenSpeed": 100,
         "canMove": true,
         "chanceAsleep": 8,
-        "baseHP": 14,
-        "expYield": 30,
+        "baseHP": 20,
+        "expYield": 22,
         "baseAtkSpAtk": [
             3,
-            2
+            4
         ],
         "baseDefSpDef": [
             2,
             2
         ],
-        "weight": 202,
-        "size": 70,
+        "weight": 179,
+        "size": 22,
         "unk30": 10,
         "unk31": 10,
         "unk32": 24,
@@ -20168,7 +20167,8 @@
         "alphabetParent": [
             424,
             424
-        ]
+        ],
+        "dialogueSprites": "0b0000000000000000"
     },
     {
         "name": "MonsterNameLucario",
@@ -20176,7 +20176,6 @@
         "overworldPalette": 5,
         "bodySize": 1,
         "movementSpeed": 1,
-        "dialogueSprites": "0b0000000000000000",
         "types": [
             "TYPE_FIGHTING",
             "TYPE_STEEL"
@@ -20185,33 +20184,26 @@
         "abilities": [
             "ABILITY_INNER_FOCUS"
         ],
-        "shadowSize": 1,
+        "shadowSize": 2,
         "regenSpeed": 100,
         "canMove": true,
         "chanceAsleep": 8,
-        "baseHP": 24,
-        "expYield": 120,
+        "baseHP": 20,
+        "expYield": 47,
         "baseAtkSpAtk": [
-            6,
-            7
-        ],
-        "baseDefSpDef": [
-            4,
+            3,
             4
         ],
-        "weight": 540,
-        "size": 120,
+        "baseDefSpDef": [
+            2,
+            2
+        ],
+        "weight": 256,
+        "size": 36,
         "unk30": 10,
         "unk31": 10,
         "unk32": 24,
         "canThrowItems": true,
-        "preEvolution": {
-            "evolveFrom": "MONSTER_RIOLU",
-            "evolveType": "EVOLVE_TYPE_IQ"
-        },
-        "evolutionRequirements": {
-            "mainRequirement": 200
-        },
         "dexInternal": [
             448,
             448
@@ -20220,6 +20212,14 @@
         "alphabetParent": [
             425,
             425
-        ]
+        ],
+        "dialogueSprites": "0b0000000000000000",
+        "preEvolution": {
+            "evolveFrom": "MONSTER_RIOLU",
+            "evolveType": "EVOLVE_TYPE_IQ"
+        },
+        "evolutionRequirements": {
+            "mainRequirement": 200
+        }
     }
 ]

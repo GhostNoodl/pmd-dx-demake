@@ -37,7 +37,7 @@ static const char *outdir;
 static int failures;
 
 // values of earlier `read` commands, by name, for `cmpreads`
-struct readval { char name[64]; long v; };
+struct readval { char name[128]; long v; };
 static struct readval reads[256];
 static int nreads;
 
@@ -47,7 +47,7 @@ static void remember(const char *name, long v)
     for (i = 0; i < nreads; i++)
         if (!strcmp(reads[i].name, name)) { reads[i].v = v; return; }
     if (nreads < 256) {
-        strncpy(reads[nreads].name, name, 63);
+        snprintf(reads[nreads].name, sizeof reads[nreads].name, "%s", name);
         reads[nreads].v = v;
         nreads++;
     }

@@ -1065,13 +1065,6 @@ void GetLvlUpEntry(LevelData* a1, s32 _id, s32 level)
   u8 buffer[12];
   s32 id = SpeciesId(_id);
 
-#ifdef DX_RULES
-  // Rescue Team DX newcomers have no level-up file of their own; they grow like a similar species
-  if (id == MONSTER_RIOLU)
-      id = MONSTER_MACHOP;
-  else if (id == MONSTER_LUCARIO)
-      id = MONSTER_MACHOKE;
-#endif
 
   if (sLevelCurrentPokeId != id)
   {

@@ -52,3 +52,5 @@ build_dxtest.log
 pmd_red_debug.*
 tools/dxtest/harness
 tools/dxtest/local.env
+# downloaded Explorers of Sky data (game data: never commit)
+tools/dxtest/cache/

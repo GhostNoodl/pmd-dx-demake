@@ -1,6 +1,6 @@
 #rom debug
 #save after-first-dungeon
-# Recruit tool: #424 Riolu (DX newcomer) at Lv. 20 joins
+# Recruit tool: #424 Riolu at Lv. 30 joins with Explorers of Sky growth (HP shown)
 mash START sMainMenu 4 != 0 3000
 wait 60
 press UP
@@ -28,8 +28,9 @@ wait 10
 shot 1_species
 press A
 wait 20
-# level 5 -> 20: tens +2 (25), ones -5 (20)
+# level 5 -> 30: tens +3 (35), ones -5 (30)
 press LEFT
+press UP
 press UP
 press UP
 press RIGHT

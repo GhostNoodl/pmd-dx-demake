@@ -177,7 +177,7 @@ ALIGNED(4) static const u8 sRecruitSpeciesPrompt[] = _("Species");
 ALIGNED(4) static const u8 sRecruitLevelPrompt[] = _("Level");
 ALIGNED(4) static const u8 sFmtSpecies[] = _("#%d {COLOR CYAN}%s{RESET}");
 ALIGNED(4) static const u8 sFmtRecruitLevel[] = _("Joins at Lv. %d");
-ALIGNED(4) static const u8 sFmtRecruited[] = _("%s joined at Lv. %d!");
+ALIGNED(4) static const u8 sFmtRecruited[] = _("%s joined at Lv. %d! HP %d");
 ALIGNED(4) static const u8 sFmtNoRoom[] = _("No room for %s");
 
 static void RecruitRange(u32 step, s32 *min, s32 *max, s32 *init)
@@ -219,7 +219,7 @@ static void RecruitApply(void)
 
     CopyMonsterNameToBuffer(name, species);
     if (added != NULL)
-        sprintfStatic((char *)sDxTool->status, (const char *)sFmtRecruited, name, sDxTool->values[1]);
+        sprintfStatic((char *)sDxTool->status, (const char *)sFmtRecruited, name, sDxTool->values[1], added->pokeHP);
     else
         sprintfStatic((char *)sDxTool->status, (const char *)sFmtNoRoom, name);
 }

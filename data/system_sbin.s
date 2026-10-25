@@ -1,10 +1,15 @@
+#include "constants/monster.h"
 	.section .rodata
 
 	.global gSystemFileArchive
 gSystemFileArchive: @ 8300500
 @ replacing .incbin "baserom.gba", 0x00300500, 0x72e40
 .string "pksdir0\0"
+#ifdef DX_RULES
+.4byte 431 + DX_NEW_SPECIES_COUNT @ + lvmp files for the Rescue Team DX newcomers
+#else
 .4byte 431 @ 431 entries (421 level maps)
+#endif
 .4byte DataRootTable
 .string "pksdir0\0"
 
@@ -866,9 +871,20 @@ DataRootTable:
 .4byte gUnknown_83012B8
 .4byte gUnknown_835771C
 .4byte gUnknown_83012B0
+#ifdef DX_RULES
+.4byte gDxLevel420 @ Munchlax: Explorers of Sky growth instead of Red's placeholder
+#else
 .4byte gUnknown_8357968
+#endif
 .4byte gUnknown_83012A8
 .4byte gUnknown_8357968
+#ifdef DX_RULES
+@ the table is searched by name: lvmp424.. sort after lvmp421, before monspara
+.4byte gDxLevelName424
+.4byte gDxLevel424
+.4byte gDxLevelName425
+.4byte gDxLevel425
+#endif
 .4byte gUnknown_830129C
 .4byte gUnknown_8357B88
 .4byte gUnknown_8301290 @ Pointer to wazapara string
@@ -18231,6 +18247,10 @@ gUnknown_8357978:
 .byte 0x5c, 0x19, 0x7f, 0xe8, 0x20, 0x23, 0x6d, 0x7f, 0xdc, 0xe4, 0x2c, 0x7f, 0xd0, 0x70, 0x37, 0x7f, 0xc4, 0x28, 0xad, 0x43, 0x1f, 0xb8, 0x01, 0x2b, 0xdd, 0xe0, 0x4e, 0x7f, 0xf4, 0x98, 0xb6, 0x5a
 .byte 0x7f, 0xe8, 0x50, 0x66, 0x7f, 0xdc, 0x08, 0x72, 0x7f, 0xd0, 0xdb, 0xc0, 0x7d, 0x7f, 0xc4, 0x78, 0x89, 0x7f, 0xb8, 0x30, 0x95, 0x6d, 0x7f, 0xac, 0xe8, 0xa0, 0x7f, 0xa0, 0xa0, 0xac, 0x7f, 0x94
 .byte 0x28, 0x80, 0xc0, 0x7f, 0x88, 0x00, 0x00, 0x00
+
+#ifdef DX_RULES
+#include "monster/dx/level_data_dx.s"
+#endif
 
 @ SIRO Header for Main Pokemon Data
 .global gUnknown_8357B88
