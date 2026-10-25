@@ -547,6 +547,10 @@ s32 SaveRecruitedPokemon(u8 *a1, s32 a2)
         else
             pokemon->level = 0;
 
+#ifdef DX_RULES
+        if (i >= VANILLA_RECRUIT_SLOTS)
+            continue; // saved by DxSaveExtWrite
+#endif
         WritePoke1Bits(&backup, pokemon);
     }
 
@@ -596,7 +600,7 @@ s32 RestoreRecruitedPokemon(u8 *a1, s32 a2)
 
     InitBitReader(&backup, a1, a2);
 
-    for (i = 0; i < NUM_MONSTERS; i++) {
+    for (i = 0; i < VANILLA_RECRUIT_SLOTS; i++) {
         ReadPoke1Bits(&backup, &gRecruitedPokemonRef->pokemon[i]);
     }
 

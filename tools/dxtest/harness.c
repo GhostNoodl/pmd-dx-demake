@@ -12,6 +12,7 @@
 //   waitfor EXPR SIZE OP VALUE MAXFRAMES   run frames until the comparison holds (FAIL on timeout)
 //   mash KEY EXPR SIZE OP VALUE [MAXFRAMES]   tap KEY every 16 frames until the comparison holds
 //   write EXPR SIZE VALUE        poke RAM (test setup only)
+//   cmpreads NAME1 OP NAME2      compare two earlier `read` values (e.g. position changed)
 //   log TEXT                     echo TEXT into the results
 // EXPR: number (0x.. ok) | symbol | symbol+off | *EXPR (dereference a 32-bit pointer) e.g. *gDungeon+0x644
 // KEY: A B SELECT START RIGHT LEFT UP DOWN R L (join with + to press together)
@@ -33,6 +34,31 @@ static unsigned vw, vh;
 static FILE *results;
 static const char *outdir;
 static int failures;
+
+// values of earlier `read` commands, by name, for `cmpreads`
+struct readval { char name[64]; long v; };
+static struct readval reads[256];
+static int nreads;
+
+static void remember(const char *name, long v)
+{
+    int i;
+    for (i = 0; i < nreads; i++)
+        if (!strcmp(reads[i].name, name)) { reads[i].v = v; return; }
+    if (nreads < 256) {
+        strncpy(reads[nreads].name, name, 63);
+        reads[nreads].v = v;
+        nreads++;
+    }
+}
+
+static int recall(const char *name, long *v)
+{
+    int i;
+    for (i = 0; i < nreads; i++)
+        if (!strcmp(reads[i].name, name)) { *v = reads[i].v; return 1; }
+    return 0;
+}
 
 struct sym { char name[96]; unsigned addr; };
 static struct sym *syms;
@@ -241,6 +267,7 @@ int main(int argc, char **argv)
         else if (!strcmp(cmd, "read") && n >= 4) {
             unsigned addr = eval(b), v = rd(addr, atoi(c));
             out("READ %s @%08x = %ld (0x%x)\n", a, addr, sx(v, atoi(c)), v);
+            remember(a, sx(v, atoi(c)));
         }
         else if (!strcmp(cmd, "expect") && n >= 5) {
             int size = atoi(b);
@@ -260,6 +287,13 @@ int main(int argc, char **argv)
             }
             if (!ok) failures++;
             out("%s line %d: waitfor %s %s %ld -> %ld after %d frames\n", ok ? "PASS" : "FAIL", lineno, a, c, want, v, i);
+        }
+        else if (!strcmp(cmd, "cmpreads") && n >= 4) {
+            // cmpreads NAME1 OP NAME2: compare two earlier `read` values
+            long v1, v2;
+            int ok = recall(a, &v1) && recall(c, &v2) && cmp(v1, b, v2);
+            if (!ok) failures++;
+            out("%s line %d: %s %s %s\n", ok ? "PASS" : "FAIL", lineno, a, b, c);
         }
         else if (!strcmp(cmd, "reset")) {
             // reset: power-cycle; the cartridge save survives

@@ -16,6 +16,7 @@
 #include "random.h"
 #include "rescue_scenario.h"
 #include "save.h"
+#include "dx_save.h"
 #include "string_format.h"
 #include "training_maze.h"
 
@@ -255,6 +256,10 @@ u32 ReadSaveFromPak(u32 *a)
         if (r1 != playerSave->savedMailInfo) {
             saveStatus = 3;
         }
+#ifdef DX_RULES
+        if (gUnknown_203B184 == NULL)
+            DxSaveExtRead();
+#endif
     }
     MemoryFree(playerSave);
     return saveStatus;
@@ -356,6 +361,10 @@ u32 WriteSavetoPak(s32 *param_1, u32 param_2)
   saveStatus1 = WriteSaveSector(param_1, (u8 *)playerSave, sizeof(struct UnkStruct_sub_8011DAC));
   saveStatus2 = WriteSaveSector(param_1, (u8 *)playerSave, sizeof(struct UnkStruct_sub_8011DAC));
   MemoryFree(playerSave);
+#ifdef DX_RULES
+  if (gUnknown_203B184 == NULL)
+      DxSaveExtWrite();
+#endif
 
   if (saveStatus1 != SAVE_COMPLETED)
     return saveStatus1;

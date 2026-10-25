@@ -18,6 +18,8 @@ mash A gDungeon 4 != 0 1800
 wait 600
 shot 1_before
 read money0 *gTeamInventoryRef+0x260 4
+read x0 **gDungeon+0x1398C+0x4 2
+read y0 **gDungeon+0x1398C+0x6 2
 press L 4 20
 wait 400
 shot 2_auto_400
@@ -26,4 +28,6 @@ shot 3_auto_1000
 wait 1200
 shot 4_auto_2200
 read money1 *gTeamInventoryRef+0x260 4
-expect *gTeamInventoryRef+0x260 4 > 82
+read x1 **gDungeon+0x1398C+0x4 2
+read y1 **gDungeon+0x1398C+0x6 2
+cmpreads x0 != x1

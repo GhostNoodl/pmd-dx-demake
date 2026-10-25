@@ -427,7 +427,17 @@
 #define MONSTER_STATUE 422
 #define MONSTER_RAYQUAZA_CUTSCENE 423
 
+// NUM_MONSTERS is the number of recruit slots (it happens to equal Jirachi's id in Red)
+#define VANILLA_RECRUIT_SLOTS MONSTER_JIRACHI
+#ifdef DX_RULES
+// Rescue Team DX: overflow slots any camp can use once its own slots are full (camps
+// grow with rank in DX), saved in the DX save block (dx_save.c)
+#define DX_EXTRA_RECRUIT_SLOTS 40
+#define NUM_MONSTERS (VANILLA_RECRUIT_SLOTS + DX_EXTRA_RECRUIT_SLOTS)
+#define DX_ANY_FRIEND_AREA 0xFE
+#else
 #define NUM_MONSTERS MONSTER_JIRACHI
+#endif
 #define MONSTER_MAX (MONSTER_RAYQUAZA_CUTSCENE + 1)
 
 #define MONSTER_FLAGS_U32STORAGE 14

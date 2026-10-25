@@ -37,6 +37,13 @@ u8 sub_80923D4(s32 target)
     s32 i;
     s32 sum = 0;
 
+#ifdef DX_RULES
+    if (target >= VANILLA_RECRUIT_SLOTS) {
+        Pokemon *mon = &gRecruitedPokemonRef->pokemon[target];
+        return PokemonExists(mon) ? GetFriendArea(mon->speciesNum) : DX_ANY_FRIEND_AREA;
+    }
+#endif
+
     for (i = 0; i < FRIEND_AREA_COUNT; i++) {
         sum += gFriendAreaSettings[i].num_pokemon;
         if (sum > target)

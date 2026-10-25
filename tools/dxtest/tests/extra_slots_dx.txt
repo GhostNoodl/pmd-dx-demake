@@ -1,0 +1,103 @@
+#rom debug
+#save after-first-dungeon
+# DX extra recruit slots: recruit 15 Pikachu, then Storage (1 of every species 1-300 + save)
+# overflows Pikachu's camp into slots 413+; after a power cycle they come back from the
+# DX save block. Slot n is at *gRecruitedPokemonRef + n*88 (+0 flags, +8 species).
+mash START sMainMenu 4 != 0 3000
+wait 60
+expect *gRecruitedPokemonRef+36344 2 == 0
+press UP
+press A
+wait 30
+press DOWN
+press DOWN
+press A
+wait 30
+press LEFT
+press UP
+press UP
+press RIGHT
+press UP
+press UP
+press UP
+press UP
+wait 10
+press A
+wait 20
+press A
+wait 30
+press A
+wait 20
+press A
+wait 30
+press A
+wait 20
+press A
+wait 30
+press A
+wait 20
+press A
+wait 30
+press A
+wait 20
+press A
+wait 30
+press A
+wait 20
+press A
+wait 30
+press A
+wait 20
+press A
+wait 30
+press A
+wait 20
+press A
+wait 30
+press A
+wait 20
+press A
+wait 30
+press A
+wait 20
+press A
+wait 30
+press A
+wait 20
+press A
+wait 30
+press A
+wait 20
+press A
+wait 30
+press A
+wait 20
+press A
+wait 30
+press A
+wait 20
+press A
+wait 30
+press A
+wait 20
+press A
+wait 30
+press B
+wait 30
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press A
+wait 600
+read slot413_flags *gRecruitedPokemonRef+36344 2
+read slot413_species *gRecruitedPokemonRef+36352 2
+expect *gRecruitedPokemonRef+36344 2 & 1
+reset
+mash START sMainMenu 4 != 0 3000
+wait 60
+read slot413_flags_after *gRecruitedPokemonRef+36344 2
+read slot413_species_after *gRecruitedPokemonRef+36352 2
+expect *gRecruitedPokemonRef+36344 2 & 1
+expect *gRecruitedPokemonRef+36352 2 > 0

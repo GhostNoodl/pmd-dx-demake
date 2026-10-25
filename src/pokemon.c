@@ -242,6 +242,10 @@ Pokemon *TryAddPokemonToRecruited(Pokemon *pokemon)
     for (i = 0; i < NUM_MONSTERS; i++) {
         if (!PokemonExists(&gRecruitedPokemonRef->pokemon[i])) {
             u8 speciesFriendArea = sub_80923D4(i);
+#ifdef DX_RULES
+            if (speciesFriendArea == DX_ANY_FRIEND_AREA)
+                speciesFriendArea = friendArea;
+#endif
             if (speciesFriendArea == friendArea) {
                 gRecruitedPokemonRef->pokemon[i] = *pokemon;
                 gRecruitedPokemonRef->pokemon[i].flags &= ~(POKEMON_FLAG_x4000);
@@ -265,6 +269,10 @@ Pokemon *sub_808D278(s32 species)
     for (i = 0; i < NUM_MONSTERS; i++) {
         if (!PokemonExists(&gRecruitedPokemonRef->pokemon[i])) {
             u8 speciesFriendArea = sub_80923D4(i);
+#ifdef DX_RULES
+            if (speciesFriendArea == DX_ANY_FRIEND_AREA)
+                speciesFriendArea = friendArea;
+#endif
             if (speciesFriendArea == friendArea) {
                 return &gRecruitedPokemonRef->pokemon[i];
             }
