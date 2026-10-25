@@ -1,4 +1,7 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rules.h"
+#endif
 #include "globaldata.h"
 #include "constants/direction.h"
 #include "bg_control.h"
@@ -65,7 +68,11 @@ void FriendAreasMap_InitGfx(void)
     gFriendAreasMapPtr->unk0[4] = OpenFileAndGetFileDataPtr(gUnknown_80D408C[2], &gTitleMenuFileArchive);
     gFriendAreasMapPtr->unk0[1] = OpenFileAndGetFileDataPtr("palet", &gMonsterFileArchive);
     gFriendAreasMapPtr->unk0[0] = OpenFileAndGetFileDataPtr(gUnknown_80D408C[3], &gTitleMenuFileArchive);
+#ifdef DX_RULES
+    gFriendAreasMapPtr->unk4DD0 = DxPokemonPalette(pokeStruct);
+#else
     gFriendAreasMapPtr->unk4DD0 = GetPokemonOverworldPalette(pokeStruct->speciesNum, FALSE);
+#endif
 
     sub_8005610(gFriendAreasMapPtr->unk0[2], 0x40, 0x1F, 0);
 

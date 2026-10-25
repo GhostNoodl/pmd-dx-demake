@@ -2,6 +2,7 @@
 #define GUARD_DX_RULES_H
 
 #include "structs/dungeon_entity.h"
+#include "structs/str_pokemon.h"
 
 bool8 DxActionPausesRegen(u16 action);
 s32 DxDoubleMoveChance(Entity *attacker, Entity *target);
@@ -46,6 +47,7 @@ u8 DxPostgameBossKind(u8 monsterBehavior);
 void DxBriefingSummary(u8 dungeonIndex, u8 *buffer);
 struct DxShiny { s16 species; u8 palette; };
 s32 DxShinyPalette(s32 species);
+u8 DxPokemonPalette(Pokemon *mon);
 void DxMysteryHouseSpawned(Entity *mon);
 extern bool8 gDxForceShiny;
 
