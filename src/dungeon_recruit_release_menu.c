@@ -36,6 +36,12 @@
 #include "dungeon_submenu.h"
 #include "dungeon_engine.h"
 
+#ifdef DX_RULES
+#define RELEASE_TABS 3
+#else
+#define RELEASE_TABS 4
+#endif
+
 static EWRAM_DATA WindowHeader sReleaseMenuWinHeader = {0};
 static EWRAM_DATA s32 gUnknown_202F30C = 0;
 static EWRAM_DATA s32 gUnknown_202F310 = 0;
@@ -402,15 +408,19 @@ static void ShowPokemonSummary(Pokemon *a0)
 
     while (TRUE) {
         bool32 loopBreak = FALSE;
-        s32 spF8[4] = { SUB_WINDOW_STATS, SUB_WINDOW_FEATURES, SUB_WINDOW_IQ, SUB_WINDOW_INFO };
+#ifdef DX_RULES
+        s32 spF8[RELEASE_TABS] = { SUB_WINDOW_STATS, SUB_WINDOW_FEATURES, SUB_WINDOW_INFO }; // DX has no IQ
+#else
+        s32 spF8[RELEASE_TABS] = { SUB_WINDOW_STATS, SUB_WINDOW_FEATURES, SUB_WINDOW_IQ, SUB_WINDOW_INFO };
+#endif
 
-        sReleaseMenuWinHeader.count = 4;
+        sReleaseMenuWinHeader.count = RELEASE_TABS;
         sReleaseMenuWinHeader.currId = r7;
         sReleaseMenuWinHeader.width = 10;
         sReleaseMenuWinHeader.f3 = 0;
 
         gDungeonMenu.currPage = r7;
-        gDungeonMenu.pagesCount = 4;
+        gDungeonMenu.pagesCount = RELEASE_TABS;
         gDungeonMenu.currPageEntries = 0;
         gDungeonMenu.menuIndex = 0;
         gDungeonMenu.entriesPerPage = 0;
@@ -444,7 +454,7 @@ static void ShowPokemonSummary(Pokemon *a0)
             DungeonRunFrameActions(0x1C);
             if ((gRealInputs.pressed & DPAD_RIGHT) || gDungeonMenu.touchScreen.dpad_right) {
                 PlayDungeonCursorSE(0);
-                if (++r7 == 4) {
+                if (++r7 == RELEASE_TABS) {
                     r7 = 0;
                 }
                 break;
@@ -452,7 +462,7 @@ static void ShowPokemonSummary(Pokemon *a0)
             if ((gRealInputs.pressed & DPAD_LEFT) || gDungeonMenu.touchScreen.dpad_left) {
                 PlayDungeonCursorSE(0);
                 if (--r7 == -1) {
-                    r7 = 3;
+                    r7 = RELEASE_TABS - 1;
                 }
                 break;
             }

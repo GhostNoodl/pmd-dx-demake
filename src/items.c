@@ -890,7 +890,11 @@ void GetGummiItemStatBoost(Pokemon* pokemon, u8 id, bool8 checkBoostFlags, Gummi
     value1 = gTypeGummiIQBoost[pokemon_type_1][gummi_index];
     diff  = pokemon->IQ;
 
+#ifdef DX_RULES
+    (void)value0; (void)value1; // DX: Gummis no longer raise IQ
+#else
     pokemon->IQ += value0 + value1;
+#endif
     diff = pokemon->IQ - diff;
     if (pokemon->IQ <= 0) {
       pokemon->IQ = 1;

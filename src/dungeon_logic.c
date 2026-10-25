@@ -1359,6 +1359,18 @@ void LoadIQSkills(Entity *pokemon)
     pokemonInfo->IQSkillFlags.flags[0] = 0;
     pokemonInfo->IQSkillFlags.flags[1] = 0;
     pokemonInfo->IQSkillFlags.flags[2] = 0;
+#ifdef DX_RULES
+    // Rescue Team DX has no IQ: every team member gets the skills that steer ally AI (what a
+    // mid-game Red team has switched on), none of the combat or movement perks...
+    SetIQSkill(&pokemonInfo->IQSkillFlags, IQ_ITEM_CATCHER);
+    SetIQSkill(&pokemonInfo->IQSkillFlags, IQ_COURSE_CHECKER);
+    SetIQSkill(&pokemonInfo->IQSkillFlags, IQ_PP_CHECKER);
+    SetIQSkill(&pokemonInfo->IQSkillFlags, IQ_NONTRAITOR);
+    SetIQSkill(&pokemonInfo->IQSkillFlags, IQ_STATUS_CHECKER);
+    SetIQSkill(&pokemonInfo->IQSkillFlags, IQ_TRAP_AVOIDER);
+    SetIQSkill(&pokemonInfo->IQSkillFlags, IQ_ITEM_MASTER);
+    // ...on top of what its (now hidden, frozen) IQ already gave it in Red
+#endif
     for(IQSkill = IQ_TYPE_ADVANTAGE_MASTER; IQSkill < NUM_IQ_SKILLS; IQSkill++)
     {
       if (HasIQForSkill(pokemonInfo->IQ,IQSkill) &&

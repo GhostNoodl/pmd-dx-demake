@@ -109,6 +109,9 @@ void ShowPokemonSummaryWindow(s32 which, s32 currSubWindowId, MonSummaryInfo *mo
             PrintFormattedStringOnWindow(4, y, gUnknown_810DE6C, windowId, '\0');
 
             y += 12;
+#ifdef DX_RULES
+            (void)iVar8; // DX has no IQ: Tactics takes the IQ line
+#else
             gFormatArgs[0] = monInfo->IQ;
             //iVar8 = clamp(monInfo->IQ / 10, 0, 99);
             iVar8 = monInfo->IQ / 10;
@@ -120,6 +123,7 @@ void ShowPokemonSummaryWindow(s32 which, s32 currSubWindowId, MonSummaryInfo *mo
             PrintFormattedStringOnWindow(4, y, gUnknown_810DE80, windowId, '\0');
 
             y += 10;
+#endif
             if (!monInfo->isTeamLeader) {
                 CopyTacticsNameToBuffer(gFormatBuffer_Monsters[0], monInfo->tactic);
                 PrintFormattedStringOnWindow(4, y, gUnknown_810DE98, windowId, '\0');
