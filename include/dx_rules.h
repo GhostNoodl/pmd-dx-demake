@@ -8,6 +8,7 @@ s32 DxDoubleMoveChance(Entity *attacker, Entity *target);
 
 struct DxMysteryHome { u8 dungeon; s16 species; };
 extern s16 gDxMysteryHouseSpecies;
+extern bool8 gDxMysteryHouseFloor;
 extern s16 gDxMysteryHouseSpawned;
 extern bool8 gDxForceMysteryHouse;
 bool8 DxRollMysteryHouse(void);

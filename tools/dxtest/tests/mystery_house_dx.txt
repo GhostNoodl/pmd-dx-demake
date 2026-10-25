@@ -29,6 +29,8 @@ read pending gDxMysteryHouseSpecies 2
 hold RIGHT 30
 wait 600
 shot 4_house
+read floorflag gDxMysteryHouseFloor 1
+expect gDxMysteryHouseFloor 1 == 1
 read spawned gDxMysteryHouseSpawned 2
 expect gDxMysteryHouseSpawned 2 == 424
 read wild0 ***gDungeon+@gDxOffWildPokemon!0+@gDxOffEntityInfo+@gDxOffInfoId 2
