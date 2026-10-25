@@ -1,4 +1,7 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rules.h"
+#endif
 #include "globaldata.h"
 #include "dungeon_move_util.h"
 #include "constants/ability.h"
@@ -1382,6 +1385,9 @@ void sub_8057588(Entity * pokemon, u8 param_2)
                                 move->PP--;
                             }
                         }
+#ifdef DX_RULES
+                        DxTryMoveGrowth(entityInfo, move);
+#endif
                     }
                 }
             }

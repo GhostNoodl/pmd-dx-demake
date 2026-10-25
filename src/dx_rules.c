@@ -9,6 +9,7 @@
 #include "dungeon_util.h"
 #include "dungeon_floor_spawns.h"
 #include "pokemon_3.h"
+#include "moves.h"
 #include "dungeon_random.h"
 #include "structs/str_dungeon.h"
 
@@ -56,6 +57,21 @@ s32 DxDoubleMoveChance(Entity *attacker, Entity *target)
         return 0;
     chance = DX_DOUBLE_MOVE_BASE_CHANCE + (lead - DX_DOUBLE_MOVE_SPEED_GAP) / DX_DOUBLE_MOVE_SPEED_PER_PERCENT;
     return chance > DX_DOUBLE_MOVE_MAX_CHANCE ? DX_DOUBLE_MOVE_MAX_CHANCE : chance;
+}
+
+// --- Move Growth ---
+// Rescue Team DX: moves grow stronger with use (see dx_tuning.h)
+void DxTryMoveGrowth(EntityInfo *user, Move *move)
+{
+    s32 chance;
+
+    if (user->isNotTeamMember || GetMoveBasePower(move) == 0 || move->ginseng >= GetMoveMaxUpgradeLevel(move))
+        return;
+    chance = DX_MOVE_GROWTH_BASE_CHANCE - DX_MOVE_GROWTH_FALLOFF * move->ginseng;
+    if (chance < DX_MOVE_GROWTH_MIN_CHANCE)
+        chance = DX_MOVE_GROWTH_MIN_CHANCE;
+    if (DungeonRandInt(100) < chance)
+        move->ginseng++;
 }
 
 // --- Mystery Houses ---

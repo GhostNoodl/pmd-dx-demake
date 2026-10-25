@@ -31,4 +31,11 @@
 // chance to force a Monster House with that newcomer inside, at the floor's top spawn level
 #define DX_MYSTERY_HOUSE_CHANCE 8
 
+// Move Growth: each time a team member uses a damaging move it may grow one level (+1 power,
+// shown as "Tackle+1", the same field as Red's Ginseng boost, up to Red's per-move cap).
+// Chance per use = BASE - FALLOFF * current level, never below MIN (percent)
+#define DX_MOVE_GROWTH_BASE_CHANCE 20
+#define DX_MOVE_GROWTH_FALLOFF 3
+#define DX_MOVE_GROWTH_MIN_CHANCE 2
+
 #endif // GUARD_DX_TUNING_H
