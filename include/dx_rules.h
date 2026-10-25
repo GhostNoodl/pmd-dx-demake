@@ -52,6 +52,10 @@ u8 DxPokemonPalette(Pokemon *mon);
 extern u16 gDxAdventureTurns;
 void DxMarkVisitor(s32 teamSlot, DungeonMon *dmon);
 void DxPayVisitors(u8 friendArea);
+// camp Exp. (DX): Pokemon resting in camps grow while the team is out
+extern s32 gDxAdventureExp;
+void DxGivePokemonExp(Pokemon *mon, s32 exp);
+void DxGiveCampExp(void);
 void DxMysteryHouseSpawned(Entity *mon);
 extern bool8 gDxForceShiny;
 

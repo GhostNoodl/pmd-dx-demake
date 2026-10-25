@@ -1,5 +1,8 @@
 #include "global.h"
 #ifdef DX_RULES
+#include "dx_rules.h"
+#endif
+#ifdef DX_RULES
 #include "dx_rare_quality.h"
 #include "dx_tuning.h"
 #endif
@@ -59,6 +62,8 @@ void AddExpPoints(Entity *pokemon, Entity *target, s32 exp)
 #ifdef DX_RULES
   if (!info->isNotTeamMember && DxTeamHasQuality(RQ_XP_BOOST))
     exp = exp * DX_RQ_XP_BOOST_PERCENT / 100;
+  if (info->isTeamLeader && exp > 0)
+    gDxAdventureExp += exp; // camp Exp. (dx_rules.c)
 #endif
   if (info->level != 100) {
     if (!IsExperienceLocked(info->joinedAt.id)) {

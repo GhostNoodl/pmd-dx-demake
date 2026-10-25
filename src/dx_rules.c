@@ -443,3 +443,51 @@ void DxPayVisitors(u8 friendArea)
         dmon->dxFlags &= ~DX_FLAG_VISITOR;
     }
 }
+
+// --- camp Exp. ---
+#define DX_MAX_LEVEL 100
+// Exp. the leader earned this adventure (AddExpPoints)
+EWRAM_DATA s32 gDxAdventureExp = 0;
+
+static u8 DxStat(s32 v)
+{
+    return v < 1 ? 1 : (v > 255 ? 255 : v);
+}
+
+// Exp. for a Pokemon outside a dungeon, levelling it up with Red's per-level stat gains
+void DxGivePokemonExp(Pokemon *mon, s32 exp)
+{
+    LevelData data;
+
+    if (exp <= 0)
+        return;
+    mon->currExp += exp;
+    while (mon->level < DX_MAX_LEVEL) {
+        GetLvlUpEntry(&data, mon->speciesNum, mon->level + 1);
+        if (mon->currExp < data.expRequired)
+            break;
+        mon->level++;
+        mon->pokeHP = mon->pokeHP + data.gainHP > 999 ? 999 : mon->pokeHP + data.gainHP;
+        mon->offense.att[0] = DxStat(mon->offense.att[0] + data.gainAtt[0]);
+        mon->offense.att[1] = DxStat(mon->offense.att[1] + data.gainAtt[1]);
+        mon->offense.def[0] = DxStat(mon->offense.def[0] + data.gainDef[0]);
+        mon->offense.def[1] = DxStat(mon->offense.def[1] + data.gainDef[1]);
+    }
+    if (mon->level >= DX_MAX_LEVEL) {
+        GetLvlUpEntry(&data, mon->speciesNum, DX_MAX_LEVEL);
+        mon->currExp = data.expRequired;
+    }
+}
+
+// the adventure went well: every Pokemon resting in a camp (not on the team) gets a share
+void DxGiveCampExp(void)
+{
+    s32 i, share = gDxAdventureExp * DX_CAMP_EXP_PERCENT / 100;
+
+    for (i = 0; i < NUM_MONSTERS; i++) {
+        Pokemon *mon = &gRecruitedPokemonRef->pokemon[i];
+        if (PokemonExists(mon) && !(mon->flags & POKEMON_FLAG_ON_TEAM))
+            DxGivePokemonExp(mon, share);
+    }
+    gDxAdventureExp = 0;
+}
