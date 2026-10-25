@@ -3,3 +3,4 @@
 trap_data.inc
 dungeon_data.inc
 dungeon_item_data.inc
+dx/dungeon_item_data.inc

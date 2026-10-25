@@ -1,0 +1,98 @@
+#rom debug
+#save after-first-dungeon
+# DX evolution: Eevee + two Evo Crystals at the debug Evolve tool (Luminous Cave) -> pick a form
+mash START sMainMenu 4 != 0 3000
+wait 60
+press UP
+press A
+wait 30
+# Storage is the 6th debug menu entry
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press A
+wait 600
+# leader (slot 42) becomes Eevee and goes alone; two Evo Crystals in the toolbox
+write *gRecruitedPokemonRef+3704 2 133
+write *gRecruitedPokemonRef+4752 1 1
+write *gTeamInventoryRef+0 4 0x00ED0001
+write *gTeamInventoryRef+4 4 0x00ED0001
+press A
+wait 30
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+wait 10
+shot 1_debug_evolve
+press A
+wait 120
+press A
+wait 120
+press A
+wait 120
+press A
+wait 120
+press A
+wait 120
+shot 2_evolve_menu
+press A
+wait 120
+shot 3_give_item_q
+press DOWN
+wait 20
+press A
+wait 90
+shot 4_item_list
+press A
+wait 60
+shot 5_item_sub
+press A
+wait 90
+shot 6_another_q
+press A
+wait 90
+shot 7_list2
+press DOWN
+wait 20
+press A
+wait 60
+shot 8_sub2
+press A
+wait 120
+shot 9_lets_begin
+press A
+wait 120
+shot 10_form_menu
+# Sylveon is the 8th form
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+wait 10
+shot 11_pick_sylveon
+press A
+mash A *gRecruitedPokemonRef+36352 2 == 454 2000
+wait 120
+shot 12_evolved
+# the evolved form moves to a slot of its own camp (here the first overflow slot) and stays leader
+read species *gRecruitedPokemonRef+36352 2
+expect *gRecruitedPokemonRef+36352 2 == 454
+expect *gRecruitedPokemonRef+36346 1 == 1
+expect *gRecruitedPokemonRef+3696 1 !& 1
+# both Evo Crystals were used up (the Rawst Berry moved up to slot 0)
+read slot0 *gTeamInventoryRef+2 1
+read slot1 *gTeamInventoryRef+6 1
+expect *gTeamInventoryRef+2 1 != 237
+expect *gTeamInventoryRef+6 1 != 237
+# then back to the debug menu (screen 16)
+mash A *sMainMenu+4 4 == 16 3000
+wait 60
+shot 13_back

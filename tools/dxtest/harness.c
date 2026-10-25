@@ -18,6 +18,7 @@
 //   mash? ...                    like mash, but running out of frames is not a failure
 //   dump NAME                    write EWRAM+IWRAM to NAME.bin (diff two builds' RAM)
 //   watch EXPR                   log PC/LR and stack return addresses of every write to EXPR
+//   break SYM [r1=0]             log callers each time SYM runs (r1=0: only when r1 is 0, e.g. a divisor)
 //   log TEXT                     echo TEXT into the results
 // EXPR: number (0x.. ok) | symbol | symbol+off | *EXPR (dereference a 32-bit pointer) e.g. *gDungeon+0x644
 //       | @symbol (the u32 stored at symbol, e.g. the debug ROM's gDxOff* struct offsets), @symbol!N adds N
@@ -211,9 +212,22 @@ static void poke(unsigned addr, int size, unsigned v)
 static struct mDebugger dbg;
 static int watching, watchHits;
 
+static int breakZeroR1, breakHits;
+static void log_stack(void);
+
 static void dbg_entered(struct mDebugger *d, enum mDebuggerEntryReason reason, struct mDebuggerEntryInfo *info)
 {
     struct ARMCore *cpu = core->cpu;
+    if (reason == DEBUGGER_ENTER_BREAKPOINT) {
+        // break SYM [r1=0]: log where it was called from (optionally only when r1, e.g. a divisor, is 0)
+        if ((!breakZeroR1 || cpu->gprs[1] == 0) && breakHits++ < 8) {
+            out("BREAK pc=%08x lr=%08x r0=%08x r1=%08x frame=%u\n", cpu->gprs[15], cpu->gprs[14], cpu->gprs[0],
+                cpu->gprs[1], core->frameCounter(core));
+            log_stack();
+        }
+        d->state = DEBUGGER_RUNNING;
+        return;
+    }
     if (reason == DEBUGGER_ENTER_WATCHPOINT && info && watchHits++ < 40)
         out("WATCH @%08x %08x -> %08x pc=%08x lr=%08x frame=%u\n", info->address, info->type.wp.oldValue,
             info->type.wp.newValue, cpu->gprs[15], cpu->gprs[14], core->frameCounter(core));
@@ -226,6 +240,37 @@ static void dbg_entered(struct mDebugger *d, enum mDebuggerEntryReason reason, s
         }
     }
     d->state = DEBUGGER_RUNNING;
+}
+
+static const char *sym_of(unsigned a, unsigned *base)
+{
+    const char *best = NULL;
+    unsigned bestAddr = 0;
+    int j;
+    for (j = 0; j < nsyms; j++)
+        if (syms[j].addr <= a && syms[j].addr > bestAddr && (syms[j].addr >> 24) == (a >> 24)) {
+            bestAddr = syms[j].addr;
+            best = syms[j].name;
+        }
+    *base = bestAddr;
+    return best;
+}
+
+static void log_stack(void)
+{
+    struct ARMCore *cpu = core->cpu;
+    unsigned base, k;
+    const char *name = sym_of(cpu->gprs[14], &base);
+    if (name)
+        out("  lr: %s+0x%x\n", name, cpu->gprs[14] - base);
+    for (k = 0; k < 64; k++) {
+        unsigned w = core->busRead32(core, cpu->gprs[13] + 4 * k);
+        if ((w >> 24) != 0x08 || !(w & 1))
+            continue;
+        name = sym_of(w, &base);
+        if (name)
+            out("  stack+%u: %s+0x%x\n", 4 * k, name, w - base);
+    }
 }
 
 static void dbg_paused(struct mDebugger *d)
@@ -383,6 +428,22 @@ int main(int argc, char **argv)
                     }
                 out("REG %s=%08x %s+0x%x\n", names[k], r[k], best, r[k] - bestAddr);
             }
+            // likely return addresses on the stack (callers)
+            for (k = 0; k < 96; k++) {
+                unsigned w = core->busRead32(core, r[2] + 4 * k);
+                const char *best = NULL;
+                unsigned bestAddr = 0;
+                int j;
+                if ((w >> 24) != 0x08 || !(w & 1))
+                    continue;
+                for (j = 0; j < nsyms; j++)
+                    if (syms[j].addr <= w && syms[j].addr > bestAddr && (syms[j].addr >> 24) == 0x08) {
+                        bestAddr = syms[j].addr;
+                        best = syms[j].name;
+                    }
+                if (best)
+                    out("STACK +%d: %08x %s+0x%x\n", 4 * k, w, best, w - bestAddr);
+            }
         }
         else if (!strcmp(cmd, "write") && n >= 4) {
             // write EXPR SIZE VALUE: poke RAM (test setup only)
@@ -410,6 +471,24 @@ int main(int argc, char **argv)
             for (addr = 0x03000000; f && addr < 0x03008000; addr++) fputc(core->busRead8(core, addr), f);
             if (f) fclose(f);
             out("DUMP %s\n", path);
+        }
+        else if (!strcmp(cmd, "break") && n >= 2) {
+            struct mBreakpoint bp = { 0 };
+            if (!watching) {
+                memset(&dbg, 0, sizeof dbg);
+                dbg.type = DEBUGGER_CUSTOM;
+                dbg.entered = dbg_entered;
+                dbg.paused = dbg_paused;
+                mDebuggerAttach(&dbg, core);
+                dbg.state = DEBUGGER_RUNNING;
+                watching = 1;
+            }
+            bp.address = eval(a) & ~1u;
+            bp.segment = -1;
+            bp.type = BREAKPOINT_HARDWARE;
+            breakZeroR1 = (n >= 3 && !strcmp(b, "r1=0"));
+            dbg.platform->setBreakpoint(dbg.platform, &bp);
+            out("BREAKPOINT %s @%08x%s\n", a, bp.address, breakZeroR1 ? " when r1=0" : "");
         }
         else if (!strcmp(cmd, "watch") && n >= 2) {
             struct mWatchpoint wp = { 0 };

@@ -12,6 +12,9 @@ wait 30
 shot 1_pick_dungeon
 press A
 wait 30
+# 2F: on 1F a wild Pokemon starts next to the leader, and auto-mode rightly refuses to move
+press UP
+wait 10
 shot 2_pick_floor
 press A
 mash A gDungeon 4 != 0 1800

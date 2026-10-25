@@ -1,5 +1,11 @@
 @ Start of Items Found (0x84c5128)
+#ifdef DX_RULES
+#include "dx/dungeon_item_data.inc"
+@ dx: the DX tables can have an odd number of halfwords; what follows holds pointers
+.align 2, 0
+#else
 #include "dungeon_item_data.inc"
+#endif
 
 .global DungeonItemsFoundTable
 DungeonItemsFoundTable:

@@ -98,6 +98,10 @@ HOMES = {
 # Red relatives that can't be recruited (-999 etc.) give their evolutions this rate instead (5%)
 FALLBACK_RECRUIT_RATE = 50
 
+# DX evolves with Evo Crystals (Red's unused G Machine 6, gen_dx_items.py); Eevee's forms take two
+EVO_CRYSTAL = "ITEM_G_MACHINE_6"
+EVO_REQ_TWO_CRYSTALS = 14  # additionalRequirement handled in pokemon_evolution.c
+
 # Munchlax already exists in Red (#420) with placeholder data
 MUNCHLAX = dict(dex=446, ident="Munchlax", camp="SNORLAX", tms="Snorlax", recruit=50)
 
@@ -220,6 +224,12 @@ def main():
             evolves_from = s["evolves_from"]
             entry["preEvolution"] = {"evolveFrom": f"MONSTER_{evolves_from}", "evolveType": s["evo"][0]}
             entry["evolutionRequirements"] = {"mainRequirement": s["evo"][1]}
+            if s["evo"][0] == "EVOLVE_TYPE_LEVEL" or evolves_from == "EEVEE":
+                # stone / trade / special evolutions: an Evo Crystal, as in DX (Eevee forms take two)
+                entry["preEvolution"]["evolveType"] = "EVOLVE_TYPE_ITEM"
+                entry["evolutionRequirements"] = {"mainRequirement": EVO_CRYSTAL}
+                if evolves_from == "EEVEE":
+                    entry["evolutionRequirements"]["additionalRequirement"] = EVO_REQ_TWO_CRYSTALS
         if s.get("baby_of"):
             adult = red_entry(s["baby_of"])
             adult["preEvolution"] = {"evolveFrom": f"MONSTER_{s['ident'].upper()}", "evolveType": s["evo"][0]}
@@ -233,6 +243,20 @@ def main():
         log.append(f"{display} #{s['id']}: Explorers #{s.get('eos_dex', s['dex'])}, {entry['types']}, {entry['abilities']}, "
                    f"HP {e['base_hp']} {e['atk']}/{e['spatk']}/{e['def']}/{e['spdef']}, body {e['body_size']}, "
                    f"palette {pal}, camp of {relative(s)}; moves not in Red: {dropped}" + (f"; {s['ability_note']}" if s.get("ability_note") else ""))
+
+    # DX: Red's item, trade and ribbon evolutions all use Evo Crystals (Eevee's forms take two)
+    for e in red[1:424]:
+        pre, req = e.get("preEvolution"), e.get("evolutionRequirements") or {}
+        if not pre or not pre.get("evolveType"):
+            continue
+        extra = req.get("additionalRequirement", 0)
+        if pre["evolveType"] in ("EVOLVE_TYPE_ITEM", "EVOLVE_TYPE_LINK_CABLE") or extra in (8, 9, 10):
+            pre["evolveType"] = "EVOLVE_TYPE_ITEM"
+            e["evolutionRequirements"] = {"mainRequirement": EVO_CRYSTAL}
+            if pre["evolveFrom"] == "MONSTER_EEVEE":
+                e["evolutionRequirements"]["additionalRequirement"] = EVO_REQ_TWO_CRYSTALS
+            log.append(f"{e['name'][11:]}: evolves from {pre['evolveFrom'][8:].title()} with "
+                       + ("two Evo Crystals" if pre["evolveFrom"] == "MONSTER_EEVEE" else "an Evo Crystal"))
 
     # --- write everything ---
     n = len(SPECIES)

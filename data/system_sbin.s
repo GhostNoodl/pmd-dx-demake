@@ -2765,10 +2765,17 @@ gUnknown_8306570:
 @ Address 0x30cc28
 .global gUnknown_830CC28
 gUnknown_830CC28:
+#ifdef DX_RULES
+#include "item/dx/item_data.inc"
+#else
 #include "item/item_data.inc"
+#endif
 
 @ Address 0x30ea28
 #include "item/item_names.s"
+#ifdef DX_RULES
+#include "item/dx/item_names_dx.s"
+#endif
 .global gUnknown_830F66C
 gUnknown_830F66C:
 .string "SIRO"
