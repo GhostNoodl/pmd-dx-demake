@@ -99,6 +99,11 @@ u32 UpdateDebugMenu(void)
             sub_803A3BC();
             nextMenu = MENU_MAIN_SCREEN;
             break;
+#ifdef DX_DEBUG
+        case 7:
+            nextMenu = MENU_DEBUG_SCENARIOS;
+            break;
+#endif
         case MENU_DEBUG_MENU_H_OPEN:
             for (i = 0; i < AA_MAX; i++)
                 SetAdventureAchievement(i);

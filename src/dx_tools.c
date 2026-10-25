@@ -35,6 +35,7 @@ typedef struct DxToolWork
     s16 list[NUM_MONSTERS];
     u8 status[48];                  // result of the last apply, shown under the title
     bool8 shopOpen;                 // SELECT: Wigglytuff's Friend Area shop, as in town
+    u32 exitTo;                     // set by an apply that leaves the tool (a scenario's warp)
     unkStructFor8013AA0 input;
     WindowTemplates windows;
 } DxToolWork;
@@ -336,11 +337,322 @@ static void StoryApply(void)
 
 // ---------------------------------------------------------------------------
 
+
+#define MAIN_MENU_CONTINUE_GAME 2
+
+// ---------------------------------------------------------------------------
+// Scenarios: hands-on test setups (TESTING.md / the checklist). Each one sets up the team, toolbox
+// and test switches in memory (nothing is saved unless you save), then warps. Use a scratch save:
+// play.bat scenarios.
+
+#include "dx_rules.h"
+#include "dx_warp.h"
+#include "exclusive_pokemon.h"
+#include "constants/rare_quality.h"
+#include "constants/friend_area.h"
+#include "constants/move.h"
+#include "constants/script_dungeon_id.h"
+
+EWRAM_DATA u8 gDxScenario = 0;
+
+ALIGNED(4) static const u8 sScenTitle[] = _("Scenarios (A: go, B: back, SELECT: shop)");
+ALIGNED(4) static const u8 sScenPrompt[] = _("Scenario");
+ALIGNED(4) static const u8 sFmtScen[] = _("S%d {COLOR CYAN}%s{RESET}");
+
+typedef struct DxScenario
+{
+    const u8 *name;
+    const u8 *where;
+} DxScenario;
+
+static const DxScenario sScenarios[] = {
+    {NULL, NULL},
+    {_("Party of 6"), _("6 on the team -> Tiny Woods 1F")},
+    {_("Smart A, auto, linking"), _("linked moves -> Mt. Steel 2F")},
+    {_("DX survival rules"), _("Oran Berries -> Mt. Thunder 1F")},
+    {_("Apple recruiting"), _("6 Apples -> Mt. Steel 1F")},
+    {_("Rare Qualities"), _("5 qualities -> Tiny Woods 1F")},
+    {_("Gummis"), _("Rainbow + DX Gummis -> Tiny Woods 1F")},
+    {_("Evolution Crystals"), _("Eevee alone -> Luminous Cave")},
+    {_("New species"), _("4 newcomers -> Tiny Woods 1F")},
+    {_("Mystery House"), _("house forced -> Mt. Steel 1F")},
+    {_("Strong Foe + shiny"), _("Friend Bow -> Mt. Steel 1F")},
+    {_("Mega Evolution"), _("Empower Seeds -> Tiny Woods 1F")},
+    {_("Briefing screen"), _("cleared Mt. Steel -> world map")},
+    {_("Rescue Camps"), _("SELECT shop; -> Thunderwave 1F")},
+    {_("Post-game rematches"), _("after credits -> Mt. Steel 9F")},
+    {_("Fairy type"), _("Gardevoir team -> Wyvern Hill 1F")},
+};
+#define NUM_SCENARIOS (ARRAY_COUNT(sScenarios) - 1)
+
+static void ScenRange(u32 step, s32 *min, s32 *max, s32 *init)
+{
+    *min = 1;
+    *max = NUM_SCENARIOS;
+    *init = (sDxTool->values[0] >= 1) ? sDxTool->values[0] : 1;
+}
+
+static void ScenDescribe(u32 step, s32 value, u8 *line1, u8 *line2)
+{
+    sprintfStatic((char *)line1, (const char *)sFmtScen, value, sScenarios[value].name);
+    strcpy((char *)line2, (const char *)sScenarios[value].where);
+}
+
+// --- building blocks ---
+
+static void ScenToolbox(const u8 *items, s32 count)
+{
+    s32 i;
+    Item item;
+
+    for (i = 0; i < INVENTORY_SIZE; i++)
+        gTeamInventoryRef->teamItems[i].flags = 0;
+    for (i = 0; i < count; i++) {
+        ItemIdToItem(&item, items[i], FALSE);
+        AddItemToInventory(&item);
+    }
+}
+
+// the team: the leader, the partner if asked, and new recruits of these species (Lv. level)
+static Pokemon *ScenTeam(const s16 *species, s32 count, s32 level, bool8 keepPartner)
+{
+    s32 i;
+    Pokemon *partner = GetPartnerMon2(), *last = NULL;
+    DungeonLocation loc = {.id = DUNGEON_TINY_WOODS, .floor = 1};
+
+    for (i = 0; i < NUM_MONSTERS; i++) {
+        Pokemon *mon = &gRecruitedPokemonRef->pokemon[i];
+        if (PokemonExists(mon) && !mon->isTeamLeader)
+            mon->flags &= ~POKEMON_FLAG_ON_TEAM;
+    }
+    if (keepPartner && partner != NULL)
+        partner->flags |= POKEMON_FLAG_ON_TEAM;
+    for (i = 0; i < count; i++) {
+        Pokemon pokemon, *added;
+        UnlockFriendArea(GetFriendArea(species[i]));
+        CreateLevel1Pokemon(&pokemon, species[i], NULL, ITEM_NOTHING, &loc, NULL);
+        DxSetPokemonLevel(&pokemon, level);
+        added = TryAddPokemonToRecruited(&pokemon);
+        if (added != NULL) {
+            added->flags |= POKEMON_FLAG_ON_TEAM;
+            last = added;
+        }
+    }
+    return last;
+}
+
+// the leader becomes another species (keeping its name, leader status and join record)
+static void ScenLeader(s16 species, s32 level)
+{
+    Pokemon *leader = GetLeaderMon1();
+    Pokemon pokemon;
+    DungeonLocation loc;
+    u16 flags;
+    u8 name[POKEMON_NAME_LENGTH];
+
+    if (leader == NULL)
+        return;
+    loc = leader->dungeonLocation;
+    flags = leader->flags;
+    memcpy(name, leader->name, POKEMON_NAME_LENGTH);
+    CreateLevel1Pokemon(&pokemon, species, NULL, ITEM_NOTHING, &loc, NULL);
+    DxSetPokemonLevel(&pokemon, level);
+    *leader = pokemon;
+    leader->flags = flags;
+    leader->isTeamLeader = TRUE;
+    leader->dungeonLocation = loc;
+    memcpy(leader->name, name, POKEMON_NAME_LENGTH);
+}
+
+static void ScenUnlockCamps(void)
+{
+    s32 i;
+    for (i = 1; i < FRIEND_AREA_COUNT; i++)
+        UnlockFriendArea(i);
+}
+
+static void ScenGo(s16 scriptDungeon, s32 floor)
+{
+    DxRequestWarp(scriptDungeon, floor);
+    sDxTool->exitTo = MAIN_MENU_CONTINUE_GAME;
+}
+
+static void ScenApply(void)
+{
+    s32 n = sDxTool->values[0];
+    Pokemon *leader = GetLeaderMon1(), *partner = GetPartnerMon2(), *mon;
+    s32 i;
+
+    // a clean slate: no test switches from the last scenario; Poke to spend; camps (but S13) owned
+    gDxScenario = n;
+    gDxForceMysteryHouse = 0;
+    gDxForceStrongFoe = FALSE;
+    gDxForceShiny = FALSE;
+    gDxForcePostgame = FALSE;
+    gDxForceRecruit = FALSE;
+    gDxWarpViaMap = FALSE;
+    gTeamInventoryRef->teamMoney = 20000;
+    if (n != 13)
+        ScenUnlockCamps();
+    if (leader != NULL)
+        leader->heldItem.id = ITEM_NOTHING;
+
+    switch (n) {
+        case 1: { // Party of 6, three of them big
+            static const s16 team[] = {MONSTER_SNORLAX, MONSTER_STEELIX, MONSTER_WAILORD, MONSTER_PIKACHU};
+            static const u8 items[] = {ITEM_APPLE, ITEM_APPLE, ITEM_ORAN_BERRY};
+            ScenTeam(team, ARRAY_COUNT(team), 20, TRUE);
+            ScenToolbox(items, ARRAY_COUNT(items));
+            ScenGo(SCRIPT_DUNGEON_TINY_WOODS, 1);
+            break;
+        }
+        case 2: { // Smart A, auto-mode (L), linked moves (the leader's first two are linked)
+            static const u8 items[] = {ITEM_APPLE, ITEM_ORAN_BERRY};
+            ScenTeam(NULL, 0, 1, TRUE);
+            if (leader != NULL)
+                leader->moves[1].moveFlags |= MOVE_FLAG_SUBSEQUENT_IN_LINK_CHAIN;
+            ScenToolbox(items, ARRAY_COUNT(items));
+            ScenGo(SCRIPT_DUNGEON_MT_STEEL, 2);
+            break;
+        }
+        case 3: { // regen, Oran Berry max HP, faster foes' double hits, faint penalty
+            static const u8 items[] = {ITEM_ORAN_BERRY, ITEM_ORAN_BERRY, ITEM_ORAN_BERRY, ITEM_ORAN_BERRY, ITEM_ORAN_BERRY,
+                                       ITEM_APPLE, ITEM_PECHA_BERRY};
+            ScenTeam(NULL, 0, 1, TRUE);
+            ScenToolbox(items, ARRAY_COUNT(items));
+            ScenGo(SCRIPT_DUNGEON_MT_THUNDER, 1);
+            break;
+        }
+        case 4: { // Apple recruiting
+            static const u8 items[] = {ITEM_APPLE, ITEM_APPLE, ITEM_APPLE, ITEM_APPLE, ITEM_APPLE, ITEM_APPLE};
+            ScenTeam(NULL, 0, 1, TRUE);
+            ScenToolbox(items, ARRAY_COUNT(items));
+            ScenGo(SCRIPT_DUNGEON_MT_STEEL, 1);
+            break;
+        }
+        case 5: { // Rare Qualities: Forge a Path, Leap Ahead, Tight Formation, Shared Happiness, Leave Half
+            static const s16 team[] = {MONSTER_PIKACHU, MONSTER_MACHOP, MONSTER_GEODUDE};
+            static const u8 items[] = {ITEM_BIG_APPLE, ITEM_HUGE_APPLE, ITEM_PECHA_BERRY, ITEM_PECHA_BERRY, ITEM_HEAL_SEED,
+                                       ITEM_HEAL_SEED, ITEM_ORAN_BERRY};
+            static const u8 quals[] = {RQ_TIGHT_FORMATION, RQ_SHARED_HAPPINESS, RQ_LEAVE_HALF};
+            ScenTeam(team, ARRAY_COUNT(team), 20, TRUE);
+            if (leader != NULL)
+                leader->dxQuality = RQ_FORGE_A_PATH;
+            if (partner != NULL)
+                partner->dxQuality = RQ_LEAP_AHEAD;
+            for (i = 0, mon = &gRecruitedPokemonRef->pokemon[0]; i < NUM_MONSTERS; i++, mon++) {
+                s32 k;
+                for (k = 0; k < (s32)ARRAY_COUNT(team); k++) {
+                    if (PokemonExists(mon) && (mon->flags & POKEMON_FLAG_ON_TEAM) && mon->speciesNum == team[k])
+                        mon->dxQuality = quals[k];
+                }
+            }
+            ScenToolbox(items, ARRAY_COUNT(items));
+            ScenGo(SCRIPT_DUNGEON_TINY_WOODS, 1);
+            break;
+        }
+        case 6: { // Gummis: Rainbow (a type Gummi) and DX Gummis
+            static const u8 items[] = {ITEM_RAINBOW_GUMMI, ITEM_RAINBOW_GUMMI, ITEM_RAINBOW_GUMMI,
+                                       ITEM_DX_GUMMI, ITEM_DX_GUMMI, ITEM_DX_GUMMI};
+            ScenTeam(NULL, 0, 1, TRUE);
+            ScenToolbox(items, ARRAY_COUNT(items));
+            ScenGo(SCRIPT_DUNGEON_TINY_WOODS, 1);
+            break;
+        }
+        case 7: { // Evolution Crystals: Eevee leads alone; a Pikachu waits in camp
+            static const s16 camp[] = {MONSTER_PIKACHU};
+            static const u8 items[] = {ITEM_EVO_CRYSTAL, ITEM_EVO_CRYSTAL, ITEM_EVO_CRYSTAL};
+            ScenLeader(MONSTER_EEVEE, 20);
+            mon = ScenTeam(camp, 1, 20, FALSE);
+            if (mon != NULL)
+                mon->flags &= ~POKEMON_FLAG_ON_TEAM; // in camp, not on the team
+            ScenToolbox(items, ARRAY_COUNT(items));
+            sDxTool->exitTo = MENU_DEBUG_UNKNOWN_1; // the Evolve tool: Luminous Cave
+            break;
+        }
+        case 8: { // the DX newcomers (talk to them: portraits)
+            static const s16 team[] = {MONSTER_SYLVEON, MONSTER_LUCARIO, MONSTER_TOGEKISS, MONSTER_MAMOSWINE};
+            static const u8 items[] = {ITEM_APPLE, ITEM_ORAN_BERRY};
+            ScenTeam(team, ARRAY_COUNT(team), 25, FALSE);
+            ScenToolbox(items, ARRAY_COUNT(items));
+            ScenGo(SCRIPT_DUNGEON_TINY_WOODS, 1);
+            break;
+        }
+        case 9: { // a Mystery House on 1F of Riolu's home
+            static const u8 items[] = {ITEM_APPLE, ITEM_APPLE, ITEM_APPLE};
+            ScenTeam(NULL, 0, 1, TRUE);
+            gDxForceMysteryHouse = 2;
+            ScenToolbox(items, ARRAY_COUNT(items));
+            ScenGo(SCRIPT_DUNGEON_MT_STEEL, 1);
+            break;
+        }
+        case 10: { // a shiny Strong Foe in cleared Mt. Steel; the leader holds a Friend Bow
+            static const u8 items[] = {ITEM_APPLE, ITEM_APPLE, ITEM_APPLE};
+            ScenTeam(NULL, 0, 1, TRUE);
+            DxMarkDungeonCleared(DUNGEON_MT_STEEL);
+            gDxForceStrongFoe = TRUE;
+            gDxForceShiny = TRUE;
+            if (leader != NULL) {
+                leader->heldItem.id = ITEM_FRIEND_BOW;
+                leader->heldItem.quantity = 1;
+            }
+            ScenToolbox(items, ARRAY_COUNT(items));
+            ScenGo(SCRIPT_DUNGEON_MT_STEEL, 1);
+            break;
+        }
+        case 11: { // Mega Evolution: Charizard leads Gengar, Mewtwo and Lucario; Empower Seeds
+            static const s16 team[] = {MONSTER_GENGAR, MONSTER_MEWTWO, MONSTER_LUCARIO};
+            static const u8 items[] = {ITEM_EMPOWERMENT_SEED, ITEM_EMPOWERMENT_SEED, ITEM_EMPOWERMENT_SEED,
+                                       ITEM_EMPOWERMENT_SEED};
+            ScenLeader(MONSTER_CHARIZARD, 40);
+            ScenTeam(team, ARRAY_COUNT(team), 40, FALSE);
+            ScenToolbox(items, ARRAY_COUNT(items));
+            ScenGo(SCRIPT_DUNGEON_TINY_WOODS, 1);
+            break;
+        }
+        case 12: { // the briefing, on the world map (Mt. Steel cleared, so its Strong Foe is listed)
+            ScenTeam(NULL, 0, 1, TRUE);
+            DxMarkDungeonCleared(DUNGEON_MT_STEEL);
+            gDxWarpViaMap = TRUE;
+            ScenGo(SCRIPT_DUNGEON_MT_STEEL, 1);
+            break;
+        }
+        case 13: { // Rescue Camps: the shop (SELECT, before this), and a camp-less recruit
+            static const u8 items[] = {ITEM_APPLE, ITEM_APPLE, ITEM_APPLE, ITEM_APPLE, ITEM_APPLE};
+            ScenTeam(NULL, 0, 1, TRUE);
+            gDxForceRecruit = TRUE;
+            ScenToolbox(items, ARRAY_COUNT(items));
+            ScenGo(SCRIPT_DUNGEON_THUNDERWAVE_CAVE, 1);
+            break;
+        }
+        case 14: { // after the credits: Skarmory waits on Mt. Steel 9F (also Sinister Woods 13F, Uproar Forest B4F)
+            static const u8 items[] = {ITEM_APPLE, ITEM_APPLE, ITEM_APPLE, ITEM_ORAN_BERRY, ITEM_ORAN_BERRY};
+            ScenTeam(NULL, 0, 1, TRUE);
+            gDxForcePostgame = TRUE;
+            // the story fights are done: Mt. Steel, Sinister Woods, Mt. Thunder Peak (flags 0-5)
+            gExclusiveMonPtr->cutsceneFlags[0] |= 0x3F;
+            ScenToolbox(items, ARRAY_COUNT(items));
+            ScenGo(SCRIPT_DUNGEON_MT_STEEL, 9);
+            break;
+        }
+        case 15: { // Fairy type: Gardevoir leads Clefairy against Wyvern Hill's Dratini and Bagon
+            static const s16 team[] = {MONSTER_CLEFAIRY};
+            static const u8 items[] = {ITEM_ORAN_BERRY, ITEM_ORAN_BERRY, ITEM_APPLE};
+            ScenLeader(MONSTER_GARDEVOIR, 40);
+            ScenTeam(team, ARRAY_COUNT(team), 40, FALSE);
+            ScenToolbox(items, ARRAY_COUNT(items));
+            ScenGo(SCRIPT_DUNGEON_WYVERN_HILL, 1);
+            break;
+        }
+    }
+}
+
 static const DxToolDef sDxTools[DX_TOOL_COUNT] = {
     [DX_TOOL_GIVE_ITEM] = {sGiveTitle, {sGiveItemPrompt, sGiveQtyPrompt}, NULL, GiveRange, GiveDescribe, GiveApply},
     [DX_TOOL_RECRUIT] = {sRecruitTitle, {sRecruitSpeciesPrompt, sRecruitLevelPrompt}, NULL, RecruitRange, RecruitDescribe, RecruitApply},
     [DX_TOOL_SET_LEVEL] = {sLevelTitle, {sLevelWhoPrompt, sLevelLevelPrompt}, LevelBegin, LevelRange, LevelDescribe, LevelApply},
     [DX_TOOL_STORY] = {sStoryTitle, {sStoryMainPrompt, sStorySubPrompt}, NULL, StoryRange, StoryDescribe, StoryApply},
+    [DX_TOOL_SCENARIO] = {sScenTitle, {sScenPrompt, NULL}, NULL, ScenRange, ScenDescribe, ScenApply},
 };
 
 void CreateDxToolMenu(u32 tool)
@@ -399,13 +711,15 @@ u32 UpdateDxToolMenu(void)
             break;
         case 3:
             sDxTool->values[sDxTool->step] = sDxTool->input.unk0;
-            if (sDxTool->step + 1 < MAX_STEPS) {
+            if (sDxTool->step + 1 < MAX_STEPS && def->prompts[sDxTool->step + 1] != NULL) {
                 if (def == &sDxTools[DX_TOOL_SET_LEVEL] && sDxTool->count == 0)
                     break;
                 DxToolSetStep(sDxTool->step + 1);
             }
             else {
                 def->apply();
+                if (sDxTool->exitTo != 0)
+                    return sDxTool->exitTo;
                 if (def->begin != NULL)
                     def->begin();
                 DxToolSetStep(0);
