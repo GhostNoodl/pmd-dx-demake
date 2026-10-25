@@ -1,124 +1,250 @@
 #!/usr/bin/env python3
-"""Generate the Rescue Team DX species data for modern builds (DX_RULES).
+"""Generate everything the Rescue Team DX species need, for modern builds (DX_RULES).
 
-Primary source for species data: Explorers of Sky (BALANCE/monster.md and m_level.bin
-from pret/pmd-sky, read by eos_md.py / eos_level.py). Explorers is PMD-scaled like Red:
-its abilities and types use Red's ids (538/538 abilities of shared species match) and its
-level-up growth is on the same scale as Red's (e.g. Pikachu gains 102 HP by Lv. 50 in Red,
-103 in Explorers). Base stats + growth are taken together from Explorers, since each game's
-pair only makes sense together.
+Adding a species = add a line to SPECIES and run this (it also imports the sprite).
 
-Writes:
-  data/monster/dx/monster_data.json        Red's table + DX changes + newcomers
+Sources:
+- Explorers of Sky (pret/pmd-sky BALANCE/monster.md and m_level.bin; eos_md.py, eos_level.py):
+  types, abilities, body size, base stats, weight/size and level-up growth. Explorers is
+  PMD-scaled like Red: ability/type ids match Red's for every shared species and growth is on
+  the same scale, so base stats and growth are taken together from Explorers.
+- PokeAPI (pokeapi_dx.py): English category and level-up learnset (Diamond/Pearl; X/Y for
+  Sylveon), keeping the moves that exist in Red.
+- SpriteCollab (tools/spritecollab/sc_import.py): dungeon sprites; credits in CREDITS.md.
+- Camp, TMs and recruit rate come from the species' Red relative.
+
+Outputs (all only used under DX_RULES):
+  include/constants/dx_species.h       MONSTER_* ids, DX_NEW_SPECIES_COUNT
+  include/dx_species_gfx.h             externs for the sprite archives
+  src/data/dx_species_files.h          monster file archive entries (ax###)
+  data/monster/dx/monster_data.json    Red's table + DX changes + newcomers
   data/monster/dx/learnset/learnset_data.json
-  data/monster/dx/level_data_dx.s           lvmp files (SIRO + uncompressed AT3PN) for system_sbin.s
+  data/monster/dx/monster_names_dx.s   names and categories
+  data/monster/dx/learnset_ptrs_dx.s   learnset pointers for ids 424+
+  data/monster/dx/level_table_dx.s     system archive entries for lvmp424+
+  data/monster/dx/level_data_dx.s      lvmp files (SIRO + uncompressed AT3PN)
+  src/data/ax/dx/*.h, graphics/ax/mon/<name>/   sprites
 """
 import json
 import re
+import subprocess
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import eos_level  # noqa: E402
 import eos_md  # noqa: E402
+import pokeapi_dx  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
+FIRST_NEW_ID = 424
 
-# Species DX changes or adds. "eos" = national dex number in Explorers of Sky.
-# Fields given here override what Explorers provides.
+# Rescue Team DX's newcomers, in id order from 424 (Riolu and Lucario keep 424/425).
+#   evolves_from: Red species it evolves from; baby_of: Red species that now evolves from it.
+#   evo: (type, requirement). DX evolves with Evolution Crystals; Red has none, so stone /
+#   trade / special evolutions become a level (stone 30, special 33, trade 50), friendship ones IQ 200.
 SPECIES = [
-    {   # Red ships Munchlax as a cameo with placeholder data and a placeholder lvmp420
-        "id": 420, "eos": 446, "name": "MonsterNameMunchlax", "category": "MonsterCategoryBigEater",
-        "friendArea": "FRIEND_AREA_ENERGETIC_FOREST", "recruitRate": 50,
-        "learnset": ["METRONOME:1", "ODOR_SLEUTH:1", "TACKLE:1", "DEFENSE_CURL:4", "AMNESIA:9", "LICK:12",
-                     "RECYCLE:17", "SCREECH:20", "STOCKPILE:25", "SWALLOW:25", "BODY_SLAM:33", "ROLLOUT:44"],
-        "tms": "Snorlax",
-    },
-    {
-        "id": 424, "eos": 447, "name": "MonsterNameRiolu", "category": "MonsterCategoryEmanation",
-        "overworldPalette": 5, "friendArea": "FRIEND_AREA_MT_DISCIPLINE", "recruitRate": 30,
-        "learnset": ["QUICK_ATTACK:1", "FORESIGHT:1", "ENDURE:1", "COUNTER:6", "REVERSAL:15", "SCREECH:19"],
-        "tms": "Machop",
-    },
-    {   # evolves from Riolu by IQ, Red's stand-in for friendship (like Pichu -> Pikachu)
-        "id": 425, "eos": 448, "name": "MonsterNameLucario", "category": "MonsterCategoryAura",
-        "overworldPalette": 5, "friendArea": "FRIEND_AREA_MT_DISCIPLINE", "recruitRate": 0,
-        "preEvolution": {"evolveFrom": "MONSTER_RIOLU", "evolveType": "EVOLVE_TYPE_IQ"},
-        "evolutionRequirements": {"mainRequirement": 200},
-        "learnset": ["QUICK_ATTACK:1", "FORESIGHT:1", "DETECT:1", "METAL_CLAW:1", "COUNTER:6", "REVERSAL:15",
-                     "SCREECH:19", "BONE_RUSH:24", "SWORDS_DANCE:37", "EXTREMESPEED:51"],
-        "tms": "Machoke",
-    },
+    dict(dex=447, ident="Riolu", camp="MACHOP", tms="Machop"),
+    dict(dex=448, ident="Lucario", evolves_from="RIOLU", evo=("EVOLVE_TYPE_IQ", 200), tms="Machoke", camp="MACHOP"),
+    dict(dex=406, ident="Budew", baby_of="ROSELIA", evo=("EVOLVE_TYPE_IQ", 200)),
+    dict(dex=407, ident="Roserade", evolves_from="ROSELIA", evo=("EVOLVE_TYPE_LEVEL", 30)),
+    dict(dex=424, ident="Ambipom", evolves_from="AIPOM", evo=("EVOLVE_TYPE_LEVEL", 33)),
+    dict(dex=429, ident="Mismagius", evolves_from="MISDREAVUS", evo=("EVOLVE_TYPE_LEVEL", 30)),
+    dict(dex=430, ident="Honchkrow", evolves_from="MURKROW", evo=("EVOLVE_TYPE_LEVEL", 30)),
+    dict(dex=433, ident="Chingling", baby_of="CHIMECHO", evo=("EVOLVE_TYPE_IQ", 200)),
+    dict(dex=438, ident="Bonsly", baby_of="SUDOWOODO", evo=("EVOLVE_TYPE_LEVEL", 17)),
+    dict(dex=439, ident="MimeJr", baby_of="MR_MIME", evo=("EVOLVE_TYPE_LEVEL", 18)),
+    dict(dex=440, ident="Happiny", baby_of="CHANSEY", evo=("EVOLVE_TYPE_IQ", 200)),
+    dict(dex=458, ident="Mantyke", baby_of="MANTINE", evo=("EVOLVE_TYPE_LEVEL", 20)),
+    dict(dex=461, ident="Weavile", evolves_from="SNEASEL", evo=("EVOLVE_TYPE_LEVEL", 33)),
+    dict(dex=462, ident="Magnezone", evolves_from="MAGNETON", evo=("EVOLVE_TYPE_LEVEL", 33)),
+    dict(dex=463, ident="Lickilicky", evolves_from="LICKITUNG", evo=("EVOLVE_TYPE_LEVEL", 33)),
+    dict(dex=464, ident="Rhyperior", evolves_from="RHYDON", evo=("EVOLVE_TYPE_LEVEL", 50)),
+    dict(dex=465, ident="Tangrowth", evolves_from="TANGELA", evo=("EVOLVE_TYPE_LEVEL", 33)),
+    dict(dex=466, ident="Electivire", evolves_from="ELECTABUZZ", evo=("EVOLVE_TYPE_LEVEL", 50)),
+    dict(dex=467, ident="Magmortar", evolves_from="MAGMAR", evo=("EVOLVE_TYPE_LEVEL", 50)),
+    dict(dex=468, ident="Togekiss", evolves_from="TOGETIC", evo=("EVOLVE_TYPE_LEVEL", 30)),
+    dict(dex=469, ident="Yanmega", evolves_from="YANMA", evo=("EVOLVE_TYPE_LEVEL", 33)),
+    dict(dex=470, ident="Leafeon", evolves_from="EEVEE", evo=("EVOLVE_TYPE_LEVEL", 30)),
+    dict(dex=471, ident="Glaceon", evolves_from="EEVEE", evo=("EVOLVE_TYPE_LEVEL", 30)),
+    dict(dex=472, ident="Gliscor", evolves_from="GLIGAR", evo=("EVOLVE_TYPE_LEVEL", 33)),
+    dict(dex=473, ident="Mamoswine", evolves_from="PILOSWINE", evo=("EVOLVE_TYPE_LEVEL", 33)),
+    dict(dex=474, ident="PorygonZ", evolves_from="PORYGON2", evo=("EVOLVE_TYPE_LEVEL", 50)),
+    dict(dex=475, ident="Gallade", evolves_from="KIRLIA", evo=("EVOLVE_TYPE_LEVEL", 30)),
+    dict(dex=476, ident="Probopass", evolves_from="NOSEPASS", evo=("EVOLVE_TYPE_LEVEL", 33)),
+    dict(dex=477, ident="Dusknoir", evolves_from="DUSCLOPS", evo=("EVOLVE_TYPE_LEVEL", 50)),
+    dict(dex=478, ident="Froslass", evolves_from="SNORUNT", evo=("EVOLVE_TYPE_LEVEL", 30)),
+    # Sylveon (Gen 6) isn't in Explorers: Espeon's Explorers data with Sylveon's Fairy type
+    dict(dex=700, ident="Sylveon", evolves_from="EEVEE", evo=("EVOLVE_TYPE_IQ", 200), eos_dex=196,
+         types=["TYPE_FAIRY"], abilities=["ABILITY_CUTE_CHARM"]),
 ]
+
+# Munchlax already exists in Red (#420) with placeholder data
+MUNCHLAX = dict(dex=446, ident="Munchlax", camp="SNORLAX", tms="Snorlax", recruit=50)
 
 TYPE_NAMES = ["TYPE_NONE", "TYPE_NORMAL", "TYPE_FIRE", "TYPE_WATER", "TYPE_GRASS", "TYPE_ELECTRIC", "TYPE_ICE",
               "TYPE_FIGHTING", "TYPE_POISON", "TYPE_GROUND", "TYPE_FLYING", "TYPE_PSYCHIC", "TYPE_BUG", "TYPE_ROCK",
               "TYPE_GHOST", "TYPE_DRAGON", "TYPE_DARK", "TYPE_STEEL"]
 
 
+def norm(s):
+    return re.sub(r"[^a-z0-9]", "", s.lower())
+
+
 def main():
+    consts = (ROOT / "include/constants/monster.h").read_text()
+    red_ids = {k: int(v) for k, v in re.findall(r"#define MONSTER_(\w+) (\d+)\b", consts)}
     abilities = {int(v, 0): k for k, v in re.findall(r"#define (ABILITY_\w+) (0x[0-9A-Fa-f]+|\d+)",
                                                     (ROOT / "include/constants/ability.h").read_text())}
+    red_moves = {norm(k): "MOVE_" + k for k in re.findall(r"#define MOVE_(\w+) ", (ROOT / "include/constants/move_id.h").read_text())}
     md = eos_md.by_dex(eos_md.load())
     red = json.loads((ROOT / "data/monster/monster_data.json").read_text())
-    base_sets = {e["pokemon"]: e for e in json.loads((ROOT / "data/monster/learnset/learnset_data.json").read_text())}
     assert len(red) == 424, len(red)
+    red_sets = {norm(e["pokemon"]): e for e in json.loads((ROOT / "data/monster/learnset/learnset_data.json").read_text())}
+    api = pokeapi_dx.fetch([s["dex"] for s in SPECIES] + [MUNCHLAX["dex"]])
 
-    learnsets, level_blobs, log = [], [], []
-    for s in SPECIES:
-        e = md[s["eos"]]
-        entry = dict(red[s["id"]]) if s["id"] < len(red) else dict(red[143])  # Snorlax as a template for new ids
-        entry.update({
-            "name": s["name"], "category": s["category"],
-            "bodySize": e["body_size"],
-            "types": [TYPE_NAMES[e["type1"]]] + ([TYPE_NAMES[e["type2"]]] if e["type2"] else []),
-            "abilities": [abilities[a] for a in (e["ability1"], e["ability2"]) if a and a in abilities] or ["ABILITY_UNKNOWN"],
+    for i, s in enumerate(SPECIES):
+        s["id"] = FIRST_NEW_ID + i
+    ident_ids = {s["ident"].upper(): s["id"] for s in SPECIES}
+
+    def relative(s):
+        return s.get("camp") or s.get("evolves_from") or s.get("baby_of")
+
+    def red_entry(const):
+        return red[red_ids[const]]
+
+    def learnset(s):
+        moves, dropped = [], []
+        for lvl, m in api[s["dex"]]["levelup"]:
+            if norm(m) in red_moves:
+                moves.append({"move": red_moves[norm(m)], "level": max(lvl, 1)})
+            else:
+                dropped.append(m)
+        if not moves:
+            moves = [{"move": "MOVE_TACKLE", "level": 1}]
+        seen, out = set(), []
+        for mv in sorted(moves, key=lambda x: x["level"]):
+            if mv["move"] not in seen:
+                seen.add(mv["move"])
+                out.append(mv)
+        tms_from = s.get("tms") or norm(red_entry(relative(s))["name"].replace("MonsterName", ""))
+        return {"pokemon": s["ident"], "levelUpMoves": out, "HMTMMoves": red_sets[norm(tms_from)]["HMTMMoves"]}, dropped
+
+    def eos_fields(s):
+        e = md[s.get("eos_dex", s["dex"])]
+        types = s.get("types") or ([TYPE_NAMES[e["type1"]]] + ([TYPE_NAMES[e["type2"]]] if e["type2"] else []))
+        abil = s.get("abilities") or [abilities[a] for a in (e["ability1"], e["ability2"]) if a and a in abilities]
+        if not abil:  # only Gen 4 abilities: use the Red relative's
+            abil = [a for a in red_entry(relative(s))["abilities"] if a != "ABILITY_UNKNOWN"] or ["ABILITY_UNKNOWN"]
+            s["ability_note"] = f"Gen 4 abilities only; {relative(s)}'s {abil}"
+        return e, {
+            "bodySize": e["body_size"], "types": types,
+            "abilities": abil,
             "baseHP": e["base_hp"], "baseAtkSpAtk": [e["atk"], e["spatk"]], "baseDefSpDef": [e["def"], e["spdef"]],
             "expYield": round(0.852 * e["exp_yield"] + 13.9),  # Red vs Explorers exp yield fit over shared species
             "weight": e["weight"], "size": e["size"], "chanceAsleep": max(e["asleep"], 0),
-            "friendArea": s["friendArea"], "recruitRate": s["recruitRate"],
-            "dexInternal": [s["eos"], s["eos"]],
-        })
-        if s["id"] >= len(red):
-            entry["dialogueSprites"] = "0b0000000000000000"  # no portrait yet
-            entry["alphabetParent"] = [s["id"], s["id"]]
-            entry.pop("preEvolution", None)
-            entry.pop("evolutionRequirements", None)
-        for k in ("overworldPalette", "preEvolution", "evolutionRequirements"):
-            if k in s:
-                entry[k] = s[k]
-        if s["id"] < len(red):
-            red[s["id"]] = entry
-        else:
-            assert s["id"] == len(red), (s["id"], len(red))
-            red.append(entry)
+            "dexInternal": [s["dex"], s["dex"]],
+        }
 
-        poke = s["name"].replace("MonsterName", "")
-        learnsets.append({
-            "pokemon": poke,
-            "levelUpMoves": [{"move": "MOVE_" + m.split(":")[0], "level": int(m.split(":")[1])} for m in s["learnset"]],
-            "HMTMMoves": base_sets[s["tms"]]["HMTMMoves"],
-        })
-        _, raw = eos_level.levels(e["index"])
-        level_blobs.append((s["id"], raw))
-        log.append(f"{poke}: Explorers #{s['eos']} (index {e['index']}): {entry['types']}, {entry['abilities']}, "
-                   f"HP {e['base_hp']} Atk/SpA {e['atk']}/{e['spatk']} Def/SpD {e['def']}/{e['spdef']}, body {e['body_size']}")
+    learnsets, levels, names, log = [], [], [], []
 
+    # Munchlax: real data for Red's cameo species
+    e, f = eos_fields(MUNCHLAX)
+    red[420].update(f)
+    red[420].update({"category": "MonsterCategoryBigEater", "friendArea": red_entry(MUNCHLAX["camp"])["friendArea"],
+                     "recruitRate": MUNCHLAX["recruit"]})
+    ls, dropped = learnset(MUNCHLAX)
+    learnsets.append(ls)
+    levels.append((420, eos_level.levels(e["index"])[1]))
+    names.append(("MonsterCategoryBigEater", "Big Eater"))
+    log.append(f"Munchlax #420: Explorers #446; moves not in Red: {dropped}")
+
+    for s in SPECIES:
+        e, f = eos_fields(s)
+        rel = red_entry(relative(s)) if relative(s) in red_ids else red[ident_ids[relative(s)]]
+        display = api[s["dex"]]["name"]
+        category = api[s["dex"]]["genus"].replace(" Pokémon", "")
+        cat_sym = "MonsterCategory" + re.sub(r"[^A-Za-z0-9]", "", category)
+        # sprite (palette is picked by the importer)
+        header = ROOT / f"src/data/ax/dx/{s['ident'].lower()}.h"
+        sc_dir = Path.home() / "pmd/spritecollab" / f"{s['dex']:04d}"
+        if not header.exists():
+            r = subprocess.run([sys.executable, "-I", str(ROOT / "tools/spritecollab/sc_import.py"), str(sc_dir),
+                                s["ident"].lower(), s["ident"], "--body-size", str(s.get("body", max(e["body_size"], 1))),
+                                "--fetch", f"{s['dex']:04d}"], capture_output=True, text=True, cwd=ROOT)
+            if r.returncode:
+                sys.exit(f"{s['ident']}: sprite import failed\n{r.stderr}")
+            (ROOT / f"src/data/ax/{s['ident'].lower()}.h").replace(header)
+            print(r.stdout.strip())
+        pal = int(re.search(r"OAM3\(0, 3, (\d+)\)", header.read_text()).group(1))
+        entry = json.loads(json.dumps(rel))  # Red relative's entry for the fields Explorers doesn't give
+        entry.update(f)
+        if "body" in s:
+            entry["bodySize"] = s["body"]
+        entry.update({
+            "name": f"MonsterName{s['ident']}", "category": cat_sym, "overworldPalette": pal,
+            "friendArea": rel["friendArea"], "recruitRate": rel["recruitRate"],
+            "dialogueSprites": "0b0000000000000000",  # no portraits yet
+            "alphabetParent": [s["id"], s["id"]],
+        })
+        entry.pop("preEvolution", None)
+        entry.pop("evolutionRequirements", None)
+        if s.get("evolves_from"):
+            evolves_from = s["evolves_from"]
+            entry["preEvolution"] = {"evolveFrom": f"MONSTER_{evolves_from}", "evolveType": s["evo"][0]}
+            entry["evolutionRequirements"] = {"mainRequirement": s["evo"][1]}
+        if s.get("baby_of"):
+            adult = red_entry(s["baby_of"])
+            adult["preEvolution"] = {"evolveFrom": f"MONSTER_{s['ident'].upper()}", "evolveType": s["evo"][0]}
+            adult["evolutionRequirements"] = {"mainRequirement": s["evo"][1]}
+        assert s["id"] == len(red)
+        red.append(entry)
+        ls, dropped = learnset(s)
+        learnsets.append(ls)
+        levels.append((s["id"], eos_level.levels(e["index"])[1]))
+        names += [(f"MonsterName{s['ident']}", display), (cat_sym, category)]
+        log.append(f"{display} #{s['id']}: Explorers #{s.get('eos_dex', s['dex'])}, {entry['types']}, {entry['abilities']}, "
+                   f"HP {e['base_hp']} {e['atk']}/{e['spatk']}/{e['def']}/{e['spdef']}, body {e['body_size']}, "
+                   f"palette {pal}, camp of {relative(s)}; moves not in Red: {dropped}" + (f"; {s['ability_note']}" if s.get("ability_note") else ""))
+
+    # --- write everything ---
+    n = len(SPECIES)
+    w = lambda p, t: (ROOT / p).write_text(t)
+    hdr = "// Generated by tools/dxtest/gen_dx_species.py; don't edit by hand.\n"
+    w("include/constants/dx_species.h", hdr + "#ifndef GUARD_CONSTANTS_DX_SPECIES_H\n#define GUARD_CONSTANTS_DX_SPECIES_H\n\n"
+      + "".join(f"#define MONSTER_{s['ident'].upper()} {s['id']}\n" for s in SPECIES)
+      + f"\n#define DX_FIRST_NEW_SPECIES {FIRST_NEW_ID}\n#define DX_NEW_SPECIES_COUNT {n}\n\n#endif\n")
+    w("include/dx_species_gfx.h", hdr + "".join(f"extern const SiroArchive gAx{s['ident']};\n" for s in SPECIES))
+    w("src/data/dx_species_files.h", hdr + "".join(f"    [MONSTER_{s['ident'].upper()} - 1] = {{ \"ax{s['id']:03d}\", &gAx{s['ident']},}},\n" for s in SPECIES))
     out = ROOT / "data/monster/dx"
     (out / "learnset").mkdir(parents=True, exist_ok=True)
     (out / "monster_data.json").write_text(json.dumps(red, indent=4) + "\n")
     (out / "learnset/learnset_data.json").write_text(json.dumps(learnsets, indent=4) + "\n")
-
-    s = ["@ Generated by tools/dxtest/gen_dx_species.py: level-up data from Explorers of Sky (m_level.bin)",
-         "@ as Red lvmp files (SIRO header + uncompressed AT3PN stream of 12-byte LevelData records).", ""]
-    for sid, raw in level_blobs:
-        s += [f".global gDxLevelName{sid}", f"gDxLevelName{sid}:", f'.string "lvmp{sid:03d}\\0"', ".align 2, 0",
-              f".global gDxLevel{sid}", f"gDxLevel{sid}:", '.ascii "SIRO"', f".4byte gDxLevelAT{sid}", ".4byte 0, 0",
-              f"gDxLevelAT{sid}:", '.ascii "AT3PN"', f".2byte {len(raw)}"]
+    seen = set(re.findall(r"^(MonsterCategory\w+):", (ROOT / "data/monster/monster_names.s").read_text(), re.M))
+    txt = ["@ Generated by tools/dxtest/gen_dx_species.py: Rescue Team DX species text"]
+    for sym, text in names:
+        if sym not in seen:
+            seen.add(sym)
+            txt += [f".global {sym}", f"{sym}:", f'.string "{text}\\0"', ".align 2,0", ""]
+    (out / "monster_names_dx.s").write_text("\n".join(txt) + "\n")
+    (out / "learnset_ptrs_dx.s").write_text("@ Generated: learnsets for ids 424+\n" + "".join(
+        f".4byte LevelUpMoves{s['ident']}\n.4byte HMTMMoves{s['ident']}\n" for s in SPECIES))
+    (out / "level_table_dx.s").write_text("@ Generated: lvmp files for ids 424+ (the table is name-sorted)\n" + "".join(
+        f".4byte gDxLevelName{s['id']}\n.4byte gDxLevel{s['id']}\n" for s in SPECIES))
+    s_ = ["@ Generated by tools/dxtest/gen_dx_species.py: level-up data from Explorers of Sky (m_level.bin)",
+          "@ as Red lvmp files (SIRO header + uncompressed AT3PN stream of 12-byte LevelData records).", ""]
+    for sid, raw in levels:
+        s_ += [f".global gDxLevelName{sid}", f"gDxLevelName{sid}:", f'.string "lvmp{sid:03d}\\0"', ".align 2, 0",
+               f".global gDxLevel{sid}", f"gDxLevel{sid}:", '.ascii "SIRO"', f".4byte gDxLevelAT{sid}", ".4byte 0, 0",
+               f"gDxLevelAT{sid}:", '.ascii "AT3PN"', f".2byte {len(raw)}"]
         for i in range(0, len(raw), 16):
-            s.append(".byte " + ", ".join(f"0x{b:02x}" for b in raw[i:i + 16]))
-        s += [".align 2, 0", ""]
-    (out / "level_data_dx.s").write_text("\n".join(s) + "\n")
+            s_.append(".byte " + ", ".join(f"0x{b:02x}" for b in raw[i:i + 16]))
+        s_ += [".align 2, 0", ""]
+    (out / "level_data_dx.s").write_text("\n".join(s_) + "\n")
+    # credits manifest
+    w("tools/spritecollab/imported.txt", "# <SpriteCollab dex> <name in this repo> [sprite|portrait|both]\n"
+      + "".join(f"{s['dex']:04d} {s['ident'].lower()} sprite\n" for s in SPECIES))
+    (ROOT / "tools/dxtest/dx_species_log.txt").write_text("\n".join(log) + "\n")
     print("\n".join(log))
 
 

@@ -429,8 +429,7 @@ const File gMonsterFiles[MONSTER_FILES_COUNT] = {
     [MONSTER_STATUE - 1] = { "ax422", &gAxStatue,},
     [MONSTER_RAYQUAZA_CUTSCENE - 1] = { "ax423", &gAxRayquazaCutscene,},
 #ifdef DX_RULES
-    [MONSTER_RIOLU - 1] = { "ax424", &gAxRiolu,},
-    [MONSTER_LUCARIO - 1] = { "ax425", &gAxLucario,},
+#include "data/dx_species_files.h"
 #endif
     [423 + DX_NEW_SPECIES_FILES] = { "kao001", gKaoBulbasaur,},
     [424 + DX_NEW_SPECIES_FILES] = { "kao004", gKaoCharmander,},

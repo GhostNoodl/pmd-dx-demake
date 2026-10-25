@@ -880,10 +880,7 @@ DataRootTable:
 .4byte gUnknown_8357968
 #ifdef DX_RULES
 @ the table is searched by name: lvmp424.. sort after lvmp421, before monspara
-.4byte gDxLevelName424
-.4byte gDxLevel424
-.4byte gDxLevelName425
-.4byte gDxLevel425
+#include "monster/dx/level_table_dx.s"
 #endif
 .4byte gUnknown_830129C
 .4byte gUnknown_8357B88
@@ -18318,6 +18315,10 @@ gUnknown_836799F:
 .byte 0x00
 
 @ Address 0x3679a0
+#ifdef DX_RULES
+@ dx: the DX learnsets above are bytes; the move table holds pointers and must stay word-aligned
+.align 2, 0
+#endif
 .global gUnknown_83679A0
 gUnknown_83679A0:
 #include "move/move_data.inc"
@@ -18346,10 +18347,7 @@ gUnknown_83725F8:
 .4byte gUnknown_836799F
 #ifdef DX_RULES
 @ Rescue Team DX newcomers (ids 424+)
-.4byte LevelUpMovesRiolu
-.4byte HMTMMovesRiolu
-.4byte LevelUpMovesLucario
-.4byte HMTMMovesLucario
+#include "monster/dx/learnset_ptrs_dx.s"
 #endif
 .global gUnknown_8373338
 gUnknown_8373338:

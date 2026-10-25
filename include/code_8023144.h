@@ -5,13 +5,19 @@
 #include "structs/str_text.h"
 #include "text_3.h"
 
+#include "constants/monster.h"
+
 // size: 0x3FC
 typedef struct unkStruct_3001B5C
 {
     u8 unk0;
     u32 unk4;
     s32 unk8;
+#ifdef DX_RULES
+    s16 unkC[MONSTER_MAX]; // dx: one entry per seen base species, and DX has more than 420
+#else
     s16 unkC[420];
+#endif
     u8 unk354;
     u8 fill355[0x35C - 0x355];
     /* 0x35C */ MenuHeaderWindow s35C;
