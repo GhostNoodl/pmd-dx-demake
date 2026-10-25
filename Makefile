@@ -338,6 +338,11 @@ endif
 
 # Elf from object files
 LDFLAGS = -Map ../../$(MAP)
+ifeq ($(MODERN),1)
+  # dx: DX_CODE_PAD=<bytes> leaves a gap after code (layout probe; default 0)
+  DX_CODE_PAD ?= 0
+  LDFLAGS += --defsym DX_CODE_PAD=$(DX_CODE_PAD)
+endif
 $(ELF): $(LD_SCRIPT) $(LD_SCRIPT_DEPS) $(ALL_OBJECTS) libagbsyscall
 	@cd $(BUILD_DIR) && $(LD) $(LDFLAGS) -T ../../$< --print-memory-usage -o ../../$@ $(OBJS_REL) $(LIB) | cat
 	@echo "cd $(BUILD_DIR) && $(LD) $(LDFLAGS) -T ../../$< --print-memory-usage -o ../../$@ <objs> <libs> | cat"

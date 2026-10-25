@@ -1,7 +1,8 @@
 
 MAKEFLAGS += --no-print-directory
 
-TOOLDIRS := $(filter-out tools/agbcc tools/binutils,$(wildcard tools/*))
+# dx: tools/dxtest (needs libmgba) and the dxtest.sh script are not build tools
+TOOLDIRS := $(filter-out tools/agbcc tools/binutils tools/dxtest tools/dxtest.sh,$(wildcard tools/*))
 
 .PHONY: all $(TOOLDIRS)
 

@@ -49,6 +49,8 @@ SECTIONS {
         *libgcc.a:*.o(.text*);
         *libc.a:*.o(.text*);
         *libnosys.a:*.o(.text*);
+        /* dx C1 probe: 64 KB gap after code to prove data/archives are position independent */
+        . = . + DX_CODE_PAD;
     }  > ROM =0
 
     .rodata :
