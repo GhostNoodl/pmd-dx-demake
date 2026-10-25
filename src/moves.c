@@ -715,6 +715,13 @@ static bool8 sub_80933D8(s32 param_1, Move *src_struct)
     return UnlinkMovesAfter(param_1, src_struct);
 }
 
+#ifdef DX_RULES
+static bool8 DxMoveCannotLink(u16 id)
+{
+    return id == MOVE_PROTECT || id == MOVE_BIDE || id == MOVE_SKETCH || id == MOVE_MIMIC || id == MOVE_TRANSFORM;
+}
+#endif
+
 bool8 TryLinkMovesAfter(s32 index, Move *moves)
 {
     s32 i;
@@ -722,6 +729,10 @@ bool8 TryLinkMovesAfter(s32 index, Move *moves)
 
     if (DoesMoveCharge(move->id))
         return FALSE;
+#ifdef DX_RULES
+    if (DxMoveCannotLink(move->id))
+        return FALSE;
+#endif
 
     for (i = index + 1; i < 8; i++) {
         if (!MoveFlagExists(&moves[i]))
@@ -729,6 +740,10 @@ bool8 TryLinkMovesAfter(s32 index, Move *moves)
 
         if (DoesMoveCharge(moves[i].id))
             return FALSE;
+#ifdef DX_RULES
+        if (DxMoveCannotLink(moves[i].id))
+            return FALSE;
+#endif
 
         if (!(MOVE_FLAG_LINK_CHAIN(&moves[i]))) {
             moves[i].moveFlags |= MOVE_FLAG_SUBSEQUENT_IN_LINK_CHAIN;
@@ -851,6 +866,9 @@ s32 sub_80935B8(Move *moves, s32 index)
     bool8 any_move_linked;
     s32 pp;
     bool8 v1;
+#ifdef DX_RULES
+    s32 maxPP = 0;
+#endif
 
     pp = 99;
     any_move_linked = FALSE;
@@ -889,16 +907,26 @@ s32 sub_80935B8(Move *moves, s32 index)
         if (!MoveFlagExists(move))
             break;
 
+#ifdef DX_RULES
+        if (maxPP < move->PP)
+            maxPP = move->PP;
+#else
         if (pp > move->PP)
             pp = move->PP;
         if (move->PP == 0)
             v1 = TRUE;
+#endif
         if (move->moveFlags2 & MOVE_FLAG_REPLACE)
             v1 = TRUE;
     }
 
+#ifdef DX_RULES
+    if (!v1)
+        return (maxPP == 0) ? 99 : maxPP;
+#else
     if (!v1)
         return pp;
+#endif
 
     for (i = linkSequenceStart + 1; i < MAX_MON_MOVES; i++) {
         Move *move = &moves[i];

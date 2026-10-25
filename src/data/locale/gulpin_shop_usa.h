@@ -1,14 +1,20 @@
+#ifdef DX_RULES
+#define GULP_LINK_PRICE_LINE "Link moves all you like, free of charge!"
+#else
+#define GULP_LINK_PRICE_LINE "Link moves all you like for just 150 {POKE}!"
+#endif
+
 
 
 #define GULP_AWAKE_DLG_00 (_( \
     " Hello!\n" \
     "Welcome to the Gulpin Link Shop!\n" \
-    "Link moves all you like for just 150 {POKE}!"))
+    GULP_LINK_PRICE_LINE))
 
 #define GULP_AWAKE_DLG_01 (_( \
     " Welcome to the Gulpin\n" \
     "Link Shop!\n" \
-    "Link moves all you like for just 150 {POKE}!"))
+    GULP_LINK_PRICE_LINE))
 
 #define GULP_AWAKE_DLG_02 (_( \
     " Uh... Hello?\n" \

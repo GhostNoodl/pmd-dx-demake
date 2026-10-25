@@ -121,6 +121,8 @@ static int cmp(long a, const char *op, long b)
     if (!strcmp(op, "<=")) return a <= b;
     if (!strcmp(op, ">")) return a > b;
     if (!strcmp(op, ">=")) return a >= b;
+    if (!strcmp(op, "&")) return (a & b) != 0;   // any of the mask bits set
+    if (!strcmp(op, "!&")) return (a & b) == 0;  // none of the mask bits set
     return 0;
 }
 

@@ -164,8 +164,10 @@ u32 sub_801FC40(void)
             sub_80210E4();
             break;
         case 0xd:
+#ifndef DX_RULES
             if (gUnknown_203B27C->unk15 == TRUE)
                 gTeamInventoryRef->teamMoney -= 150;
+#endif
             return 3;
         default:
             sub_8021130();
@@ -968,7 +970,11 @@ static void sub_8020EB4(void)
             sub_801FDA8(0x1F);
             break;
         case LINK_ACTION:
+#ifdef DX_RULES
+            if (FALSE) // Rescue Team DX: linking is free
+#else
             if(gTeamInventoryRef->teamMoney < 150)
+#endif
             {
                 PlayMenuSoundEffect(MENU_SFX_FAIL);
                 sub_801FDA8(0x3);

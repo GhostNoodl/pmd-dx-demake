@@ -162,7 +162,12 @@ _134:
             return 1;
         case INPUT_R_A_BUTTONS:
             if (gUnknown_203B270->unk6 != 0) {
+#ifdef DX_RULES
+                // Rescue Team DX: linking is free
+                if (sub_8093318(gUnknown_203B270->input.menuIndex,gUnknown_203B270->moves))
+#else
                 if ((gTeamInventoryRef->teamMoney > 0x95) && (sub_8093318(gUnknown_203B270->input.menuIndex,gUnknown_203B270->moves)))
+#endif
                 {
                     TryLinkMovesAfter(gUnknown_203B270->input.menuIndex,gUnknown_203B270->moves);
                     PlayMenuSoundEffect(MENU_SFX_TOGGLE);
