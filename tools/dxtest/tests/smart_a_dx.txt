@@ -1,7 +1,7 @@
 #rom debug
 #save after-first-dungeon
 # DX smart A: no foe next to you -> trap check; foes around -> A uses moves (PP drops)
-# Dungeon offsets (modern ABI): +0x644 dungeon id, +0x645 floor, +0x1D3D0 floor count
+# Dungeon offsets come from the debug ROM's gDxOff* symbols
 mash START sMainMenu 4 != 0 3000
 wait 60
 press UP
@@ -19,8 +19,8 @@ wait 600
 press A
 wait 60
 shot 1_trap_check
-read m0pp ***gDungeon+0x1398C+0x70+0x11C 1
-read m1pp ***gDungeon+0x1398C+0x70+0x124 1
+read m0pp ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!4 1
+read m1pp ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!12 1
 press A 4 30
 press A 4 30
 press A 4 30
@@ -103,6 +103,6 @@ press A 4 30
 press A 4 30
 press A 4 30
 shot 2_after_mashing
-read m0pp_after ***gDungeon+0x1398C+0x70+0x11C 1
-read m1pp_after ***gDungeon+0x1398C+0x70+0x124 1
-expect ***gDungeon+0x1398C+0x70+0x11C 1 < 20
+read m0pp_after ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!4 1
+read m1pp_after ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!12 1
+expect ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!4 1 < 20

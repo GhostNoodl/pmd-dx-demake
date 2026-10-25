@@ -15,6 +15,7 @@
 //   cmpreads NAME1 OP NAME2      compare two earlier `read` values (e.g. position changed)
 //   log TEXT                     echo TEXT into the results
 // EXPR: number (0x.. ok) | symbol | symbol+off | *EXPR (dereference a 32-bit pointer) e.g. *gDungeon+0x644
+//       | @symbol (the u32 stored at symbol, e.g. the debug ROM's gDxOff* struct offsets), @symbol!N adds N
 // KEY: A B SELECT START RIGHT LEFT UP DOWN R L (join with + to press together)
 #include <mgba/core/core.h>
 #include <mgba/core/log.h>
@@ -113,18 +114,28 @@ static unsigned eval(const char *e)
         strncpy(tmp, e + 1, sizeof tmp - 1);
         tmp[sizeof tmp - 1] = 0;
         char *p = strrchr(tmp, '+');
-        if (p) { *p = 0; off = strtoul(p + 1, NULL, 0); }
+        if (p) { *p = 0; off = (p[1] == '@') ? eval(p + 1) : strtoul(p + 1, NULL, 0); }
         return core->busRead32(core, eval(tmp)) + off;
     }
     if (isdigit((unsigned char)*e))
         return strtoul(e, NULL, 0);
+    if (*e == '@') {
+        // @sym or @sym!N: the u32 stored at sym (plus N)
+        char sym[96];
+        const char *bang = strchr(e, '!');
+        size_t len = bang ? (size_t)(bang - e - 1) : strlen(e + 1);
+        if (len >= sizeof sym) len = sizeof sym - 1;
+        memcpy(sym, e + 1, len);
+        sym[len] = 0;
+        return core->busRead32(core, eval(sym)) + (bang ? strtoul(bang + 1, NULL, 0) : 0);
+    }
 
     plus = strchr(e, '+');
     n = plus ? (size_t)(plus - e) : strlen(e);
     if (n >= sizeof name) n = sizeof name - 1;
     memcpy(name, e, n);
     name[n] = 0;
-    if (plus) off = strtoul(plus + 1, NULL, 0);
+    if (plus) off = (plus[1] == '@') ? eval(plus + 1) : strtoul(plus + 1, NULL, 0);
     for (i = 0; i < nsyms; i++)
         if (!strcmp(syms[i].name, name)) { base = syms[i].addr; return base + off; }
     out("ERROR unknown symbol %s\n", name);

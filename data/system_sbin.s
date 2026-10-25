@@ -18324,6 +18324,13 @@ gUnknown_83725F8:
 .4byte gUnknown_836799D
 .4byte gUnknown_836799E
 .4byte gUnknown_836799F
+#ifdef DX_RULES
+@ Rescue Team DX newcomers (ids 424+)
+.4byte LevelUpMovesRiolu
+.4byte HMTMMovesRiolu
+.4byte LevelUpMovesLucario
+.4byte HMTMMovesLucario
+#endif
 .global gUnknown_8373338
 gUnknown_8373338:
 .4byte gUnknown_83679A0

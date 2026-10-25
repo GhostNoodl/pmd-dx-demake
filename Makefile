@@ -306,10 +306,12 @@ MON_GFX_LZ := $(patsubst %.png,%.4bpp.lz,$(wildcard graphics/ax/mon/*/*.png))
 # dx C4: identical anim/pose/position/frame arrays share one copy
 DX_MON_CFLAGS ?= -fmerge-all-constants
 MON_GFX_ALL := $(C_BUILDDIR)/monster_gfx_all
-$(MON_GFX_ALL).o: $(MON_GFX_SRCS) $(wildcard $(C_SUBDIR)/data/ax/*.h) $(MON_GFX_LZ) tools/dxtest/lz_mon.sed
+MON_GFX_DX_HEADERS := $(wildcard $(C_SUBDIR)/data/ax/dx/*.h)
+$(MON_GFX_ALL).o: $(MON_GFX_SRCS) $(wildcard $(C_SUBDIR)/data/ax/*.h) $(MON_GFX_DX_HEADERS) $(MON_GFX_LZ) tools/dxtest/lz_mon.sed
 	@mkdir -p $(C_BUILDDIR)
 	@{ echo '#include "global.h"'; echo '#include "globaldata.h"'; echo '#include "monster_gfx.h"'; \
-		grep -h '^#include "data/ax/' $(MON_GFX_SRCS); } > $(MON_GFX_ALL).c
+		grep -h '^#include "data/ax/' $(MON_GFX_SRCS); \
+		for h in $(MON_GFX_DX_HEADERS); do echo "#include \"$${h#$(C_SUBDIR)/}\""; done; } > $(MON_GFX_ALL).c
 	@$(CPP) $(CPPFLAGS) -iquote $(C_SUBDIR) $(MON_GFX_ALL).c -o $(MON_GFX_ALL).i
 	@sed -i -E -f tools/dxtest/lz_mon.sed $(MON_GFX_ALL).i
 	@$(PREPROC) $(MON_GFX_ALL).i charmap.txt | $(CC1) $(CC1FLAGS) $(DX_MON_CFLAGS) -o $(MON_GFX_ALL).s

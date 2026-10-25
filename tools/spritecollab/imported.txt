@@ -1,3 +1,4 @@
 # <SpriteCollab dex> <name in this repo> [sprite|portrait|both]
 # Pikachu was re-imported only to validate the importer (the shipped sprite is still Red's)
-0025 pikachu sprite
+0447 riolu sprite
+0448 lucario sprite

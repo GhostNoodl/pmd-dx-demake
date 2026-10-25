@@ -455,4 +455,19 @@ static void DxToolDraw(void)
     sub_80073E0(INPUT_WINDOW);
 }
 
+
+// Struct offsets for the headless tests (tools/dxtest): `@gDxOff...` in a test reads these,
+// so tests keep working when DX changes grow structs.
+#include "structs/str_dungeon.h"
+#include "structs/dungeon_entity.h"
+const u32 gDxOffDungeonLocation = offsetof(Dungeon, unk644.dungeonLocation);
+const u32 gDxOffDungeonFloor = offsetof(Dungeon, unk644.dungeonLocation.floor);
+const u32 gDxOffFloorCount = offsetof(Dungeon, unk1CEC8);
+const u32 gDxOffTeamPokemon = offsetof(Dungeon, teamPokemon);
+const u32 gDxOffEntityPos = offsetof(Entity, pos);
+const u32 gDxOffEntityInfo = offsetof(Entity, axObj.info.monster);
+const u32 gDxOffInfoId = offsetof(EntityInfo, id);
+const u32 gDxOffInfoTypes = offsetof(EntityInfo, types);
+const u32 gDxOffInfoMoves = offsetof(EntityInfo, moves);
+const u32 gDxOffInfoHP = offsetof(EntityInfo, HP);
 #endif // DX_DEBUG

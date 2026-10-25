@@ -4,6 +4,7 @@
 
 #include "globaldata.h"
 #include "dx_save.h"
+#include "exclusive_pokemon.h"
 #include "memory.h"
 #include "pokemon.h"
 #include "save.h"
@@ -14,7 +15,7 @@
 // there, which reads as "nothing extra yet".
 #define DX_SAVE_SECTOR 24
 #define DX_SAVE_MAGIC 0x56534458 // "DXSV"
-#define DX_SAVE_VERSION 1
+#define DX_SAVE_VERSION 2
 
 typedef struct DxSaveExt
 {
@@ -25,10 +26,12 @@ typedef struct DxSaveExt
     u16 pokemonSize;
     u16 pad;
     Pokemon extraRecruits[DX_EXTRA_RECRUIT_SLOTS];
+    u8 newSpeciesSeen[DX_NEW_SPECIES_COUNT]; // Red's save only has seen flags for Red's species
 } DxSaveExt;
 
 void DxSaveExtWrite(void)
 {
+    s32 i;
     s32 sector = DX_SAVE_SECTOR;
     DxSaveExt *ext = MemoryAlloc(sizeof(DxSaveExt), MEMALLOC_GROUP_5);
 
@@ -38,12 +41,15 @@ void DxSaveExtWrite(void)
     ext->extraSlots = DX_EXTRA_RECRUIT_SLOTS;
     ext->pokemonSize = sizeof(Pokemon);
     MemoryCopy8(ext->extraRecruits, &gRecruitedPokemonRef->pokemon[VANILLA_RECRUIT_SLOTS], sizeof(ext->extraRecruits));
+    for (i = 0; i < DX_NEW_SPECIES_COUNT; i++)
+        ext->newSpeciesSeen[i] = GetMonSeenFlag(DX_FIRST_NEW_SPECIES + i);
     WriteSaveSector(&sector, (u8 *)ext, sizeof(DxSaveExt));
     MemoryFree(ext);
 }
 
 void DxSaveExtRead(void)
 {
+    s32 i;
     s32 sector = DX_SAVE_SECTOR;
     DxSaveExt *ext = MemoryAlloc(sizeof(DxSaveExt), MEMALLOC_GROUP_5);
     Pokemon *extras = &gRecruitedPokemonRef->pokemon[VANILLA_RECRUIT_SLOTS];
@@ -52,6 +58,10 @@ void DxSaveExtRead(void)
         && ext->magic == DX_SAVE_MAGIC && ext->version == DX_SAVE_VERSION
         && ext->extraSlots == DX_EXTRA_RECRUIT_SLOTS && ext->pokemonSize == sizeof(Pokemon)) {
         MemoryCopy8(extras, ext->extraRecruits, sizeof(ext->extraRecruits));
+        for (i = 0; i < DX_NEW_SPECIES_COUNT; i++) {
+            if (ext->newSpeciesSeen[i])
+                SetMonSeenFlag(DX_FIRST_NEW_SPECIES + i);
+        }
     }
     else {
         MemoryFill8(extras, 0, sizeof(Pokemon) * DX_EXTRA_RECRUIT_SLOTS);

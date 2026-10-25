@@ -1,7 +1,7 @@
 #rom debug
 #save after-first-dungeon
 # Debug Mode -> Warp -> #0 Tiny Woods -> floor 1, then check we are in the dungeon
-# Dungeon offsets (modern ABI): +0x644 dungeon id, +0x645 floor, +0x1D3D0 floor count
+# Dungeon offsets come from the debug ROM's gDxOff* symbols
 mash START sMainMenu 4 != 0 3000
 wait 60
 press UP
@@ -19,6 +19,6 @@ press A
 mash A gDungeon 4 != 0 1800
 wait 300
 shot 3_in_dungeon
-expect *gDungeon+0x644 1 == 0
-expect *gDungeon+0x645 1 == 1
-expect *gDungeon+0x1D3D0 4 == 4
+expect *gDungeon+@gDxOffDungeonLocation 1 == 0
+expect *gDungeon+@gDxOffDungeonFloor 1 == 1
+expect *gDungeon+@gDxOffFloorCount 4 == 4

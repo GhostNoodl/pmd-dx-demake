@@ -153,7 +153,8 @@ void WriteExclusivePokemon(DataSerializer *r0)
 
     WriteBits(r0, &gExclusiveMonPtr->unk0, 1);
 
-    for (i = 0; i < MONSTER_MAX; i++) {
+    // newer species' seen flags live in the DX save block (dx_save.c)
+    for (i = 0; i < VANILLA_MONSTER_MAX; i++) {
         bool8 b = GetMonSeenFlag(i);
         WriteBits(r0, &b, 1);
     }
@@ -188,7 +189,7 @@ void ReadExclusivePokemon(DataSerializer *r0)
 
     ReadBits(r0, &gExclusiveMonPtr->unk0, 1);
 
-    for (i = 0; i < MONSTER_MAX; i++) {
+    for (i = 0; i < VANILLA_MONSTER_MAX; i++) {
         bool8 b;
         ReadBits(r0, &b, 1);
         if (b)

@@ -1,7 +1,7 @@
 #rom debug
 #save after-first-dungeon
 # DX auto-mode: tap L and the leader explores on its own
-# Dungeon offsets (modern ABI): +0x644 dungeon id, +0x645 floor, +0x1D3D0 floor count
+# Dungeon offsets come from the debug ROM's gDxOff* symbols
 mash START sMainMenu 4 != 0 3000
 wait 60
 press UP
@@ -18,8 +18,8 @@ mash A gDungeon 4 != 0 1800
 wait 600
 shot 1_before
 read money0 *gTeamInventoryRef+0x260 4
-read x0 **gDungeon+0x1398C+0x4 2
-read y0 **gDungeon+0x1398C+0x6 2
+read x0 **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos 2
+read y0 **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos!2 2
 press L 4 20
 wait 400
 shot 2_auto_400
@@ -28,6 +28,6 @@ shot 3_auto_1000
 wait 1200
 shot 4_auto_2200
 read money1 *gTeamInventoryRef+0x260 4
-read x1 **gDungeon+0x1398C+0x4 2
-read y1 **gDungeon+0x1398C+0x6 2
+read x1 **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos 2
+read y1 **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos!2 2
 cmpreads x0 != x1

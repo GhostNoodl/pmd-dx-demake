@@ -438,7 +438,19 @@
 #else
 #define NUM_MONSTERS MONSTER_JIRACHI
 #endif
+// Red's species count: what Red's save format stores per-species bits for
+#define VANILLA_MONSTER_MAX (MONSTER_RAYQUAZA_CUTSCENE + 1)
+
+#ifdef DX_RULES
+// Rescue Team DX newcomers (after Red's last id)
+#define MONSTER_RIOLU 424
+#define MONSTER_LUCARIO 425
+#define DX_FIRST_NEW_SPECIES MONSTER_RIOLU
+#define DX_NEW_SPECIES_COUNT 2
+#define MONSTER_MAX (MONSTER_LUCARIO + 1)
+#else
 #define MONSTER_MAX (MONSTER_RAYQUAZA_CUTSCENE + 1)
+#endif
 
 #define MONSTER_FLAGS_U32STORAGE 14
 

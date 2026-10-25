@@ -27,8 +27,8 @@ press A
 mash A gDungeon 4 != 0 1800
 wait 600
 shot 1_in_dungeon
-expect *gDungeon+0x644 1 == 0
-expect *gDungeon+0x645 1 == 1
+expect *gDungeon+@gDxOffDungeonLocation 1 == 0
+expect *gDungeon+@gDxOffDungeonFloor 1 == 1
 hold RIGHT 60
 wait 60
 shot 2_walk
@@ -38,14 +38,14 @@ shot 3_walk
 hold LEFT 90
 wait 120
 shot 4_walk
-read species0 ***gDungeon+0x1398C+0x70+0x2 2
-read types0 ***gDungeon+0x1398C+0x70+0x5C 2
-read species1 ***gDungeon+0x13990+0x70+0x2 2
-read types1 ***gDungeon+0x13990+0x70+0x5C 2
-read species2 ***gDungeon+0x13994+0x70+0x2 2
-read types2 ***gDungeon+0x13994+0x70+0x5C 2
-expect ***gDungeon+0x13994+0x70+0x2 2 == 420
-expect ***gDungeon+0x13994+0x70+0x5C 2 == 1
+read species0 ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoId 2
+read types0 ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoTypes 2
+read species1 ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoId 2
+read types1 ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoTypes 2
+read species2 ***gDungeon+@gDxOffTeamPokemon!8+@gDxOffEntityInfo+@gDxOffInfoId 2
+read types2 ***gDungeon+@gDxOffTeamPokemon!8+@gDxOffEntityInfo+@gDxOffInfoTypes 2
+expect ***gDungeon+@gDxOffTeamPokemon!8+@gDxOffEntityInfo+@gDxOffInfoId 2 == 420
+expect ***gDungeon+@gDxOffTeamPokemon!8+@gDxOffEntityInfo+@gDxOffInfoTypes 2 == 1
 shot 2_munchlax
 hold RIGHT 60
 wait 60

@@ -1,0 +1,59 @@
+#rom debug
+#save after-first-dungeon
+# DX Riolu (#424, new species id) on the team: Fighting type, sprite draws, walks and fights: Storage recruits, mark slots 0-3 as on-team, warp to Tiny Woods 1F
+mash START sMainMenu 4 != 0 3000
+wait 60
+press UP
+press A
+wait 30
+# Storage is the 6th debug menu entry
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press A
+wait 600
+write *gRecruitedPokemonRef+8 2 424
+write *gRecruitedPokemonRef+0 2 3
+# the main menu remembers the cursor on Debug Mode
+press A
+wait 30
+press A
+wait 30
+press A
+wait 30
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+shot 1_in_dungeon
+expect *gDungeon+@gDxOffDungeonLocation 1 == 0
+expect *gDungeon+@gDxOffDungeonFloor 1 == 1
+hold RIGHT 60
+wait 60
+shot 2_walk
+hold DOWN 60
+wait 120
+shot 3_walk
+hold LEFT 90
+wait 120
+shot 4_walk
+read species0 ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoId 2
+read types0 ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoTypes 2
+read species1 ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoId 2
+read types1 ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoTypes 2
+read species2 ***gDungeon+@gDxOffTeamPokemon!8+@gDxOffEntityInfo+@gDxOffInfoId 2
+read types2 ***gDungeon+@gDxOffTeamPokemon!8+@gDxOffEntityInfo+@gDxOffInfoTypes 2
+expect ***gDungeon+@gDxOffTeamPokemon!8+@gDxOffEntityInfo+@gDxOffInfoId 2 == 424
+expect ***gDungeon+@gDxOffTeamPokemon!8+@gDxOffEntityInfo+@gDxOffInfoTypes 2 == 7
+shot 2_munchlax
+hold RIGHT 60
+wait 60
+shot 3_walk
+press B
+wait 30
+press DOWN
+press DOWN
+press A
+wait 40
+shot 4_team_menu

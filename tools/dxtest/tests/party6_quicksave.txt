@@ -29,8 +29,8 @@ press A
 mash A gDungeon 4 != 0 1800
 wait 600
 shot 1_in_dungeon
-expect *gDungeon+0x644 1 == 0
-expect *gDungeon+0x645 1 == 1
+expect *gDungeon+@gDxOffDungeonLocation 1 == 0
+expect *gDungeon+@gDxOffDungeonFloor 1 == 1
 # fight a little
 press A 4 30
 press A 4 30
@@ -71,7 +71,7 @@ waitfor sMainLoopsUnk 4 == 1 1800
 wait 600
 shot 8_resumed
 expect sMainLoopsUnk 4 == 1
-expect *gDungeon+0x644 1 == 0
+expect *gDungeon+@gDxOffDungeonLocation 1 == 0
 press B
 wait 30
 press DOWN

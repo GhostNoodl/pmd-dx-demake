@@ -1,7 +1,7 @@
 #rom debug
 #save after-first-dungeon
 # DX: a TM is used up when taught in a dungeon (no Used TM left)
-# Dungeon offsets (modern ABI): +0x644 dungeon id, +0x645 floor, +0x1D3D0 floor count
+# Dungeon offsets come from the debug ROM's gDxOff* symbols
 mash START sMainMenu 4 != 0 3000
 wait 60
 # first toolbox slot = TM Focus Punch (id 125; Cubone and Charmander can learn it)

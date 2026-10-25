@@ -33,8 +33,8 @@ press A
 mash A gDungeon 4 != 0 1800
 wait 600
 shot 1_in_dungeon
-expect *gDungeon+0x644 1 == 0
-expect *gDungeon+0x645 1 == 1
+expect *gDungeon+@gDxOffDungeonLocation 1 == 0
+expect *gDungeon+@gDxOffDungeonFloor 1 == 1
 hold RIGHT 60
 wait 60
 shot 2_walk

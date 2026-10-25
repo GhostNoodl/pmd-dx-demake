@@ -1,0 +1,44 @@
+#rom debug
+#save after-first-dungeon
+# Recruit tool: #424 Riolu (DX newcomer) at Lv. 20 joins
+mash START sMainMenu 4 != 0 3000
+wait 60
+press UP
+press A
+wait 30
+press DOWN
+press DOWN
+press A
+wait 30
+# species 1 -> 424: hundreds +4 (401), tens +2 (421), ones +3 (424)
+press LEFT
+press LEFT
+press UP
+press UP
+press UP
+press UP
+press RIGHT
+press UP
+press UP
+press RIGHT
+press UP
+press UP
+press UP
+wait 10
+shot 1_species
+press A
+wait 20
+# level 5 -> 20: tens +2 (25), ones -5 (20)
+press LEFT
+press UP
+press UP
+press RIGHT
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+wait 10
+press A
+wait 30
+shot 2_joined

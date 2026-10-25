@@ -428,6 +428,10 @@ extern const SiroArchive gAxMunchlax;
 extern const SiroArchive gAxDecoy;
 extern const SiroArchive gAxStatue;
 extern const SiroArchive gAxRayquazaCutscene;
+#ifdef DX_RULES
+extern const SiroArchive gAxRiolu;
+extern const SiroArchive gAxLucario;
+#endif
 extern const u8 gKaoBulbasaur[];
 extern const u8 gKaoCharmander[];
 extern const u8 gKaoCharizard[];
