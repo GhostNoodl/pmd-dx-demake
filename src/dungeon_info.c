@@ -1,4 +1,7 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rules.h"
+#endif
 #include "globaldata.h"
 #include "constants/dungeon.h"
 #include "constants/monster.h"
@@ -20,6 +23,9 @@
 
 static void AppendWithNewLines(u8 *dst, const u8 *src);
 static bool8 TeamMonWithMove(u16 moveID);
+#ifdef DX_RULES
+static void DxAppendBriefing(u8 *buffer, u8 dungeonIndex, bool8 haveRules);
+#endif
 
 static const u8 sDungeonFloorCount[] = {
     [DUNGEON_TINY_WOODS]                = 4,
@@ -2719,6 +2725,11 @@ u32 BufferDungeonRequirementsText(u8 dungeonIndex, s32 speciesId_, u8 *buffer, b
         InlineStrcat(buffer,newLine);
     }
 
+#ifdef DX_RULES
+    // Rescue Team DX's pre-dungeon briefing: what to expect, then confirm
+    DxAppendBriefing(buffer, dungeonIndex, requirementsAsk);
+    return DUNGEON_REQUIREMENTS_ASK;
+#else
     if (requirementsAsk) {
         return DUNGEON_REQUIREMENTS_ASK;
     }
@@ -2726,7 +2737,43 @@ u32 BufferDungeonRequirementsText(u8 dungeonIndex, s32 speciesId_, u8 *buffer, b
         sprintfStatic(buffer,_("No problem."));
         return DUNGEON_REQUIREMENTS_PASS;
     }
+#endif
 }
+
+#ifdef DX_RULES
+// one-line briefing (the debug Warp tool shows it): team size, items, recruiting, Strong Foe
+void DxBriefingSummary(u8 dungeonIndex, u8 *buffer)
+{
+    const DungeonDataEntry *info = &gDungeons[dungeonIndex];
+
+    sprintfStatic(buffer, _("Team %d Items %d %s%s"), info->maxPartyMembers, info->maxItemsAllowed,
+        info->recruitingEnabled ? _("Recruit OK") : _("No recruit"),
+        DxDungeonHasStrongFoe(dungeonIndex) ? _(" Strong Foe!") : _(""));
+}
+
+static void DxAppendBriefing(u8 *buffer, u8 dungeonIndex, bool8 haveRules)
+{
+    u8 line[80];
+    const DungeonDataEntry *info = &gDungeons[dungeonIndex];
+
+    if (!haveRules)
+        InlineStrcpy(buffer, "");
+    sprintfStatic(line, _("{COLOR CYAN}Briefing{RESET}: %d floors, up to %d on the team.\n"),
+        GetDungeonFloorCount(dungeonIndex), info->maxPartyMembers);
+    strcat(buffer, line);
+    if (info->maxItemsAllowed == 0)
+        sprintfStatic(line, _("No items allowed. "));
+    else
+        sprintfStatic(line, _("Up to %d items. "), info->maxItemsAllowed);
+    strcat(buffer, line);
+    strcat(buffer, info->recruitingEnabled ? _("Recruiting OK.") : _("No recruiting."));
+    if (info->levelResetTo1 && !haveRules)
+        strcat(buffer, _(" Lv. 1 start."));
+    if (DxDungeonHasStrongFoe(dungeonIndex))
+        strcat(buffer, _("\nA Strong Foe may lurk here!"));
+    strcat(buffer, _("\nEnter the dungeon?"));
+}
+#endif
 
 static bool8 TeamMonWithMove(u16 moveID)
 {

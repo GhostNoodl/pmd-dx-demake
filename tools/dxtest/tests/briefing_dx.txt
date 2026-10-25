@@ -1,0 +1,43 @@
+#rom debug
+#save after-first-dungeon
+# DX briefing: the Warp tool shows the short briefing line; Mt. Steel (#2) has recruiting and a Strong Foe
+mash START sMainMenu 4 != 0 3000
+wait 60
+press UP
+press A
+wait 30
+press A
+wait 30
+# mark Mt. Steel cleared (Strong Foes need a first clear)
+write gDxClearedDungeons 1 4
+press UP
+press UP
+wait 10
+expect *sDxWarp+0xB0 4 == 2
+expect gDxClearedDungeons 1 == 4
+shot 1_mt_steel_briefing
+press DOWN
+press DOWN
+wait 10
+expect *sDxWarp+0xB0 4 == 0
+shot 2_tiny_woods_briefing
+# the real briefing: Warp via the world map to Mt. Steel, read the Yes/No prompt, enter
+write gDxWarpViaMap 1 1
+press UP
+press UP
+wait 10
+press A
+wait 30
+press A
+wait 400
+shot 3_world_map
+wait 200
+shot 4_briefing_prompt
+press UP
+wait 10
+press A
+mash A gDungeon 4 != 0 1800
+wait 300
+shot 5_in_mt_steel
+expect *gDungeon+@gDxOffDungeonLocation 1 == 2
+expect *gDungeon+@gDxOffDungeonFloor 1 == 1

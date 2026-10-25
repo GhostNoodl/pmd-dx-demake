@@ -202,6 +202,20 @@ bool8 DxDungeonCleared(u8 dungeon)
     return dungeon < 128 && (gDxClearedDungeons[dungeon / 8] & (1 << (dungeon % 8)));
 }
 
+// for the briefing: a cleared dungeon with a Strong Foe
+bool8 DxDungeonHasStrongFoe(u8 dungeon)
+{
+    s32 i;
+
+    if (!DxDungeonCleared(dungeon))
+        return FALSE;
+    for (i = 0; i < ARRAY_COUNT(sDxStrongFoes); i++) {
+        if (sDxStrongFoes[i].dungeon == dungeon)
+            return TRUE;
+    }
+    return FALSE;
+}
+
 // as a floor is generated: does a Strong Foe show up here?
 void DxRollStrongFoe(void)
 {
