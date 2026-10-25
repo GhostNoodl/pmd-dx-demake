@@ -1,4 +1,7 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rules.h"
+#endif
 #include "globaldata.h"
 #include "run_dungeon.h"
 #include "constants/dungeon.h"
@@ -139,6 +142,9 @@ void RunDungeon_Async(DungeonSetupStruct *setupPtr)
         gDungeon->unk644.dungeonSeed = setupPtr->info.dungeonSeed;
         gDungeon->unk644.windTurns = GetTurnLimit(setupPtr->info.sub0.unk0.id);
         gDungeon->unk644.windPhase = 0;
+#ifdef DX_RULES
+        gDxAdventureTurns = 0;
+#endif
         gDungeon->unk644.unk37 = GetRescuesAllowed(setupPtr->info.sub0.unk0.id);
     }
     gDungeon->unk644.unk54 = 0;

@@ -48,6 +48,10 @@ void DxBriefingSummary(u8 dungeonIndex, u8 *buffer);
 struct DxShiny { s16 species; u8 palette; };
 s32 DxShinyPalette(s32 species);
 u8 DxPokemonPalette(Pokemon *mon);
+// recruits without a camp (DX): they help for the adventure, then leave with a gift of Poke
+extern u16 gDxAdventureTurns;
+void DxMarkVisitor(s32 teamSlot, DungeonMon *dmon);
+void DxPayVisitors(u8 friendArea);
 void DxMysteryHouseSpawned(Entity *mon);
 extern bool8 gDxForceShiny;
 

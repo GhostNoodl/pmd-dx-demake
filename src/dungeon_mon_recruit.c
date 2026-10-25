@@ -31,6 +31,7 @@
 #include "dungeon_vram.h"
 #include "dungeon_util.h"
 #include "friend_area.h"
+#include "constants/friend_area.h"
 #include "pokemon.h"
 #include "pokemon_3.h"
 #include "position_util.h"
@@ -286,6 +287,7 @@ bool8 IsMonsterRecruitable(s32 species)
         return FALSE;
     }
     else {
+#ifndef DX_RULES // DX: a Pokemon whose camp you don't own can still join for the adventure
         if (GetUnk12(id) == 0) {
             FriendAreaCapacity friendAreaCapacity;
             u8 friendArea = GetFriendArea(id);
@@ -294,6 +296,7 @@ bool8 IsMonsterRecruitable(s32 species)
             if (friendAreaCapacity.hasFriendArea == FALSE)
                 return FALSE;
         }
+#endif
         return TRUE;
     }
 }
@@ -331,7 +334,13 @@ bool8 MonsterJoinSequence_Async(Entity *entity1, Entity *entity2, struct unkStru
         return FALSE;
     }
 
+#ifdef DX_RULES
+    // DX: Wigglytuff's camps are bought, not handed out by a recruit (it's a visitor instead);
+    // the ones he doesn't sell (legendary camps) still open when their Pokemon joins
+    if (GetFriendAreaStatus(friendArea) == 0 && GetFriendAreaShopCondition(friendArea) == UNLOCK_LEGENDARY_REQUEST) {
+#else
     if (GetFriendAreaStatus(friendArea) == 0) {
+#endif
         UnlockFriendArea(friendArea);
         unlockedFriendArea = TRUE;
     }
@@ -347,6 +356,8 @@ bool8 MonsterJoinSequence_Async(Entity *entity1, Entity *entity2, struct unkStru
 #ifdef DX_RULES
     dungeonMon->dxFlags = param_3->dxShiny ? DX_FLAG_SHINY : 0;
     dungeonMon->dxQuality = DxRecruitQuality(param_3->id, param_3->dxShiny, entity1);
+    dungeonMon->speciesNum = param_3->id;
+    DxMarkVisitor(pokeIndex, dungeonMon);
 #endif
     dungeonMon->recruitedPokemonId = -1;
     dungeonMon->unkC = pokeIndex;

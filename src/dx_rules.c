@@ -3,6 +3,8 @@
 #ifdef DX_RULES
 
 #include "dx_rules.h"
+#include "constants/rare_quality.h"
+#include "friend_area.h"
 #include "dungeon_cutscene.h"
 #include "event_flag.h"
 #include "dx_tuning.h"
@@ -398,3 +400,46 @@ s32 DxMysteryHouseLevel(void)
 }
 
 #endif // DX_RULES
+
+// --- recruits without a camp ---
+// turns passed this adventure (UpdateWindTurns), and when each team slot's visitor joined
+EWRAM_DATA u16 gDxAdventureTurns = 0;
+static EWRAM_DATA u16 sDxVisitorJoinTurn[MAX_TEAM_MEMBERS] = {0};
+
+static const u8 sDxVisitorLeaves[] = _("{POKEMON_0} had a fun adventure! With no\ncamp to stay in, it went home and left\n{COLOR YELLOW}%d{RESET} Poké as thanks.");
+
+// Rescue Team DX: you can recruit a Pokemon whose camp you don't own; it joins for the adventure
+void DxMarkVisitor(s32 teamSlot, DungeonMon *dmon)
+{
+    if (GetFriendAreaStatus(GetFriendArea(dmon->speciesNum)))
+        return;
+    dmon->dxFlags |= DX_FLAG_VISITOR;
+    sDxVisitorJoinTurn[teamSlot] = gDxAdventureTurns;
+}
+
+// the adventure is over: this camp's visitors go home, each leaving Poke for the turns spent together
+void DxPayVisitors(u8 friendArea)
+{
+    s32 i;
+    u8 text[160];
+
+    for (i = 0; i < MAX_TEAM_MEMBERS; i++) {
+        DungeonMon *dmon = &gRecruitedPokemonRef->dungeonTeam[i];
+        s32 poke;
+
+        if (!DungeonMonExists(dmon) || !(dmon->dxFlags & DX_FLAG_VISITOR) || GetFriendArea(dmon->speciesNum) != friendArea)
+            continue;
+        poke = (gDxAdventureTurns - sDxVisitorJoinTurn[i]) * DX_VISITOR_POKE_PER_TURN;
+        if (poke < DX_VISITOR_POKE_MIN)
+            poke = DX_VISITOR_POKE_MIN;
+        if (poke > DX_VISITOR_POKE_MAX)
+            poke = DX_VISITOR_POKE_MAX;
+        gTeamInventoryRef->teamMoney += poke;
+        if (gTeamInventoryRef->teamMoney > MAX_TEAM_MONEY)
+            gTeamInventoryRef->teamMoney = MAX_TEAM_MONEY;
+        CopyCyanMonsterNametoBuffer(gFormatBuffer_Monsters[0], dmon->speciesNum);
+        sprintfStatic(text, sDxVisitorLeaves, poke);
+        DisplayDungeonMessage_Async(NULL, text, TRUE);
+        dmon->dxFlags &= ~DX_FLAG_VISITOR;
+    }
+}

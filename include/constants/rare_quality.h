@@ -45,5 +45,6 @@ enum RareQuality
 
 // Pokemon.dxFlags / DungeonMon.dxFlags
 #define DX_FLAG_SHINY (1 << 0)
+#define DX_FLAG_VISITOR (1 << 1) // joined in a dungeon without its camp: leaves (with Poke) at the end
 
 #endif // GUARD_CONSTANTS_RARE_QUALITY_H
