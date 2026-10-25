@@ -164,6 +164,12 @@ C_SOURCES := $(foreach src,$(C_SRCS_IN),$(if $(findstring .inc.c,$(src)),,$(src)
 ifneq ($(DX_DEBUG),1)
   C_SOURCES := $(filter-out $(C_SUBDIR)/dx_%.c,$(C_SOURCES))
 endif
+# dx C4: modern builds compile every src/monster_gfx*.c as one unit, so
+# -fmerge-all-constants can share identical anim/pose/position/frame data across monsters
+ifeq ($(MODERN)$(DX_LZ_MON),11)
+  MON_GFX_SRCS := $(filter $(C_SUBDIR)/monster_gfx%.c,$(C_SOURCES))
+  C_SOURCES := $(filter-out $(MON_GFX_SRCS),$(C_SOURCES)) $(C_SUBDIR)/monster_gfx_all.c
+endif
 ASM_SOURCES := $(wildcard asm/*.s data/*.s)
 # dx C2: data blobs nothing references; dropped from modern builds only (matching keeps them)
 DX_DROP_DATA ?= unk_9D02950 unk_96BD7AC unk_9fbd5d0 unk_98589A4 unk_9E7EB08
@@ -290,13 +296,18 @@ ifeq ($(MODERN)$(DX_LZ_MON),11)
 # (= compressed; the real size is in the LZ77 header). Done on the preprocessed text
 # so the 423 src/data/ax headers stay untouched.
 MON_GFX_LZ := $(patsubst %.png,%.4bpp.lz,$(wildcard graphics/ax/mon/*/*.png))
-MON_GFX_OBJS := $(filter $(C_BUILDDIR)/monster_gfx%.o,$(C_OBJECTS))
-$(MON_GFX_OBJS): $(C_BUILDDIR)/monster_gfx%.o: $(C_SUBDIR)/monster_gfx%.c $(MON_GFX_LZ)
-	@$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/monster_gfx$*.i
-	@sed -i -E -f tools/dxtest/lz_mon.sed $(C_BUILDDIR)/monster_gfx$*.i
-	@$(PREPROC) $(C_BUILDDIR)/monster_gfx$*.i charmap.txt | $(CC1) $(CC1FLAGS) -o $(C_BUILDDIR)/monster_gfx$*.s
-	@echo -e ".text\n\t.align\t2, 0\n" >> $(C_BUILDDIR)/monster_gfx$*.s
-	$(AS) $(ASFLAGS) -o $@ $(C_BUILDDIR)/monster_gfx$*.s
+# dx C4: identical anim/pose/position/frame arrays share one copy
+DX_MON_CFLAGS ?= -fmerge-all-constants
+MON_GFX_ALL := $(C_BUILDDIR)/monster_gfx_all
+$(MON_GFX_ALL).o: $(MON_GFX_SRCS) $(wildcard $(C_SUBDIR)/data/ax/*.h) $(MON_GFX_LZ) tools/dxtest/lz_mon.sed
+	@mkdir -p $(C_BUILDDIR)
+	@{ echo '#include "global.h"'; echo '#include "globaldata.h"'; echo '#include "monster_gfx.h"'; \
+		grep -h '^#include "data/ax/' $(MON_GFX_SRCS); } > $(MON_GFX_ALL).c
+	@$(CPP) $(CPPFLAGS) -iquote $(C_SUBDIR) $(MON_GFX_ALL).c -o $(MON_GFX_ALL).i
+	@sed -i -E -f tools/dxtest/lz_mon.sed $(MON_GFX_ALL).i
+	@$(PREPROC) $(MON_GFX_ALL).i charmap.txt | $(CC1) $(CC1FLAGS) $(DX_MON_CFLAGS) -o $(MON_GFX_ALL).s
+	@echo -e ".text\n\t.align\t2, 0\n" >> $(MON_GFX_ALL).s
+	$(AS) $(ASFLAGS) -o $@ $(MON_GFX_ALL).s
 
 $(MON_GFX_LZ): %.4bpp.lz: %.4bpp ; @$(GBAGFX) $< $@
 endif
