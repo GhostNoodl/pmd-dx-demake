@@ -1,0 +1,160 @@
+#rom debug
+#save after-first-dungeon
+# DX post-game rematch with the Mankey gang (Uproar Forest B4F, forced post-game): they are back, and beating them all ends the floor
+mash START sMainMenu 4 != 0 3000
+write gDxForcePostgame 1 1
+write gDxTestSeed 4 99991
+wait 60
+press UP
+press A
+wait 30
+press A
+wait 30
+press LEFT
+press UP
+press RIGHT
+press UP
+press UP
+press UP
+press UP
+press UP
+press UP
+press UP
+press UP
+press UP
+wait 10
+expect *sDxWarp+0xB0 4 == 19
+shot 1_pick_dungeon
+press A
+wait 30
+press UP
+press UP
+press UP
+wait 10
+expect *sDxWarp+0xB0 4 == 4
+shot 2_pick_floor
+press A
+mash A gDungeon 4 != 0 1800
+wait 200
+shot 3_arrive
+wait 400
+shot 4_rematch
+expect *gDungeon+@gDxOffDungeonLocation 1 == 42
+expect ***gDungeon+@gDxOffWildPokemon+@gDxOffEntityInfo+@gDxOffInfoLevel 1 >= 40
+expect *gDungeon+@gDxOffFloorEnd 1 == 0
+expect ***gDungeon+@gDxOffWildPokemon+@gDxOffEntityInfo+@gDxOffInfoId 2 == 56
+expect ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoId 2 == 56
+expect ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoId 2 == 56
+# through the dialogue, then 1 HP foes and a tough team
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot 5_fight
+write ***gDungeon+@gDxOffWildPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 999
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMaxHP 2 999
+write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 999
+write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoMaxHP 2 999
+# the leader only knows status moves: give it Bite
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!2 2 63
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!4 1 40
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot f0
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot f1
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot f2
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot f3
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot f4
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot f5
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot f6
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot f7
+expect *gDungeon+@gDxOffFloorEnd 1 == 1

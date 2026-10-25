@@ -29,6 +29,9 @@
 #include "math.h"
 #include "dungeon_config.h"
 #include "dungeon_boss_dialogue.h"
+#include "dx_rules.h"
+#include "dx_tuning.h"
+#include "dungeon_leveling.h"
 
 
 static void sub_80898F8(Entity *r0);
@@ -45,9 +48,29 @@ void sub_808970C(void)
     sub_8085860(leaderEntity->pos.x,leaderEntity->pos.y -3);
 }
 
+#ifdef DX_RULES
+static void DxMankeyRematch(Entity *mon)
+{
+    LevelUpTarget(mon, mon, DX_BOSS_REMATCH_LEVEL, 0, 0);
+    SetFacingDirection(mon, DIRECTION_NORTH);
+}
+#endif
+
 void sub_808974C(void)
 {
     Entity *leaderEntity = CutsceneGetLeader();
+#ifdef DX_RULES
+    if (DxPostgame()) {
+        // DX: after the credits the Mankey gang is back in Uproar Forest for a rematch
+        DungeonStartNewBGM(MUS_TINY_WOODS);
+        sub_80854D4();
+        sub_8085930(DIRECTION_NORTH);
+        sub_80855E4(sub_8086A3C);
+        sub_808563C(DxMankeyRematch);
+        sub_8085860(leaderEntity->pos.x,leaderEntity->pos.y -3);
+        return;
+    }
+#endif
     sub_80854D4();
     sub_8085930(DIRECTION_NORTH);
     sub_80855E4(sub_8086A3C);
@@ -60,7 +83,11 @@ void HandleMankeyBossFaint(Entity *entity, u8 monsterBehavior, u8 cutscene)
     s32 i;
     bool8 stillAlive = FALSE;
 
+#ifdef DX_RULES
+    if (cutscene == CUTSCENE_UPROAR_FOREST_ATTEMPT1 || cutscene == CUTSCENE_UPROAR_FOREST_ATTEMPT2 || cutscene == CUTSCENE_UPROAR_FOREST_POSTSTORY) {
+#else
     if (cutscene == CUTSCENE_UPROAR_FOREST_ATTEMPT1 || cutscene == CUTSCENE_UPROAR_FOREST_ATTEMPT2) {
+#endif
         for (i = 0; i < DUNGEON_MAX_WILD_POKEMON; i++) {
             Entity *monEntity = gDungeon->wildPokemon[i];
             if (EntityIsValid(monEntity) && monEntity != entity && GetEntInfo(monEntity)->monsterBehavior == monsterBehavior) {
@@ -131,6 +158,12 @@ void sub_8089878(void)
 
 void sub_80898E4(void)
 {
+#ifdef DX_RULES
+    if (GetEntityFromMonsterBehavior(BEHAVIOR_MANKEY) != NULL) {
+        sub_8089878(); // the rematch: Red's re-fight scene
+        return;
+    }
+#endif
     sub_8086448();
     sub_80866C4(&gUnknown_8103E34);
 }

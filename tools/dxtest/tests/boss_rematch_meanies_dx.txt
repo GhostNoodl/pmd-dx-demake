@@ -1,0 +1,190 @@
+#rom debug
+#save after-first-dungeon
+# DX post-game rematch with Team Meanies (Sinister Woods 13F, forced post-game): all three are back, and beating them ends the floor
+mash START sMainMenu 4 != 0 3000
+write gDxForcePostgame 1 1
+write gDxTestSeed 4 99991
+wait 60
+press UP
+press A
+wait 30
+press A
+wait 30
+press UP
+press UP
+press UP
+wait 10
+expect *sDxWarp+0xB0 4 == 3
+press A
+wait 30
+press UP
+press UP
+press UP
+press UP
+press UP
+press UP
+press UP
+press UP
+press UP
+press UP
+press UP
+press UP
+wait 10
+expect *sDxWarp+0xB0 4 == 13
+press A
+mash A gDungeon 4 != 0 1800
+wait 200
+shot 1
+wait 300
+shot 2
+shot 2_rematch
+expect ***gDungeon+@gDxOffWildPokemon+@gDxOffEntityInfo+@gDxOffInfoId 2 == 333
+expect ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoId 2 == 94
+expect ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoId 2 == 23
+expect ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoLevel 1 >= 40
+expect *gDungeon+@gDxOffFloorEnd 1 == 0
+# 1 HP foes and a tough leader; fight until all three are down
+write ***gDungeon+@gDxOffWildPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffWildPokemon!8+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 999
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMaxHP 2 999
+write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 999
+write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoMaxHP 2 999
+# the leader only knows status moves: give it Bite (Gengar is a Ghost, so no Tackle)
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!2 2 63
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!4 1 40
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot f0
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot f1
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot f2
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot f3
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot f4
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot f5
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot f6
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot f7
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot g0
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot g1
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot g2
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+press A
+wait 50
+shot g3
+shot 3_after_fight
+expect *gDungeon+@gDxOffFloorEnd 1 == 1

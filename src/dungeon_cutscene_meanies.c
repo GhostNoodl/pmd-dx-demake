@@ -28,6 +28,10 @@
 #include "math.h"
 #include "dungeon_config.h"
 #include "dungeon_boss_dialogue.h"
+#include "dx_rules.h"
+#include "dx_tuning.h"
+#include "dungeon_leveling.h"
+#include "constants/dungeon_exit.h"
 
 
 static void sub_8087144(void);
@@ -49,11 +53,50 @@ void sub_8086E9C(void)
   CopyMonsterNameToBuffer(gFormatBuffer_Monsters[4], MONSTER_CATERPIE);
 }
 
+#ifdef DX_RULES
+static const s16 sDxMeanies[][2] = {
+    { MONSTER_GENGAR, BEHAVIOR_GENGAR },
+    { MONSTER_EKANS, BEHAVIOR_EKANS },
+    { MONSTER_MEDICHAM, BEHAVIOR_MEDICHAM },
+};
+
+// DX: after the credits Team Meanies wait in Sinister Woods for a rematch; the ones that
+// have joined you stay away. TRUE if any of them is here.
+static bool8 DxMeaniesRematch(void)
+{
+    s32 i;
+    bool8 any = FALSE;
+
+    for (i = 0; i < ARRAY_COUNT(sDxMeanies); i++) {
+        Entity *mon = GetEntityFromMonsterBehavior(sDxMeanies[i][1]);
+        if (mon == NULL)
+            continue;
+        if (!DxBossRematch(sDxMeanies[i][0])) {
+            HandleFaint_Async(mon, DUNGEON_EXIT_DELETED_FOR_EVENT, 0);
+            continue;
+        }
+        LevelUpTarget(mon, mon, DX_BOSS_REMATCH_LEVEL, 0, 0);
+        any = TRUE;
+    }
+    return any;
+}
+#endif
+
 void sub_8086F00(void)
 {
   Entity * leaderEntity;
 
   leaderEntity = CutsceneGetLeader();
+#ifdef DX_RULES
+  if (DxMeaniesRematch()) {
+    sub_80854D4();
+    sub_8085930(DIRECTION_NORTH);
+    sub_80855E4(sub_8086A3C);
+    sub_808563C(sub_8086A3C);
+    sub_8085860(leaderEntity->pos.x,leaderEntity->pos.y - 3);
+    return;
+  }
+#endif
   sub_80854D4();
   sub_8085930(DIRECTION_NORTH);
   sub_80855E4(sub_8086A3C);
@@ -67,7 +110,11 @@ void HandleMeaniesBossFaint(u8 monsterBehavior, u8 cutscene)
 {
     s32 i;
 
+#ifdef DX_RULES
+    if (cutscene == CUTSCENE_SINISTER_WOODS_ATTEMPT1 || cutscene == CUTSCENE_SINISTER_WOODS_ATTEMPT2 || cutscene == CUTSCENE_SINISTER_WOODS_POSTSTORY)  {
+#else
     if (cutscene == CUTSCENE_SINISTER_WOODS_ATTEMPT1 || cutscene == CUTSCENE_SINISTER_WOODS_ATTEMPT2)  {
+#endif
         bool8 stillAlive = FALSE;
 
         for (i = 0; i < DUNGEON_MAX_WILD_POKEMON; i++) {
@@ -146,6 +193,19 @@ void TeamMeaniesReFightDialogue(void)
 
 void sub_8087130(void)
 {
+#ifdef DX_RULES
+    if (GetEntityFromMonsterBehavior(BEHAVIOR_GENGAR) != NULL || GetEntityFromMonsterBehavior(BEHAVIOR_EKANS) != NULL
+        || GetEntityFromMonsterBehavior(BEHAVIOR_MEDICHAM) != NULL) {
+        // the rematch: Team Meanies jump in, then the boss battle (the story lines are about Caterpie)
+        sub_8086448();
+        DungeonWaitFrames_Async(10, 0x46);
+        sub_8087144();
+        DungeonWaitFrames_Async(10, 0x46);
+        ShiftCameraToPosition(&CutsceneGetLeader()->pixelPos, 0x10);
+        DungeonStartNewBGM(MUS_BOSS_BATTLE);
+        return;
+    }
+#endif
     sub_8086448();
     sub_80866C4(&gUnknown_8101440);
 }
