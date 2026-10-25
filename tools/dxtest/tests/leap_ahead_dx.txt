@@ -1,0 +1,50 @@
+#rom debug
+#save after-first-dungeon
+# DX Rare Quality Leap Ahead: the leader (Forge a Path) walks up into a corridor with the partner (Leap Ahead)
+# right behind. A foe is brought onto the tile in front (gDxTestFoeInFront) as the leader attacks: the partner
+# leaps ahead and strikes it too
+mash START sMainMenu 4 != 0 3000
+write gDxTestSeed 4 99991
+wait 60
+press UP
+press A
+wait 30
+press A
+wait 30
+press A
+wait 30
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+# leader (recruit slot 42) Forge a Path (7); partner (slot 54) Leap Ahead (10)
+write *gRecruitedPokemonRef+3733 1 7
+write *gRecruitedPokemonRef+4789 1 10
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 999
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMaxHP 2 999
+hold UP 300
+wait 60
+shot 1_tunnel
+# step back down past the partner: now it is behind the leader, the corridor open ahead
+press DOWN
+wait 60
+shot 1b_swapped
+write gDxTestFoeInFront 1 1
+# B menu -> Moves -> first move -> Use
+press B
+wait 30
+press A
+wait 30
+shot 2a_moves
+press A
+wait 30
+shot 2b_move
+press A
+wait 60
+shot 2c_a
+wait 60
+shot 2c_b
+wait 60
+shot 2c_c
+wait 120
+shot 2_leap
+expect gDxLeapAheadCount 1 == 1

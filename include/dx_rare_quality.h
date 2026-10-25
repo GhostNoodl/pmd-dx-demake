@@ -29,6 +29,7 @@ s32 DxTightFormationPercent(Entity *target, u16 moveId);
 void DxLeaveHalf(Entity *target, u8 itemId);
 void DxSharedHappiness(Entity *user, Entity *target, u8 kind);
 bool8 DxCanForgeAPath(Entity *entity);
+void DxLeapAhead(Entity *leader);
 void DxForgeAPathCost(Entity *entity);
 
 // DxSharedHappiness: which bad condition was cured
