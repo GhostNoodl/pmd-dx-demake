@@ -297,9 +297,11 @@ void CreateFriendActionMenu(void)
   sUnknown_203B2BC->menuItems[loopMax].text = sMoves;
   sUnknown_203B2BC->menuItems[loopMax].menuAction = FRIEND_AREA_ACTION_MENU_ACTION_MOVES;
   loopMax += 1;
+#ifndef DX_RULES
   sUnknown_203B2BC->menuItems[loopMax].text = sCheckIQ;
   sUnknown_203B2BC->menuItems[loopMax].menuAction = FRIEND_AREA_ACTION_MENU_ACTION_CHECK_IQ;
   loopMax += 1;
+#endif
   sUnknown_203B2BC->menuItems[loopMax].text = NULL;
   sUnknown_203B2BC->menuItems[loopMax].menuAction = FRIEND_AREA_ACTION_MENU_ACTION_NONE;
 

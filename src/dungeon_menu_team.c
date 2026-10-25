@@ -365,7 +365,9 @@ static void AddTeamSubMenuOptions(struct UnkFieldTeamMenuStruct *a0)
         }
         AddActionToDungeonSubMenu(ACTION_TALK_MENU, 0);
     }
-    AddActionToDungeonSubMenu(0x30, 0);
+#ifndef DX_RULES
+    AddActionToDungeonSubMenu(0x30, 0); // Check IQ (DX has no IQ)
+#endif
     if (!monInfo->isTeamLeader) {
         AddActionToDungeonSubMenu(ACTION_CHANGE_TACTICS, 0);
     }

@@ -1,0 +1,65 @@
+#rom debug
+#save after-first-dungeon
+# DX has no IQ: team members get a fixed set of AI IQ skills instead. Check allies still follow the leader
+# and use items, and that the IQ line and Check IQ entry are gone from the menus.
+mash START sMainMenu 4 != 0 3000
+write gDxTestSeed 4 99991
+wait 60
+press UP
+press A
+wait 30
+press A
+wait 30
+press A
+wait 30
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+shot 1_in_dungeon
+# the team menu: Summary, Moves, (no Check IQ)
+press B
+wait 30
+press DOWN
+press DOWN
+press A
+wait 40
+press A
+wait 40
+shot 2_member_menu
+press A
+wait 60
+shot 3_stats_page
+press B
+wait 60
+press B
+wait 60
+press B
+wait 60
+press B
+wait 60
+press B
+wait 60
+shot 3b_closed
+# follow: the leader walks off; the partner keeps up
+hold LEFT 200
+wait 60
+shot 4_walked
+read lx **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos 2
+read ly **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos!2 2
+read px **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos 2
+read py **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos!2 2
+# items: the partner, at 3 HP, holds an Oran Berry; it eats it within a few turns
+write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 3
+write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHeldItem 1 1
+write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHeldItem!2 1 55
+hold A+B 200
+shot 5_ate
+read pheld ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHeldItem!2 1
+read php ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2
+# the leader walked 3 tiles west; the partner is right behind it (seed 99991)
+expect **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos 2 == 16
+expect **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos 2 == 17
+expect **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos!2 2 == 27
+# the partner ate the Oran Berry
+expect ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHeldItem!2 1 == 0
+expect ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 > 3
