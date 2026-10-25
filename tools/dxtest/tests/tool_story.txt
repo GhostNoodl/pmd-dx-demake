@@ -1,0 +1,49 @@
+#rom debug
+#save after-first-dungeon
+# Debug Mode -> Story -> chapter 5, step 0, then Continue into the game
+mash START sMainMenu 4 != 0 3000
+wait 60
+press UP
+press A
+wait 30
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press A
+wait 30
+expect *sMainMenu+4 4 == 51
+shot 1_story_now
+# chapter starts at the current one (2 or 3): set the ones digit to 5
+press UP
+press UP
+press UP
+wait 10
+shot 2_pick_chapter
+press A
+wait 20
+# step starts at the current step: go down to 0
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+wait 10
+shot 3_pick_step
+press A
+wait 30
+shot 4_story_set
+press B
+wait 30
+press B
+wait 30
+# Continue (the main menu cursor remembers Debug Mode, so go to the top)
+press DOWN
+press A
+wait 120
+press UP
+press A
+waitfor sMainLoopsUnk 4 == 2 1200
+wait 1200
+shot 5_continue
+expect sMainLoopsUnk 4 == 2

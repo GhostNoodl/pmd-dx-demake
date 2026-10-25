@@ -1,0 +1,82 @@
+#rom debug
+#save after-first-dungeon
+# Debug Mode -> Recruit -> #25 Pikachu at Lv. 20, then Set Level on the leader (list #0) to 30
+mash START sMainMenu 4 != 0 3000
+wait 60
+press UP
+press A
+wait 30
+press DOWN
+press DOWN
+press A
+wait 30
+expect *sMainMenu+4 4 == 49
+# species starts at 1: tens +2 (21), ones +4 (25)
+press LEFT
+press UP
+press UP
+press RIGHT
+press UP
+press UP
+press UP
+press UP
+wait 10
+shot 1_pick_species
+press A
+wait 20
+# level starts at 5: tens +2 (25), ones -5 (20)
+press LEFT
+press UP
+press UP
+press RIGHT
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+wait 10
+shot 2_pick_level
+press A
+wait 30
+shot 3_recruited
+press B
+wait 30
+expect *sMainMenu+4 4 == 16
+# Set Level (debug menu cursor is back on Warp): list is team first, #0 = first team member
+press DOWN
+press DOWN
+press DOWN
+press A
+wait 30
+expect *sMainMenu+4 4 == 50
+shot 4_pick_who
+press A
+wait 20
+# level starts at the current level (6): tens +3 (36), ones -6 (30)
+press LEFT
+press UP
+press UP
+press UP
+press RIGHT
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+wait 10
+shot 5_pick_level
+press A
+wait 30
+shot 6_leveled
+press B
+wait 30
+# Warp (top of the debug menu) into Tiny Woods to see the Lv. 30 leader in a dungeon
+press A
+wait 30
+press A
+wait 30
+press A
+wait 900
+shot 7_in_dungeon
+expect *gDungeon+0x644 1 == 0

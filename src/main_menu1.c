@@ -6,6 +6,7 @@
 #include "code_8099360.h"
 #include "debug_menu1.h"
 #include "ds_menus.h"
+#include "dx_tools.h"
 #include "dx_warp.h"
 #include "friend_rescue.h"
 #include "game_options.h"
@@ -127,6 +128,12 @@ void SetUpMenu(void)
         case MENU_DEBUG_DUNGEON:
             CreateDxWarpMenu();
             break;
+        case MENU_DEBUG_FIELD:
+        case MENU_DEBUG_FIELD_MAP:
+        case MENU_DEBUG_FIELD_SCRIPT:
+        case MENU_DEBUG_DEBUG_MENU:
+            CreateDxToolMenu(sMainMenu->nextMenu - MENU_DEBUG_FIELD);
+            break;
 #endif
     }
 
@@ -212,6 +219,12 @@ s32 UpdateMenu(void)
         case MENU_DEBUG_DUNGEON:
             nextMenu = UpdateDxWarpMenu();
             break;
+        case MENU_DEBUG_FIELD:
+        case MENU_DEBUG_FIELD_MAP:
+        case MENU_DEBUG_FIELD_SCRIPT:
+        case MENU_DEBUG_DEBUG_MENU:
+            nextMenu = UpdateDxToolMenu();
+            break;
 #endif
     }
 
@@ -283,6 +296,12 @@ void CleanUpMenu(void)
 #ifdef DX_DEBUG
         case MENU_DEBUG_DUNGEON:
             DeleteDxWarpMenu();
+            break;
+        case MENU_DEBUG_FIELD:
+        case MENU_DEBUG_FIELD_MAP:
+        case MENU_DEBUG_FIELD_SCRIPT:
+        case MENU_DEBUG_DEBUG_MENU:
+            DeleteDxToolMenu();
             break;
 #endif
     }

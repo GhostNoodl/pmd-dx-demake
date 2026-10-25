@@ -1,0 +1,39 @@
+#rom debug
+#save after-first-dungeon
+# Debug Mode -> Give Item -> item #10 x5 into storage (teamStorage at +0x50, u16 per item)
+mash START sMainMenu 4 != 0 3000
+wait 60
+press UP
+press A
+wait 30
+shot 0_debug_menu
+press DOWN
+press A
+wait 30
+expect *sMainMenu+4 4 == 48
+read before *gTeamInventoryRef+0x64 2
+# value starts at 1: tens +1 (11), ones -1 (10)
+press LEFT
+press UP
+press RIGHT
+press DOWN
+wait 10
+shot 1_pick_item
+press A
+wait 20
+# amount starts at 1 -> 5
+press UP
+press UP
+press UP
+press UP
+wait 10
+shot 2_pick_amount
+press A
+wait 30
+shot 3_done
+read after *gTeamInventoryRef+0x64 2
+expect *gTeamInventoryRef+0x64 2 == 5
+# back out to the debug menu and main menu
+press B
+wait 30
+expect *sMainMenu+4 4 == 16
