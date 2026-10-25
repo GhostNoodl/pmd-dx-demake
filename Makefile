@@ -117,6 +117,8 @@ else
   ifeq ($(DX_DEBUG),1)
     CPPFLAGS += -DDX_DEBUG=1
   endif
+  # dx: Rescue Team DX gameplay rules (see DX_LOG.md)
+  CPPFLAGS += -DDX_RULES=1
   # dx: Rescue Team DX dungeon floor counts (tools/dxtest/gen_dx_floors.py)
   CPPFLAGS += -DDX_FLOORS=1
   # dx: in-dungeon party size (Rescue Team DX target: 6)

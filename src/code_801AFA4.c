@@ -91,8 +91,14 @@ static void sub_801B080(void)
         case 2:
             sub_8094060(sUnknown_203B22C->moves, sUnknown_203B22C->pokeStruct->moves);
             if (!IsHMItem(sUnknown_203B22C->id)) {
+#ifdef DX_RULES
+                // Rescue Team DX: a TM is used up (no Used TM left behind)
+                ZeroOutItem(&gTeamInventoryRef->teamItems[sUnknown_203B22C->teamItemIndex]);
+                FillInventoryGaps();
+#else
                 gTeamInventoryRef->teamItems[sUnknown_203B22C->teamItemIndex].quantity = sUnknown_203B22C->id - 125;
                 gTeamInventoryRef->teamItems[sUnknown_203B22C->teamItemIndex].id = ITEM_TM_USED_TM;
+#endif
             }
             PlaySound(312);
             CreateDialogueBoxAndPortrait(sFmtLearnedTheMove, 0, 0, 0x121);

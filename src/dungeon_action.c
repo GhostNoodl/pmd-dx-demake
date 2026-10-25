@@ -209,7 +209,12 @@ void sub_8044E24(Entity *entity,s32 index,u32 unused)
   itemPtr = sub_8044D90(entity,index,unused);
   info = GetEntInfo(entity);
   if (!IsHMItem(itemPtr->id)) {
+#ifdef DX_RULES
+    // Rescue Team DX: a TM is used up like any other item (no Used TM)
+    if (FALSE) {
+#else
     if (GetItemCategory(itemPtr->id) == CATEGORY_TMS_HMS) {
+#endif
       if (info->action.actionParameters[index].actionUseIndex == 0x80) {
         item = *itemPtr;
         pos = &info->action.actionParameters[index].itemPos;
