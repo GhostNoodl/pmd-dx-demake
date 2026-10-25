@@ -13,6 +13,11 @@
 //   mash KEY EXPR SIZE OP VALUE [MAXFRAMES]   tap KEY every 16 frames until the comparison holds
 //   write EXPR SIZE VALUE        poke RAM (test setup only)
 //   cmpreads NAME1 OP NAME2      compare two earlier `read` values (e.g. position changed)
+//   calc NAME X OP Y             NAME = X OP Y (+ - * /) over `read` names or numbers, for cmpreads
+//   pin EXPR SIZE VALUE / unpin  keep rewriting a value before every frame
+//   mash? ...                    like mash, but running out of frames is not a failure
+//   dump NAME                    write EWRAM+IWRAM to NAME.bin (diff two builds' RAM)
+//   watch EXPR                   log PC/LR and stack return addresses of every write to EXPR
 //   log TEXT                     echo TEXT into the results
 // EXPR: number (0x.. ok) | symbol | symbol+off | *EXPR (dereference a 32-bit pointer) e.g. *gDungeon+0x644
 //       | @symbol (the u32 stored at symbol, e.g. the debug ROM's gDxOff* struct offsets), @symbol!N adds N
@@ -422,6 +427,18 @@ int main(int argc, char **argv)
             wp.type = WATCHPOINT_WRITE;
             dbg.platform->setWatchpoint(dbg.platform, &wp);
             out("WATCHING %s @%08x\n", a, wp.address);
+        }
+        else if (!strcmp(cmd, "calc") && n >= 5) {
+            long x, y, r = 0;
+            int okx = isdigit((unsigned char)b[0]) || b[0] == '-' ? (x = strtol(b, NULL, 0), 1) : recall(b, &x);
+            int oky = isdigit((unsigned char)d[0]) || d[0] == '-' ? (y = strtol(d, NULL, 0), 1) : recall(d, &y);
+            if (!okx || !oky) { out("ERROR line %d: calc: unknown value\n", lineno); failures++; continue; }
+            if (!strcmp(c, "+")) r = x + y;
+            else if (!strcmp(c, "-")) r = x - y;
+            else if (!strcmp(c, "*")) r = x * y;
+            else if (!strcmp(c, "/") && y) r = x / y;
+            remember(a, r);
+            out("CALC %s = %ld %s %ld = %ld\n", a, x, c, y, r);
         }
         else if (!strcmp(cmd, "unpin")) {
             npins = 0;

@@ -1,0 +1,84 @@
+#rom debug
+#save after-first-dungeon
+# DX HP regen (estimated, include/dx_tuning.h): walking 20 turns heals 2% of max HP per turn (Red: 0.5%)
+mash START sMainMenu 4 != 0 3000
+wait 60
+press UP
+press A
+wait 30
+# Debug Mode -> Warp -> Tiny Woods -> 1F
+press A
+wait 30
+press A
+wait 30
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+expect sMainLoopsUnk 4 == 1
+read maxhp ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMaxHP 2
+# the wind counter ticks once per turn: use it as a turn clock
+write *gDungeon+@gDxOffWindTurns 2 500
+# 200 max HP so wild hits can't end the run: DX heals 2%/turn (+80 in 20 turns), Red 0.5% (+20)
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMaxHP 2 200
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 50
+read hp0 ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2
+read wind0 *gDungeon+@gDxOffWindTurns 2
+mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? RIGHT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? DOWN *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? UP *gDungeon+@gDxOffWindTurns 2 <= 480 120
+mash? LEFT *gDungeon+@gDxOffWindTurns 2 <= 480 120
+read wind *gDungeon+@gDxOffWindTurns 2
+read hp ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2
+shot 1_after_walk
+# HP gained vs turns taken: DX heals 4 a turn (2% of 200), Red 1. Allow for a few wild hits.
+calc gain hp - hp0
+calc turns wind0 - wind
+calc want turns * 3
+cmpreads gain >= want
+calc minturns 0 + 5
+cmpreads turns >= minturns

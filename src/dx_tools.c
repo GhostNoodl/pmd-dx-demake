@@ -470,4 +470,6 @@ const u32 gDxOffInfoId = offsetof(EntityInfo, id);
 const u32 gDxOffInfoTypes = offsetof(EntityInfo, types);
 const u32 gDxOffInfoMoves = offsetof(EntityInfo, moves);
 const u32 gDxOffInfoHP = offsetof(EntityInfo, HP);
+const u32 gDxOffInfoMaxHP = offsetof(EntityInfo, maxHPStat);
+const u32 gDxOffWindTurns = offsetof(Dungeon, unk644.windTurns);
 #endif // DX_DEBUG

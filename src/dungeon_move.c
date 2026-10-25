@@ -1,4 +1,7 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rules.h"
+#endif
 #include "globaldata.h"
 #include "dungeon_move.h"
 #include "dungeon_move_util.h"
@@ -1327,7 +1330,16 @@ void UseMoveAgainstTargets(Entity **targetsArray, Entity *attacker, Move *move, 
 
 bool8 HandleRegularDamagingMove(Entity *attacker, Entity *target, Move *move, s32 itemId)
 {
+#ifdef DX_RULES
+    // Rescue Team DX: a much faster user may strike twice (dx_rules.c)
+    bool8 hit = (HandleDamagingMove(attacker, target, move, IntToF248(1), itemId) != 0);
+    if (hit && itemId == 0 && EntityIsValid(attacker) && EntityIsValid(target)
+        && DungeonRandOutcome(DxDoubleMoveChance(attacker, target)))
+        HandleDamagingMove(attacker, target, move, IntToF248(1), itemId);
+    return hit;
+#else
     return (HandleDamagingMove(attacker, target, move, IntToF248(1), itemId) != 0);
+#endif
 }
 
 s32 HandleDamagingMove(Entity *attacker, Entity *target, Move *move, s24_8 modifier, s32 itemId)

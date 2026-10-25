@@ -328,6 +328,9 @@ typedef struct EntityInfo
     /* 0x1FC */ u32 expGainedInTurn; // Used to accumulate experience when multiple enemies are defeated in one turn.
     /* 0x200 */ u32 statusIcons;
     /* 0x204 */ u8 shadowIndex;
+#ifdef DX_RULES
+    bool8 dxRegenPaused; // used a move or item last turn (no natural regen this turn)
+#endif
 } EntityInfo;
 
 // size: 0x74 | Used for Pokémon, items, and traps.

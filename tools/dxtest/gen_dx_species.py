@@ -241,6 +241,16 @@ def main():
             s_.append(".byte " + ", ".join(f"0x{b:02x}" for b in raw[i:i + 16]))
         s_ += [".align 2, 0", ""]
     (out / "level_data_dx.s").write_text("\n".join(s_) + "\n")
+    # mainline base Speed per species id (Red has no Speed stat): speed-based double moves
+    dex_of = [e["dexInternal"][0] if 1 <= i <= 420 else 0 for i, e in enumerate(red)]
+    for s in SPECIES:
+        dex_of[s["id"]] = s["dex"]
+    dex_of[420] = MUNCHLAX["dex"]
+    speeds = pokeapi_dx.fetch_speeds(sorted({d for d in dex_of if d}))
+    rows = [speeds.get(d, 0) if d else 0 for d in dex_of]
+    w("src/data/dx_base_speed.h", hdr + "// mainline base Speed by species id (PokeAPI); 0 = not a real species\n"
+      + "static const u8 sDxBaseSpeed[MONSTER_MAX] = {\n"
+      + "".join("    " + ", ".join(str(v) for v in rows[i:i + 16]) + ",\n" for i in range(0, len(rows), 16)) + "};\n")
     # credits manifest
     w("tools/spritecollab/imported.txt", "# <SpriteCollab dex> <name in this repo> [sprite|portrait|both]\n"
       + "".join(f"{s['dex']:04d} {s['ident'].lower()} sprite\n" for s in SPECIES))

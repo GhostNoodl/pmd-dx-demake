@@ -1,4 +1,7 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_tuning.h"
+#endif
 #include "globaldata.h"
 #include "dungeon_turn_effects.h"
 #include "dungeon_util.h"
@@ -102,7 +105,11 @@ void DoEndOfTurnEffects_Async(Entity *entity)
             arrIndex = BELLY_GO_DOWN_VALUES_COUNT - 1;
 
         baseBellyDecrementValue.hi = 0;
+#ifdef DX_RULES
+        baseBellyDecrementValue.lo = 6554 * DX_BELLY_DRAIN_PERCENT / 100;
+#else
         baseBellyDecrementValue.lo = 6554;
+#endif
         // here baseBellyDecrementValue is 0.1
         F48_16_SMul(&modifiedBellyDecrementValue, &baseBellyDecrementValue, &gBellyGoDownValues[arrIndex]);
         if (entityInfo->usedLinkedMovesCounter > 1)
@@ -413,6 +420,12 @@ void TickStatusAndHealthRegen(Entity *entity)
 
         if (!entityInfo->isNotTeamMember)
             regenSpeed = GetRegenSpeed(entityInfo->id);
+#ifdef DX_RULES
+        regenSpeed = regenSpeed * DX_REGEN_SPEED_PERCENT / 100;
+        if (DX_REGEN_PAUSES_AFTER_ACTION && entityInfo->dxRegenPaused)
+            regenSpeed = 0;
+        entityInfo->dxRegenPaused = FALSE;
+#endif
 
         if (regenSpeed != 0) {
             if (HasHeldItem(entity, ITEM_HEAL_RIBBON))
