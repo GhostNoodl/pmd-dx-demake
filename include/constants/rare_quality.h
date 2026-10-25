@@ -43,4 +43,7 @@ enum RareQuality
     RQ_COUNT
 };
 
+// Pokemon.dxFlags / DungeonMon.dxFlags
+#define DX_FLAG_SHINY (1 << 0)
+
 #endif // GUARD_CONSTANTS_RARE_QUALITY_H

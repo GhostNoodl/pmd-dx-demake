@@ -479,4 +479,5 @@ const u32 gDxOffInfoBelly = offsetof(EntityInfo, belly);
 const u32 gDxOffInfoLevel = offsetof(EntityInfo, level);
 const u32 gDxOffCanRecruit = offsetof(Dungeon, unk644.canRecruit);
 const u32 gDxOffInfoStrongFoe = offsetof(EntityInfo, dxStrongFoe);
+const u32 gDxOffInfoShiny = offsetof(EntityInfo, dxShiny);
 #endif // DX_DEBUG

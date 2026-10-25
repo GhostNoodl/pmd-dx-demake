@@ -1009,6 +1009,9 @@ void sub_8069D4C(struct unkStruct_8069D4C *r0, Entity *target)
 
     r0->id = info->id;
     r0->pos = target->pos;
+#ifdef DX_RULES
+    r0->dxShiny = info->dxShiny;
+#endif
 
     if(info->bossFlag)
         r0->HP = info->originalHP;

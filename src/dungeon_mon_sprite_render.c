@@ -1,4 +1,7 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rules.h"
+#endif
 #include "globaldata.h"
 #include "dungeon_mon_sprite_render.h"
 #include "constants/direction.h"
@@ -277,6 +280,10 @@ void UpdateMonsterSprite(Entity *entity)
         }
         else {
             overworldPal = GetPokemonOverworldPalette(entInfo->apparentID, FALSE);
+#ifdef DX_RULES
+            if (entInfo->dxShiny && DxShinyPalette(entInfo->apparentID) >= 0)
+                overworldPal = DxShinyPalette(entInfo->apparentID); // shiny: a palette swap
+#endif
         }
 
         if (entity->unk22 == 0) {

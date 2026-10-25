@@ -1,4 +1,7 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "constants/rare_quality.h"
+#endif
 #include "globaldata.h"
 #include "pokemon.h"
 #include "constants/colors.h"
@@ -974,6 +977,9 @@ void PokemonToDungeonMon(DungeonMon *dst, Pokemon *src, s32 recruitedPokemonId)
     s32 i;
 
     dst->flags = src->flags;
+#ifdef DX_RULES
+    dst->dxFlags = src->dxFlags;
+#endif
     dst->level = src->level;
     dst->IQ = src->IQ;
     dst->IQSkills = src->IQSkills;
@@ -1019,6 +1025,9 @@ void DungeonMonToPokemon(Pokemon* dst, DungeonMon* src)
     s32 i;
 
     dst->flags = src->flags;
+#ifdef DX_RULES
+    dst->dxFlags = src->dxFlags;
+#endif
     dst->level = src->level;
     dst->IQ = src->IQ;
     dst->IQSkills = src->IQSkills;

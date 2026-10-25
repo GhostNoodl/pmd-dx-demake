@@ -68,5 +68,6 @@
 #define DX_STRONG_FOE_LEVELS 5
 #define DX_STRONG_FOE_STAGES 2
 #define DX_STRONG_FOE_EXP_MULTIPLIER 3
+#define DX_SHINY_CHANCE 10 // % a Strong Foe of a shiny species is shiny (ESTIMATED)
 
 #endif // GUARD_DX_TUNING_H
