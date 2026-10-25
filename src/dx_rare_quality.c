@@ -5,6 +5,14 @@
 #include "globaldata.h"
 #include "constants/rare_quality.h"
 #include "dx_rare_quality.h"
+#include "structs/str_moves.h"
+#include "items.h"
+#include "move_orb_effects_5.h"
+#include "number_util.h"
+#include "dungeon_items.h"
+#include "constants/status.h"
+#include "constants/item.h"
+#include "constants/move.h"
 #include "dx_tuning.h"
 #include "dungeon_message.h"
 #include "dungeon_random.h"
@@ -324,3 +332,95 @@ s32 DxShopPrice(s32 price, bool8 selling)
 }
 
 #endif // DX_RULES
+
+// Tight Formation: a teammate hit by a wide-ranging move (around the user, the room, the floor)
+// takes less damage for each teammate next to it
+s32 DxTightFormationPercent(Entity *target, u16 moveId)
+{
+    Move move;
+    s32 i, range, cut = 0;
+
+    if (!DxTeamMemberHas(target, RQ_TIGHT_FORMATION))
+        return 100;
+    move.id = moveId;
+    range = GetMoveTargetAndRange(&move, FALSE) & 0x70;
+    if (range != TARGETING_FLAG_TARGET_AROUND && range != TARGETING_FLAG_TARGET_ROOM && range != TARGETING_FLAG_TARGET_FLOOR
+        && range != TARGETING_FLAG_TARGET_FRONTAL_CONE)
+        return 100;
+    for (i = 0; i < MAX_TEAM_MEMBERS; i++) {
+        Entity *mate = gDungeon->teamPokemon[i];
+        if (EntityIsValid(mate) && mate != target && GetDistance(&mate->pos, &target->pos) <= 1)
+            cut += DX_RQ_TIGHT_FORMATION_PER_MATE;
+    }
+    if (cut > DX_RQ_TIGHT_FORMATION_MAX)
+        cut = DX_RQ_TIGHT_FORMATION_MAX;
+    return 100 - cut;
+}
+
+static const u8 sDxLeftHalf[] = _("An {COLOR YELLOW}Apple{RESET} was left over!");
+
+// Leave Half: eating a Big Apple or Huge Apple leaves an Apple (in the toolbox, or on the ground
+// when it is full). Red has no Max Ether or Tiny Reviver Seed, DX's other two leftovers.
+void DxLeaveHalf(Entity *target, u8 itemId)
+{
+    Item apple;
+
+    if ((itemId != ITEM_BIG_APPLE && itemId != ITEM_HUGE_APPLE) || !DxTeamMemberHas(target, RQ_LEAVE_HALF))
+        return;
+    ItemIdToItem(&apple, ITEM_APPLE, FALSE);
+    if (AddItemToInventory(&apple))
+        SpawnDroppedItemWrapper(target, &target->pos, &apple);
+    LogMessageByIdWithPopupCheckUser_Async(target, sDxLeftHalf);
+}
+
+static bool8 DxHasCondition(Entity *mon, u8 kind)
+{
+    EntityInfo *info = GetEntInfo(mon);
+
+    switch (kind) {
+        case DX_CURE_PARALYSIS: return info->burnClassStatus.status == STATUS_PARALYSIS;
+        case DX_CURE_POISON: return ENTITY_POISONED(info);
+        case DX_CURE_BURN: return info->burnClassStatus.status == STATUS_BURN;
+    }
+    return MonsterHasNegativeStatus(mon);
+}
+
+// Shared Happiness: curing a teammate's bad condition also cures another teammate's (the nearest one)
+void DxSharedHappiness(Entity *user, Entity *target, u8 kind)
+{
+    s32 i, best = 999;
+    Entity *other = NULL;
+
+    if (!DxTeamMemberHas(target, RQ_SHARED_HAPPINESS))
+        return;
+    for (i = 0; i < MAX_TEAM_MEMBERS; i++) {
+        Entity *mate = gDungeon->teamPokemon[i];
+        if (EntityIsValid(mate) && mate != target && DxHasCondition(mate, kind) && GetDistance(&mate->pos, &target->pos) < best) {
+            best = GetDistance(&mate->pos, &target->pos);
+            other = mate;
+        }
+    }
+    if (other == NULL)
+        return;
+    if (kind == DX_CURE_ALL)
+        sub_8079F20(user, other, 1, 0);
+    else
+        EndBurnClassStatus(user, other);
+}
+
+// Forge a Path: the leader walks through walls (not diagonally, not in boss rooms) while its Belly lasts
+bool8 DxCanForgeAPath(Entity *entity)
+{
+    return DxTeamMemberHas(entity, RQ_FORGE_A_PATH) && GetEntInfo(entity)->isTeamLeader
+        && FixedPointToInt(GetEntInfo(entity)->belly) > 0;
+}
+
+void DxForgeAPathCost(Entity *entity)
+{
+    EntityInfo *info = GetEntInfo(entity);
+
+    if (FixedPointToInt(info->belly) <= DX_RQ_FORGE_A_PATH_BELLY)
+        info->belly = IntToFixedPoint(0);
+    else
+        info->belly = FixedPoint_Subtract(info->belly, IntToFixedPoint(DX_RQ_FORGE_A_PATH_BELLY));
+}

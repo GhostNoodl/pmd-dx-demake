@@ -1,4 +1,7 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rare_quality.h"
+#endif
 #include "globaldata.h"
 #include "dungeon_logic.h"
 #include "structs/map.h"
@@ -695,6 +698,11 @@ bool8 CanMoveInDirection(Entity *pokemon, u32 direction)
     {
         if (GetEntInfo(pokemon)->invisibleClassStatus.status == STATUS_MOBILE || HasHeldItem(pokemon, ITEM_MOBILE_SCARF))
             crossableTerrain = CROSSABLE_TERRAIN_WALL;
+#ifdef DX_RULES
+        // DX Forge a Path: straight through walls, like Super Mobile
+        else if (DxCanForgeAPath(pokemon))
+            crossableTerrain = (direction & 1) ? CROSSABLE_TERRAIN_CREVICE : CROSSABLE_TERRAIN_WALL;
+#endif
         else if (IqSkillIsEnabled(pokemon, IQ_ALL_TERRAIN_HIKER))
             crossableTerrain = CROSSABLE_TERRAIN_CREVICE;
         else if (IqSkillIsEnabled(pokemon, IQ_SUPER_MOBILE)) {

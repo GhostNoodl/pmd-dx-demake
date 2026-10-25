@@ -23,6 +23,14 @@ void DxQualityOnDefeat(Entity *attacker);
 bool8 DxTeamMemberHas(Entity *entity, u32 quality);
 void DxSqueezeOut(Entity *entity);
 s32 DxShopPrice(s32 price, bool8 selling);
+s32 DxTightFormationPercent(Entity *target, u16 moveId);
+void DxLeaveHalf(Entity *target, u8 itemId);
+void DxSharedHappiness(Entity *user, Entity *target, u8 kind);
+bool8 DxCanForgeAPath(Entity *entity);
+void DxForgeAPathCost(Entity *entity);
+
+// DxSharedHappiness: which bad condition was cured
+enum { DX_CURE_ALL, DX_CURE_PARALYSIS, DX_CURE_POISON, DX_CURE_BURN };
 
 #endif // DX_RULES
 

@@ -276,9 +276,17 @@ void sub_80479B8(bool8 param_1, bool8 param_2, u8 param_3, Entity *pokemon, Enti
                 break;
             case ITEM_BIG_APPLE:
                 sub_80487CC(pokemon,target,100,10);
+#ifdef DX_RULES
+                if (!param_1)
+                    DxLeaveHalf(target, ITEM_BIG_APPLE);
+#endif
                 break;
             case ITEM_HUGE_APPLE:
                 sub_80487CC(pokemon,target,999,10);
+#ifdef DX_RULES
+                if (!param_1)
+                    DxLeaveHalf(target, ITEM_HUGE_APPLE);
+#endif
                 break;
             case ITEM_GRIMY_FOOD:
                 GrimyFoodItemAction(pokemon,target);
@@ -401,7 +409,14 @@ static void sub_8048340(Entity *pokemon, Entity *target, u32 r2)
 
 static void HealSeedItemAction(Entity *pokemon, Entity *target, u8 r2)
 {
+#ifdef DX_RULES
+    bool8 hadCondition = MonsterHasNegativeStatus(target);
+#endif
     sub_8079F20(pokemon, target, 1, r2);
+#ifdef DX_RULES
+    if (hadCondition && EntityIsValid(target))
+        DxSharedHappiness(pokemon, target, DX_CURE_ALL);
+#endif
 }
 
 static void OranBerryItemAction(Entity *pokemon, Entity *target)
@@ -446,8 +461,12 @@ static void EyedropSeedItemAction(Entity *pokemon, Entity *target)
 
 static void CheriBerryItemAction(Entity *pokemon, Entity *target)
 {
-    if(GetEntInfo(target)->burnClassStatus.status == STATUS_PARALYSIS)
+    if(GetEntInfo(target)->burnClassStatus.status == STATUS_PARALYSIS) {
         EndBurnClassStatus(pokemon, target);
+#ifdef DX_RULES
+        DxSharedHappiness(pokemon, target, DX_CURE_PARALYSIS);
+#endif
+    }
     else
         // Pointer to "But nothing happened!"
         TryDisplayDungeonLoggableMessage3_Async(pokemon, target, gUnknown_80F89F4);
@@ -456,8 +475,12 @@ static void CheriBerryItemAction(Entity *pokemon, Entity *target)
 static void PechaBerryItemAction(Entity *pokemon, Entity *target)
 {
     EntityInfo *entInfo = GetEntInfo(target);
-    if (ENTITY_POISONED(entInfo))
+    if (ENTITY_POISONED(entInfo)) {
         EndBurnClassStatus(pokemon, target);
+#ifdef DX_RULES
+        DxSharedHappiness(pokemon, target, DX_CURE_POISON);
+#endif
+    }
     else
         TryDisplayDungeonLoggableMessage3_Async(pokemon, target, gUnknown_80F89F4); // Pointer to "But nothing happened!"
 }
@@ -500,8 +523,12 @@ static void DoomSeedItemAction(Entity *pokemon, Entity *target)
 
 static void RawstBerryItemAction(Entity *pokemon, Entity *target)
 {
-    if(GetEntInfo(target)->burnClassStatus.status == STATUS_BURN)
+    if(GetEntInfo(target)->burnClassStatus.status == STATUS_BURN) {
         EndBurnClassStatus(pokemon, target);
+#ifdef DX_RULES
+        DxSharedHappiness(pokemon, target, DX_CURE_BURN);
+#endif
+    }
     else
     {
         SubstitutePlaceholderStringTags(gFormatBuffer_Monsters[0], target, 0);
