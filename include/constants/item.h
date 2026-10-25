@@ -286,6 +286,9 @@
 #define ITEM_EVO_CRYSTAL ITEM_G_MACHINE_6
 // ...and G Machine 7 the Empowerment Seed
 #define ITEM_EMPOWERMENT_SEED ITEM_G_MACHINE_7
+// ...G Machine 8 the DX Gummi, and the White Gummi is renamed the Rainbow Gummi
+#define ITEM_DX_GUMMI ITEM_G_MACHINE_8
+#define ITEM_RAINBOW_GUMMI ITEM_WHITE_GUMMI
 
 #define NUMBER_OF_GUMMIS 18
 #define INVENTORY_SIZE 20

@@ -1,4 +1,8 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rare_quality.h"
+#include "dx_tuning.h"
+#endif
 #include "globaldata.h"
 #include "dungeon_leveling.h"
 #include "constants/tactic.h"
@@ -52,6 +56,10 @@ void AddExpPoints(Entity *pokemon, Entity *target, s32 exp)
   s32 expDiff;
 
   EntityInfo *info = GetEntInfo(target);
+#ifdef DX_RULES
+  if (!info->isNotTeamMember && DxTeamHasQuality(RQ_XP_BOOST))
+    exp = exp * DX_RQ_XP_BOOST_PERCENT / 100;
+#endif
   if (info->level != 100) {
     if (!IsExperienceLocked(info->joinedAt.id)) {
       newExp = info->exp + exp;

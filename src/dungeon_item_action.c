@@ -1,6 +1,7 @@
 #include "global.h"
 #ifdef DX_RULES
 #include "dx_rules.h"
+#include "dx_rare_quality.h"
 #endif
 #include "globaldata.h"
 #include "dungeon_item_action.h"
@@ -228,6 +229,9 @@ void sub_80479B8(bool8 param_1, bool8 param_2, u8 param_3, Entity *pokemon, Enti
 #ifdef DX_RULES
             case ITEM_EMPOWERMENT_SEED:
                 DxEmpower(pokemon, target);
+                break;
+            case ITEM_DX_GUMMI:
+                DxGummiItemAction(pokemon, target, TRUE);
                 break;
 #endif
             case ITEM_DOOM_SEED:
@@ -625,6 +629,14 @@ static void sub_80487CC(Entity *pokemon, Entity * target, u32 param_3, u32 param
 }
 
 static void HandleGummiItemAction(Entity *pokemon, Entity *target, u8 gummiIndex)
+#ifdef DX_RULES
+{
+    // DX: every type Gummi is a Rainbow Gummi (dx_rare_quality.c)
+    DxGummiItemAction(pokemon, target, FALSE);
+}
+
+UNUSED static void RedGummiItemAction(Entity *pokemon, Entity *target, u8 gummiIndex)
+#endif
 {
   s32 iVar3;
   EntityInfo *targetInfo;

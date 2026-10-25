@@ -1,6 +1,7 @@
 #include "global.h"
 #ifdef DX_RULES
 #include "dx_tuning.h"
+#include "dx_rare_quality.h"
 #endif
 #include "globaldata.h"
 #include "dungeon_turn_effects.h"
@@ -151,6 +152,9 @@ void DoEndOfTurnEffects_Async(Entity *entity)
             }
 
             TrySendImmobilizeSleepEndMsg(entity, entity);
+            #ifdef DX_RULES
+            if (entityInfo->isNotTeamMember || !DxTeamHasQuality(RQ_NOTORIOUS_FASTING)) // Notorious Fasting
+            #endif
             DealDamageToEntity_Async(entity, 1, RESIDUAL_DAMAGE_HUNGER, DUNGEON_EXIT_FAINTED_FROM_HUNGER);
             entityInfo->bellyEmpty = TRUE;
             if (FixedPointToInt(entityInfo->belly) != 0)
@@ -422,6 +426,10 @@ void TickStatusAndHealthRegen(Entity *entity)
             regenSpeed = GetRegenSpeed(entityInfo->id);
 #ifdef DX_RULES
         regenSpeed = regenSpeed * DX_REGEN_SPEED_PERCENT / 100;
+        if (DxTeamHasQuality(RQ_NOTORIOUS_HEALING))
+            regenSpeed = regenSpeed * DX_RQ_HEALING_PERCENT / 100;
+        if (DxTeamHasQuality(RQ_FUNNEL_FUN) && GetTile(entity->pos.x, entity->pos.y)->room == CORRIDOR_ROOM)
+            regenSpeed = regenSpeed * DX_RQ_FUNNEL_PERCENT / 100;
         if (DX_REGEN_PAUSES_AFTER_ACTION && entityInfo->dxRegenPaused)
             regenSpeed = 0;
         entityInfo->dxRegenPaused = FALSE;

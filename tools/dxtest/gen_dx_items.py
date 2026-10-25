@@ -19,6 +19,15 @@ CRYSTAL = "ITEM_G_MACHINE_6"
 EMPOWERMENT_SEED = "ITEM_G_MACHINE_7"  # also unused in Red
 # Empowerment Seeds turn up in the post-game dungeons: ESTIMATED 2% of their seed category
 EMPOWER_SHARE = 200  # of 10000
+# Gummis, DX style: the 17 type Gummis become one Rainbow Gummi (the White Gummi, renamed; the others
+# act the same if you still have them) and G Machine 8 becomes the DX Gummi
+DX_GUMMI = "ITEM_G_MACHINE_8"
+RAINBOW_GUMMI = "ITEM_WHITE_GUMMI"
+TYPE_GUMMIS = {"ITEM_WHITE_GUMMI", "ITEM_RED_GUMMI", "ITEM_BLUE_GUMMI", "ITEM_GRASS_GUMMI", "ITEM_YELLOW_GUMMI",
+               "ITEM_CLEAR_GUMMI", "ITEM_ORANGE_GUMMI", "ITEM_PINK_GUMMI", "ITEM_BROWN_GUMMI", "ITEM_SKY_GUMMI",
+               "ITEM_GOLD_GUMMI", "ITEM_GREEN_GUMMI", "ITEM_GRAY_GUMMI", "ITEM_PURPLE_GUMMI", "ITEM_ROYAL_GUMMI",
+               "ITEM_BLACK_GUMMI", "ITEM_SILVER_GUMMI"}
+DX_GUMMI_SHARE = 200  # ESTIMATED: of 10000 in a post-game food/gummi category
 POSTGAME_DUNGEONS = ("Wish Cave", "Buried Relic", "Pitfall Valley", "Desert Region", "Southern Cavern", "Wyvern Hill",
                      "Fiery Field", "Northwind Field", "Solar Cave", "Lightning Field", "Darknight Relic", "Murky Cave",
                      "Joyous Tower", "Far-off Sea", "Mt. Faraway", "Purity Forest", "Western Cave", "Silver Trench",
@@ -54,6 +63,13 @@ def main():
     seed.update(joy)
     seed.update({"name": "ItemNameEmpowermentSeed", "buyPrice": 5000, "sellPrice": 500, "paletteID": 9,
                  "description": "ItemDescriptionEmpowermentSeed", "aiFlags": [False, False, False]})
+    white = items[ids[RAINBOW_GUMMI]]
+    white.update({"name": "ItemNameRainbowGummi", "description": "ItemDescriptionRainbowGummi"})
+    dxg = items[ids[DX_GUMMI]]
+    dxg.clear()
+    dxg.update(white)
+    dxg.update({"name": "ItemNameDxGummi", "description": "ItemDescriptionDxGummi", "buyPrice": 3000, "sellPrice": 300,
+                "paletteID": 3})
     out = ROOT / "data/item/dx"
     out.mkdir(parents=True, exist_ok=True)
     (out / "item_data.json").write_text(json.dumps(items, indent=4) + "\n")
@@ -64,6 +80,14 @@ def main():
         '.string "A crystal that holds the power of evolution.{NEW_LINE}'
         'Give it to a Pokémon at Luminous Cave to{NEW_LINE}evolve it. Some Pokémon need two.\\n\\0"',
         ".align 2,0",
+        ".global ItemNameRainbowGummi", "ItemNameRainbowGummi:", '.string "Rainbow Gummi\\0"', ".align 2,0",
+        ".global ItemDescriptionRainbowGummi", "ItemDescriptionRainbowGummi:",
+        '.string "A Gummi of every color. It raises one of the{NEW_LINE}'
+        'Pokémon\'s stats, and it may also give it a{NEW_LINE}Rare Quality.\\n\\0"', ".align 2,0",
+        ".global ItemNameDxGummi", "ItemNameDxGummi:", '.string "DX Gummi\\0"', ".align 2,0",
+        ".global ItemDescriptionDxGummi", "ItemDescriptionDxGummi:",
+        '.string "A deluxe Gummi. It raises one of the Pokémon\'s{NEW_LINE}'
+        'stats and always gives it a Rare Quality.\\n\\0"', ".align 2,0",
         ".global ItemNameEmpowermentSeed", "ItemNameEmpowermentSeed:", '.string "Empower Seed\\0"', ".align 2,0",
         ".global ItemDescriptionEmpowermentSeed", "ItemDescriptionEmpowermentSeed:",
         '.string "An Empowerment Seed. A Pokémon that eats it{NEW_LINE}'
@@ -89,6 +113,29 @@ def main():
                     keep.append({"item": CRYSTAL, "itemProbability": gained})
                 keep.sort(key=lambda it: ids.get(it["item"], 0))
                 cat["items"] = keep
+    # type Gummis -> Rainbow Gummi
+    for table in loot:
+        for cat in table["categories"]:
+            gained = sum(it["itemProbability"] for it in cat["items"] if it["item"] in TYPE_GUMMIS)
+            if not gained:
+                continue
+            keep = [it for it in cat["items"] if it["item"] not in TYPE_GUMMIS]
+            keep.append({"item": RAINBOW_GUMMI, "itemProbability": gained})
+            keep.sort(key=lambda it: ids.get(it["item"], 0))
+            cat["items"] = keep
+    # DX Gummis in post-game food/gummi drops
+    for table in loot:
+        if not table.get("description", "").startswith(POSTGAME_DUNGEONS):
+            continue
+        for cat in table["categories"]:
+            if cat["category"] != "CATEGORY_FOOD_GUMMIES" or not cat["items"]:
+                continue
+            total = sum(it["itemProbability"] for it in cat["items"])
+            scaled = [dict(it, itemProbability=it["itemProbability"] * (10000 - DX_GUMMI_SHARE) // 10000) for it in cat["items"]]
+            scaled[0]["itemProbability"] += (total - DX_GUMMI_SHARE) - sum(it["itemProbability"] for it in scaled)
+            scaled.append({"item": DX_GUMMI, "itemProbability": DX_GUMMI_SHARE})
+            scaled.sort(key=lambda it: ids.get(it["item"], 0))
+            cat["items"] = scaled
     seeded = 0
     for table in loot:
         if not table.get("description", "").startswith(POSTGAME_DUNGEONS):
