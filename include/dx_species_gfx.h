@@ -94,6 +94,8 @@ extern const u8 gKaoMegaGengar[];
 extern const u8 gKaoMegaPinsir[];
 extern const u8 gKaoMegaGyarados[];
 extern const u8 gKaoMegaAerodactyl[];
+extern const u8 gKaoMegaMewtwoY[];
+extern const u8 gKaoMegaMewtwoX[];
 extern const u8 gKaoMegaAmpharos[];
 extern const u8 gKaoMegaSteelix[];
 extern const u8 gKaoMegaScizor[];

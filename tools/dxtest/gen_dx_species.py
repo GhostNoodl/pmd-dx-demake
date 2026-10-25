@@ -101,7 +101,7 @@ FALLBACK_RECRUIT_RATE = 50
 # Mega Evolution / Primal Reversion forms (Floor 6): PokeAPI name, base species, SpriteCollab form.
 # Each gets a species id after the newcomers; an Empowered base (Empowerment Seed) takes on its
 # sprite, types and abilities for the floor (dx_rules.c). Megas SpriteCollab has no sprite for yet
-# use the base sprite. One form per base transforms (Charizard and Mewtwo: the first listed).
+# use the base sprite. Charizard and Mewtwo have two: a team member picks one (dx_rules.c).
 MEGAS = [
     ("venusaur-mega", "VENUSAUR", "0003/0001"), ("charizard-mega-x", "CHARIZARD", "0006/0001"),
     ("charizard-mega-y", "CHARIZARD", "0006/0002"), ("blastoise-mega", "BLASTOISE", "0009/0001"),
@@ -376,7 +376,7 @@ def main():
       + "static const struct DxMegaForm sDxMegaForms[] = {\n"
       + "".join(f"    {{ MONSTER_{m['base']}, MONSTER_{m['ident'].upper()}, {{ {', '.join(map(str, m['stages']))} }}, "
                 f"{'TRUE' if m['faster'] else 'FALSE'}, {'TRUE' if m['kind'] == 'Primal' else 'FALSE'} }},\n"
-                for m in megas if m["transforms"]) + "};\n")
+                for m in megas) + "};\n")
     out = ROOT / "data/monster/dx"
     (out / "learnset").mkdir(parents=True, exist_ok=True)
     (out / "monster_data.json").write_text(json.dumps(red, indent=4) + "\n")

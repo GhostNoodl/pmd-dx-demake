@@ -15,6 +15,8 @@
 #include "dungeon_message.h"
 #include "dungeon_logic.h"
 #include "dungeon_misc.h"
+#include "text_util.h"
+#include "structs/menu.h"
 #include "dungeon_items.h"
 #include "items.h"
 #include "pokemon.h"
@@ -91,15 +93,32 @@ static const u8 sDxPrimal[] = _("{POKEMON_0} underwent Primal Reversion!");
 
 #include "data/dx_megas.h"
 
-static const struct DxMegaForm *DxFindMega(s32 base)
-{
-    s32 i;
+static const u8 sDxWhichMega[] = _("Which Mega Evolution?");
 
-    for (i = 0; i < ARRAY_COUNT(sDxMegaForms); i++) {
-        if (sDxMegaForms[i].base == base)
-            return &sDxMegaForms[i];
+// the form an Empowered Pokemon takes: Charizard and Mewtwo have two, and a team member picks
+static const struct DxMegaForm *DxChooseMega(Entity *target)
+{
+    const struct DxMegaForm *forms[2];
+    MenuItem items[3];
+    s32 i, count = 0, choice;
+    EntityInfo *info = GetEntInfo(target);
+
+    for (i = 0; i < ARRAY_COUNT(sDxMegaForms) && count < 2; i++) {
+        if (sDxMegaForms[i].base == info->id)
+            forms[count++] = &sDxMegaForms[i];
     }
-    return NULL;
+    if (count == 0)
+        return NULL;
+    if (count == 1 || info->isNotTeamMember)
+        return forms[0];
+    for (i = 0; i < count; i++) {
+        items[i].text = GetMonSpecies(forms[i]->mega);
+        items[i].menuAction = i + 1;
+    }
+    items[count].text = NULL;
+    items[count].menuAction = 0;
+    choice = DisplayDungeonMenuMessage(NULL, sDxWhichMega, items, 0);
+    return (choice >= 1 && choice <= count) ? forms[choice - 1] : forms[0];
 }
 
 // a Mega form's base species (any other id is returned as is)
@@ -157,7 +176,7 @@ void DxEmpower(Entity *user, Entity *target)
     BoostDefensiveStat(user, target, special, DX_EMPOWER_STAGES);
     BoostSpeed(user, target, 0, TRUE);
 
-    form = DxFindMega(GetEntInfo(target)->id);
+    form = DxChooseMega(target);
     if (form != NULL && GetEntInfo(target)->apparentID != form->mega)
         DxMegaEvolve(user, target, form);
 }

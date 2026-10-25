@@ -1,0 +1,50 @@
+#rom debug
+#save after-first-dungeon
+# DX Mega Evolution choice: an Empowered Charizard asks which Mega Evolution; picking the second gives Mega Charizard Y (#457)
+# Dungeon offsets come from the debug ROM's gDxOff* symbols
+mash START sMainMenu 4 != 0 3000
+wait 60
+# first toolbox slot = Empowerment Seed (id 238)
+write *gTeamInventoryRef+0 1 1
+write *gTeamInventoryRef+2 1 238
+press UP
+press A
+wait 30
+press A
+wait 30
+shot 1_pick_dungeon
+press A
+wait 30
+shot 2_pick_floor
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+# the leader becomes a Gengar for the test
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoId 2 6
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoApparentId 2 6
+wait 30
+shot 0_charizard
+press B
+wait 30
+press DOWN
+press A
+wait 40
+shot 1_items
+press A
+wait 40
+shot 2_item_menu
+wait 30
+# Eat (the Empowered messages come first, then the menu)
+press A
+wait 480
+shot 3_which_mega
+press DOWN
+wait 10
+shot 4_pick_y
+press A
+wait 200
+mash? A sMainLoopsUnk 4 == 0 300
+wait 60
+shot 5_mega
+read apparent ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoApparentId 2
+expect ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoApparentId 2 == 457

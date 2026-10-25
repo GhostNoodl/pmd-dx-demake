@@ -22324,7 +22324,7 @@
         "overworldPalette": 7,
         "bodySize": 1,
         "movementSpeed": 1,
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0001111111111111",
         "types": [
             "TYPE_PSYCHIC"
         ],
@@ -22368,7 +22368,7 @@
         "overworldPalette": 7,
         "bodySize": 1,
         "movementSpeed": 1,
-        "dialogueSprites": "0b0000000000000000",
+        "dialogueSprites": "0b0001111111111111",
         "types": [
             "TYPE_PSYCHIC",
             "TYPE_FIGHTING"
