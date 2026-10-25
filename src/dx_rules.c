@@ -200,12 +200,31 @@ void DxRollStrongFoe(void)
     }
 }
 
-// a freshly spawned Strong Foe: tougher, marked, and worth more
+#include "data/dx_shiny.h"
+
+// tests: Strong Foes of shiny species are always shiny
+EWRAM_DATA bool8 gDxForceShiny = FALSE;
+
+// the shared palette a shiny is drawn with (-1: no shiny form)
+s32 DxShinyPalette(s32 species)
+{
+    s32 i;
+
+    for (i = 0; i < ARRAY_COUNT(sDxShinies); i++) {
+        if (sDxShinies[i].species == species)
+            return sDxShinies[i].palette;
+    }
+    return -1;
+}
+
+// a freshly spawned Strong Foe: tougher, marked, worth more, and sometimes shiny
 void DxMakeStrongFoe(Entity *entity)
 {
     EntityInfo *info = GetEntInfo(entity);
 
     info->dxStrongFoe = TRUE;
+    if (DxShinyPalette(info->id) >= 0 && (gDxForceShiny || DungeonRandInt(100) < DX_SHINY_CHANCE))
+        info->dxShiny = TRUE;
     info->offensiveStages[0] += DX_STRONG_FOE_STAGES;
     info->offensiveStages[1] += DX_STRONG_FOE_STAGES;
     info->defensiveStages[0] += DX_STRONG_FOE_STAGES;

@@ -36,5 +36,8 @@ bool8 DxDungeonCleared(u8 dungeon);
 void DxRollStrongFoe(void);
 void DxMakeStrongFoe(Entity *entity);
 void DxStrongFoeReward(Entity *foe);
+struct DxShiny { s16 species; u8 palette; };
+s32 DxShinyPalette(s32 species);
+extern bool8 gDxForceShiny;
 
 #endif // GUARD_DX_RULES_H

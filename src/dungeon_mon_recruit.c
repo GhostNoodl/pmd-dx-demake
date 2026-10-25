@@ -10,6 +10,7 @@
 #include "dx_rare_quality.h"
 #include "dx_tuning.h"
 #include "dx_rules.h"
+#include "constants/rare_quality.h"
 #endif
 #include "globaldata.h"
 #include "dungeon_mon_recruit.h"
@@ -129,7 +130,8 @@ bool8 TryRecruitMonster(Entity *attacker, Entity *target)
     if (!IsMonsterRecruitable(targetInfo->id))
         return FALSE;
 #ifdef DX_RULES
-    if (targetInfo->dxStrongFoe) // DX: only shiny Strong Foes can be recruited
+    // DX: only shiny Strong Foes can be recruited, and only by a leader holding a Friend Bow
+    if (targetInfo->dxStrongFoe && (!targetInfo->dxShiny || GetLeader() == NULL || !HasHeldItem(GetLeader(), ITEM_FRIEND_BOW)))
         return FALSE;
     // DX: the defeated Pokemon has to be within 2 tiles of the leader (whoever landed the KO)
     if (GetLeader() == NULL)
@@ -332,6 +334,9 @@ bool8 MonsterJoinSequence_Async(Entity *entity1, Entity *entity2, struct unkStru
     SetDefaultIQSkills(&dungeonMon->IQSkills,FALSE);
     dungeonMon->hiddenPower = param_3->hiddenPower;
     dungeonMon->tacticIndex = 0;
+#ifdef DX_RULES
+    dungeonMon->dxFlags = param_3->dxShiny ? DX_FLAG_SHINY : 0;
+#endif
     dungeonMon->recruitedPokemonId = -1;
     dungeonMon->unkC = pokeIndex;
     dungeonMon->speciesNum = param_3->id;
@@ -457,6 +462,9 @@ bool8 HandleSpecialEntityJoinSequence(Entity *entity1,Entity *entity2,Entity **e
     SetDefaultIQSkills(&dungeonMon->IQSkills,FALSE);
     dungeonMon->hiddenPower = local_74.hiddenPower;
     dungeonMon->tacticIndex = 0;
+#ifdef DX_RULES
+    dungeonMon->dxFlags = local_74.dxShiny ? DX_FLAG_SHINY : 0;
+#endif
     dungeonMon->recruitedPokemonId = -1;
     dungeonMon->unkC = index;
     dungeonMon->speciesNum = local_74.id;

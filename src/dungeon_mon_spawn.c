@@ -2,6 +2,7 @@
 #ifdef DX_RULES
 #include "dx_rules.h"
 #include "dx_tuning.h"
+#include "constants/rare_quality.h"
 #endif
 #include "globaldata.h"
 #include "dungeon_mon_spawn.h"
@@ -641,6 +642,9 @@ bool8 SpawnTeamMember(s16 _species, s32 x, s32 y, DungeonMon *monPtr, Entity **a
     entityInfo->level = monPtr->level;
     entityInfo->IQ = monPtr->IQ;
     entityInfo->tactic = monPtr->tacticIndex;
+#ifdef DX_RULES
+    entityInfo->dxShiny = (monPtr->dxFlags & DX_FLAG_SHINY) != 0;
+#endif
     entityInfo->IQSkillMenuFlags = monPtr->IQSkills;
     entityInfo->hiddenPower = monPtr->hiddenPower;
     entityInfo->joinedAt = monPtr->dungeonLocation;
@@ -808,6 +812,7 @@ static void InitEntityFromSpawnInfo(bool8 a0, Entity *entity, struct MonSpawnInf
     entInfo->statusIcons = 0;
 #ifdef DX_RULES
     entInfo->dxStrongFoe = FALSE;
+    entInfo->dxShiny = FALSE;
 #endif
     entInfo->unk164 = 0xFF;
     entInfo->unk165 = 0xFF;
@@ -985,6 +990,9 @@ void sub_806C264(s32 teamIndex, EntityInfo *entInfo)
     monPtr->IQ = entInfo->IQ;
     monPtr->IQSkills = entInfo->IQSkillMenuFlags;
     monPtr->tacticIndex = entInfo->tactic;
+#ifdef DX_RULES
+    monPtr->dxFlags = entInfo->dxShiny ? DX_FLAG_SHINY : 0;
+#endif
     monPtr->hiddenPower = entInfo->hiddenPower;
     monPtr->belly = entInfo->belly;
     monPtr->maxBelly = entInfo->maxBelly;
