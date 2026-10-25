@@ -1,4 +1,7 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rules.h"
+#endif
 #include "globaldata.h"
 #include "dungeon_wind.h"
 #include "dungeon_misc.h"
@@ -28,6 +31,9 @@ void UpdateWindTurns(void)
 
     if (!EntityIsValid(leader))
         return;
+#ifdef DX_RULES
+    gDxAdventureTurns++;
+#endif
 
     if (gDungeon->unk644.windTurns <= 0 || --gDungeon->unk644.windTurns < 1) {
         gDungeon->unk644.windPhase = 3;

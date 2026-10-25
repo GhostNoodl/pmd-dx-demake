@@ -989,7 +989,7 @@ void sub_806C264(s32 teamIndex, EntityInfo *entInfo)
     monPtr->IQSkills = entInfo->IQSkillMenuFlags;
     monPtr->tacticIndex = entInfo->tactic;
 #ifdef DX_RULES
-    monPtr->dxFlags = entInfo->dxShiny ? DX_FLAG_SHINY : 0;
+    monPtr->dxFlags = (monPtr->dxFlags & ~DX_FLAG_SHINY) | (entInfo->dxShiny ? DX_FLAG_SHINY : 0); // keep the other DX flags
 #endif
     monPtr->hiddenPower = entInfo->hiddenPower;
     monPtr->belly = entInfo->belly;

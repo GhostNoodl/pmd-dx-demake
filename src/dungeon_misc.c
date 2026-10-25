@@ -1,5 +1,8 @@
 #include "global.h"
 #ifdef DX_RULES
+#include "dx_rules.h"
+#endif
+#ifdef DX_RULES
 #include "dx_rare_quality.h"
 #endif
 #include "globaldata.h"
@@ -344,6 +347,12 @@ void sub_8068BDC(bool8 a0)
         u8 friendAreaId = i;
         if (!spArr[friendAreaId])
             continue;
+#ifdef DX_RULES
+        if (!GetFriendAreaStatus(friendAreaId)) {
+            DxPayVisitors(friendAreaId);
+            continue;
+        }
+#endif
 
         sub_8092404(friendAreaId, arr2, TRUE, TRUE);
         GetFriendAreaCapacity2(friendAreaId, &areaCapacity, FALSE, FALSE);

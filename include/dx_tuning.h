@@ -78,4 +78,8 @@
 #define DX_RQ_TIGHT_FORMATION_MAX 30 // (ESTIMATED)
 #define DX_RQ_FORGE_A_PATH_BELLY 5 // Belly per wall broken (ESTIMATED)
 
+#define DX_VISITOR_POKE_PER_TURN 2 // Poke a camp-less recruit gives per turn it spent with you (ESTIMATED)
+#define DX_VISITOR_POKE_MIN 50     // (ESTIMATED)
+#define DX_VISITOR_POKE_MAX 1500   // (ESTIMATED)
+
 #endif // GUARD_DX_TUNING_H
