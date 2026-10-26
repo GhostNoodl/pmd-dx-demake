@@ -452,9 +452,11 @@ static void PartyListMenu_CreateMenu1(void)
     sUnknown_203B2B8->unk16C[loopMax].text = sPartyMenuMoves;
     sUnknown_203B2B8->unk16C[loopMax].menuAction = PARTY_LIST_MENU_MOVES;
     loopMax += 1;
+#ifndef DX_RULES // DX has no IQ
     sUnknown_203B2B8->unk16C[loopMax].text = sPartyMenuCheckIQ;
     sUnknown_203B2B8->unk16C[loopMax].menuAction = PARTY_LIST_MENU_CHECK_IQ;
     loopMax += 1;
+#endif
     sUnknown_203B2B8->unk16C[loopMax].text = NULL;
     sUnknown_203B2B8->unk16C[loopMax].menuAction = PARTY_LIST_MENU_NULL;
 

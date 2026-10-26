@@ -363,9 +363,11 @@ static void sub_8025728(void)
     gUnknown_203B2B4->unkC8[loopMax].text = sMoves;
     gUnknown_203B2B4->unkC8[loopMax].menuAction = FRIEND_LIST_MENU_MOVES;
     loopMax += 1;
+#ifndef DX_RULES // DX has no IQ
     gUnknown_203B2B4->unkC8[loopMax].text = sCheckIQ;
     gUnknown_203B2B4->unkC8[loopMax].menuAction = FRIEND_LIST_MENU_CHECK_IQ;
     loopMax += 1;
+#endif
     gUnknown_203B2B4->unkC8[loopMax].text = NULL;
     gUnknown_203B2B4->unkC8[loopMax].menuAction = FRIEND_LIST_MENU_NULL;
 

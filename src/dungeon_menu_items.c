@@ -742,6 +742,10 @@ static void SetSubMenuActions(Entity *a0)
                 if (r5) {
                     SetActionUnusableInDungeonSubMenu(0x38);
                 }
+#ifdef DX_RULES
+                if (DxIsGummi(item->id))
+                    SetActionUnusableInDungeonSubMenu(0x38); // Gummis are given at a Rescue Camp
+#endif
             }
         }
     }

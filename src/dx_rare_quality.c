@@ -1,4 +1,5 @@
 #include "global.h"
+#include "random.h"
 
 #ifdef DX_RULES
 
@@ -241,6 +242,27 @@ void DxGummiItemAction(Entity *user, Entity *target, bool8 alwaysQuality)
     }
     if (alwaysQuality || DungeonRandInt(100) < DX_RAINBOW_GUMMI_QUALITY_CHANCE)
         DxGrantQuality(user, target, DxRandomQuality());
+}
+
+static const u8 *const sDxGummiStats[] = {_("Attack"), _("Sp. Atk"), _("Defense"), _("Sp. Def")};
+static const u8 sDxGummiAte[] = _("{POKEMON_1} ate the Gummi.\n{POKEMON_1}'s {COLOR YELLOW}%s{RESET} rose by %d!");
+static const u8 sDxGummiAteQuality[] = _("{POKEMON_1} ate the Gummi.\n{POKEMON_1}'s {COLOR YELLOW}%s{RESET} rose by %d!{EXTRA_MSG}{POKEMON_1} gained the Rare Quality\n{COLOR CYAN}%s{RESET}!");
+
+// DX Gummis are given at a Rescue Camp: a Rainbow Gummi raises one of the Pokemon's stats for good and
+// sometimes grants a Rare Quality; a DX Gummi raises one and always grants one
+void DxFeedGummi(Pokemon *mon, u8 itemId, u8 *text)
+{
+    s32 stat = RandInt(4);
+    u8 *value = stat < 2 ? &mon->offense.att[stat] : &mon->offense.def[stat - 2];
+
+    *value = *value + DX_GUMMI_STAT_RAISE > 255 ? 255 : *value + DX_GUMMI_STAT_RAISE;
+    if (itemId == ITEM_DX_GUMMI || RandInt(100) < DX_RAINBOW_GUMMI_QUALITY_CHANCE) {
+        mon->dxQuality = sDxQualitiesInPlay[RandInt(ARRAY_COUNT(sDxQualitiesInPlay))];
+        sprintfStatic(text, sDxGummiAteQuality, sDxGummiStats[stat], DX_GUMMI_STAT_RAISE, DxQualityName(mon->dxQuality));
+    }
+    else {
+        sprintfStatic(text, sDxGummiAte, sDxGummiStats[stat], DX_GUMMI_STAT_RAISE);
+    }
 }
 
 // Narrow Focus (corridors) and Rapid Bull's-Eyes (multi-hit moves): the move never misses

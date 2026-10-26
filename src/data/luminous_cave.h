@@ -113,7 +113,11 @@ ALIGNED(4) static const u8 sLackFriendAreaRoom[] = _(
 ALIGNED(4) static const u8 sLackIQ[] = _(
     "{CENTER_ALIGN}...{EXTRA_MSG}"
     "{CENTER_ALIGN}Ye cannot evolve yet.{EXTRA_MSG}"
+#ifdef DX_RULES
+    "{CENTER_ALIGN}Ye are not yet ready to evolve.");
+#else
     "{CENTER_ALIGN}Ye seem to lack the IQ to evolve.");
+#endif
 
 ALIGNED(4) static const u8 sLackItem[] = _(
     "{CENTER_ALIGN}{CENTER_ALIGN}...{EXTRA_MSG}"

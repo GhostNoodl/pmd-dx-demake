@@ -1199,7 +1199,7 @@
         "sellPrice": 50,
         "category": "CATEGORY_FOOD_GUMMIES",
         "spriteID": 17,
-        "description": "ItemDescriptionRedGummi",
+        "description": "ItemDescriptionRainbowGummi",
         "order": 70,
         "paletteID": 6,
         "actionType": "ITEM_ACTION_TYPE_FOOD"
@@ -1210,7 +1210,7 @@
         "sellPrice": 50,
         "category": "CATEGORY_FOOD_GUMMIES",
         "spriteID": 17,
-        "description": "ItemDescriptionBlueGummi",
+        "description": "ItemDescriptionRainbowGummi",
         "order": 60,
         "paletteID": 0,
         "actionType": "ITEM_ACTION_TYPE_FOOD"
@@ -1221,7 +1221,7 @@
         "sellPrice": 50,
         "category": "CATEGORY_FOOD_GUMMIES",
         "spriteID": 17,
-        "description": "ItemDescriptionGrassGummi",
+        "description": "ItemDescriptionRainbowGummi",
         "order": 64,
         "paletteID": 10,
         "actionType": "ITEM_ACTION_TYPE_FOOD"
@@ -1232,7 +1232,7 @@
         "sellPrice": 50,
         "category": "CATEGORY_FOOD_GUMMIES",
         "spriteID": 17,
-        "description": "ItemDescriptionYellowGummi",
+        "description": "ItemDescriptionRainbowGummi",
         "order": 75,
         "paletteID": 3,
         "actionType": "ITEM_ACTION_TYPE_FOOD"
@@ -1243,7 +1243,7 @@
         "sellPrice": 50,
         "category": "CATEGORY_FOOD_GUMMIES",
         "spriteID": 17,
-        "description": "ItemDescriptionClearGummi",
+        "description": "ItemDescriptionRainbowGummi",
         "order": 62,
         "paletteID": 11,
         "actionType": "ITEM_ACTION_TYPE_FOOD"
@@ -1254,7 +1254,7 @@
         "sellPrice": 50,
         "category": "CATEGORY_FOOD_GUMMIES",
         "spriteID": 17,
-        "description": "ItemDescriptionOrangeGummi",
+        "description": "ItemDescriptionRainbowGummi",
         "order": 67,
         "paletteID": 9,
         "actionType": "ITEM_ACTION_TYPE_FOOD"
@@ -1265,7 +1265,7 @@
         "sellPrice": 50,
         "category": "CATEGORY_FOOD_GUMMIES",
         "spriteID": 17,
-        "description": "ItemDescriptionPinkGummi",
+        "description": "ItemDescriptionRainbowGummi",
         "order": 68,
         "paletteID": 4,
         "actionType": "ITEM_ACTION_TYPE_FOOD"
@@ -1276,7 +1276,7 @@
         "sellPrice": 50,
         "category": "CATEGORY_FOOD_GUMMIES",
         "spriteID": 17,
-        "description": "ItemDescriptionBrownGummi",
+        "description": "ItemDescriptionRainbowGummi",
         "order": 61,
         "paletteID": 8,
         "actionType": "ITEM_ACTION_TYPE_FOOD"
@@ -1287,7 +1287,7 @@
         "sellPrice": 50,
         "category": "CATEGORY_FOOD_GUMMIES",
         "spriteID": 17,
-        "description": "ItemDescriptionSkyGummi",
+        "description": "ItemDescriptionRainbowGummi",
         "order": 73,
         "paletteID": 0,
         "actionType": "ITEM_ACTION_TYPE_FOOD"
@@ -1298,7 +1298,7 @@
         "sellPrice": 50,
         "category": "CATEGORY_FOOD_GUMMIES",
         "spriteID": 17,
-        "description": "ItemDescriptionGoldGummi",
+        "description": "ItemDescriptionRainbowGummi",
         "order": 63,
         "paletteID": 3,
         "actionType": "ITEM_ACTION_TYPE_FOOD"
@@ -1309,7 +1309,7 @@
         "sellPrice": 50,
         "category": "CATEGORY_FOOD_GUMMIES",
         "spriteID": 17,
-        "description": "ItemDescriptionGreenGummi",
+        "description": "ItemDescriptionRainbowGummi",
         "order": 66,
         "paletteID": 10,
         "actionType": "ITEM_ACTION_TYPE_FOOD"
@@ -1320,7 +1320,7 @@
         "sellPrice": 50,
         "category": "CATEGORY_FOOD_GUMMIES",
         "spriteID": 17,
-        "description": "ItemDescriptionGrayGummi",
+        "description": "ItemDescriptionRainbowGummi",
         "order": 65,
         "paletteID": 11,
         "actionType": "ITEM_ACTION_TYPE_FOOD"
@@ -1331,7 +1331,7 @@
         "sellPrice": 50,
         "category": "CATEGORY_FOOD_GUMMIES",
         "spriteID": 17,
-        "description": "ItemDescriptionPurpleGummi",
+        "description": "ItemDescriptionRainbowGummi",
         "order": 69,
         "paletteID": 7,
         "actionType": "ITEM_ACTION_TYPE_FOOD"
@@ -1342,7 +1342,7 @@
         "sellPrice": 50,
         "category": "CATEGORY_FOOD_GUMMIES",
         "spriteID": 17,
-        "description": "ItemDescriptionRoyalGummi",
+        "description": "ItemDescriptionRainbowGummi",
         "order": 71,
         "paletteID": 2,
         "actionType": "ITEM_ACTION_TYPE_FOOD"
@@ -1353,7 +1353,7 @@
         "sellPrice": 50,
         "category": "CATEGORY_FOOD_GUMMIES",
         "spriteID": 17,
-        "description": "ItemDescriptionBlackGummi",
+        "description": "ItemDescriptionRainbowGummi",
         "order": 59,
         "paletteID": 2,
         "actionType": "ITEM_ACTION_TYPE_FOOD"
@@ -1364,7 +1364,7 @@
         "sellPrice": 500,
         "category": "CATEGORY_FOOD_GUMMIES",
         "spriteID": 17,
-        "description": "ItemDescriptionSilverGummi",
+        "description": "ItemDescriptionRainbowGummi",
         "order": 72,
         "paletteID": 11,
         "actionType": "ITEM_ACTION_TYPE_FOOD"

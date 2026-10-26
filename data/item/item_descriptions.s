@@ -512,7 +512,11 @@ ItemDescriptionSafeguard:
 
 .global ItemDescriptionFrustration
 ItemDescriptionFrustration:
+#ifdef DX_RULES
+.string "Teaches the move {color GREEN}Frustration{reset}.{NEW_LINE}It inflicts damage on the target and{NEW_LINE}inflicts greater damage if the user's{NEW_LINE}{color YELLOW}level{reset} is low.\n\0"
+#else
 .string "Teaches the move {color GREEN}Frustration{reset}.{NEW_LINE}It inflicts damage on the target and{NEW_LINE}inflicts greater damage if the user's{NEW_LINE}{color YELLOW}IQ{reset} is low.\n\0"
+#endif
 
 .global ItemDescriptionSolarBeam
 ItemDescriptionSolarBeam:
@@ -536,7 +540,11 @@ ItemDescriptionEarthquake:
 
 .global ItemDescriptionReturn
 ItemDescriptionReturn:
+#ifdef DX_RULES
+.string "Teaches the move {color GREEN}Return{reset}.{NEW_LINE}It inflicts damage on the target.{NEW_LINE}Its power rises with the user's {color YELLOW}level{reset}.\n\0"
+#else
 .string "Teaches the move {color GREEN}Return{reset}.{NEW_LINE}It inflicts damage on the target.{NEW_LINE}Its power rises with the user's {color YELLOW}IQ{reset}.\n\0"
+#endif
 
 .global ItemDescriptionDig
 ItemDescriptionDig:

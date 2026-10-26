@@ -510,7 +510,11 @@ MoveNameLeechSeed:
 
 .global MoveDescriptionFrustration
 MoveDescriptionFrustration:
+#ifdef DX_RULES
+.string "Inflicts damage on the target.\nIt inflicts greater damage if the user's\n{color YELLOW}level{reset} is low.\0"
+#else
 .string "Inflicts damage on the target.\nIt inflicts greater damage if the user's\n{color YELLOW}IQ{reset} is low.\0"
+#endif
 .align 2,0
 
 .global MoveNameFrustration
@@ -2800,7 +2804,11 @@ MoveNameGrudge:
 
 .global MoveDescriptionReturn
 MoveDescriptionReturn:
+#ifdef DX_RULES
+.string "Inflicts damage on the target.\nIts power rises with the user's\n{color YELLOW}level{reset}.\0"
+#else
 .string "Inflicts damage on the target.\nIts power rises with the user's\n{color YELLOW}IQ{reset}.\0"
+#endif
 .align 2,0
 
 .global MoveNameReturn

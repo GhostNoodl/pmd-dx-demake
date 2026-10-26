@@ -1,6 +1,7 @@
 #rom debug
 #save after-first-dungeon
-# DX Rare Qualities: a DX Gummi always grants one; Small Stomach makes an Apple fill the Belly completely
+# DX Rare Qualities: a DX Gummi can't be eaten in a dungeon (they're given at a camp: gummi_camp_dx), and
+# Small Stomach makes an Apple fill the Belly completely
 # Dungeon offsets come from the debug ROM's gDxOff* symbols
 mash START sMainMenu 4 != 0 3000
 wait 60
@@ -9,6 +10,7 @@ write *gTeamInventoryRef+0 1 1
 write *gTeamInventoryRef+2 1 239
 write *gTeamInventoryRef+4 1 1
 write *gTeamInventoryRef+6 1 82
+write *gRecruitedPokemonRef+3733 1 0
 press UP
 press A
 wait 30
@@ -31,16 +33,22 @@ press A
 wait 40
 shot 2_item_menu
 wait 30
-# Eat the DX Gummi
+# Eat the DX Gummi: nothing happens (no quality; the Gummi stays)
 press A
 wait 200
 shot 3_gummi
-press A
-wait 60
-press A
+press B
+wait 30
+press B
+wait 30
+press B
 wait 60
 read quality *gRecruitedPokemonRef+3733 1
-expect *gRecruitedPokemonRef+3733 1 != 0
+expect *gRecruitedPokemonRef+3733 1 == 0
+expect *gTeamInventoryRef+2 1 == -17
+# the toolbox: just the Apple
+write *gTeamInventoryRef+2 1 82
+write *gTeamInventoryRef+4 1 0
 # now Small Stomach (26), Belly down to 10, eat the Apple
 write *gRecruitedPokemonRef+3733 1 26
 write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoBelly 2 10

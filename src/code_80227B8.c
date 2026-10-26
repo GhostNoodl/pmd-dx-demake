@@ -21,6 +21,12 @@ EWRAM_INIT static unkStruct_203B294 *sUnknown_203B294 = {NULL};
 #include "data/code_80227B8.h"
 
 static void sub_8022924(s32 newState);
+#ifdef DX_RULES
+#include "dx_rare_quality.h"
+// DX: a Gummi was given (the message in sDxGummiText)
+#define DX_GUMMI_FED_STATE 23
+static EWRAM_DATA u8 sDxGummiText[200] = {0};
+#endif
 static void sub_802293C(void);
 static void sub_8022A10(void);
 static void sub_8022D2C(void);
@@ -267,6 +273,11 @@ static void sub_8022A10(void)
         case 21:
             sub_801AFA4(sUnknown_203B294->itemIndex);
             break;
+#ifdef DX_RULES
+        case DX_GUMMI_FED_STATE:
+            CreateDialogueBoxAndPortrait(sDxGummiText, 0, 0, 0x101);
+            break;
+#endif
         case 22:
         default:
             sub_801A928();
@@ -284,7 +295,11 @@ static void sub_8022D2C(void)
     if (sUnknown_203B294->pokeStruct) {
         sUnknown_203B294->unkF8[loopMax].text = sGive;
         sUnknown_203B294->unkF8[loopMax].menuAction = 5;
+#ifdef DX_RULES
+        if (!DxIsGummi(sUnknown_203B294->item.id))
+#else
         if (!IsGummiItem(sUnknown_203B294->item.id))
+#endif
             sUnknown_203B294->unk138[loopMax] = 1;
 
         loopMax++;
@@ -365,6 +380,17 @@ static void sub_8022EF4(void)
         case 3:
             break;
         case 5:
+#ifdef DX_RULES
+            // DX: no IQ; the Gummi raises a stat (and may grant a Rare Quality), then the menu closes
+            DxFeedGummi(sUnknown_203B294->pokeStruct, sUnknown_203B294->item.id, sDxGummiText);
+            ShiftItemsDownFrom(sUnknown_203B294->itemIndex);
+            FillInventoryGaps();
+            sub_8099690(0);
+            nullsub_104();
+            sUnknown_203B294->fallbackState = 22;
+            sub_8022924(DX_GUMMI_FED_STATE);
+            break;
+#endif
             sUnknown_203B294->availIQSkillPreGummi = GetNumAvailableIQSkills(sUnknown_203B294->iqSkillPreGummi, sUnknown_203B294->pokeStruct->IQ);
             GetGummiItemStatBoost(sUnknown_203B294->pokeStruct, sUnknown_203B294->item.id, FALSE, &sUnknown_203B294->gummi);
             sUnknown_203B294->availIQSkillPostGummi = GetNumAvailableIQSkills(sUnknown_203B294->iqSkillPostGummi, sUnknown_203B294->pokeStruct->IQ);

@@ -1042,7 +1042,11 @@ const TutorialFlagMsg gUnknown_80FF13C = {
 };
 
 const TutorialFlagMsg gUnknown_80FF1B4 = {
+#ifdef DX_RULES
+    TUTORIAL_FLAG_TEAM_MANAGEMENT, _("Choose a partner with the Team command\nand set its tactics.\nCooperation with partners is the key!")
+#else
     TUTORIAL_FLAG_TEAM_MANAGEMENT, _("Choose a partner with the Team command\nand set its tactics and IQ skills.\nCooperation with partners is the key!")
+#endif
 };
 
 const TutorialFlagMsg gMovementTutorial = {

@@ -976,6 +976,35 @@ bool8 IsGummiItem(u8 id)
     return TRUE;
 }
 
+#ifdef DX_RULES
+bool8 DxIsGummi(u8 id)
+{
+    return IsGummiItem(id) || id == ITEM_DX_GUMMI;
+}
+
+void DxConvertTypeGummis(void)
+{
+    s32 i;
+
+    for (i = 0; i < INVENTORY_SIZE; i++) {
+        if (ItemExists(&gTeamInventoryRef->teamItems[i]) && IsGummiItem(gTeamInventoryRef->teamItems[i].id))
+            gTeamInventoryRef->teamItems[i].id = ITEM_RAINBOW_GUMMI;
+    }
+    for (i = ITEM_WHITE_GUMMI; i <= ITEM_SILVER_GUMMI; i++) {
+        if (i != ITEM_RAINBOW_GUMMI && gTeamInventoryRef->teamStorage[i] != 0) {
+            s32 total = gTeamInventoryRef->teamStorage[ITEM_RAINBOW_GUMMI] + gTeamInventoryRef->teamStorage[i];
+            gTeamInventoryRef->teamStorage[ITEM_RAINBOW_GUMMI] = total > 999 ? 999 : total;
+            gTeamInventoryRef->teamStorage[i] = 0;
+        }
+    }
+    for (i = 0; i < NUM_MONSTERS; i++) {
+        Pokemon *mon = &gRecruitedPokemonRef->pokemon[i];
+        if (PokemonExists(mon) && IsGummiItem(mon->heldItem.id))
+            mon->heldItem.id = ITEM_RAINBOW_GUMMI;
+    }
+}
+#endif
+
 // arm9.bin::0205FBA4
 bool8 HasGummiItem(void)
 {
@@ -983,7 +1012,11 @@ bool8 HasGummiItem(void)
 
     for (i = 0; i < INVENTORY_SIZE; i++) {
         if (ItemExists(&gTeamInventoryRef->teamItems[i])
+#ifdef DX_RULES
+            && DxIsGummi(gTeamInventoryRef->teamItems[i].id)) {
+#else
             && IsGummiItem(gTeamInventoryRef->teamItems[i].id)) {
+#endif
             return TRUE;
         }
     }

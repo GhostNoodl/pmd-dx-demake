@@ -85,10 +85,24 @@ void SetMonEvolveStatus(Pokemon *pokemon, EvolveStatus *evolveStatus, bool8 para
             }
         }
         else if (evolveConditions.preEvolution.evolveType == EVOLVE_TYPE_IQ) {
+#ifdef DX_RULES
+            // DX has no IQ (Gummis raise stats instead): an Evo Crystal stands in for Red's IQ requirement
+            if (param_3) {
+                if (evolveStatus->evoItem1 != ITEM_EVO_CRYSTAL && evolveStatus->evoItem2 != ITEM_EVO_CRYSTAL) {
+                    evolveStatus->evolutionConditionStatus |= EVOLUTION_LACK_ITEM;
+                    cannotEvolve = TRUE;
+                }
+            }
+            else if (FindItemInInventory(ITEM_EVO_CRYSTAL) < 0) {
+                evolveStatus->evolutionConditionStatus |= EVOLUTION_LACK_ITEM;
+                cannotEvolve = TRUE;
+            }
+#else
             if (pokemon->IQ < evolveConditions.evolutionRequirements.mainRequirement) {
                 evolveStatus->evolutionConditionStatus |= EVOLUTION_LACK_IQ;
                 cannotEvolve = TRUE;
             }
+#endif
         }
         else if (evolveConditions.preEvolution.evolveType == EVOLVE_TYPE_ITEM) {
             if (param_3) {

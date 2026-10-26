@@ -54,6 +54,9 @@ static const WindowTemplate sUnknown_80DBEB0[MAX_WINDOWS] =
 };
 
 ALIGNED(4) static const u8 sItems[] = _("Items");
+#ifdef DX_RULES
+ALIGNED(4) static const u8 sDxGiveGummi[] = _("Give Gummi");
+#endif
 ALIGNED(4) static const u8 sTeam[] = _("Team");
 ALIGNED(4) static const u8 sJobList[] = _("Job List");
 ALIGNED(4) static const u8 sOthers[] = _("Others");

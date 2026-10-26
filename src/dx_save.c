@@ -1,4 +1,5 @@
 #include "global.h"
+#include "items.h"
 #include <stddef.h>
 
 #ifdef DX_RULES
@@ -110,6 +111,7 @@ void DxSaveExtRead(void)
     else
         MemoryFill8(gDxClearedDungeons, 0, sizeof(gDxClearedDungeons));
     MemoryFree(ext);
+    DxConvertTypeGummis();
 }
 
 #endif // DX_RULES
