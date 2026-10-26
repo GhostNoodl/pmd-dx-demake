@@ -1,0 +1,67 @@
+#rom debug
+#save after-first-dungeon
+# S15: Gardevoir and Clefairy know the moves DX made Fairy-type, and Charm works (a foe's Attack drops).
+# Built from scenarios_dx.txt's S15 block.
+# --- S15
+mash START sMainMenu 4 != 0 3000
+wait 60
+press UP
+press A
+wait 30
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press A
+wait 30
+expect *sMainMenu+4 4 == 53
+press LEFT
+press UP
+press RIGHT
+press UP
+press UP
+press UP
+press UP
+wait 10
+shot s15_pick
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+shot s15_in_dungeon
+expect gDxScenario 1 == 15
+expect *gDungeon+@gDxOffDungeonLocation 1 == 33
+expect *gDungeon+@gDxOffDungeonFloor 1 == 1
+# Gardevoir: Charm (11) and Moonlight (173); Clefairy: Sweet Kiss (191) and Charm
+expect ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!18 2 == 11
+expect ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!26 2 == 173
+expect ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoMoves!18 2 == 191
+expect ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoMoves!26 2 == 11
+# Charm (moves menu, third move) on a foe next to the leader halves its Attack multiplier
+write gDxTestStageTypes 1 255
+write gDxTestStageHP 2 0
+write gDxTestStageFoe 1 1
+write gDxTestStageFoe+1 1 0
+write gDxTestStageMate 1 0
+write gDxTestStageMate+1 1 0
+write gDxTestStage 1 1
+waitfor gDxTestStage 1 == 0 900
+wait 10
+read atk0 **gDxTestStageMon+@gDxOffEntityInfo+@gDxOffInfoStages!16 4
+press B
+wait 30
+press A
+wait 30
+press DOWN
+press DOWN
+wait 10
+shot s15_moves
+press A
+wait 30
+press A
+wait 200
+shot s15_charm
+read atk1 **gDxTestStageMon+@gDxOffEntityInfo+@gDxOffInfoStages!16 4
+cmpreads atk1 < atk0

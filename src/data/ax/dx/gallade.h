@@ -254,7 +254,7 @@ static const ax_pose sGalladePose63[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGalladePose64[] = {
-	AX_POSE(50, OAM1(226, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
+	AX_POSE(50, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGalladePose65[] = {
@@ -262,7 +262,7 @@ static const ax_pose sGalladePose65[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGalladePose66[] = {
-	AX_POSE(52, OAM1(226, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
+	AX_POSE(52, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(243, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGalladePose67[] = {
@@ -350,11 +350,11 @@ static const ax_pose sGalladePose87[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGalladePose88[] = {
-	AX_POSE(50, OAM1(224, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
+	AX_POSE(50, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGalladePose89[] = {
-	AX_POSE(50, OAM1(223, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
+	AX_POSE(50, OAM1(207, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGalladePose90[] = {
@@ -366,11 +366,11 @@ static const ax_pose sGalladePose91[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGalladePose92[] = {
-	AX_POSE(52, OAM1(224, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
+	AX_POSE(52, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(243, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGalladePose93[] = {
-	AX_POSE(52, OAM1(223, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
+	AX_POSE(52, OAM1(207, ST_OAM_V_RECTANGLE, 1), OAM2(243, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGalladePose94[] = {
@@ -502,23 +502,23 @@ static const ax_pose sGalladePose125[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGalladePose126[] = {
-	AX_POSE(50, OAM1(216, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
+	AX_POSE(50, OAM1(200, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGalladePose127[] = {
-	AX_POSE(50, OAM1(210, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
+	AX_POSE(50, OAM1(194, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGalladePose128[] = {
-	AX_POSE(50, OAM1(206, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
+	AX_POSE(50, OAM1(190, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGalladePose129[] = {
-	AX_POSE(50, OAM1(204, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
+	AX_POSE(50, OAM1(188, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGalladePose130[] = {
-	AX_POSE(50, OAM1(202, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
+	AX_POSE(50, OAM1(186, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGalladePose131[] = {
@@ -566,23 +566,23 @@ static const ax_pose sGalladePose141[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGalladePose142[] = {
-	AX_POSE(52, OAM1(216, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
+	AX_POSE(52, OAM1(200, ST_OAM_V_RECTANGLE, 1), OAM2(243, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGalladePose143[] = {
-	AX_POSE(52, OAM1(210, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
+	AX_POSE(52, OAM1(194, ST_OAM_V_RECTANGLE, 1), OAM2(243, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGalladePose144[] = {
-	AX_POSE(52, OAM1(206, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
+	AX_POSE(52, OAM1(190, ST_OAM_V_RECTANGLE, 1), OAM2(243, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGalladePose145[] = {
-	AX_POSE(52, OAM1(204, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
+	AX_POSE(52, OAM1(188, ST_OAM_V_RECTANGLE, 1), OAM2(243, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGalladePose146[] = {
-	AX_POSE(52, OAM1(202, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
+	AX_POSE(52, OAM1(186, ST_OAM_V_RECTANGLE, 1), OAM2(243, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 3)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGalladePose147[] = {
@@ -1139,16 +1139,22 @@ static const u8 sGalladeGfx51_1[] = INCBIN_U8("graphics/ax/mon/gallade/sprite_51
 static const u8 sGalladeGfx51_3[] = INCBIN_U8("graphics/ax/mon/gallade/sprite_51_3.4bpp");
 static const u8 sGalladeGfx51_5[] = INCBIN_U8("graphics/ax/mon/gallade/sprite_51_5.4bpp");
 static const u8 sGalladeGfx51_7[] = INCBIN_U8("graphics/ax/mon/gallade/sprite_51_7.4bpp");
+static const u8 sGalladeGfx51_9[] = INCBIN_U8("graphics/ax/mon/gallade/sprite_51_9.4bpp");
+static const u8 sGalladeGfx51_11[] = INCBIN_U8("graphics/ax/mon/gallade/sprite_51_11.4bpp");
 static const ax_sprite sGalladeSprites51[] = {
-	{NULL, 32},
+	{NULL, 192},
 	{sGalladeGfx51_1, ARRAY_COUNT(sGalladeGfx51_1)},
-	{NULL, 32},
+	{NULL, 64},
 	{sGalladeGfx51_3, ARRAY_COUNT(sGalladeGfx51_3)},
 	{NULL, 32},
 	{sGalladeGfx51_5, ARRAY_COUNT(sGalladeGfx51_5)},
 	{NULL, 32},
 	{sGalladeGfx51_7, ARRAY_COUNT(sGalladeGfx51_7)},
 	{NULL, 32},
+	{sGalladeGfx51_9, ARRAY_COUNT(sGalladeGfx51_9)},
+	{NULL, 96},
+	{sGalladeGfx51_11, ARRAY_COUNT(sGalladeGfx51_11)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const u8 sGalladeGfx52_1[] = INCBIN_U8("graphics/ax/mon/gallade/sprite_52_1.4bpp");
@@ -1170,16 +1176,22 @@ static const u8 sGalladeGfx53_1[] = INCBIN_U8("graphics/ax/mon/gallade/sprite_53
 static const u8 sGalladeGfx53_3[] = INCBIN_U8("graphics/ax/mon/gallade/sprite_53_3.4bpp");
 static const u8 sGalladeGfx53_5[] = INCBIN_U8("graphics/ax/mon/gallade/sprite_53_5.4bpp");
 static const u8 sGalladeGfx53_7[] = INCBIN_U8("graphics/ax/mon/gallade/sprite_53_7.4bpp");
+static const u8 sGalladeGfx53_9[] = INCBIN_U8("graphics/ax/mon/gallade/sprite_53_9.4bpp");
+static const u8 sGalladeGfx53_11[] = INCBIN_U8("graphics/ax/mon/gallade/sprite_53_11.4bpp");
 static const ax_sprite sGalladeSprites53[] = {
-	{NULL, 32},
+	{NULL, 160},
 	{sGalladeGfx53_1, ARRAY_COUNT(sGalladeGfx53_1)},
-	{NULL, 64},
+	{NULL, 96},
 	{sGalladeGfx53_3, ARRAY_COUNT(sGalladeGfx53_3)},
 	{NULL, 64},
 	{sGalladeGfx53_5, ARRAY_COUNT(sGalladeGfx53_5)},
-	{NULL, 32},
+	{NULL, 64},
 	{sGalladeGfx53_7, ARRAY_COUNT(sGalladeGfx53_7)},
 	{NULL, 32},
+	{sGalladeGfx53_9, ARRAY_COUNT(sGalladeGfx53_9)},
+	{NULL, 64},
+	{sGalladeGfx53_11, ARRAY_COUNT(sGalladeGfx53_11)},
+	{NULL, 192},
 	{NULL, 0}
 };
 static const u8 sGalladeGfx54[] = INCBIN_U8("graphics/ax/mon/gallade/sprite_54.4bpp");

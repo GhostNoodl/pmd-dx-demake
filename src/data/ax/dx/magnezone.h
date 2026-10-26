@@ -454,35 +454,35 @@ static const ax_pose sMagnezonePose113[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagnezonePose114[] = {
-	AX_POSE(25, OAM1(221, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(25, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagnezonePose115[] = {
-	AX_POSE(26, OAM1(223, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(26, OAM1(207, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagnezonePose116[] = {
-	AX_POSE(27, OAM1(222, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(27, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagnezonePose117[] = {
-	AX_POSE(28, OAM1(218, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(28, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagnezonePose118[] = {
-	AX_POSE(29, OAM1(221, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(29, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagnezonePose119[] = {
-	AX_POSE(28, OAM1(218, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(28, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagnezonePose120[] = {
-	AX_POSE(27, OAM1(222, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(27, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagnezonePose121[] = {
-	AX_POSE(26, OAM1(223, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(26, OAM1(207, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagnezonePose122[] = {
@@ -1226,47 +1226,81 @@ static const ax_sprite sMagnezoneSprites25[] = {
 	{NULL, 32},
 	{NULL, 0}
 };
-static const u8 sMagnezoneGfx26[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_26.4bpp");
+static const u8 sMagnezoneGfx26_1[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_26_1.4bpp");
+static const u8 sMagnezoneGfx26_3[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_26_3.4bpp");
+static const u8 sMagnezoneGfx26_5[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_26_5.4bpp");
 static const ax_sprite sMagnezoneSprites26[] = {
-	{sMagnezoneGfx26, ARRAY_COUNT(sMagnezoneGfx26)},
+	{NULL, 160},
+	{sMagnezoneGfx26_1, ARRAY_COUNT(sMagnezoneGfx26_1)},
+	{NULL, 32},
+	{sMagnezoneGfx26_3, ARRAY_COUNT(sMagnezoneGfx26_3)},
+	{NULL, 32},
+	{sMagnezoneGfx26_5, ARRAY_COUNT(sMagnezoneGfx26_5)},
+	{NULL, 128},
 	{NULL, 0}
 };
-static const u8 sMagnezoneGfx27[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_27.4bpp");
-static const u8 sMagnezoneGfx27_2[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_27_2.4bpp");
+static const u8 sMagnezoneGfx27_1[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_27_1.4bpp");
+static const u8 sMagnezoneGfx27_3[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_27_3.4bpp");
+static const u8 sMagnezoneGfx27_5[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_27_5.4bpp");
+static const u8 sMagnezoneGfx27_7[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_27_7.4bpp");
 static const ax_sprite sMagnezoneSprites27[] = {
-	{sMagnezoneGfx27, ARRAY_COUNT(sMagnezoneGfx27)},
+	{NULL, 160},
+	{sMagnezoneGfx27_1, ARRAY_COUNT(sMagnezoneGfx27_1)},
 	{NULL, 32},
-	{sMagnezoneGfx27_2, ARRAY_COUNT(sMagnezoneGfx27_2)},
+	{sMagnezoneGfx27_3, ARRAY_COUNT(sMagnezoneGfx27_3)},
+	{NULL, 32},
+	{sMagnezoneGfx27_5, ARRAY_COUNT(sMagnezoneGfx27_5)},
+	{NULL, 32},
+	{sMagnezoneGfx27_7, ARRAY_COUNT(sMagnezoneGfx27_7)},
+	{NULL, 160},
 	{NULL, 0}
 };
-static const u8 sMagnezoneGfx28[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_28.4bpp");
-static const u8 sMagnezoneGfx28_2[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_28_2.4bpp");
+static const u8 sMagnezoneGfx28_1[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_28_1.4bpp");
+static const u8 sMagnezoneGfx28_3[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_28_3.4bpp");
+static const u8 sMagnezoneGfx28_5[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_28_5.4bpp");
+static const u8 sMagnezoneGfx28_7[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_28_7.4bpp");
 static const ax_sprite sMagnezoneSprites28[] = {
-	{sMagnezoneGfx28, ARRAY_COUNT(sMagnezoneGfx28)},
+	{NULL, 128},
+	{sMagnezoneGfx28_1, ARRAY_COUNT(sMagnezoneGfx28_1)},
 	{NULL, 32},
-	{sMagnezoneGfx28_2, ARRAY_COUNT(sMagnezoneGfx28_2)},
+	{sMagnezoneGfx28_3, ARRAY_COUNT(sMagnezoneGfx28_3)},
+	{NULL, 32},
+	{sMagnezoneGfx28_5, ARRAY_COUNT(sMagnezoneGfx28_5)},
+	{NULL, 96},
+	{sMagnezoneGfx28_7, ARRAY_COUNT(sMagnezoneGfx28_7)},
+	{NULL, 128},
 	{NULL, 0}
 };
-static const u8 sMagnezoneGfx29[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_29.4bpp");
-static const u8 sMagnezoneGfx29_2[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_29_2.4bpp");
-static const u8 sMagnezoneGfx29_4[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_29_4.4bpp");
+static const u8 sMagnezoneGfx29_1[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_29_1.4bpp");
+static const u8 sMagnezoneGfx29_3[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_29_3.4bpp");
+static const u8 sMagnezoneGfx29_5[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_29_5.4bpp");
+static const u8 sMagnezoneGfx29_7[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_29_7.4bpp");
 static const ax_sprite sMagnezoneSprites29[] = {
-	{sMagnezoneGfx29, ARRAY_COUNT(sMagnezoneGfx29)},
+	{NULL, 160},
+	{sMagnezoneGfx29_1, ARRAY_COUNT(sMagnezoneGfx29_1)},
 	{NULL, 32},
-	{sMagnezoneGfx29_2, ARRAY_COUNT(sMagnezoneGfx29_2)},
+	{sMagnezoneGfx29_3, ARRAY_COUNT(sMagnezoneGfx29_3)},
 	{NULL, 32},
-	{sMagnezoneGfx29_4, ARRAY_COUNT(sMagnezoneGfx29_4)},
+	{sMagnezoneGfx29_5, ARRAY_COUNT(sMagnezoneGfx29_5)},
+	{NULL, 32},
+	{sMagnezoneGfx29_7, ARRAY_COUNT(sMagnezoneGfx29_7)},
+	{NULL, 128},
 	{NULL, 0}
 };
-static const u8 sMagnezoneGfx30[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_30.4bpp");
-static const u8 sMagnezoneGfx30_2[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_30_2.4bpp");
-static const u8 sMagnezoneGfx30_4[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_30_4.4bpp");
+static const u8 sMagnezoneGfx30_1[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_30_1.4bpp");
+static const u8 sMagnezoneGfx30_3[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_30_3.4bpp");
+static const u8 sMagnezoneGfx30_5[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_30_5.4bpp");
+static const u8 sMagnezoneGfx30_7[] = INCBIN_U8("graphics/ax/mon/magnezone/sprite_30_7.4bpp");
 static const ax_sprite sMagnezoneSprites30[] = {
-	{sMagnezoneGfx30, ARRAY_COUNT(sMagnezoneGfx30)},
+	{NULL, 128},
+	{sMagnezoneGfx30_1, ARRAY_COUNT(sMagnezoneGfx30_1)},
 	{NULL, 32},
-	{sMagnezoneGfx30_2, ARRAY_COUNT(sMagnezoneGfx30_2)},
+	{sMagnezoneGfx30_3, ARRAY_COUNT(sMagnezoneGfx30_3)},
 	{NULL, 32},
-	{sMagnezoneGfx30_4, ARRAY_COUNT(sMagnezoneGfx30_4)},
+	{sMagnezoneGfx30_5, ARRAY_COUNT(sMagnezoneGfx30_5)},
+	{NULL, 32},
+	{sMagnezoneGfx30_7, ARRAY_COUNT(sMagnezoneGfx30_7)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const ax_anim sMagnezoneAnims_1_1[] = {

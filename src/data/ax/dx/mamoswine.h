@@ -14,39 +14,39 @@ static const ax_pose sMamoswinePose3[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose4[] = {
-	AX_POSE(2, OAM1(230, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(2, OAM1(230, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose5[] = {
-	AX_POSE(3, OAM1(231, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(3, OAM1(231, ST_OAM_H_RECTANGLE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose6[] = {
-	AX_POSE(4, OAM1(230, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(4, OAM1(230, ST_OAM_H_RECTANGLE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose7[] = {
-	AX_POSE(5, OAM1(229, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(5, OAM1(229, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose8[] = {
-	AX_POSE(6, OAM1(230, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(6, OAM1(230, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose9[] = {
-	AX_POSE(7, OAM1(230, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(7, OAM1(230, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose10[] = {
-	AX_POSE(8, OAM1(231, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(8, OAM1(231, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose11[] = {
-	AX_POSE(9, OAM1(232, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(9, OAM1(232, ST_OAM_H_RECTANGLE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose12[] = {
-	AX_POSE(10, OAM1(231, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(10, OAM1(231, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose13[] = {
@@ -62,39 +62,39 @@ static const ax_pose sMamoswinePose15[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose16[] = {
-	AX_POSE(8, OAM1(231, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(8, OAM1(231, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose17[] = {
-	AX_POSE(14, OAM1(232, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(14, OAM1(232, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose18[] = {
-	AX_POSE(10, OAM1(231, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(10, OAM1(231, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose19[] = {
-	AX_POSE(5, OAM1(229, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(5, OAM1(229, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose20[] = {
-	AX_POSE(15, OAM1(230, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(15, OAM1(230, ST_OAM_H_RECTANGLE, 1), OAM2(219, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose21[] = {
-	AX_POSE(16, OAM1(230, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(16, OAM1(230, ST_OAM_H_RECTANGLE, 1), OAM2(219, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose22[] = {
-	AX_POSE(17, OAM1(230, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(17, OAM1(230, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose23[] = {
-	AX_POSE(18, OAM1(231, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(18, OAM1(231, ST_OAM_H_RECTANGLE, 1), OAM2(221, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose24[] = {
-	AX_POSE(19, OAM1(230, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(19, OAM1(230, ST_OAM_H_RECTANGLE, 1), OAM2(221, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose25[] = {
@@ -106,27 +106,27 @@ static const ax_pose sMamoswinePose26[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose27[] = {
-	AX_POSE(22, OAM1(227, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(22, OAM1(227, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose28[] = {
-	AX_POSE(23, OAM1(231, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(23, OAM1(231, ST_OAM_H_RECTANGLE, 1), OAM2(228, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose29[] = {
-	AX_POSE(24, OAM1(228, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(24, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose30[] = {
-	AX_POSE(25, OAM1(231, ST_OAM_SQUARE, 1), OAM2(246, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(25, OAM1(231, ST_OAM_H_RECTANGLE, 1), OAM2(230, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose31[] = {
-	AX_POSE(26, OAM1(230, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(26, OAM1(230, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose32[] = {
-	AX_POSE(27, OAM1(230, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(27, OAM1(230, ST_OAM_H_RECTANGLE, 1), OAM2(229, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose33[] = {
@@ -138,27 +138,27 @@ static const ax_pose sMamoswinePose34[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose35[] = {
-	AX_POSE(30, OAM1(230, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(30, OAM1(230, ST_OAM_H_RECTANGLE, 1), OAM2(219, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose36[] = {
-	AX_POSE(31, OAM1(230, ST_OAM_SQUARE, 1), OAM2(233, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(31, OAM1(230, ST_OAM_H_RECTANGLE, 1), OAM2(217, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose37[] = {
-	AX_POSE(32, OAM1(228, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(32, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose38[] = {
-	AX_POSE(25, OAM1(231, ST_OAM_SQUARE, 1), OAM2(233, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(25, OAM1(231, ST_OAM_H_RECTANGLE, 1), OAM2(217, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose39[] = {
-	AX_POSE(33, OAM1(227, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(33, OAM1(227, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose40[] = {
-	AX_POSE(34, OAM1(230, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(34, OAM1(230, ST_OAM_H_RECTANGLE, 1), OAM2(219, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose41[] = {
@@ -166,15 +166,15 @@ static const ax_pose sMamoswinePose41[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose42[] = {
-	AX_POSE(36, OAM1(229, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(36, OAM1(229, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose43[] = {
-	AX_POSE(37, OAM1(228, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(37, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose44[] = {
-	AX_POSE(38, OAM1(229, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(38, OAM1(213, ST_OAM_SQUARE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose45[] = {
@@ -182,23 +182,23 @@ static const ax_pose sMamoswinePose45[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose46[] = {
-	AX_POSE(40, OAM1(229, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(40, OAM1(213, ST_OAM_SQUARE, 1), OAM2(219, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose47[] = {
-	AX_POSE(37, OAM1(228, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(37, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(221, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose48[] = {
-	AX_POSE(41, OAM1(229, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(41, OAM1(229, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose49[] = {
-	AX_POSE(42, OAM1(232, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(42, OAM1(232, ST_OAM_H_RECTANGLE, 1), OAM2(221, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose50[] = {
-	AX_POSE(43, OAM1(233, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(43, OAM1(233, ST_OAM_H_RECTANGLE, 1), OAM2(221, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose51[] = {
@@ -210,31 +210,31 @@ static const ax_pose sMamoswinePose52[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose53[] = {
-	AX_POSE(46, OAM1(226, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(46, OAM1(226, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose54[] = {
-	AX_POSE(47, OAM1(227, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(47, OAM1(227, ST_OAM_H_RECTANGLE, 1), OAM2(225, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose55[] = {
-	AX_POSE(48, OAM1(227, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(48, OAM1(211, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose56[] = {
-	AX_POSE(49, OAM1(227, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(49, OAM1(211, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose57[] = {
-	AX_POSE(50, OAM1(227, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(50, OAM1(211, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose58[] = {
-	AX_POSE(47, OAM1(227, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(47, OAM1(227, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose59[] = {
-	AX_POSE(46, OAM1(226, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(46, OAM1(226, ST_OAM_H_RECTANGLE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose60[] = {
@@ -250,39 +250,39 @@ static const ax_pose sMamoswinePose62[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose63[] = {
-	AX_POSE(4, OAM1(228, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(4, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose64[] = {
-	AX_POSE(4, OAM1(227, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(4, OAM1(227, ST_OAM_H_RECTANGLE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose65[] = {
-	AX_POSE(4, OAM1(229, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(4, OAM1(229, ST_OAM_H_RECTANGLE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose66[] = {
-	AX_POSE(7, OAM1(228, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(7, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose67[] = {
-	AX_POSE(7, OAM1(227, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(7, OAM1(227, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose68[] = {
-	AX_POSE(7, OAM1(229, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(7, OAM1(229, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose69[] = {
-	AX_POSE(10, OAM1(229, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(10, OAM1(229, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose70[] = {
-	AX_POSE(10, OAM1(228, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(10, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose71[] = {
-	AX_POSE(10, OAM1(230, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(10, OAM1(230, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose72[] = {
@@ -298,63 +298,63 @@ static const ax_pose sMamoswinePose74[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose75[] = {
-	AX_POSE(10, OAM1(229, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(10, OAM1(229, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose76[] = {
-	AX_POSE(10, OAM1(228, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(10, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose77[] = {
-	AX_POSE(10, OAM1(230, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(10, OAM1(230, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose78[] = {
-	AX_POSE(16, OAM1(228, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(16, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(219, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose79[] = {
-	AX_POSE(16, OAM1(227, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(16, OAM1(227, ST_OAM_H_RECTANGLE, 1), OAM2(219, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose80[] = {
-	AX_POSE(16, OAM1(229, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(16, OAM1(229, ST_OAM_H_RECTANGLE, 1), OAM2(219, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose81[] = {
-	AX_POSE(19, OAM1(228, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(19, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(221, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose82[] = {
-	AX_POSE(19, OAM1(227, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(19, OAM1(227, ST_OAM_H_RECTANGLE, 1), OAM2(221, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose83[] = {
-	AX_POSE(19, OAM1(229, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(19, OAM1(229, ST_OAM_H_RECTANGLE, 1), OAM2(221, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose84[] = {
-	AX_POSE(34, OAM1(232, ST_OAM_SQUARE, 1), OAM2(234, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(34, OAM1(232, ST_OAM_H_RECTANGLE, 1), OAM2(218, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose85[] = {
-	AX_POSE(25, OAM1(231, ST_OAM_SQUARE, 1), OAM2(234, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(25, OAM1(231, ST_OAM_H_RECTANGLE, 1), OAM2(218, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose86[] = {
-	AX_POSE(31, OAM1(231, ST_OAM_SQUARE, 1), OAM2(234, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(31, OAM1(231, ST_OAM_H_RECTANGLE, 1), OAM2(218, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose87[] = {
-	AX_POSE(27, OAM1(231, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(27, OAM1(231, ST_OAM_H_RECTANGLE, 1), OAM2(228, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose88[] = {
-	AX_POSE(25, OAM1(231, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(25, OAM1(231, ST_OAM_H_RECTANGLE, 1), OAM2(229, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose89[] = {
-	AX_POSE(23, OAM1(232, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(23, OAM1(232, ST_OAM_H_RECTANGLE, 1), OAM2(229, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose90[] = {
@@ -390,99 +390,99 @@ static const ax_pose sMamoswinePose97[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose98[] = {
-	AX_POSE(22, OAM1(217, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(22, OAM1(217, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose99[] = {
-	AX_POSE(22, OAM1(211, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(22, OAM1(211, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose100[] = {
-	AX_POSE(22, OAM1(207, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(22, OAM1(207, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose101[] = {
-	AX_POSE(22, OAM1(206, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(22, OAM1(206, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose102[] = {
-	AX_POSE(2, OAM1(206, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(2, OAM1(206, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose103[] = {
-	AX_POSE(23, OAM1(209, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(23, OAM1(209, ST_OAM_H_RECTANGLE, 1), OAM2(228, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose104[] = {
-	AX_POSE(23, OAM1(213, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(23, OAM1(213, ST_OAM_H_RECTANGLE, 1), OAM2(228, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose105[] = {
-	AX_POSE(23, OAM1(219, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(23, OAM1(219, ST_OAM_H_RECTANGLE, 1), OAM2(228, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose106[] = {
-	AX_POSE(24, OAM1(218, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(24, OAM1(218, ST_OAM_H_RECTANGLE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose107[] = {
-	AX_POSE(24, OAM1(212, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(24, OAM1(212, ST_OAM_H_RECTANGLE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose108[] = {
-	AX_POSE(24, OAM1(208, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(24, OAM1(208, ST_OAM_H_RECTANGLE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose109[] = {
-	AX_POSE(24, OAM1(207, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(24, OAM1(207, ST_OAM_H_RECTANGLE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose110[] = {
-	AX_POSE(5, OAM1(205, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(5, OAM1(205, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose111[] = {
-	AX_POSE(25, OAM1(209, ST_OAM_SQUARE, 1), OAM2(246, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(25, OAM1(209, ST_OAM_H_RECTANGLE, 1), OAM2(230, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose112[] = {
-	AX_POSE(25, OAM1(213, ST_OAM_SQUARE, 1), OAM2(246, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(25, OAM1(213, ST_OAM_H_RECTANGLE, 1), OAM2(230, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose113[] = {
-	AX_POSE(25, OAM1(219, ST_OAM_SQUARE, 1), OAM2(246, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(25, OAM1(219, ST_OAM_H_RECTANGLE, 1), OAM2(230, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose114[] = {
-	AX_POSE(26, OAM1(220, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(26, OAM1(220, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose115[] = {
-	AX_POSE(26, OAM1(214, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(26, OAM1(214, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose116[] = {
-	AX_POSE(26, OAM1(210, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(26, OAM1(210, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose117[] = {
-	AX_POSE(26, OAM1(208, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(26, OAM1(208, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose118[] = {
-	AX_POSE(8, OAM1(207, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(8, OAM1(207, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose119[] = {
-	AX_POSE(27, OAM1(208, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(27, OAM1(208, ST_OAM_H_RECTANGLE, 1), OAM2(229, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose120[] = {
-	AX_POSE(27, OAM1(213, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(27, OAM1(213, ST_OAM_H_RECTANGLE, 1), OAM2(229, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose121[] = {
-	AX_POSE(27, OAM1(219, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(27, OAM1(219, ST_OAM_H_RECTANGLE, 1), OAM2(229, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose122[] = {
@@ -518,115 +518,115 @@ static const ax_pose sMamoswinePose129[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose130[] = {
-	AX_POSE(30, OAM1(220, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(30, OAM1(220, ST_OAM_H_RECTANGLE, 1), OAM2(219, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose131[] = {
-	AX_POSE(30, OAM1(214, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(30, OAM1(214, ST_OAM_H_RECTANGLE, 1), OAM2(219, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose132[] = {
-	AX_POSE(30, OAM1(210, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(30, OAM1(210, ST_OAM_H_RECTANGLE, 1), OAM2(219, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose133[] = {
-	AX_POSE(30, OAM1(208, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(30, OAM1(208, ST_OAM_H_RECTANGLE, 1), OAM2(219, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose134[] = {
-	AX_POSE(8, OAM1(207, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(8, OAM1(207, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose135[] = {
-	AX_POSE(31, OAM1(208, ST_OAM_SQUARE, 1), OAM2(233, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(31, OAM1(208, ST_OAM_H_RECTANGLE, 1), OAM2(217, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose136[] = {
-	AX_POSE(31, OAM1(213, ST_OAM_SQUARE, 1), OAM2(233, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(31, OAM1(213, ST_OAM_H_RECTANGLE, 1), OAM2(217, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose137[] = {
-	AX_POSE(31, OAM1(219, ST_OAM_SQUARE, 1), OAM2(233, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(31, OAM1(219, ST_OAM_H_RECTANGLE, 1), OAM2(217, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose138[] = {
-	AX_POSE(32, OAM1(218, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(32, OAM1(218, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose139[] = {
-	AX_POSE(32, OAM1(212, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(32, OAM1(212, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose140[] = {
-	AX_POSE(32, OAM1(208, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(32, OAM1(208, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose141[] = {
-	AX_POSE(32, OAM1(207, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(32, OAM1(207, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose142[] = {
-	AX_POSE(5, OAM1(205, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(5, OAM1(205, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose143[] = {
-	AX_POSE(25, OAM1(209, ST_OAM_SQUARE, 1), OAM2(233, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(25, OAM1(209, ST_OAM_H_RECTANGLE, 1), OAM2(217, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose144[] = {
-	AX_POSE(25, OAM1(213, ST_OAM_SQUARE, 1), OAM2(233, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(25, OAM1(213, ST_OAM_H_RECTANGLE, 1), OAM2(217, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose145[] = {
-	AX_POSE(25, OAM1(219, ST_OAM_SQUARE, 1), OAM2(233, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(25, OAM1(219, ST_OAM_H_RECTANGLE, 1), OAM2(217, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose146[] = {
-	AX_POSE(33, OAM1(217, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(33, OAM1(217, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose147[] = {
-	AX_POSE(33, OAM1(211, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(33, OAM1(211, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose148[] = {
-	AX_POSE(33, OAM1(207, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(33, OAM1(207, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose149[] = {
-	AX_POSE(33, OAM1(206, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(33, OAM1(206, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose150[] = {
-	AX_POSE(17, OAM1(206, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(17, OAM1(206, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose151[] = {
-	AX_POSE(34, OAM1(208, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(34, OAM1(208, ST_OAM_H_RECTANGLE, 1), OAM2(219, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose152[] = {
-	AX_POSE(34, OAM1(212, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(34, OAM1(212, ST_OAM_H_RECTANGLE, 1), OAM2(219, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose153[] = {
-	AX_POSE(34, OAM1(218, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(34, OAM1(218, ST_OAM_H_RECTANGLE, 1), OAM2(219, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose154[] = {
-	AX_POSE(36, OAM1(230, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(36, OAM1(230, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose155[] = {
-	AX_POSE(37, OAM1(229, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(37, OAM1(229, ST_OAM_H_RECTANGLE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose156[] = {
-	AX_POSE(37, OAM1(229, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(37, OAM1(229, ST_OAM_H_RECTANGLE, 1), OAM2(221, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMamoswinePose157[] = {
-	AX_POSE(41, OAM1(230, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
+	AX_POSE(41, OAM1(230, ST_OAM_H_RECTANGLE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 0)),
 	AX_POSE_TERMINATOR
 };
 static const u8 sMamoswineGfx1_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_1_1.4bpp");
@@ -641,80 +641,148 @@ static const ax_sprite sMamoswineSprites2[] = {
 	{sMamoswineGfx2_1, ARRAY_COUNT(sMamoswineGfx2_1)},
 	{NULL, 0}
 };
-static const u8 sMamoswineGfx3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_3.4bpp");
-static const u8 sMamoswineGfx3_2[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_3_2.4bpp");
+static const u8 sMamoswineGfx3_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_3_1.4bpp");
+static const u8 sMamoswineGfx3_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_3_3.4bpp");
+static const u8 sMamoswineGfx3_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_3_5.4bpp");
+static const u8 sMamoswineGfx3_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_3_7.4bpp");
 static const ax_sprite sMamoswineSprites3[] = {
-	{sMamoswineGfx3, ARRAY_COUNT(sMamoswineGfx3)},
-	{NULL, 32},
-	{sMamoswineGfx3_2, ARRAY_COUNT(sMamoswineGfx3_2)},
-	{NULL, 0}
-};
-static const u8 sMamoswineGfx4[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_4.4bpp");
-static const u8 sMamoswineGfx4_2[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_4_2.4bpp");
-static const u8 sMamoswineGfx4_4[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_4_4.4bpp");
-static const ax_sprite sMamoswineSprites4[] = {
-	{sMamoswineGfx4, ARRAY_COUNT(sMamoswineGfx4)},
-	{NULL, 32},
-	{sMamoswineGfx4_2, ARRAY_COUNT(sMamoswineGfx4_2)},
-	{NULL, 32},
-	{sMamoswineGfx4_4, ARRAY_COUNT(sMamoswineGfx4_4)},
-	{NULL, 32},
-	{NULL, 0}
-};
-static const u8 sMamoswineGfx5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_5.4bpp");
-static const u8 sMamoswineGfx5_2[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_5_2.4bpp");
-static const ax_sprite sMamoswineSprites5[] = {
-	{sMamoswineGfx5, ARRAY_COUNT(sMamoswineGfx5)},
-	{NULL, 32},
-	{sMamoswineGfx5_2, ARRAY_COUNT(sMamoswineGfx5_2)},
-	{NULL, 0}
-};
-static const u8 sMamoswineGfx6[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_6.4bpp");
-static const u8 sMamoswineGfx6_2[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_6_2.4bpp");
-static const ax_sprite sMamoswineSprites6[] = {
-	{sMamoswineGfx6, ARRAY_COUNT(sMamoswineGfx6)},
-	{NULL, 32},
-	{sMamoswineGfx6_2, ARRAY_COUNT(sMamoswineGfx6_2)},
-	{NULL, 0}
-};
-static const u8 sMamoswineGfx7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_7.4bpp");
-static const u8 sMamoswineGfx7_2[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_7_2.4bpp");
-static const ax_sprite sMamoswineSprites7[] = {
-	{sMamoswineGfx7, ARRAY_COUNT(sMamoswineGfx7)},
-	{NULL, 32},
-	{sMamoswineGfx7_2, ARRAY_COUNT(sMamoswineGfx7_2)},
-	{NULL, 0}
-};
-static const u8 sMamoswineGfx8[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_8.4bpp");
-static const u8 sMamoswineGfx8_2[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_8_2.4bpp");
-static const ax_sprite sMamoswineSprites8[] = {
-	{sMamoswineGfx8, ARRAY_COUNT(sMamoswineGfx8)},
-	{NULL, 32},
-	{sMamoswineGfx8_2, ARRAY_COUNT(sMamoswineGfx8_2)},
-	{NULL, 0}
-};
-static const u8 sMamoswineGfx9[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_9.4bpp");
-static const u8 sMamoswineGfx9_2[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_9_2.4bpp");
-static const ax_sprite sMamoswineSprites9[] = {
-	{sMamoswineGfx9, ARRAY_COUNT(sMamoswineGfx9)},
-	{NULL, 32},
-	{sMamoswineGfx9_2, ARRAY_COUNT(sMamoswineGfx9_2)},
-	{NULL, 32},
-	{NULL, 0}
-};
-static const u8 sMamoswineGfx10[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_10.4bpp");
-static const ax_sprite sMamoswineSprites10[] = {
-	{sMamoswineGfx10, ARRAY_COUNT(sMamoswineGfx10)},
+	{NULL, 64},
+	{sMamoswineGfx3_1, ARRAY_COUNT(sMamoswineGfx3_1)},
+	{NULL, 160},
+	{sMamoswineGfx3_3, ARRAY_COUNT(sMamoswineGfx3_3)},
+	{NULL, 128},
+	{sMamoswineGfx3_5, ARRAY_COUNT(sMamoswineGfx3_5)},
+	{NULL, 96},
+	{sMamoswineGfx3_7, ARRAY_COUNT(sMamoswineGfx3_7)},
 	{NULL, 64},
 	{NULL, 0}
 };
-static const u8 sMamoswineGfx11[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_11.4bpp");
-static const u8 sMamoswineGfx11_2[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_11_2.4bpp");
+static const u8 sMamoswineGfx4_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_4_1.4bpp");
+static const u8 sMamoswineGfx4_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_4_3.4bpp");
+static const u8 sMamoswineGfx4_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_4_5.4bpp");
+static const u8 sMamoswineGfx4_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_4_7.4bpp");
+static const ax_sprite sMamoswineSprites4[] = {
+	{NULL, 64},
+	{sMamoswineGfx4_1, ARRAY_COUNT(sMamoswineGfx4_1)},
+	{NULL, 160},
+	{sMamoswineGfx4_3, ARRAY_COUNT(sMamoswineGfx4_3)},
+	{NULL, 96},
+	{sMamoswineGfx4_5, ARRAY_COUNT(sMamoswineGfx4_5)},
+	{NULL, 128},
+	{sMamoswineGfx4_7, ARRAY_COUNT(sMamoswineGfx4_7)},
+	{NULL, 96},
+	{NULL, 0}
+};
+static const u8 sMamoswineGfx5_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_5_1.4bpp");
+static const u8 sMamoswineGfx5_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_5_3.4bpp");
+static const u8 sMamoswineGfx5_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_5_5.4bpp");
+static const u8 sMamoswineGfx5_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_5_7.4bpp");
+static const ax_sprite sMamoswineSprites5[] = {
+	{NULL, 64},
+	{sMamoswineGfx5_1, ARRAY_COUNT(sMamoswineGfx5_1)},
+	{NULL, 160},
+	{sMamoswineGfx5_3, ARRAY_COUNT(sMamoswineGfx5_3)},
+	{NULL, 128},
+	{sMamoswineGfx5_5, ARRAY_COUNT(sMamoswineGfx5_5)},
+	{NULL, 96},
+	{sMamoswineGfx5_7, ARRAY_COUNT(sMamoswineGfx5_7)},
+	{NULL, 64},
+	{NULL, 0}
+};
+static const u8 sMamoswineGfx6_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_6_1.4bpp");
+static const u8 sMamoswineGfx6_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_6_3.4bpp");
+static const u8 sMamoswineGfx6_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_6_5.4bpp");
+static const u8 sMamoswineGfx6_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_6_7.4bpp");
+static const ax_sprite sMamoswineSprites6[] = {
+	{NULL, 64},
+	{sMamoswineGfx6_1, ARRAY_COUNT(sMamoswineGfx6_1)},
+	{NULL, 128},
+	{sMamoswineGfx6_3, ARRAY_COUNT(sMamoswineGfx6_3)},
+	{NULL, 64},
+	{sMamoswineGfx6_5, ARRAY_COUNT(sMamoswineGfx6_5)},
+	{NULL, 96},
+	{sMamoswineGfx6_7, ARRAY_COUNT(sMamoswineGfx6_7)},
+	{NULL, 32},
+	{NULL, 0}
+};
+static const u8 sMamoswineGfx7_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_7_1.4bpp");
+static const u8 sMamoswineGfx7_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_7_3.4bpp");
+static const u8 sMamoswineGfx7_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_7_5.4bpp");
+static const u8 sMamoswineGfx7_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_7_7.4bpp");
+static const ax_sprite sMamoswineSprites7[] = {
+	{NULL, 64},
+	{sMamoswineGfx7_1, ARRAY_COUNT(sMamoswineGfx7_1)},
+	{NULL, 128},
+	{sMamoswineGfx7_3, ARRAY_COUNT(sMamoswineGfx7_3)},
+	{NULL, 64},
+	{sMamoswineGfx7_5, ARRAY_COUNT(sMamoswineGfx7_5)},
+	{NULL, 96},
+	{sMamoswineGfx7_7, ARRAY_COUNT(sMamoswineGfx7_7)},
+	{NULL, 32},
+	{NULL, 0}
+};
+static const u8 sMamoswineGfx8_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_8_1.4bpp");
+static const u8 sMamoswineGfx8_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_8_3.4bpp");
+static const u8 sMamoswineGfx8_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_8_5.4bpp");
+static const u8 sMamoswineGfx8_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_8_7.4bpp");
+static const ax_sprite sMamoswineSprites8[] = {
+	{NULL, 64},
+	{sMamoswineGfx8_1, ARRAY_COUNT(sMamoswineGfx8_1)},
+	{NULL, 128},
+	{sMamoswineGfx8_3, ARRAY_COUNT(sMamoswineGfx8_3)},
+	{NULL, 64},
+	{sMamoswineGfx8_5, ARRAY_COUNT(sMamoswineGfx8_5)},
+	{NULL, 96},
+	{sMamoswineGfx8_7, ARRAY_COUNT(sMamoswineGfx8_7)},
+	{NULL, 32},
+	{NULL, 0}
+};
+static const u8 sMamoswineGfx9_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_9_1.4bpp");
+static const u8 sMamoswineGfx9_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_9_3.4bpp");
+static const u8 sMamoswineGfx9_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_9_5.4bpp");
+static const u8 sMamoswineGfx9_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_9_7.4bpp");
+static const ax_sprite sMamoswineSprites9[] = {
+	{NULL, 64},
+	{sMamoswineGfx9_1, ARRAY_COUNT(sMamoswineGfx9_1)},
+	{NULL, 160},
+	{sMamoswineGfx9_3, ARRAY_COUNT(sMamoswineGfx9_3)},
+	{NULL, 64},
+	{sMamoswineGfx9_5, ARRAY_COUNT(sMamoswineGfx9_5)},
+	{NULL, 128},
+	{sMamoswineGfx9_7, ARRAY_COUNT(sMamoswineGfx9_7)},
+	{NULL, 96},
+	{NULL, 0}
+};
+static const u8 sMamoswineGfx10_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_10_1.4bpp");
+static const u8 sMamoswineGfx10_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_10_3.4bpp");
+static const u8 sMamoswineGfx10_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_10_5.4bpp");
+static const u8 sMamoswineGfx10_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_10_7.4bpp");
+static const ax_sprite sMamoswineSprites10[] = {
+	{NULL, 64},
+	{sMamoswineGfx10_1, ARRAY_COUNT(sMamoswineGfx10_1)},
+	{NULL, 128},
+	{sMamoswineGfx10_3, ARRAY_COUNT(sMamoswineGfx10_3)},
+	{NULL, 96},
+	{sMamoswineGfx10_5, ARRAY_COUNT(sMamoswineGfx10_5)},
+	{NULL, 128},
+	{sMamoswineGfx10_7, ARRAY_COUNT(sMamoswineGfx10_7)},
+	{NULL, 128},
+	{NULL, 0}
+};
+static const u8 sMamoswineGfx11_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_11_1.4bpp");
+static const u8 sMamoswineGfx11_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_11_3.4bpp");
+static const u8 sMamoswineGfx11_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_11_5.4bpp");
+static const u8 sMamoswineGfx11_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_11_7.4bpp");
 static const ax_sprite sMamoswineSprites11[] = {
-	{sMamoswineGfx11, ARRAY_COUNT(sMamoswineGfx11)},
-	{NULL, 32},
-	{sMamoswineGfx11_2, ARRAY_COUNT(sMamoswineGfx11_2)},
-	{NULL, 32},
+	{NULL, 64},
+	{sMamoswineGfx11_1, ARRAY_COUNT(sMamoswineGfx11_1)},
+	{NULL, 160},
+	{sMamoswineGfx11_3, ARRAY_COUNT(sMamoswineGfx11_3)},
+	{NULL, 64},
+	{sMamoswineGfx11_5, ARRAY_COUNT(sMamoswineGfx11_5)},
+	{NULL, 64},
+	{sMamoswineGfx11_7, ARRAY_COUNT(sMamoswineGfx11_7)},
+	{NULL, 96},
 	{NULL, 0}
 };
 static const u8 sMamoswineGfx12_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_12_1.4bpp");
@@ -737,49 +805,100 @@ static const ax_sprite sMamoswineSprites14[] = {
 	{NULL, 32},
 	{NULL, 0}
 };
-static const u8 sMamoswineGfx15[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_15.4bpp");
-static const u8 sMamoswineGfx15_2[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_15_2.4bpp");
+static const u8 sMamoswineGfx15_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_15_1.4bpp");
+static const u8 sMamoswineGfx15_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_15_3.4bpp");
+static const u8 sMamoswineGfx15_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_15_5.4bpp");
+static const u8 sMamoswineGfx15_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_15_7.4bpp");
 static const ax_sprite sMamoswineSprites15[] = {
-	{sMamoswineGfx15, ARRAY_COUNT(sMamoswineGfx15)},
 	{NULL, 64},
-	{sMamoswineGfx15_2, ARRAY_COUNT(sMamoswineGfx15_2)},
+	{sMamoswineGfx15_1, ARRAY_COUNT(sMamoswineGfx15_1)},
+	{NULL, 128},
+	{sMamoswineGfx15_3, ARRAY_COUNT(sMamoswineGfx15_3)},
+	{NULL, 128},
+	{sMamoswineGfx15_5, ARRAY_COUNT(sMamoswineGfx15_5)},
+	{NULL, 160},
+	{sMamoswineGfx15_7, ARRAY_COUNT(sMamoswineGfx15_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sMamoswineGfx16_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_16_1.4bpp");
+static const u8 sMamoswineGfx16_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_16_3.4bpp");
+static const u8 sMamoswineGfx16_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_16_5.4bpp");
+static const u8 sMamoswineGfx16_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_16_7.4bpp");
 static const ax_sprite sMamoswineSprites16[] = {
-	{NULL, 32},
+	{NULL, 96},
 	{sMamoswineGfx16_1, ARRAY_COUNT(sMamoswineGfx16_1)},
+	{NULL, 96},
+	{sMamoswineGfx16_3, ARRAY_COUNT(sMamoswineGfx16_3)},
+	{NULL, 64},
+	{sMamoswineGfx16_5, ARRAY_COUNT(sMamoswineGfx16_5)},
+	{NULL, 64},
+	{sMamoswineGfx16_7, ARRAY_COUNT(sMamoswineGfx16_7)},
+	{NULL, 32},
 	{NULL, 0}
 };
 static const u8 sMamoswineGfx17_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_17_1.4bpp");
+static const u8 sMamoswineGfx17_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_17_3.4bpp");
+static const u8 sMamoswineGfx17_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_17_5.4bpp");
+static const u8 sMamoswineGfx17_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_17_7.4bpp");
 static const ax_sprite sMamoswineSprites17[] = {
-	{NULL, 32},
+	{NULL, 96},
 	{sMamoswineGfx17_1, ARRAY_COUNT(sMamoswineGfx17_1)},
+	{NULL, 96},
+	{sMamoswineGfx17_3, ARRAY_COUNT(sMamoswineGfx17_3)},
+	{NULL, 64},
+	{sMamoswineGfx17_5, ARRAY_COUNT(sMamoswineGfx17_5)},
+	{NULL, 64},
+	{sMamoswineGfx17_7, ARRAY_COUNT(sMamoswineGfx17_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sMamoswineGfx18_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_18_1.4bpp");
 static const u8 sMamoswineGfx18_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_18_3.4bpp");
+static const u8 sMamoswineGfx18_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_18_5.4bpp");
+static const u8 sMamoswineGfx18_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_18_7.4bpp");
 static const ax_sprite sMamoswineSprites18[] = {
-	{NULL, 32},
+	{NULL, 96},
 	{sMamoswineGfx18_1, ARRAY_COUNT(sMamoswineGfx18_1)},
-	{NULL, 32},
+	{NULL, 96},
 	{sMamoswineGfx18_3, ARRAY_COUNT(sMamoswineGfx18_3)},
+	{NULL, 96},
+	{sMamoswineGfx18_5, ARRAY_COUNT(sMamoswineGfx18_5)},
+	{NULL, 128},
+	{sMamoswineGfx18_7, ARRAY_COUNT(sMamoswineGfx18_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sMamoswineGfx19_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_19_1.4bpp");
 static const u8 sMamoswineGfx19_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_19_3.4bpp");
+static const u8 sMamoswineGfx19_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_19_5.4bpp");
+static const u8 sMamoswineGfx19_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_19_7.4bpp");
 static const ax_sprite sMamoswineSprites19[] = {
-	{NULL, 32},
+	{NULL, 96},
 	{sMamoswineGfx19_1, ARRAY_COUNT(sMamoswineGfx19_1)},
-	{NULL, 32},
+	{NULL, 128},
 	{sMamoswineGfx19_3, ARRAY_COUNT(sMamoswineGfx19_3)},
-	{NULL, 32},
+	{NULL, 128},
+	{sMamoswineGfx19_5, ARRAY_COUNT(sMamoswineGfx19_5)},
+	{NULL, 128},
+	{sMamoswineGfx19_7, ARRAY_COUNT(sMamoswineGfx19_7)},
+	{NULL, 96},
 	{NULL, 0}
 };
 static const u8 sMamoswineGfx20_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_20_1.4bpp");
+static const u8 sMamoswineGfx20_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_20_3.4bpp");
+static const u8 sMamoswineGfx20_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_20_5.4bpp");
+static const u8 sMamoswineGfx20_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_20_7.4bpp");
 static const ax_sprite sMamoswineSprites20[] = {
-	{NULL, 32},
+	{NULL, 96},
 	{sMamoswineGfx20_1, ARRAY_COUNT(sMamoswineGfx20_1)},
+	{NULL, 128},
+	{sMamoswineGfx20_3, ARRAY_COUNT(sMamoswineGfx20_3)},
+	{NULL, 96},
+	{sMamoswineGfx20_5, ARRAY_COUNT(sMamoswineGfx20_5)},
+	{NULL, 128},
+	{sMamoswineGfx20_7, ARRAY_COUNT(sMamoswineGfx20_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sMamoswineGfx21_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_21_1.4bpp");
@@ -794,44 +913,100 @@ static const ax_sprite sMamoswineSprites22[] = {
 	{sMamoswineGfx22_1, ARRAY_COUNT(sMamoswineGfx22_1)},
 	{NULL, 0}
 };
-static const u8 sMamoswineGfx23[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_23.4bpp");
-static const u8 sMamoswineGfx23_2[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_23_2.4bpp");
+static const u8 sMamoswineGfx23_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_23_1.4bpp");
+static const u8 sMamoswineGfx23_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_23_3.4bpp");
+static const u8 sMamoswineGfx23_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_23_5.4bpp");
+static const u8 sMamoswineGfx23_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_23_7.4bpp");
 static const ax_sprite sMamoswineSprites23[] = {
-	{sMamoswineGfx23, ARRAY_COUNT(sMamoswineGfx23)},
-	{NULL, 32},
-	{sMamoswineGfx23_2, ARRAY_COUNT(sMamoswineGfx23_2)},
+	{NULL, 64},
+	{sMamoswineGfx23_1, ARRAY_COUNT(sMamoswineGfx23_1)},
+	{NULL, 160},
+	{sMamoswineGfx23_3, ARRAY_COUNT(sMamoswineGfx23_3)},
+	{NULL, 96},
+	{sMamoswineGfx23_5, ARRAY_COUNT(sMamoswineGfx23_5)},
+	{NULL, 96},
+	{sMamoswineGfx23_7, ARRAY_COUNT(sMamoswineGfx23_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
-static const u8 sMamoswineGfx24[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_24.4bpp");
-static const u8 sMamoswineGfx24_2[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_24_2.4bpp");
+static const u8 sMamoswineGfx24_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_24_1.4bpp");
+static const u8 sMamoswineGfx24_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_24_3.4bpp");
+static const u8 sMamoswineGfx24_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_24_5.4bpp");
+static const u8 sMamoswineGfx24_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_24_7.4bpp");
 static const ax_sprite sMamoswineSprites24[] = {
-	{sMamoswineGfx24, ARRAY_COUNT(sMamoswineGfx24)},
-	{NULL, 32},
-	{sMamoswineGfx24_2, ARRAY_COUNT(sMamoswineGfx24_2)},
+	{NULL, 64},
+	{sMamoswineGfx24_1, ARRAY_COUNT(sMamoswineGfx24_1)},
+	{NULL, 160},
+	{sMamoswineGfx24_3, ARRAY_COUNT(sMamoswineGfx24_3)},
+	{NULL, 64},
+	{sMamoswineGfx24_5, ARRAY_COUNT(sMamoswineGfx24_5)},
+	{NULL, 96},
+	{sMamoswineGfx24_7, ARRAY_COUNT(sMamoswineGfx24_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
-static const u8 sMamoswineGfx25[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_25.4bpp");
+static const u8 sMamoswineGfx25_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_25_1.4bpp");
+static const u8 sMamoswineGfx25_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_25_3.4bpp");
+static const u8 sMamoswineGfx25_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_25_5.4bpp");
+static const u8 sMamoswineGfx25_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_25_7.4bpp");
 static const ax_sprite sMamoswineSprites25[] = {
-	{sMamoswineGfx25, ARRAY_COUNT(sMamoswineGfx25)},
+	{NULL, 64},
+	{sMamoswineGfx25_1, ARRAY_COUNT(sMamoswineGfx25_1)},
+	{NULL, 64},
+	{sMamoswineGfx25_3, ARRAY_COUNT(sMamoswineGfx25_3)},
+	{NULL, 64},
+	{sMamoswineGfx25_5, ARRAY_COUNT(sMamoswineGfx25_5)},
+	{NULL, 96},
+	{sMamoswineGfx25_7, ARRAY_COUNT(sMamoswineGfx25_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
-static const u8 sMamoswineGfx26[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_26.4bpp");
-static const u8 sMamoswineGfx26_2[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_26_2.4bpp");
+static const u8 sMamoswineGfx26_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_26_1.4bpp");
+static const u8 sMamoswineGfx26_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_26_3.4bpp");
+static const u8 sMamoswineGfx26_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_26_5.4bpp");
+static const u8 sMamoswineGfx26_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_26_7.4bpp");
 static const ax_sprite sMamoswineSprites26[] = {
-	{sMamoswineGfx26, ARRAY_COUNT(sMamoswineGfx26)},
+	{NULL, 64},
+	{sMamoswineGfx26_1, ARRAY_COUNT(sMamoswineGfx26_1)},
+	{NULL, 128},
+	{sMamoswineGfx26_3, ARRAY_COUNT(sMamoswineGfx26_3)},
+	{NULL, 64},
+	{sMamoswineGfx26_5, ARRAY_COUNT(sMamoswineGfx26_5)},
+	{NULL, 64},
+	{sMamoswineGfx26_7, ARRAY_COUNT(sMamoswineGfx26_7)},
 	{NULL, 32},
-	{sMamoswineGfx26_2, ARRAY_COUNT(sMamoswineGfx26_2)},
 	{NULL, 0}
 };
-static const u8 sMamoswineGfx27[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_27.4bpp");
+static const u8 sMamoswineGfx27_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_27_1.4bpp");
+static const u8 sMamoswineGfx27_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_27_3.4bpp");
+static const u8 sMamoswineGfx27_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_27_5.4bpp");
+static const u8 sMamoswineGfx27_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_27_7.4bpp");
 static const ax_sprite sMamoswineSprites27[] = {
-	{sMamoswineGfx27, ARRAY_COUNT(sMamoswineGfx27)},
+	{NULL, 64},
+	{sMamoswineGfx27_1, ARRAY_COUNT(sMamoswineGfx27_1)},
+	{NULL, 128},
+	{sMamoswineGfx27_3, ARRAY_COUNT(sMamoswineGfx27_3)},
+	{NULL, 64},
+	{sMamoswineGfx27_5, ARRAY_COUNT(sMamoswineGfx27_5)},
+	{NULL, 128},
+	{sMamoswineGfx27_7, ARRAY_COUNT(sMamoswineGfx27_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
-static const u8 sMamoswineGfx28[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_28.4bpp");
+static const u8 sMamoswineGfx28_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_28_1.4bpp");
+static const u8 sMamoswineGfx28_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_28_3.4bpp");
+static const u8 sMamoswineGfx28_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_28_5.4bpp");
+static const u8 sMamoswineGfx28_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_28_7.4bpp");
 static const ax_sprite sMamoswineSprites28[] = {
-	{sMamoswineGfx28, ARRAY_COUNT(sMamoswineGfx28)},
-	{NULL, 32},
+	{NULL, 64},
+	{sMamoswineGfx28_1, ARRAY_COUNT(sMamoswineGfx28_1)},
+	{NULL, 128},
+	{sMamoswineGfx28_3, ARRAY_COUNT(sMamoswineGfx28_3)},
+	{NULL, 64},
+	{sMamoswineGfx28_5, ARRAY_COUNT(sMamoswineGfx28_5)},
+	{NULL, 64},
+	{sMamoswineGfx28_7, ARRAY_COUNT(sMamoswineGfx28_7)},
+	{NULL, 96},
 	{NULL, 0}
 };
 static const u8 sMamoswineGfx29[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_29.4bpp");
@@ -844,38 +1019,84 @@ static const ax_sprite sMamoswineSprites30[] = {
 	{sMamoswineGfx30, ARRAY_COUNT(sMamoswineGfx30)},
 	{NULL, 0}
 };
-static const u8 sMamoswineGfx31[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_31.4bpp");
-static const u8 sMamoswineGfx31_2[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_31_2.4bpp");
+static const u8 sMamoswineGfx31_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_31_1.4bpp");
+static const u8 sMamoswineGfx31_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_31_3.4bpp");
+static const u8 sMamoswineGfx31_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_31_5.4bpp");
+static const u8 sMamoswineGfx31_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_31_7.4bpp");
 static const ax_sprite sMamoswineSprites31[] = {
-	{sMamoswineGfx31, ARRAY_COUNT(sMamoswineGfx31)},
+	{NULL, 64},
+	{sMamoswineGfx31_1, ARRAY_COUNT(sMamoswineGfx31_1)},
+	{NULL, 96},
+	{sMamoswineGfx31_3, ARRAY_COUNT(sMamoswineGfx31_3)},
+	{NULL, 128},
+	{sMamoswineGfx31_5, ARRAY_COUNT(sMamoswineGfx31_5)},
+	{NULL, 128},
+	{sMamoswineGfx31_7, ARRAY_COUNT(sMamoswineGfx31_7)},
 	{NULL, 32},
-	{sMamoswineGfx31_2, ARRAY_COUNT(sMamoswineGfx31_2)},
 	{NULL, 0}
 };
 static const u8 sMamoswineGfx32_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_32_1.4bpp");
 static const u8 sMamoswineGfx32_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_32_3.4bpp");
+static const u8 sMamoswineGfx32_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_32_5.4bpp");
+static const u8 sMamoswineGfx32_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_32_7.4bpp");
 static const ax_sprite sMamoswineSprites32[] = {
-	{NULL, 32},
+	{NULL, 96},
 	{sMamoswineGfx32_1, ARRAY_COUNT(sMamoswineGfx32_1)},
-	{NULL, 32},
+	{NULL, 96},
 	{sMamoswineGfx32_3, ARRAY_COUNT(sMamoswineGfx32_3)},
+	{NULL, 64},
+	{sMamoswineGfx32_5, ARRAY_COUNT(sMamoswineGfx32_5)},
+	{NULL, 128},
+	{sMamoswineGfx32_7, ARRAY_COUNT(sMamoswineGfx32_7)},
+	{NULL, 32},
 	{NULL, 0}
 };
-static const u8 sMamoswineGfx33[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_33.4bpp");
+static const u8 sMamoswineGfx33_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_33_1.4bpp");
+static const u8 sMamoswineGfx33_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_33_3.4bpp");
+static const u8 sMamoswineGfx33_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_33_5.4bpp");
+static const u8 sMamoswineGfx33_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_33_7.4bpp");
 static const ax_sprite sMamoswineSprites33[] = {
-	{sMamoswineGfx33, ARRAY_COUNT(sMamoswineGfx33)},
+	{NULL, 32},
+	{sMamoswineGfx33_1, ARRAY_COUNT(sMamoswineGfx33_1)},
+	{NULL, 96},
+	{sMamoswineGfx33_3, ARRAY_COUNT(sMamoswineGfx33_3)},
+	{NULL, 64},
+	{sMamoswineGfx33_5, ARRAY_COUNT(sMamoswineGfx33_5)},
+	{NULL, 96},
+	{sMamoswineGfx33_7, ARRAY_COUNT(sMamoswineGfx33_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sMamoswineGfx34_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_34_1.4bpp");
+static const u8 sMamoswineGfx34_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_34_3.4bpp");
+static const u8 sMamoswineGfx34_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_34_5.4bpp");
+static const u8 sMamoswineGfx34_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_34_7.4bpp");
 static const ax_sprite sMamoswineSprites34[] = {
-	{NULL, 32},
+	{NULL, 96},
 	{sMamoswineGfx34_1, ARRAY_COUNT(sMamoswineGfx34_1)},
+	{NULL, 128},
+	{sMamoswineGfx34_3, ARRAY_COUNT(sMamoswineGfx34_3)},
+	{NULL, 96},
+	{sMamoswineGfx34_5, ARRAY_COUNT(sMamoswineGfx34_5)},
+	{NULL, 96},
+	{sMamoswineGfx34_7, ARRAY_COUNT(sMamoswineGfx34_7)},
+	{NULL, 32},
 	{NULL, 0}
 };
 static const u8 sMamoswineGfx35_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_35_1.4bpp");
+static const u8 sMamoswineGfx35_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_35_3.4bpp");
+static const u8 sMamoswineGfx35_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_35_5.4bpp");
+static const u8 sMamoswineGfx35_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_35_7.4bpp");
 static const ax_sprite sMamoswineSprites35[] = {
-	{NULL, 32},
+	{NULL, 96},
 	{sMamoswineGfx35_1, ARRAY_COUNT(sMamoswineGfx35_1)},
+	{NULL, 128},
+	{sMamoswineGfx35_3, ARRAY_COUNT(sMamoswineGfx35_3)},
+	{NULL, 64},
+	{sMamoswineGfx35_5, ARRAY_COUNT(sMamoswineGfx35_5)},
+	{NULL, 96},
+	{sMamoswineGfx35_7, ARRAY_COUNT(sMamoswineGfx35_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sMamoswineGfx36_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_36_1.4bpp");
@@ -884,21 +1105,58 @@ static const ax_sprite sMamoswineSprites36[] = {
 	{sMamoswineGfx36_1, ARRAY_COUNT(sMamoswineGfx36_1)},
 	{NULL, 0}
 };
-static const u8 sMamoswineGfx37[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_37.4bpp");
+static const u8 sMamoswineGfx37_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_37_1.4bpp");
+static const u8 sMamoswineGfx37_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_37_3.4bpp");
+static const u8 sMamoswineGfx37_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_37_5.4bpp");
+static const u8 sMamoswineGfx37_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_37_7.4bpp");
 static const ax_sprite sMamoswineSprites37[] = {
-	{sMamoswineGfx37, ARRAY_COUNT(sMamoswineGfx37)},
+	{NULL, 64},
+	{sMamoswineGfx37_1, ARRAY_COUNT(sMamoswineGfx37_1)},
+	{NULL, 128},
+	{sMamoswineGfx37_3, ARRAY_COUNT(sMamoswineGfx37_3)},
+	{NULL, 96},
+	{sMamoswineGfx37_5, ARRAY_COUNT(sMamoswineGfx37_5)},
+	{NULL, 128},
+	{sMamoswineGfx37_7, ARRAY_COUNT(sMamoswineGfx37_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
-static const u8 sMamoswineGfx38[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_38.4bpp");
+static const u8 sMamoswineGfx38_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_38_1.4bpp");
+static const u8 sMamoswineGfx38_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_38_3.4bpp");
+static const u8 sMamoswineGfx38_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_38_5.4bpp");
+static const u8 sMamoswineGfx38_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_38_7.4bpp");
 static const ax_sprite sMamoswineSprites38[] = {
-	{sMamoswineGfx38, ARRAY_COUNT(sMamoswineGfx38)},
-	{NULL, 32},
+	{NULL, 64},
+	{sMamoswineGfx38_1, ARRAY_COUNT(sMamoswineGfx38_1)},
+	{NULL, 64},
+	{sMamoswineGfx38_3, ARRAY_COUNT(sMamoswineGfx38_3)},
+	{NULL, 64},
+	{sMamoswineGfx38_5, ARRAY_COUNT(sMamoswineGfx38_5)},
+	{NULL, 96},
+	{sMamoswineGfx38_7, ARRAY_COUNT(sMamoswineGfx38_7)},
+	{NULL, 96},
 	{NULL, 0}
 };
-static const u8 sMamoswineGfx39[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_39.4bpp");
+static const u8 sMamoswineGfx39_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_39_1.4bpp");
+static const u8 sMamoswineGfx39_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_39_3.4bpp");
+static const u8 sMamoswineGfx39_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_39_5.4bpp");
+static const u8 sMamoswineGfx39_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_39_7.4bpp");
+static const u8 sMamoswineGfx39_9[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_39_9.4bpp");
+static const u8 sMamoswineGfx39_11[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_39_11.4bpp");
 static const ax_sprite sMamoswineSprites39[] = {
-	{sMamoswineGfx39, ARRAY_COUNT(sMamoswineGfx39)},
-	{NULL, 32},
+	{NULL, 384},
+	{sMamoswineGfx39_1, ARRAY_COUNT(sMamoswineGfx39_1)},
+	{NULL, 160},
+	{sMamoswineGfx39_3, ARRAY_COUNT(sMamoswineGfx39_3)},
+	{NULL, 96},
+	{sMamoswineGfx39_5, ARRAY_COUNT(sMamoswineGfx39_5)},
+	{NULL, 64},
+	{sMamoswineGfx39_7, ARRAY_COUNT(sMamoswineGfx39_7)},
+	{NULL, 96},
+	{sMamoswineGfx39_9, ARRAY_COUNT(sMamoswineGfx39_9)},
+	{NULL, 192},
+	{sMamoswineGfx39_11, ARRAY_COUNT(sMamoswineGfx39_11)},
+	{NULL, 384},
 	{NULL, 0}
 };
 static const u8 sMamoswineGfx40[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_40.4bpp");
@@ -906,38 +1164,74 @@ static const ax_sprite sMamoswineSprites40[] = {
 	{sMamoswineGfx40, ARRAY_COUNT(sMamoswineGfx40)},
 	{NULL, 0}
 };
-static const u8 sMamoswineGfx41[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_41.4bpp");
-static const u8 sMamoswineGfx41_2[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_41_2.4bpp");
+static const u8 sMamoswineGfx41_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_41_1.4bpp");
+static const u8 sMamoswineGfx41_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_41_3.4bpp");
+static const u8 sMamoswineGfx41_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_41_5.4bpp");
+static const u8 sMamoswineGfx41_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_41_7.4bpp");
+static const u8 sMamoswineGfx41_9[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_41_9.4bpp");
+static const u8 sMamoswineGfx41_11[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_41_11.4bpp");
 static const ax_sprite sMamoswineSprites41[] = {
-	{sMamoswineGfx41, ARRAY_COUNT(sMamoswineGfx41)},
-	{NULL, 32},
-	{sMamoswineGfx41_2, ARRAY_COUNT(sMamoswineGfx41_2)},
+	{NULL, 352},
+	{sMamoswineGfx41_1, ARRAY_COUNT(sMamoswineGfx41_1)},
+	{NULL, 160},
+	{sMamoswineGfx41_3, ARRAY_COUNT(sMamoswineGfx41_3)},
+	{NULL, 96},
+	{sMamoswineGfx41_5, ARRAY_COUNT(sMamoswineGfx41_5)},
+	{NULL, 128},
+	{sMamoswineGfx41_7, ARRAY_COUNT(sMamoswineGfx41_7)},
+	{NULL, 128},
+	{sMamoswineGfx41_9, ARRAY_COUNT(sMamoswineGfx41_9)},
+	{NULL, 160},
+	{sMamoswineGfx41_11, ARRAY_COUNT(sMamoswineGfx41_11)},
+	{NULL, 320},
 	{NULL, 0}
 };
-static const u8 sMamoswineGfx42[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_42.4bpp");
-static const u8 sMamoswineGfx42_2[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_42_2.4bpp");
+static const u8 sMamoswineGfx42_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_42_1.4bpp");
+static const u8 sMamoswineGfx42_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_42_3.4bpp");
+static const u8 sMamoswineGfx42_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_42_5.4bpp");
+static const u8 sMamoswineGfx42_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_42_7.4bpp");
 static const ax_sprite sMamoswineSprites42[] = {
-	{sMamoswineGfx42, ARRAY_COUNT(sMamoswineGfx42)},
-	{NULL, 32},
-	{sMamoswineGfx42_2, ARRAY_COUNT(sMamoswineGfx42_2)},
+	{NULL, 64},
+	{sMamoswineGfx42_1, ARRAY_COUNT(sMamoswineGfx42_1)},
+	{NULL, 128},
+	{sMamoswineGfx42_3, ARRAY_COUNT(sMamoswineGfx42_3)},
+	{NULL, 96},
+	{sMamoswineGfx42_5, ARRAY_COUNT(sMamoswineGfx42_5)},
+	{NULL, 128},
+	{sMamoswineGfx42_7, ARRAY_COUNT(sMamoswineGfx42_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sMamoswineGfx43_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_43_1.4bpp");
 static const u8 sMamoswineGfx43_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_43_3.4bpp");
+static const u8 sMamoswineGfx43_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_43_5.4bpp");
+static const u8 sMamoswineGfx43_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_43_7.4bpp");
 static const ax_sprite sMamoswineSprites43[] = {
-	{NULL, 32},
+	{NULL, 96},
 	{sMamoswineGfx43_1, ARRAY_COUNT(sMamoswineGfx43_1)},
-	{NULL, 32},
+	{NULL, 128},
 	{sMamoswineGfx43_3, ARRAY_COUNT(sMamoswineGfx43_3)},
+	{NULL, 64},
+	{sMamoswineGfx43_5, ARRAY_COUNT(sMamoswineGfx43_5)},
+	{NULL, 128},
+	{sMamoswineGfx43_7, ARRAY_COUNT(sMamoswineGfx43_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sMamoswineGfx44_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_44_1.4bpp");
 static const u8 sMamoswineGfx44_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_44_3.4bpp");
+static const u8 sMamoswineGfx44_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_44_5.4bpp");
+static const u8 sMamoswineGfx44_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_44_7.4bpp");
 static const ax_sprite sMamoswineSprites44[] = {
-	{NULL, 32},
+	{NULL, 96},
 	{sMamoswineGfx44_1, ARRAY_COUNT(sMamoswineGfx44_1)},
-	{NULL, 32},
+	{NULL, 128},
 	{sMamoswineGfx44_3, ARRAY_COUNT(sMamoswineGfx44_3)},
+	{NULL, 64},
+	{sMamoswineGfx44_5, ARRAY_COUNT(sMamoswineGfx44_5)},
+	{NULL, 128},
+	{sMamoswineGfx44_7, ARRAY_COUNT(sMamoswineGfx44_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const ax_sprite sMamoswineSprites45[] = {
@@ -949,39 +1243,105 @@ static const ax_sprite sMamoswineSprites46[] = {
 	{sMamoswineGfx46, ARRAY_COUNT(sMamoswineGfx46)},
 	{NULL, 0}
 };
-static const u8 sMamoswineGfx47[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_47.4bpp");
-static const u8 sMamoswineGfx47_2[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_47_2.4bpp");
+static const u8 sMamoswineGfx47_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_47_1.4bpp");
+static const u8 sMamoswineGfx47_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_47_3.4bpp");
+static const u8 sMamoswineGfx47_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_47_5.4bpp");
+static const u8 sMamoswineGfx47_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_47_7.4bpp");
 static const ax_sprite sMamoswineSprites47[] = {
-	{sMamoswineGfx47, ARRAY_COUNT(sMamoswineGfx47)},
-	{NULL, 32},
-	{sMamoswineGfx47_2, ARRAY_COUNT(sMamoswineGfx47_2)},
+	{NULL, 64},
+	{sMamoswineGfx47_1, ARRAY_COUNT(sMamoswineGfx47_1)},
+	{NULL, 128},
+	{sMamoswineGfx47_3, ARRAY_COUNT(sMamoswineGfx47_3)},
+	{NULL, 96},
+	{sMamoswineGfx47_5, ARRAY_COUNT(sMamoswineGfx47_5)},
+	{NULL, 96},
+	{sMamoswineGfx47_7, ARRAY_COUNT(sMamoswineGfx47_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
-static const u8 sMamoswineGfx48[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_48.4bpp");
-static const u8 sMamoswineGfx48_2[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_48_2.4bpp");
+static const u8 sMamoswineGfx48_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_48_1.4bpp");
+static const u8 sMamoswineGfx48_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_48_3.4bpp");
+static const u8 sMamoswineGfx48_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_48_5.4bpp");
+static const u8 sMamoswineGfx48_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_48_7.4bpp");
 static const ax_sprite sMamoswineSprites48[] = {
-	{sMamoswineGfx48, ARRAY_COUNT(sMamoswineGfx48)},
 	{NULL, 32},
-	{sMamoswineGfx48_2, ARRAY_COUNT(sMamoswineGfx48_2)},
+	{sMamoswineGfx48_1, ARRAY_COUNT(sMamoswineGfx48_1)},
+	{NULL, 128},
+	{sMamoswineGfx48_3, ARRAY_COUNT(sMamoswineGfx48_3)},
+	{NULL, 64},
+	{sMamoswineGfx48_5, ARRAY_COUNT(sMamoswineGfx48_5)},
+	{NULL, 96},
+	{sMamoswineGfx48_7, ARRAY_COUNT(sMamoswineGfx48_7)},
+	{NULL, 32},
 	{NULL, 0}
 };
-static const u8 sMamoswineGfx49[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_49.4bpp");
-static const u8 sMamoswineGfx49_2[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_49_2.4bpp");
+static const u8 sMamoswineGfx49_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_49_1.4bpp");
+static const u8 sMamoswineGfx49_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_49_3.4bpp");
+static const u8 sMamoswineGfx49_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_49_5.4bpp");
+static const u8 sMamoswineGfx49_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_49_7.4bpp");
+static const u8 sMamoswineGfx49_9[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_49_9.4bpp");
+static const u8 sMamoswineGfx49_11[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_49_11.4bpp");
 static const ax_sprite sMamoswineSprites49[] = {
-	{sMamoswineGfx49, ARRAY_COUNT(sMamoswineGfx49)},
-	{NULL, 32},
-	{sMamoswineGfx49_2, ARRAY_COUNT(sMamoswineGfx49_2)},
+	{NULL, 352},
+	{sMamoswineGfx49_1, ARRAY_COUNT(sMamoswineGfx49_1)},
+	{NULL, 160},
+	{sMamoswineGfx49_3, ARRAY_COUNT(sMamoswineGfx49_3)},
+	{NULL, 128},
+	{sMamoswineGfx49_5, ARRAY_COUNT(sMamoswineGfx49_5)},
+	{NULL, 96},
+	{sMamoswineGfx49_7, ARRAY_COUNT(sMamoswineGfx49_7)},
+	{NULL, 96},
+	{sMamoswineGfx49_9, ARRAY_COUNT(sMamoswineGfx49_9)},
+	{NULL, 160},
+	{sMamoswineGfx49_11, ARRAY_COUNT(sMamoswineGfx49_11)},
+	{NULL, 352},
 	{NULL, 0}
 };
-static const u8 sMamoswineGfx50[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_50.4bpp");
+static const u8 sMamoswineGfx50_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_50_1.4bpp");
+static const u8 sMamoswineGfx50_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_50_3.4bpp");
+static const u8 sMamoswineGfx50_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_50_5.4bpp");
+static const u8 sMamoswineGfx50_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_50_7.4bpp");
+static const u8 sMamoswineGfx50_9[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_50_9.4bpp");
+static const u8 sMamoswineGfx50_11[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_50_11.4bpp");
+static const u8 sMamoswineGfx50_13[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_50_13.4bpp");
 static const ax_sprite sMamoswineSprites50[] = {
-	{sMamoswineGfx50, ARRAY_COUNT(sMamoswineGfx50)},
+	{NULL, 352},
+	{sMamoswineGfx50_1, ARRAY_COUNT(sMamoswineGfx50_1)},
+	{NULL, 32},
+	{sMamoswineGfx50_3, ARRAY_COUNT(sMamoswineGfx50_3)},
+	{NULL, 96},
+	{sMamoswineGfx50_5, ARRAY_COUNT(sMamoswineGfx50_5)},
+	{NULL, 96},
+	{sMamoswineGfx50_7, ARRAY_COUNT(sMamoswineGfx50_7)},
+	{NULL, 128},
+	{sMamoswineGfx50_9, ARRAY_COUNT(sMamoswineGfx50_9)},
+	{NULL, 128},
+	{sMamoswineGfx50_11, ARRAY_COUNT(sMamoswineGfx50_11)},
+	{NULL, 160},
+	{sMamoswineGfx50_13, ARRAY_COUNT(sMamoswineGfx50_13)},
+	{NULL, 320},
 	{NULL, 0}
 };
 static const u8 sMamoswineGfx51_1[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_51_1.4bpp");
+static const u8 sMamoswineGfx51_3[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_51_3.4bpp");
+static const u8 sMamoswineGfx51_5[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_51_5.4bpp");
+static const u8 sMamoswineGfx51_7[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_51_7.4bpp");
+static const u8 sMamoswineGfx51_9[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_51_9.4bpp");
+static const u8 sMamoswineGfx51_11[] = INCBIN_U8("graphics/ax/mon/mamoswine/sprite_51_11.4bpp");
 static const ax_sprite sMamoswineSprites51[] = {
-	{NULL, 32},
+	{NULL, 384},
 	{sMamoswineGfx51_1, ARRAY_COUNT(sMamoswineGfx51_1)},
+	{NULL, 192},
+	{sMamoswineGfx51_3, ARRAY_COUNT(sMamoswineGfx51_3)},
+	{NULL, 64},
+	{sMamoswineGfx51_5, ARRAY_COUNT(sMamoswineGfx51_5)},
+	{NULL, 64},
+	{sMamoswineGfx51_7, ARRAY_COUNT(sMamoswineGfx51_7)},
+	{NULL, 128},
+	{sMamoswineGfx51_9, ARRAY_COUNT(sMamoswineGfx51_9)},
+	{NULL, 192},
+	{sMamoswineGfx51_11, ARRAY_COUNT(sMamoswineGfx51_11)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const ax_anim sMamoswineAnims_1_1[] = {

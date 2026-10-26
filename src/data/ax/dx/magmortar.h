@@ -98,11 +98,11 @@ static const ax_pose sMagmortarPose24[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose25[] = {
-	AX_POSE(24, OAM1(228, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(24, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose26[] = {
-	AX_POSE(25, OAM1(229, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(25, OAM1(229, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose27[] = {
@@ -114,7 +114,7 @@ static const ax_pose sMagmortarPose28[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose29[] = {
-	AX_POSE(28, OAM1(228, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(28, OAM1(212, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose30[] = {
@@ -126,15 +126,15 @@ static const ax_pose sMagmortarPose31[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose32[] = {
-	AX_POSE(31, OAM1(228, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(31, OAM1(212, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose33[] = {
-	AX_POSE(32, OAM1(228, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(32, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose34[] = {
-	AX_POSE(33, OAM1(225, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(33, OAM1(209, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose35[] = {
@@ -142,11 +142,11 @@ static const ax_pose sMagmortarPose35[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose36[] = {
-	AX_POSE(35, OAM1(228, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(35, OAM1(212, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose37[] = {
-	AX_POSE(36, OAM1(228, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(36, OAM1(212, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose38[] = {
@@ -166,7 +166,7 @@ static const ax_pose sMagmortarPose41[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose42[] = {
-	AX_POSE(41, OAM1(226, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(41, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose43[] = {
@@ -178,11 +178,11 @@ static const ax_pose sMagmortarPose44[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose45[] = {
-	AX_POSE(44, OAM1(226, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(44, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose46[] = {
-	AX_POSE(45, OAM1(227, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(45, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose47[] = {
@@ -194,11 +194,11 @@ static const ax_pose sMagmortarPose48[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose49[] = {
-	AX_POSE(48, OAM1(227, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(48, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose50[] = {
-	AX_POSE(49, OAM1(230, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(49, OAM1(230, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose51[] = {
@@ -210,7 +210,7 @@ static const ax_pose sMagmortarPose52[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose53[] = {
-	AX_POSE(52, OAM1(228, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(52, OAM1(212, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose54[] = {
@@ -222,7 +222,7 @@ static const ax_pose sMagmortarPose55[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose56[] = {
-	AX_POSE(55, OAM1(226, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(55, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose57[] = {
@@ -234,19 +234,19 @@ static const ax_pose sMagmortarPose58[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose59[] = {
-	AX_POSE(58, OAM1(227, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(58, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose60[] = {
-	AX_POSE(59, OAM1(228, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(59, OAM1(212, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose61[] = {
-	AX_POSE(60, OAM1(227, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(60, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose62[] = {
-	AX_POSE(61, OAM1(230, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(61, OAM1(230, ST_OAM_H_RECTANGLE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose63[] = {
@@ -254,7 +254,7 @@ static const ax_pose sMagmortarPose63[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose64[] = {
-	AX_POSE(63, OAM1(231, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(63, OAM1(231, ST_OAM_H_RECTANGLE, 1), OAM2(221, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose65[] = {
@@ -262,11 +262,11 @@ static const ax_pose sMagmortarPose65[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose66[] = {
-	AX_POSE(31, OAM1(227, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(31, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose67[] = {
-	AX_POSE(35, OAM1(227, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(35, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose68[] = {
@@ -282,7 +282,7 @@ static const ax_pose sMagmortarPose70[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose71[] = {
-	AX_POSE(65, OAM1(229, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(65, OAM1(213, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose72[] = {
@@ -298,7 +298,7 @@ static const ax_pose sMagmortarPose74[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose75[] = {
-	AX_POSE(66, OAM1(230, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(66, OAM1(214, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose76[] = {
@@ -418,7 +418,7 @@ static const ax_pose sMagmortarPose104[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose105[] = {
-	AX_POSE(72, OAM1(230, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(72, OAM1(214, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose106[] = {
@@ -434,15 +434,15 @@ static const ax_pose sMagmortarPose108[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose109[] = {
-	AX_POSE(76, OAM1(225, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(76, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose110[] = {
-	AX_POSE(77, OAM1(226, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(77, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose111[] = {
-	AX_POSE(78, OAM1(227, ST_OAM_SQUARE, 1), OAM2(234, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(78, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(234, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose112[] = {
@@ -458,11 +458,11 @@ static const ax_pose sMagmortarPose114[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose115[] = {
-	AX_POSE(82, OAM1(227, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(82, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose116[] = {
-	AX_POSE(83, OAM1(226, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(83, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose117[] = {
@@ -474,15 +474,15 @@ static const ax_pose sMagmortarPose118[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose119[] = {
-	AX_POSE(35, OAM1(229, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(35, OAM1(213, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose120[] = {
-	AX_POSE(33, OAM1(226, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(33, OAM1(210, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose121[] = {
-	AX_POSE(31, OAM1(229, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(31, OAM1(213, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose122[] = {
@@ -498,11 +498,11 @@ static const ax_pose sMagmortarPose124[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose125[] = {
-	AX_POSE(31, OAM1(228, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(31, OAM1(212, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose126[] = {
-	AX_POSE(35, OAM1(228, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(35, OAM1(212, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose127[] = {
@@ -510,35 +510,35 @@ static const ax_pose sMagmortarPose127[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose128[] = {
-	AX_POSE(24, OAM1(218, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(24, OAM1(218, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose129[] = {
-	AX_POSE(24, OAM1(212, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(24, OAM1(212, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose130[] = {
-	AX_POSE(24, OAM1(208, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(24, OAM1(208, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose131[] = {
-	AX_POSE(24, OAM1(206, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(24, OAM1(206, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose132[] = {
-	AX_POSE(25, OAM1(205, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(25, OAM1(205, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose133[] = {
-	AX_POSE(25, OAM1(206, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(25, OAM1(206, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose134[] = {
-	AX_POSE(25, OAM1(211, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(25, OAM1(211, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose135[] = {
-	AX_POSE(25, OAM1(217, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(25, OAM1(217, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose136[] = {
@@ -574,19 +574,19 @@ static const ax_pose sMagmortarPose143[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose144[] = {
-	AX_POSE(28, OAM1(218, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(28, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose145[] = {
-	AX_POSE(28, OAM1(212, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(28, OAM1(196, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose146[] = {
-	AX_POSE(28, OAM1(208, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(28, OAM1(192, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose147[] = {
-	AX_POSE(28, OAM1(206, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(28, OAM1(190, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose148[] = {
@@ -622,55 +622,55 @@ static const ax_pose sMagmortarPose155[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose156[] = {
-	AX_POSE(31, OAM1(203, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(31, OAM1(187, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose157[] = {
-	AX_POSE(31, OAM1(205, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(31, OAM1(189, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose158[] = {
-	AX_POSE(31, OAM1(210, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(31, OAM1(194, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose159[] = {
-	AX_POSE(31, OAM1(216, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(31, OAM1(200, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose160[] = {
-	AX_POSE(31, OAM1(227, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(31, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose161[] = {
-	AX_POSE(32, OAM1(218, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(32, OAM1(218, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose162[] = {
-	AX_POSE(32, OAM1(212, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(32, OAM1(212, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose163[] = {
-	AX_POSE(32, OAM1(208, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(32, OAM1(208, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose164[] = {
-	AX_POSE(32, OAM1(206, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(32, OAM1(206, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose165[] = {
-	AX_POSE(33, OAM1(201, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(33, OAM1(185, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose166[] = {
-	AX_POSE(33, OAM1(203, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(33, OAM1(187, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose167[] = {
-	AX_POSE(33, OAM1(207, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(33, OAM1(191, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose168[] = {
-	AX_POSE(33, OAM1(213, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(33, OAM1(197, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose169[] = {
@@ -690,39 +690,39 @@ static const ax_pose sMagmortarPose172[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose173[] = {
-	AX_POSE(35, OAM1(203, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(35, OAM1(187, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose174[] = {
-	AX_POSE(35, OAM1(205, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(35, OAM1(189, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose175[] = {
-	AX_POSE(35, OAM1(210, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(35, OAM1(194, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose176[] = {
-	AX_POSE(35, OAM1(216, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(35, OAM1(200, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose177[] = {
-	AX_POSE(35, OAM1(227, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(35, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose178[] = {
-	AX_POSE(36, OAM1(218, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(36, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose179[] = {
-	AX_POSE(36, OAM1(212, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(36, OAM1(196, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose180[] = {
-	AX_POSE(36, OAM1(208, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(36, OAM1(192, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose181[] = {
-	AX_POSE(36, OAM1(206, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(36, OAM1(190, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sMagmortarPose182[] = {
@@ -956,14 +956,36 @@ static const ax_sprite sMagmortarSprites24[] = {
 	{sMagmortarGfx24_3, ARRAY_COUNT(sMagmortarGfx24_3)},
 	{NULL, 0}
 };
-static const u8 sMagmortarGfx25[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_25.4bpp");
+static const u8 sMagmortarGfx25_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_25_1.4bpp");
+static const u8 sMagmortarGfx25_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_25_3.4bpp");
+static const u8 sMagmortarGfx25_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_25_5.4bpp");
+static const u8 sMagmortarGfx25_7[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_25_7.4bpp");
 static const ax_sprite sMagmortarSprites25[] = {
-	{sMagmortarGfx25, ARRAY_COUNT(sMagmortarGfx25)},
+	{NULL, 64},
+	{sMagmortarGfx25_1, ARRAY_COUNT(sMagmortarGfx25_1)},
+	{NULL, 96},
+	{sMagmortarGfx25_3, ARRAY_COUNT(sMagmortarGfx25_3)},
+	{NULL, 64},
+	{sMagmortarGfx25_5, ARRAY_COUNT(sMagmortarGfx25_5)},
+	{NULL, 96},
+	{sMagmortarGfx25_7, ARRAY_COUNT(sMagmortarGfx25_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
-static const u8 sMagmortarGfx26[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_26.4bpp");
+static const u8 sMagmortarGfx26_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_26_1.4bpp");
+static const u8 sMagmortarGfx26_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_26_3.4bpp");
+static const u8 sMagmortarGfx26_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_26_5.4bpp");
+static const u8 sMagmortarGfx26_7[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_26_7.4bpp");
 static const ax_sprite sMagmortarSprites26[] = {
-	{sMagmortarGfx26, ARRAY_COUNT(sMagmortarGfx26)},
+	{NULL, 64},
+	{sMagmortarGfx26_1, ARRAY_COUNT(sMagmortarGfx26_1)},
+	{NULL, 96},
+	{sMagmortarGfx26_3, ARRAY_COUNT(sMagmortarGfx26_3)},
+	{NULL, 64},
+	{sMagmortarGfx26_5, ARRAY_COUNT(sMagmortarGfx26_5)},
+	{NULL, 96},
+	{sMagmortarGfx26_7, ARRAY_COUNT(sMagmortarGfx26_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx27_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_27_1.4bpp");
@@ -984,9 +1006,13 @@ static const ax_sprite sMagmortarSprites28[] = {
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx29_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_29_1.4bpp");
+static const u8 sMagmortarGfx29_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_29_3.4bpp");
 static const ax_sprite sMagmortarSprites29[] = {
-	{NULL, 32},
+	{NULL, 288},
 	{sMagmortarGfx29_1, ARRAY_COUNT(sMagmortarGfx29_1)},
+	{NULL, 64},
+	{sMagmortarGfx29_3, ARRAY_COUNT(sMagmortarGfx29_3)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx30[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_30.4bpp");
@@ -1007,24 +1033,54 @@ static const ax_sprite sMagmortarSprites31[] = {
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx32_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_32_1.4bpp");
+static const u8 sMagmortarGfx32_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_32_3.4bpp");
+static const u8 sMagmortarGfx32_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_32_5.4bpp");
 static const ax_sprite sMagmortarSprites32[] = {
-	{NULL, 32},
+	{NULL, 192},
 	{sMagmortarGfx32_1, ARRAY_COUNT(sMagmortarGfx32_1)},
-	{NULL, 32},
+	{NULL, 64},
+	{sMagmortarGfx32_3, ARRAY_COUNT(sMagmortarGfx32_3)},
+	{NULL, 96},
+	{sMagmortarGfx32_5, ARRAY_COUNT(sMagmortarGfx32_5)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx33_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_33_1.4bpp");
 static const u8 sMagmortarGfx33_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_33_3.4bpp");
+static const u8 sMagmortarGfx33_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_33_5.4bpp");
+static const u8 sMagmortarGfx33_7[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_33_7.4bpp");
 static const ax_sprite sMagmortarSprites33[] = {
-	{NULL, 32},
+	{NULL, 96},
 	{sMagmortarGfx33_1, ARRAY_COUNT(sMagmortarGfx33_1)},
-	{NULL, 32},
+	{NULL, 160},
 	{sMagmortarGfx33_3, ARRAY_COUNT(sMagmortarGfx33_3)},
+	{NULL, 96},
+	{sMagmortarGfx33_5, ARRAY_COUNT(sMagmortarGfx33_5)},
+	{NULL, 128},
+	{sMagmortarGfx33_7, ARRAY_COUNT(sMagmortarGfx33_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
-static const u8 sMagmortarGfx34[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_34.4bpp");
+static const u8 sMagmortarGfx34_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_34_1.4bpp");
+static const u8 sMagmortarGfx34_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_34_3.4bpp");
+static const u8 sMagmortarGfx34_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_34_5.4bpp");
+static const u8 sMagmortarGfx34_7[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_34_7.4bpp");
+static const u8 sMagmortarGfx34_9[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_34_9.4bpp");
+static const u8 sMagmortarGfx34_11[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_34_11.4bpp");
 static const ax_sprite sMagmortarSprites34[] = {
-	{sMagmortarGfx34, ARRAY_COUNT(sMagmortarGfx34)},
+	{NULL, 352},
+	{sMagmortarGfx34_1, ARRAY_COUNT(sMagmortarGfx34_1)},
+	{NULL, 160},
+	{sMagmortarGfx34_3, ARRAY_COUNT(sMagmortarGfx34_3)},
+	{NULL, 96},
+	{sMagmortarGfx34_5, ARRAY_COUNT(sMagmortarGfx34_5)},
+	{NULL, 96},
+	{sMagmortarGfx34_7, ARRAY_COUNT(sMagmortarGfx34_7)},
+	{NULL, 96},
+	{sMagmortarGfx34_9, ARRAY_COUNT(sMagmortarGfx34_9)},
+	{NULL, 128},
+	{sMagmortarGfx34_11, ARRAY_COUNT(sMagmortarGfx34_11)},
+	{NULL, 320},
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx35_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_35_1.4bpp");
@@ -1033,23 +1089,36 @@ static const ax_sprite sMagmortarSprites35[] = {
 	{sMagmortarGfx35_1, ARRAY_COUNT(sMagmortarGfx35_1)},
 	{NULL, 0}
 };
-static const u8 sMagmortarGfx36[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_36.4bpp");
-static const u8 sMagmortarGfx36_2[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_36_2.4bpp");
-static const u8 sMagmortarGfx36_4[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_36_4.4bpp");
+static const u8 sMagmortarGfx36_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_36_1.4bpp");
+static const u8 sMagmortarGfx36_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_36_3.4bpp");
+static const u8 sMagmortarGfx36_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_36_5.4bpp");
+static const u8 sMagmortarGfx36_7[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_36_7.4bpp");
+static const u8 sMagmortarGfx36_9[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_36_9.4bpp");
 static const ax_sprite sMagmortarSprites36[] = {
-	{sMagmortarGfx36, ARRAY_COUNT(sMagmortarGfx36)},
+	{NULL, 160},
+	{sMagmortarGfx36_1, ARRAY_COUNT(sMagmortarGfx36_1)},
+	{NULL, 64},
+	{sMagmortarGfx36_3, ARRAY_COUNT(sMagmortarGfx36_3)},
 	{NULL, 32},
-	{sMagmortarGfx36_2, ARRAY_COUNT(sMagmortarGfx36_2)},
+	{sMagmortarGfx36_5, ARRAY_COUNT(sMagmortarGfx36_5)},
 	{NULL, 32},
-	{sMagmortarGfx36_4, ARRAY_COUNT(sMagmortarGfx36_4)},
+	{sMagmortarGfx36_7, ARRAY_COUNT(sMagmortarGfx36_7)},
+	{NULL, 32},
+	{sMagmortarGfx36_9, ARRAY_COUNT(sMagmortarGfx36_9)},
+	{NULL, 192},
 	{NULL, 0}
 };
-static const u8 sMagmortarGfx37[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_37.4bpp");
-static const u8 sMagmortarGfx37_2[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_37_2.4bpp");
+static const u8 sMagmortarGfx37_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_37_1.4bpp");
+static const u8 sMagmortarGfx37_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_37_3.4bpp");
+static const u8 sMagmortarGfx37_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_37_5.4bpp");
 static const ax_sprite sMagmortarSprites37[] = {
-	{sMagmortarGfx37, ARRAY_COUNT(sMagmortarGfx37)},
+	{NULL, 256},
+	{sMagmortarGfx37_1, ARRAY_COUNT(sMagmortarGfx37_1)},
 	{NULL, 32},
-	{sMagmortarGfx37_2, ARRAY_COUNT(sMagmortarGfx37_2)},
+	{sMagmortarGfx37_3, ARRAY_COUNT(sMagmortarGfx37_3)},
+	{NULL, 32},
+	{sMagmortarGfx37_5, ARRAY_COUNT(sMagmortarGfx37_5)},
+	{NULL, 192},
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx38[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_38.4bpp");
@@ -1090,15 +1159,22 @@ static const u8 sMagmortarGfx42_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprit
 static const u8 sMagmortarGfx42_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_42_3.4bpp");
 static const u8 sMagmortarGfx42_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_42_5.4bpp");
 static const u8 sMagmortarGfx42_7[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_42_7.4bpp");
+static const u8 sMagmortarGfx42_9[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_42_9.4bpp");
+static const u8 sMagmortarGfx42_11[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_42_11.4bpp");
 static const ax_sprite sMagmortarSprites42[] = {
-	{NULL, 32},
+	{NULL, 160},
 	{sMagmortarGfx42_1, ARRAY_COUNT(sMagmortarGfx42_1)},
-	{NULL, 32},
+	{NULL, 96},
 	{sMagmortarGfx42_3, ARRAY_COUNT(sMagmortarGfx42_3)},
 	{NULL, 32},
 	{sMagmortarGfx42_5, ARRAY_COUNT(sMagmortarGfx42_5)},
 	{NULL, 32},
 	{sMagmortarGfx42_7, ARRAY_COUNT(sMagmortarGfx42_7)},
+	{NULL, 32},
+	{sMagmortarGfx42_9, ARRAY_COUNT(sMagmortarGfx42_9)},
+	{NULL, 64},
+	{sMagmortarGfx42_11, ARRAY_COUNT(sMagmortarGfx42_11)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx43[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_43.4bpp");
@@ -1120,22 +1196,34 @@ static const ax_sprite sMagmortarSprites44[] = {
 };
 static const u8 sMagmortarGfx45_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_45_1.4bpp");
 static const u8 sMagmortarGfx45_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_45_3.4bpp");
+static const u8 sMagmortarGfx45_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_45_5.4bpp");
+static const u8 sMagmortarGfx45_7[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_45_7.4bpp");
 static const ax_sprite sMagmortarSprites45[] = {
-	{NULL, 32},
+	{NULL, 192},
 	{sMagmortarGfx45_1, ARRAY_COUNT(sMagmortarGfx45_1)},
 	{NULL, 64},
 	{sMagmortarGfx45_3, ARRAY_COUNT(sMagmortarGfx45_3)},
-	{NULL, 32},
+	{NULL, 64},
+	{sMagmortarGfx45_5, ARRAY_COUNT(sMagmortarGfx45_5)},
+	{NULL, 64},
+	{sMagmortarGfx45_7, ARRAY_COUNT(sMagmortarGfx45_7)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx46_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_46_1.4bpp");
 static const u8 sMagmortarGfx46_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_46_3.4bpp");
+static const u8 sMagmortarGfx46_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_46_5.4bpp");
+static const u8 sMagmortarGfx46_7[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_46_7.4bpp");
 static const ax_sprite sMagmortarSprites46[] = {
-	{NULL, 32},
+	{NULL, 160},
 	{sMagmortarGfx46_1, ARRAY_COUNT(sMagmortarGfx46_1)},
-	{NULL, 32},
+	{NULL, 96},
 	{sMagmortarGfx46_3, ARRAY_COUNT(sMagmortarGfx46_3)},
 	{NULL, 32},
+	{sMagmortarGfx46_5, ARRAY_COUNT(sMagmortarGfx46_5)},
+	{NULL, 96},
+	{sMagmortarGfx46_7, ARRAY_COUNT(sMagmortarGfx46_7)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx47[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_47.4bpp");
@@ -1155,15 +1243,30 @@ static const ax_sprite sMagmortarSprites48[] = {
 	{sMagmortarGfx48_5, ARRAY_COUNT(sMagmortarGfx48_5)},
 	{NULL, 0}
 };
-static const u8 sMagmortarGfx49[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_49.4bpp");
+static const u8 sMagmortarGfx49_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_49_1.4bpp");
+static const u8 sMagmortarGfx49_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_49_3.4bpp");
 static const ax_sprite sMagmortarSprites49[] = {
-	{sMagmortarGfx49, ARRAY_COUNT(sMagmortarGfx49)},
-	{NULL, 32},
+	{NULL, 256},
+	{sMagmortarGfx49_1, ARRAY_COUNT(sMagmortarGfx49_1)},
+	{NULL, 96},
+	{sMagmortarGfx49_3, ARRAY_COUNT(sMagmortarGfx49_3)},
+	{NULL, 160},
 	{NULL, 0}
 };
-static const u8 sMagmortarGfx50[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_50.4bpp");
+static const u8 sMagmortarGfx50_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_50_1.4bpp");
+static const u8 sMagmortarGfx50_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_50_3.4bpp");
+static const u8 sMagmortarGfx50_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_50_5.4bpp");
+static const u8 sMagmortarGfx50_7[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_50_7.4bpp");
 static const ax_sprite sMagmortarSprites50[] = {
-	{sMagmortarGfx50, ARRAY_COUNT(sMagmortarGfx50)},
+	{NULL, 64},
+	{sMagmortarGfx50_1, ARRAY_COUNT(sMagmortarGfx50_1)},
+	{NULL, 128},
+	{sMagmortarGfx50_3, ARRAY_COUNT(sMagmortarGfx50_3)},
+	{NULL, 64},
+	{sMagmortarGfx50_5, ARRAY_COUNT(sMagmortarGfx50_5)},
+	{NULL, 96},
+	{sMagmortarGfx50_7, ARRAY_COUNT(sMagmortarGfx50_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx51_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_51_1.4bpp");
@@ -1180,9 +1283,17 @@ static const ax_sprite sMagmortarSprites52[] = {
 	{sMagmortarGfx52_2, ARRAY_COUNT(sMagmortarGfx52_2)},
 	{NULL, 0}
 };
-static const u8 sMagmortarGfx53[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_53.4bpp");
+static const u8 sMagmortarGfx53_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_53_1.4bpp");
+static const u8 sMagmortarGfx53_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_53_3.4bpp");
+static const u8 sMagmortarGfx53_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_53_5.4bpp");
 static const ax_sprite sMagmortarSprites53[] = {
-	{sMagmortarGfx53, ARRAY_COUNT(sMagmortarGfx53)},
+	{NULL, 160},
+	{sMagmortarGfx53_1, ARRAY_COUNT(sMagmortarGfx53_1)},
+	{NULL, 32},
+	{sMagmortarGfx53_3, ARRAY_COUNT(sMagmortarGfx53_3)},
+	{NULL, 64},
+	{sMagmortarGfx53_5, ARRAY_COUNT(sMagmortarGfx53_5)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx54_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_54_1.4bpp");
@@ -1201,9 +1312,16 @@ static const ax_sprite sMagmortarSprites55[] = {
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx56_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_56_1.4bpp");
+static const u8 sMagmortarGfx56_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_56_3.4bpp");
+static const u8 sMagmortarGfx56_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_56_5.4bpp");
 static const ax_sprite sMagmortarSprites56[] = {
-	{NULL, 32},
+	{NULL, 192},
 	{sMagmortarGfx56_1, ARRAY_COUNT(sMagmortarGfx56_1)},
+	{NULL, 64},
+	{sMagmortarGfx56_3, ARRAY_COUNT(sMagmortarGfx56_3)},
+	{NULL, 32},
+	{sMagmortarGfx56_5, ARRAY_COUNT(sMagmortarGfx56_5)},
+	{NULL, 128},
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx57_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_57_1.4bpp");
@@ -1230,35 +1348,65 @@ static const ax_sprite sMagmortarSprites58[] = {
 static const u8 sMagmortarGfx59_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_59_1.4bpp");
 static const u8 sMagmortarGfx59_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_59_3.4bpp");
 static const u8 sMagmortarGfx59_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_59_5.4bpp");
+static const u8 sMagmortarGfx59_7[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_59_7.4bpp");
 static const ax_sprite sMagmortarSprites59[] = {
-	{NULL, 32},
+	{NULL, 288},
 	{sMagmortarGfx59_1, ARRAY_COUNT(sMagmortarGfx59_1)},
 	{NULL, 32},
 	{sMagmortarGfx59_3, ARRAY_COUNT(sMagmortarGfx59_3)},
 	{NULL, 32},
 	{sMagmortarGfx59_5, ARRAY_COUNT(sMagmortarGfx59_5)},
+	{NULL, 32},
+	{sMagmortarGfx59_7, ARRAY_COUNT(sMagmortarGfx59_7)},
+	{NULL, 192},
 	{NULL, 0}
 };
-static const u8 sMagmortarGfx60[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_60.4bpp");
+static const u8 sMagmortarGfx60_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_60_1.4bpp");
+static const u8 sMagmortarGfx60_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_60_3.4bpp");
+static const u8 sMagmortarGfx60_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_60_5.4bpp");
 static const ax_sprite sMagmortarSprites60[] = {
-	{sMagmortarGfx60, ARRAY_COUNT(sMagmortarGfx60)},
+	{NULL, 160},
+	{sMagmortarGfx60_1, ARRAY_COUNT(sMagmortarGfx60_1)},
+	{NULL, 32},
+	{sMagmortarGfx60_3, ARRAY_COUNT(sMagmortarGfx60_3)},
+	{NULL, 32},
+	{sMagmortarGfx60_5, ARRAY_COUNT(sMagmortarGfx60_5)},
+	{NULL, 192},
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx61_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_61_1.4bpp");
 static const u8 sMagmortarGfx61_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_61_3.4bpp");
 static const u8 sMagmortarGfx61_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_61_5.4bpp");
+static const u8 sMagmortarGfx61_7[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_61_7.4bpp");
+static const u8 sMagmortarGfx61_9[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_61_9.4bpp");
 static const ax_sprite sMagmortarSprites61[] = {
-	{NULL, 32},
+	{NULL, 192},
 	{sMagmortarGfx61_1, ARRAY_COUNT(sMagmortarGfx61_1)},
-	{NULL, 32},
+	{NULL, 64},
 	{sMagmortarGfx61_3, ARRAY_COUNT(sMagmortarGfx61_3)},
 	{NULL, 32},
 	{sMagmortarGfx61_5, ARRAY_COUNT(sMagmortarGfx61_5)},
+	{NULL, 32},
+	{sMagmortarGfx61_7, ARRAY_COUNT(sMagmortarGfx61_7)},
+	{NULL, 32},
+	{sMagmortarGfx61_9, ARRAY_COUNT(sMagmortarGfx61_9)},
+	{NULL, 192},
 	{NULL, 0}
 };
-static const u8 sMagmortarGfx62[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_62.4bpp");
+static const u8 sMagmortarGfx62_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_62_1.4bpp");
+static const u8 sMagmortarGfx62_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_62_3.4bpp");
+static const u8 sMagmortarGfx62_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_62_5.4bpp");
+static const u8 sMagmortarGfx62_7[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_62_7.4bpp");
 static const ax_sprite sMagmortarSprites62[] = {
-	{sMagmortarGfx62, ARRAY_COUNT(sMagmortarGfx62)},
+	{NULL, 64},
+	{sMagmortarGfx62_1, ARRAY_COUNT(sMagmortarGfx62_1)},
+	{NULL, 96},
+	{sMagmortarGfx62_3, ARRAY_COUNT(sMagmortarGfx62_3)},
+	{NULL, 96},
+	{sMagmortarGfx62_5, ARRAY_COUNT(sMagmortarGfx62_5)},
+	{NULL, 96},
+	{sMagmortarGfx62_7, ARRAY_COUNT(sMagmortarGfx62_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx63[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_63.4bpp");
@@ -1266,9 +1414,20 @@ static const ax_sprite sMagmortarSprites63[] = {
 	{sMagmortarGfx63, ARRAY_COUNT(sMagmortarGfx63)},
 	{NULL, 0}
 };
-static const u8 sMagmortarGfx64[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_64.4bpp");
+static const u8 sMagmortarGfx64_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_64_1.4bpp");
+static const u8 sMagmortarGfx64_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_64_3.4bpp");
+static const u8 sMagmortarGfx64_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_64_5.4bpp");
+static const u8 sMagmortarGfx64_7[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_64_7.4bpp");
 static const ax_sprite sMagmortarSprites64[] = {
-	{sMagmortarGfx64, ARRAY_COUNT(sMagmortarGfx64)},
+	{NULL, 64},
+	{sMagmortarGfx64_1, ARRAY_COUNT(sMagmortarGfx64_1)},
+	{NULL, 128},
+	{sMagmortarGfx64_3, ARRAY_COUNT(sMagmortarGfx64_3)},
+	{NULL, 96},
+	{sMagmortarGfx64_5, ARRAY_COUNT(sMagmortarGfx64_5)},
+	{NULL, 128},
+	{sMagmortarGfx64_7, ARRAY_COUNT(sMagmortarGfx64_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx65[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_65.4bpp");
@@ -1283,15 +1442,30 @@ static const ax_sprite sMagmortarSprites65[] = {
 	{NULL, 32},
 	{NULL, 0}
 };
-static const u8 sMagmortarGfx66[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_66.4bpp");
+static const u8 sMagmortarGfx66_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_66_1.4bpp");
+static const u8 sMagmortarGfx66_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_66_3.4bpp");
+static const u8 sMagmortarGfx66_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_66_5.4bpp");
 static const ax_sprite sMagmortarSprites66[] = {
-	{sMagmortarGfx66, ARRAY_COUNT(sMagmortarGfx66)},
+	{NULL, 128},
+	{sMagmortarGfx66_1, ARRAY_COUNT(sMagmortarGfx66_1)},
+	{NULL, 96},
+	{sMagmortarGfx66_3, ARRAY_COUNT(sMagmortarGfx66_3)},
+	{NULL, 64},
+	{sMagmortarGfx66_5, ARRAY_COUNT(sMagmortarGfx66_5)},
+	{NULL, 128},
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx67_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_67_1.4bpp");
+static const u8 sMagmortarGfx67_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_67_3.4bpp");
+static const u8 sMagmortarGfx67_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_67_5.4bpp");
 static const ax_sprite sMagmortarSprites67[] = {
-	{NULL, 32},
+	{NULL, 192},
 	{sMagmortarGfx67_1, ARRAY_COUNT(sMagmortarGfx67_1)},
+	{NULL, 64},
+	{sMagmortarGfx67_3, ARRAY_COUNT(sMagmortarGfx67_3)},
+	{NULL, 64},
+	{sMagmortarGfx67_5, ARRAY_COUNT(sMagmortarGfx67_5)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx68[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_68.4bpp");
@@ -1327,12 +1501,20 @@ static const ax_sprite sMagmortarSprites72[] = {
 	{sMagmortarGfx72_3, ARRAY_COUNT(sMagmortarGfx72_3)},
 	{NULL, 0}
 };
-static const u8 sMagmortarGfx73[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_73.4bpp");
-static const u8 sMagmortarGfx73_2[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_73_2.4bpp");
+static const u8 sMagmortarGfx73_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_73_1.4bpp");
+static const u8 sMagmortarGfx73_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_73_3.4bpp");
+static const u8 sMagmortarGfx73_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_73_5.4bpp");
+static const u8 sMagmortarGfx73_7[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_73_7.4bpp");
 static const ax_sprite sMagmortarSprites73[] = {
-	{sMagmortarGfx73, ARRAY_COUNT(sMagmortarGfx73)},
+	{NULL, 160},
+	{sMagmortarGfx73_1, ARRAY_COUNT(sMagmortarGfx73_1)},
+	{NULL, 64},
+	{sMagmortarGfx73_3, ARRAY_COUNT(sMagmortarGfx73_3)},
 	{NULL, 32},
-	{sMagmortarGfx73_2, ARRAY_COUNT(sMagmortarGfx73_2)},
+	{sMagmortarGfx73_5, ARRAY_COUNT(sMagmortarGfx73_5)},
+	{NULL, 32},
+	{sMagmortarGfx73_7, ARRAY_COUNT(sMagmortarGfx73_7)},
+	{NULL, 192},
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx74[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_74.4bpp");
@@ -1355,25 +1537,46 @@ static const ax_sprite sMagmortarSprites76[] = {
 	{NULL, 32},
 	{NULL, 0}
 };
-static const u8 sMagmortarGfx77[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_77.4bpp");
+static const u8 sMagmortarGfx77_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_77_1.4bpp");
+static const u8 sMagmortarGfx77_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_77_3.4bpp");
 static const ax_sprite sMagmortarSprites77[] = {
-	{sMagmortarGfx77, ARRAY_COUNT(sMagmortarGfx77)},
+	{NULL, 192},
+	{sMagmortarGfx77_1, ARRAY_COUNT(sMagmortarGfx77_1)},
+	{NULL, 32},
+	{sMagmortarGfx77_3, ARRAY_COUNT(sMagmortarGfx77_3)},
+	{NULL, 128},
 	{NULL, 0}
 };
-static const u8 sMagmortarGfx78[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_78.4bpp");
-static const u8 sMagmortarGfx78_2[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_78_2.4bpp");
+static const u8 sMagmortarGfx78_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_78_1.4bpp");
+static const u8 sMagmortarGfx78_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_78_3.4bpp");
+static const u8 sMagmortarGfx78_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_78_5.4bpp");
+static const u8 sMagmortarGfx78_7[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_78_7.4bpp");
 static const ax_sprite sMagmortarSprites78[] = {
-	{sMagmortarGfx78, ARRAY_COUNT(sMagmortarGfx78)},
+	{NULL, 128},
+	{sMagmortarGfx78_1, ARRAY_COUNT(sMagmortarGfx78_1)},
+	{NULL, 64},
+	{sMagmortarGfx78_3, ARRAY_COUNT(sMagmortarGfx78_3)},
 	{NULL, 32},
-	{sMagmortarGfx78_2, ARRAY_COUNT(sMagmortarGfx78_2)},
+	{sMagmortarGfx78_5, ARRAY_COUNT(sMagmortarGfx78_5)},
+	{NULL, 32},
+	{sMagmortarGfx78_7, ARRAY_COUNT(sMagmortarGfx78_7)},
+	{NULL, 192},
 	{NULL, 0}
 };
-static const u8 sMagmortarGfx79[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_79.4bpp");
-static const u8 sMagmortarGfx79_2[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_79_2.4bpp");
+static const u8 sMagmortarGfx79_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_79_1.4bpp");
+static const u8 sMagmortarGfx79_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_79_3.4bpp");
+static const u8 sMagmortarGfx79_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_79_5.4bpp");
+static const u8 sMagmortarGfx79_7[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_79_7.4bpp");
 static const ax_sprite sMagmortarSprites79[] = {
-	{sMagmortarGfx79, ARRAY_COUNT(sMagmortarGfx79)},
+	{NULL, 160},
+	{sMagmortarGfx79_1, ARRAY_COUNT(sMagmortarGfx79_1)},
+	{NULL, 64},
+	{sMagmortarGfx79_3, ARRAY_COUNT(sMagmortarGfx79_3)},
 	{NULL, 32},
-	{sMagmortarGfx79_2, ARRAY_COUNT(sMagmortarGfx79_2)},
+	{sMagmortarGfx79_5, ARRAY_COUNT(sMagmortarGfx79_5)},
+	{NULL, 64},
+	{sMagmortarGfx79_7, ARRAY_COUNT(sMagmortarGfx79_7)},
+	{NULL, 128},
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx80[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_80.4bpp");
@@ -1396,15 +1599,26 @@ static const ax_sprite sMagmortarSprites82[] = {
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx83_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_83_1.4bpp");
+static const u8 sMagmortarGfx83_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_83_3.4bpp");
 static const ax_sprite sMagmortarSprites83[] = {
-	{NULL, 32},
+	{NULL, 192},
 	{sMagmortarGfx83_1, ARRAY_COUNT(sMagmortarGfx83_1)},
+	{NULL, 64},
+	{sMagmortarGfx83_3, ARRAY_COUNT(sMagmortarGfx83_3)},
+	{NULL, 192},
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx84_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_84_1.4bpp");
+static const u8 sMagmortarGfx84_3[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_84_3.4bpp");
+static const u8 sMagmortarGfx84_5[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_84_5.4bpp");
 static const ax_sprite sMagmortarSprites84[] = {
-	{NULL, 32},
+	{NULL, 192},
 	{sMagmortarGfx84_1, ARRAY_COUNT(sMagmortarGfx84_1)},
+	{NULL, 32},
+	{sMagmortarGfx84_3, ARRAY_COUNT(sMagmortarGfx84_3)},
+	{NULL, 64},
+	{sMagmortarGfx84_5, ARRAY_COUNT(sMagmortarGfx84_5)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const u8 sMagmortarGfx85_1[] = INCBIN_U8("graphics/ax/mon/magmortar/sprite_85_1.4bpp");

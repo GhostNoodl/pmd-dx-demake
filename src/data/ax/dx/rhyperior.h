@@ -14,23 +14,23 @@ static const ax_pose sRhyperiorPose3[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose4[] = {
-	AX_POSE(3, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(3, OAM1(211, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose5[] = {
-	AX_POSE(4, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(4, OAM1(211, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose6[] = {
-	AX_POSE(5, OAM1(212, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(5, OAM1(212, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose7[] = {
-	AX_POSE(6, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(6, OAM1(211, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose8[] = {
-	AX_POSE(7, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(7, OAM1(211, ST_OAM_SQUARE, 1), OAM2(221, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose9[] = {
@@ -38,11 +38,11 @@ static const ax_pose sRhyperiorPose9[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose10[] = {
-	AX_POSE(9, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(9, OAM1(210, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose11[] = {
-	AX_POSE(10, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(10, OAM1(211, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose12[] = {
@@ -50,23 +50,23 @@ static const ax_pose sRhyperiorPose12[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose13[] = {
-	AX_POSE(12, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(12, OAM1(211, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose14[] = {
-	AX_POSE(13, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(13, OAM1(211, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose15[] = {
-	AX_POSE(14, OAM1(213, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(14, OAM1(213, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose16[] = {
-	AX_POSE(15, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(15, OAM1(210, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose17[] = {
-	AX_POSE(10, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(10, OAM1(211, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose18[] = {
@@ -74,11 +74,11 @@ static const ax_pose sRhyperiorPose18[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose19[] = {
-	AX_POSE(6, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(6, OAM1(211, ST_OAM_SQUARE, 1), OAM2(225, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose20[] = {
-	AX_POSE(17, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(17, OAM1(211, ST_OAM_SQUARE, 1), OAM2(225, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose21[] = {
@@ -86,15 +86,15 @@ static const ax_pose sRhyperiorPose21[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose22[] = {
-	AX_POSE(18, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(18, OAM1(211, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose23[] = {
-	AX_POSE(19, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(19, OAM1(211, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose24[] = {
-	AX_POSE(20, OAM1(212, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(20, OAM1(212, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose25[] = {
@@ -114,7 +114,7 @@ static const ax_pose sRhyperiorPose28[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose29[] = {
-	AX_POSE(25, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(25, OAM1(211, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose30[] = {
@@ -130,35 +130,35 @@ static const ax_pose sRhyperiorPose32[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose33[] = {
-	AX_POSE(28, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(28, OAM1(210, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose34[] = {
-	AX_POSE(29, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(29, OAM1(210, ST_OAM_SQUARE, 1), OAM2(225, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose35[] = {
-	AX_POSE(30, OAM1(212, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(30, OAM1(212, ST_OAM_SQUARE, 1), OAM2(229, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose36[] = {
-	AX_POSE(31, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(31, OAM1(211, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose37[] = {
-	AX_POSE(32, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(32, OAM1(210, ST_OAM_SQUARE, 1), OAM2(225, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose38[] = {
-	AX_POSE(33, OAM1(212, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(33, OAM1(212, ST_OAM_SQUARE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose39[] = {
-	AX_POSE(34, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(34, OAM1(210, ST_OAM_SQUARE, 1), OAM2(221, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose40[] = {
-	AX_POSE(35, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(35, OAM1(208, ST_OAM_SQUARE, 1), OAM2(229, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose41[] = {
@@ -166,11 +166,11 @@ static const ax_pose sRhyperiorPose41[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose42[] = {
-	AX_POSE(37, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(37, OAM1(211, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose43[] = {
-	AX_POSE(38, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(38, OAM1(208, ST_OAM_SQUARE, 1), OAM2(225, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose44[] = {
@@ -178,23 +178,23 @@ static const ax_pose sRhyperiorPose44[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose45[] = {
-	AX_POSE(40, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(40, OAM1(211, ST_OAM_SQUARE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose46[] = {
-	AX_POSE(41, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(41, OAM1(206, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose47[] = {
-	AX_POSE(42, OAM1(212, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(42, OAM1(212, ST_OAM_SQUARE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose48[] = {
-	AX_POSE(37, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(37, OAM1(211, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose49[] = {
-	AX_POSE(38, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(38, OAM1(208, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose50[] = {
@@ -202,11 +202,11 @@ static const ax_pose sRhyperiorPose50[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose51[] = {
-	AX_POSE(43, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(43, OAM1(210, ST_OAM_SQUARE, 1), OAM2(225, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose52[] = {
-	AX_POSE(44, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(234, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(44, OAM1(208, ST_OAM_SQUARE, 1), OAM2(218, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose53[] = {
@@ -214,19 +214,19 @@ static const ax_pose sRhyperiorPose53[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose54[] = {
-	AX_POSE(46, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(46, OAM1(211, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose55[] = {
-	AX_POSE(32, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(32, OAM1(210, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose56[] = {
-	AX_POSE(33, OAM1(212, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(33, OAM1(212, ST_OAM_SQUARE, 1), OAM2(225, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose57[] = {
-	AX_POSE(47, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(47, OAM1(210, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose58[] = {
@@ -234,7 +234,7 @@ static const ax_pose sRhyperiorPose58[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose59[] = {
-	AX_POSE(49, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(49, OAM1(211, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose60[] = {
@@ -242,7 +242,7 @@ static const ax_pose sRhyperiorPose60[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose61[] = {
-	AX_POSE(51, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(51, OAM1(209, ST_OAM_SQUARE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose62[] = {
@@ -250,7 +250,7 @@ static const ax_pose sRhyperiorPose62[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose63[] = {
-	AX_POSE(53, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(53, OAM1(210, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose64[] = {
@@ -258,15 +258,15 @@ static const ax_pose sRhyperiorPose64[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose65[] = {
-	AX_POSE(55, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(55, OAM1(211, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose66[] = {
-	AX_POSE(56, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(56, OAM1(211, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose67[] = {
-	AX_POSE(57, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(57, OAM1(210, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose68[] = {
@@ -274,7 +274,7 @@ static const ax_pose sRhyperiorPose68[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose69[] = {
-	AX_POSE(58, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(58, OAM1(209, ST_OAM_SQUARE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose70[] = {
@@ -282,7 +282,7 @@ static const ax_pose sRhyperiorPose70[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose71[] = {
-	AX_POSE(60, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(60, OAM1(211, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose72[] = {
@@ -290,23 +290,23 @@ static const ax_pose sRhyperiorPose72[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose73[] = {
-	AX_POSE(47, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(47, OAM1(208, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose74[] = {
-	AX_POSE(47, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(47, OAM1(205, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose75[] = {
-	AX_POSE(47, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(47, OAM1(203, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose76[] = {
-	AX_POSE(47, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(47, OAM1(202, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose77[] = {
-	AX_POSE(47, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(47, OAM1(206, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose78[] = {
@@ -322,23 +322,23 @@ static const ax_pose sRhyperiorPose80[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose81[] = {
-	AX_POSE(49, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(49, OAM1(209, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose82[] = {
-	AX_POSE(49, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(49, OAM1(206, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose83[] = {
-	AX_POSE(49, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(49, OAM1(204, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose84[] = {
-	AX_POSE(49, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(49, OAM1(203, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose85[] = {
-	AX_POSE(49, OAM1(207, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(49, OAM1(207, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose86[] = {
@@ -354,23 +354,23 @@ static const ax_pose sRhyperiorPose88[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose89[] = {
-	AX_POSE(51, OAM1(207, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(51, OAM1(207, ST_OAM_SQUARE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose90[] = {
-	AX_POSE(51, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(51, OAM1(204, ST_OAM_SQUARE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose91[] = {
-	AX_POSE(51, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(51, OAM1(202, ST_OAM_SQUARE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose92[] = {
-	AX_POSE(51, OAM1(201, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(51, OAM1(201, ST_OAM_SQUARE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose93[] = {
-	AX_POSE(51, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(51, OAM1(205, ST_OAM_SQUARE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose94[] = {
@@ -386,23 +386,23 @@ static const ax_pose sRhyperiorPose96[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose97[] = {
-	AX_POSE(53, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(53, OAM1(208, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose98[] = {
-	AX_POSE(53, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(53, OAM1(205, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose99[] = {
-	AX_POSE(53, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(53, OAM1(203, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose100[] = {
-	AX_POSE(53, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(53, OAM1(202, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose101[] = {
-	AX_POSE(53, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(53, OAM1(206, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose102[] = {
@@ -418,55 +418,55 @@ static const ax_pose sRhyperiorPose104[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose105[] = {
-	AX_POSE(55, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(55, OAM1(209, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose106[] = {
-	AX_POSE(55, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(55, OAM1(206, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose107[] = {
-	AX_POSE(55, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(55, OAM1(204, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose108[] = {
-	AX_POSE(55, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(55, OAM1(203, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose109[] = {
-	AX_POSE(55, OAM1(207, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(55, OAM1(207, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose110[] = {
-	AX_POSE(65, OAM1(227, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(65, OAM1(211, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose111[] = {
-	AX_POSE(65, OAM1(225, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(65, OAM1(209, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose112[] = {
-	AX_POSE(65, OAM1(226, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(65, OAM1(210, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose113[] = {
-	AX_POSE(57, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(57, OAM1(208, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose114[] = {
-	AX_POSE(57, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(57, OAM1(205, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose115[] = {
-	AX_POSE(57, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(57, OAM1(203, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose116[] = {
-	AX_POSE(57, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(57, OAM1(202, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose117[] = {
-	AX_POSE(57, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(57, OAM1(206, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose118[] = {
@@ -482,23 +482,23 @@ static const ax_pose sRhyperiorPose120[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose121[] = {
-	AX_POSE(58, OAM1(207, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(58, OAM1(207, ST_OAM_SQUARE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose122[] = {
-	AX_POSE(58, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(58, OAM1(204, ST_OAM_SQUARE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose123[] = {
-	AX_POSE(58, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(58, OAM1(202, ST_OAM_SQUARE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose124[] = {
-	AX_POSE(58, OAM1(201, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(58, OAM1(201, ST_OAM_SQUARE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose125[] = {
-	AX_POSE(58, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(58, OAM1(205, ST_OAM_SQUARE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose126[] = {
@@ -514,23 +514,23 @@ static const ax_pose sRhyperiorPose128[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose129[] = {
-	AX_POSE(60, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(60, OAM1(209, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose130[] = {
-	AX_POSE(60, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(60, OAM1(206, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose131[] = {
-	AX_POSE(60, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(60, OAM1(204, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose132[] = {
-	AX_POSE(60, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(60, OAM1(203, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose133[] = {
-	AX_POSE(60, OAM1(207, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(60, OAM1(207, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose134[] = {
@@ -558,15 +558,15 @@ static const ax_pose sRhyperiorPose139[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose140[] = {
-	AX_POSE(70, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(70, OAM1(203, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose141[] = {
-	AX_POSE(71, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(71, OAM1(204, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose142[] = {
-	AX_POSE(72, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(72, OAM1(204, ST_OAM_SQUARE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose143[] = {
@@ -574,7 +574,7 @@ static const ax_pose sRhyperiorPose143[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose144[] = {
-	AX_POSE(74, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(74, OAM1(209, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose145[] = {
@@ -582,11 +582,11 @@ static const ax_pose sRhyperiorPose145[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose146[] = {
-	AX_POSE(75, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(75, OAM1(204, ST_OAM_SQUARE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose147[] = {
-	AX_POSE(71, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(71, OAM1(204, ST_OAM_SQUARE, 1), OAM2(225, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose148[] = {
@@ -610,23 +610,23 @@ static const ax_pose sRhyperiorPose152[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose153[] = {
-	AX_POSE(4, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(4, OAM1(208, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose154[] = {
-	AX_POSE(4, OAM1(207, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(4, OAM1(207, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose155[] = {
-	AX_POSE(4, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(4, OAM1(209, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose156[] = {
-	AX_POSE(3, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(3, OAM1(209, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose157[] = {
-	AX_POSE(3, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(3, OAM1(210, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose158[] = {
@@ -642,11 +642,11 @@ static const ax_pose sRhyperiorPose160[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose161[] = {
-	AX_POSE(6, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(6, OAM1(209, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose162[] = {
-	AX_POSE(6, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(6, OAM1(210, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose163[] = {
@@ -662,31 +662,31 @@ static const ax_pose sRhyperiorPose165[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose166[] = {
-	AX_POSE(9, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(9, OAM1(208, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose167[] = {
-	AX_POSE(9, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(9, OAM1(209, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose168[] = {
-	AX_POSE(13, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(13, OAM1(208, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose169[] = {
-	AX_POSE(13, OAM1(207, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(13, OAM1(207, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose170[] = {
-	AX_POSE(13, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(13, OAM1(209, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose171[] = {
-	AX_POSE(12, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(12, OAM1(209, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose172[] = {
-	AX_POSE(12, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(12, OAM1(210, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose173[] = {
@@ -702,11 +702,11 @@ static const ax_pose sRhyperiorPose175[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose176[] = {
-	AX_POSE(15, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(15, OAM1(208, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose177[] = {
-	AX_POSE(15, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(15, OAM1(209, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose178[] = {
@@ -722,31 +722,31 @@ static const ax_pose sRhyperiorPose180[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose181[] = {
-	AX_POSE(6, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(6, OAM1(209, ST_OAM_SQUARE, 1), OAM2(225, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose182[] = {
-	AX_POSE(6, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(6, OAM1(210, ST_OAM_SQUARE, 1), OAM2(225, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose183[] = {
-	AX_POSE(19, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(19, OAM1(208, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose184[] = {
-	AX_POSE(19, OAM1(207, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(19, OAM1(207, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose185[] = {
-	AX_POSE(19, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(19, OAM1(209, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose186[] = {
-	AX_POSE(18, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(18, OAM1(209, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose187[] = {
-	AX_POSE(18, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(18, OAM1(210, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose188[] = {
@@ -786,19 +786,19 @@ static const ax_pose sRhyperiorPose196[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose197[] = {
-	AX_POSE(47, OAM1(200, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(47, OAM1(200, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose198[] = {
-	AX_POSE(47, OAM1(194, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(47, OAM1(194, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose199[] = {
-	AX_POSE(47, OAM1(190, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(47, OAM1(190, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose200[] = {
-	AX_POSE(47, OAM1(189, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(47, OAM1(189, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose201[] = {
@@ -818,23 +818,23 @@ static const ax_pose sRhyperiorPose204[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose205[] = {
-	AX_POSE(49, OAM1(201, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(49, OAM1(201, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose206[] = {
-	AX_POSE(49, OAM1(195, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(49, OAM1(195, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose207[] = {
-	AX_POSE(49, OAM1(191, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(49, OAM1(191, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose208[] = {
-	AX_POSE(49, OAM1(190, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(49, OAM1(190, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose209[] = {
-	AX_POSE(3, OAM1(187, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(3, OAM1(187, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose210[] = {
@@ -850,23 +850,23 @@ static const ax_pose sRhyperiorPose212[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose213[] = {
-	AX_POSE(51, OAM1(199, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(51, OAM1(199, ST_OAM_SQUARE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose214[] = {
-	AX_POSE(51, OAM1(193, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(51, OAM1(193, ST_OAM_SQUARE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose215[] = {
-	AX_POSE(51, OAM1(189, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(51, OAM1(189, ST_OAM_SQUARE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose216[] = {
-	AX_POSE(51, OAM1(188, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(51, OAM1(188, ST_OAM_SQUARE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose217[] = {
-	AX_POSE(6, OAM1(187, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(6, OAM1(187, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose218[] = {
@@ -882,23 +882,23 @@ static const ax_pose sRhyperiorPose220[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose221[] = {
-	AX_POSE(53, OAM1(200, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(53, OAM1(200, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose222[] = {
-	AX_POSE(53, OAM1(194, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(53, OAM1(194, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose223[] = {
-	AX_POSE(53, OAM1(190, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(53, OAM1(190, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose224[] = {
-	AX_POSE(53, OAM1(189, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(53, OAM1(189, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose225[] = {
-	AX_POSE(9, OAM1(186, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(9, OAM1(186, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose226[] = {
@@ -914,55 +914,55 @@ static const ax_pose sRhyperiorPose228[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose229[] = {
-	AX_POSE(55, OAM1(201, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(55, OAM1(201, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose230[] = {
-	AX_POSE(55, OAM1(195, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(55, OAM1(195, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose231[] = {
-	AX_POSE(55, OAM1(191, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(55, OAM1(191, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose232[] = {
-	AX_POSE(55, OAM1(190, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(55, OAM1(190, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose233[] = {
-	AX_POSE(12, OAM1(187, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(12, OAM1(187, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose234[] = {
-	AX_POSE(56, OAM1(189, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(56, OAM1(189, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose235[] = {
-	AX_POSE(56, OAM1(193, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(56, OAM1(193, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose236[] = {
-	AX_POSE(56, OAM1(199, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(56, OAM1(199, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose237[] = {
-	AX_POSE(57, OAM1(200, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(57, OAM1(200, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose238[] = {
-	AX_POSE(57, OAM1(194, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(57, OAM1(194, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose239[] = {
-	AX_POSE(57, OAM1(190, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(57, OAM1(190, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose240[] = {
-	AX_POSE(57, OAM1(189, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(57, OAM1(189, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose241[] = {
-	AX_POSE(15, OAM1(186, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(15, OAM1(186, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose242[] = {
@@ -978,23 +978,23 @@ static const ax_pose sRhyperiorPose244[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose245[] = {
-	AX_POSE(58, OAM1(199, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(58, OAM1(199, ST_OAM_SQUARE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose246[] = {
-	AX_POSE(58, OAM1(193, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(58, OAM1(193, ST_OAM_SQUARE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose247[] = {
-	AX_POSE(58, OAM1(189, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(58, OAM1(189, ST_OAM_SQUARE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose248[] = {
-	AX_POSE(58, OAM1(188, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(58, OAM1(188, ST_OAM_SQUARE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose249[] = {
-	AX_POSE(6, OAM1(187, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(6, OAM1(187, ST_OAM_SQUARE, 1), OAM2(225, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose250[] = {
@@ -1010,23 +1010,23 @@ static const ax_pose sRhyperiorPose252[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose253[] = {
-	AX_POSE(60, OAM1(201, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(60, OAM1(201, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose254[] = {
-	AX_POSE(60, OAM1(195, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(60, OAM1(195, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose255[] = {
-	AX_POSE(60, OAM1(191, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(60, OAM1(191, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose256[] = {
-	AX_POSE(60, OAM1(190, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(60, OAM1(190, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose257[] = {
-	AX_POSE(18, OAM1(187, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(18, OAM1(187, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose258[] = {
@@ -1042,27 +1042,27 @@ static const ax_pose sRhyperiorPose260[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose261[] = {
-	AX_POSE(49, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(49, OAM1(211, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose262[] = {
-	AX_POSE(51, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(51, OAM1(209, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose263[] = {
-	AX_POSE(53, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(53, OAM1(210, ST_OAM_SQUARE, 1), OAM2(225, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose264[] = {
-	AX_POSE(57, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(57, OAM1(210, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose265[] = {
-	AX_POSE(58, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(58, OAM1(209, ST_OAM_SQUARE, 1), OAM2(225, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sRhyperiorPose266[] = {
-	AX_POSE(60, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
+	AX_POSE(60, OAM1(211, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 6)),
 	AX_POSE_TERMINATOR
 };
 static const u8 sRhyperiorGfx1_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_1_1.4bpp");
@@ -1115,55 +1115,103 @@ static const ax_sprite sRhyperiorSprites3[] = {
 };
 static const u8 sRhyperiorGfx4_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_4_1.4bpp");
 static const u8 sRhyperiorGfx4_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_4_3.4bpp");
+static const u8 sRhyperiorGfx4_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_4_5.4bpp");
+static const u8 sRhyperiorGfx4_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_4_7.4bpp");
+static const u8 sRhyperiorGfx4_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_4_9.4bpp");
+static const u8 sRhyperiorGfx4_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_4_11.4bpp");
 static const ax_sprite sRhyperiorSprites4[] = {
-	{NULL, 192},
+	{NULL, 384},
 	{sRhyperiorGfx4_1, ARRAY_COUNT(sRhyperiorGfx4_1)},
-	{NULL, 32},
+	{NULL, 128},
 	{sRhyperiorGfx4_3, ARRAY_COUNT(sRhyperiorGfx4_3)},
-	{NULL, 192},
+	{NULL, 128},
+	{sRhyperiorGfx4_5, ARRAY_COUNT(sRhyperiorGfx4_5)},
+	{NULL, 64},
+	{sRhyperiorGfx4_7, ARRAY_COUNT(sRhyperiorGfx4_7)},
+	{NULL, 96},
+	{sRhyperiorGfx4_9, ARRAY_COUNT(sRhyperiorGfx4_9)},
+	{NULL, 160},
+	{sRhyperiorGfx4_11, ARRAY_COUNT(sRhyperiorGfx4_11)},
+	{NULL, 384},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx5_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_5_1.4bpp");
 static const u8 sRhyperiorGfx5_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_5_3.4bpp");
+static const u8 sRhyperiorGfx5_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_5_5.4bpp");
+static const u8 sRhyperiorGfx5_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_5_7.4bpp");
+static const u8 sRhyperiorGfx5_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_5_9.4bpp");
+static const u8 sRhyperiorGfx5_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_5_11.4bpp");
 static const ax_sprite sRhyperiorSprites5[] = {
-	{NULL, 192},
+	{NULL, 384},
 	{sRhyperiorGfx5_1, ARRAY_COUNT(sRhyperiorGfx5_1)},
-	{NULL, 64},
-	{sRhyperiorGfx5_3, ARRAY_COUNT(sRhyperiorGfx5_3)},
 	{NULL, 192},
+	{sRhyperiorGfx5_3, ARRAY_COUNT(sRhyperiorGfx5_3)},
+	{NULL, 128},
+	{sRhyperiorGfx5_5, ARRAY_COUNT(sRhyperiorGfx5_5)},
+	{NULL, 128},
+	{sRhyperiorGfx5_7, ARRAY_COUNT(sRhyperiorGfx5_7)},
+	{NULL, 96},
+	{sRhyperiorGfx5_9, ARRAY_COUNT(sRhyperiorGfx5_9)},
+	{NULL, 128},
+	{sRhyperiorGfx5_11, ARRAY_COUNT(sRhyperiorGfx5_11)},
+	{NULL, 384},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx6_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_6_1.4bpp");
 static const u8 sRhyperiorGfx6_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_6_3.4bpp");
+static const u8 sRhyperiorGfx6_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_6_5.4bpp");
+static const u8 sRhyperiorGfx6_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_6_7.4bpp");
+static const u8 sRhyperiorGfx6_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_6_9.4bpp");
 static const ax_sprite sRhyperiorSprites6[] = {
-	{NULL, 256},
+	{NULL, 576},
 	{sRhyperiorGfx6_1, ARRAY_COUNT(sRhyperiorGfx6_1)},
-	{NULL, 32},
+	{NULL, 96},
 	{sRhyperiorGfx6_3, ARRAY_COUNT(sRhyperiorGfx6_3)},
-	{NULL, 192},
+	{NULL, 64},
+	{sRhyperiorGfx6_5, ARRAY_COUNT(sRhyperiorGfx6_5)},
+	{NULL, 96},
+	{sRhyperiorGfx6_7, ARRAY_COUNT(sRhyperiorGfx6_7)},
+	{NULL, 160},
+	{sRhyperiorGfx6_9, ARRAY_COUNT(sRhyperiorGfx6_9)},
+	{NULL, 384},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx7_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_7_1.4bpp");
 static const u8 sRhyperiorGfx7_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_7_3.4bpp");
+static const u8 sRhyperiorGfx7_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_7_5.4bpp");
+static const u8 sRhyperiorGfx7_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_7_7.4bpp");
+static const u8 sRhyperiorGfx7_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_7_9.4bpp");
 static const ax_sprite sRhyperiorSprites7[] = {
-	{NULL, 288},
+	{NULL, 608},
 	{sRhyperiorGfx7_1, ARRAY_COUNT(sRhyperiorGfx7_1)},
-	{NULL, 32},
+	{NULL, 128},
 	{sRhyperiorGfx7_3, ARRAY_COUNT(sRhyperiorGfx7_3)},
+	{NULL, 64},
+	{sRhyperiorGfx7_5, ARRAY_COUNT(sRhyperiorGfx7_5)},
+	{NULL, 96},
+	{sRhyperiorGfx7_7, ARRAY_COUNT(sRhyperiorGfx7_7)},
 	{NULL, 160},
+	{sRhyperiorGfx7_9, ARRAY_COUNT(sRhyperiorGfx7_9)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx8_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_8_1.4bpp");
 static const u8 sRhyperiorGfx8_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_8_3.4bpp");
 static const u8 sRhyperiorGfx8_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_8_5.4bpp");
+static const u8 sRhyperiorGfx8_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_8_7.4bpp");
+static const u8 sRhyperiorGfx8_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_8_9.4bpp");
 static const ax_sprite sRhyperiorSprites8[] = {
-	{NULL, 256},
+	{NULL, 576},
 	{sRhyperiorGfx8_1, ARRAY_COUNT(sRhyperiorGfx8_1)},
-	{NULL, 32},
-	{sRhyperiorGfx8_3, ARRAY_COUNT(sRhyperiorGfx8_3)},
-	{NULL, 32},
-	{sRhyperiorGfx8_5, ARRAY_COUNT(sRhyperiorGfx8_5)},
 	{NULL, 160},
+	{sRhyperiorGfx8_3, ARRAY_COUNT(sRhyperiorGfx8_3)},
+	{NULL, 64},
+	{sRhyperiorGfx8_5, ARRAY_COUNT(sRhyperiorGfx8_5)},
+	{NULL, 96},
+	{sRhyperiorGfx8_7, ARRAY_COUNT(sRhyperiorGfx8_7)},
+	{NULL, 160},
+	{sRhyperiorGfx8_9, ARRAY_COUNT(sRhyperiorGfx8_9)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx9_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_9_1.4bpp");
@@ -1184,25 +1232,49 @@ static const ax_sprite sRhyperiorSprites9[] = {
 };
 static const u8 sRhyperiorGfx10_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_10_1.4bpp");
 static const u8 sRhyperiorGfx10_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_10_3.4bpp");
+static const u8 sRhyperiorGfx10_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_10_5.4bpp");
+static const u8 sRhyperiorGfx10_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_10_7.4bpp");
+static const u8 sRhyperiorGfx10_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_10_9.4bpp");
+static const u8 sRhyperiorGfx10_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_10_11.4bpp");
+static const u8 sRhyperiorGfx10_13[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_10_13.4bpp");
 static const ax_sprite sRhyperiorSprites10[] = {
-	{NULL, 224},
+	{NULL, 416},
 	{sRhyperiorGfx10_1, ARRAY_COUNT(sRhyperiorGfx10_1)},
-	{NULL, 32},
+	{NULL, 128},
 	{sRhyperiorGfx10_3, ARRAY_COUNT(sRhyperiorGfx10_3)},
-	{NULL, 160},
+	{NULL, 128},
+	{sRhyperiorGfx10_5, ARRAY_COUNT(sRhyperiorGfx10_5)},
+	{NULL, 128},
+	{sRhyperiorGfx10_7, ARRAY_COUNT(sRhyperiorGfx10_7)},
+	{NULL, 96},
+	{sRhyperiorGfx10_9, ARRAY_COUNT(sRhyperiorGfx10_9)},
+	{NULL, 128},
+	{sRhyperiorGfx10_11, ARRAY_COUNT(sRhyperiorGfx10_11)},
+	{NULL, 32},
+	{sRhyperiorGfx10_13, ARRAY_COUNT(sRhyperiorGfx10_13)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx11_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_11_1.4bpp");
 static const u8 sRhyperiorGfx11_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_11_3.4bpp");
 static const u8 sRhyperiorGfx11_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_11_5.4bpp");
+static const u8 sRhyperiorGfx11_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_11_7.4bpp");
+static const u8 sRhyperiorGfx11_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_11_9.4bpp");
+static const u8 sRhyperiorGfx11_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_11_11.4bpp");
 static const ax_sprite sRhyperiorSprites11[] = {
-	{NULL, 192},
+	{NULL, 384},
 	{sRhyperiorGfx11_1, ARRAY_COUNT(sRhyperiorGfx11_1)},
-	{NULL, 32},
+	{NULL, 128},
 	{sRhyperiorGfx11_3, ARRAY_COUNT(sRhyperiorGfx11_3)},
-	{NULL, 32},
+	{NULL, 96},
 	{sRhyperiorGfx11_5, ARRAY_COUNT(sRhyperiorGfx11_5)},
+	{NULL, 96},
+	{sRhyperiorGfx11_7, ARRAY_COUNT(sRhyperiorGfx11_7)},
+	{NULL, 64},
+	{sRhyperiorGfx11_9, ARRAY_COUNT(sRhyperiorGfx11_9)},
 	{NULL, 160},
+	{sRhyperiorGfx11_11, ARRAY_COUNT(sRhyperiorGfx11_11)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx12_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_12_1.4bpp");
@@ -1215,53 +1287,92 @@ static const ax_sprite sRhyperiorSprites12[] = {
 static const u8 sRhyperiorGfx13_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_13_1.4bpp");
 static const u8 sRhyperiorGfx13_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_13_3.4bpp");
 static const u8 sRhyperiorGfx13_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_13_5.4bpp");
+static const u8 sRhyperiorGfx13_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_13_7.4bpp");
+static const u8 sRhyperiorGfx13_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_13_9.4bpp");
+static const u8 sRhyperiorGfx13_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_13_11.4bpp");
 static const ax_sprite sRhyperiorSprites13[] = {
-	{NULL, 160},
+	{NULL, 352},
 	{sRhyperiorGfx13_1, ARRAY_COUNT(sRhyperiorGfx13_1)},
-	{NULL, 32},
-	{sRhyperiorGfx13_3, ARRAY_COUNT(sRhyperiorGfx13_3)},
-	{NULL, 32},
-	{sRhyperiorGfx13_5, ARRAY_COUNT(sRhyperiorGfx13_5)},
 	{NULL, 160},
+	{sRhyperiorGfx13_3, ARRAY_COUNT(sRhyperiorGfx13_3)},
+	{NULL, 96},
+	{sRhyperiorGfx13_5, ARRAY_COUNT(sRhyperiorGfx13_5)},
+	{NULL, 64},
+	{sRhyperiorGfx13_7, ARRAY_COUNT(sRhyperiorGfx13_7)},
+	{NULL, 96},
+	{sRhyperiorGfx13_9, ARRAY_COUNT(sRhyperiorGfx13_9)},
+	{NULL, 160},
+	{sRhyperiorGfx13_11, ARRAY_COUNT(sRhyperiorGfx13_11)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx14_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_14_1.4bpp");
 static const u8 sRhyperiorGfx14_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_14_3.4bpp");
+static const u8 sRhyperiorGfx14_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_14_5.4bpp");
+static const u8 sRhyperiorGfx14_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_14_7.4bpp");
+static const u8 sRhyperiorGfx14_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_14_9.4bpp");
+static const u8 sRhyperiorGfx14_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_14_11.4bpp");
 static const ax_sprite sRhyperiorSprites14[] = {
-	{NULL, 192},
+	{NULL, 384},
 	{sRhyperiorGfx14_1, ARRAY_COUNT(sRhyperiorGfx14_1)},
-	{NULL, 32},
-	{sRhyperiorGfx14_3, ARRAY_COUNT(sRhyperiorGfx14_3)},
 	{NULL, 160},
+	{sRhyperiorGfx14_3, ARRAY_COUNT(sRhyperiorGfx14_3)},
+	{NULL, 96},
+	{sRhyperiorGfx14_5, ARRAY_COUNT(sRhyperiorGfx14_5)},
+	{NULL, 64},
+	{sRhyperiorGfx14_7, ARRAY_COUNT(sRhyperiorGfx14_7)},
+	{NULL, 96},
+	{sRhyperiorGfx14_9, ARRAY_COUNT(sRhyperiorGfx14_9)},
+	{NULL, 96},
+	{sRhyperiorGfx14_11, ARRAY_COUNT(sRhyperiorGfx14_11)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx15_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_15_1.4bpp");
 static const u8 sRhyperiorGfx15_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_15_3.4bpp");
 static const u8 sRhyperiorGfx15_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_15_5.4bpp");
+static const u8 sRhyperiorGfx15_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_15_7.4bpp");
+static const u8 sRhyperiorGfx15_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_15_9.4bpp");
+static const u8 sRhyperiorGfx15_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_15_11.4bpp");
 static const ax_sprite sRhyperiorSprites15[] = {
-	{NULL, 160},
+	{NULL, 352},
 	{sRhyperiorGfx15_1, ARRAY_COUNT(sRhyperiorGfx15_1)},
-	{NULL, 32},
-	{sRhyperiorGfx15_3, ARRAY_COUNT(sRhyperiorGfx15_3)},
-	{NULL, 32},
-	{sRhyperiorGfx15_5, ARRAY_COUNT(sRhyperiorGfx15_5)},
 	{NULL, 160},
+	{sRhyperiorGfx15_3, ARRAY_COUNT(sRhyperiorGfx15_3)},
+	{NULL, 64},
+	{sRhyperiorGfx15_5, ARRAY_COUNT(sRhyperiorGfx15_5)},
+	{NULL, 64},
+	{sRhyperiorGfx15_7, ARRAY_COUNT(sRhyperiorGfx15_7)},
+	{NULL, 96},
+	{sRhyperiorGfx15_9, ARRAY_COUNT(sRhyperiorGfx15_9)},
+	{NULL, 160},
+	{sRhyperiorGfx15_11, ARRAY_COUNT(sRhyperiorGfx15_11)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx16_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_16_1.4bpp");
 static const u8 sRhyperiorGfx16_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_16_3.4bpp");
 static const u8 sRhyperiorGfx16_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_16_5.4bpp");
 static const u8 sRhyperiorGfx16_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_16_7.4bpp");
+static const u8 sRhyperiorGfx16_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_16_9.4bpp");
+static const u8 sRhyperiorGfx16_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_16_11.4bpp");
+static const u8 sRhyperiorGfx16_13[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_16_13.4bpp");
 static const ax_sprite sRhyperiorSprites16[] = {
-	{NULL, 128},
+	{NULL, 320},
 	{sRhyperiorGfx16_1, ARRAY_COUNT(sRhyperiorGfx16_1)},
-	{NULL, 64},
+	{NULL, 192},
 	{sRhyperiorGfx16_3, ARRAY_COUNT(sRhyperiorGfx16_3)},
-	{NULL, 32},
+	{NULL, 96},
 	{sRhyperiorGfx16_5, ARRAY_COUNT(sRhyperiorGfx16_5)},
-	{NULL, 32},
+	{NULL, 96},
 	{sRhyperiorGfx16_7, ARRAY_COUNT(sRhyperiorGfx16_7)},
 	{NULL, 128},
+	{sRhyperiorGfx16_9, ARRAY_COUNT(sRhyperiorGfx16_9)},
+	{NULL, 128},
+	{sRhyperiorGfx16_11, ARRAY_COUNT(sRhyperiorGfx16_11)},
+	{NULL, 32},
+	{sRhyperiorGfx16_13, ARRAY_COUNT(sRhyperiorGfx16_13)},
+	{NULL, 320},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx17_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_17_1.4bpp");
@@ -1279,51 +1390,84 @@ static const ax_sprite sRhyperiorSprites17[] = {
 };
 static const u8 sRhyperiorGfx18_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_18_1.4bpp");
 static const u8 sRhyperiorGfx18_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_18_3.4bpp");
+static const u8 sRhyperiorGfx18_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_18_5.4bpp");
+static const u8 sRhyperiorGfx18_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_18_7.4bpp");
+static const u8 sRhyperiorGfx18_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_18_9.4bpp");
 static const ax_sprite sRhyperiorSprites18[] = {
-	{NULL, 256},
+	{NULL, 576},
 	{sRhyperiorGfx18_1, ARRAY_COUNT(sRhyperiorGfx18_1)},
-	{NULL, 32},
+	{NULL, 96},
 	{sRhyperiorGfx18_3, ARRAY_COUNT(sRhyperiorGfx18_3)},
-	{NULL, 160},
+	{NULL, 128},
+	{sRhyperiorGfx18_5, ARRAY_COUNT(sRhyperiorGfx18_5)},
+	{NULL, 96},
+	{sRhyperiorGfx18_7, ARRAY_COUNT(sRhyperiorGfx18_7)},
+	{NULL, 128},
+	{sRhyperiorGfx18_9, ARRAY_COUNT(sRhyperiorGfx18_9)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx19_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_19_1.4bpp");
 static const u8 sRhyperiorGfx19_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_19_3.4bpp");
 static const u8 sRhyperiorGfx19_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_19_5.4bpp");
+static const u8 sRhyperiorGfx19_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_19_7.4bpp");
+static const u8 sRhyperiorGfx19_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_19_9.4bpp");
+static const u8 sRhyperiorGfx19_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_19_11.4bpp");
 static const ax_sprite sRhyperiorSprites19[] = {
-	{NULL, 160},
+	{NULL, 352},
 	{sRhyperiorGfx19_1, ARRAY_COUNT(sRhyperiorGfx19_1)},
-	{NULL, 64},
+	{NULL, 192},
 	{sRhyperiorGfx19_3, ARRAY_COUNT(sRhyperiorGfx19_3)},
-	{NULL, 64},
-	{sRhyperiorGfx19_5, ARRAY_COUNT(sRhyperiorGfx19_5)},
 	{NULL, 128},
+	{sRhyperiorGfx19_5, ARRAY_COUNT(sRhyperiorGfx19_5)},
+	{NULL, 64},
+	{sRhyperiorGfx19_7, ARRAY_COUNT(sRhyperiorGfx19_7)},
+	{NULL, 96},
+	{sRhyperiorGfx19_9, ARRAY_COUNT(sRhyperiorGfx19_9)},
+	{NULL, 192},
+	{sRhyperiorGfx19_11, ARRAY_COUNT(sRhyperiorGfx19_11)},
+	{NULL, 320},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx20_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_20_1.4bpp");
 static const u8 sRhyperiorGfx20_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_20_3.4bpp");
 static const u8 sRhyperiorGfx20_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_20_5.4bpp");
 static const u8 sRhyperiorGfx20_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_20_7.4bpp");
+static const u8 sRhyperiorGfx20_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_20_9.4bpp");
+static const u8 sRhyperiorGfx20_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_20_11.4bpp");
 static const ax_sprite sRhyperiorSprites20[] = {
-	{NULL, 160},
+	{NULL, 352},
 	{sRhyperiorGfx20_1, ARRAY_COUNT(sRhyperiorGfx20_1)},
-	{NULL, 64},
+	{NULL, 192},
 	{sRhyperiorGfx20_3, ARRAY_COUNT(sRhyperiorGfx20_3)},
-	{NULL, 32},
+	{NULL, 160},
 	{sRhyperiorGfx20_5, ARRAY_COUNT(sRhyperiorGfx20_5)},
 	{NULL, 96},
 	{sRhyperiorGfx20_7, ARRAY_COUNT(sRhyperiorGfx20_7)},
-	{NULL, 128},
+	{NULL, 96},
+	{sRhyperiorGfx20_9, ARRAY_COUNT(sRhyperiorGfx20_9)},
+	{NULL, 224},
+	{sRhyperiorGfx20_11, ARRAY_COUNT(sRhyperiorGfx20_11)},
+	{NULL, 320},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx21_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_21_1.4bpp");
 static const u8 sRhyperiorGfx21_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_21_3.4bpp");
+static const u8 sRhyperiorGfx21_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_21_5.4bpp");
+static const u8 sRhyperiorGfx21_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_21_7.4bpp");
+static const u8 sRhyperiorGfx21_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_21_9.4bpp");
 static const ax_sprite sRhyperiorSprites21[] = {
-	{NULL, 256},
+	{NULL, 576},
 	{sRhyperiorGfx21_1, ARRAY_COUNT(sRhyperiorGfx21_1)},
 	{NULL, 64},
 	{sRhyperiorGfx21_3, ARRAY_COUNT(sRhyperiorGfx21_3)},
+	{NULL, 64},
+	{sRhyperiorGfx21_5, ARRAY_COUNT(sRhyperiorGfx21_5)},
+	{NULL, 96},
+	{sRhyperiorGfx21_7, ARRAY_COUNT(sRhyperiorGfx21_7)},
 	{NULL, 160},
+	{sRhyperiorGfx21_9, ARRAY_COUNT(sRhyperiorGfx21_9)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx22_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_22_1.4bpp");
@@ -1393,14 +1537,23 @@ static const ax_sprite sRhyperiorSprites25[] = {
 static const u8 sRhyperiorGfx26_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_26_1.4bpp");
 static const u8 sRhyperiorGfx26_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_26_3.4bpp");
 static const u8 sRhyperiorGfx26_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_26_5.4bpp");
+static const u8 sRhyperiorGfx26_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_26_7.4bpp");
+static const u8 sRhyperiorGfx26_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_26_9.4bpp");
+static const u8 sRhyperiorGfx26_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_26_11.4bpp");
 static const ax_sprite sRhyperiorSprites26[] = {
-	{NULL, 192},
+	{NULL, 384},
 	{sRhyperiorGfx26_1, ARRAY_COUNT(sRhyperiorGfx26_1)},
-	{NULL, 64},
+	{NULL, 192},
 	{sRhyperiorGfx26_3, ARRAY_COUNT(sRhyperiorGfx26_3)},
-	{NULL, 32},
+	{NULL, 96},
 	{sRhyperiorGfx26_5, ARRAY_COUNT(sRhyperiorGfx26_5)},
-	{NULL, 160},
+	{NULL, 64},
+	{sRhyperiorGfx26_7, ARRAY_COUNT(sRhyperiorGfx26_7)},
+	{NULL, 64},
+	{sRhyperiorGfx26_9, ARRAY_COUNT(sRhyperiorGfx26_9)},
+	{NULL, 128},
+	{sRhyperiorGfx26_11, ARRAY_COUNT(sRhyperiorGfx26_11)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx27_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_27_1.4bpp");
@@ -1438,90 +1591,177 @@ static const ax_sprite sRhyperiorSprites28[] = {
 static const u8 sRhyperiorGfx29_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_29_1.4bpp");
 static const u8 sRhyperiorGfx29_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_29_3.4bpp");
 static const u8 sRhyperiorGfx29_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_29_5.4bpp");
+static const u8 sRhyperiorGfx29_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_29_7.4bpp");
+static const u8 sRhyperiorGfx29_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_29_9.4bpp");
+static const u8 sRhyperiorGfx29_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_29_11.4bpp");
 static const ax_sprite sRhyperiorSprites29[] = {
-	{NULL, 160},
+	{NULL, 352},
 	{sRhyperiorGfx29_1, ARRAY_COUNT(sRhyperiorGfx29_1)},
-	{NULL, 64},
+	{NULL, 160},
 	{sRhyperiorGfx29_3, ARRAY_COUNT(sRhyperiorGfx29_3)},
 	{NULL, 64},
 	{sRhyperiorGfx29_5, ARRAY_COUNT(sRhyperiorGfx29_5)},
-	{NULL, 128},
+	{NULL, 96},
+	{sRhyperiorGfx29_7, ARRAY_COUNT(sRhyperiorGfx29_7)},
+	{NULL, 96},
+	{sRhyperiorGfx29_9, ARRAY_COUNT(sRhyperiorGfx29_9)},
+	{NULL, 192},
+	{sRhyperiorGfx29_11, ARRAY_COUNT(sRhyperiorGfx29_11)},
+	{NULL, 320},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx30_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_30_1.4bpp");
 static const u8 sRhyperiorGfx30_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_30_3.4bpp");
+static const u8 sRhyperiorGfx30_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_30_5.4bpp");
+static const u8 sRhyperiorGfx30_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_30_7.4bpp");
+static const u8 sRhyperiorGfx30_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_30_9.4bpp");
+static const u8 sRhyperiorGfx30_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_30_11.4bpp");
 static const ax_sprite sRhyperiorSprites30[] = {
-	{NULL, 128},
+	{NULL, 288},
 	{sRhyperiorGfx30_1, ARRAY_COUNT(sRhyperiorGfx30_1)},
-	{NULL, 96},
+	{NULL, 192},
 	{sRhyperiorGfx30_3, ARRAY_COUNT(sRhyperiorGfx30_3)},
-	{NULL, 160},
+	{NULL, 64},
+	{sRhyperiorGfx30_5, ARRAY_COUNT(sRhyperiorGfx30_5)},
+	{NULL, 64},
+	{sRhyperiorGfx30_7, ARRAY_COUNT(sRhyperiorGfx30_7)},
+	{NULL, 64},
+	{sRhyperiorGfx30_9, ARRAY_COUNT(sRhyperiorGfx30_9)},
+	{NULL, 128},
+	{sRhyperiorGfx30_11, ARRAY_COUNT(sRhyperiorGfx30_11)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx31_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_31_1.4bpp");
 static const u8 sRhyperiorGfx31_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_31_3.4bpp");
 static const u8 sRhyperiorGfx31_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_31_5.4bpp");
+static const u8 sRhyperiorGfx31_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_31_7.4bpp");
+static const u8 sRhyperiorGfx31_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_31_9.4bpp");
+static const u8 sRhyperiorGfx31_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_31_11.4bpp");
 static const ax_sprite sRhyperiorSprites31[] = {
-	{NULL, 192},
+	{NULL, 384},
 	{sRhyperiorGfx31_1, ARRAY_COUNT(sRhyperiorGfx31_1)},
-	{NULL, 32},
+	{NULL, 160},
 	{sRhyperiorGfx31_3, ARRAY_COUNT(sRhyperiorGfx31_3)},
-	{NULL, 32},
+	{NULL, 96},
 	{sRhyperiorGfx31_5, ARRAY_COUNT(sRhyperiorGfx31_5)},
-	{NULL, 224},
+	{NULL, 64},
+	{sRhyperiorGfx31_7, ARRAY_COUNT(sRhyperiorGfx31_7)},
+	{NULL, 64},
+	{sRhyperiorGfx31_9, ARRAY_COUNT(sRhyperiorGfx31_9)},
+	{NULL, 128},
+	{sRhyperiorGfx31_11, ARRAY_COUNT(sRhyperiorGfx31_11)},
+	{NULL, 416},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx32_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_32_1.4bpp");
 static const u8 sRhyperiorGfx32_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_32_3.4bpp");
 static const u8 sRhyperiorGfx32_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_32_5.4bpp");
+static const u8 sRhyperiorGfx32_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_32_7.4bpp");
+static const u8 sRhyperiorGfx32_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_32_9.4bpp");
+static const u8 sRhyperiorGfx32_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_32_11.4bpp");
 static const ax_sprite sRhyperiorSprites32[] = {
-	{NULL, 160},
+	{NULL, 352},
 	{sRhyperiorGfx32_1, ARRAY_COUNT(sRhyperiorGfx32_1)},
-	{NULL, 32},
+	{NULL, 160},
 	{sRhyperiorGfx32_3, ARRAY_COUNT(sRhyperiorGfx32_3)},
-	{NULL, 32},
+	{NULL, 64},
 	{sRhyperiorGfx32_5, ARRAY_COUNT(sRhyperiorGfx32_5)},
-	{NULL, 192},
+	{NULL, 64},
+	{sRhyperiorGfx32_7, ARRAY_COUNT(sRhyperiorGfx32_7)},
+	{NULL, 128},
+	{sRhyperiorGfx32_9, ARRAY_COUNT(sRhyperiorGfx32_9)},
+	{NULL, 160},
+	{sRhyperiorGfx32_11, ARRAY_COUNT(sRhyperiorGfx32_11)},
+	{NULL, 384},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx33_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_33_1.4bpp");
+static const u8 sRhyperiorGfx33_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_33_3.4bpp");
+static const u8 sRhyperiorGfx33_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_33_5.4bpp");
+static const u8 sRhyperiorGfx33_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_33_7.4bpp");
+static const u8 sRhyperiorGfx33_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_33_9.4bpp");
+static const u8 sRhyperiorGfx33_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_33_11.4bpp");
 static const ax_sprite sRhyperiorSprites33[] = {
-	{NULL, 192},
+	{NULL, 384},
 	{sRhyperiorGfx33_1, ARRAY_COUNT(sRhyperiorGfx33_1)},
 	{NULL, 128},
+	{sRhyperiorGfx33_3, ARRAY_COUNT(sRhyperiorGfx33_3)},
+	{NULL, 64},
+	{sRhyperiorGfx33_5, ARRAY_COUNT(sRhyperiorGfx33_5)},
+	{NULL, 64},
+	{sRhyperiorGfx33_7, ARRAY_COUNT(sRhyperiorGfx33_7)},
+	{NULL, 96},
+	{sRhyperiorGfx33_9, ARRAY_COUNT(sRhyperiorGfx33_9)},
+	{NULL, 96},
+	{sRhyperiorGfx33_11, ARRAY_COUNT(sRhyperiorGfx33_11)},
+	{NULL, 320},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx34_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_34_1.4bpp");
 static const u8 sRhyperiorGfx34_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_34_3.4bpp");
 static const u8 sRhyperiorGfx34_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_34_5.4bpp");
+static const u8 sRhyperiorGfx34_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_34_7.4bpp");
+static const u8 sRhyperiorGfx34_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_34_9.4bpp");
+static const u8 sRhyperiorGfx34_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_34_11.4bpp");
 static const ax_sprite sRhyperiorSprites34[] = {
-	{NULL, 128},
+	{NULL, 320},
 	{sRhyperiorGfx34_1, ARRAY_COUNT(sRhyperiorGfx34_1)},
-	{NULL, 64},
-	{sRhyperiorGfx34_3, ARRAY_COUNT(sRhyperiorGfx34_3)},
-	{NULL, 32},
-	{sRhyperiorGfx34_5, ARRAY_COUNT(sRhyperiorGfx34_5)},
 	{NULL, 192},
+	{sRhyperiorGfx34_3, ARRAY_COUNT(sRhyperiorGfx34_3)},
+	{NULL, 96},
+	{sRhyperiorGfx34_5, ARRAY_COUNT(sRhyperiorGfx34_5)},
+	{NULL, 64},
+	{sRhyperiorGfx34_7, ARRAY_COUNT(sRhyperiorGfx34_7)},
+	{NULL, 96},
+	{sRhyperiorGfx34_9, ARRAY_COUNT(sRhyperiorGfx34_9)},
+	{NULL, 128},
+	{sRhyperiorGfx34_11, ARRAY_COUNT(sRhyperiorGfx34_11)},
+	{NULL, 384},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx35_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_35_1.4bpp");
 static const u8 sRhyperiorGfx35_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_35_3.4bpp");
+static const u8 sRhyperiorGfx35_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_35_5.4bpp");
+static const u8 sRhyperiorGfx35_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_35_7.4bpp");
+static const u8 sRhyperiorGfx35_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_35_9.4bpp");
+static const u8 sRhyperiorGfx35_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_35_11.4bpp");
 static const ax_sprite sRhyperiorSprites35[] = {
-	{NULL, 192},
+	{NULL, 384},
 	{sRhyperiorGfx35_1, ARRAY_COUNT(sRhyperiorGfx35_1)},
-	{NULL, 32},
-	{sRhyperiorGfx35_3, ARRAY_COUNT(sRhyperiorGfx35_3)},
 	{NULL, 160},
+	{sRhyperiorGfx35_3, ARRAY_COUNT(sRhyperiorGfx35_3)},
+	{NULL, 96},
+	{sRhyperiorGfx35_5, ARRAY_COUNT(sRhyperiorGfx35_5)},
+	{NULL, 128},
+	{sRhyperiorGfx35_7, ARRAY_COUNT(sRhyperiorGfx35_7)},
+	{NULL, 64},
+	{sRhyperiorGfx35_9, ARRAY_COUNT(sRhyperiorGfx35_9)},
+	{NULL, 128},
+	{sRhyperiorGfx35_11, ARRAY_COUNT(sRhyperiorGfx35_11)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx36_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_36_1.4bpp");
 static const u8 sRhyperiorGfx36_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_36_3.4bpp");
+static const u8 sRhyperiorGfx36_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_36_5.4bpp");
+static const u8 sRhyperiorGfx36_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_36_7.4bpp");
+static const u8 sRhyperiorGfx36_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_36_9.4bpp");
+static const u8 sRhyperiorGfx36_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_36_11.4bpp");
 static const ax_sprite sRhyperiorSprites36[] = {
-	{NULL, 128},
+	{NULL, 320},
 	{sRhyperiorGfx36_1, ARRAY_COUNT(sRhyperiorGfx36_1)},
-	{NULL, 64},
+	{NULL, 192},
 	{sRhyperiorGfx36_3, ARRAY_COUNT(sRhyperiorGfx36_3)},
-	{NULL, 160},
+	{NULL, 64},
+	{sRhyperiorGfx36_5, ARRAY_COUNT(sRhyperiorGfx36_5)},
+	{NULL, 64},
+	{sRhyperiorGfx36_7, ARRAY_COUNT(sRhyperiorGfx36_7)},
+	{NULL, 64},
+	{sRhyperiorGfx36_9, ARRAY_COUNT(sRhyperiorGfx36_9)},
+	{NULL, 96},
+	{sRhyperiorGfx36_11, ARRAY_COUNT(sRhyperiorGfx36_11)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx37_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_37_1.4bpp");
@@ -1542,22 +1782,49 @@ static const ax_sprite sRhyperiorSprites37[] = {
 };
 static const u8 sRhyperiorGfx38_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_38_1.4bpp");
 static const u8 sRhyperiorGfx38_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_38_3.4bpp");
+static const u8 sRhyperiorGfx38_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_38_5.4bpp");
+static const u8 sRhyperiorGfx38_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_38_7.4bpp");
+static const u8 sRhyperiorGfx38_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_38_9.4bpp");
+static const u8 sRhyperiorGfx38_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_38_11.4bpp");
 static const ax_sprite sRhyperiorSprites38[] = {
-	{NULL, 160},
+	{NULL, 352},
 	{sRhyperiorGfx38_1, ARRAY_COUNT(sRhyperiorGfx38_1)},
-	{NULL, 32},
+	{NULL, 160},
 	{sRhyperiorGfx38_3, ARRAY_COUNT(sRhyperiorGfx38_3)},
-	{NULL, 192},
+	{NULL, 64},
+	{sRhyperiorGfx38_5, ARRAY_COUNT(sRhyperiorGfx38_5)},
+	{NULL, 64},
+	{sRhyperiorGfx38_7, ARRAY_COUNT(sRhyperiorGfx38_7)},
+	{NULL, 96},
+	{sRhyperiorGfx38_9, ARRAY_COUNT(sRhyperiorGfx38_9)},
+	{NULL, 128},
+	{sRhyperiorGfx38_11, ARRAY_COUNT(sRhyperiorGfx38_11)},
+	{NULL, 384},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx39_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_39_1.4bpp");
 static const u8 sRhyperiorGfx39_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_39_3.4bpp");
+static const u8 sRhyperiorGfx39_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_39_5.4bpp");
+static const u8 sRhyperiorGfx39_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_39_7.4bpp");
+static const u8 sRhyperiorGfx39_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_39_9.4bpp");
+static const u8 sRhyperiorGfx39_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_39_11.4bpp");
+static const u8 sRhyperiorGfx39_13[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_39_13.4bpp");
 static const ax_sprite sRhyperiorSprites39[] = {
-	{NULL, 160},
+	{NULL, 352},
 	{sRhyperiorGfx39_1, ARRAY_COUNT(sRhyperiorGfx39_1)},
-	{NULL, 32},
-	{sRhyperiorGfx39_3, ARRAY_COUNT(sRhyperiorGfx39_3)},
 	{NULL, 128},
+	{sRhyperiorGfx39_3, ARRAY_COUNT(sRhyperiorGfx39_3)},
+	{NULL, 64},
+	{sRhyperiorGfx39_5, ARRAY_COUNT(sRhyperiorGfx39_5)},
+	{NULL, 96},
+	{sRhyperiorGfx39_7, ARRAY_COUNT(sRhyperiorGfx39_7)},
+	{NULL, 64},
+	{sRhyperiorGfx39_9, ARRAY_COUNT(sRhyperiorGfx39_9)},
+	{NULL, 64},
+	{sRhyperiorGfx39_11, ARRAY_COUNT(sRhyperiorGfx39_11)},
+	{NULL, 32},
+	{sRhyperiorGfx39_13, ARRAY_COUNT(sRhyperiorGfx39_13)},
+	{NULL, 320},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx40_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_40_1.4bpp");
@@ -1578,58 +1845,112 @@ static const ax_sprite sRhyperiorSprites40[] = {
 };
 static const u8 sRhyperiorGfx41_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_41_1.4bpp");
 static const u8 sRhyperiorGfx41_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_41_3.4bpp");
+static const u8 sRhyperiorGfx41_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_41_5.4bpp");
+static const u8 sRhyperiorGfx41_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_41_7.4bpp");
+static const u8 sRhyperiorGfx41_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_41_9.4bpp");
+static const u8 sRhyperiorGfx41_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_41_11.4bpp");
 static const ax_sprite sRhyperiorSprites41[] = {
-	{NULL, 128},
+	{NULL, 288},
 	{sRhyperiorGfx41_1, ARRAY_COUNT(sRhyperiorGfx41_1)},
-	{NULL, 32},
+	{NULL, 128},
 	{sRhyperiorGfx41_3, ARRAY_COUNT(sRhyperiorGfx41_3)},
-	{NULL, 192},
+	{NULL, 96},
+	{sRhyperiorGfx41_5, ARRAY_COUNT(sRhyperiorGfx41_5)},
+	{NULL, 96},
+	{sRhyperiorGfx41_7, ARRAY_COUNT(sRhyperiorGfx41_7)},
+	{NULL, 96},
+	{sRhyperiorGfx41_9, ARRAY_COUNT(sRhyperiorGfx41_9)},
+	{NULL, 128},
+	{sRhyperiorGfx41_11, ARRAY_COUNT(sRhyperiorGfx41_11)},
+	{NULL, 384},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx42_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_42_1.4bpp");
+static const u8 sRhyperiorGfx42_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_42_3.4bpp");
+static const u8 sRhyperiorGfx42_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_42_5.4bpp");
+static const u8 sRhyperiorGfx42_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_42_7.4bpp");
+static const u8 sRhyperiorGfx42_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_42_9.4bpp");
+static const u8 sRhyperiorGfx42_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_42_11.4bpp");
 static const ax_sprite sRhyperiorSprites42[] = {
-	{NULL, 128},
+	{NULL, 320},
 	{sRhyperiorGfx42_1, ARRAY_COUNT(sRhyperiorGfx42_1)},
+	{NULL, 96},
+	{sRhyperiorGfx42_3, ARRAY_COUNT(sRhyperiorGfx42_3)},
+	{NULL, 64},
+	{sRhyperiorGfx42_5, ARRAY_COUNT(sRhyperiorGfx42_5)},
+	{NULL, 64},
+	{sRhyperiorGfx42_7, ARRAY_COUNT(sRhyperiorGfx42_7)},
+	{NULL, 96},
+	{sRhyperiorGfx42_9, ARRAY_COUNT(sRhyperiorGfx42_9)},
 	{NULL, 128},
+	{sRhyperiorGfx42_11, ARRAY_COUNT(sRhyperiorGfx42_11)},
+	{NULL, 320},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx43_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_43_1.4bpp");
 static const u8 sRhyperiorGfx43_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_43_3.4bpp");
 static const u8 sRhyperiorGfx43_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_43_5.4bpp");
+static const u8 sRhyperiorGfx43_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_43_7.4bpp");
+static const u8 sRhyperiorGfx43_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_43_9.4bpp");
+static const u8 sRhyperiorGfx43_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_43_11.4bpp");
 static const ax_sprite sRhyperiorSprites43[] = {
-	{NULL, 128},
+	{NULL, 320},
 	{sRhyperiorGfx43_1, ARRAY_COUNT(sRhyperiorGfx43_1)},
-	{NULL, 32},
+	{NULL, 160},
 	{sRhyperiorGfx43_3, ARRAY_COUNT(sRhyperiorGfx43_3)},
-	{NULL, 64},
+	{NULL, 96},
 	{sRhyperiorGfx43_5, ARRAY_COUNT(sRhyperiorGfx43_5)},
-	{NULL, 128},
+	{NULL, 96},
+	{sRhyperiorGfx43_7, ARRAY_COUNT(sRhyperiorGfx43_7)},
+	{NULL, 96},
+	{sRhyperiorGfx43_9, ARRAY_COUNT(sRhyperiorGfx43_9)},
+	{NULL, 160},
+	{sRhyperiorGfx43_11, ARRAY_COUNT(sRhyperiorGfx43_11)},
+	{NULL, 320},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx44_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_44_1.4bpp");
 static const u8 sRhyperiorGfx44_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_44_3.4bpp");
 static const u8 sRhyperiorGfx44_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_44_5.4bpp");
+static const u8 sRhyperiorGfx44_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_44_7.4bpp");
+static const u8 sRhyperiorGfx44_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_44_9.4bpp");
+static const u8 sRhyperiorGfx44_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_44_11.4bpp");
 static const ax_sprite sRhyperiorSprites44[] = {
-	{NULL, 160},
+	{NULL, 352},
 	{sRhyperiorGfx44_1, ARRAY_COUNT(sRhyperiorGfx44_1)},
-	{NULL, 64},
+	{NULL, 192},
 	{sRhyperiorGfx44_3, ARRAY_COUNT(sRhyperiorGfx44_3)},
-	{NULL, 32},
-	{sRhyperiorGfx44_5, ARRAY_COUNT(sRhyperiorGfx44_5)},
 	{NULL, 128},
+	{sRhyperiorGfx44_5, ARRAY_COUNT(sRhyperiorGfx44_5)},
+	{NULL, 64},
+	{sRhyperiorGfx44_7, ARRAY_COUNT(sRhyperiorGfx44_7)},
+	{NULL, 128},
+	{sRhyperiorGfx44_9, ARRAY_COUNT(sRhyperiorGfx44_9)},
+	{NULL, 128},
+	{sRhyperiorGfx44_11, ARRAY_COUNT(sRhyperiorGfx44_11)},
+	{NULL, 288},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx45_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_45_1.4bpp");
 static const u8 sRhyperiorGfx45_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_45_3.4bpp");
 static const u8 sRhyperiorGfx45_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_45_5.4bpp");
+static const u8 sRhyperiorGfx45_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_45_7.4bpp");
+static const u8 sRhyperiorGfx45_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_45_9.4bpp");
+static const u8 sRhyperiorGfx45_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_45_11.4bpp");
 static const ax_sprite sRhyperiorSprites45[] = {
-	{NULL, 160},
+	{NULL, 352},
 	{sRhyperiorGfx45_1, ARRAY_COUNT(sRhyperiorGfx45_1)},
-	{NULL, 32},
+	{NULL, 96},
 	{sRhyperiorGfx45_3, ARRAY_COUNT(sRhyperiorGfx45_3)},
-	{NULL, 32},
-	{sRhyperiorGfx45_5, ARRAY_COUNT(sRhyperiorGfx45_5)},
 	{NULL, 128},
+	{sRhyperiorGfx45_5, ARRAY_COUNT(sRhyperiorGfx45_5)},
+	{NULL, 64},
+	{sRhyperiorGfx45_7, ARRAY_COUNT(sRhyperiorGfx45_7)},
+	{NULL, 64},
+	{sRhyperiorGfx45_9, ARRAY_COUNT(sRhyperiorGfx45_9)},
+	{NULL, 128},
+	{sRhyperiorGfx45_11, ARRAY_COUNT(sRhyperiorGfx45_11)},
+	{NULL, 320},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx46_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_46_1.4bpp");
@@ -1651,24 +1972,45 @@ static const ax_sprite sRhyperiorSprites46[] = {
 static const u8 sRhyperiorGfx47_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_47_1.4bpp");
 static const u8 sRhyperiorGfx47_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_47_3.4bpp");
 static const u8 sRhyperiorGfx47_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_47_5.4bpp");
+static const u8 sRhyperiorGfx47_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_47_7.4bpp");
+static const u8 sRhyperiorGfx47_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_47_9.4bpp");
+static const u8 sRhyperiorGfx47_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_47_11.4bpp");
 static const ax_sprite sRhyperiorSprites47[] = {
-	{NULL, 160},
+	{NULL, 352},
 	{sRhyperiorGfx47_1, ARRAY_COUNT(sRhyperiorGfx47_1)},
-	{NULL, 32},
+	{NULL, 128},
 	{sRhyperiorGfx47_3, ARRAY_COUNT(sRhyperiorGfx47_3)},
-	{NULL, 64},
+	{NULL, 96},
 	{sRhyperiorGfx47_5, ARRAY_COUNT(sRhyperiorGfx47_5)},
+	{NULL, 96},
+	{sRhyperiorGfx47_7, ARRAY_COUNT(sRhyperiorGfx47_7)},
+	{NULL, 96},
+	{sRhyperiorGfx47_9, ARRAY_COUNT(sRhyperiorGfx47_9)},
 	{NULL, 160},
+	{sRhyperiorGfx47_11, ARRAY_COUNT(sRhyperiorGfx47_11)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx48_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_48_1.4bpp");
 static const u8 sRhyperiorGfx48_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_48_3.4bpp");
+static const u8 sRhyperiorGfx48_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_48_5.4bpp");
+static const u8 sRhyperiorGfx48_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_48_7.4bpp");
+static const u8 sRhyperiorGfx48_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_48_9.4bpp");
+static const u8 sRhyperiorGfx48_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_48_11.4bpp");
 static const ax_sprite sRhyperiorSprites48[] = {
-	{NULL, 192},
+	{NULL, 384},
 	{sRhyperiorGfx48_1, ARRAY_COUNT(sRhyperiorGfx48_1)},
-	{NULL, 32},
-	{sRhyperiorGfx48_3, ARRAY_COUNT(sRhyperiorGfx48_3)},
 	{NULL, 128},
+	{sRhyperiorGfx48_3, ARRAY_COUNT(sRhyperiorGfx48_3)},
+	{NULL, 64},
+	{sRhyperiorGfx48_5, ARRAY_COUNT(sRhyperiorGfx48_5)},
+	{NULL, 96},
+	{sRhyperiorGfx48_7, ARRAY_COUNT(sRhyperiorGfx48_7)},
+	{NULL, 128},
+	{sRhyperiorGfx48_9, ARRAY_COUNT(sRhyperiorGfx48_9)},
+	{NULL, 128},
+	{sRhyperiorGfx48_11, ARRAY_COUNT(sRhyperiorGfx48_11)},
+	{NULL, 320},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx49_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_49_1.4bpp");
@@ -1690,14 +2032,23 @@ static const ax_sprite sRhyperiorSprites49[] = {
 static const u8 sRhyperiorGfx50_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_50_1.4bpp");
 static const u8 sRhyperiorGfx50_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_50_3.4bpp");
 static const u8 sRhyperiorGfx50_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_50_5.4bpp");
+static const u8 sRhyperiorGfx50_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_50_7.4bpp");
+static const u8 sRhyperiorGfx50_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_50_9.4bpp");
+static const u8 sRhyperiorGfx50_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_50_11.4bpp");
 static const ax_sprite sRhyperiorSprites50[] = {
-	{NULL, 192},
+	{NULL, 384},
 	{sRhyperiorGfx50_1, ARRAY_COUNT(sRhyperiorGfx50_1)},
-	{NULL, 32},
-	{sRhyperiorGfx50_3, ARRAY_COUNT(sRhyperiorGfx50_3)},
-	{NULL, 32},
-	{sRhyperiorGfx50_5, ARRAY_COUNT(sRhyperiorGfx50_5)},
 	{NULL, 160},
+	{sRhyperiorGfx50_3, ARRAY_COUNT(sRhyperiorGfx50_3)},
+	{NULL, 64},
+	{sRhyperiorGfx50_5, ARRAY_COUNT(sRhyperiorGfx50_5)},
+	{NULL, 64},
+	{sRhyperiorGfx50_7, ARRAY_COUNT(sRhyperiorGfx50_7)},
+	{NULL, 128},
+	{sRhyperiorGfx50_9, ARRAY_COUNT(sRhyperiorGfx50_9)},
+	{NULL, 160},
+	{sRhyperiorGfx50_11, ARRAY_COUNT(sRhyperiorGfx50_11)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx51_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_51_1.4bpp");
@@ -1719,14 +2070,23 @@ static const ax_sprite sRhyperiorSprites51[] = {
 static const u8 sRhyperiorGfx52_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_52_1.4bpp");
 static const u8 sRhyperiorGfx52_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_52_3.4bpp");
 static const u8 sRhyperiorGfx52_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_52_5.4bpp");
+static const u8 sRhyperiorGfx52_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_52_7.4bpp");
+static const u8 sRhyperiorGfx52_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_52_9.4bpp");
+static const u8 sRhyperiorGfx52_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_52_11.4bpp");
 static const ax_sprite sRhyperiorSprites52[] = {
-	{NULL, 192},
+	{NULL, 384},
 	{sRhyperiorGfx52_1, ARRAY_COUNT(sRhyperiorGfx52_1)},
-	{NULL, 64},
+	{NULL, 192},
 	{sRhyperiorGfx52_3, ARRAY_COUNT(sRhyperiorGfx52_3)},
-	{NULL, 32},
+	{NULL, 96},
 	{sRhyperiorGfx52_5, ARRAY_COUNT(sRhyperiorGfx52_5)},
 	{NULL, 128},
+	{sRhyperiorGfx52_7, ARRAY_COUNT(sRhyperiorGfx52_7)},
+	{NULL, 64},
+	{sRhyperiorGfx52_9, ARRAY_COUNT(sRhyperiorGfx52_9)},
+	{NULL, 128},
+	{sRhyperiorGfx52_11, ARRAY_COUNT(sRhyperiorGfx52_11)},
+	{NULL, 320},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx53_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_53_1.4bpp");
@@ -1747,12 +2107,24 @@ static const ax_sprite sRhyperiorSprites53[] = {
 };
 static const u8 sRhyperiorGfx54_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_54_1.4bpp");
 static const u8 sRhyperiorGfx54_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_54_3.4bpp");
+static const u8 sRhyperiorGfx54_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_54_5.4bpp");
+static const u8 sRhyperiorGfx54_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_54_7.4bpp");
+static const u8 sRhyperiorGfx54_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_54_9.4bpp");
+static const u8 sRhyperiorGfx54_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_54_11.4bpp");
 static const ax_sprite sRhyperiorSprites54[] = {
-	{NULL, 160},
+	{NULL, 352},
 	{sRhyperiorGfx54_1, ARRAY_COUNT(sRhyperiorGfx54_1)},
-	{NULL, 32},
+	{NULL, 160},
 	{sRhyperiorGfx54_3, ARRAY_COUNT(sRhyperiorGfx54_3)},
+	{NULL, 96},
+	{sRhyperiorGfx54_5, ARRAY_COUNT(sRhyperiorGfx54_5)},
+	{NULL, 64},
+	{sRhyperiorGfx54_7, ARRAY_COUNT(sRhyperiorGfx54_7)},
+	{NULL, 96},
+	{sRhyperiorGfx54_9, ARRAY_COUNT(sRhyperiorGfx54_9)},
 	{NULL, 128},
+	{sRhyperiorGfx54_11, ARRAY_COUNT(sRhyperiorGfx54_11)},
+	{NULL, 320},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx55_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_55_1.4bpp");
@@ -1774,56 +2146,89 @@ static const ax_sprite sRhyperiorSprites55[] = {
 static const u8 sRhyperiorGfx56_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_56_1.4bpp");
 static const u8 sRhyperiorGfx56_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_56_3.4bpp");
 static const u8 sRhyperiorGfx56_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_56_5.4bpp");
+static const u8 sRhyperiorGfx56_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_56_7.4bpp");
+static const u8 sRhyperiorGfx56_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_56_9.4bpp");
+static const u8 sRhyperiorGfx56_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_56_11.4bpp");
 static const ax_sprite sRhyperiorSprites56[] = {
-	{NULL, 160},
+	{NULL, 352},
 	{sRhyperiorGfx56_1, ARRAY_COUNT(sRhyperiorGfx56_1)},
-	{NULL, 32},
+	{NULL, 128},
 	{sRhyperiorGfx56_3, ARRAY_COUNT(sRhyperiorGfx56_3)},
-	{NULL, 32},
+	{NULL, 64},
 	{sRhyperiorGfx56_5, ARRAY_COUNT(sRhyperiorGfx56_5)},
+	{NULL, 64},
+	{sRhyperiorGfx56_7, ARRAY_COUNT(sRhyperiorGfx56_7)},
+	{NULL, 96},
+	{sRhyperiorGfx56_9, ARRAY_COUNT(sRhyperiorGfx56_9)},
 	{NULL, 160},
+	{sRhyperiorGfx56_11, ARRAY_COUNT(sRhyperiorGfx56_11)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx57_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_57_1.4bpp");
 static const u8 sRhyperiorGfx57_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_57_3.4bpp");
 static const u8 sRhyperiorGfx57_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_57_5.4bpp");
+static const u8 sRhyperiorGfx57_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_57_7.4bpp");
+static const u8 sRhyperiorGfx57_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_57_9.4bpp");
+static const u8 sRhyperiorGfx57_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_57_11.4bpp");
 static const ax_sprite sRhyperiorSprites57[] = {
-	{NULL, 192},
+	{NULL, 384},
 	{sRhyperiorGfx57_1, ARRAY_COUNT(sRhyperiorGfx57_1)},
-	{NULL, 64},
+	{NULL, 192},
 	{sRhyperiorGfx57_3, ARRAY_COUNT(sRhyperiorGfx57_3)},
-	{NULL, 32},
+	{NULL, 96},
 	{sRhyperiorGfx57_5, ARRAY_COUNT(sRhyperiorGfx57_5)},
-	{NULL, 160},
+	{NULL, 64},
+	{sRhyperiorGfx57_7, ARRAY_COUNT(sRhyperiorGfx57_7)},
+	{NULL, 64},
+	{sRhyperiorGfx57_9, ARRAY_COUNT(sRhyperiorGfx57_9)},
+	{NULL, 128},
+	{sRhyperiorGfx57_11, ARRAY_COUNT(sRhyperiorGfx57_11)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx58_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_58_1.4bpp");
 static const u8 sRhyperiorGfx58_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_58_3.4bpp");
 static const u8 sRhyperiorGfx58_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_58_5.4bpp");
+static const u8 sRhyperiorGfx58_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_58_7.4bpp");
+static const u8 sRhyperiorGfx58_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_58_9.4bpp");
+static const u8 sRhyperiorGfx58_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_58_11.4bpp");
 static const ax_sprite sRhyperiorSprites58[] = {
-	{NULL, 160},
+	{NULL, 352},
 	{sRhyperiorGfx58_1, ARRAY_COUNT(sRhyperiorGfx58_1)},
-	{NULL, 64},
+	{NULL, 192},
 	{sRhyperiorGfx58_3, ARRAY_COUNT(sRhyperiorGfx58_3)},
-	{NULL, 32},
+	{NULL, 96},
 	{sRhyperiorGfx58_5, ARRAY_COUNT(sRhyperiorGfx58_5)},
-	{NULL, 128},
+	{NULL, 96},
+	{sRhyperiorGfx58_7, ARRAY_COUNT(sRhyperiorGfx58_7)},
+	{NULL, 96},
+	{sRhyperiorGfx58_9, ARRAY_COUNT(sRhyperiorGfx58_9)},
+	{NULL, 160},
+	{sRhyperiorGfx58_11, ARRAY_COUNT(sRhyperiorGfx58_11)},
+	{NULL, 320},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx59_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_59_1.4bpp");
 static const u8 sRhyperiorGfx59_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_59_3.4bpp");
 static const u8 sRhyperiorGfx59_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_59_5.4bpp");
 static const u8 sRhyperiorGfx59_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_59_7.4bpp");
+static const u8 sRhyperiorGfx59_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_59_9.4bpp");
+static const u8 sRhyperiorGfx59_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_59_11.4bpp");
 static const ax_sprite sRhyperiorSprites59[] = {
-	{NULL, 160},
+	{NULL, 352},
 	{sRhyperiorGfx59_1, ARRAY_COUNT(sRhyperiorGfx59_1)},
-	{NULL, 64},
+	{NULL, 160},
 	{sRhyperiorGfx59_3, ARRAY_COUNT(sRhyperiorGfx59_3)},
-	{NULL, 32},
+	{NULL, 160},
 	{sRhyperiorGfx59_5, ARRAY_COUNT(sRhyperiorGfx59_5)},
-	{NULL, 32},
+	{NULL, 128},
 	{sRhyperiorGfx59_7, ARRAY_COUNT(sRhyperiorGfx59_7)},
 	{NULL, 128},
+	{sRhyperiorGfx59_9, ARRAY_COUNT(sRhyperiorGfx59_9)},
+	{NULL, 128},
+	{sRhyperiorGfx59_11, ARRAY_COUNT(sRhyperiorGfx59_11)},
+	{NULL, 320},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx60_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_60_1.4bpp");
@@ -1845,14 +2250,23 @@ static const ax_sprite sRhyperiorSprites60[] = {
 static const u8 sRhyperiorGfx61_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_61_1.4bpp");
 static const u8 sRhyperiorGfx61_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_61_3.4bpp");
 static const u8 sRhyperiorGfx61_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_61_5.4bpp");
+static const u8 sRhyperiorGfx61_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_61_7.4bpp");
+static const u8 sRhyperiorGfx61_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_61_9.4bpp");
+static const u8 sRhyperiorGfx61_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_61_11.4bpp");
 static const ax_sprite sRhyperiorSprites61[] = {
-	{NULL, 192},
+	{NULL, 384},
 	{sRhyperiorGfx61_1, ARRAY_COUNT(sRhyperiorGfx61_1)},
-	{NULL, 32},
+	{NULL, 128},
 	{sRhyperiorGfx61_3, ARRAY_COUNT(sRhyperiorGfx61_3)},
-	{NULL, 64},
+	{NULL, 96},
 	{sRhyperiorGfx61_5, ARRAY_COUNT(sRhyperiorGfx61_5)},
+	{NULL, 96},
+	{sRhyperiorGfx61_7, ARRAY_COUNT(sRhyperiorGfx61_7)},
+	{NULL, 96},
+	{sRhyperiorGfx61_9, ARRAY_COUNT(sRhyperiorGfx61_9)},
 	{NULL, 160},
+	{sRhyperiorGfx61_11, ARRAY_COUNT(sRhyperiorGfx61_11)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx62_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_62_1.4bpp");
@@ -1923,16 +2337,22 @@ static const u8 sRhyperiorGfx66_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprit
 static const u8 sRhyperiorGfx66_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_66_3.4bpp");
 static const u8 sRhyperiorGfx66_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_66_5.4bpp");
 static const u8 sRhyperiorGfx66_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_66_7.4bpp");
+static const u8 sRhyperiorGfx66_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_66_9.4bpp");
+static const u8 sRhyperiorGfx66_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_66_11.4bpp");
 static const ax_sprite sRhyperiorSprites66[] = {
-	{NULL, 96},
+	{NULL, 384},
 	{sRhyperiorGfx66_1, ARRAY_COUNT(sRhyperiorGfx66_1)},
-	{NULL, 96},
+	{NULL, 192},
 	{sRhyperiorGfx66_3, ARRAY_COUNT(sRhyperiorGfx66_3)},
-	{NULL, 64},
-	{sRhyperiorGfx66_5, ARRAY_COUNT(sRhyperiorGfx66_5)},
 	{NULL, 96},
-	{sRhyperiorGfx66_7, ARRAY_COUNT(sRhyperiorGfx66_7)},
+	{sRhyperiorGfx66_5, ARRAY_COUNT(sRhyperiorGfx66_5)},
 	{NULL, 64},
+	{sRhyperiorGfx66_7, ARRAY_COUNT(sRhyperiorGfx66_7)},
+	{NULL, 96},
+	{sRhyperiorGfx66_9, ARRAY_COUNT(sRhyperiorGfx66_9)},
+	{NULL, 160},
+	{sRhyperiorGfx66_11, ARRAY_COUNT(sRhyperiorGfx66_11)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx67_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_67_1.4bpp");
@@ -1988,30 +2408,69 @@ static const ax_sprite sRhyperiorSprites70[] = {
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx71_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_71_1.4bpp");
+static const u8 sRhyperiorGfx71_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_71_3.4bpp");
+static const u8 sRhyperiorGfx71_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_71_5.4bpp");
+static const u8 sRhyperiorGfx71_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_71_7.4bpp");
+static const u8 sRhyperiorGfx71_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_71_9.4bpp");
+static const u8 sRhyperiorGfx71_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_71_11.4bpp");
 static const ax_sprite sRhyperiorSprites71[] = {
-	{NULL, 128},
+	{NULL, 320},
 	{sRhyperiorGfx71_1, ARRAY_COUNT(sRhyperiorGfx71_1)},
+	{NULL, 96},
+	{sRhyperiorGfx71_3, ARRAY_COUNT(sRhyperiorGfx71_3)},
+	{NULL, 64},
+	{sRhyperiorGfx71_5, ARRAY_COUNT(sRhyperiorGfx71_5)},
+	{NULL, 64},
+	{sRhyperiorGfx71_7, ARRAY_COUNT(sRhyperiorGfx71_7)},
+	{NULL, 96},
+	{sRhyperiorGfx71_9, ARRAY_COUNT(sRhyperiorGfx71_9)},
 	{NULL, 128},
+	{sRhyperiorGfx71_11, ARRAY_COUNT(sRhyperiorGfx71_11)},
+	{NULL, 320},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx72_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_72_1.4bpp");
 static const u8 sRhyperiorGfx72_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_72_3.4bpp");
+static const u8 sRhyperiorGfx72_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_72_5.4bpp");
+static const u8 sRhyperiorGfx72_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_72_7.4bpp");
+static const u8 sRhyperiorGfx72_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_72_9.4bpp");
+static const u8 sRhyperiorGfx72_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_72_11.4bpp");
 static const ax_sprite sRhyperiorSprites72[] = {
-	{NULL, 128},
+	{NULL, 320},
 	{sRhyperiorGfx72_1, ARRAY_COUNT(sRhyperiorGfx72_1)},
-	{NULL, 64},
+	{NULL, 160},
 	{sRhyperiorGfx72_3, ARRAY_COUNT(sRhyperiorGfx72_3)},
-	{NULL, 128},
+	{NULL, 96},
+	{sRhyperiorGfx72_5, ARRAY_COUNT(sRhyperiorGfx72_5)},
+	{NULL, 96},
+	{sRhyperiorGfx72_7, ARRAY_COUNT(sRhyperiorGfx72_7)},
+	{NULL, 96},
+	{sRhyperiorGfx72_9, ARRAY_COUNT(sRhyperiorGfx72_9)},
+	{NULL, 96},
+	{sRhyperiorGfx72_11, ARRAY_COUNT(sRhyperiorGfx72_11)},
+	{NULL, 320},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx73_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_73_1.4bpp");
 static const u8 sRhyperiorGfx73_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_73_3.4bpp");
+static const u8 sRhyperiorGfx73_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_73_5.4bpp");
+static const u8 sRhyperiorGfx73_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_73_7.4bpp");
+static const u8 sRhyperiorGfx73_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_73_9.4bpp");
+static const u8 sRhyperiorGfx73_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_73_11.4bpp");
 static const ax_sprite sRhyperiorSprites73[] = {
-	{NULL, 128},
+	{NULL, 320},
 	{sRhyperiorGfx73_1, ARRAY_COUNT(sRhyperiorGfx73_1)},
-	{NULL, 64},
+	{NULL, 192},
 	{sRhyperiorGfx73_3, ARRAY_COUNT(sRhyperiorGfx73_3)},
 	{NULL, 128},
+	{sRhyperiorGfx73_5, ARRAY_COUNT(sRhyperiorGfx73_5)},
+	{NULL, 96},
+	{sRhyperiorGfx73_7, ARRAY_COUNT(sRhyperiorGfx73_7)},
+	{NULL, 96},
+	{sRhyperiorGfx73_9, ARRAY_COUNT(sRhyperiorGfx73_9)},
+	{NULL, 64},
+	{sRhyperiorGfx73_11, ARRAY_COUNT(sRhyperiorGfx73_11)},
+	{NULL, 320},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx74_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_74_1.4bpp");
@@ -2025,20 +2484,47 @@ static const ax_sprite sRhyperiorSprites74[] = {
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx75_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_75_1.4bpp");
+static const u8 sRhyperiorGfx75_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_75_3.4bpp");
+static const u8 sRhyperiorGfx75_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_75_5.4bpp");
+static const u8 sRhyperiorGfx75_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_75_7.4bpp");
+static const u8 sRhyperiorGfx75_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_75_9.4bpp");
+static const u8 sRhyperiorGfx75_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_75_11.4bpp");
 static const ax_sprite sRhyperiorSprites75[] = {
-	{NULL, 128},
+	{NULL, 320},
 	{sRhyperiorGfx75_1, ARRAY_COUNT(sRhyperiorGfx75_1)},
+	{NULL, 96},
+	{sRhyperiorGfx75_3, ARRAY_COUNT(sRhyperiorGfx75_3)},
+	{NULL, 64},
+	{sRhyperiorGfx75_5, ARRAY_COUNT(sRhyperiorGfx75_5)},
+	{NULL, 64},
+	{sRhyperiorGfx75_7, ARRAY_COUNT(sRhyperiorGfx75_7)},
+	{NULL, 96},
+	{sRhyperiorGfx75_9, ARRAY_COUNT(sRhyperiorGfx75_9)},
 	{NULL, 128},
+	{sRhyperiorGfx75_11, ARRAY_COUNT(sRhyperiorGfx75_11)},
+	{NULL, 320},
 	{NULL, 0}
 };
 static const u8 sRhyperiorGfx76_1[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_76_1.4bpp");
 static const u8 sRhyperiorGfx76_3[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_76_3.4bpp");
+static const u8 sRhyperiorGfx76_5[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_76_5.4bpp");
+static const u8 sRhyperiorGfx76_7[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_76_7.4bpp");
+static const u8 sRhyperiorGfx76_9[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_76_9.4bpp");
+static const u8 sRhyperiorGfx76_11[] = INCBIN_U8("graphics/ax/mon/rhyperior/sprite_76_11.4bpp");
 static const ax_sprite sRhyperiorSprites76[] = {
-	{NULL, 192},
+	{NULL, 384},
 	{sRhyperiorGfx76_1, ARRAY_COUNT(sRhyperiorGfx76_1)},
-	{NULL, 32},
+	{NULL, 160},
 	{sRhyperiorGfx76_3, ARRAY_COUNT(sRhyperiorGfx76_3)},
+	{NULL, 96},
+	{sRhyperiorGfx76_5, ARRAY_COUNT(sRhyperiorGfx76_5)},
 	{NULL, 128},
+	{sRhyperiorGfx76_7, ARRAY_COUNT(sRhyperiorGfx76_7)},
+	{NULL, 96},
+	{sRhyperiorGfx76_9, ARRAY_COUNT(sRhyperiorGfx76_9)},
+	{NULL, 96},
+	{sRhyperiorGfx76_11, ARRAY_COUNT(sRhyperiorGfx76_11)},
+	{NULL, 288},
 	{NULL, 0}
 };
 static const ax_anim sRhyperiorAnims_1_1[] = {

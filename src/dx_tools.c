@@ -1,4 +1,5 @@
 #include "global.h"
+#include "moves.h"
 
 #ifdef DX_DEBUG
 
@@ -473,6 +474,21 @@ static void ScenUnlockCamps(void)
         UnlockFriendArea(i);
 }
 
+// S13: only the leader's and partner's camps, as a new game has, so the shop has camps to sell (earlier
+// scenarios unlock them all)
+static void ScenLockCamps(void)
+{
+    Pokemon *leader = GetLeaderMon1(), *partner = GetPartnerMon2();
+    s32 i;
+
+    for (i = 1; i < FRIEND_AREA_COUNT; i++)
+        gFriendAreas[i] = FALSE;
+    if (leader != NULL)
+        UnlockFriendArea(GetFriendArea(leader->speciesNum));
+    if (partner != NULL)
+        UnlockFriendArea(GetFriendArea(partner->speciesNum));
+}
+
 static void ScenGo(s16 scriptDungeon, s32 floor)
 {
     DxRequestWarp(scriptDungeon, floor);
@@ -493,8 +509,11 @@ static void ScenApply(void)
     gDxForcePostgame = FALSE;
     gDxForceRecruit = FALSE;
     gDxWarpViaMap = FALSE;
+    gDxForceRematch = FALSE;
     gTeamInventoryRef->teamMoney = 20000;
-    if (n != 13)
+    if (n == 13)
+        ScenLockCamps();
+    else
         ScenUnlockCamps();
     if (leader != NULL)
         leader->heldItem.id = ITEM_NOTHING;
@@ -631,17 +650,28 @@ static void ScenApply(void)
             static const u8 items[] = {ITEM_APPLE, ITEM_APPLE, ITEM_APPLE, ITEM_ORAN_BERRY, ITEM_ORAN_BERRY};
             ScenTeam(NULL, 0, 1, TRUE);
             gDxForcePostgame = TRUE;
+            gDxForceRematch = TRUE; // even if Skarmory joined in an earlier run
             // the story fights are done: Mt. Steel, Sinister Woods, Mt. Thunder Peak (flags 0-5)
             gExclusiveMonPtr->cutsceneFlags[0] |= 0x3F;
             ScenToolbox(items, ARRAY_COUNT(items));
             ScenGo(SCRIPT_DUNGEON_MT_STEEL, 9);
             break;
         }
-        case 15: { // Fairy type: Gardevoir leads Clefairy against Wyvern Hill's Dratini and Bagon
+        case 15: { // Fairy type: Gardevoir (Charm, Moonlight) leads Clefairy (Sweet Kiss, Charm) against Wyvern Hill's Dratini and Bagon
             static const s16 team[] = {MONSTER_CLEFAIRY};
             static const u8 items[] = {ITEM_ORAN_BERRY, ITEM_ORAN_BERRY, ITEM_APPLE};
+            Pokemon *clefairy;
             ScenLeader(MONSTER_GARDEVOIR, 40);
-            ScenTeam(team, ARRAY_COUNT(team), 40, FALSE);
+            clefairy = ScenTeam(team, ARRAY_COUNT(team), 40, FALSE);
+            // the moves DX made Fairy-type
+            if (leader != NULL) {
+                InitPokemonMove(&leader->moves[2], MOVE_CHARM);
+                InitPokemonMove(&leader->moves[3], MOVE_MOONLIGHT);
+            }
+            if (clefairy != NULL) {
+                InitPokemonMove(&clefairy->moves[2], MOVE_SWEET_KISS);
+                InitPokemonMove(&clefairy->moves[3], MOVE_CHARM);
+            }
             ScenToolbox(items, ARRAY_COUNT(items));
             ScenGo(SCRIPT_DUNGEON_WYVERN_HILL, 1);
             break;

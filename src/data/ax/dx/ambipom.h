@@ -274,7 +274,7 @@ static const ax_pose sAmbipomPose68[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sAmbipomPose69[] = {
-	AX_POSE(26, OAM1(227, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 7)),
+	AX_POSE(26, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 7)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sAmbipomPose70[] = {
@@ -306,7 +306,7 @@ static const ax_pose sAmbipomPose76[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sAmbipomPose77[] = {
-	AX_POSE(26, OAM1(227, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 7)),
+	AX_POSE(26, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(243, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 7)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sAmbipomPose78[] = {
@@ -370,7 +370,7 @@ static const ax_pose sAmbipomPose92[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sAmbipomPose93[] = {
-	AX_POSE(36, OAM1(227, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 7)),
+	AX_POSE(36, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 7)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sAmbipomPose94[] = {
@@ -386,7 +386,7 @@ static const ax_pose sAmbipomPose96[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sAmbipomPose97[] = {
-	AX_POSE(40, OAM1(227, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 7)),
+	AX_POSE(40, OAM1(227, ST_OAM_H_RECTANGLE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 7)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sAmbipomPose98[] = {
@@ -434,7 +434,7 @@ static const ax_pose sAmbipomPose108[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sAmbipomPose109[] = {
-	AX_POSE(49, OAM1(227, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 7)),
+	AX_POSE(49, OAM1(227, ST_OAM_H_RECTANGLE, 1), OAM2(221, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 7)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sAmbipomPose110[] = {
@@ -454,7 +454,7 @@ static const ax_pose sAmbipomPose113[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sAmbipomPose114[] = {
-	AX_POSE(36, OAM1(227, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 7)),
+	AX_POSE(36, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 7)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sAmbipomPose115[] = {
@@ -1021,6 +1021,14 @@ static const ax_pose sAmbipomPose255[] = {
 	AX_POSE(5, OAM1(213, ST_OAM_SQUARE, 1), OAM2(246, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 7)),
 	AX_POSE_TERMINATOR
 };
+static const ax_pose sAmbipomPose256[] = {
+	AX_POSE(79, OAM1(227, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 7)),
+	AX_POSE_TERMINATOR
+};
+static const ax_pose sAmbipomPose257[] = {
+	AX_POSE(79, OAM1(227, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 7)),
+	AX_POSE_TERMINATOR
+};
 static const u8 sAmbipomGfx1[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_1.4bpp");
 static const ax_sprite sAmbipomSprites1[] = {
 	{sAmbipomGfx1, ARRAY_COUNT(sAmbipomGfx1)},
@@ -1234,12 +1242,15 @@ static const ax_sprite sAmbipomSprites26[] = {
 };
 static const u8 sAmbipomGfx27_1[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_27_1.4bpp");
 static const u8 sAmbipomGfx27_3[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_27_3.4bpp");
+static const u8 sAmbipomGfx27_5[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_27_5.4bpp");
 static const ax_sprite sAmbipomSprites27[] = {
-	{NULL, 32},
+	{NULL, 288},
 	{sAmbipomGfx27_1, ARRAY_COUNT(sAmbipomGfx27_1)},
 	{NULL, 64},
 	{sAmbipomGfx27_3, ARRAY_COUNT(sAmbipomGfx27_3)},
-	{NULL, 32},
+	{NULL, 64},
+	{sAmbipomGfx27_5, ARRAY_COUNT(sAmbipomGfx27_5)},
+	{NULL, 192},
 	{NULL, 0}
 };
 static const u8 sAmbipomGfx28[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_28.4bpp");
@@ -1300,11 +1311,15 @@ static const ax_sprite sAmbipomSprites36[] = {
 };
 static const u8 sAmbipomGfx37_1[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_37_1.4bpp");
 static const u8 sAmbipomGfx37_3[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_37_3.4bpp");
+static const u8 sAmbipomGfx37_5[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_37_5.4bpp");
 static const ax_sprite sAmbipomSprites37[] = {
-	{NULL, 32},
+	{NULL, 288},
 	{sAmbipomGfx37_1, ARRAY_COUNT(sAmbipomGfx37_1)},
 	{NULL, 64},
 	{sAmbipomGfx37_3, ARRAY_COUNT(sAmbipomGfx37_3)},
+	{NULL, 32},
+	{sAmbipomGfx37_5, ARRAY_COUNT(sAmbipomGfx37_5)},
+	{NULL, 192},
 	{NULL, 0}
 };
 static const u8 sAmbipomGfx38_1[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_38_1.4bpp");
@@ -1329,12 +1344,20 @@ static const ax_sprite sAmbipomSprites40[] = {
 	{sAmbipomGfx40_3, ARRAY_COUNT(sAmbipomGfx40_3)},
 	{NULL, 0}
 };
-static const u8 sAmbipomGfx41[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_41.4bpp");
-static const u8 sAmbipomGfx41_2[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_41_2.4bpp");
+static const u8 sAmbipomGfx41_1[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_41_1.4bpp");
+static const u8 sAmbipomGfx41_3[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_41_3.4bpp");
+static const u8 sAmbipomGfx41_5[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_41_5.4bpp");
+static const u8 sAmbipomGfx41_7[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_41_7.4bpp");
 static const ax_sprite sAmbipomSprites41[] = {
-	{sAmbipomGfx41, ARRAY_COUNT(sAmbipomGfx41)},
-	{NULL, 32},
-	{sAmbipomGfx41_2, ARRAY_COUNT(sAmbipomGfx41_2)},
+	{NULL, 64},
+	{sAmbipomGfx41_1, ARRAY_COUNT(sAmbipomGfx41_1)},
+	{NULL, 160},
+	{sAmbipomGfx41_3, ARRAY_COUNT(sAmbipomGfx41_3)},
+	{NULL, 128},
+	{sAmbipomGfx41_5, ARRAY_COUNT(sAmbipomGfx41_5)},
+	{NULL, 96},
+	{sAmbipomGfx41_7, ARRAY_COUNT(sAmbipomGfx41_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sAmbipomGfx42[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_42.4bpp");
@@ -1407,9 +1430,19 @@ static const ax_sprite sAmbipomSprites49[] = {
 	{NULL, 0}
 };
 static const u8 sAmbipomGfx50_1[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_50_1.4bpp");
+static const u8 sAmbipomGfx50_3[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_50_3.4bpp");
+static const u8 sAmbipomGfx50_5[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_50_5.4bpp");
+static const u8 sAmbipomGfx50_7[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_50_7.4bpp");
 static const ax_sprite sAmbipomSprites50[] = {
-	{NULL, 32},
+	{NULL, 96},
 	{sAmbipomGfx50_1, ARRAY_COUNT(sAmbipomGfx50_1)},
+	{NULL, 128},
+	{sAmbipomGfx50_3, ARRAY_COUNT(sAmbipomGfx50_3)},
+	{NULL, 128},
+	{sAmbipomGfx50_5, ARRAY_COUNT(sAmbipomGfx50_5)},
+	{NULL, 96},
+	{sAmbipomGfx50_7, ARRAY_COUNT(sAmbipomGfx50_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sAmbipomGfx51[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_51.4bpp");
@@ -1655,6 +1688,15 @@ static const ax_sprite sAmbipomSprites79[] = {
 	{NULL, 64},
 	{sAmbipomGfx79_4, ARRAY_COUNT(sAmbipomGfx79_4)},
 	{NULL, 32},
+	{NULL, 0}
+};
+static const u8 sAmbipomGfx80_1[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_80_1.4bpp");
+static const u8 sAmbipomGfx80_3[] = INCBIN_U8("graphics/ax/mon/ambipom/sprite_80_3.4bpp");
+static const ax_sprite sAmbipomSprites80[] = {
+	{NULL, 32},
+	{sAmbipomGfx80_1, ARRAY_COUNT(sAmbipomGfx80_1)},
+	{NULL, 64},
+	{sAmbipomGfx80_3, ARRAY_COUNT(sAmbipomGfx80_3)},
 	{NULL, 0}
 };
 static const ax_anim sAmbipomAnims_1_1[] = {
@@ -2898,16 +2940,16 @@ static const ax_anim sAmbipomAnims_12_2[] = {
 	AX_ANIM_TERMINATOR
 };
 static const ax_anim sAmbipomAnims_12_3[] = {
-	{ .frames = 2, .unkFlags = 0, .poseId = 92, .offset = {0, 0}, .shadow = {0, 0} },
-	{ .frames = 2, .unkFlags = 0, .poseId = 92, .offset = {0, 0}, .shadow = {0, 0} },
-	{ .frames = 2, .unkFlags = 0, .poseId = 92, .offset = {0, 0}, .shadow = {0, 0} },
-	{ .frames = 2, .unkFlags = 0, .poseId = 92, .offset = {0, 0}, .shadow = {0, 0} },
-	{ .frames = 2, .unkFlags = 0, .poseId = 92, .offset = {0, 0}, .shadow = {0, 0} },
-	{ .frames = 2, .unkFlags = 0, .poseId = 92, .offset = {0, 0}, .shadow = {0, 0} },
-	{ .frames = 2, .unkFlags = 0, .poseId = 92, .offset = {0, 0}, .shadow = {0, 0} },
-	{ .frames = 2, .unkFlags = 0, .poseId = 92, .offset = {0, 0}, .shadow = {0, 0} },
-	{ .frames = 2, .unkFlags = 0, .poseId = 92, .offset = {0, 0}, .shadow = {0, 0} },
-	{ .frames = 2, .unkFlags = 0, .poseId = 92, .offset = {0, 0}, .shadow = {0, 0} },
+	{ .frames = 2, .unkFlags = 0, .poseId = 255, .offset = {0, 0}, .shadow = {0, 0} },
+	{ .frames = 2, .unkFlags = 0, .poseId = 255, .offset = {0, 0}, .shadow = {0, 0} },
+	{ .frames = 2, .unkFlags = 0, .poseId = 255, .offset = {0, 0}, .shadow = {0, 0} },
+	{ .frames = 2, .unkFlags = 0, .poseId = 255, .offset = {0, 0}, .shadow = {0, 0} },
+	{ .frames = 2, .unkFlags = 0, .poseId = 255, .offset = {0, 0}, .shadow = {0, 0} },
+	{ .frames = 2, .unkFlags = 0, .poseId = 255, .offset = {0, 0}, .shadow = {0, 0} },
+	{ .frames = 2, .unkFlags = 0, .poseId = 255, .offset = {0, 0}, .shadow = {0, 0} },
+	{ .frames = 2, .unkFlags = 0, .poseId = 255, .offset = {0, 0}, .shadow = {0, 0} },
+	{ .frames = 2, .unkFlags = 0, .poseId = 255, .offset = {0, 0}, .shadow = {0, 0} },
+	{ .frames = 2, .unkFlags = 0, .poseId = 255, .offset = {0, 0}, .shadow = {0, 0} },
 	AX_ANIM_TERMINATOR
 };
 static const ax_anim sAmbipomAnims_12_4[] = {
@@ -2950,16 +2992,16 @@ static const ax_anim sAmbipomAnims_12_6[] = {
 	AX_ANIM_TERMINATOR
 };
 static const ax_anim sAmbipomAnims_12_7[] = {
-	{ .frames = 2, .unkFlags = 0, .poseId = 113, .offset = {0, 0}, .shadow = {0, 0} },
-	{ .frames = 2, .unkFlags = 0, .poseId = 113, .offset = {0, 0}, .shadow = {0, 0} },
-	{ .frames = 2, .unkFlags = 0, .poseId = 113, .offset = {0, 0}, .shadow = {0, 0} },
-	{ .frames = 2, .unkFlags = 0, .poseId = 113, .offset = {0, 0}, .shadow = {0, 0} },
-	{ .frames = 2, .unkFlags = 0, .poseId = 113, .offset = {0, 0}, .shadow = {0, 0} },
-	{ .frames = 2, .unkFlags = 0, .poseId = 113, .offset = {0, 0}, .shadow = {0, 0} },
-	{ .frames = 2, .unkFlags = 0, .poseId = 113, .offset = {0, 0}, .shadow = {0, 0} },
-	{ .frames = 2, .unkFlags = 0, .poseId = 113, .offset = {0, 0}, .shadow = {0, 0} },
-	{ .frames = 2, .unkFlags = 0, .poseId = 113, .offset = {0, 0}, .shadow = {0, 0} },
-	{ .frames = 2, .unkFlags = 0, .poseId = 113, .offset = {0, 0}, .shadow = {0, 0} },
+	{ .frames = 2, .unkFlags = 0, .poseId = 256, .offset = {0, 0}, .shadow = {0, 0} },
+	{ .frames = 2, .unkFlags = 0, .poseId = 256, .offset = {0, 0}, .shadow = {0, 0} },
+	{ .frames = 2, .unkFlags = 0, .poseId = 256, .offset = {0, 0}, .shadow = {0, 0} },
+	{ .frames = 2, .unkFlags = 0, .poseId = 256, .offset = {0, 0}, .shadow = {0, 0} },
+	{ .frames = 2, .unkFlags = 0, .poseId = 256, .offset = {0, 0}, .shadow = {0, 0} },
+	{ .frames = 2, .unkFlags = 0, .poseId = 256, .offset = {0, 0}, .shadow = {0, 0} },
+	{ .frames = 2, .unkFlags = 0, .poseId = 256, .offset = {0, 0}, .shadow = {0, 0} },
+	{ .frames = 2, .unkFlags = 0, .poseId = 256, .offset = {0, 0}, .shadow = {0, 0} },
+	{ .frames = 2, .unkFlags = 0, .poseId = 256, .offset = {0, 0}, .shadow = {0, 0} },
+	{ .frames = 2, .unkFlags = 0, .poseId = 256, .offset = {0, 0}, .shadow = {0, 0} },
 	AX_ANIM_TERMINATOR
 };
 static const ax_anim sAmbipomAnims_12_8[] = {
@@ -3347,6 +3389,8 @@ static const ax_pose *const sAxPosesAmbipom[] = {
 	sAmbipomPose253,
 	sAmbipomPose254,
 	sAmbipomPose255,
+	sAmbipomPose256,
+	sAmbipomPose257,
 };
 static const struct PositionSets sAxPositionsAmbipom[] = {
 	[0] = { .set = { {-1, -10}, {-7, -8}, {6, -8}, {-1, -8} } },
@@ -3604,6 +3648,8 @@ static const struct PositionSets sAxPositionsAmbipom[] = {
 	[252] = { .set = { {-4, -35}, {-5, -34}, {3, -32}, {-1, -32} } },
 	[253] = { .set = { {-4, -30}, {-5, -29}, {3, -27}, {-1, -27} } },
 	[254] = { .set = { {-4, -24}, {-5, -23}, {3, -21}, {-1, -21} } },
+	[255] = { .set = { {3, -12}, {-2, -14}, {3, -8}, {-1, -7} } },
+	[256] = { .set = { {-4, -12}, {1, -14}, {-4, -8}, {0, -7} } },
 };
 static const ax_anim *const *const sAxAnimationsAmbipom[] = {
 	sAmbipomAnimTable1,
@@ -3700,6 +3746,7 @@ static const ax_sprite *const sAxSpritesAmbipom[] = {
 	sAmbipomSprites77,
 	sAmbipomSprites78,
 	sAmbipomSprites79,
+	sAmbipomSprites80,
 };
 static const axmain sAxMainAmbipom = {
 	.poses = sAxPosesAmbipom,

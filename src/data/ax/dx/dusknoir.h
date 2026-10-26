@@ -2,39 +2,39 @@ static const axmain sAxMainDusknoir;
 const SiroArchive gAxDusknoir = {"SIRO", &sAxMainDusknoir};
 
 static const ax_pose sDusknoirPose1[] = {
-	AX_POSE(0, OAM1(221, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(0, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose2[] = {
-	AX_POSE(1, OAM1(222, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(1, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose3[] = {
-	AX_POSE(2, OAM1(220, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(2, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose4[] = {
-	AX_POSE(3, OAM1(221, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(3, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose5[] = {
-	AX_POSE(4, OAM1(222, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(4, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose6[] = {
-	AX_POSE(5, OAM1(220, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(5, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose7[] = {
-	AX_POSE(6, OAM1(221, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(6, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose8[] = {
-	AX_POSE(7, OAM1(222, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(7, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose9[] = {
-	AX_POSE(8, OAM1(220, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose10[] = {
@@ -50,7 +50,7 @@ static const ax_pose sDusknoirPose12[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose13[] = {
-	AX_POSE(12, OAM1(222, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(12, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose14[] = {
@@ -58,7 +58,7 @@ static const ax_pose sDusknoirPose14[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose15[] = {
-	AX_POSE(14, OAM1(221, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(14, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose16[] = {
@@ -74,95 +74,95 @@ static const ax_pose sDusknoirPose18[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose19[] = {
-	AX_POSE(6, OAM1(221, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(6, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose20[] = {
-	AX_POSE(16, OAM1(222, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(16, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose21[] = {
-	AX_POSE(8, OAM1(220, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose22[] = {
-	AX_POSE(17, OAM1(221, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(17, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose23[] = {
-	AX_POSE(4, OAM1(222, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(4, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose24[] = {
-	AX_POSE(5, OAM1(220, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(5, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose25[] = {
-	AX_POSE(18, OAM1(220, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(18, OAM1(204, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose26[] = {
-	AX_POSE(19, OAM1(221, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(19, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose27[] = {
-	AX_POSE(20, OAM1(219, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(20, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(243, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose28[] = {
-	AX_POSE(20, OAM1(220, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(20, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(243, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose29[] = {
-	AX_POSE(6, OAM1(224, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(6, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose30[] = {
-	AX_POSE(6, OAM1(223, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(6, OAM1(207, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose31[] = {
-	AX_POSE(21, OAM1(218, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(21, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose32[] = {
-	AX_POSE(22, OAM1(224, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(22, OAM1(224, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose33[] = {
-	AX_POSE(23, OAM1(218, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(23, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose34[] = {
-	AX_POSE(24, OAM1(219, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(24, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose35[] = {
-	AX_POSE(24, OAM1(220, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(24, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose36[] = {
-	AX_POSE(6, OAM1(224, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(6, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose37[] = {
-	AX_POSE(6, OAM1(223, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(6, OAM1(207, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose38[] = {
-	AX_POSE(19, OAM1(221, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(19, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose39[] = {
-	AX_POSE(2, OAM1(221, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(2, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose40[] = {
-	AX_POSE(25, OAM1(220, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(25, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose41[] = {
-	AX_POSE(26, OAM1(218, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(26, OAM1(202, ST_OAM_SQUARE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose42[] = {
@@ -170,19 +170,19 @@ static const ax_pose sDusknoirPose42[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose43[] = {
-	AX_POSE(1, OAM1(221, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(1, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose44[] = {
-	AX_POSE(5, OAM1(221, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(5, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose45[] = {
-	AX_POSE(28, OAM1(218, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(28, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose46[] = {
-	AX_POSE(29, OAM1(221, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(29, OAM1(205, ST_OAM_SQUARE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose47[] = {
@@ -190,15 +190,15 @@ static const ax_pose sDusknoirPose47[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose48[] = {
-	AX_POSE(8, OAM1(221, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose49[] = {
-	AX_POSE(31, OAM1(218, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(31, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose50[] = {
-	AX_POSE(32, OAM1(222, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(32, OAM1(206, ST_OAM_SQUARE, 1), OAM2(228, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose51[] = {
@@ -210,11 +210,11 @@ static const ax_pose sDusknoirPose52[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose53[] = {
-	AX_POSE(34, OAM1(220, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(34, OAM1(204, ST_OAM_SQUARE, 1), OAM2(225, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose54[] = {
-	AX_POSE(35, OAM1(218, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(35, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose55[] = {
@@ -222,15 +222,15 @@ static const ax_pose sDusknoirPose55[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose56[] = {
-	AX_POSE(14, OAM1(222, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(14, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose57[] = {
-	AX_POSE(37, OAM1(222, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(37, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose58[] = {
-	AX_POSE(38, OAM1(219, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(38, OAM1(203, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose59[] = {
@@ -242,11 +242,11 @@ static const ax_pose sDusknoirPose60[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose61[] = {
-	AX_POSE(34, OAM1(220, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(34, OAM1(204, ST_OAM_SQUARE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose62[] = {
-	AX_POSE(40, OAM1(218, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(40, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose63[] = {
@@ -258,15 +258,15 @@ static const ax_pose sDusknoirPose64[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose65[] = {
-	AX_POSE(8, OAM1(221, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose66[] = {
-	AX_POSE(42, OAM1(218, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(42, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose67[] = {
-	AX_POSE(32, OAM1(222, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(32, OAM1(206, ST_OAM_SQUARE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose68[] = {
@@ -274,19 +274,19 @@ static const ax_pose sDusknoirPose68[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose69[] = {
-	AX_POSE(6, OAM1(221, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(6, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose70[] = {
-	AX_POSE(5, OAM1(221, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(5, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose71[] = {
-	AX_POSE(43, OAM1(218, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(43, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose72[] = {
-	AX_POSE(44, OAM1(221, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(44, OAM1(205, ST_OAM_SQUARE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose73[] = {
@@ -294,79 +294,79 @@ static const ax_pose sDusknoirPose73[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose74[] = {
-	AX_POSE(17, OAM1(221, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(17, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose75[] = {
-	AX_POSE(21, OAM1(218, ST_OAM_SQUARE, 1), OAM2(246, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(21, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(246, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose76[] = {
-	AX_POSE(23, OAM1(218, ST_OAM_SQUARE, 1), OAM2(234, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(23, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(234, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose77[] = {
-	AX_POSE(24, OAM1(219, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(24, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose78[] = {
-	AX_POSE(0, OAM1(220, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(0, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose79[] = {
-	AX_POSE(18, OAM1(218, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(18, OAM1(202, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose80[] = {
-	AX_POSE(18, OAM1(217, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(18, OAM1(201, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose81[] = {
-	AX_POSE(45, OAM1(217, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(45, OAM1(201, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose82[] = {
-	AX_POSE(2, OAM1(218, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(2, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose83[] = {
-	AX_POSE(3, OAM1(220, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(3, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose84[] = {
-	AX_POSE(19, OAM1(219, ST_OAM_SQUARE, 1), OAM2(246, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(19, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(246, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose85[] = {
-	AX_POSE(19, OAM1(218, ST_OAM_SQUARE, 1), OAM2(246, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(19, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(246, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose86[] = {
-	AX_POSE(46, OAM1(218, ST_OAM_SQUARE, 1), OAM2(246, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(46, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(246, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose87[] = {
-	AX_POSE(5, OAM1(218, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(5, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose88[] = {
-	AX_POSE(6, OAM1(220, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(6, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose89[] = {
-	AX_POSE(20, OAM1(217, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(20, OAM1(201, ST_OAM_V_RECTANGLE, 1), OAM2(243, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose90[] = {
-	AX_POSE(20, OAM1(216, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(20, OAM1(200, ST_OAM_V_RECTANGLE, 1), OAM2(243, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose91[] = {
-	AX_POSE(47, OAM1(216, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(47, OAM1(200, ST_OAM_V_RECTANGLE, 1), OAM2(243, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose92[] = {
-	AX_POSE(8, OAM1(219, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose93[] = {
@@ -374,15 +374,15 @@ static const ax_pose sDusknoirPose93[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose94[] = {
-	AX_POSE(21, OAM1(216, ST_OAM_SQUARE, 1), OAM2(246, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(21, OAM1(200, ST_OAM_V_RECTANGLE, 1), OAM2(246, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose95[] = {
-	AX_POSE(21, OAM1(215, ST_OAM_SQUARE, 1), OAM2(246, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(21, OAM1(199, ST_OAM_V_RECTANGLE, 1), OAM2(246, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose96[] = {
-	AX_POSE(48, OAM1(215, ST_OAM_SQUARE, 1), OAM2(246, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(48, OAM1(199, ST_OAM_V_RECTANGLE, 1), OAM2(246, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose97[] = {
@@ -390,23 +390,23 @@ static const ax_pose sDusknoirPose97[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose98[] = {
-	AX_POSE(12, OAM1(221, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(12, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose99[] = {
-	AX_POSE(22, OAM1(219, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(22, OAM1(219, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose100[] = {
-	AX_POSE(22, OAM1(218, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(22, OAM1(218, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose101[] = {
-	AX_POSE(49, OAM1(218, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(49, OAM1(218, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose102[] = {
-	AX_POSE(14, OAM1(219, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(14, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose103[] = {
@@ -414,15 +414,15 @@ static const ax_pose sDusknoirPose103[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose104[] = {
-	AX_POSE(23, OAM1(216, ST_OAM_SQUARE, 1), OAM2(234, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(23, OAM1(200, ST_OAM_V_RECTANGLE, 1), OAM2(234, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose105[] = {
-	AX_POSE(23, OAM1(215, ST_OAM_SQUARE, 1), OAM2(234, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(23, OAM1(199, ST_OAM_V_RECTANGLE, 1), OAM2(234, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose106[] = {
-	AX_POSE(50, OAM1(215, ST_OAM_SQUARE, 1), OAM2(234, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(50, OAM1(199, ST_OAM_V_RECTANGLE, 1), OAM2(234, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose107[] = {
@@ -430,75 +430,75 @@ static const ax_pose sDusknoirPose107[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose108[] = {
-	AX_POSE(6, OAM1(220, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(6, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose109[] = {
-	AX_POSE(24, OAM1(217, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(24, OAM1(201, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose110[] = {
-	AX_POSE(24, OAM1(216, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(24, OAM1(200, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose111[] = {
-	AX_POSE(51, OAM1(216, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(51, OAM1(200, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose112[] = {
-	AX_POSE(8, OAM1(219, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose113[] = {
-	AX_POSE(17, OAM1(220, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(17, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose114[] = {
-	AX_POSE(19, OAM1(219, ST_OAM_SQUARE, 1), OAM2(234, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(19, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(234, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose115[] = {
-	AX_POSE(19, OAM1(218, ST_OAM_SQUARE, 1), OAM2(234, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(19, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(234, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose116[] = {
-	AX_POSE(46, OAM1(218, ST_OAM_SQUARE, 1), OAM2(234, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(46, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(234, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose117[] = {
-	AX_POSE(5, OAM1(218, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(5, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose118[] = {
-	AX_POSE(52, OAM1(222, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(52, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose119[] = {
-	AX_POSE(52, OAM1(221, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(52, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose120[] = {
-	AX_POSE(52, OAM1(220, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(52, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose121[] = {
-	AX_POSE(52, OAM1(219, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(52, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose122[] = {
-	AX_POSE(53, OAM1(220, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(53, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose123[] = {
-	AX_POSE(53, OAM1(221, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(53, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose124[] = {
-	AX_POSE(53, OAM1(222, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(53, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose125[] = {
-	AX_POSE(53, OAM1(223, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(53, OAM1(207, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose126[] = {
@@ -506,139 +506,139 @@ static const ax_pose sDusknoirPose126[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose127[] = {
-	AX_POSE(55, OAM1(221, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(55, OAM1(205, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose128[] = {
-	AX_POSE(56, OAM1(219, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(56, OAM1(203, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose129[] = {
-	AX_POSE(57, OAM1(222, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(57, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose130[] = {
-	AX_POSE(58, OAM1(220, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(58, OAM1(204, ST_OAM_SQUARE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose131[] = {
-	AX_POSE(59, OAM1(223, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(59, OAM1(207, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose132[] = {
-	AX_POSE(60, OAM1(220, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(60, OAM1(204, ST_OAM_SQUARE, 1), OAM2(225, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose133[] = {
-	AX_POSE(61, OAM1(222, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(61, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose134[] = {
-	AX_POSE(62, OAM1(219, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(62, OAM1(203, ST_OAM_SQUARE, 1), OAM2(225, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose135[] = {
-	AX_POSE(0, OAM1(222, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(0, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose136[] = {
-	AX_POSE(2, OAM1(219, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(2, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose137[] = {
-	AX_POSE(2, OAM1(217, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(2, OAM1(201, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose138[] = {
-	AX_POSE(0, OAM1(216, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(0, OAM1(200, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose139[] = {
-	AX_POSE(1, OAM1(217, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(1, OAM1(201, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose140[] = {
-	AX_POSE(1, OAM1(218, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(1, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose141[] = {
-	AX_POSE(1, OAM1(219, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(1, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose142[] = {
-	AX_POSE(1, OAM1(220, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(1, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose143[] = {
-	AX_POSE(3, OAM1(222, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(3, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose144[] = {
-	AX_POSE(5, OAM1(219, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(5, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose145[] = {
-	AX_POSE(5, OAM1(217, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(5, OAM1(201, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose146[] = {
-	AX_POSE(3, OAM1(216, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(3, OAM1(200, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose147[] = {
-	AX_POSE(4, OAM1(217, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(4, OAM1(201, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose148[] = {
-	AX_POSE(4, OAM1(218, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(4, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose149[] = {
-	AX_POSE(4, OAM1(219, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(4, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose150[] = {
-	AX_POSE(4, OAM1(220, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(4, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose151[] = {
-	AX_POSE(4, OAM1(221, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(4, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose152[] = {
-	AX_POSE(6, OAM1(222, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(6, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose153[] = {
-	AX_POSE(8, OAM1(218, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose154[] = {
-	AX_POSE(8, OAM1(217, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(201, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose155[] = {
-	AX_POSE(6, OAM1(216, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(6, OAM1(200, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose156[] = {
-	AX_POSE(7, OAM1(217, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(7, OAM1(201, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose157[] = {
-	AX_POSE(7, OAM1(218, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(7, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose158[] = {
-	AX_POSE(7, OAM1(219, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(7, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose159[] = {
-	AX_POSE(7, OAM1(220, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(7, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose160[] = {
-	AX_POSE(7, OAM1(221, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(7, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose161[] = {
@@ -678,19 +678,19 @@ static const ax_pose sDusknoirPose169[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose170[] = {
-	AX_POSE(12, OAM1(223, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(12, OAM1(207, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose171[] = {
-	AX_POSE(14, OAM1(220, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(14, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose172[] = {
-	AX_POSE(14, OAM1(218, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(14, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose173[] = {
-	AX_POSE(12, OAM1(217, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(12, OAM1(201, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose174[] = {
@@ -750,263 +750,263 @@ static const ax_pose sDusknoirPose187[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose188[] = {
-	AX_POSE(6, OAM1(222, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(6, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose189[] = {
-	AX_POSE(8, OAM1(218, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose190[] = {
-	AX_POSE(8, OAM1(217, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(201, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose191[] = {
-	AX_POSE(6, OAM1(216, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(6, OAM1(200, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose192[] = {
-	AX_POSE(16, OAM1(217, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(16, OAM1(201, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose193[] = {
-	AX_POSE(16, OAM1(218, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(16, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose194[] = {
-	AX_POSE(16, OAM1(219, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(16, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose195[] = {
-	AX_POSE(16, OAM1(220, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(16, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose196[] = {
-	AX_POSE(16, OAM1(221, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(16, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose197[] = {
-	AX_POSE(17, OAM1(222, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(17, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose198[] = {
-	AX_POSE(5, OAM1(219, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(5, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose199[] = {
-	AX_POSE(5, OAM1(217, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(5, OAM1(201, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose200[] = {
-	AX_POSE(17, OAM1(216, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(17, OAM1(200, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose201[] = {
-	AX_POSE(4, OAM1(217, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(4, OAM1(201, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose202[] = {
-	AX_POSE(4, OAM1(218, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(4, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose203[] = {
-	AX_POSE(4, OAM1(219, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(4, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose204[] = {
-	AX_POSE(4, OAM1(220, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(4, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose205[] = {
-	AX_POSE(4, OAM1(221, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(4, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose206[] = {
-	AX_POSE(63, OAM1(220, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(63, OAM1(204, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose207[] = {
-	AX_POSE(64, OAM1(220, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(64, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose208[] = {
-	AX_POSE(65, OAM1(219, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(65, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose209[] = {
-	AX_POSE(66, OAM1(221, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(66, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose210[] = {
-	AX_POSE(67, OAM1(224, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(67, OAM1(208, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose211[] = {
-	AX_POSE(68, OAM1(221, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(68, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose212[] = {
-	AX_POSE(69, OAM1(219, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(69, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose213[] = {
-	AX_POSE(64, OAM1(220, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(64, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose214[] = {
-	AX_POSE(65, OAM1(221, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(65, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose215[] = {
-	AX_POSE(66, OAM1(222, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(66, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose216[] = {
-	AX_POSE(68, OAM1(220, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(68, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose217[] = {
-	AX_POSE(64, OAM1(222, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(64, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose218[] = {
-	AX_POSE(65, OAM1(222, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(65, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose219[] = {
-	AX_POSE(67, OAM1(225, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(67, OAM1(209, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose220[] = {
-	AX_POSE(68, OAM1(219, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(68, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose221[] = {
-	AX_POSE(66, OAM1(219, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(66, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose222[] = {
-	AX_POSE(64, OAM1(222, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(64, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose223[] = {
-	AX_POSE(69, OAM1(222, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(69, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose224[] = {
-	AX_POSE(68, OAM1(222, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(68, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose225[] = {
-	AX_POSE(69, OAM1(221, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(69, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose226[] = {
-	AX_POSE(66, OAM1(220, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(66, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose227[] = {
-	AX_POSE(1, OAM1(211, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(1, OAM1(195, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose228[] = {
-	AX_POSE(1, OAM1(205, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(1, OAM1(189, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose229[] = {
-	AX_POSE(1, OAM1(201, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(1, OAM1(185, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose230[] = {
-	AX_POSE(1, OAM1(200, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(1, OAM1(184, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose231[] = {
-	AX_POSE(0, OAM1(199, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(0, OAM1(183, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose232[] = {
-	AX_POSE(2, OAM1(201, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(2, OAM1(185, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose233[] = {
-	AX_POSE(2, OAM1(203, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(2, OAM1(187, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose234[] = {
-	AX_POSE(2, OAM1(209, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(2, OAM1(193, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose235[] = {
-	AX_POSE(0, OAM1(224, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(0, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose236[] = {
-	AX_POSE(4, OAM1(211, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(4, OAM1(195, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose237[] = {
-	AX_POSE(4, OAM1(205, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(4, OAM1(189, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose238[] = {
-	AX_POSE(4, OAM1(201, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(4, OAM1(185, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose239[] = {
-	AX_POSE(4, OAM1(200, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(4, OAM1(184, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose240[] = {
-	AX_POSE(3, OAM1(199, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(3, OAM1(183, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose241[] = {
-	AX_POSE(5, OAM1(200, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(5, OAM1(184, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose242[] = {
-	AX_POSE(5, OAM1(203, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(5, OAM1(187, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose243[] = {
-	AX_POSE(5, OAM1(209, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(5, OAM1(193, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose244[] = {
-	AX_POSE(3, OAM1(224, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(3, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose245[] = {
-	AX_POSE(7, OAM1(211, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(7, OAM1(195, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose246[] = {
-	AX_POSE(7, OAM1(205, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(7, OAM1(189, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose247[] = {
-	AX_POSE(7, OAM1(201, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(7, OAM1(185, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose248[] = {
-	AX_POSE(7, OAM1(200, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(7, OAM1(184, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose249[] = {
-	AX_POSE(6, OAM1(199, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(6, OAM1(183, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose250[] = {
-	AX_POSE(8, OAM1(200, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(184, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose251[] = {
-	AX_POSE(8, OAM1(203, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(187, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose252[] = {
-	AX_POSE(8, OAM1(209, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(193, ST_OAM_V_RECTANGLE, 1), OAM2(245, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose253[] = {
@@ -1062,23 +1062,23 @@ static const ax_pose sDusknoirPose265[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose266[] = {
-	AX_POSE(12, OAM1(200, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(12, OAM1(184, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose267[] = {
-	AX_POSE(14, OAM1(201, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(14, OAM1(185, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose268[] = {
-	AX_POSE(14, OAM1(204, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(14, OAM1(188, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose269[] = {
-	AX_POSE(14, OAM1(210, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(14, OAM1(194, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose270[] = {
-	AX_POSE(12, OAM1(225, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(12, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose271[] = {
@@ -1118,170 +1118,217 @@ static const ax_pose sDusknoirPose279[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose280[] = {
-	AX_POSE(16, OAM1(211, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(16, OAM1(195, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose281[] = {
-	AX_POSE(16, OAM1(205, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(16, OAM1(189, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose282[] = {
-	AX_POSE(16, OAM1(201, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(16, OAM1(185, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose283[] = {
-	AX_POSE(16, OAM1(200, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(16, OAM1(184, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose284[] = {
-	AX_POSE(6, OAM1(199, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(6, OAM1(183, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose285[] = {
-	AX_POSE(8, OAM1(200, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(184, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose286[] = {
-	AX_POSE(8, OAM1(203, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(187, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose287[] = {
-	AX_POSE(8, OAM1(209, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(193, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose288[] = {
-	AX_POSE(4, OAM1(211, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(4, OAM1(195, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose289[] = {
-	AX_POSE(4, OAM1(205, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(4, OAM1(189, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose290[] = {
-	AX_POSE(4, OAM1(201, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(4, OAM1(185, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose291[] = {
-	AX_POSE(4, OAM1(200, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(4, OAM1(184, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose292[] = {
-	AX_POSE(17, OAM1(199, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(17, OAM1(183, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose293[] = {
-	AX_POSE(5, OAM1(200, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(5, OAM1(184, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose294[] = {
-	AX_POSE(5, OAM1(203, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(5, OAM1(187, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose295[] = {
-	AX_POSE(5, OAM1(209, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(5, OAM1(193, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose296[] = {
-	AX_POSE(17, OAM1(224, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(17, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose297[] = {
-	AX_POSE(69, OAM1(220, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(69, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(243, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose298[] = {
-	AX_POSE(68, OAM1(219, ST_OAM_SQUARE, 1), OAM2(246, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(68, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(246, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose299[] = {
-	AX_POSE(67, OAM1(223, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(67, OAM1(207, ST_OAM_SQUARE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose300[] = {
-	AX_POSE(66, OAM1(219, ST_OAM_SQUARE, 1), OAM2(234, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(66, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(234, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sDusknoirPose301[] = {
-	AX_POSE(65, OAM1(220, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(65, OAM1(204, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const u8 sDusknoirGfx1_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_1_1.4bpp");
+static const u8 sDusknoirGfx1_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_1_3.4bpp");
 static const ax_sprite sDusknoirSprites1[] = {
-	{NULL, 32},
+	{NULL, 288},
 	{sDusknoirGfx1_1, ARRAY_COUNT(sDusknoirGfx1_1)},
+	{NULL, 64},
+	{sDusknoirGfx1_3, ARRAY_COUNT(sDusknoirGfx1_3)},
+	{NULL, 160},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_2.4bpp");
-static const u8 sDusknoirGfx2_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_2_2.4bpp");
+static const u8 sDusknoirGfx2_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_2_1.4bpp");
+static const u8 sDusknoirGfx2_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_2_3.4bpp");
+static const u8 sDusknoirGfx2_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_2_5.4bpp");
 static const ax_sprite sDusknoirSprites2[] = {
-	{sDusknoirGfx2, ARRAY_COUNT(sDusknoirGfx2)},
+	{NULL, 256},
+	{sDusknoirGfx2_1, ARRAY_COUNT(sDusknoirGfx2_1)},
 	{NULL, 32},
-	{sDusknoirGfx2_2, ARRAY_COUNT(sDusknoirGfx2_2)},
-	{NULL, 32},
+	{sDusknoirGfx2_3, ARRAY_COUNT(sDusknoirGfx2_3)},
+	{NULL, 64},
+	{sDusknoirGfx2_5, ARRAY_COUNT(sDusknoirGfx2_5)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const u8 sDusknoirGfx3_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_3_1.4bpp");
 static const u8 sDusknoirGfx3_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_3_3.4bpp");
+static const u8 sDusknoirGfx3_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_3_5.4bpp");
 static const ax_sprite sDusknoirSprites3[] = {
-	{NULL, 32},
+	{NULL, 288},
 	{sDusknoirGfx3_1, ARRAY_COUNT(sDusknoirGfx3_1)},
 	{NULL, 32},
 	{sDusknoirGfx3_3, ARRAY_COUNT(sDusknoirGfx3_3)},
+	{NULL, 64},
+	{sDusknoirGfx3_5, ARRAY_COUNT(sDusknoirGfx3_5)},
+	{NULL, 160},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx4[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_4.4bpp");
-static const u8 sDusknoirGfx4_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_4_2.4bpp");
+static const u8 sDusknoirGfx4_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_4_1.4bpp");
+static const u8 sDusknoirGfx4_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_4_3.4bpp");
+static const u8 sDusknoirGfx4_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_4_5.4bpp");
+static const u8 sDusknoirGfx4_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_4_7.4bpp");
 static const ax_sprite sDusknoirSprites4[] = {
-	{sDusknoirGfx4, ARRAY_COUNT(sDusknoirGfx4)},
+	{NULL, 160},
+	{sDusknoirGfx4_1, ARRAY_COUNT(sDusknoirGfx4_1)},
+	{NULL, 64},
+	{sDusknoirGfx4_3, ARRAY_COUNT(sDusknoirGfx4_3)},
 	{NULL, 32},
-	{sDusknoirGfx4_2, ARRAY_COUNT(sDusknoirGfx4_2)},
-	{NULL, 32},
+	{sDusknoirGfx4_5, ARRAY_COUNT(sDusknoirGfx4_5)},
+	{NULL, 64},
+	{sDusknoirGfx4_7, ARRAY_COUNT(sDusknoirGfx4_7)},
+	{NULL, 192},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_5.4bpp");
-static const u8 sDusknoirGfx5_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_5_2.4bpp");
+static const u8 sDusknoirGfx5_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_5_1.4bpp");
+static const u8 sDusknoirGfx5_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_5_3.4bpp");
+static const u8 sDusknoirGfx5_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_5_5.4bpp");
+static const u8 sDusknoirGfx5_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_5_7.4bpp");
 static const ax_sprite sDusknoirSprites5[] = {
-	{sDusknoirGfx5, ARRAY_COUNT(sDusknoirGfx5)},
+	{NULL, 160},
+	{sDusknoirGfx5_1, ARRAY_COUNT(sDusknoirGfx5_1)},
+	{NULL, 64},
+	{sDusknoirGfx5_3, ARRAY_COUNT(sDusknoirGfx5_3)},
 	{NULL, 32},
-	{sDusknoirGfx5_2, ARRAY_COUNT(sDusknoirGfx5_2)},
-	{NULL, 32},
+	{sDusknoirGfx5_5, ARRAY_COUNT(sDusknoirGfx5_5)},
+	{NULL, 64},
+	{sDusknoirGfx5_7, ARRAY_COUNT(sDusknoirGfx5_7)},
+	{NULL, 192},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx6[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_6.4bpp");
-static const u8 sDusknoirGfx6_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_6_2.4bpp");
+static const u8 sDusknoirGfx6_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_6_1.4bpp");
+static const u8 sDusknoirGfx6_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_6_3.4bpp");
+static const u8 sDusknoirGfx6_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_6_5.4bpp");
+static const u8 sDusknoirGfx6_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_6_7.4bpp");
 static const ax_sprite sDusknoirSprites6[] = {
-	{sDusknoirGfx6, ARRAY_COUNT(sDusknoirGfx6)},
+	{NULL, 160},
+	{sDusknoirGfx6_1, ARRAY_COUNT(sDusknoirGfx6_1)},
+	{NULL, 64},
+	{sDusknoirGfx6_3, ARRAY_COUNT(sDusknoirGfx6_3)},
 	{NULL, 32},
-	{sDusknoirGfx6_2, ARRAY_COUNT(sDusknoirGfx6_2)},
-	{NULL, 32},
+	{sDusknoirGfx6_5, ARRAY_COUNT(sDusknoirGfx6_5)},
+	{NULL, 64},
+	{sDusknoirGfx6_7, ARRAY_COUNT(sDusknoirGfx6_7)},
+	{NULL, 192},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_7.4bpp");
-static const u8 sDusknoirGfx7_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_7_2.4bpp");
+static const u8 sDusknoirGfx7_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_7_1.4bpp");
+static const u8 sDusknoirGfx7_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_7_3.4bpp");
+static const u8 sDusknoirGfx7_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_7_5.4bpp");
 static const ax_sprite sDusknoirSprites7[] = {
-	{sDusknoirGfx7, ARRAY_COUNT(sDusknoirGfx7)},
+	{NULL, 256},
+	{sDusknoirGfx7_1, ARRAY_COUNT(sDusknoirGfx7_1)},
 	{NULL, 32},
-	{sDusknoirGfx7_2, ARRAY_COUNT(sDusknoirGfx7_2)},
+	{sDusknoirGfx7_3, ARRAY_COUNT(sDusknoirGfx7_3)},
+	{NULL, 32},
+	{sDusknoirGfx7_5, ARRAY_COUNT(sDusknoirGfx7_5)},
+	{NULL, 192},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx8[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_8.4bpp");
-static const u8 sDusknoirGfx8_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_8_2.4bpp");
+static const u8 sDusknoirGfx8_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_8_1.4bpp");
+static const u8 sDusknoirGfx8_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_8_3.4bpp");
+static const u8 sDusknoirGfx8_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_8_5.4bpp");
 static const ax_sprite sDusknoirSprites8[] = {
-	{sDusknoirGfx8, ARRAY_COUNT(sDusknoirGfx8)},
+	{NULL, 256},
+	{sDusknoirGfx8_1, ARRAY_COUNT(sDusknoirGfx8_1)},
 	{NULL, 32},
-	{sDusknoirGfx8_2, ARRAY_COUNT(sDusknoirGfx8_2)},
+	{sDusknoirGfx8_3, ARRAY_COUNT(sDusknoirGfx8_3)},
 	{NULL, 32},
+	{sDusknoirGfx8_5, ARRAY_COUNT(sDusknoirGfx8_5)},
+	{NULL, 192},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_9.4bpp");
-static const u8 sDusknoirGfx9_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_9_2.4bpp");
-static const u8 sDusknoirGfx9_4[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_9_4.4bpp");
+static const u8 sDusknoirGfx9_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_9_1.4bpp");
+static const u8 sDusknoirGfx9_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_9_3.4bpp");
+static const u8 sDusknoirGfx9_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_9_5.4bpp");
+static const u8 sDusknoirGfx9_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_9_7.4bpp");
 static const ax_sprite sDusknoirSprites9[] = {
-	{sDusknoirGfx9, ARRAY_COUNT(sDusknoirGfx9)},
+	{NULL, 256},
+	{sDusknoirGfx9_1, ARRAY_COUNT(sDusknoirGfx9_1)},
 	{NULL, 32},
-	{sDusknoirGfx9_2, ARRAY_COUNT(sDusknoirGfx9_2)},
+	{sDusknoirGfx9_3, ARRAY_COUNT(sDusknoirGfx9_3)},
 	{NULL, 32},
-	{sDusknoirGfx9_4, ARRAY_COUNT(sDusknoirGfx9_4)},
+	{sDusknoirGfx9_5, ARRAY_COUNT(sDusknoirGfx9_5)},
+	{NULL, 32},
+	{sDusknoirGfx9_7, ARRAY_COUNT(sDusknoirGfx9_7)},
+	{NULL, 192},
 	{NULL, 0}
 };
 static const u8 sDusknoirGfx10[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_10.4bpp");
@@ -1308,13 +1355,17 @@ static const ax_sprite sDusknoirSprites12[] = {
 	{NULL, 32},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx13[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_13.4bpp");
-static const u8 sDusknoirGfx13_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_13_2.4bpp");
+static const u8 sDusknoirGfx13_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_13_1.4bpp");
+static const u8 sDusknoirGfx13_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_13_3.4bpp");
+static const u8 sDusknoirGfx13_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_13_5.4bpp");
 static const ax_sprite sDusknoirSprites13[] = {
-	{sDusknoirGfx13, ARRAY_COUNT(sDusknoirGfx13)},
+	{NULL, 256},
+	{sDusknoirGfx13_1, ARRAY_COUNT(sDusknoirGfx13_1)},
 	{NULL, 32},
-	{sDusknoirGfx13_2, ARRAY_COUNT(sDusknoirGfx13_2)},
-	{NULL, 32},
+	{sDusknoirGfx13_3, ARRAY_COUNT(sDusknoirGfx13_3)},
+	{NULL, 96},
+	{sDusknoirGfx13_5, ARRAY_COUNT(sDusknoirGfx13_5)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const u8 sDusknoirGfx14[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_14.4bpp");
@@ -1326,13 +1377,17 @@ static const ax_sprite sDusknoirSprites14[] = {
 	{NULL, 32},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx15[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_15.4bpp");
-static const u8 sDusknoirGfx15_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_15_2.4bpp");
+static const u8 sDusknoirGfx15_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_15_1.4bpp");
+static const u8 sDusknoirGfx15_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_15_3.4bpp");
+static const u8 sDusknoirGfx15_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_15_5.4bpp");
 static const ax_sprite sDusknoirSprites15[] = {
-	{sDusknoirGfx15, ARRAY_COUNT(sDusknoirGfx15)},
+	{NULL, 256},
+	{sDusknoirGfx15_1, ARRAY_COUNT(sDusknoirGfx15_1)},
 	{NULL, 32},
-	{sDusknoirGfx15_2, ARRAY_COUNT(sDusknoirGfx15_2)},
-	{NULL, 32},
+	{sDusknoirGfx15_3, ARRAY_COUNT(sDusknoirGfx15_3)},
+	{NULL, 64},
+	{sDusknoirGfx15_5, ARRAY_COUNT(sDusknoirGfx15_5)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const u8 sDusknoirGfx16_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_16_1.4bpp");
@@ -1344,111 +1399,192 @@ static const ax_sprite sDusknoirSprites16[] = {
 	{sDusknoirGfx16_3, ARRAY_COUNT(sDusknoirGfx16_3)},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx17[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_17.4bpp");
-static const u8 sDusknoirGfx17_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_17_2.4bpp");
-static const u8 sDusknoirGfx17_4[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_17_4.4bpp");
+static const u8 sDusknoirGfx17_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_17_1.4bpp");
+static const u8 sDusknoirGfx17_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_17_3.4bpp");
+static const u8 sDusknoirGfx17_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_17_5.4bpp");
+static const u8 sDusknoirGfx17_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_17_7.4bpp");
 static const ax_sprite sDusknoirSprites17[] = {
-	{sDusknoirGfx17, ARRAY_COUNT(sDusknoirGfx17)},
+	{NULL, 256},
+	{sDusknoirGfx17_1, ARRAY_COUNT(sDusknoirGfx17_1)},
 	{NULL, 32},
-	{sDusknoirGfx17_2, ARRAY_COUNT(sDusknoirGfx17_2)},
+	{sDusknoirGfx17_3, ARRAY_COUNT(sDusknoirGfx17_3)},
 	{NULL, 32},
-	{sDusknoirGfx17_4, ARRAY_COUNT(sDusknoirGfx17_4)},
+	{sDusknoirGfx17_5, ARRAY_COUNT(sDusknoirGfx17_5)},
+	{NULL, 64},
+	{sDusknoirGfx17_7, ARRAY_COUNT(sDusknoirGfx17_7)},
+	{NULL, 128},
 	{NULL, 0}
 };
 static const u8 sDusknoirGfx18_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_18_1.4bpp");
 static const u8 sDusknoirGfx18_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_18_3.4bpp");
+static const u8 sDusknoirGfx18_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_18_5.4bpp");
+static const u8 sDusknoirGfx18_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_18_7.4bpp");
 static const ax_sprite sDusknoirSprites18[] = {
-	{NULL, 32},
+	{NULL, 192},
 	{sDusknoirGfx18_1, ARRAY_COUNT(sDusknoirGfx18_1)},
-	{NULL, 32},
+	{NULL, 64},
 	{sDusknoirGfx18_3, ARRAY_COUNT(sDusknoirGfx18_3)},
+	{NULL, 32},
+	{sDusknoirGfx18_5, ARRAY_COUNT(sDusknoirGfx18_5)},
+	{NULL, 64},
+	{sDusknoirGfx18_7, ARRAY_COUNT(sDusknoirGfx18_7)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const u8 sDusknoirGfx19_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_19_1.4bpp");
 static const u8 sDusknoirGfx19_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_19_3.4bpp");
+static const u8 sDusknoirGfx19_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_19_5.4bpp");
+static const u8 sDusknoirGfx19_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_19_7.4bpp");
+static const u8 sDusknoirGfx19_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_19_9.4bpp");
 static const ax_sprite sDusknoirSprites19[] = {
-	{NULL, 32},
+	{NULL, 608},
 	{sDusknoirGfx19_1, ARRAY_COUNT(sDusknoirGfx19_1)},
-	{NULL, 32},
+	{NULL, 96},
 	{sDusknoirGfx19_3, ARRAY_COUNT(sDusknoirGfx19_3)},
-	{NULL, 32},
+	{NULL, 96},
+	{sDusknoirGfx19_5, ARRAY_COUNT(sDusknoirGfx19_5)},
+	{NULL, 160},
+	{sDusknoirGfx19_7, ARRAY_COUNT(sDusknoirGfx19_7)},
+	{NULL, 192},
+	{sDusknoirGfx19_9, ARRAY_COUNT(sDusknoirGfx19_9)},
+	{NULL, 352},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx20[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_20.4bpp");
-static const u8 sDusknoirGfx20_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_20_2.4bpp");
+static const u8 sDusknoirGfx20_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_20_1.4bpp");
+static const u8 sDusknoirGfx20_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_20_3.4bpp");
+static const u8 sDusknoirGfx20_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_20_5.4bpp");
+static const u8 sDusknoirGfx20_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_20_7.4bpp");
 static const ax_sprite sDusknoirSprites20[] = {
-	{sDusknoirGfx20, ARRAY_COUNT(sDusknoirGfx20)},
+	{NULL, 128},
+	{sDusknoirGfx20_1, ARRAY_COUNT(sDusknoirGfx20_1)},
+	{NULL, 64},
+	{sDusknoirGfx20_3, ARRAY_COUNT(sDusknoirGfx20_3)},
 	{NULL, 32},
-	{sDusknoirGfx20_2, ARRAY_COUNT(sDusknoirGfx20_2)},
+	{sDusknoirGfx20_5, ARRAY_COUNT(sDusknoirGfx20_5)},
 	{NULL, 32},
+	{sDusknoirGfx20_7, ARRAY_COUNT(sDusknoirGfx20_7)},
+	{NULL, 192},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx21[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_21.4bpp");
-static const u8 sDusknoirGfx21_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_21_2.4bpp");
-static const u8 sDusknoirGfx21_4[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_21_4.4bpp");
+static const u8 sDusknoirGfx21_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_21_1.4bpp");
+static const u8 sDusknoirGfx21_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_21_3.4bpp");
+static const u8 sDusknoirGfx21_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_21_5.4bpp");
+static const u8 sDusknoirGfx21_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_21_7.4bpp");
 static const ax_sprite sDusknoirSprites21[] = {
-	{sDusknoirGfx21, ARRAY_COUNT(sDusknoirGfx21)},
+	{NULL, 192},
+	{sDusknoirGfx21_1, ARRAY_COUNT(sDusknoirGfx21_1)},
 	{NULL, 32},
-	{sDusknoirGfx21_2, ARRAY_COUNT(sDusknoirGfx21_2)},
+	{sDusknoirGfx21_3, ARRAY_COUNT(sDusknoirGfx21_3)},
 	{NULL, 32},
-	{sDusknoirGfx21_4, ARRAY_COUNT(sDusknoirGfx21_4)},
+	{sDusknoirGfx21_5, ARRAY_COUNT(sDusknoirGfx21_5)},
 	{NULL, 32},
+	{sDusknoirGfx21_7, ARRAY_COUNT(sDusknoirGfx21_7)},
+	{NULL, 160},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx22[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_22.4bpp");
+static const u8 sDusknoirGfx22_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_22_1.4bpp");
+static const u8 sDusknoirGfx22_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_22_3.4bpp");
+static const u8 sDusknoirGfx22_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_22_5.4bpp");
 static const ax_sprite sDusknoirSprites22[] = {
-	{sDusknoirGfx22, ARRAY_COUNT(sDusknoirGfx22)},
+	{NULL, 128},
+	{sDusknoirGfx22_1, ARRAY_COUNT(sDusknoirGfx22_1)},
+	{NULL, 96},
+	{sDusknoirGfx22_3, ARRAY_COUNT(sDusknoirGfx22_3)},
 	{NULL, 32},
+	{sDusknoirGfx22_5, ARRAY_COUNT(sDusknoirGfx22_5)},
+	{NULL, 192},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx23[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_23.4bpp");
-static const u8 sDusknoirGfx23_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_23_2.4bpp");
+static const u8 sDusknoirGfx23_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_23_1.4bpp");
+static const u8 sDusknoirGfx23_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_23_3.4bpp");
+static const u8 sDusknoirGfx23_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_23_5.4bpp");
+static const u8 sDusknoirGfx23_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_23_7.4bpp");
 static const ax_sprite sDusknoirSprites23[] = {
-	{sDusknoirGfx23, ARRAY_COUNT(sDusknoirGfx23)},
 	{NULL, 32},
-	{sDusknoirGfx23_2, ARRAY_COUNT(sDusknoirGfx23_2)},
-	{NULL, 32},
+	{sDusknoirGfx23_1, ARRAY_COUNT(sDusknoirGfx23_1)},
+	{NULL, 64},
+	{sDusknoirGfx23_3, ARRAY_COUNT(sDusknoirGfx23_3)},
+	{NULL, 96},
+	{sDusknoirGfx23_5, ARRAY_COUNT(sDusknoirGfx23_5)},
+	{NULL, 160},
+	{sDusknoirGfx23_7, ARRAY_COUNT(sDusknoirGfx23_7)},
+	{NULL, 96},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx24[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_24.4bpp");
-static const u8 sDusknoirGfx24_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_24_2.4bpp");
+static const u8 sDusknoirGfx24_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_24_1.4bpp");
+static const u8 sDusknoirGfx24_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_24_3.4bpp");
+static const u8 sDusknoirGfx24_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_24_5.4bpp");
 static const ax_sprite sDusknoirSprites24[] = {
-	{sDusknoirGfx24, ARRAY_COUNT(sDusknoirGfx24)},
+	{NULL, 224},
+	{sDusknoirGfx24_1, ARRAY_COUNT(sDusknoirGfx24_1)},
 	{NULL, 32},
-	{sDusknoirGfx24_2, ARRAY_COUNT(sDusknoirGfx24_2)},
+	{sDusknoirGfx24_3, ARRAY_COUNT(sDusknoirGfx24_3)},
+	{NULL, 64},
+	{sDusknoirGfx24_5, ARRAY_COUNT(sDusknoirGfx24_5)},
+	{NULL, 128},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx25[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_25.4bpp");
-static const u8 sDusknoirGfx25_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_25_2.4bpp");
-static const u8 sDusknoirGfx25_4[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_25_4.4bpp");
-static const u8 sDusknoirGfx25_6[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_25_6.4bpp");
+static const u8 sDusknoirGfx25_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_25_1.4bpp");
+static const u8 sDusknoirGfx25_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_25_3.4bpp");
+static const u8 sDusknoirGfx25_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_25_5.4bpp");
+static const u8 sDusknoirGfx25_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_25_7.4bpp");
+static const u8 sDusknoirGfx25_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_25_9.4bpp");
+static const u8 sDusknoirGfx25_11[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_25_11.4bpp");
 static const ax_sprite sDusknoirSprites25[] = {
-	{sDusknoirGfx25, ARRAY_COUNT(sDusknoirGfx25)},
+	{NULL, 160},
+	{sDusknoirGfx25_1, ARRAY_COUNT(sDusknoirGfx25_1)},
+	{NULL, 64},
+	{sDusknoirGfx25_3, ARRAY_COUNT(sDusknoirGfx25_3)},
 	{NULL, 32},
-	{sDusknoirGfx25_2, ARRAY_COUNT(sDusknoirGfx25_2)},
+	{sDusknoirGfx25_5, ARRAY_COUNT(sDusknoirGfx25_5)},
 	{NULL, 32},
-	{sDusknoirGfx25_4, ARRAY_COUNT(sDusknoirGfx25_4)},
+	{sDusknoirGfx25_7, ARRAY_COUNT(sDusknoirGfx25_7)},
 	{NULL, 32},
-	{sDusknoirGfx25_6, ARRAY_COUNT(sDusknoirGfx25_6)},
+	{sDusknoirGfx25_9, ARRAY_COUNT(sDusknoirGfx25_9)},
+	{NULL, 64},
+	{sDusknoirGfx25_11, ARRAY_COUNT(sDusknoirGfx25_11)},
+	{NULL, 128},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx26[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_26.4bpp");
-static const u8 sDusknoirGfx26_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_26_2.4bpp");
-static const u8 sDusknoirGfx26_4[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_26_4.4bpp");
+static const u8 sDusknoirGfx26_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_26_1.4bpp");
+static const u8 sDusknoirGfx26_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_26_3.4bpp");
+static const u8 sDusknoirGfx26_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_26_5.4bpp");
+static const u8 sDusknoirGfx26_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_26_7.4bpp");
+static const u8 sDusknoirGfx26_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_26_9.4bpp");
 static const ax_sprite sDusknoirSprites26[] = {
-	{sDusknoirGfx26, ARRAY_COUNT(sDusknoirGfx26)},
+	{NULL, 128},
+	{sDusknoirGfx26_1, ARRAY_COUNT(sDusknoirGfx26_1)},
+	{NULL, 64},
+	{sDusknoirGfx26_3, ARRAY_COUNT(sDusknoirGfx26_3)},
 	{NULL, 32},
-	{sDusknoirGfx26_2, ARRAY_COUNT(sDusknoirGfx26_2)},
+	{sDusknoirGfx26_5, ARRAY_COUNT(sDusknoirGfx26_5)},
 	{NULL, 32},
-	{sDusknoirGfx26_4, ARRAY_COUNT(sDusknoirGfx26_4)},
+	{sDusknoirGfx26_7, ARRAY_COUNT(sDusknoirGfx26_7)},
+	{NULL, 64},
+	{sDusknoirGfx26_9, ARRAY_COUNT(sDusknoirGfx26_9)},
+	{NULL, 160},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx27[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_27.4bpp");
-static const u8 sDusknoirGfx27_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_27_2.4bpp");
+static const u8 sDusknoirGfx27_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_27_1.4bpp");
+static const u8 sDusknoirGfx27_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_27_3.4bpp");
+static const u8 sDusknoirGfx27_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_27_5.4bpp");
+static const u8 sDusknoirGfx27_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_27_7.4bpp");
+static const u8 sDusknoirGfx27_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_27_9.4bpp");
+static const u8 sDusknoirGfx27_11[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_27_11.4bpp");
 static const ax_sprite sDusknoirSprites27[] = {
-	{sDusknoirGfx27, ARRAY_COUNT(sDusknoirGfx27)},
-	{NULL, 32},
-	{sDusknoirGfx27_2, ARRAY_COUNT(sDusknoirGfx27_2)},
+	{NULL, 320},
+	{sDusknoirGfx27_1, ARRAY_COUNT(sDusknoirGfx27_1)},
+	{NULL, 192},
+	{sDusknoirGfx27_3, ARRAY_COUNT(sDusknoirGfx27_3)},
+	{NULL, 128},
+	{sDusknoirGfx27_5, ARRAY_COUNT(sDusknoirGfx27_5)},
+	{NULL, 96},
+	{sDusknoirGfx27_7, ARRAY_COUNT(sDusknoirGfx27_7)},
+	{NULL, 96},
+	{sDusknoirGfx27_9, ARRAY_COUNT(sDusknoirGfx27_9)},
+	{NULL, 160},
+	{sDusknoirGfx27_11, ARRAY_COUNT(sDusknoirGfx27_11)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sDusknoirGfx28[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_28.4bpp");
@@ -1461,15 +1597,35 @@ static const ax_sprite sDusknoirSprites28[] = {
 	{NULL, 0}
 };
 static const u8 sDusknoirGfx29_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_29_1.4bpp");
+static const u8 sDusknoirGfx29_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_29_3.4bpp");
+static const u8 sDusknoirGfx29_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_29_5.4bpp");
 static const ax_sprite sDusknoirSprites29[] = {
-	{NULL, 32},
+	{NULL, 192},
 	{sDusknoirGfx29_1, ARRAY_COUNT(sDusknoirGfx29_1)},
 	{NULL, 32},
+	{sDusknoirGfx29_3, ARRAY_COUNT(sDusknoirGfx29_3)},
+	{NULL, 64},
+	{sDusknoirGfx29_5, ARRAY_COUNT(sDusknoirGfx29_5)},
+	{NULL, 160},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx30[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_30.4bpp");
+static const u8 sDusknoirGfx30_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_30_1.4bpp");
+static const u8 sDusknoirGfx30_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_30_3.4bpp");
+static const u8 sDusknoirGfx30_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_30_5.4bpp");
+static const u8 sDusknoirGfx30_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_30_7.4bpp");
+static const u8 sDusknoirGfx30_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_30_9.4bpp");
 static const ax_sprite sDusknoirSprites30[] = {
-	{sDusknoirGfx30, ARRAY_COUNT(sDusknoirGfx30)},
+	{NULL, 576},
+	{sDusknoirGfx30_1, ARRAY_COUNT(sDusknoirGfx30_1)},
+	{NULL, 64},
+	{sDusknoirGfx30_3, ARRAY_COUNT(sDusknoirGfx30_3)},
+	{NULL, 64},
+	{sDusknoirGfx30_5, ARRAY_COUNT(sDusknoirGfx30_5)},
+	{NULL, 96},
+	{sDusknoirGfx30_7, ARRAY_COUNT(sDusknoirGfx30_7)},
+	{NULL, 128},
+	{sDusknoirGfx30_9, ARRAY_COUNT(sDusknoirGfx30_9)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sDusknoirGfx31_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_31_1.4bpp");
@@ -1481,21 +1637,39 @@ static const ax_sprite sDusknoirSprites31[] = {
 	{sDusknoirGfx31_3, ARRAY_COUNT(sDusknoirGfx31_3)},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx32[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_32.4bpp");
-static const u8 sDusknoirGfx32_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_32_2.4bpp");
-static const u8 sDusknoirGfx32_4[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_32_4.4bpp");
+static const u8 sDusknoirGfx32_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_32_1.4bpp");
+static const u8 sDusknoirGfx32_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_32_3.4bpp");
+static const u8 sDusknoirGfx32_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_32_5.4bpp");
+static const u8 sDusknoirGfx32_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_32_7.4bpp");
 static const ax_sprite sDusknoirSprites32[] = {
-	{sDusknoirGfx32, ARRAY_COUNT(sDusknoirGfx32)},
+	{NULL, 128},
+	{sDusknoirGfx32_1, ARRAY_COUNT(sDusknoirGfx32_1)},
 	{NULL, 64},
-	{sDusknoirGfx32_2, ARRAY_COUNT(sDusknoirGfx32_2)},
+	{sDusknoirGfx32_3, ARRAY_COUNT(sDusknoirGfx32_3)},
+	{NULL, 64},
+	{sDusknoirGfx32_5, ARRAY_COUNT(sDusknoirGfx32_5)},
 	{NULL, 32},
-	{sDusknoirGfx32_4, ARRAY_COUNT(sDusknoirGfx32_4)},
+	{sDusknoirGfx32_7, ARRAY_COUNT(sDusknoirGfx32_7)},
+	{NULL, 192},
 	{NULL, 0}
 };
 static const u8 sDusknoirGfx33_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_33_1.4bpp");
+static const u8 sDusknoirGfx33_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_33_3.4bpp");
+static const u8 sDusknoirGfx33_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_33_5.4bpp");
+static const u8 sDusknoirGfx33_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_33_7.4bpp");
+static const u8 sDusknoirGfx33_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_33_9.4bpp");
 static const ax_sprite sDusknoirSprites33[] = {
-	{NULL, 32},
+	{NULL, 608},
 	{sDusknoirGfx33_1, ARRAY_COUNT(sDusknoirGfx33_1)},
+	{NULL, 96},
+	{sDusknoirGfx33_3, ARRAY_COUNT(sDusknoirGfx33_3)},
+	{NULL, 64},
+	{sDusknoirGfx33_5, ARRAY_COUNT(sDusknoirGfx33_5)},
+	{NULL, 64},
+	{sDusknoirGfx33_7, ARRAY_COUNT(sDusknoirGfx33_7)},
+	{NULL, 192},
+	{sDusknoirGfx33_9, ARRAY_COUNT(sDusknoirGfx33_9)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sDusknoirGfx34_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_34_1.4bpp");
@@ -1507,18 +1681,33 @@ static const ax_sprite sDusknoirSprites34[] = {
 	{sDusknoirGfx34_3, ARRAY_COUNT(sDusknoirGfx34_3)},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx35[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_35.4bpp");
-static const u8 sDusknoirGfx35_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_35_2.4bpp");
+static const u8 sDusknoirGfx35_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_35_1.4bpp");
+static const u8 sDusknoirGfx35_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_35_3.4bpp");
+static const u8 sDusknoirGfx35_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_35_5.4bpp");
+static const u8 sDusknoirGfx35_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_35_7.4bpp");
+static const u8 sDusknoirGfx35_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_35_9.4bpp");
+static const u8 sDusknoirGfx35_11[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_35_11.4bpp");
 static const ax_sprite sDusknoirSprites35[] = {
-	{sDusknoirGfx35, ARRAY_COUNT(sDusknoirGfx35)},
-	{NULL, 32},
-	{sDusknoirGfx35_2, ARRAY_COUNT(sDusknoirGfx35_2)},
-	{NULL, 32},
+	{NULL, 288},
+	{sDusknoirGfx35_1, ARRAY_COUNT(sDusknoirGfx35_1)},
+	{NULL, 192},
+	{sDusknoirGfx35_3, ARRAY_COUNT(sDusknoirGfx35_3)},
+	{NULL, 64},
+	{sDusknoirGfx35_5, ARRAY_COUNT(sDusknoirGfx35_5)},
+	{NULL, 96},
+	{sDusknoirGfx35_7, ARRAY_COUNT(sDusknoirGfx35_7)},
+	{NULL, 160},
+	{sDusknoirGfx35_9, ARRAY_COUNT(sDusknoirGfx35_9)},
+	{NULL, 192},
+	{sDusknoirGfx35_11, ARRAY_COUNT(sDusknoirGfx35_11)},
+	{NULL, 384},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx36[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_36.4bpp");
+static const u8 sDusknoirGfx36_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_36_1.4bpp");
 static const ax_sprite sDusknoirSprites36[] = {
-	{sDusknoirGfx36, ARRAY_COUNT(sDusknoirGfx36)},
+	{NULL, 128},
+	{sDusknoirGfx36_1, ARRAY_COUNT(sDusknoirGfx36_1)},
+	{NULL, 192},
 	{NULL, 0}
 };
 static const u8 sDusknoirGfx37_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_37_1.4bpp");
@@ -1530,22 +1719,42 @@ static const ax_sprite sDusknoirSprites37[] = {
 	{sDusknoirGfx37_3, ARRAY_COUNT(sDusknoirGfx37_3)},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx38[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_38.4bpp");
-static const u8 sDusknoirGfx38_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_38_2.4bpp");
+static const u8 sDusknoirGfx38_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_38_1.4bpp");
+static const u8 sDusknoirGfx38_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_38_3.4bpp");
+static const u8 sDusknoirGfx38_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_38_5.4bpp");
+static const u8 sDusknoirGfx38_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_38_7.4bpp");
 static const ax_sprite sDusknoirSprites38[] = {
-	{sDusknoirGfx38, ARRAY_COUNT(sDusknoirGfx38)},
+	{NULL, 128},
+	{sDusknoirGfx38_1, ARRAY_COUNT(sDusknoirGfx38_1)},
+	{NULL, 96},
+	{sDusknoirGfx38_3, ARRAY_COUNT(sDusknoirGfx38_3)},
 	{NULL, 32},
-	{sDusknoirGfx38_2, ARRAY_COUNT(sDusknoirGfx38_2)},
-	{NULL, 32},
+	{sDusknoirGfx38_5, ARRAY_COUNT(sDusknoirGfx38_5)},
+	{NULL, 64},
+	{sDusknoirGfx38_7, ARRAY_COUNT(sDusknoirGfx38_7)},
+	{NULL, 192},
 	{NULL, 0}
 };
 static const u8 sDusknoirGfx39_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_39_1.4bpp");
 static const u8 sDusknoirGfx39_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_39_3.4bpp");
+static const u8 sDusknoirGfx39_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_39_5.4bpp");
+static const u8 sDusknoirGfx39_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_39_7.4bpp");
+static const u8 sDusknoirGfx39_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_39_9.4bpp");
+static const u8 sDusknoirGfx39_11[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_39_11.4bpp");
 static const ax_sprite sDusknoirSprites39[] = {
-	{NULL, 32},
+	{NULL, 352},
 	{sDusknoirGfx39_1, ARRAY_COUNT(sDusknoirGfx39_1)},
-	{NULL, 32},
+	{NULL, 160},
 	{sDusknoirGfx39_3, ARRAY_COUNT(sDusknoirGfx39_3)},
+	{NULL, 128},
+	{sDusknoirGfx39_5, ARRAY_COUNT(sDusknoirGfx39_5)},
+	{NULL, 96},
+	{sDusknoirGfx39_7, ARRAY_COUNT(sDusknoirGfx39_7)},
+	{NULL, 128},
+	{sDusknoirGfx39_9, ARRAY_COUNT(sDusknoirGfx39_9)},
+	{NULL, 160},
+	{sDusknoirGfx39_11, ARRAY_COUNT(sDusknoirGfx39_11)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sDusknoirGfx40_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_40_1.4bpp");
@@ -1557,9 +1766,14 @@ static const ax_sprite sDusknoirSprites40[] = {
 	{sDusknoirGfx40_3, ARRAY_COUNT(sDusknoirGfx40_3)},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx41[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_41.4bpp");
+static const u8 sDusknoirGfx41_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_41_1.4bpp");
+static const u8 sDusknoirGfx41_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_41_3.4bpp");
 static const ax_sprite sDusknoirSprites41[] = {
-	{sDusknoirGfx41, ARRAY_COUNT(sDusknoirGfx41)},
+	{NULL, 128},
+	{sDusknoirGfx41_1, ARRAY_COUNT(sDusknoirGfx41_1)},
+	{NULL, 64},
+	{sDusknoirGfx41_3, ARRAY_COUNT(sDusknoirGfx41_3)},
+	{NULL, 128},
 	{NULL, 0}
 };
 static const u8 sDusknoirGfx42_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_42_1.4bpp");
@@ -1573,258 +1787,498 @@ static const ax_sprite sDusknoirSprites42[] = {
 };
 static const u8 sDusknoirGfx43_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_43_1.4bpp");
 static const u8 sDusknoirGfx43_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_43_3.4bpp");
+static const u8 sDusknoirGfx43_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_43_5.4bpp");
+static const u8 sDusknoirGfx43_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_43_7.4bpp");
 static const ax_sprite sDusknoirSprites43[] = {
-	{NULL, 64},
+	{NULL, 192},
 	{sDusknoirGfx43_1, ARRAY_COUNT(sDusknoirGfx43_1)},
-	{NULL, 32},
+	{NULL, 64},
 	{sDusknoirGfx43_3, ARRAY_COUNT(sDusknoirGfx43_3)},
+	{NULL, 32},
+	{sDusknoirGfx43_5, ARRAY_COUNT(sDusknoirGfx43_5)},
+	{NULL, 64},
+	{sDusknoirGfx43_7, ARRAY_COUNT(sDusknoirGfx43_7)},
+	{NULL, 128},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx44[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_44.4bpp");
-static const u8 sDusknoirGfx44_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_44_2.4bpp");
-static const u8 sDusknoirGfx44_4[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_44_4.4bpp");
+static const u8 sDusknoirGfx44_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_44_1.4bpp");
+static const u8 sDusknoirGfx44_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_44_3.4bpp");
+static const u8 sDusknoirGfx44_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_44_5.4bpp");
+static const u8 sDusknoirGfx44_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_44_7.4bpp");
+static const u8 sDusknoirGfx44_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_44_9.4bpp");
 static const ax_sprite sDusknoirSprites44[] = {
-	{sDusknoirGfx44, ARRAY_COUNT(sDusknoirGfx44)},
+	{NULL, 128},
+	{sDusknoirGfx44_1, ARRAY_COUNT(sDusknoirGfx44_1)},
+	{NULL, 64},
+	{sDusknoirGfx44_3, ARRAY_COUNT(sDusknoirGfx44_3)},
 	{NULL, 32},
-	{sDusknoirGfx44_2, ARRAY_COUNT(sDusknoirGfx44_2)},
+	{sDusknoirGfx44_5, ARRAY_COUNT(sDusknoirGfx44_5)},
 	{NULL, 32},
-	{sDusknoirGfx44_4, ARRAY_COUNT(sDusknoirGfx44_4)},
+	{sDusknoirGfx44_7, ARRAY_COUNT(sDusknoirGfx44_7)},
+	{NULL, 32},
+	{sDusknoirGfx44_9, ARRAY_COUNT(sDusknoirGfx44_9)},
+	{NULL, 160},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx45[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_45.4bpp");
+static const u8 sDusknoirGfx45_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_45_1.4bpp");
+static const u8 sDusknoirGfx45_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_45_3.4bpp");
+static const u8 sDusknoirGfx45_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_45_5.4bpp");
+static const u8 sDusknoirGfx45_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_45_7.4bpp");
+static const u8 sDusknoirGfx45_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_45_9.4bpp");
 static const ax_sprite sDusknoirSprites45[] = {
-	{sDusknoirGfx45, ARRAY_COUNT(sDusknoirGfx45)},
+	{NULL, 544},
+	{sDusknoirGfx45_1, ARRAY_COUNT(sDusknoirGfx45_1)},
+	{NULL, 96},
+	{sDusknoirGfx45_3, ARRAY_COUNT(sDusknoirGfx45_3)},
+	{NULL, 64},
+	{sDusknoirGfx45_5, ARRAY_COUNT(sDusknoirGfx45_5)},
+	{NULL, 64},
+	{sDusknoirGfx45_7, ARRAY_COUNT(sDusknoirGfx45_7)},
+	{NULL, 160},
+	{sDusknoirGfx45_9, ARRAY_COUNT(sDusknoirGfx45_9)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sDusknoirGfx46_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_46_1.4bpp");
 static const u8 sDusknoirGfx46_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_46_3.4bpp");
+static const u8 sDusknoirGfx46_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_46_5.4bpp");
+static const u8 sDusknoirGfx46_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_46_7.4bpp");
+static const u8 sDusknoirGfx46_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_46_9.4bpp");
 static const ax_sprite sDusknoirSprites46[] = {
-	{NULL, 32},
+	{NULL, 608},
 	{sDusknoirGfx46_1, ARRAY_COUNT(sDusknoirGfx46_1)},
-	{NULL, 32},
+	{NULL, 96},
 	{sDusknoirGfx46_3, ARRAY_COUNT(sDusknoirGfx46_3)},
-	{NULL, 32},
+	{NULL, 96},
+	{sDusknoirGfx46_5, ARRAY_COUNT(sDusknoirGfx46_5)},
+	{NULL, 160},
+	{sDusknoirGfx46_7, ARRAY_COUNT(sDusknoirGfx46_7)},
+	{NULL, 192},
+	{sDusknoirGfx46_9, ARRAY_COUNT(sDusknoirGfx46_9)},
+	{NULL, 352},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx47[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_47.4bpp");
-static const u8 sDusknoirGfx47_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_47_2.4bpp");
+static const u8 sDusknoirGfx47_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_47_1.4bpp");
+static const u8 sDusknoirGfx47_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_47_3.4bpp");
+static const u8 sDusknoirGfx47_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_47_5.4bpp");
+static const u8 sDusknoirGfx47_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_47_7.4bpp");
 static const ax_sprite sDusknoirSprites47[] = {
-	{sDusknoirGfx47, ARRAY_COUNT(sDusknoirGfx47)},
+	{NULL, 128},
+	{sDusknoirGfx47_1, ARRAY_COUNT(sDusknoirGfx47_1)},
+	{NULL, 64},
+	{sDusknoirGfx47_3, ARRAY_COUNT(sDusknoirGfx47_3)},
 	{NULL, 32},
-	{sDusknoirGfx47_2, ARRAY_COUNT(sDusknoirGfx47_2)},
+	{sDusknoirGfx47_5, ARRAY_COUNT(sDusknoirGfx47_5)},
 	{NULL, 32},
+	{sDusknoirGfx47_7, ARRAY_COUNT(sDusknoirGfx47_7)},
+	{NULL, 192},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx48[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_48.4bpp");
-static const u8 sDusknoirGfx48_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_48_2.4bpp");
-static const u8 sDusknoirGfx48_4[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_48_4.4bpp");
+static const u8 sDusknoirGfx48_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_48_1.4bpp");
+static const u8 sDusknoirGfx48_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_48_3.4bpp");
+static const u8 sDusknoirGfx48_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_48_5.4bpp");
+static const u8 sDusknoirGfx48_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_48_7.4bpp");
 static const ax_sprite sDusknoirSprites48[] = {
-	{sDusknoirGfx48, ARRAY_COUNT(sDusknoirGfx48)},
+	{NULL, 192},
+	{sDusknoirGfx48_1, ARRAY_COUNT(sDusknoirGfx48_1)},
 	{NULL, 32},
-	{sDusknoirGfx48_2, ARRAY_COUNT(sDusknoirGfx48_2)},
+	{sDusknoirGfx48_3, ARRAY_COUNT(sDusknoirGfx48_3)},
 	{NULL, 32},
-	{sDusknoirGfx48_4, ARRAY_COUNT(sDusknoirGfx48_4)},
+	{sDusknoirGfx48_5, ARRAY_COUNT(sDusknoirGfx48_5)},
 	{NULL, 32},
+	{sDusknoirGfx48_7, ARRAY_COUNT(sDusknoirGfx48_7)},
+	{NULL, 160},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx49[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_49.4bpp");
+static const u8 sDusknoirGfx49_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_49_1.4bpp");
+static const u8 sDusknoirGfx49_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_49_3.4bpp");
+static const u8 sDusknoirGfx49_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_49_5.4bpp");
 static const ax_sprite sDusknoirSprites49[] = {
-	{sDusknoirGfx49, ARRAY_COUNT(sDusknoirGfx49)},
+	{NULL, 128},
+	{sDusknoirGfx49_1, ARRAY_COUNT(sDusknoirGfx49_1)},
+	{NULL, 96},
+	{sDusknoirGfx49_3, ARRAY_COUNT(sDusknoirGfx49_3)},
 	{NULL, 32},
+	{sDusknoirGfx49_5, ARRAY_COUNT(sDusknoirGfx49_5)},
+	{NULL, 192},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx50[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_50.4bpp");
-static const u8 sDusknoirGfx50_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_50_2.4bpp");
+static const u8 sDusknoirGfx50_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_50_1.4bpp");
+static const u8 sDusknoirGfx50_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_50_3.4bpp");
+static const u8 sDusknoirGfx50_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_50_5.4bpp");
+static const u8 sDusknoirGfx50_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_50_7.4bpp");
 static const ax_sprite sDusknoirSprites50[] = {
-	{sDusknoirGfx50, ARRAY_COUNT(sDusknoirGfx50)},
 	{NULL, 32},
-	{sDusknoirGfx50_2, ARRAY_COUNT(sDusknoirGfx50_2)},
-	{NULL, 32},
+	{sDusknoirGfx50_1, ARRAY_COUNT(sDusknoirGfx50_1)},
+	{NULL, 64},
+	{sDusknoirGfx50_3, ARRAY_COUNT(sDusknoirGfx50_3)},
+	{NULL, 96},
+	{sDusknoirGfx50_5, ARRAY_COUNT(sDusknoirGfx50_5)},
+	{NULL, 160},
+	{sDusknoirGfx50_7, ARRAY_COUNT(sDusknoirGfx50_7)},
+	{NULL, 96},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx51[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_51.4bpp");
-static const u8 sDusknoirGfx51_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_51_2.4bpp");
+static const u8 sDusknoirGfx51_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_51_1.4bpp");
+static const u8 sDusknoirGfx51_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_51_3.4bpp");
+static const u8 sDusknoirGfx51_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_51_5.4bpp");
 static const ax_sprite sDusknoirSprites51[] = {
-	{sDusknoirGfx51, ARRAY_COUNT(sDusknoirGfx51)},
+	{NULL, 224},
+	{sDusknoirGfx51_1, ARRAY_COUNT(sDusknoirGfx51_1)},
 	{NULL, 32},
-	{sDusknoirGfx51_2, ARRAY_COUNT(sDusknoirGfx51_2)},
+	{sDusknoirGfx51_3, ARRAY_COUNT(sDusknoirGfx51_3)},
+	{NULL, 64},
+	{sDusknoirGfx51_5, ARRAY_COUNT(sDusknoirGfx51_5)},
+	{NULL, 128},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx52[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_52.4bpp");
-static const u8 sDusknoirGfx52_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_52_2.4bpp");
-static const u8 sDusknoirGfx52_4[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_52_4.4bpp");
-static const u8 sDusknoirGfx52_6[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_52_6.4bpp");
+static const u8 sDusknoirGfx52_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_52_1.4bpp");
+static const u8 sDusknoirGfx52_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_52_3.4bpp");
+static const u8 sDusknoirGfx52_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_52_5.4bpp");
+static const u8 sDusknoirGfx52_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_52_7.4bpp");
+static const u8 sDusknoirGfx52_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_52_9.4bpp");
+static const u8 sDusknoirGfx52_11[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_52_11.4bpp");
 static const ax_sprite sDusknoirSprites52[] = {
-	{sDusknoirGfx52, ARRAY_COUNT(sDusknoirGfx52)},
+	{NULL, 160},
+	{sDusknoirGfx52_1, ARRAY_COUNT(sDusknoirGfx52_1)},
+	{NULL, 64},
+	{sDusknoirGfx52_3, ARRAY_COUNT(sDusknoirGfx52_3)},
 	{NULL, 32},
-	{sDusknoirGfx52_2, ARRAY_COUNT(sDusknoirGfx52_2)},
+	{sDusknoirGfx52_5, ARRAY_COUNT(sDusknoirGfx52_5)},
 	{NULL, 32},
-	{sDusknoirGfx52_4, ARRAY_COUNT(sDusknoirGfx52_4)},
+	{sDusknoirGfx52_7, ARRAY_COUNT(sDusknoirGfx52_7)},
 	{NULL, 32},
-	{sDusknoirGfx52_6, ARRAY_COUNT(sDusknoirGfx52_6)},
+	{sDusknoirGfx52_9, ARRAY_COUNT(sDusknoirGfx52_9)},
+	{NULL, 64},
+	{sDusknoirGfx52_11, ARRAY_COUNT(sDusknoirGfx52_11)},
+	{NULL, 128},
 	{NULL, 0}
 };
 static const u8 sDusknoirGfx53_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_53_1.4bpp");
 static const u8 sDusknoirGfx53_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_53_3.4bpp");
+static const u8 sDusknoirGfx53_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_53_5.4bpp");
 static const ax_sprite sDusknoirSprites53[] = {
-	{NULL, 32},
+	{NULL, 288},
 	{sDusknoirGfx53_1, ARRAY_COUNT(sDusknoirGfx53_1)},
 	{NULL, 32},
 	{sDusknoirGfx53_3, ARRAY_COUNT(sDusknoirGfx53_3)},
+	{NULL, 64},
+	{sDusknoirGfx53_5, ARRAY_COUNT(sDusknoirGfx53_5)},
+	{NULL, 128},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx54[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_54.4bpp");
-static const u8 sDusknoirGfx54_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_54_2.4bpp");
+static const u8 sDusknoirGfx54_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_54_1.4bpp");
+static const u8 sDusknoirGfx54_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_54_3.4bpp");
+static const u8 sDusknoirGfx54_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_54_5.4bpp");
 static const ax_sprite sDusknoirSprites54[] = {
-	{sDusknoirGfx54, ARRAY_COUNT(sDusknoirGfx54)},
+	{NULL, 256},
+	{sDusknoirGfx54_1, ARRAY_COUNT(sDusknoirGfx54_1)},
 	{NULL, 32},
-	{sDusknoirGfx54_2, ARRAY_COUNT(sDusknoirGfx54_2)},
+	{sDusknoirGfx54_3, ARRAY_COUNT(sDusknoirGfx54_3)},
+	{NULL, 64},
+	{sDusknoirGfx54_5, ARRAY_COUNT(sDusknoirGfx54_5)},
+	{NULL, 128},
 	{NULL, 0}
 };
 static const ax_sprite sDusknoirSprites55[] = {
 	{NULL, 32},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx56[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_56.4bpp");
-static const u8 sDusknoirGfx56_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_56_2.4bpp");
+static const u8 sDusknoirGfx56_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_56_1.4bpp");
+static const u8 sDusknoirGfx56_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_56_3.4bpp");
+static const u8 sDusknoirGfx56_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_56_5.4bpp");
+static const u8 sDusknoirGfx56_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_56_7.4bpp");
+static const u8 sDusknoirGfx56_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_56_9.4bpp");
+static const u8 sDusknoirGfx56_11[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_56_11.4bpp");
+static const u8 sDusknoirGfx56_13[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_56_13.4bpp");
 static const ax_sprite sDusknoirSprites56[] = {
-	{sDusknoirGfx56, ARRAY_COUNT(sDusknoirGfx56)},
-	{NULL, 32},
-	{sDusknoirGfx56_2, ARRAY_COUNT(sDusknoirGfx56_2)},
-	{NULL, 32},
+	{NULL, 320},
+	{sDusknoirGfx56_1, ARRAY_COUNT(sDusknoirGfx56_1)},
+	{NULL, 64},
+	{sDusknoirGfx56_3, ARRAY_COUNT(sDusknoirGfx56_3)},
+	{NULL, 96},
+	{sDusknoirGfx56_5, ARRAY_COUNT(sDusknoirGfx56_5)},
+	{NULL, 64},
+	{sDusknoirGfx56_7, ARRAY_COUNT(sDusknoirGfx56_7)},
+	{NULL, 64},
+	{sDusknoirGfx56_9, ARRAY_COUNT(sDusknoirGfx56_9)},
+	{NULL, 128},
+	{sDusknoirGfx56_11, ARRAY_COUNT(sDusknoirGfx56_11)},
+	{NULL, 224},
+	{sDusknoirGfx56_13, ARRAY_COUNT(sDusknoirGfx56_13)},
+	{NULL, 352},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx57[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_57.4bpp");
-static const u8 sDusknoirGfx57_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_57_2.4bpp");
+static const u8 sDusknoirGfx57_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_57_1.4bpp");
+static const u8 sDusknoirGfx57_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_57_3.4bpp");
+static const u8 sDusknoirGfx57_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_57_5.4bpp");
+static const u8 sDusknoirGfx57_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_57_7.4bpp");
+static const u8 sDusknoirGfx57_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_57_9.4bpp");
+static const u8 sDusknoirGfx57_11[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_57_11.4bpp");
 static const ax_sprite sDusknoirSprites57[] = {
-	{sDusknoirGfx57, ARRAY_COUNT(sDusknoirGfx57)},
-	{NULL, 32},
-	{sDusknoirGfx57_2, ARRAY_COUNT(sDusknoirGfx57_2)},
-	{NULL, 32},
+	{NULL, 320},
+	{sDusknoirGfx57_1, ARRAY_COUNT(sDusknoirGfx57_1)},
+	{NULL, 160},
+	{sDusknoirGfx57_3, ARRAY_COUNT(sDusknoirGfx57_3)},
+	{NULL, 128},
+	{sDusknoirGfx57_5, ARRAY_COUNT(sDusknoirGfx57_5)},
+	{NULL, 96},
+	{sDusknoirGfx57_7, ARRAY_COUNT(sDusknoirGfx57_7)},
+	{NULL, 96},
+	{sDusknoirGfx57_9, ARRAY_COUNT(sDusknoirGfx57_9)},
+	{NULL, 224},
+	{sDusknoirGfx57_11, ARRAY_COUNT(sDusknoirGfx57_11)},
+	{NULL, 352},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx58[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_58.4bpp");
-static const u8 sDusknoirGfx58_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_58_2.4bpp");
-static const u8 sDusknoirGfx58_4[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_58_4.4bpp");
+static const u8 sDusknoirGfx58_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_58_1.4bpp");
+static const u8 sDusknoirGfx58_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_58_3.4bpp");
+static const u8 sDusknoirGfx58_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_58_5.4bpp");
+static const u8 sDusknoirGfx58_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_58_7.4bpp");
+static const u8 sDusknoirGfx58_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_58_9.4bpp");
 static const ax_sprite sDusknoirSprites58[] = {
-	{sDusknoirGfx58, ARRAY_COUNT(sDusknoirGfx58)},
+	{NULL, 160},
+	{sDusknoirGfx58_1, ARRAY_COUNT(sDusknoirGfx58_1)},
+	{NULL, 64},
+	{sDusknoirGfx58_3, ARRAY_COUNT(sDusknoirGfx58_3)},
 	{NULL, 32},
-	{sDusknoirGfx58_2, ARRAY_COUNT(sDusknoirGfx58_2)},
+	{sDusknoirGfx58_5, ARRAY_COUNT(sDusknoirGfx58_5)},
 	{NULL, 32},
-	{sDusknoirGfx58_4, ARRAY_COUNT(sDusknoirGfx58_4)},
+	{sDusknoirGfx58_7, ARRAY_COUNT(sDusknoirGfx58_7)},
+	{NULL, 96},
+	{sDusknoirGfx58_9, ARRAY_COUNT(sDusknoirGfx58_9)},
+	{NULL, 128},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx59[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_59.4bpp");
-static const u8 sDusknoirGfx59_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_59_2.4bpp");
-static const u8 sDusknoirGfx59_4[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_59_4.4bpp");
+static const u8 sDusknoirGfx59_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_59_1.4bpp");
+static const u8 sDusknoirGfx59_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_59_3.4bpp");
+static const u8 sDusknoirGfx59_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_59_5.4bpp");
+static const u8 sDusknoirGfx59_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_59_7.4bpp");
+static const u8 sDusknoirGfx59_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_59_9.4bpp");
+static const u8 sDusknoirGfx59_11[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_59_11.4bpp");
 static const ax_sprite sDusknoirSprites59[] = {
-	{sDusknoirGfx59, ARRAY_COUNT(sDusknoirGfx59)},
-	{NULL, 32},
-	{sDusknoirGfx59_2, ARRAY_COUNT(sDusknoirGfx59_2)},
-	{NULL, 32},
-	{sDusknoirGfx59_4, ARRAY_COUNT(sDusknoirGfx59_4)},
+	{NULL, 320},
+	{sDusknoirGfx59_1, ARRAY_COUNT(sDusknoirGfx59_1)},
+	{NULL, 160},
+	{sDusknoirGfx59_3, ARRAY_COUNT(sDusknoirGfx59_3)},
+	{NULL, 128},
+	{sDusknoirGfx59_5, ARRAY_COUNT(sDusknoirGfx59_5)},
+	{NULL, 64},
+	{sDusknoirGfx59_7, ARRAY_COUNT(sDusknoirGfx59_7)},
+	{NULL, 128},
+	{sDusknoirGfx59_9, ARRAY_COUNT(sDusknoirGfx59_9)},
+	{NULL, 192},
+	{sDusknoirGfx59_11, ARRAY_COUNT(sDusknoirGfx59_11)},
+	{NULL, 320},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx60[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_60.4bpp");
-static const u8 sDusknoirGfx60_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_60_2.4bpp");
+static const u8 sDusknoirGfx60_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_60_1.4bpp");
+static const u8 sDusknoirGfx60_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_60_3.4bpp");
+static const u8 sDusknoirGfx60_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_60_5.4bpp");
+static const u8 sDusknoirGfx60_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_60_7.4bpp");
+static const u8 sDusknoirGfx60_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_60_9.4bpp");
+static const u8 sDusknoirGfx60_11[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_60_11.4bpp");
+static const u8 sDusknoirGfx60_13[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_60_13.4bpp");
 static const ax_sprite sDusknoirSprites60[] = {
-	{sDusknoirGfx60, ARRAY_COUNT(sDusknoirGfx60)},
+	{NULL, 320},
+	{sDusknoirGfx60_1, ARRAY_COUNT(sDusknoirGfx60_1)},
 	{NULL, 32},
-	{sDusknoirGfx60_2, ARRAY_COUNT(sDusknoirGfx60_2)},
+	{sDusknoirGfx60_3, ARRAY_COUNT(sDusknoirGfx60_3)},
+	{NULL, 128},
+	{sDusknoirGfx60_5, ARRAY_COUNT(sDusknoirGfx60_5)},
+	{NULL, 64},
+	{sDusknoirGfx60_7, ARRAY_COUNT(sDusknoirGfx60_7)},
+	{NULL, 64},
+	{sDusknoirGfx60_9, ARRAY_COUNT(sDusknoirGfx60_9)},
+	{NULL, 128},
+	{sDusknoirGfx60_11, ARRAY_COUNT(sDusknoirGfx60_11)},
+	{NULL, 160},
+	{sDusknoirGfx60_13, ARRAY_COUNT(sDusknoirGfx60_13)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sDusknoirGfx61_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_61_1.4bpp");
+static const u8 sDusknoirGfx61_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_61_3.4bpp");
+static const u8 sDusknoirGfx61_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_61_5.4bpp");
+static const u8 sDusknoirGfx61_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_61_7.4bpp");
+static const u8 sDusknoirGfx61_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_61_9.4bpp");
+static const u8 sDusknoirGfx61_11[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_61_11.4bpp");
 static const ax_sprite sDusknoirSprites61[] = {
-	{NULL, 32},
+	{NULL, 384},
 	{sDusknoirGfx61_1, ARRAY_COUNT(sDusknoirGfx61_1)},
+	{NULL, 160},
+	{sDusknoirGfx61_3, ARRAY_COUNT(sDusknoirGfx61_3)},
+	{NULL, 96},
+	{sDusknoirGfx61_5, ARRAY_COUNT(sDusknoirGfx61_5)},
+	{NULL, 64},
+	{sDusknoirGfx61_7, ARRAY_COUNT(sDusknoirGfx61_7)},
+	{NULL, 96},
+	{sDusknoirGfx61_9, ARRAY_COUNT(sDusknoirGfx61_9)},
+	{NULL, 128},
+	{sDusknoirGfx61_11, ARRAY_COUNT(sDusknoirGfx61_11)},
+	{NULL, 352},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx62[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_62.4bpp");
-static const u8 sDusknoirGfx62_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_62_2.4bpp");
+static const u8 sDusknoirGfx62_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_62_1.4bpp");
+static const u8 sDusknoirGfx62_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_62_3.4bpp");
+static const u8 sDusknoirGfx62_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_62_5.4bpp");
 static const ax_sprite sDusknoirSprites62[] = {
-	{sDusknoirGfx62, ARRAY_COUNT(sDusknoirGfx62)},
+	{NULL, 192},
+	{sDusknoirGfx62_1, ARRAY_COUNT(sDusknoirGfx62_1)},
 	{NULL, 32},
-	{sDusknoirGfx62_2, ARRAY_COUNT(sDusknoirGfx62_2)},
+	{sDusknoirGfx62_3, ARRAY_COUNT(sDusknoirGfx62_3)},
 	{NULL, 32},
+	{sDusknoirGfx62_5, ARRAY_COUNT(sDusknoirGfx62_5)},
+	{NULL, 224},
 	{NULL, 0}
 };
 static const u8 sDusknoirGfx63_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_63_1.4bpp");
 static const u8 sDusknoirGfx63_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_63_3.4bpp");
+static const u8 sDusknoirGfx63_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_63_5.4bpp");
+static const u8 sDusknoirGfx63_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_63_7.4bpp");
+static const u8 sDusknoirGfx63_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_63_9.4bpp");
+static const u8 sDusknoirGfx63_11[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_63_11.4bpp");
 static const ax_sprite sDusknoirSprites63[] = {
-	{NULL, 32},
+	{NULL, 384},
 	{sDusknoirGfx63_1, ARRAY_COUNT(sDusknoirGfx63_1)},
-	{NULL, 32},
+	{NULL, 160},
 	{sDusknoirGfx63_3, ARRAY_COUNT(sDusknoirGfx63_3)},
+	{NULL, 64},
+	{sDusknoirGfx63_5, ARRAY_COUNT(sDusknoirGfx63_5)},
+	{NULL, 64},
+	{sDusknoirGfx63_7, ARRAY_COUNT(sDusknoirGfx63_7)},
+	{NULL, 160},
+	{sDusknoirGfx63_9, ARRAY_COUNT(sDusknoirGfx63_9)},
+	{NULL, 160},
+	{sDusknoirGfx63_11, ARRAY_COUNT(sDusknoirGfx63_11)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sDusknoirGfx64_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_64_1.4bpp");
 static const u8 sDusknoirGfx64_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_64_3.4bpp");
+static const u8 sDusknoirGfx64_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_64_5.4bpp");
+static const u8 sDusknoirGfx64_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_64_7.4bpp");
+static const u8 sDusknoirGfx64_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_64_9.4bpp");
 static const ax_sprite sDusknoirSprites64[] = {
-	{NULL, 32},
+	{NULL, 608},
 	{sDusknoirGfx64_1, ARRAY_COUNT(sDusknoirGfx64_1)},
-	{NULL, 32},
+	{NULL, 96},
 	{sDusknoirGfx64_3, ARRAY_COUNT(sDusknoirGfx64_3)},
-	{NULL, 32},
+	{NULL, 96},
+	{sDusknoirGfx64_5, ARRAY_COUNT(sDusknoirGfx64_5)},
+	{NULL, 160},
+	{sDusknoirGfx64_7, ARRAY_COUNT(sDusknoirGfx64_7)},
+	{NULL, 192},
+	{sDusknoirGfx64_9, ARRAY_COUNT(sDusknoirGfx64_9)},
+	{NULL, 352},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx65[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_65.4bpp");
-static const u8 sDusknoirGfx65_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_65_2.4bpp");
-static const u8 sDusknoirGfx65_4[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_65_4.4bpp");
+static const u8 sDusknoirGfx65_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_65_1.4bpp");
+static const u8 sDusknoirGfx65_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_65_3.4bpp");
+static const u8 sDusknoirGfx65_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_65_5.4bpp");
+static const u8 sDusknoirGfx65_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_65_7.4bpp");
+static const u8 sDusknoirGfx65_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_65_9.4bpp");
 static const ax_sprite sDusknoirSprites65[] = {
-	{sDusknoirGfx65, ARRAY_COUNT(sDusknoirGfx65)},
+	{NULL, 192},
+	{sDusknoirGfx65_1, ARRAY_COUNT(sDusknoirGfx65_1)},
 	{NULL, 32},
-	{sDusknoirGfx65_2, ARRAY_COUNT(sDusknoirGfx65_2)},
+	{sDusknoirGfx65_3, ARRAY_COUNT(sDusknoirGfx65_3)},
 	{NULL, 32},
-	{sDusknoirGfx65_4, ARRAY_COUNT(sDusknoirGfx65_4)},
+	{sDusknoirGfx65_5, ARRAY_COUNT(sDusknoirGfx65_5)},
+	{NULL, 32},
+	{sDusknoirGfx65_7, ARRAY_COUNT(sDusknoirGfx65_7)},
+	{NULL, 64},
+	{sDusknoirGfx65_9, ARRAY_COUNT(sDusknoirGfx65_9)},
+	{NULL, 128},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx66[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_66.4bpp");
-static const u8 sDusknoirGfx66_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_66_2.4bpp");
-static const u8 sDusknoirGfx66_4[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_66_4.4bpp");
-static const u8 sDusknoirGfx66_6[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_66_6.4bpp");
+static const u8 sDusknoirGfx66_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_66_1.4bpp");
+static const u8 sDusknoirGfx66_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_66_3.4bpp");
+static const u8 sDusknoirGfx66_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_66_5.4bpp");
+static const u8 sDusknoirGfx66_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_66_7.4bpp");
+static const u8 sDusknoirGfx66_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_66_9.4bpp");
+static const u8 sDusknoirGfx66_11[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_66_11.4bpp");
 static const ax_sprite sDusknoirSprites66[] = {
-	{sDusknoirGfx66, ARRAY_COUNT(sDusknoirGfx66)},
+	{NULL, 128},
+	{sDusknoirGfx66_1, ARRAY_COUNT(sDusknoirGfx66_1)},
+	{NULL, 64},
+	{sDusknoirGfx66_3, ARRAY_COUNT(sDusknoirGfx66_3)},
 	{NULL, 32},
-	{sDusknoirGfx66_2, ARRAY_COUNT(sDusknoirGfx66_2)},
+	{sDusknoirGfx66_5, ARRAY_COUNT(sDusknoirGfx66_5)},
 	{NULL, 32},
-	{sDusknoirGfx66_4, ARRAY_COUNT(sDusknoirGfx66_4)},
+	{sDusknoirGfx66_7, ARRAY_COUNT(sDusknoirGfx66_7)},
 	{NULL, 32},
-	{sDusknoirGfx66_6, ARRAY_COUNT(sDusknoirGfx66_6)},
+	{sDusknoirGfx66_9, ARRAY_COUNT(sDusknoirGfx66_9)},
+	{NULL, 64},
+	{sDusknoirGfx66_11, ARRAY_COUNT(sDusknoirGfx66_11)},
+	{NULL, 128},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx67[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_67.4bpp");
-static const u8 sDusknoirGfx67_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_67_2.4bpp");
+static const u8 sDusknoirGfx67_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_67_1.4bpp");
+static const u8 sDusknoirGfx67_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_67_3.4bpp");
+static const u8 sDusknoirGfx67_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_67_5.4bpp");
 static const ax_sprite sDusknoirSprites67[] = {
-	{sDusknoirGfx67, ARRAY_COUNT(sDusknoirGfx67)},
+	{NULL, 224},
+	{sDusknoirGfx67_1, ARRAY_COUNT(sDusknoirGfx67_1)},
 	{NULL, 32},
-	{sDusknoirGfx67_2, ARRAY_COUNT(sDusknoirGfx67_2)},
+	{sDusknoirGfx67_3, ARRAY_COUNT(sDusknoirGfx67_3)},
+	{NULL, 64},
+	{sDusknoirGfx67_5, ARRAY_COUNT(sDusknoirGfx67_5)},
+	{NULL, 128},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx68[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_68.4bpp");
-static const u8 sDusknoirGfx68_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_68_2.4bpp");
+static const u8 sDusknoirGfx68_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_68_1.4bpp");
+static const u8 sDusknoirGfx68_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_68_3.4bpp");
+static const u8 sDusknoirGfx68_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_68_5.4bpp");
+static const u8 sDusknoirGfx68_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_68_7.4bpp");
+static const u8 sDusknoirGfx68_9[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_68_9.4bpp");
+static const u8 sDusknoirGfx68_11[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_68_11.4bpp");
+static const u8 sDusknoirGfx68_13[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_68_13.4bpp");
 static const ax_sprite sDusknoirSprites68[] = {
-	{sDusknoirGfx68, ARRAY_COUNT(sDusknoirGfx68)},
-	{NULL, 32},
-	{sDusknoirGfx68_2, ARRAY_COUNT(sDusknoirGfx68_2)},
-	{NULL, 32},
+	{NULL, 320},
+	{sDusknoirGfx68_1, ARRAY_COUNT(sDusknoirGfx68_1)},
+	{NULL, 64},
+	{sDusknoirGfx68_3, ARRAY_COUNT(sDusknoirGfx68_3)},
+	{NULL, 96},
+	{sDusknoirGfx68_5, ARRAY_COUNT(sDusknoirGfx68_5)},
+	{NULL, 96},
+	{sDusknoirGfx68_7, ARRAY_COUNT(sDusknoirGfx68_7)},
+	{NULL, 96},
+	{sDusknoirGfx68_9, ARRAY_COUNT(sDusknoirGfx68_9)},
+	{NULL, 160},
+	{sDusknoirGfx68_11, ARRAY_COUNT(sDusknoirGfx68_11)},
+	{NULL, 224},
+	{sDusknoirGfx68_13, ARRAY_COUNT(sDusknoirGfx68_13)},
+	{NULL, 352},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx69[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_69.4bpp");
+static const u8 sDusknoirGfx69_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_69_1.4bpp");
+static const u8 sDusknoirGfx69_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_69_3.4bpp");
+static const u8 sDusknoirGfx69_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_69_5.4bpp");
 static const ax_sprite sDusknoirSprites69[] = {
-	{sDusknoirGfx69, ARRAY_COUNT(sDusknoirGfx69)},
+	{NULL, 128},
+	{sDusknoirGfx69_1, ARRAY_COUNT(sDusknoirGfx69_1)},
+	{NULL, 64},
+	{sDusknoirGfx69_3, ARRAY_COUNT(sDusknoirGfx69_3)},
 	{NULL, 32},
+	{sDusknoirGfx69_5, ARRAY_COUNT(sDusknoirGfx69_5)},
+	{NULL, 192},
 	{NULL, 0}
 };
-static const u8 sDusknoirGfx70[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_70.4bpp");
-static const u8 sDusknoirGfx70_2[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_70_2.4bpp");
-static const u8 sDusknoirGfx70_4[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_70_4.4bpp");
+static const u8 sDusknoirGfx70_1[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_70_1.4bpp");
+static const u8 sDusknoirGfx70_3[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_70_3.4bpp");
+static const u8 sDusknoirGfx70_5[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_70_5.4bpp");
+static const u8 sDusknoirGfx70_7[] = INCBIN_U8("graphics/ax/mon/dusknoir/sprite_70_7.4bpp");
 static const ax_sprite sDusknoirSprites70[] = {
-	{sDusknoirGfx70, ARRAY_COUNT(sDusknoirGfx70)},
+	{NULL, 192},
+	{sDusknoirGfx70_1, ARRAY_COUNT(sDusknoirGfx70_1)},
 	{NULL, 32},
-	{sDusknoirGfx70_2, ARRAY_COUNT(sDusknoirGfx70_2)},
+	{sDusknoirGfx70_3, ARRAY_COUNT(sDusknoirGfx70_3)},
 	{NULL, 32},
-	{sDusknoirGfx70_4, ARRAY_COUNT(sDusknoirGfx70_4)},
+	{sDusknoirGfx70_5, ARRAY_COUNT(sDusknoirGfx70_5)},
 	{NULL, 32},
+	{sDusknoirGfx70_7, ARRAY_COUNT(sDusknoirGfx70_7)},
+	{NULL, 192},
 	{NULL, 0}
 };
 static const ax_anim sDusknoirAnims_1_1[] = {
