@@ -27,6 +27,7 @@
 #include "dungeon_random.h"
 #include "structs/str_dungeon.h"
 #include "dungeon_pos_data.h"
+#include "dungeon_tilemap.h"
 #include "dungeon_map_access.h"
 #include "dungeon_pokemon_sprites.h"
 
@@ -512,7 +513,7 @@ static void DxTestPlace(Entity *mon, Entity *leader, s32 dx, s32 dy, s8 *used)
 
 // tests: every wild Pokemon but one leaves the floor; that one stands at gDxTestStageFoe (x, y from the
 // leader; gDxTestOut[6..7] the offset used) with the types gDxTestStageTypes (0xFF: its own) and
-// gDxTestStageHP HP (0: 999).
+// gDxTestStageHP HP (0: 999). A foe offset of 0,0 sends them all away. gDxTestStage 2: the map is revealed too.
 // gDxTestStageMate (unless 0,0): the first teammate stands there and the leader faces it.
 void DxTestStageScene(Entity *leader)
 {
@@ -522,6 +523,8 @@ void DxTestStageScene(Entity *leader)
 
     if (!gDxTestStage || !EntityIsValid(leader))
         return;
+    if (gDxTestStage == 2)
+        HandleLuminousOrbAction(leader);
     gDxTestStage = 0;
     for (i = 0; i < DUNGEON_MAX_WILD_POKEMON; i++) {
         Entity *mon = gDungeon->wildPokemon[i];
@@ -529,7 +532,7 @@ void DxTestStageScene(Entity *leader)
 
         if (!EntityIsValid(mon))
             continue;
-        if (keep == NULL) {
+        if (keep == NULL && (gDxTestStageFoe[0] != 0 || gDxTestStageFoe[1] != 0)) {
             keep = mon;
             continue;
         }

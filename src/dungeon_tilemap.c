@@ -1,4 +1,7 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rules.h"
+#endif
 #include "globaldata.h"
 #include "dungeon_tilemap.h"
 #include "constants/item.h"
@@ -467,6 +470,33 @@ static void sub_803FA4C(s32 a0, s32 a1, bool8 a2)
     ScheduleMemCopy((void *) VRAM + 0x5980, gUnknown_3001018, sizeof(gUnknown_3001018));
 }
 
+#ifdef DX_RULES
+// DX auto-mode: AUTO under the HP bar while it runs (the HUD font has a glyph per ASCII letter at 0x258);
+// what was there comes back when it stops
+static EWRAM_DATA bool8 sDxAutoShown = FALSE;
+static EWRAM_DATA u16 sDxAutoUnder[4] = {0};
+
+static void DxDrawAutoIndicator(void)
+{
+    static const u8 sAuto[] = "AUTO";
+    bool8 on = DxAutoModeActive();
+    s32 i;
+
+    if (on == sDxAutoShown)
+        return;
+    for (i = 0; i < 4; i++) {
+        if (on) {
+            sDxAutoUnder[i] = gBgTilemaps[0][1][26 + i];
+            gBgTilemaps[0][1][26 + i] = (0x258 + sAuto[i]) | 0xF000;
+        }
+        else {
+            gBgTilemaps[0][1][26 + i] = sDxAutoUnder[i];
+        }
+    }
+    sDxAutoShown = on;
+}
+#endif
+
 static void sub_803FB74(void)
 {
     s32 i;
@@ -585,6 +615,9 @@ static void sub_803FB74(void)
     for (i = 0; i < 12; i++) {
         gBgTilemaps[0][0][18 + i] = (0x2CC + i) | 0xF000;
     }
+#ifdef DX_RULES
+    DxDrawAutoIndicator();
+#endif
 }
 
 static const s32 gUnknown_80F64B4[] = {90, 80, 70, 60, 50, 40, 30, 20, 10};

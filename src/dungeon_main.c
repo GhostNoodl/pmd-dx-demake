@@ -1,6 +1,7 @@
 #include "global.h"
 #ifdef DX_RULES
 #include "dx_rules.h"
+#include "memory.h"
 #include "dungeon_config.h"
 #include "constants/type.h"
 #include "dungeon_ai_attack.h"
@@ -1843,6 +1844,75 @@ ALIGNED(4) static const u8 sDxAutoDone[] = _("Auto-mode stopped: nowhere left to
 
 // One auto-mode turn for the leader, using the same movement AI as teammates
 // (picks up items, otherwise explores). FALSE = stop auto-mode.
+bool8 DxAutoModeActive(void)
+{
+    return sDxAutoExplore;
+}
+
+// auto-mode's way to the stairs: distances from the stairs over the tiles the team has seen
+static EWRAM_DATA u16 sDxStairsDist[DUNGEON_MAX_SIZE_Y][DUNGEON_MAX_SIZE_X];
+static EWRAM_DATA u16 sDxStairsQueue[DUNGEON_MAX_NUM_TILES];
+
+static bool8 DxTileKnown(const Tile *tile)
+{
+    return (tile->spawnOrVisibilityFlags.visibility & (VISIBILITY_FLAG_REVEALED | VISIBILITY_FLAG_VISITED)) != 0;
+}
+
+// once the stairs are on the map, take a step along the shortest known way there. FALSE: the stairs
+// aren't known yet (or no seen path leads to them), so keep exploring
+static bool8 DxAutoStepToStairs(Entity *leader, EntityInfo *leaderInfo)
+{
+    s32 x = gDungeon->stairsSpawn.x, y = gDungeon->stairsSpawn.y;
+    s32 head = 0, tail = 0, d, here, bestDir = -1;
+
+    if (x < 0 || y < 0 || x >= DUNGEON_MAX_SIZE_X || y >= DUNGEON_MAX_SIZE_Y)
+        return FALSE;
+    if (!(GetTile(x, y)->terrainFlags & TERRAIN_TYPE_STAIRS) || !DxTileKnown(GetTile(x, y)))
+        return FALSE;
+    MemoryFill16(&sDxStairsDist[0][0], 0xFFFF, sizeof(sDxStairsDist));
+    sDxStairsDist[y][x] = 0;
+    sDxStairsQueue[tail++] = y * DUNGEON_MAX_SIZE_X + x;
+    while (head < tail) {
+        s32 p = sDxStairsQueue[head++];
+        s32 px = p % DUNGEON_MAX_SIZE_X, py = p / DUNGEON_MAX_SIZE_X;
+
+        for (d = 0; d < NUM_DIRECTIONS; d++) {
+            s32 nx = px + gAdjacentTileOffsets[d].x, ny = py + gAdjacentTileOffsets[d].y;
+            const Tile *next;
+
+            if (nx < 0 || ny < 0 || nx >= DUNGEON_MAX_SIZE_X || ny >= DUNGEON_MAX_SIZE_Y || sDxStairsDist[ny][nx] != 0xFFFF)
+                continue;
+            next = GetTile(nx, ny);
+            // the step is taken the other way, from the next tile toward this one
+            if (!DxTileKnown(next) || !(next->walkableNeighborFlags[CROSSABLE_TERRAIN_REGULAR] & (1 << ((d + 4) & DIRECTION_MASK))))
+                continue;
+            sDxStairsDist[ny][nx] = sDxStairsDist[py][px] + 1;
+            sDxStairsQueue[tail++] = ny * DUNGEON_MAX_SIZE_X + nx;
+        }
+    }
+    here = sDxStairsDist[leader->pos.y][leader->pos.x];
+    if (here == 0xFFFF || here == 0)
+        return FALSE;
+    for (d = 0; d < NUM_DIRECTIONS; d++) {
+        s32 nx = leader->pos.x + gAdjacentTileOffsets[d].x, ny = leader->pos.y + gAdjacentTileOffsets[d].y;
+
+        if (!(GetTile(leader->pos.x, leader->pos.y)->walkableNeighborFlags[CROSSABLE_TERRAIN_REGULAR] & (1 << d))
+            || sDxStairsDist[ny][nx] != here - 1)
+            continue;
+        bestDir = d;
+        if (GetTile(nx, ny)->monster == NULL)
+            break; // a free tile beats swapping with a teammate
+    }
+    if (bestDir < 0)
+        return FALSE;
+    SetActionPassTurnOrWalk(&leaderInfo->action, leaderInfo->id);
+    leaderInfo->action.direction = bestDir;
+#ifdef DX_DEBUG
+    gDxTestCount[7]++;
+#endif
+    return TRUE;
+}
+
 static bool8 DxAutoExploreStep(Entity *leader, EntityInfo *leaderInfo)
 {
     s32 i;
@@ -1866,7 +1936,8 @@ static bool8 DxAutoExploreStep(Entity *leader, EntityInfo *leaderInfo)
         return FALSE;
     }
 
-    AIMovement(leader, FALSE);
+    if (!DxAutoStepToStairs(leader, leaderInfo))
+        AIMovement(leader, FALSE);
     // The AI's walk doesn't pick things up; the leader's does
     if (leaderInfo->action.action == ACTION_WALK)
         leaderInfo->action.actionParameters[0].actionUseIndex = 1;
