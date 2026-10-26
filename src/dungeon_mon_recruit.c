@@ -387,7 +387,11 @@ bool8 MonsterJoinSequence_Async(Entity *entity1, Entity *entity2, struct unkStru
     else {
         sub_8083D88();
         DungeonWaitFrames_Async(0xa0,0x46);
+#ifdef DX_DEBUG
+        if (!gDxTestNoNickname && DisplayDungeonYesNoMessage_Async(0,gText_NewMemberJoinedGiveItNickname,TRUE) == 1) {
+#else
         if (DisplayDungeonYesNoMessage_Async(0,gText_NewMemberJoinedGiveItNickname,TRUE) == 1) {
+#endif
             while (DungeonGiveNameToRecruitedMon(dungeonMon->name) == 0) {
                 DisplayDungeonMessage_Async(0,gText_PleaseGiveNicknameNewMember,TRUE);
             }
@@ -515,7 +519,11 @@ bool8 HandleSpecialEntityJoinSequence(Entity *entity1,Entity *entity2,Entity **e
         dungeonMon->flags = 0;
     }
     else {
+#ifdef DX_DEBUG
+        if (!gDxTestNoNickname && DisplayDungeonYesNoMessage_Async(0,gText_NewMemberJoinedGiveItNickname,TRUE) == 1) {
+#else
         if (DisplayDungeonYesNoMessage_Async(0,gText_NewMemberJoinedGiveItNickname,TRUE) == 1) {
+#endif
             while (!DungeonGiveNameToRecruitedMon(dungeonMon->name)) {
                 DisplayDungeonMessage_Async(0,gText_PleaseGiveNicknameNewMember,TRUE);
             }

@@ -84,4 +84,7 @@
 
 #define DX_CAMP_EXP_PERCENT 20 // % of the leader's adventure Exp. each Pokemon resting in a camp gets (ESTIMATED)
 
+// DX removed the weak regular attack: allies and foes always use a move, or Struggle once out of PP
+#define DX_NO_REGULAR_ATTACK TRUE
+
 #endif // GUARD_DX_TUNING_H

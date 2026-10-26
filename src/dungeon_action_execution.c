@@ -179,6 +179,9 @@ bool8 ExecuteEntityDungeonAction_Async(Entity *entity)
             }
             break;
         case ACTION_USE_MOVE_AI:
+#ifdef DX_DEBUG
+            gDxTestCount[3]++;
+#endif
             HandleUseMoveAIAction(entity);
             break;
         case ACTION_STAIRS:
@@ -254,9 +257,16 @@ bool8 ExecuteEntityDungeonAction_Async(Entity *entity)
 #endif
             break;
         case ACTION_STRUGGLE:
+#ifdef DX_DEBUG
+            gDxTestCount[4]++;
+#endif
             UseTemporaryMove(entity, MOVE_STRUGGLE);
             break;
         case ACTION_REGULAR_ATTACK:
+#ifdef DX_DEBUG
+            if (!GetEntInfo(entity)->isTeamLeader)
+                gDxTestCount[2]++;
+#endif
             UseTemporaryMove(entity, MOVE_REGULAR_ATTACK);
 #ifdef DX_RULES
             DxLeapAhead(entity);

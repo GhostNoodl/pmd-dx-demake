@@ -58,7 +58,24 @@ extern s32 gDxAdventureExp;
 #ifdef DX_DEBUG
 extern bool8 gDxTestProbe;
 extern s16 gDxTestOut[8];
+// tests: set the scene on the leader's turn (one wild Pokemon placed next to the leader, the rest gone)
+extern u8 gDxTestStage;
+extern s8 gDxTestStageFoe[2];
+extern u8 gDxTestStageTypes[2];
+extern s8 gDxTestStageMate[2];
+extern u16 gDxTestStageHP;
+extern Entity *gDxTestStageMon;
+// tests: a recruit's "Give it a nickname?" is answered No without asking
+extern bool8 gDxTestNoNickname;
+// tests: the staged wild Pokemon is this floor's Mystery House newcomer
+extern bool8 gDxTestStageNewcomer;
+// tests: [0] team Exp lines, [1] team members' own Exp lines, [2] regular attacks by anyone but the
+// leader, [3] AI moves used, [4] Struggles
+extern u16 gDxTestCount[5];
+void DxTestStageScene(Entity *leader);
 #endif
+// the move deals damage (Red's move data gives status moves small powers too)
+bool8 DxMoveIsDamaging(Move *move);
 void DxGivePokemonExp(Pokemon *mon, s32 exp);
 void DxGiveCampExp(void);
 void DxMysteryHouseSpawned(Entity *mon);

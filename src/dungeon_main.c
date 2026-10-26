@@ -1,4 +1,10 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rules.h"
+#include "dungeon_config.h"
+#include "constants/type.h"
+#include "dungeon_ai_attack.h"
+#endif
 #include "globaldata.h"
 #include "constants/dungeon.h"
 #include "constants/dungeon_action.h"
@@ -85,7 +91,8 @@ static bool8 sub_805EC2C(Entity *a0, s32 x, s32 y);
 static bool8 sub_805EC4C(Entity *a0, u8 a1);
 static bool8 sub_805EF60(Entity *a0, EntityInfo *a1);
 #ifdef DX_RULES
-static void DxSmartAButton(Entity *leader, EntityInfo *leaderInfo);
+static bool8 DxSmartAAttack(Entity *leader, EntityInfo *leaderInfo);
+static void DxSmartACheckTraps(Entity *leader, EntityInfo *leaderInfo);
 static bool8 DxAutoExploreStep(Entity *leader, EntityInfo *leaderInfo);
 static EWRAM_DATA bool8 sDxAutoExplore = FALSE;
 static EWRAM_DATA u8 sDxLHeldFrames = 0;
@@ -187,6 +194,9 @@ void DungeonHandlePlayerInput(void)
             bool32 bPress, rPress, unkBool; // Always FALSE, might've been used in Blue.
             s32 directionNew;
 
+#ifdef DX_DEBUG
+            DxTestStageScene(leader);
+#endif
 #ifdef DX_RULES
             // Rescue Team DX auto-mode: tap L to explore on your own, any button stops it
             if (sDxAutoExplore && (gRealInputs.pressed & (A_BUTTON | B_BUTTON | L_BUTTON | R_BUTTON | START_BUTTON | SELECT_BUTTON | DPAD_ANY))) {
@@ -294,13 +304,25 @@ void DungeonHandlePlayerInput(void)
                     break;
                 }
                 else {
-                    if (!sub_805EF60(leader, leaderInfo)) {
 #ifdef DX_RULES
-                        DxSmartAButton(leader, leaderInfo);
-#else
-                        SetMonsterActionFields(&leaderInfo->action, ACTION_REGULAR_ATTACK);
+                    // DX: A uses a move whenever one reaches a foe (even facing a teammate); only
+                    // otherwise does it talk to whoever is in front, or check for traps
+                    if (!DxSmartAAttack(leader, leaderInfo)) {
+#ifdef DX_DEBUG
+                        gDxTestOut[4] = -2; // talked
 #endif
+                        if (!sub_805EF60(leader, leaderInfo)) {
+#ifdef DX_DEBUG
+                            gDxTestOut[4] = -1; // checked for traps
+#endif
+                            DxSmartACheckTraps(leader, leaderInfo);
+                        }
                     }
+#else
+                    if (!sub_805EF60(leader, leaderInfo)) {
+                        SetMonsterActionFields(&leaderInfo->action, ACTION_REGULAR_ATTACK);
+                    }
+#endif
                     break;
                 }
             }
@@ -1655,64 +1677,138 @@ bool8 DungeonGiveNameToRecruitedMon(u8 *name)
 }
 
 #ifdef DX_RULES
-ALIGNED(4) static const u8 sDxFoundTraps[] = _("{POKEMON_0} found a hidden trap!");
-ALIGNED(4) static const u8 sDxNoTraps[] = _("{POKEMON_0} checked for traps. Nothing here.");
+// Rescue Team DX has no regular attack. A uses the best move that can reach a foe right now, at any
+// range (a move's real reach: adjacent, line, room). Damaging moves are scored by power x type
+// effectiveness x same-type bonus against the foe they'd hit; a status move only when the damaging moves
+// can't hurt the foe next to the leader (a Ghost and Normal moves). With no damaging move to use, it
+// Struggles at a foe next to it. FALSE: no move applies (A talks to a teammate in front, or checks for traps).
 
-// Rescue Team DX has no regular attack. A next to a foe uses the move the game rates
-// best (the same scoring the AI uses); otherwise A checks the 8 tiles around for traps.
-static void DxSmartAButton(Entity *leader, EntityInfo *leaderInfo)
+// effectiveness of a move type against a foe, in quarters (0 immune, 1 = 1/4x ... 16 = 4x)
+static s32 DxEffectQuarters(u8 moveType, Entity *foe)
 {
-    s32 i, dir;
-    s32 best = -1, bestWeight = 0;
-    u8 bestDir = leaderInfo->action.direction;
-    bool8 foeAdjacent = FALSE;
-    bool8 anyPP = FALSE;
-    s32 found = 0;
+    static const u8 sMult[NUM_EFFECTIVENESS] = {0, 2, 4, 8}; // immune, resist, neutral, super (x4)
+    EntityInfo *info = GetEntInfo(foe);
+    s32 i, q = 4;
+
+    for (i = 0; i < 2; i++) {
+        s32 e;
+        if (info->types[i] == TYPE_NONE)
+            continue;
+        if ((moveType == TYPE_NORMAL || moveType == TYPE_FIGHTING) && info->types[i] == TYPE_GHOST && !info->exposed)
+            e = EFFECTIVENESS_IMMUNE;
+        else
+            e = gTypeEffectivenessChart[moveType][info->types[i]];
+        q = q * sMult[e] / 4;
+    }
+    return q;
+}
+
+// the foe a move used in this direction hits first (walking out up to 10 tiles), else the best foe
+// the leader can see (room-wide and long moves)
+static Entity *DxSmartATarget(Entity *leader, u8 dir, u8 moveType)
+{
+    s32 i, best = -1;
+    Entity *pick = NULL;
+
+    for (i = 1; i <= 10; i++) {
+        const Tile *tile = GetTile(leader->pos.x + gAdjacentTileOffsets[dir].x * i, leader->pos.y + gAdjacentTileOffsets[dir].y * i);
+        Entity *mon = tile->monster;
+        if (EntityIsValid(mon) && GetEntityType(mon) == ENTITY_MONSTER) {
+            if (GetTreatmentBetweenMonsters(leader, mon, FALSE, FALSE) == TREATMENT_TREAT_AS_ENEMY)
+                return mon;
+            break;
+        }
+        if (GetTerrainType(tile) != TERRAIN_TYPE_NORMAL)
+            break;
+    }
+    for (i = 0; i < DUNGEON_MAX_WILD_POKEMON; i++) {
+        Entity *foe = gDungeon->wildPokemon[i];
+        if (EntityIsValid(foe) && CanSeeTarget(leader, foe)
+            && GetTreatmentBetweenMonsters(leader, foe, FALSE, FALSE) == TREATMENT_TREAT_AS_ENEMY
+            && DxEffectQuarters(moveType, foe) > best) {
+            best = DxEffectQuarters(moveType, foe);
+            pick = foe;
+        }
+    }
+    return pick;
+}
+
+static bool8 DxSmartAAttack(Entity *leader, EntityInfo *leaderInfo)
+{
+    s32 i, dir, bestScore = 0, best = -1, status = -1;
+    u8 bestDir = leaderInfo->action.direction, statusDir = bestDir;
+    bool8 foeAdjacent = FALSE, damagingPP = FALSE;
 
     for (dir = 0; dir < NUM_DIRECTIONS; dir++) {
-        const Tile *tile = GetTile(leader->pos.x + gAdjacentTileOffsets[dir].x, leader->pos.y + gAdjacentTileOffsets[dir].y);
-        Entity *mon = tile->monster;
-
+        Entity *mon = GetTile(leader->pos.x + gAdjacentTileOffsets[dir].x, leader->pos.y + gAdjacentTileOffsets[dir].y)->monster;
         if (EntityIsValid(mon) && GetEntityType(mon) == ENTITY_MONSTER
             && GetTreatmentBetweenMonsters(leader, mon, FALSE, FALSE) == TREATMENT_TREAT_AS_ENEMY)
             foeAdjacent = TRUE;
     }
 
-    if (foeAdjacent) {
-        for (i = 0; i < MAX_MON_MOVES; i++) {
-            Move *move = &leaderInfo->moves.moves[i];
-            struct AIPossibleMove possible;
-            s32 weight;
+    for (i = 0; i < MAX_MON_MOVES; i++) {
+        Move *move = &leaderInfo->moves.moves[i];
+        struct AIPossibleMove possible;
 
-            if (!MoveFlagExists(move) || MOVE_FLAG_LINK_CHAIN(move))
-                continue;
-            if (move->PP != 0)
-                anyPP = TRUE;
-            if (!CanAIUseMove(leader, i, TRUE))
-                continue;
-            weight = AIConsiderMove(&possible, leader, move);
-            if (possible.canBeUsed && weight > bestWeight) {
-                bestWeight = weight;
+        if (!MoveFlagExists(move) || MOVE_FLAG_LINK_CHAIN(move))
+            continue;
+        if (move->PP != 0 && DxMoveIsDamaging(move))
+            damagingPP = TRUE;
+        if (!CanAIUseMove(leader, i, TRUE))
+            continue;
+        AIConsiderMove(&possible, leader, move);
+        if (!possible.canBeUsed)
+            continue; // its range reaches no foe from here
+        if (DxMoveIsDamaging(move)) {
+            u8 type = GetMoveTypeForMonster(leader, move);
+            Entity *foe = DxSmartATarget(leader, possible.direction & DIRECTION_MASK, type);
+            s32 score = GetMoveBasePower(move) * (foe != NULL ? DxEffectQuarters(type, foe) : 4);
+            if (type == leaderInfo->types[0] || type == leaderInfo->types[1])
+                score = score * 3 / 2;
+            if (score > bestScore) { // 0 (an immune foe) never counts
+                bestScore = score;
                 best = i;
                 bestDir = possible.direction;
             }
         }
-
-        if (best >= 0) {
-            SetMonsterActionFields(&leaderInfo->action, ACTION_USE_MOVE_PLAYER);
-            leaderInfo->action.actionParameters[0].actionUseIndex = GetTeamMemberEntityIndex(leader);
-            leaderInfo->action.actionParameters[1].actionUseIndex = best;
-            leaderInfo->action.direction = bestDir & DIRECTION_MASK;
+        else if (status < 0) {
+            status = i;
+            statusDir = possible.direction;
         }
-        else if (!anyPP) {
-            SetMonsterActionFields(&leaderInfo->action, ACTION_STRUGGLE);
-        }
-        else {
-            // No move reaches the foe (e.g. only status moves left): swing at it the old way
-            SetMonsterActionFields(&leaderInfo->action, ACTION_REGULAR_ATTACK);
-        }
-        return;
     }
+    if (best < 0 && status >= 0 && foeAdjacent && damagingPP) {
+        best = status;
+        bestDir = statusDir;
+    }
+
+    if (best >= 0) {
+        SetMonsterActionFields(&leaderInfo->action, ACTION_USE_MOVE_PLAYER);
+        leaderInfo->action.actionParameters[0].actionUseIndex = GetTeamMemberEntityIndex(leader);
+        leaderInfo->action.actionParameters[1].actionUseIndex = best;
+        leaderInfo->action.direction = bestDir & DIRECTION_MASK;
+#ifdef DX_DEBUG
+        gDxTestOut[4] = leaderInfo->moves.moves[best].id;
+        gDxTestOut[5] = bestDir & DIRECTION_MASK;
+#endif
+        return TRUE;
+    }
+    if (foeAdjacent && !damagingPP) { // no damaging move left to use (or never learned one): Struggle
+        SetMonsterActionFields(&leaderInfo->action, ACTION_STRUGGLE);
+#ifdef DX_DEBUG
+        gDxTestOut[4] = MOVE_STRUGGLE;
+#endif
+        return TRUE;
+    }
+    return FALSE;
+}
+
+ALIGNED(4) static const u8 sDxFoundTraps[] = _("{POKEMON_0} found a hidden trap!");
+ALIGNED(4) static const u8 sDxNoTraps[] = _("{POKEMON_0} checked for traps. Nothing here.");
+
+// A with no move to use and no one to talk to: check the 8 tiles around for traps (takes the turn)
+static void DxSmartACheckTraps(Entity *leader, EntityInfo *leaderInfo)
+{
+    s32 dir, found = 0;
 
     for (dir = 0; dir < NUM_DIRECTIONS; dir++) {
         const Tile *tile = GetTile(leader->pos.x + gAdjacentTileOffsets[dir].x, leader->pos.y + gAdjacentTileOffsets[dir].y);
@@ -1732,7 +1828,6 @@ static void DxSmartAButton(Entity *leader, EntityInfo *leaderInfo)
     else {
         LogMessageByIdWithPopupCheckUser_Async(leader, sDxNoTraps);
     }
-    // Checking takes the turn, like swinging at the air did
     SetMonsterActionFields(&leaderInfo->action, ACTION_PASS_TURN);
 }
 

@@ -3,6 +3,8 @@
 # DX: a recruit whose camp you don't own joins for the adventure, then goes home and leaves Poke. The Skarmory
 # rematch, but its camp (Ravaged Field) is not owned
 mash START sMainMenu 4 != 0 3000
+# the recruit's nickname question is answered No (not what this test checks)
+write gDxTestNoNickname 1 1
 write gDxForcePostgame 1 1
 write gDxTestSeed 4 99991
 # an Apple to hand over (DX recruiting)
