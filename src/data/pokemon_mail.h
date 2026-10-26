@@ -1228,6 +1228,19 @@ ALIGNED(4) static const u8 sRangeText[] = _(
 
 ALIGNED(4) static const u8 sRangeHeadline[] = _("#26 The Range of Moves");
 
+#ifdef DX_RULES
+ALIGNED(4) static const u8 sIQText[] = _(
+    "{CENTER_ALIGN COLOR YELLOW}Make Your Explorations Easier by{RESET}\n"
+    "{CENTER_ALIGN COLOR YELLOW}Feeding Gummis to Team Members!{RESET}\n"
+    "Give Gummis to Pokémon at their Rescue\n"
+    "Camps. Each Gummi raises one of the\n"
+    "Pokémon's stats, and it may even bring\n"
+    "out a Rare Quality that helps the whole\n"
+    "team on its adventures. Check the\n"
+    "Summaries of your team members!");
+
+ALIGNED(4) static const u8 sIQHeadline[] = _("#25 Gummis");
+#else
 ALIGNED(4) static const u8 sIQText[] = _(
     "{CENTER_ALIGN COLOR YELLOW}Make Your Explorations Easier by{RESET}\n"
     "{CENTER_ALIGN COLOR YELLOW}Boosting the IQ of Team Members!{RESET}\n"
@@ -1239,6 +1252,7 @@ ALIGNED(4) static const u8 sIQText[] = _(
     "the IQ Skills of your team members!");
 
 ALIGNED(4) static const u8 sIQHeadline[] = _("#25 IQ");
+#endif
 
 ALIGNED(4) static const u8 sTrapTileText[] = _(
     "{CENTER_ALIGN COLOR YELLOW}New Types of Floor Tiles?{RESET}\n"

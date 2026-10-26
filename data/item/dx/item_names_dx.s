@@ -13,7 +13,7 @@ ItemNameRainbowGummi:
 .align 2,0
 .global ItemDescriptionRainbowGummi
 ItemDescriptionRainbowGummi:
-.string "A Gummi of every color. It raises one of the{NEW_LINE}Pokémon's stats, and it may also give it a{NEW_LINE}Rare Quality.\n\0"
+.string "A Gummi of every color. Give it to a Pokémon{NEW_LINE}at its Rescue Camp: it raises one of its stats{NEW_LINE}and may also give it a Rare Quality.\n\0"
 .align 2,0
 .global ItemNameDxGummi
 ItemNameDxGummi:
@@ -21,7 +21,7 @@ ItemNameDxGummi:
 .align 2,0
 .global ItemDescriptionDxGummi
 ItemDescriptionDxGummi:
-.string "A deluxe Gummi. It raises one of the Pokémon's{NEW_LINE}stats and always gives it a Rare Quality.\n\0"
+.string "A deluxe Gummi. Give it to a Pokémon at its{NEW_LINE}Rescue Camp: it raises one of its stats and{NEW_LINE}always gives it a Rare Quality.\n\0"
 .align 2,0
 .global ItemNameTinyApple
 ItemNameTinyApple:

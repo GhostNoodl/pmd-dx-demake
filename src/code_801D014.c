@@ -340,9 +340,16 @@ static void sub_801D4C0(void)
 
             loopMax++;
             sUnknown_203B250->unk68[loopMax].menuAction = 2;
+#ifdef DX_RULES
+            // DX: here, at its camp, is where a Pokemon is given Gummis
+            sUnknown_203B250->unk68[loopMax].text = sDxGiveGummi;
+            if (!HasGummiItem())
+                sUnknown_203B250->unkA8[loopMax] = 1;
+#else
             sUnknown_203B250->unk68[loopMax].text = sItems;
             if (GetNumberOfFilledInventorySlots() == 0)
                 sUnknown_203B250->unkA8[loopMax] = 1;
+#endif
 
             loopMax++;
         }

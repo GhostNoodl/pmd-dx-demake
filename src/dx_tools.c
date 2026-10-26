@@ -9,6 +9,7 @@
 #include "constants/main_menu.h"
 #include "dx_tools.h"
 #include "wigglytuff_shop3.h"
+#include "code_80227B8.h"
 #include "event_flag.h"
 #include "friend_area.h"
 #include "input.h"
@@ -35,6 +36,7 @@ typedef struct DxToolWork
     s16 list[NUM_MONSTERS];
     u8 status[48];                  // result of the last apply, shown under the title
     bool8 shopOpen;                 // SELECT: Wigglytuff's Friend Area shop, as in town
+    bool8 gummiOpen;                // R: the camp's Give Gummi menu, for the leader
     u32 exitTo;                     // set by an apply that leaves the tool (a scenario's warp)
     unkStructFor8013AA0 input;
     WindowTemplates windows;
@@ -355,7 +357,7 @@ static void StoryApply(void)
 
 EWRAM_DATA u8 gDxScenario = 0;
 
-ALIGNED(4) static const u8 sScenTitle[] = _("Scenarios (A: go, B: back, SELECT: shop)");
+ALIGNED(4) static const u8 sScenTitle[] = _("Scenarios (A go, B back, SELECT shop, R Gummi)");
 ALIGNED(4) static const u8 sScenPrompt[] = _("Scenario");
 ALIGNED(4) static const u8 sFmtScen[] = _("S%d {COLOR CYAN}%s{RESET}");
 
@@ -372,7 +374,7 @@ static const DxScenario sScenarios[] = {
     {_("DX survival rules"), _("Oran Berries -> Mt. Thunder 1F")},
     {_("Apple recruiting"), _("6 Apples -> Mt. Steel 1F")},
     {_("Rare Qualities"), _("5 qualities -> Tiny Woods 1F")},
-    {_("Gummis"), _("Rainbow + DX Gummis -> Tiny Woods 1F")},
+    {_("Gummis"), _("R: give one; can't eat -> Tiny Woods")},
     {_("Evolution Crystals"), _("Eevee alone -> Luminous Cave")},
     {_("New species"), _("4 newcomers -> Tiny Woods 1F")},
     {_("Mystery House"), _("house forced -> Mt. Steel 1F")},
@@ -551,7 +553,7 @@ static void ScenApply(void)
             ScenGo(SCRIPT_DUNGEON_TINY_WOODS, 1);
             break;
         }
-        case 6: { // Gummis: Rainbow (a type Gummi) and DX Gummis
+        case 6: { // Gummis: Rainbow and DX Gummis (R in this menu gives one; a dungeon won't let you eat them)
             static const u8 items[] = {ITEM_RAINBOW_GUMMI, ITEM_RAINBOW_GUMMI, ITEM_RAINBOW_GUMMI,
                                        ITEM_DX_GUMMI, ITEM_DX_GUMMI, ITEM_DX_GUMMI};
             ScenTeam(NULL, 0, 1, TRUE);
@@ -697,6 +699,19 @@ u32 UpdateDxToolMenu(void)
     }
     if ((gRealInputs.pressed & SELECT_BUTTON) && CreateWigglytuffShop(0)) {
         sDxTool->shopOpen = TRUE;
+        return MENU_NO_SCREEN_CHANGE;
+    }
+    // R opens the menu a Pokemon at its Rescue Camp has (Give Gummi), for the leader
+    if (sDxTool->gummiOpen) {
+        if (sub_8022860() == 3) {
+            sub_8022908();
+            sDxTool->gummiOpen = FALSE;
+            DxToolSetStep(sDxTool->step);
+        }
+        return MENU_NO_SCREEN_CHANGE;
+    }
+    if ((gRealInputs.pressed & R_BUTTON) && GetLeaderMon1() != NULL && sub_80227B8(GetLeaderMon1())) {
+        sDxTool->gummiOpen = TRUE;
         return MENU_NO_SCREEN_CHANGE;
     }
 

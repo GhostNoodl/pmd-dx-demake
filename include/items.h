@@ -72,6 +72,12 @@ u32 GetMoneyValue(Item* slot);
 u16 GetItemMoveID(u8 index);
 bool8 IsShoppableItem(u32 id);
 bool8 IsGummiItem(u8);
+#ifdef DX_RULES
+// DX: Red's Gummis (the White one is the Rainbow Gummi) and the DX Gummi (a reused id)
+bool8 DxIsGummi(u8 id);
+// DX has one kind of plain Gummi: any of Red's type Gummis still around becomes a Rainbow Gummi
+void DxConvertTypeGummis(void);
+#endif
 void ShiftItemsDownFrom(s32 start);
 void ClearItemSlotAt(u32 index);
 void MoveToStorage(Item *slot);

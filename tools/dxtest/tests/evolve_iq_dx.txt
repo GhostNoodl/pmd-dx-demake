@@ -1,0 +1,137 @@
+#rom debug
+#save after-first-dungeon
+# DX evolution, Red's IQ evolutions: DX has no IQ, so Golbat evolves into Crobat with an Evo Crystal
+# (debug Evolve tool = Luminous Cave)
+mash START sMainMenu 4 != 0 3000
+wait 60
+press UP
+press A
+wait 30
+# Storage is the 6th debug menu entry
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press A
+wait 600
+# leader (slot 42) becomes a Golbat (IQ 1: it could never evolve the Red way) and goes alone; one
+# Evo Crystal and a Rawst Berry in the toolbox
+write *gRecruitedPokemonRef+3704 2 42
+write *gRecruitedPokemonRef+3716 2 1
+write *gRecruitedPokemonRef+4752 1 1
+write *gTeamInventoryRef+0 4 0x00ED0001
+write *gTeamInventoryRef+4 4 0x00440001
+# every camp owned (Crobat needs a home)
+write *gFriendAreas+1 1 1
+write *gFriendAreas+2 1 1
+write *gFriendAreas+3 1 1
+write *gFriendAreas+4 1 1
+write *gFriendAreas+5 1 1
+write *gFriendAreas+6 1 1
+write *gFriendAreas+7 1 1
+write *gFriendAreas+8 1 1
+write *gFriendAreas+9 1 1
+write *gFriendAreas+10 1 1
+write *gFriendAreas+11 1 1
+write *gFriendAreas+12 1 1
+write *gFriendAreas+13 1 1
+write *gFriendAreas+14 1 1
+write *gFriendAreas+15 1 1
+write *gFriendAreas+16 1 1
+write *gFriendAreas+17 1 1
+write *gFriendAreas+18 1 1
+write *gFriendAreas+19 1 1
+write *gFriendAreas+20 1 1
+write *gFriendAreas+21 1 1
+write *gFriendAreas+22 1 1
+write *gFriendAreas+23 1 1
+write *gFriendAreas+24 1 1
+write *gFriendAreas+25 1 1
+write *gFriendAreas+26 1 1
+write *gFriendAreas+27 1 1
+write *gFriendAreas+28 1 1
+write *gFriendAreas+29 1 1
+write *gFriendAreas+30 1 1
+write *gFriendAreas+31 1 1
+write *gFriendAreas+32 1 1
+write *gFriendAreas+33 1 1
+write *gFriendAreas+34 1 1
+write *gFriendAreas+35 1 1
+write *gFriendAreas+36 1 1
+write *gFriendAreas+37 1 1
+write *gFriendAreas+38 1 1
+write *gFriendAreas+39 1 1
+write *gFriendAreas+40 1 1
+write *gFriendAreas+41 1 1
+write *gFriendAreas+42 1 1
+write *gFriendAreas+43 1 1
+write *gFriendAreas+44 1 1
+write *gFriendAreas+45 1 1
+write *gFriendAreas+46 1 1
+write *gFriendAreas+47 1 1
+write *gFriendAreas+48 1 1
+write *gFriendAreas+49 1 1
+write *gFriendAreas+50 1 1
+write *gFriendAreas+51 1 1
+write *gFriendAreas+52 1 1
+write *gFriendAreas+53 1 1
+write *gFriendAreas+54 1 1
+write *gFriendAreas+55 1 1
+write *gFriendAreas+56 1 1
+write *gFriendAreas+57 1 1
+press A
+wait 30
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+wait 10
+shot 1_debug_evolve
+press A
+wait 120
+press A
+wait 120
+press A
+wait 120
+press A
+wait 120
+press A
+wait 120
+shot 2_evolve_menu
+press A
+wait 120
+shot 3_give_item_q
+press DOWN
+wait 20
+press A
+wait 90
+shot 4_item_list
+press A
+wait 60
+shot 5_item_sub
+press A
+wait 90
+shot 6_another_q
+# no second item (the cursor starts on Yes; No is above it)
+press UP
+wait 10
+press A
+wait 120
+shot 6b_after_no
+shot 7_lets_begin
+# the evolved Crobat moves to a slot of its own (261 here) and stays leader; Golbat's slot 42 is freed
+mash A *gRecruitedPokemonRef+22970 1 == 1 2000
+wait 120
+shot 8_evolved
+read species *gRecruitedPokemonRef+22976 2
+expect *gRecruitedPokemonRef+22976 2 == 169
+expect *gRecruitedPokemonRef+22970 1 == 1
+expect *gRecruitedPokemonRef+3696 1 !& 1
+# the Evo Crystal was used up
+read slot0 *gTeamInventoryRef+2 1
+expect *gTeamInventoryRef+2 1 != -19
+expect *gTeamInventoryRef+6 1 != -19
+mash A *sMainMenu+4 4 == 16 3000

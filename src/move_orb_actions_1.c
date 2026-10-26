@@ -517,7 +517,11 @@ bool8 ReturnMoveAction(Entity * pokemon,Entity * target,Move * move,s32 itemId)
     s32 dmg = 1;
 
     for (i = 0; i < 999 && gReturnDmgData[i].minIq >= 0; i++) {
+#ifdef DX_RULES
+        if (entityInfo->level * 10 < gReturnDmgData[i].minIq) { // DX has no IQ: Lv. x 10 on Red's IQ scale
+#else
         if (entityInfo->IQ < gReturnDmgData[i].minIq) {
+#endif
             dmg = gReturnDmgData[i].dmgVal;
             break;
         }

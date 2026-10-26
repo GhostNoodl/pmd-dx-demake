@@ -2619,7 +2619,11 @@ static const struct ScriptCommand s_gs1_g10_s0_lives2_dlg0[] = { /* 0x81412bc */
     AWAIT_CUE(5),
     MSG_NPC(4, _(" And that's the leader,\n{NAME_5}.")),
     MSG_NPC(4, _(" {NAME_5} doesn't like\nphysical attacks.\nHe fights with his psychic powers.")),
+#ifdef DX_RULES
+    MSG_NPC(4, _(" He's endowed with an\namazing brain, the sharpest around.")),
+#else
     MSG_NPC(4, _(" He's endowed with an\namazing brain and an IQ of 5,000.")),
+#endif
     MSG_NPC(4, _(" Apparently, he's memorized\neverything that's happened in the world.")),
     MSG_NPC(4, _(" {NAME_5} does all the\ncommanding in the team.{WAIT_PRESS}\nHe's clearly in charge.")),
     TEXTBOX_CLEAR,

@@ -816,6 +816,11 @@ bool8 sub_8046F00(Item *item)
 {
     s32 i;
 
+#ifdef DX_RULES
+    if (DxIsGummi(item->id))
+        return FALSE; // DX: Gummis are given at a Rescue Camp
+#endif
+
     if (GetItemCategory(item->id) == CATEGORY_TMS_HMS) {
         u16 moveID = GetItemMoveID(item->id);
         if (!IsHMItem(item->id)) {

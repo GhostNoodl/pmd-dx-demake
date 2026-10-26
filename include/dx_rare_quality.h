@@ -14,6 +14,8 @@ u8 DxRecruitQuality(s16 species, bool8 shiny, Entity *leader);
 bool8 DxTeamHasQuality(u32 quality);
 s32 DxTeamSize(void);
 u32 DxRandomQuality(void);
+// a Gummi given at a Rescue Camp: one stat up for good, maybe a Rare Quality; the message goes to `text`
+void DxFeedGummi(Pokemon *mon, u8 itemId, u8 *text);
 void DxGrantQuality(Entity *user, Entity *target, u32 quality);
 void DxGummiItemAction(Entity *user, Entity *target, bool8 alwaysQuality);
 bool8 DxQualityAlwaysHits(Entity *attacker, u16 moveId);

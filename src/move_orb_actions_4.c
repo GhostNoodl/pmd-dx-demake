@@ -181,7 +181,11 @@ bool8 FrustrationMoveAction(Entity * pokemon, Entity * target, Move *move, s32 i
     s32 dmg = 1;
 
     for (i = 0; i < 999 && gFrustrationDmgData[i].minIq >= 0; i++) {
+#ifdef DX_RULES
+        if (entityInfo->level * 10 < gFrustrationDmgData[i].minIq) { // DX has no IQ: Lv. x 10 on Red's IQ scale
+#else
         if (entityInfo->IQ < gFrustrationDmgData[i].minIq) {
+#endif
             dmg = gFrustrationDmgData[i].dmgVal;
             break;
         }

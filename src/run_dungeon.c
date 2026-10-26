@@ -1,5 +1,8 @@
 #include "global.h"
 #ifdef DX_RULES
+#include "items.h"
+#endif
+#ifdef DX_RULES
 #include "dx_rules.h"
 #endif
 #include "globaldata.h"
@@ -145,6 +148,7 @@ void RunDungeon_Async(DungeonSetupStruct *setupPtr)
 #ifdef DX_RULES
         gDxAdventureTurns = 0;
         gDxAdventureExp = 0;
+        DxConvertTypeGummis();
 #endif
         gDungeon->unk644.unk37 = GetRescuesAllowed(setupPtr->info.sub0.unk0.id);
     }

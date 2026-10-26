@@ -66,6 +66,8 @@ def main():
                  "description": "ItemDescriptionEmpowermentSeed", "aiFlags": [False, False, False]})
     white = items[ids[RAINBOW_GUMMI]]
     white.update({"name": "ItemNameRainbowGummi", "description": "ItemDescriptionRainbowGummi"})
+    for g in TYPE_GUMMIS - {RAINBOW_GUMMI}:  # they turn into Rainbow Gummis (no IQ in DX)
+        items[ids[g]]["description"] = "ItemDescriptionRainbowGummi"
     dxg = items[ids[DX_GUMMI]]
     dxg.clear()
     dxg.update(white)
@@ -87,12 +89,12 @@ def main():
         ".align 2,0",
         ".global ItemNameRainbowGummi", "ItemNameRainbowGummi:", '.string "Rainbow Gummi\\0"', ".align 2,0",
         ".global ItemDescriptionRainbowGummi", "ItemDescriptionRainbowGummi:",
-        '.string "A Gummi of every color. It raises one of the{NEW_LINE}'
-        'Pokémon\'s stats, and it may also give it a{NEW_LINE}Rare Quality.\\n\\0"', ".align 2,0",
+        '.string "A Gummi of every color. Give it to a Pokémon{NEW_LINE}'
+        'at its Rescue Camp: it raises one of its stats{NEW_LINE}and may also give it a Rare Quality.\\n\\0"', ".align 2,0",
         ".global ItemNameDxGummi", "ItemNameDxGummi:", '.string "DX Gummi\\0"', ".align 2,0",
         ".global ItemDescriptionDxGummi", "ItemDescriptionDxGummi:",
-        '.string "A deluxe Gummi. It raises one of the Pokémon\'s{NEW_LINE}'
-        'stats and always gives it a Rare Quality.\\n\\0"', ".align 2,0",
+        '.string "A deluxe Gummi. Give it to a Pokémon at its{NEW_LINE}'
+        'Rescue Camp: it raises one of its stats and{NEW_LINE}always gives it a Rare Quality.\\n\\0"', ".align 2,0",
         ".global ItemNameTinyApple", "ItemNameTinyApple:", '.string "Tiny Apple\\0"', ".align 2,0",
         ".global ItemDescriptionTinyApple", "ItemDescriptionTinyApple:",
         '.string "A small food item that slightly fills the{NEW_LINE}'

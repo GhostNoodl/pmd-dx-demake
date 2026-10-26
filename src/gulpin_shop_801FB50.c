@@ -452,9 +452,11 @@ static void sub_80205D0(void)
     gUnknown_203B27C->unk7C[loopMax].text = gUnknown_80DC3E0;
     gUnknown_203B27C->unk7C[loopMax].menuAction = INFO_ACTION;
 
+#ifndef DX_RULES // DX has no IQ
     loopMax++;
     gUnknown_203B27C->unk7C[loopMax].text = gUnknown_80DC3E8;
     gUnknown_203B27C->unk7C[loopMax].menuAction = CHECK_IQ_ACTION;
+#endif
 
     loopMax++;
     gUnknown_203B27C->unk7C[loopMax].text = gUnknown_80DC3F4;
