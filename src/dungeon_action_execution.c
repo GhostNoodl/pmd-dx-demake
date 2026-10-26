@@ -171,6 +171,9 @@ bool8 ExecuteEntityDungeonAction_Async(Entity *entity)
                     else if (info->invisibleClassStatus.status != STATUS_MOBILE && !HasHeldItem(entity, ITEM_MOBILE_SCARF)
                         && DxCanForgeAPath(entity) && sub_804AE08(&entity->pos)) {
                         DxForgeAPathCost(entity);
+#ifdef DX_DEBUG
+                        gDxTestCount[5]++;
+#endif
                     }
 #endif
                     bVar14 = TRUE;
@@ -251,10 +254,10 @@ bool8 ExecuteEntityDungeonAction_Async(Entity *entity)
             HandleTalkFieldAction(entity);
             break;
         case ACTION_USE_MOVE_PLAYER:
-            HandleUseMovePlayerAction(entity);
 #ifdef DX_RULES
-            DxLeapAhead(entity);
+            DxLeapAhead(entity); // first, while the foe is still standing
 #endif
+            HandleUseMovePlayerAction(entity);
             break;
         case ACTION_STRUGGLE:
 #ifdef DX_DEBUG
@@ -267,10 +270,10 @@ bool8 ExecuteEntityDungeonAction_Async(Entity *entity)
             if (!GetEntInfo(entity)->isTeamLeader)
                 gDxTestCount[2]++;
 #endif
-            UseTemporaryMove(entity, MOVE_REGULAR_ATTACK);
 #ifdef DX_RULES
             DxLeapAhead(entity);
 #endif
+            UseTemporaryMove(entity, MOVE_REGULAR_ATTACK);
             break;
         case ACTION_STEPPED_ON_TRAP:
             TryTriggerTrap(entity,&entity->pos,0,0);

@@ -412,6 +412,9 @@ u32 GetAIUseItemProbability(Entity *targetPokemon, Item *item, u32 itemTargetFla
         case ITEM_APPLE:
         case ITEM_BIG_APPLE:
         case ITEM_HUGE_APPLE:
+#ifdef DX_RULES
+        case ITEM_TINY_APPLE:
+#endif
             if (FixedPointToInt(pokemonInfo->belly) < 10)
             {
                 return 100;

@@ -1,0 +1,68 @@
+#rom debug
+#save after-first-dungeon
+# DX Rare Quality Leap Ahead, when the leader's attack would KO: the leader (Forge a Path) walks up into a corridor
+# with the partner (Leap Ahead) right behind, and Tackles a 1 HP foe staged on the tile in front (gDxTestStage)
+# before the attack. The partner leaps in first (before the leader's move lands), so it still gets its strike;
+# leaping after the attack, it found the foe already gone
+mash START sMainMenu 4 != 0 3000
+write gDxTestSeed 4 99991
+wait 60
+press UP
+press A
+wait 30
+press A
+wait 30
+press A
+wait 30
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+# leader (recruit slot 42) Forge a Path (7); partner (slot 54) Leap Ahead (10)
+write *gRecruitedPokemonRef+3733 1 7
+write *gRecruitedPokemonRef+4789 1 10
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 999
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMaxHP 2 999
+hold UP 300
+wait 60
+shot 1_tunnel
+# step back down past the partner: now it is behind the leader, the corridor open ahead
+press DOWN
+wait 60
+shot 1b_swapped
+# the leader faces down the corridor (it just stepped down); a 1 HP foe on the tile in front
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!2 2 154
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!4 1 30
+write gDxTestStageTypes 1 255
+write gDxTestStageHP 2 1
+write gDxTestStageFoe 1 0
+write gDxTestStageFoe+1 1 1
+write gDxTestStageMate 1 0
+write gDxTestStageMate+1 1 0
+write gDxTestStage 1 1
+waitfor gDxTestStage 1 == 0 900
+wait 10
+expect gDxTestOut+12 2 == 0
+expect gDxTestOut+14 2 == 1
+expect ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoDirection 1 == 0
+shot 1c_staged
+# B menu -> Moves -> first move -> Use
+press B
+wait 30
+press A
+wait 30
+shot 2a_moves
+press A
+wait 30
+shot 2b_move
+press A
+wait 60
+shot 2c_a
+wait 60
+shot 2c_b
+wait 60
+shot 2c_c
+wait 120
+shot 2_leap
+expect gDxLeapAheadCount 1 == 1
+# and the foe is down
+expect **gDxTestStageMon 4 != 1

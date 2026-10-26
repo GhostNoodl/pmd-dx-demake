@@ -87,4 +87,7 @@
 // DX removed the weak regular attack: allies and foes always use a move, or Struggle once out of PP
 #define DX_NO_REGULAR_ATTACK TRUE
 
+// a Tiny Apple fills this much Belly (an Apple: 50)
+#define DX_TINY_APPLE_BELLY 25
+
 #endif // GUARD_DX_TUNING_H

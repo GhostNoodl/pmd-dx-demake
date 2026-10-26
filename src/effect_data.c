@@ -5476,7 +5476,11 @@ static const unkStruct_80CE37C gUnknown_80CE37C[NUMBER_OF_ITEM_IDS] = {
     [ITEM_SWITCH_BOX     ] = { .unk0 =  21, .unk2 =   8 },
     [ITEM_WEAVILE_FIG    ] = { .unk0 =  21, .unk2 =   8 },
     [ITEM_MIME_JR_FIG    ] = { .unk0 =  21, .unk2 =   8 },
+#ifdef DX_RULES
+    [ITEM_BEATUP_ORB     ] = { .unk0 = 405, .unk2 = 405 }, // the Tiny Apple eats like an Apple
+#else
     [ITEM_BEATUP_ORB     ] = { .unk0 =  21, .unk2 =   8 },
+#endif
     [ITEM_G_MACHINE_6    ] = { .unk0 =  21, .unk2 =   8 },
     [ITEM_G_MACHINE_7    ] = { .unk0 =  21, .unk2 =   8 },
     [ITEM_G_MACHINE_8    ] = { .unk0 =  21, .unk2 =   8 },

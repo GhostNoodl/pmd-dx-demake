@@ -355,12 +355,17 @@ static void TryInteractWithTile(Entity *entity)
         return;
 
     tile = GetTileAtEntitySafe(entity);
+#ifdef DX_RULES
+    // DX Forge a Path breaks walls too: redraw any broken wall stepped into (only a broken wall is marked)
+    sub_804AE84(&entity->pos);
+#else
     if (IqSkillIsEnabled(entity, IQ_SUPER_MOBILE)
         && info->invisibleClassStatus.status != STATUS_MOBILE
         && !(HasHeldItem(entity, ITEM_MOBILE_SCARF)))
     {
         sub_804AE84(&entity->pos);
     }
+#endif
     tileEntity = tile->object;
     if (tileEntity == NULL)
         return;
