@@ -541,13 +541,17 @@ void DxLeapAhead(Entity *leader)
     InitPokemonMove(&move, MOVE_REGULAR_ATTACK);
     for (i = 0; i < MAX_MON_MOVES; i++) {
         Move *m = &mateInfo->moves.moves[i];
-        if ((m->moveFlags & MOVE_FLAG_EXISTS) && m->PP != 0 && GetMoveBasePower(m) > 0
+        if ((m->moveFlags & MOVE_FLAG_EXISTS) && m->PP != 0 && DxMoveIsDamaging(m)
             && (GetMoveTargetAndRange(m, FALSE) & 0xFF) == (TARGETING_FLAG_TARGET_OTHER)) {
             move = *m;
             m->PP--;
             break;
         }
     }
+#if DX_NO_REGULAR_ATTACK
+    if (move.id == MOVE_REGULAR_ATTACK)
+        return; // no move of its own to leap in with
+#endif
     gDxLeapAheadCount++;
     SubstitutePlaceholderStringTags(gFormatBuffer_Monsters[0], mate, 0);
     LogMessageByIdWithPopupCheckUser_Async(mate, sDxLeaptAhead);

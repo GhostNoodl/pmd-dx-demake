@@ -1,4 +1,8 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_tuning.h"
+#include "dx_rules.h"
+#endif
 #include "globaldata.h"
 #include "dungeon_ai_attack.h"
 #include "dungeon_move_util.h"
@@ -49,6 +53,26 @@ static s32 TryAddTargetToAITargetList(s32 numPotentialTargets, s32 targetingFlag
 static bool8 IsAITargetEligible(s32 targetingFlags, Entity *user, Entity *target, Move *move, bool32 hasStatusChecker);
 static s32 WeightMove(Entity *user, s32 targetingFlags, Entity *target, u32 moveType);
 static bool8 TargetRegularAttack(Entity *pokemon, u32 *targetDir, bool8 checkPetrified);
+
+#if defined(DX_RULES) && DX_NO_REGULAR_ATTACK
+// DX: with no move to use, a Pokemon next to a foe Struggles once no damaging move has PP left (or
+// it never knew one)
+static void DxAIStruggleIfNoPP(Entity *pokemon, EntityInfo *info)
+{
+    s32 i, dir;
+
+    for (i = 0; i < MAX_MON_MOVES; i++) {
+        Move *move = &info->moves.moves[i];
+        if (MoveFlagExists(move) && move->PP != 0 && DxMoveIsDamaging(move))
+            return;
+    }
+    if (!TargetRegularAttack(pokemon, &dir, TRUE))
+        return;
+    SetMonsterActionFields(&info->action, ACTION_STRUGGLE);
+    info->action.direction = dir & DIRECTION_MASK;
+    TargetTileInFront(pokemon);
+}
+#endif
 
 void ChooseAIMove(Entity *pokemon)
 {
@@ -215,12 +239,24 @@ void ChooseAIMove(Entity *pokemon)
             else
             {
                 aiPossibleMove[i].weight = GetMoveAIWeight(move);
+#if defined(DX_RULES) && DX_NO_REGULAR_ATTACK
+                // DX: with no regular attack to fall back on, only weigh moves that reach a target now
+                // (Red rolled first and wasted the turn when the move picked couldn't reach)
+                AIConsiderMove(&aiPossibleMove[i], pokemon, move);
+                if (!aiPossibleMove[i].canBeUsed)
+                    aiPossibleMove[i].weight = 0;
+                aiPossibleMove[i].canBeUsed = TRUE;
+#endif
             }
             total += aiPossibleMove[i].weight;
         }
     }
     aiPossibleMove[REGULAR_ATTACK_INDEX].weight = 0;
+#if defined(DX_RULES) && DX_NO_REGULAR_ATTACK
+    if (FALSE) // DX: no regular attack to weigh
+#else
     if (!IqSkillIsEnabled(pokemon, IQ_EXCLUSIVE_MOVE_USER) && pokemonInfo->bideClassStatus.status != chargeStatus)
+#endif
     {
         aiPossibleMove[REGULAR_ATTACK_INDEX].canBeUsed = TRUE;
         if (pokemonInfo->bideClassStatus.status == chargeStatus)
@@ -270,6 +306,9 @@ void ChooseAIMove(Entity *pokemon)
     }
     if (total == 0)
     {
+#if defined(DX_RULES) && DX_NO_REGULAR_ATTACK
+        DxAIStruggleIfNoPP(pokemon, pokemonInfo);
+#endif
         return;
     }
     randomWeight = DungeonRandInt(total);
@@ -330,12 +369,17 @@ void ChooseAIMove(Entity *pokemon)
             }
         }
     }
+#if defined(DX_RULES) && DX_NO_REGULAR_ATTACK
+    if (canTargetRegularAttack)
+        DxAIStruggleIfNoPP(pokemon, pokemonInfo);
+#else
     if (canTargetRegularAttack)
     {
         SetMonsterActionFields(&pokemonInfo->action, ACTION_REGULAR_ATTACK);
         pokemonInfo->action.direction = regularAttackTargetDir & DIRECTION_MASK;
         TargetTileInFront(pokemon);
     }
+#endif
 }
 
 s32 AIConsiderMove(struct AIPossibleMove *aiPossibleMove, Entity *pokemon, Move *move)

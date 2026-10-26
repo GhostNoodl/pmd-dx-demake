@@ -2,6 +2,8 @@
 #save after-first-dungeon
 # DX post-game legendary recruiting: Zapdos beaten in its Mt. Thunder Peak room (forced post-game) always offers to join, no Apple needed
 mash START sMainMenu 4 != 0 3000
+# the recruit's nickname question is answered No (not what this test checks)
+write gDxTestNoNickname 1 1
 write gDxForcePostgame 1 1
 write gDxTestSeed 4 99991
 wait 60
@@ -60,7 +62,8 @@ write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 999
 write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMaxHP 2 999
 write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 999
 write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoMaxHP 2 999
-write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!2 2 63
+# Zapdos keeps its distance and uses ranged moves: Heat Wave reaches it anywhere in the room
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!2 2 230
 write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!4 1 40
 # the hit, "wants to join" (Yes), "joined the team": 9 presses to the nickname question
 press A

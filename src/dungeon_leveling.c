@@ -80,6 +80,33 @@ void AddExpPoints(Entity *pokemon, Entity *target, s32 exp)
   }
 }
 
+#ifdef DX_RULES
+static const u8 sDxTeamGainedExp[] = _("The team gained {VALUE_0} Exp. Points!");
+
+// DX: one "the team gained" line instead of a line per member (the most any member gained)
+static void DxTeamExpMessage(Entity *entityPtr)
+{
+    s32 i, most = 0;
+
+    for (i = 0; i < DUNGEON_MAX_POKEMON; i++) {
+        Entity *mon = gDungeon->activePokemon[i];
+        if (mon != NULL && EntityIsValid(mon)) {
+            EntityInfo *info = GetEntInfo(mon);
+            if (!info->isNotTeamMember && info->HP != 0 && info->unkF9 == 0 && info->level != 100
+                && info->expGainedInTurn > most)
+                most = info->expGainedInTurn;
+        }
+    }
+    if (most == 0)
+        return;
+    gFormatArgs[0] = most;
+#ifdef DX_DEBUG
+    gDxTestCount[0]++;
+#endif
+    LogMessageByIdWithPopupCheckUser_Async(GetLeader() != NULL ? GetLeader() : entityPtr, sDxTeamGainedExp);
+}
+#endif
+
 void EnemyEvolution(Entity *entity)
 {
   s32 counter;
@@ -97,6 +124,9 @@ void EnemyEvolution(Entity *entity)
       sub_80457DC(&EStack_f4);
       entityPtr = &EStack_f4;
     }
+#ifdef DX_RULES
+    DxTeamExpMessage(entityPtr); // one line for the team; members' own lines are skipped below
+#endif
     for(index = 0; index < DUNGEON_MAX_POKEMON; index++)
     {
       EntityInfo *info;
@@ -132,7 +162,16 @@ void EnemyEvolution(Entity *entity)
               info->exp += expGained;
               gFormatArgs[0] = expGained;
               SetMessageArgument_2(gFormatBuffer_Monsters[0],info,0);
+#ifdef DX_RULES
+              if (info->isNotTeamMember)
+#endif
+              {
+#ifdef DX_DEBUG
+              if (!info->isNotTeamMember)
+                  gDxTestCount[1]++;
+#endif
               TryDisplayDungeonLoggableMessage3_Async(entityPtr,target,gUnknown_80F9E64); // $m0 gained $d0 Exp Points
+              }
               flag = LevelUp(entityPtr,target,1,1);
             }
           }

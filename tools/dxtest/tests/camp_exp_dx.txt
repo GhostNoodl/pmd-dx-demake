@@ -3,6 +3,8 @@
 # DX camp Exp.: a Pokemon resting in a camp grows while the team is out. A Lv. 5 Bulbasaur waits in camp
 # (recruit slot 0) while the team clears the Skarmory rematch; it gets 20% of the leader's Exp.
 mash START sMainMenu 4 != 0 3000
+# the recruit's nickname question is answered No (not what this test checks)
+write gDxTestNoNickname 1 1
 write gDxForcePostgame 1 1
 write gDxTestSeed 4 99991
 # an Apple to hand over (DX recruiting)

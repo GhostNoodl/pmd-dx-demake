@@ -1,9 +1,8 @@
 #rom debug
 #save after-first-dungeon
 # DX Rare Quality Riled Up: a team member hit by enemies gets Attack and Sp. Atk boosts
-# (forced one-room Monster House floor: foes all around)
+# (one wild Pokemon staged next to the leader, knowing only Tackle; the leader uses its set move, Growl)
 mash START sMainMenu 4 != 0 3000
-write gDxForceMysteryHouse 1 2
 # fixed dungeon seed: Red seeds floors from timing, so layouts otherwise shift between builds
 write gDxTestSeed 4 99991
 wait 60
@@ -32,11 +31,104 @@ expect *gDungeon+@gDxOffDungeonFloor 1 == 1
 write *gRecruitedPokemonRef+3733 1 23
 write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMaxHP 2 400
 write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 400
-hold A+B 600
+write gDxTestStageTypes 1 255
+write gDxTestStageHP 2 0
+write gDxTestStageFoe 1 1
+write gDxTestStageFoe+1 1 0
+write gDxTestStageMate 1 0
+write gDxTestStageMate+1 1 0
+write gDxTestStage 1 1
+waitfor gDxTestStage 1 == 0 900
+wait 10
+write **gDxTestStageMon+@gDxOffEntityInfo+@gDxOffInfoMoves 1 5
+write **gDxTestStageMon+@gDxOffEntityInfo+@gDxOffInfoMoves!2 2 154
+write **gDxTestStageMon+@gDxOffEntityInfo+@gDxOffInfoMoves!4 1 20
+write **gDxTestStageMon+@gDxOffEntityInfo+@gDxOffInfoMoves!8 1 0
+write **gDxTestStageMon+@gDxOffEntityInfo+@gDxOffInfoMoves!16 1 0
+write **gDxTestStageMon+@gDxOffEntityInfo+@gDxOffInfoMoves!24 1 0
+press A+B
+wait 150
+write gDxTestStageTypes 1 255
+write gDxTestStageHP 2 0
+write gDxTestStageFoe 1 1
+write gDxTestStageFoe+1 1 0
+write gDxTestStageMate 1 0
+write gDxTestStageMate+1 1 0
+write gDxTestStage 1 1
+waitfor gDxTestStage 1 == 0 900
+wait 10
+press A+B
+wait 150
+write gDxTestStageTypes 1 255
+write gDxTestStageHP 2 0
+write gDxTestStageFoe 1 1
+write gDxTestStageFoe+1 1 0
+write gDxTestStageMate 1 0
+write gDxTestStageMate+1 1 0
+write gDxTestStage 1 1
+waitfor gDxTestStage 1 == 0 900
+wait 10
+press A+B
+wait 150
+write gDxTestStageTypes 1 255
+write gDxTestStageHP 2 0
+write gDxTestStageFoe 1 1
+write gDxTestStageFoe+1 1 0
+write gDxTestStageMate 1 0
+write gDxTestStageMate+1 1 0
+write gDxTestStage 1 1
+waitfor gDxTestStage 1 == 0 900
+wait 10
+press A+B
+wait 150
+write gDxTestStageTypes 1 255
+write gDxTestStageHP 2 0
+write gDxTestStageFoe 1 1
+write gDxTestStageFoe+1 1 0
+write gDxTestStageMate 1 0
+write gDxTestStageMate+1 1 0
+write gDxTestStage 1 1
+waitfor gDxTestStage 1 == 0 900
+wait 10
+press A+B
+wait 150
+write gDxTestStageTypes 1 255
+write gDxTestStageHP 2 0
+write gDxTestStageFoe 1 1
+write gDxTestStageFoe+1 1 0
+write gDxTestStageMate 1 0
+write gDxTestStageMate+1 1 0
+write gDxTestStage 1 1
+waitfor gDxTestStage 1 == 0 900
+wait 10
+press A+B
+wait 150
+write gDxTestStageTypes 1 255
+write gDxTestStageHP 2 0
+write gDxTestStageFoe 1 1
+write gDxTestStageFoe+1 1 0
+write gDxTestStageMate 1 0
+write gDxTestStageMate+1 1 0
+write gDxTestStage 1 1
+waitfor gDxTestStage 1 == 0 900
+wait 10
+press A+B
+wait 150
+write gDxTestStageTypes 1 255
+write gDxTestStageHP 2 0
+write gDxTestStageFoe 1 1
+write gDxTestStageFoe+1 1 0
+write gDxTestStageMate 1 0
+write gDxTestStageMate+1 1 0
+write gDxTestStage 1 1
+waitfor gDxTestStage 1 == 0 900
+wait 10
+press A+B
+wait 150
 shot 4_after
 read atkstage ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoStages 2
 read spatkstage ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoStages!2 2
-# (wild Pokemon may lower Attack again with Growl, so check the two together)
-calc stages atkstage + spatkstage
-calc base 0 + 20
-cmpreads stages > base
+read leader_hp ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2
+expect ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 < 400
+expect ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoStages 2 > 10
+expect ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoStages!2 2 > 10

@@ -26,9 +26,19 @@
 #include "pokemon.h"
 #include "dungeon_random.h"
 #include "structs/str_dungeon.h"
+#include "dungeon_pos_data.h"
+#include "dungeon_map_access.h"
+#include "dungeon_pokemon_sprites.h"
 
 // mainline base Speed per species id (Red has no Speed stat), from tools/dxtest/gen_dx_species.py
 #include "data/dx_base_speed.h"
+// which moves deal damage, from tools/dxtest/gen_dx_move_class.py
+#include "data/dx_move_damaging.h"
+
+bool8 DxMoveIsDamaging(Move *move)
+{
+    return move->id < sizeof(sDxMoveDamaging) * 8 && ((sDxMoveDamaging[move->id / 8] >> (move->id % 8)) & 1);
+}
 
 bool8 DxActionPausesRegen(u16 action)
 {
@@ -79,7 +89,7 @@ void DxTryMoveGrowth(EntityInfo *user, Move *move)
 {
     s32 chance;
 
-    if (user->isNotTeamMember || GetMoveBasePower(move) == 0 || move->ginseng >= GetMoveMaxUpgradeLevel(move))
+    if (user->isNotTeamMember || !DxMoveIsDamaging(move) || move->ginseng >= GetMoveMaxUpgradeLevel(move))
         return;
     chance = DX_MOVE_GROWTH_BASE_CHANCE - DX_MOVE_GROWTH_FALLOFF * move->ginseng;
     if (chance < DX_MOVE_GROWTH_MIN_CHANCE)
@@ -460,6 +470,110 @@ EWRAM_DATA s32 gDxAdventureExp = 0;
 // tests: set gDxTestProbe and the next turn stores a few rule results (dungeon_wind.c)
 EWRAM_DATA bool8 gDxTestProbe = FALSE;
 EWRAM_DATA s16 gDxTestOut[8] = {0};
+EWRAM_DATA u8 gDxTestStage = 0;
+EWRAM_DATA s8 gDxTestStageFoe[2] = {0};
+EWRAM_DATA u8 gDxTestStageTypes[2] = {0};
+EWRAM_DATA s8 gDxTestStageMate[2] = {0};
+EWRAM_DATA u16 gDxTestStageHP = 0;
+// the staged wild Pokemon, for tests to set its moves
+EWRAM_DATA Entity *gDxTestStageMon = NULL;
+EWRAM_DATA bool8 gDxTestNoNickname = FALSE;
+EWRAM_DATA bool8 gDxTestStageNewcomer = FALSE;
+EWRAM_DATA u16 gDxTestCount[5] = {0};
+
+// tests: put a Pokemon at (dx, dy) from the leader, on open floor with a clear line to it; if that spot
+// is blocked, the same offset turned 90 degrees (up to 3 times). The offset used, or 0,0 if none fits.
+static void DxTestPlace(Entity *mon, Entity *leader, s32 dx, s32 dy, s8 *used)
+{
+    s32 turn, step, n = dx != 0 ? (dx < 0 ? -dx : dx) : (dy < 0 ? -dy : dy);
+
+    used[0] = used[1] = 0;
+    for (turn = 0; turn < 4; turn++) {
+        bool8 clear = TRUE;
+        s32 t;
+
+        for (step = 1; step <= n && clear; step++) {
+            const Tile *tile = GetTile(leader->pos.x + dx * step / n, leader->pos.y + dy * step / n);
+            if (GetTerrainType(tile) != TERRAIN_TYPE_NORMAL || (tile->monster != NULL && tile->monster != mon))
+                clear = FALSE;
+        }
+        if (clear) {
+            sub_80694C0(mon, leader->pos.x + dx, leader->pos.y + dy, 1);
+            UpdateEntityPixelPos(mon, NULL);
+            used[0] = dx;
+            used[1] = dy;
+            return;
+        }
+        t = dx;
+        dx = -dy;
+        dy = t;
+    }
+}
+
+// tests: every wild Pokemon but one leaves the floor; that one stands at gDxTestStageFoe (x, y from the
+// leader; gDxTestOut[6..7] the offset used) with the types gDxTestStageTypes (0xFF: its own) and
+// gDxTestStageHP HP (0: 999).
+// gDxTestStageMate (unless 0,0): the first teammate stands there and the leader faces it.
+void DxTestStageScene(Entity *leader)
+{
+    Entity *keep = NULL;
+    s8 used[2];
+    s32 i;
+
+    if (!gDxTestStage || !EntityIsValid(leader))
+        return;
+    gDxTestStage = 0;
+    for (i = 0; i < DUNGEON_MAX_WILD_POKEMON; i++) {
+        Entity *mon = gDungeon->wildPokemon[i];
+        Tile *tile;
+
+        if (!EntityIsValid(mon))
+            continue;
+        if (keep == NULL) {
+            keep = mon;
+            continue;
+        }
+        tile = GetTileAtEntitySafe(mon);
+        if (tile->monster == mon)
+            tile->monster = NULL;
+        DeletePokemonDungeonSprite(GetEntInfo(mon)->dungeonSpriteId);
+        mon->type = ENTITY_NOTHING;
+    }
+    sub_8045ACC();
+    gDxTestStageMon = keep;
+    if (keep != NULL) {
+        EntityInfo *info = GetEntInfo(keep);
+
+        DxTestPlace(keep, leader, gDxTestStageFoe[0], gDxTestStageFoe[1], used);
+        gDxTestOut[6] = used[0];
+        gDxTestOut[7] = used[1];
+        if (gDxTestStageTypes[0] != 0xFF) {
+            info->types[0] = gDxTestStageTypes[0];
+            info->types[1] = gDxTestStageTypes[1];
+        }
+        info->maxHPStat = 999;
+        info->HP = gDxTestStageHP != 0 ? gDxTestStageHP : 999;
+        if (gDxTestStageNewcomer)
+            gDxMysteryHouseSpawned = info->id;
+    }
+    gDxTestOut[3] = -1;
+    if (gDxTestStageMate[0] != 0 || gDxTestStageMate[1] != 0) {
+        for (i = 0; i < MAX_TEAM_MEMBERS; i++) {
+            Entity *mate = gDungeon->teamPokemon[i];
+            if (EntityIsValid(mate) && mate != leader) {
+                s32 d;
+                DxTestPlace(mate, leader, gDxTestStageMate[0], gDxTestStageMate[1], used);
+                for (d = 0; d < NUM_DIRECTIONS; d++) {
+                    if (gAdjacentTileOffsets[d].x == used[0] && gAdjacentTileOffsets[d].y == used[1]) {
+                        GetEntInfo(leader)->action.direction = d;
+                        gDxTestOut[3] = d; // the way the leader now faces
+                    }
+                }
+                break;
+            }
+        }
+    }
+}
 #endif
 
 static u8 DxStat(s32 v)
