@@ -20357,7 +20357,7 @@
         "name": "MonsterNameAmbipom",
         "category": "MonsterCategoryLongTail",
         "overworldPalette": 7,
-        "bodySize": 1,
+        "bodySize": 2,
         "movementSpeed": 1,
         "types": [
             "TYPE_NORMAL"
@@ -20738,7 +20738,7 @@
         "name": "MonsterNameWeavile",
         "category": "MonsterCategorySharpClaw",
         "overworldPalette": 2,
-        "bodySize": 1,
+        "bodySize": 4,
         "movementSpeed": 1,
         "types": [
             "TYPE_DARK",
@@ -20790,7 +20790,7 @@
         "name": "MonsterNameMagnezone",
         "category": "MonsterCategoryMagnetArea",
         "overworldPalette": 2,
-        "bodySize": 1,
+        "bodySize": 2,
         "movementSpeed": 1,
         "types": [
             "TYPE_ELECTRIC",
@@ -20844,7 +20844,7 @@
         "name": "MonsterNameLickilicky",
         "category": "MonsterCategoryLicking",
         "overworldPalette": 10,
-        "bodySize": 1,
+        "bodySize": 4,
         "movementSpeed": 1,
         "types": [
             "TYPE_NORMAL"
@@ -20896,7 +20896,7 @@
         "name": "MonsterNameRhyperior",
         "category": "MonsterCategoryDrill",
         "overworldPalette": 6,
-        "bodySize": 2,
+        "bodySize": 4,
         "movementSpeed": 1,
         "types": [
             "TYPE_GROUND",
@@ -20948,7 +20948,7 @@
         "name": "MonsterNameTangrowth",
         "category": "MonsterCategoryVine",
         "overworldPalette": 5,
-        "bodySize": 1,
+        "bodySize": 2,
         "movementSpeed": 1,
         "types": [
             "TYPE_GRASS"
@@ -20999,7 +20999,7 @@
         "name": "MonsterNameElectivire",
         "category": "MonsterCategoryThunderbolt",
         "overworldPalette": 2,
-        "bodySize": 1,
+        "bodySize": 2,
         "movementSpeed": 1,
         "types": [
             "TYPE_ELECTRIC"
@@ -21050,7 +21050,7 @@
         "name": "MonsterNameMagmortar",
         "category": "MonsterCategoryBlast",
         "overworldPalette": 2,
-        "bodySize": 1,
+        "bodySize": 4,
         "movementSpeed": 1,
         "types": [
             "TYPE_FIRE"
@@ -21260,7 +21260,7 @@
         "name": "MonsterNameGlaceon",
         "category": "MonsterCategoryFreshSnow",
         "overworldPalette": 5,
-        "bodySize": 1,
+        "bodySize": 2,
         "movementSpeed": 1,
         "dialogueSprites": "0b0001111111111111",
         "types": [
@@ -21312,7 +21312,7 @@
         "name": "MonsterNameGliscor",
         "category": "MonsterCategoryFangScorpion",
         "overworldPalette": 2,
-        "bodySize": 1,
+        "bodySize": 2,
         "movementSpeed": 1,
         "types": [
             "TYPE_GROUND",
@@ -21366,7 +21366,7 @@
         "name": "MonsterNameMamoswine",
         "category": "MonsterCategoryTwinTusk",
         "overworldPalette": 0,
-        "bodySize": 1,
+        "bodySize": 4,
         "movementSpeed": 1,
         "types": [
             "TYPE_ICE",
@@ -21470,7 +21470,7 @@
         "name": "MonsterNameGallade",
         "category": "MonsterCategoryBlade",
         "overworldPalette": 3,
-        "bodySize": 1,
+        "bodySize": 2,
         "movementSpeed": 1,
         "types": [
             "TYPE_PSYCHIC",
@@ -21523,7 +21523,7 @@
         "name": "MonsterNameProbopass",
         "category": "MonsterCategoryCompass",
         "overworldPalette": 5,
-        "bodySize": 1,
+        "bodySize": 4,
         "movementSpeed": 1,
         "types": [
             "TYPE_ROCK",
@@ -21576,7 +21576,7 @@
         "name": "MonsterNameDusknoir",
         "category": "MonsterCategoryGripper",
         "overworldPalette": 2,
-        "bodySize": 1,
+        "bodySize": 4,
         "movementSpeed": 1,
         "types": [
             "TYPE_GHOST"
@@ -23639,7 +23639,7 @@
         "name": "MonsterNameMegaGallade",
         "category": "MonsterCategoryBlade",
         "overworldPalette": 3,
-        "bodySize": 1,
+        "bodySize": 2,
         "movementSpeed": 1,
         "types": [
             "TYPE_PSYCHIC",

@@ -126,11 +126,11 @@ static const ax_pose sElectivirePose31[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose32[] = {
-	AX_POSE(26, OAM1(228, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(26, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(225, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose33[] = {
-	AX_POSE(27, OAM1(228, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(27, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(225, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose34[] = {
@@ -150,7 +150,7 @@ static const ax_pose sElectivirePose37[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose38[] = {
-	AX_POSE(32, OAM1(227, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(32, OAM1(211, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose39[] = {
@@ -178,11 +178,11 @@ static const ax_pose sElectivirePose44[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose45[] = {
-	AX_POSE(35, OAM1(228, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(35, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose46[] = {
-	AX_POSE(36, OAM1(228, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(36, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose47[] = {
@@ -206,11 +206,11 @@ static const ax_pose sElectivirePose51[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose52[] = {
-	AX_POSE(39, OAM1(228, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(39, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose53[] = {
-	AX_POSE(40, OAM1(228, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(40, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose54[] = {
@@ -230,7 +230,7 @@ static const ax_pose sElectivirePose57[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose58[] = {
-	AX_POSE(45, OAM1(229, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(45, OAM1(229, ST_OAM_H_RECTANGLE, 1), OAM2(221, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose59[] = {
@@ -238,15 +238,15 @@ static const ax_pose sElectivirePose59[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose60[] = {
-	AX_POSE(47, OAM1(229, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(47, OAM1(229, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose61[] = {
-	AX_POSE(48, OAM1(227, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(48, OAM1(227, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose62[] = {
-	AX_POSE(45, OAM1(229, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(45, OAM1(229, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose63[] = {
@@ -290,27 +290,27 @@ static const ax_pose sElectivirePose72[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose73[] = {
-	AX_POSE(52, OAM1(223, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(52, OAM1(223, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose74[] = {
-	AX_POSE(52, OAM1(224, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(52, OAM1(224, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose75[] = {
-	AX_POSE(52, OAM1(226, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(52, OAM1(226, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose76[] = {
-	AX_POSE(52, OAM1(229, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(52, OAM1(229, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose77[] = {
-	AX_POSE(52, OAM1(227, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(52, OAM1(227, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose78[] = {
-	AX_POSE(52, OAM1(228, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(52, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose79[] = {
@@ -550,51 +550,51 @@ static const ax_pose sElectivirePose137[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose138[] = {
-	AX_POSE(60, OAM1(224, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(60, OAM1(224, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose139[] = {
-	AX_POSE(61, OAM1(226, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(61, OAM1(226, ST_OAM_H_RECTANGLE, 1), OAM2(221, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose140[] = {
-	AX_POSE(62, OAM1(226, ST_OAM_SQUARE, 1), OAM2(234, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(62, OAM1(226, ST_OAM_H_RECTANGLE, 1), OAM2(218, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose141[] = {
-	AX_POSE(63, OAM1(228, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(63, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(219, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose142[] = {
-	AX_POSE(64, OAM1(229, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(64, OAM1(229, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose143[] = {
-	AX_POSE(65, OAM1(228, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(65, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose144[] = {
-	AX_POSE(62, OAM1(226, ST_OAM_SQUARE, 1), OAM2(245, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(62, OAM1(226, ST_OAM_H_RECTANGLE, 1), OAM2(229, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose145[] = {
-	AX_POSE(61, OAM1(226, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(61, OAM1(226, ST_OAM_H_RECTANGLE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose146[] = {
-	AX_POSE(39, OAM1(227, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(39, OAM1(227, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose147[] = {
-	AX_POSE(39, OAM1(226, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(39, OAM1(226, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose148[] = {
-	AX_POSE(39, OAM1(225, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(39, OAM1(225, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose149[] = {
-	AX_POSE(39, OAM1(229, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(39, OAM1(229, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose150[] = {
@@ -630,51 +630,51 @@ static const ax_pose sElectivirePose157[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose158[] = {
-	AX_POSE(45, OAM1(226, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(45, OAM1(226, ST_OAM_H_RECTANGLE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose159[] = {
-	AX_POSE(45, OAM1(225, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(45, OAM1(225, ST_OAM_H_RECTANGLE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose160[] = {
-	AX_POSE(45, OAM1(224, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(45, OAM1(224, ST_OAM_H_RECTANGLE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose161[] = {
-	AX_POSE(45, OAM1(228, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(45, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose162[] = {
-	AX_POSE(47, OAM1(226, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(47, OAM1(226, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose163[] = {
-	AX_POSE(47, OAM1(225, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(47, OAM1(225, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose164[] = {
-	AX_POSE(47, OAM1(224, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(47, OAM1(224, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose165[] = {
-	AX_POSE(47, OAM1(228, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(47, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose166[] = {
-	AX_POSE(45, OAM1(226, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(45, OAM1(226, ST_OAM_H_RECTANGLE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose167[] = {
-	AX_POSE(45, OAM1(225, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(45, OAM1(225, ST_OAM_H_RECTANGLE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose168[] = {
-	AX_POSE(45, OAM1(224, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(45, OAM1(224, ST_OAM_H_RECTANGLE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose169[] = {
-	AX_POSE(45, OAM1(228, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(45, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose170[] = {
@@ -722,7 +722,7 @@ static const ax_pose sElectivirePose180[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose181[] = {
-	AX_POSE(48, OAM1(228, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(48, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose182[] = {
@@ -762,19 +762,19 @@ static const ax_pose sElectivirePose190[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose191[] = {
-	AX_POSE(39, OAM1(218, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(39, OAM1(218, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose192[] = {
-	AX_POSE(39, OAM1(212, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(39, OAM1(212, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose193[] = {
-	AX_POSE(39, OAM1(208, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(39, OAM1(208, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose194[] = {
-	AX_POSE(39, OAM1(207, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(39, OAM1(207, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose195[] = {
@@ -782,15 +782,15 @@ static const ax_pose sElectivirePose195[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose196[] = {
-	AX_POSE(40, OAM1(205, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(40, OAM1(205, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose197[] = {
-	AX_POSE(40, OAM1(210, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(40, OAM1(210, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose198[] = {
-	AX_POSE(40, OAM1(216, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(40, OAM1(216, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose199[] = {
@@ -858,19 +858,19 @@ static const ax_pose sElectivirePose214[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose215[] = {
-	AX_POSE(45, OAM1(219, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(45, OAM1(219, ST_OAM_H_RECTANGLE, 1), OAM2(221, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose216[] = {
-	AX_POSE(45, OAM1(213, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(45, OAM1(213, ST_OAM_H_RECTANGLE, 1), OAM2(221, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose217[] = {
-	AX_POSE(45, OAM1(209, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(45, OAM1(209, ST_OAM_H_RECTANGLE, 1), OAM2(221, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose218[] = {
-	AX_POSE(45, OAM1(208, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(45, OAM1(208, ST_OAM_H_RECTANGLE, 1), OAM2(221, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose219[] = {
@@ -890,19 +890,19 @@ static const ax_pose sElectivirePose222[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose223[] = {
-	AX_POSE(47, OAM1(219, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(47, OAM1(219, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose224[] = {
-	AX_POSE(47, OAM1(213, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(47, OAM1(213, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose225[] = {
-	AX_POSE(47, OAM1(209, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(47, OAM1(209, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose226[] = {
-	AX_POSE(47, OAM1(207, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(47, OAM1(207, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose227[] = {
@@ -910,31 +910,31 @@ static const ax_pose sElectivirePose227[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose228[] = {
-	AX_POSE(48, OAM1(206, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(48, OAM1(206, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose229[] = {
-	AX_POSE(48, OAM1(209, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(48, OAM1(209, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose230[] = {
-	AX_POSE(48, OAM1(215, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(48, OAM1(215, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose231[] = {
-	AX_POSE(45, OAM1(219, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(45, OAM1(219, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose232[] = {
-	AX_POSE(45, OAM1(213, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(45, OAM1(213, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose233[] = {
-	AX_POSE(45, OAM1(209, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(45, OAM1(209, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose234[] = {
-	AX_POSE(45, OAM1(208, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(45, OAM1(208, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sElectivirePose235[] = {
@@ -1192,16 +1192,36 @@ static const ax_sprite sElectivireSprites26[] = {
 	{sElectivireGfx26_4, ARRAY_COUNT(sElectivireGfx26_4)},
 	{NULL, 0}
 };
-static const u8 sElectivireGfx27[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_27.4bpp");
+static const u8 sElectivireGfx27_1[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_27_1.4bpp");
+static const u8 sElectivireGfx27_3[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_27_3.4bpp");
+static const u8 sElectivireGfx27_5[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_27_5.4bpp");
+static const u8 sElectivireGfx27_7[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_27_7.4bpp");
 static const ax_sprite sElectivireSprites27[] = {
-	{sElectivireGfx27, ARRAY_COUNT(sElectivireGfx27)},
-	{NULL, 32},
+	{NULL, 64},
+	{sElectivireGfx27_1, ARRAY_COUNT(sElectivireGfx27_1)},
+	{NULL, 96},
+	{sElectivireGfx27_3, ARRAY_COUNT(sElectivireGfx27_3)},
+	{NULL, 96},
+	{sElectivireGfx27_5, ARRAY_COUNT(sElectivireGfx27_5)},
+	{NULL, 96},
+	{sElectivireGfx27_7, ARRAY_COUNT(sElectivireGfx27_7)},
+	{NULL, 96},
 	{NULL, 0}
 };
-static const u8 sElectivireGfx28[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_28.4bpp");
+static const u8 sElectivireGfx28_1[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_28_1.4bpp");
+static const u8 sElectivireGfx28_3[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_28_3.4bpp");
+static const u8 sElectivireGfx28_5[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_28_5.4bpp");
+static const u8 sElectivireGfx28_7[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_28_7.4bpp");
 static const ax_sprite sElectivireSprites28[] = {
-	{sElectivireGfx28, ARRAY_COUNT(sElectivireGfx28)},
-	{NULL, 32},
+	{NULL, 64},
+	{sElectivireGfx28_1, ARRAY_COUNT(sElectivireGfx28_1)},
+	{NULL, 96},
+	{sElectivireGfx28_3, ARRAY_COUNT(sElectivireGfx28_3)},
+	{NULL, 96},
+	{sElectivireGfx28_5, ARRAY_COUNT(sElectivireGfx28_5)},
+	{NULL, 96},
+	{sElectivireGfx28_7, ARRAY_COUNT(sElectivireGfx28_7)},
+	{NULL, 96},
 	{NULL, 0}
 };
 static const u8 sElectivireGfx29[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_29.4bpp");
@@ -1229,12 +1249,20 @@ static const ax_sprite sElectivireSprites32[] = {
 	{sElectivireGfx32_1, ARRAY_COUNT(sElectivireGfx32_1)},
 	{NULL, 0}
 };
-static const u8 sElectivireGfx33[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_33.4bpp");
-static const u8 sElectivireGfx33_2[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_33_2.4bpp");
+static const u8 sElectivireGfx33_1[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_33_1.4bpp");
+static const u8 sElectivireGfx33_3[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_33_3.4bpp");
+static const u8 sElectivireGfx33_5[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_33_5.4bpp");
+static const u8 sElectivireGfx33_7[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_33_7.4bpp");
 static const ax_sprite sElectivireSprites33[] = {
-	{sElectivireGfx33, ARRAY_COUNT(sElectivireGfx33)},
+	{NULL, 160},
+	{sElectivireGfx33_1, ARRAY_COUNT(sElectivireGfx33_1)},
 	{NULL, 32},
-	{sElectivireGfx33_2, ARRAY_COUNT(sElectivireGfx33_2)},
+	{sElectivireGfx33_3, ARRAY_COUNT(sElectivireGfx33_3)},
+	{NULL, 32},
+	{sElectivireGfx33_5, ARRAY_COUNT(sElectivireGfx33_5)},
+	{NULL, 64},
+	{sElectivireGfx33_7, ARRAY_COUNT(sElectivireGfx33_7)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const u8 sElectivireGfx34[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_34.4bpp");
@@ -1254,20 +1282,36 @@ static const ax_sprite sElectivireSprites35[] = {
 	{sElectivireGfx35_3, ARRAY_COUNT(sElectivireGfx35_3)},
 	{NULL, 0}
 };
-static const u8 sElectivireGfx36[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_36.4bpp");
-static const u8 sElectivireGfx36_2[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_36_2.4bpp");
+static const u8 sElectivireGfx36_1[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_36_1.4bpp");
+static const u8 sElectivireGfx36_3[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_36_3.4bpp");
+static const u8 sElectivireGfx36_5[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_36_5.4bpp");
+static const u8 sElectivireGfx36_7[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_36_7.4bpp");
 static const ax_sprite sElectivireSprites36[] = {
-	{sElectivireGfx36, ARRAY_COUNT(sElectivireGfx36)},
-	{NULL, 32},
-	{sElectivireGfx36_2, ARRAY_COUNT(sElectivireGfx36_2)},
+	{NULL, 64},
+	{sElectivireGfx36_1, ARRAY_COUNT(sElectivireGfx36_1)},
+	{NULL, 128},
+	{sElectivireGfx36_3, ARRAY_COUNT(sElectivireGfx36_3)},
+	{NULL, 64},
+	{sElectivireGfx36_5, ARRAY_COUNT(sElectivireGfx36_5)},
+	{NULL, 128},
+	{sElectivireGfx36_7, ARRAY_COUNT(sElectivireGfx36_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
-static const u8 sElectivireGfx37[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_37.4bpp");
-static const u8 sElectivireGfx37_2[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_37_2.4bpp");
+static const u8 sElectivireGfx37_1[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_37_1.4bpp");
+static const u8 sElectivireGfx37_3[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_37_3.4bpp");
+static const u8 sElectivireGfx37_5[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_37_5.4bpp");
+static const u8 sElectivireGfx37_7[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_37_7.4bpp");
 static const ax_sprite sElectivireSprites37[] = {
-	{sElectivireGfx37, ARRAY_COUNT(sElectivireGfx37)},
-	{NULL, 32},
-	{sElectivireGfx37_2, ARRAY_COUNT(sElectivireGfx37_2)},
+	{NULL, 64},
+	{sElectivireGfx37_1, ARRAY_COUNT(sElectivireGfx37_1)},
+	{NULL, 128},
+	{sElectivireGfx37_3, ARRAY_COUNT(sElectivireGfx37_3)},
+	{NULL, 64},
+	{sElectivireGfx37_5, ARRAY_COUNT(sElectivireGfx37_5)},
+	{NULL, 128},
+	{sElectivireGfx37_7, ARRAY_COUNT(sElectivireGfx37_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sElectivireGfx38[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_38.4bpp");
@@ -1283,14 +1327,36 @@ static const ax_sprite sElectivireSprites39[] = {
 	{sElectivireGfx39_2, ARRAY_COUNT(sElectivireGfx39_2)},
 	{NULL, 0}
 };
-static const u8 sElectivireGfx40[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_40.4bpp");
+static const u8 sElectivireGfx40_1[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_40_1.4bpp");
+static const u8 sElectivireGfx40_3[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_40_3.4bpp");
+static const u8 sElectivireGfx40_5[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_40_5.4bpp");
+static const u8 sElectivireGfx40_7[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_40_7.4bpp");
 static const ax_sprite sElectivireSprites40[] = {
-	{sElectivireGfx40, ARRAY_COUNT(sElectivireGfx40)},
+	{NULL, 64},
+	{sElectivireGfx40_1, ARRAY_COUNT(sElectivireGfx40_1)},
+	{NULL, 96},
+	{sElectivireGfx40_3, ARRAY_COUNT(sElectivireGfx40_3)},
+	{NULL, 64},
+	{sElectivireGfx40_5, ARRAY_COUNT(sElectivireGfx40_5)},
+	{NULL, 96},
+	{sElectivireGfx40_7, ARRAY_COUNT(sElectivireGfx40_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
-static const u8 sElectivireGfx41[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_41.4bpp");
+static const u8 sElectivireGfx41_1[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_41_1.4bpp");
+static const u8 sElectivireGfx41_3[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_41_3.4bpp");
+static const u8 sElectivireGfx41_5[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_41_5.4bpp");
+static const u8 sElectivireGfx41_7[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_41_7.4bpp");
 static const ax_sprite sElectivireSprites41[] = {
-	{sElectivireGfx41, ARRAY_COUNT(sElectivireGfx41)},
+	{NULL, 64},
+	{sElectivireGfx41_1, ARRAY_COUNT(sElectivireGfx41_1)},
+	{NULL, 96},
+	{sElectivireGfx41_3, ARRAY_COUNT(sElectivireGfx41_3)},
+	{NULL, 64},
+	{sElectivireGfx41_5, ARRAY_COUNT(sElectivireGfx41_5)},
+	{NULL, 96},
+	{sElectivireGfx41_7, ARRAY_COUNT(sElectivireGfx41_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sElectivireGfx42_1[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_42_1.4bpp");
@@ -1320,11 +1386,18 @@ static const ax_sprite sElectivireSprites45[] = {
 };
 static const u8 sElectivireGfx46_1[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_46_1.4bpp");
 static const u8 sElectivireGfx46_3[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_46_3.4bpp");
+static const u8 sElectivireGfx46_5[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_46_5.4bpp");
+static const u8 sElectivireGfx46_7[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_46_7.4bpp");
 static const ax_sprite sElectivireSprites46[] = {
-	{NULL, 32},
+	{NULL, 96},
 	{sElectivireGfx46_1, ARRAY_COUNT(sElectivireGfx46_1)},
-	{NULL, 32},
+	{NULL, 128},
 	{sElectivireGfx46_3, ARRAY_COUNT(sElectivireGfx46_3)},
+	{NULL, 64},
+	{sElectivireGfx46_5, ARRAY_COUNT(sElectivireGfx46_5)},
+	{NULL, 96},
+	{sElectivireGfx46_7, ARRAY_COUNT(sElectivireGfx46_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sElectivireGfx47[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_47.4bpp");
@@ -1335,18 +1408,36 @@ static const ax_sprite sElectivireSprites47[] = {
 	{sElectivireGfx47_2, ARRAY_COUNT(sElectivireGfx47_2)},
 	{NULL, 0}
 };
-static const u8 sElectivireGfx48[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_48.4bpp");
+static const u8 sElectivireGfx48_1[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_48_1.4bpp");
+static const u8 sElectivireGfx48_3[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_48_3.4bpp");
+static const u8 sElectivireGfx48_5[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_48_5.4bpp");
+static const u8 sElectivireGfx48_7[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_48_7.4bpp");
 static const ax_sprite sElectivireSprites48[] = {
-	{sElectivireGfx48, ARRAY_COUNT(sElectivireGfx48)},
+	{NULL, 64},
+	{sElectivireGfx48_1, ARRAY_COUNT(sElectivireGfx48_1)},
+	{NULL, 96},
+	{sElectivireGfx48_3, ARRAY_COUNT(sElectivireGfx48_3)},
+	{NULL, 64},
+	{sElectivireGfx48_5, ARRAY_COUNT(sElectivireGfx48_5)},
+	{NULL, 96},
+	{sElectivireGfx48_7, ARRAY_COUNT(sElectivireGfx48_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sElectivireGfx49_1[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_49_1.4bpp");
 static const u8 sElectivireGfx49_3[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_49_3.4bpp");
+static const u8 sElectivireGfx49_5[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_49_5.4bpp");
+static const u8 sElectivireGfx49_7[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_49_7.4bpp");
 static const ax_sprite sElectivireSprites49[] = {
-	{NULL, 32},
+	{NULL, 96},
 	{sElectivireGfx49_1, ARRAY_COUNT(sElectivireGfx49_1)},
-	{NULL, 32},
+	{NULL, 128},
 	{sElectivireGfx49_3, ARRAY_COUNT(sElectivireGfx49_3)},
+	{NULL, 96},
+	{sElectivireGfx49_5, ARRAY_COUNT(sElectivireGfx49_5)},
+	{NULL, 128},
+	{sElectivireGfx49_7, ARRAY_COUNT(sElectivireGfx49_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sElectivireGfx50[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_50.4bpp");
@@ -1370,9 +1461,20 @@ static const ax_sprite sElectivireSprites52[] = {
 	{sElectivireGfx52_2, ARRAY_COUNT(sElectivireGfx52_2)},
 	{NULL, 0}
 };
-static const u8 sElectivireGfx53[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_53.4bpp");
+static const u8 sElectivireGfx53_1[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_53_1.4bpp");
+static const u8 sElectivireGfx53_3[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_53_3.4bpp");
+static const u8 sElectivireGfx53_5[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_53_5.4bpp");
+static const u8 sElectivireGfx53_7[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_53_7.4bpp");
 static const ax_sprite sElectivireSprites53[] = {
-	{sElectivireGfx53, ARRAY_COUNT(sElectivireGfx53)},
+	{NULL, 64},
+	{sElectivireGfx53_1, ARRAY_COUNT(sElectivireGfx53_1)},
+	{NULL, 96},
+	{sElectivireGfx53_3, ARRAY_COUNT(sElectivireGfx53_3)},
+	{NULL, 96},
+	{sElectivireGfx53_5, ARRAY_COUNT(sElectivireGfx53_5)},
+	{NULL, 128},
+	{sElectivireGfx53_7, ARRAY_COUNT(sElectivireGfx53_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sElectivireGfx54_1[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_54_1.4bpp");
@@ -1414,34 +1516,100 @@ static const ax_sprite sElectivireSprites60[] = {
 	{NULL, 32},
 	{NULL, 0}
 };
-static const u8 sElectivireGfx61[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_61.4bpp");
+static const u8 sElectivireGfx61_1[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_61_1.4bpp");
+static const u8 sElectivireGfx61_3[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_61_3.4bpp");
+static const u8 sElectivireGfx61_5[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_61_5.4bpp");
+static const u8 sElectivireGfx61_7[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_61_7.4bpp");
 static const ax_sprite sElectivireSprites61[] = {
-	{sElectivireGfx61, ARRAY_COUNT(sElectivireGfx61)},
+	{NULL, 64},
+	{sElectivireGfx61_1, ARRAY_COUNT(sElectivireGfx61_1)},
+	{NULL, 96},
+	{sElectivireGfx61_3, ARRAY_COUNT(sElectivireGfx61_3)},
+	{NULL, 64},
+	{sElectivireGfx61_5, ARRAY_COUNT(sElectivireGfx61_5)},
+	{NULL, 64},
+	{sElectivireGfx61_7, ARRAY_COUNT(sElectivireGfx61_7)},
+	{NULL, 32},
 	{NULL, 0}
 };
-static const u8 sElectivireGfx62[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_62.4bpp");
+static const u8 sElectivireGfx62_1[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_62_1.4bpp");
+static const u8 sElectivireGfx62_3[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_62_3.4bpp");
+static const u8 sElectivireGfx62_5[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_62_5.4bpp");
+static const u8 sElectivireGfx62_7[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_62_7.4bpp");
 static const ax_sprite sElectivireSprites62[] = {
-	{sElectivireGfx62, ARRAY_COUNT(sElectivireGfx62)},
+	{NULL, 32},
+	{sElectivireGfx62_1, ARRAY_COUNT(sElectivireGfx62_1)},
+	{NULL, 96},
+	{sElectivireGfx62_3, ARRAY_COUNT(sElectivireGfx62_3)},
+	{NULL, 96},
+	{sElectivireGfx62_5, ARRAY_COUNT(sElectivireGfx62_5)},
+	{NULL, 96},
+	{sElectivireGfx62_7, ARRAY_COUNT(sElectivireGfx62_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
-static const u8 sElectivireGfx63[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_63.4bpp");
+static const u8 sElectivireGfx63_1[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_63_1.4bpp");
+static const u8 sElectivireGfx63_3[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_63_3.4bpp");
+static const u8 sElectivireGfx63_5[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_63_5.4bpp");
+static const u8 sElectivireGfx63_7[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_63_7.4bpp");
 static const ax_sprite sElectivireSprites63[] = {
-	{sElectivireGfx63, ARRAY_COUNT(sElectivireGfx63)},
+	{NULL, 32},
+	{sElectivireGfx63_1, ARRAY_COUNT(sElectivireGfx63_1)},
+	{NULL, 128},
+	{sElectivireGfx63_3, ARRAY_COUNT(sElectivireGfx63_3)},
+	{NULL, 96},
+	{sElectivireGfx63_5, ARRAY_COUNT(sElectivireGfx63_5)},
+	{NULL, 96},
+	{sElectivireGfx63_7, ARRAY_COUNT(sElectivireGfx63_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
-static const u8 sElectivireGfx64[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_64.4bpp");
+static const u8 sElectivireGfx64_1[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_64_1.4bpp");
+static const u8 sElectivireGfx64_3[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_64_3.4bpp");
+static const u8 sElectivireGfx64_5[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_64_5.4bpp");
+static const u8 sElectivireGfx64_7[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_64_7.4bpp");
 static const ax_sprite sElectivireSprites64[] = {
-	{sElectivireGfx64, ARRAY_COUNT(sElectivireGfx64)},
+	{NULL, 64},
+	{sElectivireGfx64_1, ARRAY_COUNT(sElectivireGfx64_1)},
+	{NULL, 96},
+	{sElectivireGfx64_3, ARRAY_COUNT(sElectivireGfx64_3)},
+	{NULL, 128},
+	{sElectivireGfx64_5, ARRAY_COUNT(sElectivireGfx64_5)},
+	{NULL, 96},
+	{sElectivireGfx64_7, ARRAY_COUNT(sElectivireGfx64_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
-static const u8 sElectivireGfx65[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_65.4bpp");
+static const u8 sElectivireGfx65_1[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_65_1.4bpp");
+static const u8 sElectivireGfx65_3[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_65_3.4bpp");
+static const u8 sElectivireGfx65_5[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_65_5.4bpp");
+static const u8 sElectivireGfx65_7[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_65_7.4bpp");
 static const ax_sprite sElectivireSprites65[] = {
-	{sElectivireGfx65, ARRAY_COUNT(sElectivireGfx65)},
+	{NULL, 64},
+	{sElectivireGfx65_1, ARRAY_COUNT(sElectivireGfx65_1)},
+	{NULL, 64},
+	{sElectivireGfx65_3, ARRAY_COUNT(sElectivireGfx65_3)},
+	{NULL, 64},
+	{sElectivireGfx65_5, ARRAY_COUNT(sElectivireGfx65_5)},
+	{NULL, 96},
+	{sElectivireGfx65_7, ARRAY_COUNT(sElectivireGfx65_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
-static const u8 sElectivireGfx66[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_66.4bpp");
+static const u8 sElectivireGfx66_1[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_66_1.4bpp");
+static const u8 sElectivireGfx66_3[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_66_3.4bpp");
+static const u8 sElectivireGfx66_5[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_66_5.4bpp");
+static const u8 sElectivireGfx66_7[] = INCBIN_U8("graphics/ax/mon/electivire/sprite_66_7.4bpp");
 static const ax_sprite sElectivireSprites66[] = {
-	{sElectivireGfx66, ARRAY_COUNT(sElectivireGfx66)},
+	{NULL, 64},
+	{sElectivireGfx66_1, ARRAY_COUNT(sElectivireGfx66_1)},
+	{NULL, 128},
+	{sElectivireGfx66_3, ARRAY_COUNT(sElectivireGfx66_3)},
+	{NULL, 64},
+	{sElectivireGfx66_5, ARRAY_COUNT(sElectivireGfx66_5)},
+	{NULL, 96},
+	{sElectivireGfx66_7, ARRAY_COUNT(sElectivireGfx66_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const ax_anim sElectivireAnims_1_1[] = {

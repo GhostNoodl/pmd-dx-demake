@@ -186,7 +186,7 @@ static const ax_pose sLickilickyPose46[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose47[] = {
-	AX_POSE(40, OAM1(226, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
+	AX_POSE(40, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose48[] = {
@@ -198,7 +198,7 @@ static const ax_pose sLickilickyPose49[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose50[] = {
-	AX_POSE(43, OAM1(227, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
+	AX_POSE(43, OAM1(211, ST_OAM_SQUARE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose51[] = {
@@ -210,7 +210,7 @@ static const ax_pose sLickilickyPose52[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose53[] = {
-	AX_POSE(46, OAM1(224, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
+	AX_POSE(46, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose54[] = {
@@ -222,7 +222,7 @@ static const ax_pose sLickilickyPose55[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose56[] = {
-	AX_POSE(48, OAM1(225, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
+	AX_POSE(48, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose57[] = {
@@ -234,7 +234,7 @@ static const ax_pose sLickilickyPose58[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose59[] = {
-	AX_POSE(46, OAM1(224, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 10)),
+	AX_POSE(46, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 10)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose60[] = {
@@ -246,7 +246,7 @@ static const ax_pose sLickilickyPose61[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose62[] = {
-	AX_POSE(52, OAM1(226, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
+	AX_POSE(52, OAM1(210, ST_OAM_SQUARE, 1), OAM2(220, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose63[] = {
@@ -254,7 +254,7 @@ static const ax_pose sLickilickyPose63[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose64[] = {
-	AX_POSE(54, OAM1(228, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
+	AX_POSE(54, OAM1(212, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose65[] = {
@@ -402,35 +402,35 @@ static const ax_pose sLickilickyPose100[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose101[] = {
-	AX_POSE(65, OAM1(225, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
+	AX_POSE(65, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose102[] = {
-	AX_POSE(66, OAM1(226, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
+	AX_POSE(66, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose103[] = {
-	AX_POSE(67, OAM1(226, ST_OAM_SQUARE, 1), OAM2(236, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
+	AX_POSE(67, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(236, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose104[] = {
-	AX_POSE(68, OAM1(226, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
+	AX_POSE(68, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(237, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose105[] = {
-	AX_POSE(69, OAM1(226, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
+	AX_POSE(69, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose106[] = {
-	AX_POSE(68, OAM1(226, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 10)),
+	AX_POSE(68, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 10)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose107[] = {
-	AX_POSE(67, OAM1(226, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 10)),
+	AX_POSE(67, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(243, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 10)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose108[] = {
-	AX_POSE(70, OAM1(226, ST_OAM_SQUARE, 1), OAM2(241, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
+	AX_POSE(70, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(241, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 10)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sLickilickyPose109[] = {
@@ -1184,9 +1184,13 @@ static const ax_sprite sLickilickySprites40[] = {
 	{NULL, 0}
 };
 static const u8 sLickilickyGfx41_1[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_41_1.4bpp");
+static const u8 sLickilickyGfx41_3[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_41_3.4bpp");
 static const ax_sprite sLickilickySprites41[] = {
-	{NULL, 64},
+	{NULL, 160},
 	{sLickilickyGfx41_1, ARRAY_COUNT(sLickilickyGfx41_1)},
+	{NULL, 96},
+	{sLickilickyGfx41_3, ARRAY_COUNT(sLickilickyGfx41_3)},
+	{NULL, 192},
 	{NULL, 0}
 };
 static const u8 sLickilickyGfx42[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_42.4bpp");
@@ -1206,9 +1210,23 @@ static const ax_sprite sLickilickySprites43[] = {
 	{sLickilickyGfx43_3, ARRAY_COUNT(sLickilickyGfx43_3)},
 	{NULL, 0}
 };
-static const u8 sLickilickyGfx44[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_44.4bpp");
+static const u8 sLickilickyGfx44_1[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_44_1.4bpp");
+static const u8 sLickilickyGfx44_3[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_44_3.4bpp");
+static const u8 sLickilickyGfx44_5[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_44_5.4bpp");
+static const u8 sLickilickyGfx44_7[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_44_7.4bpp");
+static const u8 sLickilickyGfx44_9[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_44_9.4bpp");
 static const ax_sprite sLickilickySprites44[] = {
-	{sLickilickyGfx44, ARRAY_COUNT(sLickilickyGfx44)},
+	{NULL, 576},
+	{sLickilickyGfx44_1, ARRAY_COUNT(sLickilickyGfx44_1)},
+	{NULL, 128},
+	{sLickilickyGfx44_3, ARRAY_COUNT(sLickilickyGfx44_3)},
+	{NULL, 96},
+	{sLickilickyGfx44_5, ARRAY_COUNT(sLickilickyGfx44_5)},
+	{NULL, 96},
+	{sLickilickyGfx44_7, ARRAY_COUNT(sLickilickyGfx44_7)},
+	{NULL, 160},
+	{sLickilickyGfx44_9, ARRAY_COUNT(sLickilickyGfx44_9)},
+	{NULL, 384},
 	{NULL, 0}
 };
 static const u8 sLickilickyGfx45[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_45.4bpp");
@@ -1227,9 +1245,14 @@ static const ax_sprite sLickilickySprites46[] = {
 	{sLickilickyGfx46_2, ARRAY_COUNT(sLickilickyGfx46_2)},
 	{NULL, 0}
 };
-static const u8 sLickilickyGfx47[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_47.4bpp");
+static const u8 sLickilickyGfx47_1[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_47_1.4bpp");
+static const u8 sLickilickyGfx47_3[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_47_3.4bpp");
 static const ax_sprite sLickilickySprites47[] = {
-	{sLickilickyGfx47, ARRAY_COUNT(sLickilickyGfx47)},
+	{NULL, 160},
+	{sLickilickyGfx47_1, ARRAY_COUNT(sLickilickyGfx47_1)},
+	{NULL, 32},
+	{sLickilickyGfx47_3, ARRAY_COUNT(sLickilickyGfx47_3)},
+	{NULL, 128},
 	{NULL, 0}
 };
 static const u8 sLickilickyGfx48_1[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_48_1.4bpp");
@@ -1239,9 +1262,13 @@ static const ax_sprite sLickilickySprites48[] = {
 	{NULL, 0}
 };
 static const u8 sLickilickyGfx49_1[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_49_1.4bpp");
+static const u8 sLickilickyGfx49_3[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_49_3.4bpp");
 static const ax_sprite sLickilickySprites49[] = {
-	{NULL, 32},
+	{NULL, 160},
 	{sLickilickyGfx49_1, ARRAY_COUNT(sLickilickyGfx49_1)},
+	{NULL, 64},
+	{sLickilickyGfx49_3, ARRAY_COUNT(sLickilickyGfx49_3)},
+	{NULL, 128},
 	{NULL, 0}
 };
 static const u8 sLickilickyGfx50_1[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_50_1.4bpp");
@@ -1268,9 +1295,23 @@ static const ax_sprite sLickilickySprites52[] = {
 	{sLickilickyGfx52_1, ARRAY_COUNT(sLickilickyGfx52_1)},
 	{NULL, 0}
 };
-static const u8 sLickilickyGfx53[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_53.4bpp");
+static const u8 sLickilickyGfx53_1[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_53_1.4bpp");
+static const u8 sLickilickyGfx53_3[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_53_3.4bpp");
+static const u8 sLickilickyGfx53_5[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_53_5.4bpp");
+static const u8 sLickilickyGfx53_7[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_53_7.4bpp");
+static const u8 sLickilickyGfx53_9[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_53_9.4bpp");
 static const ax_sprite sLickilickySprites53[] = {
-	{sLickilickyGfx53, ARRAY_COUNT(sLickilickyGfx53)},
+	{NULL, 576},
+	{sLickilickyGfx53_1, ARRAY_COUNT(sLickilickyGfx53_1)},
+	{NULL, 128},
+	{sLickilickyGfx53_3, ARRAY_COUNT(sLickilickyGfx53_3)},
+	{NULL, 96},
+	{sLickilickyGfx53_5, ARRAY_COUNT(sLickilickyGfx53_5)},
+	{NULL, 96},
+	{sLickilickyGfx53_7, ARRAY_COUNT(sLickilickyGfx53_7)},
+	{NULL, 192},
+	{sLickilickyGfx53_9, ARRAY_COUNT(sLickilickyGfx53_9)},
+	{NULL, 352},
 	{NULL, 0}
 };
 static const u8 sLickilickyGfx54_1[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_54_1.4bpp");
@@ -1282,9 +1323,14 @@ static const ax_sprite sLickilickySprites54[] = {
 	{sLickilickyGfx54_3, ARRAY_COUNT(sLickilickyGfx54_3)},
 	{NULL, 0}
 };
-static const u8 sLickilickyGfx55[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_55.4bpp");
+static const u8 sLickilickyGfx55_1[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_55_1.4bpp");
+static const u8 sLickilickyGfx55_3[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_55_3.4bpp");
 static const ax_sprite sLickilickySprites55[] = {
-	{sLickilickyGfx55, ARRAY_COUNT(sLickilickyGfx55)},
+	{NULL, 256},
+	{sLickilickyGfx55_1, ARRAY_COUNT(sLickilickyGfx55_1)},
+	{NULL, 64},
+	{sLickilickyGfx55_3, ARRAY_COUNT(sLickilickyGfx55_3)},
+	{NULL, 128},
 	{NULL, 0}
 };
 static const u8 sLickilickyGfx56_1[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_56_1.4bpp");
@@ -1357,59 +1403,100 @@ static const ax_sprite sLickilickySprites65[] = {
 	{NULL, 32},
 	{NULL, 0}
 };
-static const u8 sLickilickyGfx66[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_66.4bpp");
-static const u8 sLickilickyGfx66_2[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_66_2.4bpp");
-static const u8 sLickilickyGfx66_4[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_66_4.4bpp");
+static const u8 sLickilickyGfx66_1[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_66_1.4bpp");
+static const u8 sLickilickyGfx66_3[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_66_3.4bpp");
+static const u8 sLickilickyGfx66_5[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_66_5.4bpp");
+static const u8 sLickilickyGfx66_7[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_66_7.4bpp");
 static const ax_sprite sLickilickySprites66[] = {
-	{sLickilickyGfx66, ARRAY_COUNT(sLickilickyGfx66)},
+	{NULL, 160},
+	{sLickilickyGfx66_1, ARRAY_COUNT(sLickilickyGfx66_1)},
 	{NULL, 32},
-	{sLickilickyGfx66_2, ARRAY_COUNT(sLickilickyGfx66_2)},
+	{sLickilickyGfx66_3, ARRAY_COUNT(sLickilickyGfx66_3)},
 	{NULL, 32},
-	{sLickilickyGfx66_4, ARRAY_COUNT(sLickilickyGfx66_4)},
+	{sLickilickyGfx66_5, ARRAY_COUNT(sLickilickyGfx66_5)},
+	{NULL, 32},
+	{sLickilickyGfx66_7, ARRAY_COUNT(sLickilickyGfx66_7)},
+	{NULL, 128},
 	{NULL, 0}
 };
-static const u8 sLickilickyGfx67[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_67.4bpp");
-static const u8 sLickilickyGfx67_2[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_67_2.4bpp");
+static const u8 sLickilickyGfx67_1[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_67_1.4bpp");
+static const u8 sLickilickyGfx67_3[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_67_3.4bpp");
+static const u8 sLickilickyGfx67_5[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_67_5.4bpp");
+static const u8 sLickilickyGfx67_7[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_67_7.4bpp");
 static const ax_sprite sLickilickySprites67[] = {
-	{sLickilickyGfx67, ARRAY_COUNT(sLickilickyGfx67)},
+	{NULL, 160},
+	{sLickilickyGfx67_1, ARRAY_COUNT(sLickilickyGfx67_1)},
+	{NULL, 32},
+	{sLickilickyGfx67_3, ARRAY_COUNT(sLickilickyGfx67_3)},
 	{NULL, 64},
-	{sLickilickyGfx67_2, ARRAY_COUNT(sLickilickyGfx67_2)},
+	{sLickilickyGfx67_5, ARRAY_COUNT(sLickilickyGfx67_5)},
+	{NULL, 32},
+	{sLickilickyGfx67_7, ARRAY_COUNT(sLickilickyGfx67_7)},
+	{NULL, 160},
 	{NULL, 0}
 };
-static const u8 sLickilickyGfx68[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_68.4bpp");
-static const u8 sLickilickyGfx68_2[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_68_2.4bpp");
+static const u8 sLickilickyGfx68_1[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_68_1.4bpp");
+static const u8 sLickilickyGfx68_3[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_68_3.4bpp");
+static const u8 sLickilickyGfx68_5[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_68_5.4bpp");
+static const u8 sLickilickyGfx68_7[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_68_7.4bpp");
 static const ax_sprite sLickilickySprites68[] = {
-	{sLickilickyGfx68, ARRAY_COUNT(sLickilickyGfx68)},
+	{NULL, 192},
+	{sLickilickyGfx68_1, ARRAY_COUNT(sLickilickyGfx68_1)},
 	{NULL, 32},
-	{sLickilickyGfx68_2, ARRAY_COUNT(sLickilickyGfx68_2)},
+	{sLickilickyGfx68_3, ARRAY_COUNT(sLickilickyGfx68_3)},
+	{NULL, 32},
+	{sLickilickyGfx68_5, ARRAY_COUNT(sLickilickyGfx68_5)},
+	{NULL, 32},
+	{sLickilickyGfx68_7, ARRAY_COUNT(sLickilickyGfx68_7)},
+	{NULL, 128},
 	{NULL, 0}
 };
-static const u8 sLickilickyGfx69[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_69.4bpp");
-static const u8 sLickilickyGfx69_2[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_69_2.4bpp");
+static const u8 sLickilickyGfx69_1[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_69_1.4bpp");
+static const u8 sLickilickyGfx69_3[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_69_3.4bpp");
+static const u8 sLickilickyGfx69_5[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_69_5.4bpp");
+static const u8 sLickilickyGfx69_7[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_69_7.4bpp");
 static const ax_sprite sLickilickySprites69[] = {
-	{sLickilickyGfx69, ARRAY_COUNT(sLickilickyGfx69)},
+	{NULL, 160},
+	{sLickilickyGfx69_1, ARRAY_COUNT(sLickilickyGfx69_1)},
 	{NULL, 32},
-	{sLickilickyGfx69_2, ARRAY_COUNT(sLickilickyGfx69_2)},
+	{sLickilickyGfx69_3, ARRAY_COUNT(sLickilickyGfx69_3)},
+	{NULL, 32},
+	{sLickilickyGfx69_5, ARRAY_COUNT(sLickilickyGfx69_5)},
+	{NULL, 32},
+	{sLickilickyGfx69_7, ARRAY_COUNT(sLickilickyGfx69_7)},
+	{NULL, 128},
 	{NULL, 0}
 };
-static const u8 sLickilickyGfx70[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_70.4bpp");
-static const u8 sLickilickyGfx70_2[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_70_2.4bpp");
-static const u8 sLickilickyGfx70_4[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_70_4.4bpp");
+static const u8 sLickilickyGfx70_1[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_70_1.4bpp");
+static const u8 sLickilickyGfx70_3[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_70_3.4bpp");
+static const u8 sLickilickyGfx70_5[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_70_5.4bpp");
+static const u8 sLickilickyGfx70_7[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_70_7.4bpp");
 static const ax_sprite sLickilickySprites70[] = {
-	{sLickilickyGfx70, ARRAY_COUNT(sLickilickyGfx70)},
+	{NULL, 160},
+	{sLickilickyGfx70_1, ARRAY_COUNT(sLickilickyGfx70_1)},
 	{NULL, 32},
-	{sLickilickyGfx70_2, ARRAY_COUNT(sLickilickyGfx70_2)},
+	{sLickilickyGfx70_3, ARRAY_COUNT(sLickilickyGfx70_3)},
 	{NULL, 32},
-	{sLickilickyGfx70_4, ARRAY_COUNT(sLickilickyGfx70_4)},
+	{sLickilickyGfx70_5, ARRAY_COUNT(sLickilickyGfx70_5)},
+	{NULL, 32},
+	{sLickilickyGfx70_7, ARRAY_COUNT(sLickilickyGfx70_7)},
+	{NULL, 128},
 	{NULL, 0}
 };
 static const u8 sLickilickyGfx71_1[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_71_1.4bpp");
 static const u8 sLickilickyGfx71_3[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_71_3.4bpp");
+static const u8 sLickilickyGfx71_5[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_71_5.4bpp");
+static const u8 sLickilickyGfx71_7[] = INCBIN_U8("graphics/ax/mon/lickilicky/sprite_71_7.4bpp");
 static const ax_sprite sLickilickySprites71[] = {
-	{NULL, 32},
+	{NULL, 160},
 	{sLickilickyGfx71_1, ARRAY_COUNT(sLickilickyGfx71_1)},
-	{NULL, 32},
+	{NULL, 64},
 	{sLickilickyGfx71_3, ARRAY_COUNT(sLickilickyGfx71_3)},
+	{NULL, 32},
+	{sLickilickyGfx71_5, ARRAY_COUNT(sLickilickyGfx71_5)},
+	{NULL, 32},
+	{sLickilickyGfx71_7, ARRAY_COUNT(sLickilickyGfx71_7)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const ax_anim sLickilickyAnims_1_1[] = {

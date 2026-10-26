@@ -1,0 +1,212 @@
+#rom debug
+#save after-first-dungeon
+# S13 (Rescue Camps) picked after another scenario unlocked every camp: it locks all but the leader's and
+# partner's again, so Wigglytuff has camps to sell. Built from scenarios_dx.txt's S13 block.
+# --- S13
+mash START sMainMenu 4 != 0 3000
+wait 60
+press UP
+press A
+wait 30
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press A
+wait 30
+expect *sMainMenu+4 4 == 53
+press LEFT
+press UP
+press RIGHT
+press UP
+press UP
+wait 10
+# as if an earlier scenario had unlocked every camp
+write *gFriendAreas+1 1 1
+write *gFriendAreas+2 1 1
+write *gFriendAreas+3 1 1
+write *gFriendAreas+4 1 1
+write *gFriendAreas+5 1 1
+write *gFriendAreas+6 1 1
+write *gFriendAreas+7 1 1
+write *gFriendAreas+8 1 1
+write *gFriendAreas+9 1 1
+write *gFriendAreas+10 1 1
+write *gFriendAreas+11 1 1
+write *gFriendAreas+12 1 1
+write *gFriendAreas+13 1 1
+write *gFriendAreas+14 1 1
+write *gFriendAreas+15 1 1
+write *gFriendAreas+16 1 1
+write *gFriendAreas+17 1 1
+write *gFriendAreas+18 1 1
+write *gFriendAreas+19 1 1
+write *gFriendAreas+20 1 1
+write *gFriendAreas+21 1 1
+write *gFriendAreas+22 1 1
+write *gFriendAreas+23 1 1
+write *gFriendAreas+24 1 1
+write *gFriendAreas+25 1 1
+write *gFriendAreas+26 1 1
+write *gFriendAreas+27 1 1
+write *gFriendAreas+28 1 1
+write *gFriendAreas+29 1 1
+write *gFriendAreas+30 1 1
+write *gFriendAreas+31 1 1
+write *gFriendAreas+32 1 1
+write *gFriendAreas+33 1 1
+write *gFriendAreas+34 1 1
+write *gFriendAreas+35 1 1
+write *gFriendAreas+36 1 1
+write *gFriendAreas+37 1 1
+write *gFriendAreas+38 1 1
+write *gFriendAreas+39 1 1
+write *gFriendAreas+40 1 1
+write *gFriendAreas+41 1 1
+write *gFriendAreas+42 1 1
+write *gFriendAreas+43 1 1
+write *gFriendAreas+44 1 1
+write *gFriendAreas+45 1 1
+write *gFriendAreas+46 1 1
+write *gFriendAreas+47 1 1
+write *gFriendAreas+48 1 1
+write *gFriendAreas+49 1 1
+write *gFriendAreas+50 1 1
+write *gFriendAreas+51 1 1
+write *gFriendAreas+52 1 1
+write *gFriendAreas+53 1 1
+write *gFriendAreas+54 1 1
+write *gFriendAreas+55 1 1
+write *gFriendAreas+56 1 1
+write *gFriendAreas+57 1 1
+shot s13_pick
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+shot s13_in_dungeon
+expect gDxScenario 1 == 13
+expect *gDungeon+@gDxOffDungeonLocation 1 == 1
+expect *gDungeon+@gDxOffDungeonFloor 1 == 1
+# only the leader's and partner's camps are owned: the others are for sale
+read c1 *gFriendAreas+1 1
+read c2 *gFriendAreas+2 1
+read c3 *gFriendAreas+3 1
+read c4 *gFriendAreas+4 1
+read c5 *gFriendAreas+5 1
+read c6 *gFriendAreas+6 1
+read c7 *gFriendAreas+7 1
+read c8 *gFriendAreas+8 1
+read c9 *gFriendAreas+9 1
+read c10 *gFriendAreas+10 1
+read c11 *gFriendAreas+11 1
+read c12 *gFriendAreas+12 1
+read c13 *gFriendAreas+13 1
+read c14 *gFriendAreas+14 1
+read c15 *gFriendAreas+15 1
+read c16 *gFriendAreas+16 1
+read c17 *gFriendAreas+17 1
+read c18 *gFriendAreas+18 1
+read c19 *gFriendAreas+19 1
+read c20 *gFriendAreas+20 1
+read c21 *gFriendAreas+21 1
+read c22 *gFriendAreas+22 1
+read c23 *gFriendAreas+23 1
+read c24 *gFriendAreas+24 1
+read c25 *gFriendAreas+25 1
+read c26 *gFriendAreas+26 1
+read c27 *gFriendAreas+27 1
+read c28 *gFriendAreas+28 1
+read c29 *gFriendAreas+29 1
+read c30 *gFriendAreas+30 1
+read c31 *gFriendAreas+31 1
+read c32 *gFriendAreas+32 1
+read c33 *gFriendAreas+33 1
+read c34 *gFriendAreas+34 1
+read c35 *gFriendAreas+35 1
+read c36 *gFriendAreas+36 1
+read c37 *gFriendAreas+37 1
+read c38 *gFriendAreas+38 1
+read c39 *gFriendAreas+39 1
+read c40 *gFriendAreas+40 1
+read c41 *gFriendAreas+41 1
+read c42 *gFriendAreas+42 1
+read c43 *gFriendAreas+43 1
+read c44 *gFriendAreas+44 1
+read c45 *gFriendAreas+45 1
+read c46 *gFriendAreas+46 1
+read c47 *gFriendAreas+47 1
+read c48 *gFriendAreas+48 1
+read c49 *gFriendAreas+49 1
+read c50 *gFriendAreas+50 1
+read c51 *gFriendAreas+51 1
+read c52 *gFriendAreas+52 1
+read c53 *gFriendAreas+53 1
+read c54 *gFriendAreas+54 1
+read c55 *gFriendAreas+55 1
+read c56 *gFriendAreas+56 1
+read c57 *gFriendAreas+57 1
+calc t1 c1 + 0
+calc t2 t1 + c2
+calc t3 t2 + c3
+calc t4 t3 + c4
+calc t5 t4 + c5
+calc t6 t5 + c6
+calc t7 t6 + c7
+calc t8 t7 + c8
+calc t9 t8 + c9
+calc t10 t9 + c10
+calc t11 t10 + c11
+calc t12 t11 + c12
+calc t13 t12 + c13
+calc t14 t13 + c14
+calc t15 t14 + c15
+calc t16 t15 + c16
+calc t17 t16 + c17
+calc t18 t17 + c18
+calc t19 t18 + c19
+calc t20 t19 + c20
+calc t21 t20 + c21
+calc t22 t21 + c22
+calc t23 t22 + c23
+calc t24 t23 + c24
+calc t25 t24 + c25
+calc t26 t25 + c26
+calc t27 t26 + c27
+calc t28 t27 + c28
+calc t29 t28 + c29
+calc t30 t29 + c30
+calc t31 t30 + c31
+calc t32 t31 + c32
+calc t33 t32 + c33
+calc t34 t33 + c34
+calc t35 t34 + c35
+calc t36 t35 + c36
+calc t37 t36 + c37
+calc t38 t37 + c38
+calc t39 t38 + c39
+calc t40 t39 + c40
+calc t41 t40 + c41
+calc t42 t41 + c42
+calc t43 t42 + c43
+calc t44 t43 + c44
+calc t45 t44 + c45
+calc t46 t45 + c46
+calc t47 t46 + c47
+calc t48 t47 + c48
+calc t49 t48 + c49
+calc t50 t49 + c50
+calc t51 t50 + c51
+calc t52 t51 + c52
+calc t53 t52 + c53
+calc t54 t53 + c54
+calc t55 t54 + c55
+calc t56 t55 + c56
+calc t57 t56 + c57
+calc two 2 + 0
+calc one 1 + 0
+cmpreads t57 <= two
+cmpreads t57 >= one
+expect *gFriendAreas+52 1 == 0

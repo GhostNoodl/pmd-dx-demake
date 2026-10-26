@@ -190,7 +190,7 @@ static const ax_pose sTangrowthPose47[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose48[] = {
-	AX_POSE(39, OAM1(229, ST_OAM_SQUARE, 1), OAM2(246, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
+	AX_POSE(39, OAM1(229, ST_OAM_H_RECTANGLE, 1), OAM2(230, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose49[] = {
@@ -202,7 +202,7 @@ static const ax_pose sTangrowthPose50[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose51[] = {
-	AX_POSE(42, OAM1(226, ST_OAM_SQUARE, 1), OAM2(244, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
+	AX_POSE(42, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(244, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose52[] = {
@@ -222,7 +222,7 @@ static const ax_pose sTangrowthPose55[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose56[] = {
-	AX_POSE(46, OAM1(226, ST_OAM_SQUARE, 1), OAM2(235, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
+	AX_POSE(46, OAM1(210, ST_OAM_V_RECTANGLE, 1), OAM2(235, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose57[] = {
@@ -234,7 +234,7 @@ static const ax_pose sTangrowthPose58[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose59[] = {
-	AX_POSE(47, OAM1(229, ST_OAM_SQUARE, 1), OAM2(233, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
+	AX_POSE(47, OAM1(229, ST_OAM_H_RECTANGLE, 1), OAM2(217, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose60[] = {
@@ -254,15 +254,15 @@ static const ax_pose sTangrowthPose63[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose64[] = {
-	AX_POSE(50, OAM1(228, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
+	AX_POSE(50, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose65[] = {
-	AX_POSE(50, OAM1(226, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
+	AX_POSE(50, OAM1(226, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose66[] = {
-	AX_POSE(50, OAM1(225, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
+	AX_POSE(50, OAM1(225, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose67[] = {
@@ -302,15 +302,15 @@ static const ax_pose sTangrowthPose75[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose76[] = {
-	AX_POSE(54, OAM1(228, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
+	AX_POSE(54, OAM1(228, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose77[] = {
-	AX_POSE(54, OAM1(226, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
+	AX_POSE(54, OAM1(226, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose78[] = {
-	AX_POSE(54, OAM1(225, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
+	AX_POSE(54, OAM1(225, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose79[] = {
@@ -474,7 +474,7 @@ static const ax_pose sTangrowthPose118[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose119[] = {
-	AX_POSE(54, OAM1(227, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
+	AX_POSE(54, OAM1(227, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose120[] = {
@@ -506,19 +506,19 @@ static const ax_pose sTangrowthPose126[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose127[] = {
-	AX_POSE(50, OAM1(218, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
+	AX_POSE(50, OAM1(218, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose128[] = {
-	AX_POSE(50, OAM1(212, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
+	AX_POSE(50, OAM1(212, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose129[] = {
-	AX_POSE(50, OAM1(208, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
+	AX_POSE(50, OAM1(208, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose130[] = {
-	AX_POSE(50, OAM1(205, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
+	AX_POSE(50, OAM1(205, ST_OAM_H_RECTANGLE, 1), OAM2(223, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose131[] = {
@@ -634,19 +634,19 @@ static const ax_pose sTangrowthPose158[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose159[] = {
-	AX_POSE(54, OAM1(218, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
+	AX_POSE(54, OAM1(218, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose160[] = {
-	AX_POSE(54, OAM1(212, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
+	AX_POSE(54, OAM1(212, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose161[] = {
-	AX_POSE(54, OAM1(208, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
+	AX_POSE(54, OAM1(208, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose162[] = {
-	AX_POSE(54, OAM1(205, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
+	AX_POSE(54, OAM1(205, ST_OAM_H_RECTANGLE, 1), OAM2(224, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 5)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sTangrowthPose163[] = {
@@ -1048,13 +1048,20 @@ static const ax_sprite sTangrowthSprites39[] = {
 	{NULL, 32},
 	{NULL, 0}
 };
-static const u8 sTangrowthGfx40[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_40.4bpp");
-static const u8 sTangrowthGfx40_2[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_40_2.4bpp");
+static const u8 sTangrowthGfx40_1[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_40_1.4bpp");
+static const u8 sTangrowthGfx40_3[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_40_3.4bpp");
+static const u8 sTangrowthGfx40_5[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_40_5.4bpp");
+static const u8 sTangrowthGfx40_7[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_40_7.4bpp");
 static const ax_sprite sTangrowthSprites40[] = {
-	{sTangrowthGfx40, ARRAY_COUNT(sTangrowthGfx40)},
-	{NULL, 32},
-	{sTangrowthGfx40_2, ARRAY_COUNT(sTangrowthGfx40_2)},
-	{NULL, 32},
+	{NULL, 64},
+	{sTangrowthGfx40_1, ARRAY_COUNT(sTangrowthGfx40_1)},
+	{NULL, 160},
+	{sTangrowthGfx40_3, ARRAY_COUNT(sTangrowthGfx40_3)},
+	{NULL, 96},
+	{sTangrowthGfx40_5, ARRAY_COUNT(sTangrowthGfx40_5)},
+	{NULL, 96},
+	{sTangrowthGfx40_7, ARRAY_COUNT(sTangrowthGfx40_7)},
+	{NULL, 96},
 	{NULL, 0}
 };
 static const u8 sTangrowthGfx41[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_41.4bpp");
@@ -1077,10 +1084,14 @@ static const ax_sprite sTangrowthSprites42[] = {
 	{sTangrowthGfx42_4, ARRAY_COUNT(sTangrowthGfx42_4)},
 	{NULL, 0}
 };
-static const u8 sTangrowthGfx43[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_43.4bpp");
+static const u8 sTangrowthGfx43_1[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_43_1.4bpp");
+static const u8 sTangrowthGfx43_3[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_43_3.4bpp");
 static const ax_sprite sTangrowthSprites43[] = {
-	{sTangrowthGfx43, ARRAY_COUNT(sTangrowthGfx43)},
-	{NULL, 32},
+	{NULL, 192},
+	{sTangrowthGfx43_1, ARRAY_COUNT(sTangrowthGfx43_1)},
+	{NULL, 64},
+	{sTangrowthGfx43_3, ARRAY_COUNT(sTangrowthGfx43_3)},
+	{NULL, 192},
 	{NULL, 0}
 };
 static const u8 sTangrowthGfx44[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_44.4bpp");
@@ -1099,21 +1110,36 @@ static const ax_sprite sTangrowthSprites46[] = {
 	{sTangrowthGfx46, ARRAY_COUNT(sTangrowthGfx46)},
 	{NULL, 0}
 };
-static const u8 sTangrowthGfx47[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_47.4bpp");
-static const u8 sTangrowthGfx47_2[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_47_2.4bpp");
+static const u8 sTangrowthGfx47_1[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_47_1.4bpp");
+static const u8 sTangrowthGfx47_3[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_47_3.4bpp");
+static const u8 sTangrowthGfx47_5[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_47_5.4bpp");
+static const u8 sTangrowthGfx47_7[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_47_7.4bpp");
 static const ax_sprite sTangrowthSprites47[] = {
-	{sTangrowthGfx47, ARRAY_COUNT(sTangrowthGfx47)},
+	{NULL, 128},
+	{sTangrowthGfx47_1, ARRAY_COUNT(sTangrowthGfx47_1)},
+	{NULL, 64},
+	{sTangrowthGfx47_3, ARRAY_COUNT(sTangrowthGfx47_3)},
 	{NULL, 32},
-	{sTangrowthGfx47_2, ARRAY_COUNT(sTangrowthGfx47_2)},
+	{sTangrowthGfx47_5, ARRAY_COUNT(sTangrowthGfx47_5)},
+	{NULL, 64},
+	{sTangrowthGfx47_7, ARRAY_COUNT(sTangrowthGfx47_7)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const u8 sTangrowthGfx48_1[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_48_1.4bpp");
 static const u8 sTangrowthGfx48_3[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_48_3.4bpp");
+static const u8 sTangrowthGfx48_5[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_48_5.4bpp");
+static const u8 sTangrowthGfx48_7[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_48_7.4bpp");
 static const ax_sprite sTangrowthSprites48[] = {
-	{NULL, 32},
+	{NULL, 96},
 	{sTangrowthGfx48_1, ARRAY_COUNT(sTangrowthGfx48_1)},
-	{NULL, 32},
+	{NULL, 128},
 	{sTangrowthGfx48_3, ARRAY_COUNT(sTangrowthGfx48_3)},
+	{NULL, 96},
+	{sTangrowthGfx48_5, ARRAY_COUNT(sTangrowthGfx48_5)},
+	{NULL, 128},
+	{sTangrowthGfx48_7, ARRAY_COUNT(sTangrowthGfx48_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sTangrowthGfx49_1[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_49_1.4bpp");
@@ -1130,11 +1156,18 @@ static const ax_sprite sTangrowthSprites50[] = {
 };
 static const u8 sTangrowthGfx51_1[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_51_1.4bpp");
 static const u8 sTangrowthGfx51_3[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_51_3.4bpp");
+static const u8 sTangrowthGfx51_5[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_51_5.4bpp");
+static const u8 sTangrowthGfx51_7[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_51_7.4bpp");
 static const ax_sprite sTangrowthSprites51[] = {
-	{NULL, 32},
+	{NULL, 96},
 	{sTangrowthGfx51_1, ARRAY_COUNT(sTangrowthGfx51_1)},
-	{NULL, 32},
+	{NULL, 128},
 	{sTangrowthGfx51_3, ARRAY_COUNT(sTangrowthGfx51_3)},
+	{NULL, 96},
+	{sTangrowthGfx51_5, ARRAY_COUNT(sTangrowthGfx51_5)},
+	{NULL, 128},
+	{sTangrowthGfx51_7, ARRAY_COUNT(sTangrowthGfx51_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sTangrowthGfx52[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_52.4bpp");
@@ -1161,12 +1194,20 @@ static const ax_sprite sTangrowthSprites54[] = {
 	{sTangrowthGfx54_4, ARRAY_COUNT(sTangrowthGfx54_4)},
 	{NULL, 0}
 };
-static const u8 sTangrowthGfx55[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_55.4bpp");
-static const u8 sTangrowthGfx55_2[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_55_2.4bpp");
+static const u8 sTangrowthGfx55_1[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_55_1.4bpp");
+static const u8 sTangrowthGfx55_3[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_55_3.4bpp");
+static const u8 sTangrowthGfx55_5[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_55_5.4bpp");
+static const u8 sTangrowthGfx55_7[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_55_7.4bpp");
 static const ax_sprite sTangrowthSprites55[] = {
-	{sTangrowthGfx55, ARRAY_COUNT(sTangrowthGfx55)},
-	{NULL, 32},
-	{sTangrowthGfx55_2, ARRAY_COUNT(sTangrowthGfx55_2)},
+	{NULL, 64},
+	{sTangrowthGfx55_1, ARRAY_COUNT(sTangrowthGfx55_1)},
+	{NULL, 160},
+	{sTangrowthGfx55_3, ARRAY_COUNT(sTangrowthGfx55_3)},
+	{NULL, 96},
+	{sTangrowthGfx55_5, ARRAY_COUNT(sTangrowthGfx55_5)},
+	{NULL, 96},
+	{sTangrowthGfx55_7, ARRAY_COUNT(sTangrowthGfx55_7)},
+	{NULL, 64},
 	{NULL, 0}
 };
 static const u8 sTangrowthGfx56_1[] = INCBIN_U8("graphics/ax/mon/tangrowth/sprite_56_1.4bpp");

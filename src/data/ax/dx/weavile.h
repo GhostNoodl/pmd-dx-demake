@@ -126,7 +126,7 @@ static const ax_pose sWeavilePose31[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sWeavilePose32[] = {
-	AX_POSE(25, OAM1(226, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(25, OAM1(210, ST_OAM_SQUARE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sWeavilePose33[] = {
@@ -138,11 +138,11 @@ static const ax_pose sWeavilePose34[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sWeavilePose35[] = {
-	AX_POSE(28, OAM1(229, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(28, OAM1(213, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sWeavilePose36[] = {
-	AX_POSE(29, OAM1(230, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(29, OAM1(214, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sWeavilePose37[] = {
@@ -158,7 +158,7 @@ static const ax_pose sWeavilePose39[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sWeavilePose40[] = {
-	AX_POSE(31, OAM1(223, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(31, OAM1(207, ST_OAM_V_RECTANGLE, 1), OAM2(242, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sWeavilePose41[] = {
@@ -182,11 +182,11 @@ static const ax_pose sWeavilePose45[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sWeavilePose46[] = {
-	AX_POSE(28, OAM1(229, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(28, OAM1(213, ST_OAM_V_RECTANGLE, 1), OAM2(238, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sWeavilePose47[] = {
-	AX_POSE(29, OAM1(230, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(29, OAM1(214, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sWeavilePose48[] = {
@@ -194,7 +194,7 @@ static const ax_pose sWeavilePose48[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sWeavilePose49[] = {
-	AX_POSE(25, OAM1(226, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(25, OAM1(210, ST_OAM_SQUARE, 1), OAM2(221, ST_OAM_SIZE_3, FLIP(1, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sWeavilePose50[] = {
@@ -502,7 +502,7 @@ static const ax_pose sWeavilePose125[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sWeavilePose126[] = {
-	AX_POSE(29, OAM1(230, ST_OAM_SQUARE, 1), OAM2(239, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(29, OAM1(214, ST_OAM_V_RECTANGLE, 1), OAM2(239, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sWeavilePose127[] = {
@@ -999,9 +999,23 @@ static const ax_sprite sWeavileSprites25[] = {
 	{NULL, 32},
 	{NULL, 0}
 };
-static const u8 sWeavileGfx26[] = INCBIN_U8("graphics/ax/mon/weavile/sprite_26.4bpp");
+static const u8 sWeavileGfx26_1[] = INCBIN_U8("graphics/ax/mon/weavile/sprite_26_1.4bpp");
+static const u8 sWeavileGfx26_3[] = INCBIN_U8("graphics/ax/mon/weavile/sprite_26_3.4bpp");
+static const u8 sWeavileGfx26_5[] = INCBIN_U8("graphics/ax/mon/weavile/sprite_26_5.4bpp");
+static const u8 sWeavileGfx26_7[] = INCBIN_U8("graphics/ax/mon/weavile/sprite_26_7.4bpp");
+static const u8 sWeavileGfx26_9[] = INCBIN_U8("graphics/ax/mon/weavile/sprite_26_9.4bpp");
 static const ax_sprite sWeavileSprites26[] = {
-	{sWeavileGfx26, ARRAY_COUNT(sWeavileGfx26)},
+	{NULL, 576},
+	{sWeavileGfx26_1, ARRAY_COUNT(sWeavileGfx26_1)},
+	{NULL, 96},
+	{sWeavileGfx26_3, ARRAY_COUNT(sWeavileGfx26_3)},
+	{NULL, 96},
+	{sWeavileGfx26_5, ARRAY_COUNT(sWeavileGfx26_5)},
+	{NULL, 96},
+	{sWeavileGfx26_7, ARRAY_COUNT(sWeavileGfx26_7)},
+	{NULL, 160},
+	{sWeavileGfx26_9, ARRAY_COUNT(sWeavileGfx26_9)},
+	{NULL, 384},
 	{NULL, 0}
 };
 static const u8 sWeavileGfx27[] = INCBIN_U8("graphics/ax/mon/weavile/sprite_27.4bpp");
@@ -1023,18 +1037,27 @@ static const ax_sprite sWeavileSprites28[] = {
 	{sWeavileGfx28_2, ARRAY_COUNT(sWeavileGfx28_2)},
 	{NULL, 0}
 };
-static const u8 sWeavileGfx29[] = INCBIN_U8("graphics/ax/mon/weavile/sprite_29.4bpp");
+static const u8 sWeavileGfx29_1[] = INCBIN_U8("graphics/ax/mon/weavile/sprite_29_1.4bpp");
+static const u8 sWeavileGfx29_3[] = INCBIN_U8("graphics/ax/mon/weavile/sprite_29_3.4bpp");
 static const ax_sprite sWeavileSprites29[] = {
-	{sWeavileGfx29, ARRAY_COUNT(sWeavileGfx29)},
+	{NULL, 160},
+	{sWeavileGfx29_1, ARRAY_COUNT(sWeavileGfx29_1)},
+	{NULL, 32},
+	{sWeavileGfx29_3, ARRAY_COUNT(sWeavileGfx29_3)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const u8 sWeavileGfx30_1[] = INCBIN_U8("graphics/ax/mon/weavile/sprite_30_1.4bpp");
 static const u8 sWeavileGfx30_3[] = INCBIN_U8("graphics/ax/mon/weavile/sprite_30_3.4bpp");
+static const u8 sWeavileGfx30_5[] = INCBIN_U8("graphics/ax/mon/weavile/sprite_30_5.4bpp");
 static const ax_sprite sWeavileSprites30[] = {
-	{NULL, 32},
+	{NULL, 288},
 	{sWeavileGfx30_1, ARRAY_COUNT(sWeavileGfx30_1)},
 	{NULL, 64},
 	{sWeavileGfx30_3, ARRAY_COUNT(sWeavileGfx30_3)},
+	{NULL, 32},
+	{sWeavileGfx30_5, ARRAY_COUNT(sWeavileGfx30_5)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const u8 sWeavileGfx31[] = INCBIN_U8("graphics/ax/mon/weavile/sprite_31.4bpp");
@@ -1046,13 +1069,17 @@ static const ax_sprite sWeavileSprites31[] = {
 	{NULL, 32},
 	{NULL, 0}
 };
-static const u8 sWeavileGfx32[] = INCBIN_U8("graphics/ax/mon/weavile/sprite_32.4bpp");
-static const u8 sWeavileGfx32_2[] = INCBIN_U8("graphics/ax/mon/weavile/sprite_32_2.4bpp");
+static const u8 sWeavileGfx32_1[] = INCBIN_U8("graphics/ax/mon/weavile/sprite_32_1.4bpp");
+static const u8 sWeavileGfx32_3[] = INCBIN_U8("graphics/ax/mon/weavile/sprite_32_3.4bpp");
+static const u8 sWeavileGfx32_5[] = INCBIN_U8("graphics/ax/mon/weavile/sprite_32_5.4bpp");
 static const ax_sprite sWeavileSprites32[] = {
-	{sWeavileGfx32, ARRAY_COUNT(sWeavileGfx32)},
+	{NULL, 160},
+	{sWeavileGfx32_1, ARRAY_COUNT(sWeavileGfx32_1)},
 	{NULL, 32},
-	{sWeavileGfx32_2, ARRAY_COUNT(sWeavileGfx32_2)},
-	{NULL, 32},
+	{sWeavileGfx32_3, ARRAY_COUNT(sWeavileGfx32_3)},
+	{NULL, 64},
+	{sWeavileGfx32_5, ARRAY_COUNT(sWeavileGfx32_5)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const u8 sWeavileGfx33[] = INCBIN_U8("graphics/ax/mon/weavile/sprite_33.4bpp");

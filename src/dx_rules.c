@@ -226,10 +226,12 @@ bool8 DxPostgame(void)
     return gDxForcePostgame || CheckQuest(QUEST_REACHED_POSTGAME);
 }
 
+EWRAM_DATA bool8 gDxForceRematch = FALSE;
+
 // DX: after the credits, a story boss waits in its room again for a rematch, until it has joined
 bool8 DxBossRematch(s16 species)
 {
-    return DxPostgame() && !HasRecruitedMon(species);
+    return DxPostgame() && (gDxForceRematch || !HasRecruitedMon(species));
 }
 
 // DX recruiting after the credits: a story boss can be recruited like anyone (with a fallback rate
@@ -560,6 +562,13 @@ void DxTestStageScene(Entity *leader)
             gDxMysteryHouseSpawned = info->id;
     }
     gDxTestOut[3] = -1;
+    if (keep != NULL && gDxTestStageMate[0] == 0 && gDxTestStageMate[1] == 0) {
+        s32 d;
+        for (d = 0; d < NUM_DIRECTIONS; d++) {
+            if (gAdjacentTileOffsets[d].x == used[0] && gAdjacentTileOffsets[d].y == used[1])
+                GetEntInfo(leader)->action.direction = d;
+        }
+    }
     if (gDxTestStageMate[0] != 0 || gDxTestStageMate[1] != 0) {
         for (i = 0; i < MAX_TEAM_MEMBERS; i++) {
             Entity *mate = gDungeon->teamPokemon[i];

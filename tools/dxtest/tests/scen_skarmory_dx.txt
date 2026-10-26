@@ -1,0 +1,40 @@
+#rom debug
+#save after-first-dungeon
+# S14 when Skarmory already joined in an earlier run: the rematch still waits on Mt. Steel 9F.
+# Built from scenarios_dx.txt's S14 block.
+# --- S14
+mash START sMainMenu 4 != 0 3000
+wait 60
+press UP
+press A
+wait 30
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press DOWN
+press A
+wait 30
+expect *sMainMenu+4 4 == 53
+press LEFT
+press UP
+press RIGHT
+press UP
+press UP
+press UP
+wait 10
+# a Skarmory (252) that already joined, as after an earlier S14 run
+write *gRecruitedPokemonRef+35200 2 1
+write *gRecruitedPokemonRef+35208 2 252
+shot s14_pick
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+shot s14_in_dungeon
+expect gDxScenario 1 == 14
+expect *gDungeon+@gDxOffDungeonLocation 1 == 2
+expect *gDungeon+@gDxOffDungeonFloor 1 == 9
+# Skarmory is there for the rematch
+expect ***gDungeon+@gDxOffWildPokemon!4+@gDxOffEntityInfo+@gDxOffInfoId 2 == 252

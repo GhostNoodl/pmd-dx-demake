@@ -42,6 +42,8 @@ bool8 DxDungeonHasStrongFoe(u8 dungeon);
 extern bool8 gDxForcePostgame;
 bool8 DxPostgame(void);
 bool8 DxBossRematch(s16 species);
+// tests and S14: a story boss waits for its rematch even if it already joined
+extern bool8 gDxForceRematch;
 enum { DX_BOSS_NONE, DX_BOSS_STORY, DX_BOSS_LEGENDARY };
 u8 DxPostgameBossKind(u8 monsterBehavior);
 s32 DxBossRecruitRate(s32 recruitRate, u8 monsterBehavior);

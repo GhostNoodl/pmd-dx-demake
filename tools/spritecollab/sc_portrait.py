@@ -30,11 +30,20 @@ SIZE = 40
 
 def fetch(dex, name, cache):
     path = cache / f"{name}.png"
+    missing = cache / f"{name}.missing"  # SpriteCollab has no such portrait (remembered, so offline runs work)
+    if missing.exists():
+        return None
     if not path.exists():
         try:
             data = urllib.request.urlopen(SC_URL.format(dex=dex, name=name), timeout=60).read()
         except urllib.error.HTTPError:
+            cache.mkdir(parents=True, exist_ok=True)
+            missing.touch()
             return None
+        except urllib.error.URLError:
+            if cache.is_dir() and any(cache.glob("*.png")):
+                return None  # offline, and this species was fetched before: what is cached is all there is
+            raise
         cache.mkdir(parents=True, exist_ok=True)
         path.write_bytes(data)
     return Image.open(path).convert("RGB")

@@ -90,11 +90,11 @@ static const ax_pose sGliscorPose22[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose23[] = {
-	AX_POSE(8, OAM1(221, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose24[] = {
-	AX_POSE(8, OAM1(222, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose25[] = {
@@ -218,11 +218,11 @@ static const ax_pose sGliscorPose54[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose55[] = {
-	AX_POSE(19, OAM1(221, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(19, OAM1(205, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose56[] = {
-	AX_POSE(19, OAM1(222, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(19, OAM1(206, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose57[] = {
@@ -306,15 +306,15 @@ static const ax_pose sGliscorPose76[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose77[] = {
-	AX_POSE(8, OAM1(223, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(207, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose78[] = {
-	AX_POSE(8, OAM1(224, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose79[] = {
-	AX_POSE(8, OAM1(225, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose80[] = {
@@ -402,15 +402,15 @@ static const ax_pose sGliscorPose100[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose101[] = {
-	AX_POSE(19, OAM1(223, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(19, OAM1(207, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose102[] = {
-	AX_POSE(19, OAM1(224, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(19, OAM1(208, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose103[] = {
-	AX_POSE(19, OAM1(225, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(19, OAM1(209, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose104[] = {
@@ -626,7 +626,7 @@ static const ax_pose sGliscorPose156[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose157[] = {
-	AX_POSE(8, OAM1(219, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose158[] = {
@@ -642,7 +642,7 @@ static const ax_pose sGliscorPose160[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose161[] = {
-	AX_POSE(8, OAM1(218, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(8, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose162[] = {
@@ -738,7 +738,7 @@ static const ax_pose sGliscorPose184[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose185[] = {
-	AX_POSE(19, OAM1(219, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(19, OAM1(203, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose186[] = {
@@ -754,7 +754,7 @@ static const ax_pose sGliscorPose188[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose189[] = {
-	AX_POSE(19, OAM1(218, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(19, OAM1(202, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose190[] = {
@@ -798,7 +798,7 @@ static const ax_pose sGliscorPose199[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose200[] = {
-	AX_POSE(39, OAM1(217, ST_OAM_SQUARE, 1), OAM2(240, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(39, OAM1(201, ST_OAM_V_RECTANGLE, 1), OAM2(240, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose201[] = {
@@ -806,11 +806,11 @@ static const ax_pose sGliscorPose201[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose202[] = {
-	AX_POSE(41, OAM1(217, ST_OAM_SQUARE, 1), OAM2(238, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(41, OAM1(217, ST_OAM_H_RECTANGLE, 1), OAM2(222, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose203[] = {
-	AX_POSE(42, OAM1(217, ST_OAM_SQUARE, 1), OAM2(237, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(42, OAM1(217, ST_OAM_H_RECTANGLE, 1), OAM2(221, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose204[] = {
@@ -818,11 +818,11 @@ static const ax_pose sGliscorPose204[] = {
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose205[] = {
-	AX_POSE(44, OAM1(217, ST_OAM_SQUARE, 1), OAM2(243, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(44, OAM1(217, ST_OAM_H_RECTANGLE, 1), OAM2(227, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose206[] = {
-	AX_POSE(45, OAM1(217, ST_OAM_SQUARE, 1), OAM2(242, ST_OAM_SIZE_2, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
+	AX_POSE(45, OAM1(217, ST_OAM_H_RECTANGLE, 1), OAM2(226, ST_OAM_SIZE_3, FLIP(0, 0), 0, 0), OAM3(0, 3, 2)),
 	AX_POSE_TERMINATOR
 };
 static const ax_pose sGliscorPose207[] = {
@@ -1328,12 +1328,15 @@ static const ax_sprite sGliscorSprites8[] = {
 };
 static const u8 sGliscorGfx9_1[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_9_1.4bpp");
 static const u8 sGliscorGfx9_3[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_9_3.4bpp");
+static const u8 sGliscorGfx9_5[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_9_5.4bpp");
 static const ax_sprite sGliscorSprites9[] = {
-	{NULL, 32},
+	{NULL, 288},
 	{sGliscorGfx9_1, ARRAY_COUNT(sGliscorGfx9_1)},
 	{NULL, 64},
 	{sGliscorGfx9_3, ARRAY_COUNT(sGliscorGfx9_3)},
-	{NULL, 32},
+	{NULL, 64},
+	{sGliscorGfx9_5, ARRAY_COUNT(sGliscorGfx9_5)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const u8 sGliscorGfx10[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_10.4bpp");
@@ -1436,19 +1439,23 @@ static const ax_sprite sGliscorSprites19[] = {
 	{sGliscorGfx19_4, ARRAY_COUNT(sGliscorGfx19_4)},
 	{NULL, 0}
 };
-static const u8 sGliscorGfx20[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_20.4bpp");
-static const u8 sGliscorGfx20_2[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_20_2.4bpp");
-static const u8 sGliscorGfx20_4[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_20_4.4bpp");
-static const u8 sGliscorGfx20_6[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_20_6.4bpp");
+static const u8 sGliscorGfx20_1[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_20_1.4bpp");
+static const u8 sGliscorGfx20_3[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_20_3.4bpp");
+static const u8 sGliscorGfx20_5[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_20_5.4bpp");
+static const u8 sGliscorGfx20_7[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_20_7.4bpp");
+static const u8 sGliscorGfx20_9[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_20_9.4bpp");
 static const ax_sprite sGliscorSprites20[] = {
-	{sGliscorGfx20, ARRAY_COUNT(sGliscorGfx20)},
+	{NULL, 256},
+	{sGliscorGfx20_1, ARRAY_COUNT(sGliscorGfx20_1)},
 	{NULL, 64},
-	{sGliscorGfx20_2, ARRAY_COUNT(sGliscorGfx20_2)},
+	{sGliscorGfx20_3, ARRAY_COUNT(sGliscorGfx20_3)},
 	{NULL, 32},
-	{sGliscorGfx20_4, ARRAY_COUNT(sGliscorGfx20_4)},
+	{sGliscorGfx20_5, ARRAY_COUNT(sGliscorGfx20_5)},
 	{NULL, 32},
-	{sGliscorGfx20_6, ARRAY_COUNT(sGliscorGfx20_6)},
-	{NULL, 32},
+	{sGliscorGfx20_7, ARRAY_COUNT(sGliscorGfx20_7)},
+	{NULL, 96},
+	{sGliscorGfx20_9, ARRAY_COUNT(sGliscorGfx20_9)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const u8 sGliscorGfx21[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_21.4bpp");
@@ -1645,9 +1652,17 @@ static const ax_sprite sGliscorSprites39[] = {
 	{NULL, 32},
 	{NULL, 0}
 };
-static const u8 sGliscorGfx40[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_40.4bpp");
+static const u8 sGliscorGfx40_1[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_40_1.4bpp");
+static const u8 sGliscorGfx40_3[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_40_3.4bpp");
+static const u8 sGliscorGfx40_5[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_40_5.4bpp");
 static const ax_sprite sGliscorSprites40[] = {
-	{sGliscorGfx40, ARRAY_COUNT(sGliscorGfx40)},
+	{NULL, 128},
+	{sGliscorGfx40_1, ARRAY_COUNT(sGliscorGfx40_1)},
+	{NULL, 32},
+	{sGliscorGfx40_3, ARRAY_COUNT(sGliscorGfx40_3)},
+	{NULL, 32},
+	{sGliscorGfx40_5, ARRAY_COUNT(sGliscorGfx40_5)},
+	{NULL, 160},
 	{NULL, 0}
 };
 static const u8 sGliscorGfx41[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_41.4bpp");
@@ -1658,29 +1673,36 @@ static const ax_sprite sGliscorSprites41[] = {
 	{sGliscorGfx41_2, ARRAY_COUNT(sGliscorGfx41_2)},
 	{NULL, 0}
 };
-static const u8 sGliscorGfx42[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_42.4bpp");
-static const u8 sGliscorGfx42_2[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_42_2.4bpp");
-static const u8 sGliscorGfx42_4[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_42_4.4bpp");
-static const u8 sGliscorGfx42_6[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_42_6.4bpp");
+static const u8 sGliscorGfx42_1[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_42_1.4bpp");
+static const u8 sGliscorGfx42_3[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_42_3.4bpp");
+static const u8 sGliscorGfx42_5[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_42_5.4bpp");
+static const u8 sGliscorGfx42_7[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_42_7.4bpp");
 static const ax_sprite sGliscorSprites42[] = {
-	{sGliscorGfx42, ARRAY_COUNT(sGliscorGfx42)},
-	{NULL, 64},
-	{sGliscorGfx42_2, ARRAY_COUNT(sGliscorGfx42_2)},
 	{NULL, 32},
-	{sGliscorGfx42_4, ARRAY_COUNT(sGliscorGfx42_4)},
+	{sGliscorGfx42_1, ARRAY_COUNT(sGliscorGfx42_1)},
+	{NULL, 160},
+	{sGliscorGfx42_3, ARRAY_COUNT(sGliscorGfx42_3)},
+	{NULL, 160},
+	{sGliscorGfx42_5, ARRAY_COUNT(sGliscorGfx42_5)},
+	{NULL, 128},
+	{sGliscorGfx42_7, ARRAY_COUNT(sGliscorGfx42_7)},
 	{NULL, 32},
-	{sGliscorGfx42_6, ARRAY_COUNT(sGliscorGfx42_6)},
 	{NULL, 0}
 };
-static const u8 sGliscorGfx43[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_43.4bpp");
-static const u8 sGliscorGfx43_2[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_43_2.4bpp");
-static const u8 sGliscorGfx43_4[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_43_4.4bpp");
+static const u8 sGliscorGfx43_1[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_43_1.4bpp");
+static const u8 sGliscorGfx43_3[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_43_3.4bpp");
+static const u8 sGliscorGfx43_5[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_43_5.4bpp");
+static const u8 sGliscorGfx43_7[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_43_7.4bpp");
 static const ax_sprite sGliscorSprites43[] = {
-	{sGliscorGfx43, ARRAY_COUNT(sGliscorGfx43)},
-	{NULL, 64},
-	{sGliscorGfx43_2, ARRAY_COUNT(sGliscorGfx43_2)},
 	{NULL, 32},
-	{sGliscorGfx43_4, ARRAY_COUNT(sGliscorGfx43_4)},
+	{sGliscorGfx43_1, ARRAY_COUNT(sGliscorGfx43_1)},
+	{NULL, 160},
+	{sGliscorGfx43_3, ARRAY_COUNT(sGliscorGfx43_3)},
+	{NULL, 96},
+	{sGliscorGfx43_5, ARRAY_COUNT(sGliscorGfx43_5)},
+	{NULL, 128},
+	{sGliscorGfx43_7, ARRAY_COUNT(sGliscorGfx43_7)},
+	{NULL, 32},
 	{NULL, 0}
 };
 static const u8 sGliscorGfx44[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_44.4bpp");
@@ -1689,20 +1711,35 @@ static const ax_sprite sGliscorSprites44[] = {
 	{NULL, 0}
 };
 static const u8 sGliscorGfx45_1[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_45_1.4bpp");
+static const u8 sGliscorGfx45_3[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_45_3.4bpp");
+static const u8 sGliscorGfx45_5[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_45_5.4bpp");
+static const u8 sGliscorGfx45_7[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_45_7.4bpp");
 static const ax_sprite sGliscorSprites45[] = {
-	{NULL, 64},
+	{NULL, 128},
 	{sGliscorGfx45_1, ARRAY_COUNT(sGliscorGfx45_1)},
-	{NULL, 32},
+	{NULL, 96},
+	{sGliscorGfx45_3, ARRAY_COUNT(sGliscorGfx45_3)},
+	{NULL, 64},
+	{sGliscorGfx45_5, ARRAY_COUNT(sGliscorGfx45_5)},
+	{NULL, 96},
+	{sGliscorGfx45_7, ARRAY_COUNT(sGliscorGfx45_7)},
+	{NULL, 96},
 	{NULL, 0}
 };
 static const u8 sGliscorGfx46_1[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_46_1.4bpp");
 static const u8 sGliscorGfx46_3[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_46_3.4bpp");
+static const u8 sGliscorGfx46_5[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_46_5.4bpp");
+static const u8 sGliscorGfx46_7[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_46_7.4bpp");
 static const ax_sprite sGliscorSprites46[] = {
-	{NULL, 64},
+	{NULL, 128},
 	{sGliscorGfx46_1, ARRAY_COUNT(sGliscorGfx46_1)},
-	{NULL, 32},
+	{NULL, 128},
 	{sGliscorGfx46_3, ARRAY_COUNT(sGliscorGfx46_3)},
-	{NULL, 32},
+	{NULL, 64},
+	{sGliscorGfx46_5, ARRAY_COUNT(sGliscorGfx46_5)},
+	{NULL, 96},
+	{sGliscorGfx46_7, ARRAY_COUNT(sGliscorGfx46_7)},
+	{NULL, 96},
 	{NULL, 0}
 };
 static const u8 sGliscorGfx47_1[] = INCBIN_U8("graphics/ax/mon/gliscor/sprite_47_1.4bpp");
