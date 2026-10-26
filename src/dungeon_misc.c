@@ -1432,7 +1432,11 @@ bool8 sub_806A564(s16 r0)
 
 bool8 sub_806A58C(s16 r0)
 {
+#ifdef DX_RULES
+    if (r0 >= 0 && r0 < NUM_MONSTERS) // DX: the overflow recruit slots count too (Red: 0-412)
+#else
     if (r0 >= 0 && r0 <= 0x19C)
+#endif
         return TRUE;
     else
         return FALSE;
