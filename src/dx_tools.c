@@ -792,6 +792,7 @@ static void DxToolDraw(void)
 #include "structs/dungeon_entity.h"
 const u32 gDxOffDungeonLocation = offsetof(Dungeon, unk644.dungeonLocation);
 const u32 gDxOffDungeonFloor = offsetof(Dungeon, unk644.dungeonLocation.floor);
+const u32 gDxOffStairsSpawn = offsetof(Dungeon, stairsSpawn);
 const u32 gDxOffFloorCount = offsetof(Dungeon, unk1CEC8);
 const u32 gDxOffTeamPokemon = offsetof(Dungeon, teamPokemon);
 const u32 gDxOffEntityPos = offsetof(Entity, pos);

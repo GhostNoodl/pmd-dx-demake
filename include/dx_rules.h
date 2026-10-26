@@ -70,10 +70,13 @@ extern bool8 gDxTestNoNickname;
 // tests: the staged wild Pokemon is this floor's Mystery House newcomer
 extern bool8 gDxTestStageNewcomer;
 // tests: [0] team Exp lines, [1] team members' own Exp lines, [2] regular attacks by anyone but the
-// leader, [3] AI moves used, [4] Struggles, [5] walls Forge a Path broke, [6] broken walls redrawn
+// leader, [3] AI moves used, [4] Struggles, [5] walls Forge a Path broke, [6] broken walls redrawn,
+// [7] auto-mode steps toward the stairs
 extern u16 gDxTestCount[8];
 void DxTestStageScene(Entity *leader);
 #endif
+// auto-mode is on (dungeon_main.c): the HUD shows AUTO
+bool8 DxAutoModeActive(void);
 // the move deals damage (Red's move data gives status moves small powers too)
 bool8 DxMoveIsDamaging(Move *move);
 void DxGivePokemonExp(Pokemon *mon, s32 exp);

@@ -1,0 +1,58 @@
+#rom debug
+#save after-first-dungeon
+# DX auto-mode: with the stairs on the map (revealed here, no foes about) L walks the leader straight
+# there, and AUTO shows under the HP bar while it runs (0xF299 reads as -3431: a signed halfword)
+mash START sMainMenu 4 != 0 3000
+write gDxTestSeed 4 99991
+wait 60
+press UP
+press A
+wait 30
+press A
+wait 30
+press UP
+press UP
+wait 10
+expect *sDxWarp+0xB0 4 == 2
+press A
+wait 40
+expect *sDxWarp+0xB0 4 == 1
+press A
+mash A gDungeon 4 != 0 1800
+wait 600
+expect *gDungeon+@gDxOffDungeonFloor 1 == 1
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 999
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMaxHP 2 999
+write gDxTestStageFoe 1 0
+write gDxTestStageFoe+1 1 0
+write gDxTestStageMate 1 0
+write gDxTestStageMate+1 1 0
+write gDxTestStage 1 2
+waitfor gDxTestStage 1 == 0 900
+wait 120
+shot 1_revealed
+read under gBgTilemaps+116 2
+read sx *gDungeon+@gDxOffStairsSpawn 2
+read sy *gDungeon+@gDxOffStairsSpawn!2 2
+read x0 **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos 2
+read y0 **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos!2 2
+write gDxTestCount+14 2 0
+press L 4 20
+wait 30
+shot 2_auto_on
+expect gBgTilemaps+116 2 == -3431
+waitfor gBgTilemaps+116 2 != -3431 6000
+wait 60
+shot 3_on_stairs
+# close the stairs menu: AUTO is gone from the HUD
+press B
+wait 60
+shot 4_menu_closed
+expect gBgTilemaps+116 2 != -3431
+read x1 **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos 2
+read y1 **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos!2 2
+cmpreads x1 == sx
+cmpreads y1 == sy
+read steps gDxTestCount+14 2
+expect gDxTestCount+14 2 >= 1
+read walks gDxTestCount+14 2
