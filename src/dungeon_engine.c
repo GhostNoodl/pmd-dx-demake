@@ -209,7 +209,7 @@ static void sub_8044574_Async(void)
 {
     s32 i, id;
     struct Struct_8044574 sp0[4];
-    struct Struct_8044574 sp40[4];
+    struct Struct_8044574 sp40[MAX_TEAM_MEMBERS]; // indexed by team slot (Red: 4; DX parties hold 6)
 
     Entity *leader = GetLeader();
     for (i = 0; i < MAX_TEAM_MEMBERS; i++) {

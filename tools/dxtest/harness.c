@@ -215,6 +215,7 @@ static struct mDebugger dbg;
 static int watching, watchHits;
 
 static int breakZeroR1, breakHits;
+static int breakR10Set, breakR10Eq; static unsigned breakR10Not;
 static void log_stack(void);
 
 static void dbg_entered(struct mDebugger *d, enum mDebuggerEntryReason reason, struct mDebuggerEntryInfo *info)
@@ -222,9 +223,10 @@ static void dbg_entered(struct mDebugger *d, enum mDebuggerEntryReason reason, s
     struct ARMCore *cpu = core->cpu;
     if (reason == DEBUGGER_ENTER_BREAKPOINT) {
         // break SYM [r1=0]: log where it was called from (optionally only when r1, e.g. a divisor, is 0)
-        if ((!breakZeroR1 || cpu->gprs[1] == 0) && breakHits++ < 8) {
-            out("BREAK pc=%08x lr=%08x r0=%08x r1=%08x frame=%u\n", cpu->gprs[15], cpu->gprs[14], cpu->gprs[0],
-                cpu->gprs[1], core->frameCounter(core));
+        if ((!breakZeroR1 || cpu->gprs[1] == 0) && (!breakR10Set || ((unsigned)cpu->gprs[10] != breakR10Not) != breakR10Eq)
+            && breakHits++ < 8) {
+            out("BREAK pc=%08x lr=%08x r0=%08x r1=%08x r10=%08x frame=%u\n", cpu->gprs[15], cpu->gprs[14], cpu->gprs[0],
+                cpu->gprs[1], cpu->gprs[10], core->frameCounter(core));
             log_stack();
         }
         d->state = DEBUGGER_RUNNING;
@@ -489,6 +491,11 @@ int main(int argc, char **argv)
             bp.segment = -1;
             bp.type = BREAKPOINT_HARDWARE;
             breakZeroR1 = (n >= 3 && !strcmp(b, "r1=0"));
+            // break SYM r10!=VALUE: log only calls where r10 is not VALUE (a callee-saved register check)
+            breakR10Set = (n >= 3 && (!strncmp(b, "r10!=", 5) || !strncmp(b, "r10==", 5)));
+            breakR10Eq = (n >= 3 && !strncmp(b, "r10==", 5)); // break SYM r10==VALUE: only when r10 is VALUE
+            if (breakR10Set)
+                breakR10Not = strtoul(b + 5, NULL, 0);
             dbg.platform->setBreakpoint(dbg.platform, &bp);
             out("BREAKPOINT %s @%08x%s\n", a, bp.address, breakZeroR1 ? " when r1=0" : "");
         }
