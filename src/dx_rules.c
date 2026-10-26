@@ -479,7 +479,7 @@ EWRAM_DATA u16 gDxTestStageHP = 0;
 EWRAM_DATA Entity *gDxTestStageMon = NULL;
 EWRAM_DATA bool8 gDxTestNoNickname = FALSE;
 EWRAM_DATA bool8 gDxTestStageNewcomer = FALSE;
-EWRAM_DATA u16 gDxTestCount[5] = {0};
+EWRAM_DATA u16 gDxTestCount[8] = {0};
 
 // tests: put a Pokemon at (dx, dy) from the leader, on open floor with a clear line to it; if that spot
 // is blocked, the same offset turned 90 degrees (up to 3 times). The offset used, or 0,0 if none fits.

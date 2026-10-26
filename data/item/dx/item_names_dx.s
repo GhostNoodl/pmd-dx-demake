@@ -23,6 +23,14 @@ ItemNameDxGummi:
 ItemDescriptionDxGummi:
 .string "A deluxe Gummi. It raises one of the Pokémon's{NEW_LINE}stats and always gives it a Rare Quality.\n\0"
 .align 2,0
+.global ItemNameTinyApple
+ItemNameTinyApple:
+.string "Tiny Apple\0"
+.align 2,0
+.global ItemDescriptionTinyApple
+ItemDescriptionTinyApple:
+.string "A small food item that slightly fills the{NEW_LINE}Pokémon's {color YELLOW}Belly{reset}.\n\0"
+.align 2,0
 .global ItemNameEmpowermentSeed
 ItemNameEmpowermentSeed:
 .string "Empower Seed\0"

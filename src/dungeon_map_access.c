@@ -1,4 +1,7 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_rules.h"
+#endif
 #include "globaldata.h"
 #include "dungeon_map_access.h"
 #include "constants/walkable_tile.h"
@@ -1168,6 +1171,9 @@ void sub_804AE84(DungeonPos *pos)
   tile = GetTileMut(pos->x,pos->y);
   if ((tile->spawnOrVisibilityFlags.visibility & 0x10) != 0) {
     tile->spawnOrVisibilityFlags.visibility &= 0xffef;
+#ifdef DX_DEBUG
+    gDxTestCount[6]++;
+#endif
 
     for(y = -1; y < 2; y++)
     {

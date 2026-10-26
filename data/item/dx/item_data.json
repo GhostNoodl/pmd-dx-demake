@@ -2950,16 +2950,20 @@
         "actionType": "ITEM_ACTION_TYPE_LINK_BOX"
     },
     {
-        "name": "ItemNameBeatupOrb",
-        "buyPrice": 300,
-        "sellPrice": 150,
-        "category": "CATEGORY_ORBS",
-        "spriteID": 15,
-        "description": "ItemDescriptionPlaceholder",
-        "moveID": "MOVE_BEAT_UP",
-        "order": 231,
-        "paletteID": 0,
-        "actionType": "ITEM_ACTION_TYPE_ORBS"
+        "name": "ItemNameTinyApple",
+        "buyPrice": 25,
+        "sellPrice": 2,
+        "category": "CATEGORY_FOOD_GUMMIES",
+        "spriteID": 3,
+        "description": "ItemDescriptionTinyApple",
+        "aiFlags": [
+            true,
+            true,
+            false
+        ],
+        "order": 53,
+        "paletteID": 3,
+        "actionType": "ITEM_ACTION_TYPE_FOOD"
     },
     {
         "name": "ItemNameEvoCrystal",

@@ -413,19 +413,20 @@ s32 DxTightFormationPercent(Entity *target, u16 moveId)
 }
 
 static const u8 sDxLeftHalf[] = _("An {COLOR YELLOW}Apple{RESET} was left over!");
+static const u8 sDxLeftTiny[] = _("A {COLOR YELLOW}Tiny Apple{RESET} was left over!");
 
-// Leave Half: eating a Big Apple or Huge Apple leaves an Apple (in the toolbox, or on the ground
-// when it is full). Red has no Max Ether or Tiny Reviver Seed, DX's other two leftovers.
+// Leave Half: eating an Apple leaves a Tiny Apple, a Big Apple or Huge Apple an Apple (in the toolbox,
+// or on the ground when it is full). Red has no Max Ether or Tiny Reviver Seed, DX's other leftovers.
 void DxLeaveHalf(Entity *target, u8 itemId)
 {
     Item apple;
 
-    if ((itemId != ITEM_BIG_APPLE && itemId != ITEM_HUGE_APPLE) || !DxTeamMemberHas(target, RQ_LEAVE_HALF))
+    if ((itemId != ITEM_APPLE && itemId != ITEM_BIG_APPLE && itemId != ITEM_HUGE_APPLE) || !DxTeamMemberHas(target, RQ_LEAVE_HALF))
         return;
-    ItemIdToItem(&apple, ITEM_APPLE, FALSE);
+    ItemIdToItem(&apple, itemId == ITEM_APPLE ? ITEM_TINY_APPLE : ITEM_APPLE, FALSE);
     if (AddItemToInventory(&apple))
         SpawnDroppedItemWrapper(target, &target->pos, &apple);
-    LogMessageByIdWithPopupCheckUser_Async(target, sDxLeftHalf);
+    LogMessageByIdWithPopupCheckUser_Async(target, itemId == ITEM_APPLE ? sDxLeftTiny : sDxLeftHalf);
 }
 
 static bool8 DxHasCondition(Entity *mon, u8 kind)
@@ -488,8 +489,8 @@ EWRAM_DATA bool8 gDxTestFoeInFront = FALSE;
 #endif
 
 // Leap Ahead: when the leader attacks a foe in front of it in a corridor, the teammate right behind
-// it leaps in and uses a 1-tile move on that foe too (its first damaging one with PP, or a regular
-// attack), then is back in its place
+// it leaps in first and uses a 1-tile move on that foe (its first damaging one with PP), then is back
+// in its place before the leader's move lands
 void DxLeapAhead(Entity *leader)
 {
     EntityInfo *info, *mateInfo;

@@ -70,8 +70,8 @@ extern bool8 gDxTestNoNickname;
 // tests: the staged wild Pokemon is this floor's Mystery House newcomer
 extern bool8 gDxTestStageNewcomer;
 // tests: [0] team Exp lines, [1] team members' own Exp lines, [2] regular attacks by anyone but the
-// leader, [3] AI moves used, [4] Struggles
-extern u16 gDxTestCount[5];
+// leader, [3] AI moves used, [4] Struggles, [5] walls Forge a Path broke, [6] broken walls redrawn
+extern u16 gDxTestCount[8];
 void DxTestStageScene(Entity *leader);
 #endif
 // the move deals damage (Red's move data gives status moves small powers too)

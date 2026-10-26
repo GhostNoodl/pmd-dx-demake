@@ -289,6 +289,8 @@
 // ...G Machine 8 the DX Gummi, and the White Gummi is renamed the Rainbow Gummi
 #define ITEM_DX_GUMMI ITEM_G_MACHINE_8
 #define ITEM_RAINBOW_GUMMI ITEM_WHITE_GUMMI
+// ...and the Beat-Up Orb (an unused item in Red) the Tiny Apple
+#define ITEM_TINY_APPLE ITEM_BEATUP_ORB
 
 #define NUMBER_OF_GUMMIS 18
 #define INVENTORY_SIZE 20

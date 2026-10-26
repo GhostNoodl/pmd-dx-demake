@@ -22,6 +22,7 @@ EMPOWER_SHARE = 200  # of 10000
 # Gummis, DX style: the 17 type Gummis become one Rainbow Gummi (the White Gummi, renamed; the others
 # act the same if you still have them) and G Machine 8 becomes the DX Gummi
 DX_GUMMI = "ITEM_G_MACHINE_8"
+TINY_APPLE = "ITEM_BEATUP_ORB"  # unused in Red; what Leave Half leaves of an Apple
 RAINBOW_GUMMI = "ITEM_WHITE_GUMMI"
 TYPE_GUMMIS = {"ITEM_WHITE_GUMMI", "ITEM_RED_GUMMI", "ITEM_BLUE_GUMMI", "ITEM_GRASS_GUMMI", "ITEM_YELLOW_GUMMI",
                "ITEM_CLEAR_GUMMI", "ITEM_ORANGE_GUMMI", "ITEM_PINK_GUMMI", "ITEM_BROWN_GUMMI", "ITEM_SKY_GUMMI",
@@ -70,6 +71,10 @@ def main():
     dxg.update(white)
     dxg.update({"name": "ItemNameDxGummi", "description": "ItemDescriptionDxGummi", "buyPrice": 3000, "sellPrice": 300,
                 "paletteID": 3})
+    tiny = items[ids[TINY_APPLE]]
+    tiny.clear()
+    tiny.update(items[ids["ITEM_APPLE"]])
+    tiny.update({"name": "ItemNameTinyApple", "description": "ItemDescriptionTinyApple", "buyPrice": 25, "sellPrice": 2})
     out = ROOT / "data/item/dx"
     out.mkdir(parents=True, exist_ok=True)
     (out / "item_data.json").write_text(json.dumps(items, indent=4) + "\n")
@@ -88,6 +93,10 @@ def main():
         ".global ItemDescriptionDxGummi", "ItemDescriptionDxGummi:",
         '.string "A deluxe Gummi. It raises one of the Pokémon\'s{NEW_LINE}'
         'stats and always gives it a Rare Quality.\\n\\0"', ".align 2,0",
+        ".global ItemNameTinyApple", "ItemNameTinyApple:", '.string "Tiny Apple\\0"', ".align 2,0",
+        ".global ItemDescriptionTinyApple", "ItemDescriptionTinyApple:",
+        '.string "A small food item that slightly fills the{NEW_LINE}'
+        'Pokémon\'s {color YELLOW}Belly{reset}.\\n\\0"', ".align 2,0",
         ".global ItemNameEmpowermentSeed", "ItemNameEmpowermentSeed:", '.string "Empower Seed\\0"', ".align 2,0",
         ".global ItemDescriptionEmpowermentSeed", "ItemDescriptionEmpowermentSeed:",
         '.string "An Empowerment Seed. A Pokémon that eats it{NEW_LINE}'

@@ -1,7 +1,8 @@
 #rom debug
 #save after-first-dungeon
-# DX Rare Qualities Leave Half (eating a Big Apple leaves an Apple), Forge a Path (the leader walks through walls,
-# paying Belly) and Shared Happiness (curing one teammate cures another)
+# DX Rare Qualities Leave Half (eating a Big Apple leaves an Apple, an Apple a Tiny Apple), Forge a Path (the leader
+# walks through walls, paying Belly, and each broken wall is redrawn) and Shared Happiness (curing one teammate
+# cures another)
 mash START sMainMenu 4 != 0 3000
 write gDxTestSeed 4 99991
 # an empty toolbox, then a Big Apple (83) in slot 0
@@ -74,6 +75,11 @@ calc paid belly0 - belly1
 calc ten 10 + 0
 cmpreads climbed >= ten
 cmpreads paid >= ten
+# every wall broken was redrawn as the leader stepped in
+read digs gDxTestCount+10 2
+read redrawn gDxTestCount+12 2
+expect gDxTestCount+10 2 >= 2
+cmpreads redrawn == digs
 # Shared Happiness (25): leader and partner poisoned; the leader eats a Pecha Berry (66) and both are cured
 write *gRecruitedPokemonRef+3733 1 25
 write *gTeamInventoryRef+2 1 66
@@ -94,3 +100,41 @@ wait 200
 shot 7_cured
 expect ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoBurn 1 == 0
 expect ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoBurn 1 == 0
+# Leave Half (11) again, on an Apple (82): a Tiny Apple (the old Beat-Up Orb slot, 236) is left
+write *gRecruitedPokemonRef+3733 1 11
+write *gTeamInventoryRef+0 1 1
+write *gTeamInventoryRef+2 1 82
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoBelly 2 10
+press B
+wait 30
+press DOWN
+press A
+wait 40
+press A
+wait 40
+shot 8_apple_menu
+press A
+wait 200
+press A
+wait 60
+shot 9_tiny_left
+expect *gTeamInventoryRef+0 1 != 0
+# (236 reads as -20: one signed byte)
+expect *gTeamInventoryRef+2 1 == -20
+# and the Tiny Apple fills 25 Belly, leaving nothing
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoBelly 2 10
+press B
+wait 30
+press DOWN
+press A
+wait 40
+press A
+wait 40
+shot 10_tiny_menu
+press A
+wait 200
+press A
+wait 60
+shot 11_tiny_eaten
+expect ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoBelly 2 == 35
+expect *gTeamInventoryRef+0 1 == 0

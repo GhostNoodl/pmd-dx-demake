@@ -1019,8 +1019,13 @@ void CheckLeaderTile(void)
         return;
 
     tile = GetTileAtEntitySafe(leader);
+#ifdef DX_RULES
+    // DX Forge a Path breaks walls too: redraw any broken wall stepped into (only a broken wall is marked)
+    sub_804AE84(&leader->pos);
+#else
     if (IqSkillIsEnabled(leader, IQ_SUPER_MOBILE) && GetEntInfo(leader)->invisibleClassStatus.status != STATUS_MOBILE && !HasHeldItem(leader, ITEM_MOBILE_SCARF))
         sub_804AE84(&leader->pos);
+#endif
     if (tile->terrainFlags & TERRAIN_TYPE_STAIRS)
         gDungeon->unk1 = 1;
 

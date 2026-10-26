@@ -345,7 +345,16 @@ void sub_80479B8(bool8 param_1, bool8 param_2, u8 param_3, Entity *pokemon, Enti
             case ITEM_APPLE:
             case ITEM_BANANA:
                 sub_80487CC(pokemon,target,0x32,5);
+#ifdef DX_RULES
+                if (!param_1 && item->id == ITEM_APPLE)
+                    DxLeaveHalf(target, ITEM_APPLE);
+#endif
                 break;
+#ifdef DX_RULES
+            case ITEM_TINY_APPLE:
+                sub_80487CC(pokemon,target,DX_TINY_APPLE_BELLY,0);
+                break;
+#endif
             case ITEM_CHESTNUT:
                 sub_80487CC(pokemon,target,10,0);
                 break;
