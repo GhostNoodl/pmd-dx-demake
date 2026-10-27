@@ -104,6 +104,10 @@ expect *gDungeon+@gDxOffFloorEnd 1 == 1
 press DOWN
 wait 10
 press A
+# a Rainbow Gummi (86) found on the way, none in storage: it goes to storage when the team gets home
+write *gTeamInventoryRef+20 1 1
+write *gTeamInventoryRef+22 1 86
+write *gTeamInventoryRef+252 2 0
 mash A gDungeon 4 == 0 3000
 wait 120
 shot 8_dungeon_over
@@ -112,3 +116,25 @@ expect *gRecruitedPokemonRef+@gDxOffMonExp 4 > 0
 expect *gRecruitedPokemonRef+@gDxOffMonLevel 1 > 5
 read campExp *gRecruitedPokemonRef+@gDxOffMonExp 4
 read campLevel *gRecruitedPokemonRef+@gDxOffMonLevel 1
+# the Gummi went to Kangaskhan storage, and none is left in the toolbox
+expect *gTeamInventoryRef+252 2 == 1
+expect *gTeamInventoryRef+2 1 != 86
+expect *gTeamInventoryRef+6 1 != 86
+expect *gTeamInventoryRef+10 1 != 86
+expect *gTeamInventoryRef+14 1 != 86
+expect *gTeamInventoryRef+18 1 != 86
+expect *gTeamInventoryRef+22 1 != 86
+expect *gTeamInventoryRef+26 1 != 86
+expect *gTeamInventoryRef+30 1 != 86
+expect *gTeamInventoryRef+34 1 != 86
+expect *gTeamInventoryRef+38 1 != 86
+expect *gTeamInventoryRef+42 1 != 86
+expect *gTeamInventoryRef+46 1 != 86
+expect *gTeamInventoryRef+50 1 != 86
+expect *gTeamInventoryRef+54 1 != 86
+expect *gTeamInventoryRef+58 1 != 86
+expect *gTeamInventoryRef+62 1 != 86
+expect *gTeamInventoryRef+66 1 != 86
+expect *gTeamInventoryRef+70 1 != 86
+expect *gTeamInventoryRef+74 1 != 86
+expect *gTeamInventoryRef+78 1 != 86

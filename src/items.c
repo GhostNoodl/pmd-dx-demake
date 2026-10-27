@@ -982,6 +982,21 @@ bool8 DxIsGummi(u8 id)
     return IsGummiItem(id) || id == ITEM_DX_GUMMI;
 }
 
+void DxStoreToolboxGummis(void)
+{
+    s32 i;
+
+    for (i = 0; i < INVENTORY_SIZE; i++) {
+        Item *slot = &gTeamInventoryRef->teamItems[i];
+        if (ItemExists(slot) && DxIsGummi(slot->id)) {
+            MoveToStorage(slot);
+            slot->id = ITEM_NOTHING;
+            slot->flags = 0;
+        }
+    }
+    FillInventoryGaps();
+}
+
 void DxConvertTypeGummis(void)
 {
     s32 i;
@@ -1010,16 +1025,20 @@ bool8 HasGummiItem(void)
 {
     s32 i;
 
+#ifdef DX_RULES
+    // DX: Gummis are given from Kangaskhan storage
+    for (i = ITEM_WHITE_GUMMI; i < NUMBER_OF_ITEM_IDS; i++) {
+        if (DxIsGummi(i) && gTeamInventoryRef->teamStorage[i] != 0)
+            return TRUE;
+    }
+#else
     for (i = 0; i < INVENTORY_SIZE; i++) {
         if (ItemExists(&gTeamInventoryRef->teamItems[i])
-#ifdef DX_RULES
-            && DxIsGummi(gTeamInventoryRef->teamItems[i].id)) {
-#else
             && IsGummiItem(gTeamInventoryRef->teamItems[i].id)) {
-#endif
             return TRUE;
         }
     }
+#endif
 
     return FALSE;
 }

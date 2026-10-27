@@ -1,4 +1,7 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "code_801C8C4.h"
+#endif
 #include "globaldata.h"
 #include "constants/colors.h"
 #include "music_util.h"
@@ -147,6 +150,12 @@ static void sub_8022A10(void)
 
     switch (sUnknown_203B294->state) {
         case 0:
+#ifdef DX_RULES
+            if (sUnknown_203B294->pokeStruct != NULL) {
+                sub_801C8C4(DX_STORAGE_LIST_GUMMIS, 3, NULL, 10); // DX: Gummis are given from storage
+                break;
+            }
+#endif
             if (sUnknown_203B294->pokeStruct != NULL)
                 sub_801A5D8(5, 3, NULL, 10);
             else
@@ -340,6 +349,29 @@ static void sub_8022D2C(void)
 
 static void sub_8022E78(void)
 {
+#ifdef DX_RULES
+    // DX: the storage Gummi list; the Gummi chosen is fed at once
+    if (sUnknown_203B294->pokeStruct != NULL) {
+        u8 id;
+
+        switch (sub_801CA08(TRUE)) {
+            case 3:
+                id = sub_801CB24();
+                sub_801CBB8();
+                DxFeedGummi(sUnknown_203B294->pokeStruct, id, sDxGummiText);
+                gTeamInventoryRef->teamStorage[id]--;
+                nullsub_104();
+                sUnknown_203B294->fallbackState = 22;
+                sub_8022924(DX_GUMMI_FED_STATE);
+                break;
+            case 2:
+                sub_801CBB8();
+                sub_8022924(22);
+                break;
+        }
+        return;
+    }
+#endif
     switch (sub_801A6E8(TRUE)) {
         case 3:
             sUnknown_203B294->itemIndex = sub_801A8AC();

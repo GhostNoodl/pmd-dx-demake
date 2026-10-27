@@ -22,6 +22,16 @@ EWRAM_INIT static u16 sUnknown_203B24E = {0};
 static void sub_801CC38(void);
 static u32 sub_801CE58(void);
 
+#ifdef DX_RULES
+// DX: Gummis stay in storage (given from there at a camp); the Gummi picker lists nothing else
+static bool8 DxStorageListed(s32 mode, s32 itemID)
+{
+    if (gTeamInventoryRef->teamStorage[itemID] == 0 || !IsNotMoneyOrUsedTMItem(itemID))
+        return FALSE;
+    return mode == DX_STORAGE_LIST_GUMMIS ? DxIsGummi(itemID) : !DxIsGummi(itemID);
+}
+#endif
+
 bool8 sub_801C8C4(s32 a0, s32 a1, DungeonPos *a2, u32 a3)
 {
     if (sub_801CF14(a0))
@@ -188,7 +198,11 @@ static u32 sub_801CE58(void)
 
     itemCount = 0;
     for (itemIndex = 1; itemIndex < NUMBER_OF_ITEM_IDS; itemIndex++) {
+#ifdef DX_RULES
+        if (sUnknown_203B244->unk0 == 2 || DxStorageListed(sUnknown_203B244->unk0, itemIndex)) {
+#else
         if (sUnknown_203B244->unk0 == 2 || (gTeamInventoryRef->teamStorage[itemIndex] != 0 && IsNotMoneyOrUsedTMItem(itemIndex))) {
+#endif
             sUnknown_203B244->itemIDs[itemCount] = itemIndex;
             itemCount++;
         }
@@ -218,7 +232,11 @@ bool8 sub_801CF14(s32 a0)
         return FALSE;
 
     for (itemID = ITEM_STICK; itemID < NUMBER_OF_ITEM_IDS; itemID++) {
+#ifdef DX_RULES
+        if (DxStorageListed(a0, itemID))
+#else
         if (gTeamInventoryRef->teamStorage[itemID] != 0 && IsNotMoneyOrUsedTMItem(itemID))
+#endif
             return FALSE;
     }
 

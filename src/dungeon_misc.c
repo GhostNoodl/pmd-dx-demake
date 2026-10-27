@@ -1,4 +1,5 @@
 #include "global.h"
+#include "items.h"
 #ifdef DX_RULES
 #include "dx_rules.h"
 #endif
@@ -306,8 +307,10 @@ void sub_8068BDC(bool8 a0)
     s32 i, j, id;
 
 #ifdef DX_RULES
-    if (a0)
+    if (a0) {
         DxGiveCampExp(); // DX: the Pokemon resting in camps grew while the team was out
+        DxStoreToolboxGummis(); // and Gummis found on the way go to Kangaskhan storage
+    }
 #endif
     for (i = 0; i < FRIEND_AREA_COUNT; i++) {
         spArr[i] = FALSE;

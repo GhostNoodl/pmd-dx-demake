@@ -77,6 +77,12 @@ bool8 IsGummiItem(u8);
 bool8 DxIsGummi(u8 id);
 // DX has one kind of plain Gummi: any of Red's type Gummis still around becomes a Rainbow Gummi
 void DxConvertTypeGummis(void);
+// DX keeps Gummis in Kangaskhan storage: any toolbox Gummis go there when the team gets home
+void DxStoreToolboxGummis(void);
+#endif
+#ifdef DX_RULES
+// the storage list's Gummi picker (Give Gummi at a camp)
+#define DX_STORAGE_LIST_GUMMIS 3
 #endif
 void ShiftItemsDownFrom(s32 start);
 void ClearItemSlotAt(u32 index);
