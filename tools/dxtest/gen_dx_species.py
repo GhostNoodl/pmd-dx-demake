@@ -435,6 +435,9 @@ def main():
       + "".join(f"{m['sc']} {m['ident'].lower()} " + ("both" if m["gfx"] else "portrait") + "\n" for m in megas))
     (ROOT / "tools/dxtest/dx_species_log.txt").write_text("\n".join(log) + "\n")
     print("\n".join(log))
+    # Gen 7 level-up moves for every species (the newcomers' learnsets written above included)
+    import gen_dx_learnsets
+    gen_dx_learnsets.main()
 
 
 if __name__ == "__main__":

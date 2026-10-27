@@ -19,8 +19,13 @@ read lx0 **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos 2
 read px0 **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos 2
 read py0 **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos!2 2
 # with this seed the partner starts just left of the leader; put it to sleep for 50 turns
-expect **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos 2 == 18
-expect **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos 2 == 19
+read slx **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos 2
+read sly **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos!2 2
+read spx **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos 2
+read spy **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos!2 2
+calc sleft slx - 1
+cmpreads spx == sleft
+cmpreads spy == sly
 write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoSleep 1 1
 write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoSleep!1 1 50
 wait 30
@@ -28,6 +33,9 @@ shot 2_partner_asleep
 press LEFT
 wait 90
 shot 3_pushed_past
-expect **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos 2 == 18
-expect **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos 2 == 19
+# they swapped places
+read alx **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos 2
+read apx **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos 2
+cmpreads alx == spx
+cmpreads apx == slx
 expect ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoSleep 1 == 1

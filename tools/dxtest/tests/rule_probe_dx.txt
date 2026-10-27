@@ -17,8 +17,14 @@ wait 30
 press A
 mash A gDungeon 4 != 0 1800
 wait 600
-expect **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos 2 == 19
-expect **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos 2 == 18
+# the partner starts just left of the leader
+read slx **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos 2
+read sly **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos!2 2
+read spx **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos 2
+read spy **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos!2 2
+calc sleft slx - 1
+cmpreads spx == sleft
+cmpreads spy == sly
 # leader (recruit slot 42) holds Tight Formation (32)
 write *gRecruitedPokemonRef+3733 1 32
 write gDxTestProbe 1 1

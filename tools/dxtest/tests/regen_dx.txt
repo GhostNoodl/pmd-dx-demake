@@ -18,8 +18,8 @@ expect sMainLoopsUnk 4 == 1
 read maxhp ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMaxHP 2
 # the wind counter ticks once per turn: use it as a turn clock
 write *gDungeon+@gDxOffWindTurns 2 500
-# 200 max HP so wild hits can't end the run: DX heals 2%/turn (+80 in 20 turns), Red 0.5% (+20)
-write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMaxHP 2 200
+# 999 max HP so wild hits can't end the run (and the HP never tops out): DX heals 2%/turn, Red 0.5%
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMaxHP 2 999
 write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 50
 read hp0 ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2
 read wind0 *gDungeon+@gDxOffWindTurns 2
@@ -28,7 +28,7 @@ hold A+B 900
 read wind *gDungeon+@gDxOffWindTurns 2
 read hp ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2
 shot 1_after_walk
-# HP gained vs turns taken: DX heals 4 a turn (2% of 200), Red 1. Allow for a few wild hits.
+# HP gained vs turns taken: DX heals ~20 a turn (2% of 999), Red 5. At least 3 a turn, allowing for wild hits.
 calc gain hp - hp0
 calc turns wind0 - wind
 calc want turns * 3

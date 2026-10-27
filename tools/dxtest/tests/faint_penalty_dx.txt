@@ -28,23 +28,15 @@ shot 1_in_dungeon
 expect sMainLoopsUnk 4 == 1
 read money_in *gTeamInventoryRef+0x260 4
 expect *gTeamInventoryRef+0 1 == 1
-# drop the team to 1 HP before each attempt, so the first hit on the leader ends the run
-write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
-write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
-hold RIGHT 120
-mash? A gDungeon 4 == 0 600
-write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
-write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
-hold DOWN 120
-mash? A gDungeon 4 == 0 600
-write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
-write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
-hold LEFT 120
-mash? A gDungeon 4 == 0 600
-write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
-write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
-hold UP 120
-mash? A gDungeon 4 == 0 600
+# a wild Pokemon that won't go down next to a team on 1 HP: the first hit (or Struggle's recoil) ends the run
+write gDxTestStageTypes 1 255
+write gDxTestStageHP 2 0
+write gDxTestStageFoe 1 1
+write gDxTestStageFoe+1 1 0
+write gDxTestStageMate 1 0
+write gDxTestStageMate+1 1 0
+write gDxTestStage 1 1
+waitfor gDxTestStage 1 == 0 900
 write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
 write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 1
 mash A gDungeon 4 == 0 3000

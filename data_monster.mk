@@ -37,6 +37,11 @@ $(DX_MONSTER_DATA): $(MONSTER_DIR)/dx/monster_data.json $(MONSTER_DATA_INC)
 	$(DUNGEONJSON) monster pmd-red $<
 $(DX_LEARNSET_DATA): $(MONSTER_DIR)/dx/learnset/learnset_data.json
 	$(DUNGEONJSON) learnset pmd-red $<
+# dx: Red's species with Gen 7 learnsets (tools/dxtest/gen_dx_learnsets.py), included instead of Red's file
+DX_RED_LEARNSET_DATA = $(MONSTER_DIR)/dx/red_learnset/learnset_data.inc
+data_learnset: $(DX_RED_LEARNSET_DATA)
+$(DX_RED_LEARNSET_DATA): $(MONSTER_DIR)/dx/red_learnset/learnset_data.json
+	$(DUNGEONJSON) learnset pmd-red $<
 
 data_learnset_ptrs: ${LEARNSET_DATA};
 	echo '.4byte 0' > $(LEARNSET_PTRS)
