@@ -1,4 +1,10 @@
 #include "global.h"
+#ifdef DX_RULES
+#include "dx_tuning.h"
+#endif
+#ifdef DX_RULES
+#include "dx_rules.h"
+#endif
 #include "globaldata.h"
 #include "constants/colors.h"
 #include "constants/monster.h"
@@ -62,22 +68,52 @@ void BufferMoveName(u8 *buffer, Move *move, const MoveBufferStruct *bufferParams
 {
     u32 color;
     u32 basePP;
+#ifdef DX_RULES
+    u8 ginsengBoostStr[48];
+#else
     u8 ginsengBoostStr[12];
+#endif
 
     color = GetColorForMove(move);
 
     if (bufferParams == NULL)
         bufferParams = &sDefaultMoveBufferParams;
 
+#ifndef DX_RULES
     if (move->ginseng != 0)
         sprintfStatic(ginsengBoostStr, _("%+d"), move->ginseng);
     else
         ginsengBoostStr[0] = '\0';
+#endif
 
     if (bufferParams->redColor)
         color = COLOR_RED;
     if (bufferParams->useRedColorForChargingMoves && DoesMoveCharge(move->id))
         color = COLOR_RED;
+#ifdef DX_RULES
+    // DX Move Growth, in the move lists (not in messages): the level (I-V) and a 4-step bar to the next;
+    // status moves don't grow (a silver star)
+    if (bufferParams->style == BUFFER_MOVE_JUST_NAME) {
+        ginsengBoostStr[0] = '\0';
+    }
+    else if (DxMoveIsDamaging(move)) {
+        static const u8 *const sRoman[] = {_(" I "), _(" II "), _(" III "), _(" IV "), _(" V")};
+        static const u8 *const sBar[] = {
+            _("{COLOR WHITE}||||"), _("{COLOR YELLOW}|{COLOR WHITE}|||"), _("{COLOR YELLOW}||{COLOR WHITE}||"),
+            _("{COLOR YELLOW}|||{COLOR WHITE}|"), _("{COLOR YELLOW}||||"),
+        };
+        s32 level = DxMoveGrowthLevel(move->id), len = 0;
+        const u8 *name = sMovesData[move->id].name;
+        while (name[len] != 0)
+            len++;
+        // a long name (Dazzling Gleam) keeps just the level, so the PP column stays clear
+        sprintfStatic(ginsengBoostStr, _("%s%s{color}%c"), sRoman[level - 1],
+                      level < DX_MOVE_GROWTH_LEVELS && len < 12 ? sBar[DxMoveGrowthQuarters(move->id)] : (const u8 *)_(""), color);
+    }
+    else {
+        sprintfStatic(ginsengBoostStr, _(" {COLOR WHITE}{STAR_BULLET}{color}%c"), color);
+    }
+#endif
 
     switch (bufferParams->style) {
         case BUFFER_MOVE_JUST_NAME:
@@ -206,8 +242,21 @@ s32 GetMoveAccuracyOrAiChance(Move *move, u32 accuracyType)
 
 u32 GetMoveBasePP(Move *move)
 {
+#ifdef DX_RULES
+    // DX Move Growth: +2 PP a level (the level is in Red's Ginseng field; a Ginseng counts too, up to V)
+    s32 level = move->ginseng < DX_MOVE_GROWTH_LEVELS - 1 ? move->ginseng : DX_MOVE_GROWTH_LEVELS - 1;
+    return sMovesData[move->id].basePP + DX_MOVE_GROWTH_PP * level;
+#else
     return sMovesData[move->id].basePP;
+#endif
 }
+
+#ifdef DX_RULES
+const u8 *DxMoveName(u16 moveId)
+{
+    return sMovesData[moveId].name;
+}
+#endif
 
 u32 GetMoveMaxUpgradeLevel(Move *move)
 {

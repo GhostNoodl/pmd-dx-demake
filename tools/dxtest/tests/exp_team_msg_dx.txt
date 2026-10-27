@@ -40,8 +40,7 @@ write gDxTestStage 1 1
 waitfor gDxTestStage 1 == 0 900
 wait 10
 shot 1_staged
-press A
-waitfor gDxTestCount 2 >= 1 600
+mash A gDxTestCount 2 >= 1 1500
 wait 40
 shot 2_team_exp
 wait 120

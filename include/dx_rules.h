@@ -1,6 +1,8 @@
 #ifndef GUARD_DX_RULES_H
 #define GUARD_DX_RULES_H
 
+#include "constants/move_id.h"
+
 #include "structs/dungeon_entity.h"
 #include "structs/str_pokemon.h"
 
@@ -15,6 +17,12 @@ extern bool8 gDxForceMysteryHouse;
 extern bool8 gDxForceRecruit;
 bool8 DxRollMysteryHouse(void);
 void DxTryMoveGrowth(EntityInfo *user, Move *move);
+// Move Growth: the team's uses of each move (saved), a move's level (1-5, I-V), its progress to the next level
+// in quarters (0-4), and copying the levels into every team and recruit move (Red's Ginseng field)
+extern u8 gDxMoveUses[NUM_REGULAR_MOVE_IDS];
+s32 DxMoveGrowthLevel(u16 moveId);
+s32 DxMoveGrowthQuarters(u16 moveId);
+void DxSyncMoveGrowth(void);
 void DxEmpower(Entity *user, Entity *target);
 s32 DxMegaBase(s32 species);
 

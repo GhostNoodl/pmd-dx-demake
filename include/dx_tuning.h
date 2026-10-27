@@ -34,9 +34,15 @@
 // Move Growth: each time a team member uses a damaging move it may grow one level (+1 power,
 // shown as "Tackle+1", the same field as Red's Ginseng boost, up to Red's per-move cap).
 // Chance per use = BASE - FALLOFF * current level, never below MIN (percent)
-#define DX_MOVE_GROWTH_BASE_CHANCE 20
-#define DX_MOVE_GROWTH_FALLOFF 3
-#define DX_MOVE_GROWTH_MIN_CHANCE 2
+// (ESTIMATED) the team's uses of a damaging move that take it to levels II, III, IV and V; Moving Up counts
+// each use twice. Level I is where every move starts. Per level above I: +1 power, +2 PP, +4 accuracy.
+#define DX_MOVE_GROWTH_LEVELS 5
+#define DX_MOVE_GROWTH_USES_II 10
+#define DX_MOVE_GROWTH_USES_III 25
+#define DX_MOVE_GROWTH_USES_IV 50
+#define DX_MOVE_GROWTH_USES_V 100
+#define DX_MOVE_GROWTH_PP 2
+#define DX_MOVE_GROWTH_ACCURACY 4
 
 // Empowerment Seed: stat stages gained by an Empowered Pokemon (lasts the floor, like any stat change)
 #define DX_EMPOWER_STAGES 2

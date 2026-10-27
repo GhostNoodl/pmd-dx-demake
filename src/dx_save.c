@@ -18,7 +18,7 @@
 // there, which reads as "nothing extra yet".
 #define DX_SAVE_SECTOR 24
 #define DX_SAVE_MAGIC 0x56534458 // "DXSV"
-#define DX_SAVE_VERSION 5 // v4: Rare Qualities and DX flags for every recruit slot; v5: cleared dungeons
+#define DX_SAVE_VERSION 6 // v4: Rare Qualities and DX flags for every recruit slot; v5: cleared dungeons; v6: Move Growth
 // room for every planned newcomer, so adding species doesn't change the layout
 #define DX_SEEN_CAPACITY 64
 #define DX_SAVE_V2_SEEN 2 // v2 (Riolu/Lucario builds) stored exactly 2 seen flags
@@ -38,6 +38,8 @@ typedef struct DxSaveExt
     u8 dxFlags[NUM_MONSTERS];
     // v5: dungeons cleared at least once (Strong Foes)
     u8 clearedDungeons[16];
+    // v6: the team's uses of each move (Move Growth)
+    u8 moveUses[NUM_REGULAR_MOVE_IDS];
 } DxSaveExt;
 
 typedef char DxSeenCapacityCheck[DX_NEW_SPECIES_COUNT <= DX_SEEN_CAPACITY ? 1 : -1];
@@ -61,6 +63,7 @@ void DxSaveExtWrite(void)
         ext->dxFlags[i] = gRecruitedPokemonRef->pokemon[i].dxFlags;
     }
     MemoryCopy8(ext->clearedDungeons, gDxClearedDungeons, sizeof(ext->clearedDungeons));
+    MemoryCopy8(ext->moveUses, gDxMoveUses, sizeof(ext->moveUses));
     WriteSaveSector(&sector, (u8 *)ext, sizeof(DxSaveExt));
     MemoryFree(ext);
 }
@@ -71,12 +74,20 @@ void DxSaveExtRead(void)
     s32 seenCount = -1;
     bool8 hasQualities = FALSE;
     bool8 hasCleared = FALSE;
+    bool8 hasMoveUses = FALSE;
     s32 sector = DX_SAVE_SECTOR;
     DxSaveExt *ext = MemoryAlloc(sizeof(DxSaveExt), MEMALLOC_GROUP_5);
     Pokemon *extras = &gRecruitedPokemonRef->pokemon[VANILLA_RECRUIT_SLOTS];
 
     if (ReadSaveSector(&sector, (u8 *)ext, sizeof(DxSaveExt)) == READ_SAVE_VALID
         && ext->magic == DX_SAVE_MAGIC && ext->version == DX_SAVE_VERSION) {
+        seenCount = DX_NEW_SPECIES_COUNT;
+        hasQualities = TRUE;
+        hasCleared = TRUE;
+        hasMoveUses = TRUE;
+    }
+    else if ((sector = DX_SAVE_SECTOR, ReadSaveSector(&sector, (u8 *)ext, offsetof(DxSaveExt, moveUses)) == READ_SAVE_VALID)
+        && ext->magic == DX_SAVE_MAGIC && ext->version == 5) {
         seenCount = DX_NEW_SPECIES_COUNT;
         hasQualities = TRUE;
         hasCleared = TRUE;
@@ -110,8 +121,13 @@ void DxSaveExtRead(void)
         MemoryCopy8(gDxClearedDungeons, ext->clearedDungeons, sizeof(gDxClearedDungeons));
     else
         MemoryFill8(gDxClearedDungeons, 0, sizeof(gDxClearedDungeons));
+    if (hasMoveUses)
+        MemoryCopy8(gDxMoveUses, ext->moveUses, sizeof(gDxMoveUses));
+    else
+        MemoryFill8(gDxMoveUses, 0, sizeof(gDxMoveUses));
     MemoryFree(ext);
     DxConvertTypeGummis();
+    DxSyncMoveGrowth();
 }
 
 #endif // DX_RULES

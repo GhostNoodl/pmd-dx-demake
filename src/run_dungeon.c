@@ -149,6 +149,7 @@ void RunDungeon_Async(DungeonSetupStruct *setupPtr)
         gDxAdventureTurns = 0;
         gDxAdventureExp = 0;
         DxConvertTypeGummis();
+        DxSyncMoveGrowth();
 #endif
         gDungeon->unk644.unk37 = GetRescuesAllowed(setupPtr->info.sub0.unk0.id);
     }

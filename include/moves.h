@@ -52,6 +52,9 @@ s32 GetMoveAccuracyOrAiChance(Move *move, u32 accuracyType);
 u8 GetMoveAIWeight(Move *move);
 s32 GetMoveBasePower(Move *move);
 u32 GetMoveBasePP(Move *move);
+#ifdef DX_RULES
+const u8 *DxMoveName(u16 moveId);
+#endif
 u32 GetMoveCritChance(Move *move);
 u32 GetMoveMaxUpgradeLevel(Move *move);
 u32 GetMoveNumberOfChainedHits(Move *move);

@@ -26,6 +26,7 @@
 #include "pokemon.h"
 #include "dungeon_random.h"
 #include "structs/str_dungeon.h"
+#include "dungeon_range.h"
 #include "move_util.h"
 #include "move_orb_actions_1.h"
 #include "dungeon_move_util.h"
@@ -118,20 +119,81 @@ s32 DxDoubleMoveChance(Entity *attacker, Entity *target)
 }
 
 // --- Move Growth ---
-// Rescue Team DX: moves grow stronger with use (see dx_tuning.h)
+// Rescue Team DX: a damaging move grows with use, team-wide: the team's uses of it set its level (dx_tuning.h)
+EWRAM_DATA u8 gDxMoveUses[NUM_REGULAR_MOVE_IDS] = {0};
+static const u8 sDxGrowthUses[DX_MOVE_GROWTH_LEVELS] = {0, DX_MOVE_GROWTH_USES_II, DX_MOVE_GROWTH_USES_III,
+                                                        DX_MOVE_GROWTH_USES_IV, DX_MOVE_GROWTH_USES_V};
+static const u8 *const sDxRoman[DX_MOVE_GROWTH_LEVELS + 1] = {NULL, _("I"), _("II"), _("III"), _("IV"), _("V")};
+static const u8 sDxMoveGrew[] = _("{COLOR GREEN}%s{RESET} grew to {COLOR YELLOW}%s{RESET}!");
+
+s32 DxMoveGrowthLevel(u16 moveId)
+{
+    s32 level = 1;
+
+    if (moveId >= NUM_REGULAR_MOVE_IDS)
+        return 1;
+    while (level < DX_MOVE_GROWTH_LEVELS && gDxMoveUses[moveId] >= sDxGrowthUses[level])
+        level++;
+    return level;
+}
+
+s32 DxMoveGrowthQuarters(u16 moveId)
+{
+    s32 level = DxMoveGrowthLevel(moveId), from, to;
+
+    if (level >= DX_MOVE_GROWTH_LEVELS)
+        return 4;
+    from = sDxGrowthUses[level - 1];
+    to = sDxGrowthUses[level];
+    return (gDxMoveUses[moveId] - from) * 4 / (to - from);
+}
+
+static void DxSyncMoves(Move *moves)
+{
+    s32 i;
+
+    for (i = 0; i < MAX_MON_MOVES; i++) {
+        if ((moves[i].moveFlags & MOVE_FLAG_EXISTS) && DxMoveIsDamaging(&moves[i]))
+            moves[i].ginseng = DxMoveGrowthLevel(moves[i].id) - 1;
+    }
+}
+
+// every recruit's moves, and in a dungeon the team's, take the team's levels
+void DxSyncMoveGrowth(void)
+{
+    s32 i;
+
+    for (i = 0; i < NUM_MONSTERS; i++) {
+        Pokemon *mon = &gRecruitedPokemonRef->pokemon[i];
+        if (PokemonExists(mon))
+            DxSyncMoves(mon->moves);
+    }
+    if (gDungeon != NULL) {
+        for (i = 0; i < MAX_TEAM_MEMBERS; i++) {
+            Entity *mate = gDungeon->teamPokemon[i];
+            if (EntityIsValid(mate))
+                DxSyncMoves(GetEntInfo(mate)->moves.moves);
+        }
+    }
+}
+
 void DxTryMoveGrowth(EntityInfo *user, Move *move)
 {
-    s32 chance;
+    s32 before, after, uses;
+    u8 text[80];
 
-    if (user->isNotTeamMember || !DxMoveIsDamaging(move) || move->ginseng >= GetMoveMaxUpgradeLevel(move))
+    if (user->isNotTeamMember || !DxMoveIsDamaging(move) || move->id >= NUM_REGULAR_MOVE_IDS)
         return;
-    chance = DX_MOVE_GROWTH_BASE_CHANCE - DX_MOVE_GROWTH_FALLOFF * move->ginseng;
-    if (chance < DX_MOVE_GROWTH_MIN_CHANCE)
-        chance = DX_MOVE_GROWTH_MIN_CHANCE;
-    if (DxTeamHasQuality(RQ_MOVING_UP))
-        chance *= 2;
-    if (DungeonRandInt(100) < chance)
-        move->ginseng++;
+    before = DxMoveGrowthLevel(move->id);
+    uses = gDxMoveUses[move->id] + (DxTeamHasQuality(RQ_MOVING_UP) ? 2 : 1);
+    gDxMoveUses[move->id] = uses > 255 ? 255 : uses;
+    after = DxMoveGrowthLevel(move->id);
+    move->ginseng = after - 1;
+    if (after > before) {
+        DxSyncMoveGrowth();
+        sprintfStatic(text, sDxMoveGrew, DxMoveName(move->id), sDxRoman[after]);
+        LogMessageByIdWithPopupCheckUser_Async(GetLeader(), text);
+    }
 }
 
 // --- Empowerment Seed ---

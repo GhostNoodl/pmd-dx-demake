@@ -68,7 +68,7 @@ def exp_test():
             f"write {LEADER}+@gDxOffInfoHP 2 999",
             # this KO takes the Lv. 6 leader to Lv. 7 (a level-up keeps its own line)
             f"read leader_level {LEADER}+@gDxOffInfoLevel 1"]
-    out += stage(hp=1) + ["shot 1_staged", "press A", "waitfor gDxTestCount 2 >= 1 600", "wait 40",
+    out += stage(hp=1) + ["shot 1_staged", "mash A gDxTestCount 2 >= 1 1500", "wait 40",
                           "shot 2_team_exp", "wait 120", "shot 3_level_up", "wait 400",
                           "expect gDxTestCount 2 == 1", "expect gDxTestCount+2 2 == 0",
                           f"read leader_level_after {LEADER}+@gDxOffInfoLevel 1",

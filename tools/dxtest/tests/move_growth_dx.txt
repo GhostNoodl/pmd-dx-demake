@@ -1,7 +1,8 @@
 #rom debug
 #save after-first-dungeon
-# DX Move Growth: using Tackle 20 times grows it (Tackle+N, the Ginseng power field)
-# Dungeon offsets come from the debug ROM's gDxOff* symbols
+# DX Move Growth: the team's 10th use of Tackle takes it to level II for every team member who knows it
+# (the partner too), with a "grew to II!" message; the Moves menu shows the level and a bar (Tackle) or a
+# silver star (Growl, a status move, doesn't grow)
 mash START sMainMenu 4 != 0 3000
 wait 60
 press UP
@@ -9,184 +10,73 @@ press A
 wait 30
 press A
 wait 30
-shot 1_pick_dungeon
+press UP
+press UP
+wait 10
+expect *sDxWarp+0xB0 4 == 2
 press A
-wait 30
-shot 2_pick_floor
+wait 40
+expect *sDxWarp+0xB0 4 == 1
 press A
 mash A gDungeon 4 != 0 1800
 wait 600
-# leader move 0 = Tackle (154), 40 PP, level 0
+# leader: Tackle (154) and Growl (217); partner: Tackle too; the team has used Tackle 9 times
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves 1 1
 write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!2 2 154
-write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!4 1 40
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!4 1 20
 write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!5 1 0
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!8 1 1
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!10 2 217
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!12 1 20
+# the longest name at a long level: Dazzling Gleam (0x19B) at III (30 uses), to see it fits its row (no PP:
+# A still picks Tackle)
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!16 1 1
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!18 2 411
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!20 1 0
+write gDxMoveUses+411 1 30
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!24 1 0
+write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoMoves 1 1
+write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoMoves!2 2 154
+write ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoMoves!5 1 0
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoTypes 1 0
+write ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoHP 2 999
+write gDxMoveUses+154 1 9
+# the Moves menu before: Tackle I with three of four bar steps lit (9 of 10 uses), Growl's star
 press B
 wait 30
 press A
 wait 40
+shot 1_moves_before
+press B
+wait 30
+press B
+wait 30
+# a foe next to the leader; A uses Tackle: the 10th use
+write gDxTestStageTypes 1 255
+write gDxTestStageHP 2 0
+write gDxTestStageFoe 1 1
+write gDxTestStageFoe+1 1 0
+write gDxTestStageMate 1 0
+write gDxTestStageMate+1 1 0
+write gDxTestStage 1 1
+waitfor gDxTestStage 1 == 0 900
+wait 10
 press A
-wait 40
-press A
-wait 200
+wait 100
+shot 2_grew
+wait 150
+expect gDxMoveUses+154 1 == 10
+# Tackle is level II (Red's Ginseng field = 1: +1 power) for the leader and the partner
+expect ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!5 1 == 1
+expect ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoMoves!5 1 == 1
+# Growl (status) doesn't grow
+expect ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!13 1 == 0
 press B
 wait 30
 press A
 wait 40
-press A
-wait 40
-press A
-wait 200
+shot 3_moves_after
 press B
 wait 30
-press A
-wait 40
-press A
-wait 40
-press A
-wait 200
 press B
 wait 30
-press A
-wait 40
-press A
-wait 40
-press A
-wait 200
-press B
-wait 30
-press A
-wait 40
-press A
-wait 40
-press A
-wait 200
-press B
-wait 30
-press A
-wait 40
-press A
-wait 40
-press A
-wait 200
-press B
-wait 30
-press A
-wait 40
-press A
-wait 40
-press A
-wait 200
-press B
-wait 30
-press A
-wait 40
-press A
-wait 40
-press A
-wait 200
-press B
-wait 30
-press A
-wait 40
-press A
-wait 40
-press A
-wait 200
-press B
-wait 30
-press A
-wait 40
-press A
-wait 40
-press A
-wait 200
-press B
-wait 30
-press A
-wait 40
-press A
-wait 40
-press A
-wait 200
-press B
-wait 30
-press A
-wait 40
-press A
-wait 40
-press A
-wait 200
-press B
-wait 30
-press A
-wait 40
-press A
-wait 40
-press A
-wait 200
-press B
-wait 30
-press A
-wait 40
-press A
-wait 40
-press A
-wait 200
-press B
-wait 30
-press A
-wait 40
-press A
-wait 40
-press A
-wait 200
-press B
-wait 30
-press A
-wait 40
-press A
-wait 40
-press A
-wait 200
-press B
-wait 30
-press A
-wait 40
-press A
-wait 40
-press A
-wait 200
-press B
-wait 30
-press A
-wait 40
-press A
-wait 40
-press A
-wait 200
-press B
-wait 30
-press A
-wait 40
-press A
-wait 40
-press A
-wait 200
-press B
-wait 30
-press A
-wait 40
-press A
-wait 40
-press A
-wait 200
-shot 1_after
-read pp ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!4 1
-read level ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!5 1
-expect ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!4 1 < 40
-expect ***gDungeon+@gDxOffTeamPokemon+@gDxOffEntityInfo+@gDxOffInfoMoves!5 1 > 0
-press B
-wait 30
-press A
-wait 40
-shot 2_moves_menu

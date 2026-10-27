@@ -1,5 +1,8 @@
 #include "global.h"
 #ifdef DX_RULES
+#include "dx_tuning.h"
+#endif
+#ifdef DX_RULES
 #include "dx_rules.h"
 #include "dx_rare_quality.h"
 #endif
@@ -753,6 +756,8 @@ bool8 AccuracyCalc(Entity *attacker, Entity *target, Move *move, s32 accuracyTyp
 #ifdef DX_RULES
     if (DxQualityAlwaysHits(attacker, move->id)) // Narrow Focus, Rapid Bull's-Eyes
         return TRUE;
+    // DX Move Growth: +4 accuracy a level
+    accuracy += DX_MOVE_GROWTH_ACCURACY * (move->ginseng < DX_MOVE_GROWTH_LEVELS - 1 ? move->ginseng : DX_MOVE_GROWTH_LEVELS - 1);
 #endif
     if (move->id == MOVE_REGULAR_ATTACK && IqSkillIsEnabled(attacker, IQ_SURE_HIT_ATTACKER))
         return TRUE;
