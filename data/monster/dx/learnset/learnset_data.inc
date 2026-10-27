@@ -2351,6 +2351,9 @@ LevelUpMovesFroslass:
 .byte 14
 .byte 46
 .byte 19
+.byte 131
+.byte 20
+.byte 23
 .byte 47
 .byte 28
 .byte 13
@@ -2405,6 +2408,12 @@ HMTMMovesFroslass:
 
 .global LevelUpMovesSylveon
 LevelUpMovesSylveon:
+.byte 130
+.byte 103
+.byte 1
+.byte 130
+.byte 102
+.byte 1
 .byte 129
 .byte 57
 .byte 1
@@ -2422,12 +2431,18 @@ LevelUpMovesSylveon:
 .byte 129
 .byte 17
 .byte 17
+.byte 131
+.byte 20
+.byte 20
 .byte 129
 .byte 9
 .byte 25
 .byte 130
 .byte 3
 .byte 33
+.byte 130
+.byte 106
+.byte 37
 .byte 115
 .byte 45
 .byte 0
@@ -4564,15 +4579,24 @@ LevelUpMovesMegaGardevoir:
 .byte 129
 .byte 89
 .byte 1
+.byte 130
+.byte 106
+.byte 1
 .byte 129
 .byte 59
 .byte 1
+.byte 130
+.byte 103
+.byte 11
 .byte 129
 .byte 97
 .byte 14
 .byte 130
 .byte 41
 .byte 17
+.byte 131
+.byte 20
+.byte 23
 .byte 130
 .byte 63
 .byte 26
@@ -4740,8 +4764,14 @@ HMTMMovesMegaSableye:
 LevelUpMovesMegaMawile:
 .byte 46
 .byte 1
+.byte 130
+.byte 102
+.byte 1
 .byte 129
 .byte 89
+.byte 1
+.byte 130
+.byte 105
 .byte 1
 .byte 129
 .byte 44
@@ -5284,6 +5314,9 @@ LevelUpMovesMegaAltaria:
 .byte 129
 .byte 6
 .byte 9
+.byte 130
+.byte 103
+.byte 11
 .byte 129
 .byte 2
 .byte 14
@@ -5299,6 +5332,9 @@ LevelUpMovesMegaAltaria:
 .byte 130
 .byte 37
 .byte 46
+.byte 130
+.byte 106
+.byte 52
 .byte 0
 .global HMTMMovesMegaAltaria
 HMTMMovesMegaAltaria:

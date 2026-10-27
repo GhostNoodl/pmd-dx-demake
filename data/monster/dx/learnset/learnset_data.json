@@ -2287,6 +2287,10 @@
                 "level": 19
             },
             {
+                "move": "MOVE_DRAINING_KISS",
+                "level": 23
+            },
+            {
                 "move": "MOVE_WILL_O_WISP",
                 "level": 28
             },
@@ -2335,6 +2339,14 @@
         "pokemon": "Sylveon",
         "levelUpMoves": [
             {
+                "move": "MOVE_DISARMING_VOICE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_FAIRY_WIND",
+                "level": 1
+            },
+            {
                 "move": "MOVE_HELPING_HAND",
                 "level": 1
             },
@@ -2359,12 +2371,20 @@
                 "level": 17
             },
             {
+                "move": "MOVE_DRAINING_KISS",
+                "level": 20
+            },
+            {
                 "move": "MOVE_SKILL_SWAP",
                 "level": 25
             },
             {
                 "move": "MOVE_LIGHT_SCREEN",
                 "level": 33
+            },
+            {
+                "move": "MOVE_MOONBLAST",
+                "level": 37
             },
             {
                 "move": "MOVE_PSYCH_UP",
@@ -4479,8 +4499,16 @@
                 "level": 1
             },
             {
+                "move": "MOVE_MOONBLAST",
+                "level": 1
+            },
+            {
                 "move": "MOVE_TELEPORT",
                 "level": 1
+            },
+            {
+                "move": "MOVE_DISARMING_VOICE",
+                "level": 11
             },
             {
                 "move": "MOVE_WISH",
@@ -4489,6 +4517,10 @@
             {
                 "move": "MOVE_MAGICAL_LEAF",
                 "level": 17
+            },
+            {
+                "move": "MOVE_DRAINING_KISS",
+                "level": 23
             },
             {
                 "move": "MOVE_CALM_MIND",
@@ -4645,7 +4677,15 @@
                 "level": 1
             },
             {
+                "move": "MOVE_FAIRY_WIND",
+                "level": 1
+            },
+            {
                 "move": "MOVE_GROWL",
+                "level": 1
+            },
+            {
+                "move": "MOVE_PLAY_ROUGH",
                 "level": 1
             },
             {
@@ -5208,6 +5248,10 @@
                 "level": 9
             },
             {
+                "move": "MOVE_DISARMING_VOICE",
+                "level": 11
+            },
+            {
                 "move": "MOVE_MIST",
                 "level": 14
             },
@@ -5226,6 +5270,10 @@
             {
                 "move": "MOVE_PERISH_SONG",
                 "level": 46
+            },
+            {
+                "move": "MOVE_MOONBLAST",
+                "level": 52
             }
         ],
         "HMTMMoves": [

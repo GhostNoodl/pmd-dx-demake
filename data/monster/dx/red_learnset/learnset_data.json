@@ -2324,6 +2324,10 @@
         "pokemon": "Clefairy",
         "levelUpMoves": [
             {
+                "move": "MOVE_DISARMING_VOICE",
+                "level": 1
+            },
+            {
                 "move": "MOVE_ENCORE",
                 "level": 1
             },
@@ -2372,6 +2376,10 @@
                 "level": 43
             },
             {
+                "move": "MOVE_MOONBLAST",
+                "level": 46
+            },
+            {
                 "move": "MOVE_METEOR_MASH",
                 "level": 50
             }
@@ -2418,6 +2426,10 @@
     {
         "pokemon": "Clefable",
         "levelUpMoves": [
+            {
+                "move": "MOVE_DISARMING_VOICE",
+                "level": 1
+            },
             {
                 "move": "MOVE_DOUBLESLAP",
                 "level": 1
@@ -2622,6 +2634,10 @@
                 "level": 3
             },
             {
+                "move": "MOVE_DISARMING_VOICE",
+                "level": 11
+            },
+            {
                 "move": "MOVE_DISABLE",
                 "level": 14
             },
@@ -2720,6 +2736,10 @@
             },
             {
                 "move": "MOVE_DOUBLE_EDGE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_PLAY_ROUGH",
                 "level": 1
             },
             {
@@ -2972,6 +2992,10 @@
             {
                 "move": "MOVE_TOXIC",
                 "level": 35
+            },
+            {
+                "move": "MOVE_MOONBLAST",
+                "level": 43
             },
             {
                 "move": "MOVE_PETAL_DANCE",
@@ -3667,6 +3691,10 @@
             },
             {
                 "move": "MOVE_GROWL",
+                "level": 1
+            },
+            {
+                "move": "MOVE_PLAY_ROUGH",
                 "level": 1
             },
             {
@@ -9258,6 +9286,10 @@
         "pokemon": "Jynx",
         "levelUpMoves": [
             {
+                "move": "MOVE_DRAINING_KISS",
+                "level": 1
+            },
+            {
                 "move": "MOVE_LICK",
                 "level": 1
             },
@@ -12413,6 +12445,10 @@
                 "level": 34
             },
             {
+                "move": "MOVE_MOONBLAST",
+                "level": 40
+            },
+            {
                 "move": "MOVE_DREAM_EATER",
                 "level": 46
             }
@@ -12492,6 +12528,10 @@
             {
                 "move": "MOVE_UPROAR",
                 "level": 39
+            },
+            {
+                "move": "MOVE_MOONBLAST",
+                "level": 47
             }
         ],
         "HMTMMoves": [
@@ -13350,6 +13390,10 @@
                 "level": 13
             },
             {
+                "move": "MOVE_FAIRY_WIND",
+                "level": 14
+            },
+            {
                 "move": "MOVE_ENCORE",
                 "level": 17
             },
@@ -13872,6 +13916,10 @@
                 "level": 16
             },
             {
+                "move": "MOVE_PLAY_ROUGH",
+                "level": 23
+            },
+            {
                 "move": "MOVE_RAIN_DANCE",
                 "level": 31
             },
@@ -13955,6 +14003,10 @@
             {
                 "move": "MOVE_HELPING_HAND",
                 "level": 16
+            },
+            {
+                "move": "MOVE_PLAY_ROUGH",
+                "level": 25
             },
             {
                 "move": "MOVE_RAIN_DANCE",
@@ -14166,6 +14218,10 @@
                 "level": 8
             },
             {
+                "move": "MOVE_FAIRY_WIND",
+                "level": 10
+            },
+            {
                 "move": "MOVE_POISONPOWDER",
                 "level": 12
             },
@@ -14251,6 +14307,10 @@
                 "level": 8
             },
             {
+                "move": "MOVE_FAIRY_WIND",
+                "level": 10
+            },
+            {
                 "move": "MOVE_POISONPOWDER",
                 "level": 12
             },
@@ -14334,6 +14394,10 @@
             {
                 "move": "MOVE_TACKLE",
                 "level": 8
+            },
+            {
+                "move": "MOVE_FAIRY_WIND",
+                "level": 10
             },
             {
                 "move": "MOVE_POISONPOWDER",
@@ -16119,6 +16183,10 @@
                 "level": 31
             },
             {
+                "move": "MOVE_PLAY_ROUGH",
+                "level": 37
+            },
+            {
                 "move": "MOVE_CRUNCH",
                 "level": 49
             }
@@ -16203,6 +16271,10 @@
             {
                 "move": "MOVE_RAGE",
                 "level": 35
+            },
+            {
+                "move": "MOVE_PLAY_ROUGH",
+                "level": 43
             },
             {
                 "move": "MOVE_CRUNCH",
@@ -20253,6 +20325,10 @@
             {
                 "move": "MOVE_TAKE_DOWN",
                 "level": 40
+            },
+            {
+                "move": "MOVE_PLAY_ROUGH",
+                "level": 46
             }
         ],
         "HMTMMoves": [
@@ -20335,6 +20411,10 @@
             {
                 "move": "MOVE_TAKE_DOWN",
                 "level": 48
+            },
+            {
+                "move": "MOVE_PLAY_ROUGH",
+                "level": 56
             }
         ],
         "HMTMMoves": [
@@ -20454,6 +20534,10 @@
         "levelUpMoves": [
             {
                 "move": "MOVE_GROWL",
+                "level": 1
+            },
+            {
+                "move": "MOVE_PLAY_ROUGH",
                 "level": 1
             },
             {
@@ -21424,8 +21508,16 @@
                 "level": 9
             },
             {
+                "move": "MOVE_DISARMING_VOICE",
+                "level": 11
+            },
+            {
                 "move": "MOVE_MAGICAL_LEAF",
                 "level": 17
+            },
+            {
+                "move": "MOVE_DRAINING_KISS",
+                "level": 22
             },
             {
                 "move": "MOVE_CALM_MIND",
@@ -21507,8 +21599,16 @@
                 "level": 1
             },
             {
+                "move": "MOVE_DISARMING_VOICE",
+                "level": 11
+            },
+            {
                 "move": "MOVE_MAGICAL_LEAF",
                 "level": 17
+            },
+            {
+                "move": "MOVE_DRAINING_KISS",
+                "level": 23
             },
             {
                 "move": "MOVE_CALM_MIND",
@@ -21586,8 +21686,16 @@
                 "level": 1
             },
             {
+                "move": "MOVE_MOONBLAST",
+                "level": 1
+            },
+            {
                 "move": "MOVE_TELEPORT",
                 "level": 1
+            },
+            {
+                "move": "MOVE_DISARMING_VOICE",
+                "level": 11
             },
             {
                 "move": "MOVE_WISH",
@@ -21596,6 +21704,10 @@
             {
                 "move": "MOVE_MAGICAL_LEAF",
                 "level": 17
+            },
+            {
+                "move": "MOVE_DRAINING_KISS",
+                "level": 23
             },
             {
                 "move": "MOVE_CALM_MIND",
@@ -21978,6 +22090,10 @@
             {
                 "move": "MOVE_FLAIL",
                 "level": 33
+            },
+            {
+                "move": "MOVE_PLAY_ROUGH",
+                "level": 38
             }
         ],
         "HMTMMoves": [
@@ -22994,6 +23110,10 @@
                 "level": 10
             },
             {
+                "move": "MOVE_DISARMING_VOICE",
+                "level": 13
+            },
+            {
                 "move": "MOVE_DOUBLESLAP",
                 "level": 16
             },
@@ -23020,6 +23140,10 @@
             {
                 "move": "MOVE_DOUBLE_EDGE",
                 "level": 40
+            },
+            {
+                "move": "MOVE_PLAY_ROUGH",
+                "level": 46
             }
         ],
         "HMTMMoves": [
@@ -23203,7 +23327,15 @@
                 "level": 1
             },
             {
+                "move": "MOVE_FAIRY_WIND",
+                "level": 1
+            },
+            {
                 "move": "MOVE_GROWL",
+                "level": 1
+            },
+            {
+                "move": "MOVE_PLAY_ROUGH",
                 "level": 1
             },
             {
@@ -24086,6 +24218,10 @@
                 "level": 36
             },
             {
+                "move": "MOVE_PLAY_ROUGH",
+                "level": 43
+            },
+            {
                 "move": "MOVE_DOUBLE_EDGE",
                 "level": 47
             }
@@ -24158,6 +24294,10 @@
             {
                 "move": "MOVE_HELPING_HAND",
                 "level": 36
+            },
+            {
+                "move": "MOVE_PLAY_ROUGH",
+                "level": 43
             },
             {
                 "move": "MOVE_COVET",
@@ -25738,6 +25878,10 @@
                 "level": 9
             },
             {
+                "move": "MOVE_DISARMING_VOICE",
+                "level": 11
+            },
+            {
                 "move": "MOVE_MIST",
                 "level": 14
             },
@@ -25756,6 +25900,10 @@
             {
                 "move": "MOVE_PERISH_SONG",
                 "level": 42
+            },
+            {
+                "move": "MOVE_MOONBLAST",
+                "level": 46
             }
         ],
         "HMTMMoves": [
@@ -25818,6 +25966,10 @@
                 "level": 9
             },
             {
+                "move": "MOVE_DISARMING_VOICE",
+                "level": 11
+            },
+            {
                 "move": "MOVE_MIST",
                 "level": 14
             },
@@ -25836,6 +25988,10 @@
             {
                 "move": "MOVE_PERISH_SONG",
                 "level": 46
+            },
+            {
+                "move": "MOVE_MOONBLAST",
+                "level": 52
             }
         ],
         "HMTMMoves": [
@@ -26045,6 +26201,10 @@
             },
             {
                 "move": "MOVE_HARDEN",
+                "level": 1
+            },
+            {
+                "move": "MOVE_MOONBLAST",
                 "level": 1
             },
             {
@@ -27069,6 +27229,10 @@
             {
                 "move": "MOVE_WRAP",
                 "level": 1
+            },
+            {
+                "move": "MOVE_DISARMING_VOICE",
+                "level": 11
             },
             {
                 "move": "MOVE_TWISTER",
@@ -28690,6 +28854,10 @@
                 "level": 9
             },
             {
+                "move": "MOVE_DRAINING_KISS",
+                "level": 11
+            },
+            {
                 "move": "MOVE_WATER_PULSE",
                 "level": 14
             },
@@ -28845,6 +29013,10 @@
             {
                 "move": "MOVE_AGILITY",
                 "level": 7
+            },
+            {
+                "move": "MOVE_DRAINING_KISS",
+                "level": 9
             },
             {
                 "move": "MOVE_WATER_PULSE",

@@ -34,7 +34,6 @@
   17 poison-jab
   17 hurricane
   17 stored-power
-  17 play-rough
   17 power-gem
   17 me-first
   17 double-hit
@@ -53,8 +52,6 @@
   14 leaf-storm
   14 heavy-slam
   14 magnet-rise
-  13 disarming-voice
-  13 moonblast
   13 healing-wish
   13 copycat
   13 embargo
@@ -79,7 +76,6 @@
    9 soak
    9 aqua-jet
    9 shell-smash
-   9 draining-kiss
    9 aura-sphere
    9 psycho-shift
    9 autotomize
@@ -95,7 +91,6 @@
    8 guard-swap
    8 power-swap
    8 giga-impact
-   8 fairy-wind
    8 heal-block
    7 venoshock
    7 pluck

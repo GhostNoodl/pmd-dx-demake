@@ -79,6 +79,9 @@ void DxTestStageScene(Entity *leader);
 #endif
 // auto-mode is on (dungeon_main.c): the HUD shows AUTO
 bool8 DxAutoModeActive(void);
+// DX Fairy moves (ids Red never uses): TRUE for one of them, and what it does
+bool8 DxIsFairyMove(u16 moveId);
+bool8 DxFairyMoveAction(Entity *attacker, Entity *target, Move *move, s32 itemId);
 // the move deals damage (Red's move data gives status moves small powers too)
 bool8 DxMoveIsDamaging(Move *move);
 void DxGivePokemonExp(Pokemon *mon, s32 exp);

@@ -185,6 +185,13 @@ int get_move_id(string move_macro) {
         move_macro_ids["MOVE_SUPERSONIC"] = 0xAB;
         move_macro_ids["MOVE_TAUNT"] = 0xAC;
         move_macro_ids["MOVE_MOONLIGHT"] = 0xAD;
+        // Rescue Team DX Fairy moves (include/constants/move_id.h), in ids Red never uses
+        move_macro_ids["MOVE_FAIRY_WIND"] = 0x166;
+        move_macro_ids["MOVE_DISARMING_VOICE"] = 0x167;
+        move_macro_ids["MOVE_DRAINING_KISS"] = 0x194;
+        move_macro_ids["MOVE_DAZZLING_GLEAM"] = 0x19B;
+        move_macro_ids["MOVE_PLAY_ROUGH"] = 0x169;
+        move_macro_ids["MOVE_MOONBLAST"] = 0x16A;
         move_macro_ids["MOVE_PECK"] = 0xAE;
         move_macro_ids["MOVE_ARM_THRUST"] = 0xAF;
         move_macro_ids["MOVE_HORN_ATTACK"] = 0xB0;

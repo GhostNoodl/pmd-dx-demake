@@ -420,6 +420,14 @@
 
 #define NUM_REGULAR_MOVE_IDS (MOVE_PIERCE + 1)
 
+// Rescue Team DX Fairy moves (DX_RULES builds: tools/dxtest/gen_dx_moves.py), in ids Red never uses
+#define MOVE_FAIRY_WIND 0x166      // MOVE_DOLLAR_1
+#define MOVE_DISARMING_VOICE 0x167 // MOVE_DOLLAR_2
+#define MOVE_DRAINING_KISS 0x194   // MOVE_MD1
+#define MOVE_DAZZLING_GLEAM 0x19B  // MOVE_MD1_2
+#define MOVE_PLAY_ROUGH 0x169      // MOVE_EXCAVATE (an unobtainable TM in Red)
+#define MOVE_MOONBLAST 0x16A       // MOVE_SPIN_SLASH (an unobtainable TM in Red)
+
 // special move effects derived from regular moves
 // e.g. second turn of a multi-turn move
 #define MOVE_UNK_19D 0x19D // Unused

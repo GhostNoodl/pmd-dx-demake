@@ -12,3 +12,9 @@ data_move: $(MOVE_DATA);
 
 $(MOVE_DATA): $(MOVE_DIR)/move_data.json $(MOVE_DATA_INC)
 	$(DUNGEONJSON) move pmd-red $<
+
+# dx: Rescue Team DX Fairy moves (tools/dxtest/gen_dx_moves.py), picked by data/system_sbin.s
+DX_MOVE_DATA = $(MOVE_DIR)/dx/move_data.inc
+data_move: $(DX_MOVE_DATA)
+$(DX_MOVE_DATA): $(MOVE_DIR)/dx/move_data.json $(MOVE_DATA_INC)
+	$(DUNGEONJSON) move pmd-red $<

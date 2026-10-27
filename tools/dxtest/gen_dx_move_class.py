@@ -44,6 +44,11 @@ def main():
             damaging.append(move_id)
         elif key not in classes and m["basePower"] > 0:
             unknown.append(name)
+    # the DX Fairy moves (tools/dxtest/gen_dx_moves.py) all deal damage
+    consts = {k: int(v, 0) for k, v in re.findall(r"#define (MOVE_\w+) (0x[0-9A-Fa-f]+|\d+)\b",
+                                                   (REPO / "include/constants/move_id.h").read_text())}
+    for k in ("FAIRY_WIND", "DISARMING_VOICE", "DRAINING_KISS", "DAZZLING_GLEAM", "PLAY_ROUGH", "MOONBLAST"):
+        damaging.append(consts["MOVE_" + k])
     bits = [0] * ((len(data) + 7) // 8)
     for i in damaging:
         bits[i // 8] |= 1 << (i % 8)

@@ -26,6 +26,10 @@
 #include "pokemon.h"
 #include "dungeon_random.h"
 #include "structs/str_dungeon.h"
+#include "move_util.h"
+#include "move_orb_actions_1.h"
+#include "dungeon_move_util.h"
+#include "dungeon_move.h"
 #include "dungeon_pos_data.h"
 #include "dungeon_tilemap.h"
 #include "dungeon_map_access.h"
@@ -35,6 +39,35 @@
 #include "data/dx_base_speed.h"
 // which moves deal damage, from tools/dxtest/gen_dx_move_class.py
 #include "data/dx_move_damaging.h"
+
+bool8 DxIsFairyMove(u16 moveId)
+{
+    switch (moveId) {
+        case MOVE_FAIRY_WIND:
+        case MOVE_DISARMING_VOICE:
+        case MOVE_DRAINING_KISS:
+        case MOVE_DAZZLING_GLEAM:
+        case MOVE_PLAY_ROUGH:
+        case MOVE_MOONBLAST:
+            return TRUE;
+    }
+    return FALSE;
+}
+
+// Draining Kiss drains like Giga Drain; Play Rough may lower Attack (10%), Moonblast Sp. Atk (30%)
+bool8 DxFairyMoveAction(Entity *attacker, Entity *target, Move *move, s32 itemId)
+{
+    bool8 hit;
+
+    if (move->id == MOVE_DRAINING_KISS)
+        return GigaDrainMoveAction(attacker, target, move, itemId);
+    hit = HandleDamagingMove(attacker, target, move, IntToF248(1), itemId) != 0;
+    if (hit && move->id == MOVE_PLAY_ROUGH && sub_805727C(attacker, target, 10))
+        LowerOffensiveStat(attacker, target, gStatIndexAtkDef, 1, 1, 0);
+    if (hit && move->id == MOVE_MOONBLAST && sub_805727C(attacker, target, 30))
+        LowerOffensiveStat(attacker, target, gStatIndexSpecial, 1, 1, 0);
+    return hit;
+}
 
 bool8 DxMoveIsDamaging(Move *move)
 {
