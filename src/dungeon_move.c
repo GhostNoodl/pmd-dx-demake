@@ -339,6 +339,11 @@ void UseMoveAgainstTargets(Entity **targetsArray, Entity *attacker, Move *move, 
                 targetInfo->unk158 = 1;
 
                 // They really must've had a soft spot for all these giant switches
+#ifdef DX_RULES
+                if (DxIsFairyMove(moveId)) // DX Fairy moves reuse ids Red never uses
+                    moveHadEffect = DxFairyMoveAction(attacker, currTarget, move, itemId);
+                else
+#endif
                 switch (moveId) {
                     case MOVE_THRASH:
                     case MOVE_CUT:

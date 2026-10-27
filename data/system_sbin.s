@@ -18331,10 +18331,17 @@ gUnknown_836799F:
 #endif
 .global gUnknown_83679A0
 gUnknown_83679A0:
+#ifdef DX_RULES
+#include "move/dx/move_data.inc"
+#else
 #include "move/move_data.inc"
+#endif
 
 @ Address 0x36b3b4
 #include "move/move_names.s"
+#ifdef DX_RULES
+#include "move/dx/move_names_dx.s"
+#endif
 
 @ Address 0x3725f8
 .global gUnknown_83725F8

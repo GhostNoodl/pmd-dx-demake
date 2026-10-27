@@ -819,11 +819,27 @@ static const unkStruct_80BDBC4 gUnknown_80BDBC4[NUM_MOVE_IDS] = {
     [MOVE_REGULAR_ATTACK] = {.unk0 = 0, .unk2 = 0, .unk4 = 0, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 1, .unk14 = 0, .soundEffectId = 351, .unk1C = 0, .unk20 = 4079},
     [MOVE_IS_WATCHING] = {.unk0 = 0, .unk2 = 0, .unk4 = 0, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 1, .unk14 = 0, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 0, .unk20 = 4079},
     [MOVE_BIDE_2] = {.unk0 = 0, .unk2 = 0, .unk4 = 0, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 1, .unk14 = 0, .soundEffectId = 344, .unk1C = 32, .unk20 = 4079},
+#ifdef DX_RULES
+    [MOVE_DOLLAR_1] = {.unk0 = 22, .unk2 = 0, .unk4 = 83, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 12, .unk14 = 0, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 10, .unk20 = 600}, // DX Fairy move: GUST's animation
+#else
     [MOVE_DOLLAR_1] = {.unk0 = 0, .unk2 = 0, .unk4 = 0, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 0, .unk14 = 0, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 0, .unk20 = 4111},
+#endif
+#ifdef DX_RULES
+    [MOVE_DOLLAR_2] = {.unk0 = 22, .unk2 = 0, .unk4 = 0, .unk6 = 212, .useSineWobble = FALSE, .unk9 = 0, .unkC = 3, .unk10 = 3, .unk14 = 0, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 5, .unk20 = 1971}, // DX Fairy move: SWIFT's animation
+#else
     [MOVE_DOLLAR_2] = {.unk0 = 0, .unk2 = 0, .unk4 = 0, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 0, .unk14 = 0, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 0, .unk20 = 4111},
+#endif
     [MOVE_WIDE_SLASH] = {.unk0 = 22, .unk2 = 354, .unk4 = 0, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 8, .unk14 = 3, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 3, .unk20 = 4111},
+#ifdef DX_RULES
+    [MOVE_EXCAVATE] = {.unk0 = 22, .unk2 = 0, .unk4 = 281, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 2, .unk14 = 0, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 31, .unk20 = 3392}, // DX Fairy move: CRUSH_CLAW's animation
+#else
     [MOVE_EXCAVATE] = {.unk0 = 22, .unk2 = 0, .unk4 = 415, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 1, .unk14 = 0, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 0, .unk20 = 4114},
+#endif
+#ifdef DX_RULES
+    [MOVE_SPIN_SLASH] = {.unk0 = 22, .unk2 = 272, .unk4 = 273, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 1, .unkC = 0, .unk10 = 12, .unk14 = -1, .soundEffectId = 356, .unk1C = 11, .unk20 = 2230}, // DX Fairy move: MOONLIGHT's animation
+#else
     [MOVE_SPIN_SLASH] = {.unk0 = 22, .unk2 = 355, .unk4 = 0, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 98, .unk14 = 3, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 0, .unk20 = 4114},
+#endif
     [MOVE_SEE_TRAP] = {.unk0 = 0, .unk2 = 356, .unk4 = 0, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 12, .unk14 = 0, .soundEffectId = 356, .unk1C = 2, .unk20 = 4114},
     [MOVE_TAKEAWAY] = {.unk0 = 0, .unk2 = 47, .unk4 = 48, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 12, .unk14 = 3, .soundEffectId = 356, .unk1C = 0, .unk20 = 4116},
     [MOVE_REBOUND] = {.unk0 = 22, .unk2 = 0, .unk4 = 318, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 11, .unk14 = 3, .soundEffectId = 355, .unk1C = 0, .unk20 = 4116},
@@ -865,14 +881,22 @@ static const unkStruct_80BDBC4 gUnknown_80BDBC4[NUM_MOVE_IDS] = {
     [MOVE_TRAPPER] = {.unk0 = 22, .unk2 = 359, .unk4 = 290, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 10, .unk14 = 3, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 0, .unk20 = 4214},
     [MOVE_POSSESS] = {.unk0 = 22, .unk2 = 0, .unk4 = 0, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 12, .unk14 = 0, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 0, .unk20 = 4214},
     [MOVE_ITEMIZE] = {.unk0 = 22, .unk2 = 0, .unk4 = 4, .unk6 = 357, .useSineWobble = FALSE, .unk9 = 0, .unkC = 2, .unk10 = 3, .unk14 = 0, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 4, .unk20 = 4214},
+#ifdef DX_RULES
+    [MOVE_MD1] = {.unk0 = 22, .unk2 = 128, .unk4 = 0, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 11, .unk14 = 3, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 40, .unk20 = 1110}, // DX Fairy move: GIGA_DRAIN's animation
+#else
     [MOVE_MD1] = {.unk0 = 0, .unk2 = 0, .unk4 = 0, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 1, .unk14 = 0, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 0, .unk20 = 4218},
+#endif
     [MOVE_PROJECTILE] = {.unk0 = 0, .unk2 = 0, .unk4 = 0, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 1, .unk14 = 0, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 0, .unk20 = 4218},
     [MOVE_HURL] = {.unk0 = 22, .unk2 = 0, .unk4 = 0, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 8, .unk14 = 0, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 0, .unk20 = 4218},
     [MOVE_MOBILE] = {.unk0 = 22, .unk2 = 363, .unk4 = 0, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 12, .unk14 = 0, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 2, .unk20 = 4218},
     [MOVE_ITEM_TOSS] = {.unk0 = 235, .unk2 = 0, .unk4 = 0, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 99, .unk14 = 1, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 0, .unk20 = 4220},
     [MOVE_SEE_STAIRS] = {.unk0 = 0, .unk2 = 80, .unk4 = 0, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 12, .unk14 = 0, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 0, .unk20 = 4220},
     [MOVE_LONG_TOSS] = {.unk0 = 235, .unk2 = 0, .unk4 = 0, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 12, .unk14 = 0, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 0, .unk20 = 4220},
+#ifdef DX_RULES
+    [MOVE_MD1_2] = {.unk0 = 0, .unk2 = 0, .unk4 = 210, .unk6 = 276, .useSineWobble = FALSE, .unk9 = 0, .unkC = 2, .unk10 = 99, .unk14 = 1, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 1, .unk20 = 3653}, // DX Fairy move: MIST_BALL's animation
+#else
     [MOVE_MD1_2] = {.unk0 = 0, .unk2 = 0, .unk4 = 0, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 1, .unk14 = 0, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 0, .unk20 = 4220},
+#endif
     [MOVE_PIERCE] = {.unk0 = 235, .unk2 = 0, .unk4 = 0, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 12, .unk14 = 3, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 0, .unk20 = 4220},
     [MOVE_UNK_19D] = {.unk0 = 0, .unk2 = 0, .unk4 = 0, .unk6 = 0, .useSineWobble = FALSE, .unk9 = 0, .unkC = 0, .unk10 = 0, .unk14 = 0, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 0, .unk20 = 4220},
     [MOVE_WEATHER_BALL_SUNNY] = {.unk0 = 22, .unk2 = 0, .unk4 = 57, .unk6 = 56, .useSineWobble = FALSE, .unk9 = 0, .unkC = 2, .unk10 = 99, .unk14 = 1, .soundEffectId = STOP_SOUND_EFFECT, .unk1C = 0, .unk20 = 4220},

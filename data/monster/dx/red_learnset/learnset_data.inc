@@ -2348,6 +2348,9 @@ HMTMMovesNidoking:
 
 .global LevelUpMovesClefairy
 LevelUpMovesClefairy:
+.byte 130
+.byte 103
+.byte 1
 .byte 17
 .byte 1
 .byte 129
@@ -2379,6 +2382,9 @@ LevelUpMovesClefairy:
 .byte 129
 .byte 45
 .byte 43
+.byte 130
+.byte 106
+.byte 46
 .byte 103
 .byte 50
 .byte 0
@@ -2447,6 +2453,9 @@ HMTMMovesClefairy:
 
 .global LevelUpMovesClefable
 LevelUpMovesClefable:
+.byte 130
+.byte 103
+.byte 1
 .byte 39
 .byte 1
 .byte 130
@@ -2665,6 +2674,9 @@ LevelUpMovesJigglypuff:
 .byte 130
 .byte 46
 .byte 3
+.byte 130
+.byte 103
+.byte 11
 .byte 59
 .byte 14
 .byte 39
@@ -2767,6 +2779,9 @@ LevelUpMovesWigglytuff:
 .byte 1
 .byte 129
 .byte 12
+.byte 1
+.byte 130
+.byte 105
 .byte 1
 .byte 34
 .byte 1
@@ -3019,6 +3034,9 @@ LevelUpMovesOddish:
 .byte 129
 .byte 69
 .byte 35
+.byte 130
+.byte 106
+.byte 43
 .byte 129
 .byte 125
 .byte 51
@@ -3724,6 +3742,9 @@ LevelUpMovesPersian:
 .byte 1
 .byte 129
 .byte 89
+.byte 1
+.byte 130
+.byte 105
 .byte 1
 .byte 130
 .byte 4
@@ -9351,6 +9372,9 @@ HMTMMovesScyther:
 
 .global LevelUpMovesJynx
 LevelUpMovesJynx:
+.byte 131
+.byte 20
+.byte 1
 .byte 120
 .byte 1
 .byte 4
@@ -12559,6 +12583,9 @@ LevelUpMovesHoothoot:
 .byte 112
 .byte 34
 .byte 130
+.byte 106
+.byte 40
+.byte 130
 .byte 75
 .byte 46
 .byte 0
@@ -12639,6 +12666,9 @@ LevelUpMovesNoctowl:
 .byte 31
 .byte 112
 .byte 39
+.byte 130
+.byte 106
+.byte 47
 .byte 0
 .global HMTMMovesNoctowl
 HMTMMovesNoctowl:
@@ -13529,6 +13559,9 @@ LevelUpMovesTogetic:
 .byte 1
 .byte 3
 .byte 13
+.byte 130
+.byte 102
+.byte 14
 .byte 17
 .byte 17
 .byte 102
@@ -14072,6 +14105,9 @@ LevelUpMovesMarill:
 .byte 129
 .byte 57
 .byte 16
+.byte 130
+.byte 105
+.byte 23
 .byte 12
 .byte 31
 .byte 129
@@ -14155,6 +14191,9 @@ LevelUpMovesAzumarill:
 .byte 129
 .byte 57
 .byte 16
+.byte 130
+.byte 105
+.byte 25
 .byte 12
 .byte 35
 .byte 129
@@ -14372,6 +14411,9 @@ LevelUpMovesHoppip:
 .byte 129
 .byte 26
 .byte 8
+.byte 130
+.byte 102
+.byte 10
 .byte 129
 .byte 71
 .byte 12
@@ -14451,6 +14493,9 @@ LevelUpMovesSkiploom:
 .byte 129
 .byte 26
 .byte 8
+.byte 130
+.byte 102
+.byte 10
 .byte 129
 .byte 71
 .byte 12
@@ -14530,6 +14575,9 @@ LevelUpMovesJumpluff:
 .byte 129
 .byte 26
 .byte 8
+.byte 130
+.byte 102
+.byte 10
 .byte 129
 .byte 71
 .byte 12
@@ -16279,6 +16327,9 @@ LevelUpMovesSnubbull:
 .byte 25
 .byte 19
 .byte 31
+.byte 130
+.byte 105
+.byte 37
 .byte 62
 .byte 49
 .byte 0
@@ -16366,6 +16417,9 @@ LevelUpMovesGranbull:
 .byte 27
 .byte 19
 .byte 35
+.byte 130
+.byte 105
+.byte 43
 .byte 62
 .byte 59
 .byte 0
@@ -20435,6 +20489,9 @@ LevelUpMovesPoochyena:
 .byte 129
 .byte 75
 .byte 40
+.byte 130
+.byte 105
+.byte 46
 .byte 0
 .global HMTMMovesPoochyena
 HMTMMovesPoochyena:
@@ -20512,6 +20569,9 @@ LevelUpMovesMightyena:
 .byte 129
 .byte 75
 .byte 48
+.byte 130
+.byte 105
+.byte 56
 .byte 0
 .global HMTMMovesMightyena
 HMTMMovesMightyena:
@@ -20645,6 +20705,9 @@ HMTMMovesZigzagoon:
 LevelUpMovesLinoone:
 .byte 129
 .byte 89
+.byte 1
+.byte 130
+.byte 105
 .byte 1
 .byte 129
 .byte 14
@@ -21657,8 +21720,14 @@ LevelUpMovesRalts:
 .byte 59
 .byte 9
 .byte 130
+.byte 103
+.byte 11
+.byte 130
 .byte 41
 .byte 17
+.byte 131
+.byte 20
+.byte 22
 .byte 130
 .byte 63
 .byte 24
@@ -21745,8 +21814,14 @@ LevelUpMovesKirlia:
 .byte 59
 .byte 1
 .byte 130
+.byte 103
+.byte 11
+.byte 130
 .byte 41
 .byte 17
+.byte 131
+.byte 20
+.byte 23
 .byte 130
 .byte 63
 .byte 26
@@ -21829,15 +21904,24 @@ LevelUpMovesGardevoir:
 .byte 129
 .byte 89
 .byte 1
+.byte 130
+.byte 106
+.byte 1
 .byte 129
 .byte 59
 .byte 1
+.byte 130
+.byte 103
+.byte 11
 .byte 129
 .byte 97
 .byte 14
 .byte 130
 .byte 41
 .byte 17
+.byte 131
+.byte 20
+.byte 23
 .byte 130
 .byte 63
 .byte 26
@@ -22231,6 +22315,9 @@ LevelUpMovesSlakoth:
 .byte 30
 .byte 121
 .byte 33
+.byte 130
+.byte 105
+.byte 38
 .byte 0
 .global HMTMMovesSlakoth
 HMTMMovesSlakoth:
@@ -23253,6 +23340,9 @@ LevelUpMovesSkitty:
 .byte 130
 .byte 70
 .byte 10
+.byte 130
+.byte 103
+.byte 13
 .byte 39
 .byte 16
 .byte 129
@@ -23271,6 +23361,9 @@ LevelUpMovesSkitty:
 .byte 129
 .byte 12
 .byte 40
+.byte 130
+.byte 105
+.byte 46
 .byte 0
 .global HMTMMovesSkitty
 HMTMMovesSkitty:
@@ -23484,8 +23577,14 @@ HMTMMovesSableye:
 LevelUpMovesMawile:
 .byte 46
 .byte 1
+.byte 130
+.byte 102
+.byte 1
 .byte 129
 .byte 89
+.byte 1
+.byte 130
+.byte 105
 .byte 1
 .byte 129
 .byte 44
@@ -24333,6 +24432,9 @@ LevelUpMovesVolbeat:
 .byte 129
 .byte 57
 .byte 36
+.byte 130
+.byte 105
+.byte 43
 .byte 129
 .byte 12
 .byte 47
@@ -24411,6 +24513,9 @@ LevelUpMovesIllumise:
 .byte 129
 .byte 57
 .byte 36
+.byte 130
+.byte 105
+.byte 43
 .byte 130
 .byte 31
 .byte 47
@@ -25963,6 +26068,9 @@ LevelUpMovesSwablu:
 .byte 129
 .byte 6
 .byte 9
+.byte 130
+.byte 103
+.byte 11
 .byte 129
 .byte 2
 .byte 14
@@ -25977,6 +26085,9 @@ LevelUpMovesSwablu:
 .byte 130
 .byte 37
 .byte 42
+.byte 130
+.byte 106
+.byte 46
 .byte 0
 .global HMTMMovesSwablu
 HMTMMovesSwablu:
@@ -26043,6 +26154,9 @@ LevelUpMovesAltaria:
 .byte 129
 .byte 6
 .byte 9
+.byte 130
+.byte 103
+.byte 11
 .byte 129
 .byte 2
 .byte 14
@@ -26058,6 +26172,9 @@ LevelUpMovesAltaria:
 .byte 130
 .byte 37
 .byte 46
+.byte 130
+.byte 106
+.byte 52
 .byte 0
 .global HMTMMovesAltaria
 HMTMMovesAltaria:
@@ -26289,6 +26406,9 @@ LevelUpMovesLunatone:
 .byte 106
 .byte 1
 .byte 58
+.byte 1
+.byte 130
+.byte 106
 .byte 1
 .byte 28
 .byte 1
@@ -27312,6 +27432,9 @@ LevelUpMovesMilotic:
 .byte 130
 .byte 38
 .byte 1
+.byte 130
+.byte 103
+.byte 11
 .byte 129
 .byte 34
 .byte 14
@@ -28951,6 +29074,9 @@ LevelUpMovesGorebyss:
 .byte 5
 .byte 95
 .byte 9
+.byte 131
+.byte 20
+.byte 11
 .byte 130
 .byte 54
 .byte 14
@@ -29113,6 +29239,9 @@ LevelUpMovesLuvdisc:
 .byte 4
 .byte 95
 .byte 7
+.byte 131
+.byte 20
+.byte 9
 .byte 130
 .byte 54
 .byte 17
