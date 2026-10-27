@@ -140,6 +140,43 @@ static u8 DxClampStat(s32 v)
     return v;
 }
 
+// the four moves a Pokemon of this level knows: the last four its learnset teaches by then
+static void DxSetLevelMoves(Pokemon *mon)
+{
+    u16 known[MAX_MON_MOVES];
+    const u8 *stream = GetLevelUpMoves(mon->speciesNum);
+    s32 i, count = 0;
+
+    while (*stream) {
+        u16 id;
+        s32 j;
+
+        stream = DecompressMoveID(stream, &id);
+        if (*stream++ > mon->level)
+            break;
+        for (j = 0; j < count && j < MAX_MON_MOVES && known[j] != id; j++)
+            ;
+        if (j < count && j < MAX_MON_MOVES)
+            continue; // learned again later: keep the first
+        if (count < MAX_MON_MOVES) {
+            known[count++] = id;
+        }
+        else {
+            for (j = 0; j < MAX_MON_MOVES - 1; j++)
+                known[j] = known[j + 1];
+            known[MAX_MON_MOVES - 1] = id;
+        }
+    }
+    if (count == 0)
+        return;
+    for (i = 0; i < MAX_MON_MOVES; i++) {
+        if (i < count)
+            InitPokemonMove(&mon->moves[i], known[i]);
+        else
+            mon->moves[i].moveFlags = 0;
+    }
+}
+
 static void DxSetPokemonLevel(Pokemon *mon, s32 level)
 {
     LevelData data;
@@ -173,6 +210,7 @@ static void DxSetPokemonLevel(Pokemon *mon, s32 level)
     mon->level = level;
     GetLvlUpEntry(&data, mon->speciesNum, level);
     mon->currExp = data.expRequired;
+    DxSetLevelMoves(mon);
 }
 
 // ---------------------------------------------------------------------------

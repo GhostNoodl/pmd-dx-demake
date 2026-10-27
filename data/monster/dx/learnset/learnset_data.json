@@ -3,11 +3,19 @@
         "pokemon": "Munchlax",
         "levelUpMoves": [
             {
+                "move": "MOVE_LICK",
+                "level": 1
+            },
+            {
                 "move": "MOVE_METRONOME",
                 "level": 1
             },
             {
                 "move": "MOVE_ODOR_SLEUTH",
+                "level": 1
+            },
+            {
+                "move": "MOVE_RECYCLE",
                 "level": 1
             },
             {
@@ -23,32 +31,32 @@
                 "level": 9
             },
             {
-                "move": "MOVE_LICK",
-                "level": 12
-            },
-            {
-                "move": "MOVE_RECYCLE",
-                "level": 17
-            },
-            {
                 "move": "MOVE_SCREECH",
                 "level": 20
             },
             {
-                "move": "MOVE_STOCKPILE",
+                "move": "MOVE_BODY_SLAM",
                 "level": 25
             },
             {
-                "move": "MOVE_SWALLOW",
+                "move": "MOVE_STOCKPILE",
                 "level": 28
             },
             {
-                "move": "MOVE_BODY_SLAM",
+                "move": "MOVE_SWALLOW",
                 "level": 33
             },
             {
                 "move": "MOVE_ROLLOUT",
-                "level": 41
+                "level": 36
+            },
+            {
+                "move": "MOVE_BELLY_DRUM",
+                "level": 44
+            },
+            {
+                "move": "MOVE_SNATCH",
+                "level": 50
             }
         ],
         "HMTMMoves": [
@@ -107,12 +115,12 @@
                 "level": 6
             },
             {
-                "move": "MOVE_REVERSAL",
-                "level": 19
-            },
-            {
                 "move": "MOVE_SCREECH",
                 "level": 24
+            },
+            {
+                "move": "MOVE_REVERSAL",
+                "level": 29
             }
         ],
         "HMTMMoves": [
@@ -167,7 +175,7 @@
                 "level": 6
             },
             {
-                "move": "MOVE_BONE_RUSH",
+                "move": "MOVE_SWORDS_DANCE",
                 "level": 19
             },
             {
@@ -175,12 +183,16 @@
                 "level": 24
             },
             {
-                "move": "MOVE_SWORDS_DANCE",
-                "level": 33
+                "move": "MOVE_BONE_RUSH",
+                "level": 29
+            },
+            {
+                "move": "MOVE_CALM_MIND",
+                "level": 47
             },
             {
                 "move": "MOVE_EXTREMESPEED",
-                "level": 51
+                "level": 65
             }
         ],
         "HMTMMoves": [
@@ -495,19 +507,23 @@
             },
             {
                 "move": "MOVE_GROWL",
-                "level": 6
+                "level": 4
             },
             {
                 "move": "MOVE_ASTONISH",
-                "level": 9
+                "level": 7
             },
             {
                 "move": "MOVE_CONFUSION",
-                "level": 14
+                "level": 10
+            },
+            {
+                "move": "MOVE_YAWN",
+                "level": 13
             },
             {
                 "move": "MOVE_UPROAR",
-                "level": 17
+                "level": 32
             }
         ],
         "HMTMMoves": [
@@ -548,39 +564,43 @@
             },
             {
                 "move": "MOVE_FLAIL",
-                "level": 6
+                "level": 1
             },
             {
                 "move": "MOVE_LOW_KICK",
-                "level": 9
+                "level": 8
             },
             {
                 "move": "MOVE_ROCK_THROW",
-                "level": 14
+                "level": 12
             },
             {
                 "move": "MOVE_MIMIC",
-                "level": 17
+                "level": 15
             },
             {
-                "move": "MOVE_BLOCK",
-                "level": 22
+                "move": "MOVE_FAINT_ATTACK",
+                "level": 19
             },
             {
                 "move": "MOVE_ROCK_TOMB",
-                "level": 30
+                "level": 26
+            },
+            {
+                "move": "MOVE_BLOCK",
+                "level": 29
             },
             {
                 "move": "MOVE_ROCK_SLIDE",
                 "level": 33
             },
             {
-                "move": "MOVE_SLAM",
-                "level": 38
+                "move": "MOVE_COUNTER",
+                "level": 36
             },
             {
                 "move": "MOVE_DOUBLE_EDGE",
-                "level": 46
+                "level": 43
             }
         ],
         "HMTMMoves": [
@@ -622,6 +642,10 @@
                 "level": 1
             },
             {
+                "move": "MOVE_POUND",
+                "level": 1
+            },
+            {
                 "move": "MOVE_TICKLE",
                 "level": 1
             },
@@ -630,15 +654,15 @@
                 "level": 8
             },
             {
-                "move": "MOVE_ENCORE",
+                "move": "MOVE_DOUBLESLAP",
                 "level": 11
             },
             {
-                "move": "MOVE_DOUBLESLAP",
+                "move": "MOVE_MIMIC",
                 "level": 15
             },
             {
-                "move": "MOVE_MIMIC",
+                "move": "MOVE_ENCORE",
                 "level": 18
             },
             {
@@ -795,39 +819,39 @@
             },
             {
                 "move": "MOVE_SUPERSONIC",
-                "level": 4
+                "level": 3
             },
             {
                 "move": "MOVE_BUBBLEBEAM",
-                "level": 10
-            },
-            {
-                "move": "MOVE_HEADBUTT",
-                "level": 13
-            },
-            {
-                "move": "MOVE_AGILITY",
-                "level": 19
-            },
-            {
-                "move": "MOVE_WING_ATTACK",
-                "level": 22
-            },
-            {
-                "move": "MOVE_WATER_PULSE",
-                "level": 28
-            },
-            {
-                "move": "MOVE_TAKE_DOWN",
-                "level": 31
+                "level": 7
             },
             {
                 "move": "MOVE_CONFUSE_RAY",
-                "level": 37
+                "level": 11
+            },
+            {
+                "move": "MOVE_WING_ATTACK",
+                "level": 14
+            },
+            {
+                "move": "MOVE_HEADBUTT",
+                "level": 16
+            },
+            {
+                "move": "MOVE_WATER_PULSE",
+                "level": 19
+            },
+            {
+                "move": "MOVE_TAKE_DOWN",
+                "level": 27
+            },
+            {
+                "move": "MOVE_AGILITY",
+                "level": 32
             },
             {
                 "move": "MOVE_BOUNCE",
-                "level": 40
+                "level": 46
             },
             {
                 "move": "MOVE_HYDRO_PUMP",
@@ -883,20 +907,28 @@
                 "level": 1
             },
             {
-                "move": "MOVE_SCREECH",
+                "move": "MOVE_FAINT_ATTACK",
                 "level": 10
             },
             {
-                "move": "MOVE_FURY_SWIPES",
-                "level": 21
+                "move": "MOVE_ICY_WIND",
+                "level": 14
             },
             {
-                "move": "MOVE_ICY_WIND",
-                "level": 28
+                "move": "MOVE_FURY_SWIPES",
+                "level": 16
             },
             {
                 "move": "MOVE_METAL_CLAW",
-                "level": 42
+                "level": 22
+            },
+            {
+                "move": "MOVE_SCREECH",
+                "level": 32
+            },
+            {
+                "move": "MOVE_SNATCH",
+                "level": 40
             }
         ],
         "HMTMMoves": [
@@ -942,10 +974,6 @@
                 "level": 1
             },
             {
-                "move": "MOVE_METAL_SOUND",
-                "level": 1
-            },
-            {
                 "move": "MOVE_MIRROR_COAT",
                 "level": 1
             },
@@ -962,28 +990,40 @@
                 "level": 1
             },
             {
-                "move": "MOVE_SONICBOOM",
-                "level": 14
+                "move": "MOVE_THUNDER_WAVE",
+                "level": 1
             },
             {
-                "move": "MOVE_THUNDER_WAVE",
+                "move": "MOVE_TRI_ATTACK",
+                "level": 1
+            },
+            {
+                "move": "MOVE_ZAP_CANNON",
+                "level": 1
+            },
+            {
+                "move": "MOVE_LIGHT_SCREEN",
+                "level": 13
+            },
+            {
+                "move": "MOVE_SONICBOOM",
                 "level": 17
             },
             {
                 "move": "MOVE_SPARK",
-                "level": 22
+                "level": 19
             },
             {
-                "move": "MOVE_LOCK_ON",
-                "level": 27
+                "move": "MOVE_METAL_SOUND",
+                "level": 25
             },
             {
                 "move": "MOVE_SCREECH",
-                "level": 34
+                "level": 39
             },
             {
-                "move": "MOVE_ZAP_CANNON",
-                "level": 60
+                "move": "MOVE_LOCK_ON",
+                "level": 49
             }
         ],
         "HMTMMoves": [
@@ -1049,11 +1089,11 @@
             },
             {
                 "move": "MOVE_REFRESH",
-                "level": 41
+                "level": 45
             },
             {
                 "move": "MOVE_SCREECH",
-                "level": 45
+                "level": 49
             }
         ],
         "HMTMMoves": [
@@ -1108,7 +1148,11 @@
                 "level": 1
             },
             {
-                "move": "MOVE_STOMP",
+                "move": "MOVE_HORN_DRILL",
+                "level": 1
+            },
+            {
+                "move": "MOVE_SCARY_FACE",
                 "level": 1
             },
             {
@@ -1116,28 +1160,24 @@
                 "level": 1
             },
             {
-                "move": "MOVE_SCARY_FACE",
-                "level": 21
+                "move": "MOVE_STOMP",
+                "level": 17
             },
             {
                 "move": "MOVE_ROCK_BLAST",
-                "level": 25
+                "level": 29
             },
             {
                 "move": "MOVE_TAKE_DOWN",
-                "level": 33
-            },
-            {
-                "move": "MOVE_HORN_DRILL",
                 "level": 37
             },
             {
                 "move": "MOVE_EARTHQUAKE",
-                "level": 49
+                "level": 48
             },
             {
                 "move": "MOVE_MEGAHORN",
-                "level": 57
+                "level": 55
             }
         ],
         "HMTMMoves": [
@@ -1182,6 +1222,10 @@
         "pokemon": "Tangrowth",
         "levelUpMoves": [
             {
+                "move": "MOVE_BLOCK",
+                "level": 1
+            },
+            {
                 "move": "MOVE_CONSTRICT",
                 "level": 1
             },
@@ -1191,43 +1235,47 @@
             },
             {
                 "move": "MOVE_SLEEP_POWDER",
-                "level": 5
-            },
-            {
-                "move": "MOVE_ABSORB",
-                "level": 8
-            },
-            {
-                "move": "MOVE_GROWTH",
-                "level": 12
-            },
-            {
-                "move": "MOVE_POISONPOWDER",
-                "level": 15
+                "level": 4
             },
             {
                 "move": "MOVE_VINE_WHIP",
-                "level": 19
+                "level": 7
+            },
+            {
+                "move": "MOVE_ABSORB",
+                "level": 10
+            },
+            {
+                "move": "MOVE_POISONPOWDER",
+                "level": 14
             },
             {
                 "move": "MOVE_BIND",
-                "level": 22
+                "level": 17
+            },
+            {
+                "move": "MOVE_GROWTH",
+                "level": 20
             },
             {
                 "move": "MOVE_MEGA_DRAIN",
-                "level": 26
-            },
-            {
-                "move": "MOVE_STUN_SPORE",
-                "level": 29
-            },
-            {
-                "move": "MOVE_ANCIENTPOWER",
-                "level": 33
+                "level": 23
             },
             {
                 "move": "MOVE_KNOCK_OFF",
+                "level": 27
+            },
+            {
+                "move": "MOVE_STUN_SPORE",
+                "level": 30
+            },
+            {
+                "move": "MOVE_GIGA_DRAIN",
                 "level": 36
+            },
+            {
+                "move": "MOVE_ANCIENTPOWER",
+                "level": 40
             },
             {
                 "move": "MOVE_SLAM",
@@ -1235,11 +1283,7 @@
             },
             {
                 "move": "MOVE_TICKLE",
-                "level": 47
-            },
-            {
-                "move": "MOVE_BLOCK",
-                "level": 57
+                "level": 46
             }
         ],
         "HMTMMoves": [
@@ -1292,31 +1336,35 @@
             },
             {
                 "move": "MOVE_SWIFT",
-                "level": 16
+                "level": 12
             },
             {
                 "move": "MOVE_SHOCK_WAVE",
+                "level": 15
+            },
+            {
+                "move": "MOVE_THUNDER_WAVE",
                 "level": 19
             },
             {
                 "move": "MOVE_LIGHT_SCREEN",
-                "level": 25
+                "level": 26
             },
             {
                 "move": "MOVE_THUNDERPUNCH",
-                "level": 28
-            },
-            {
-                "move": "MOVE_THUNDERBOLT",
-                "level": 43
+                "level": 29
             },
             {
                 "move": "MOVE_SCREECH",
-                "level": 52
+                "level": 42
+            },
+            {
+                "move": "MOVE_THUNDERBOLT",
+                "level": 49
             },
             {
                 "move": "MOVE_THUNDER",
-                "level": 58
+                "level": 55
             }
         ],
         "HMTMMoves": [
@@ -1372,32 +1420,36 @@
                 "level": 1
             },
             {
+                "move": "MOVE_FAINT_ATTACK",
+                "level": 12
+            },
+            {
                 "move": "MOVE_FIRE_SPIN",
-                "level": 19
+                "level": 15
             },
             {
                 "move": "MOVE_CONFUSE_RAY",
-                "level": 25
+                "level": 26
             },
             {
                 "move": "MOVE_FIRE_PUNCH",
-                "level": 28
-            },
-            {
-                "move": "MOVE_FLAMETHROWER",
-                "level": 43
+                "level": 29
             },
             {
                 "move": "MOVE_SUNNY_DAY",
-                "level": 52
+                "level": 42
+            },
+            {
+                "move": "MOVE_FLAMETHROWER",
+                "level": 49
             },
             {
                 "move": "MOVE_FIRE_BLAST",
-                "level": 58
+                "level": 55
             },
             {
                 "move": "MOVE_HYPER_BEAM",
-                "level": 67
+                "level": 62
             }
         ],
         "HMTMMoves": [
@@ -1518,11 +1570,11 @@
             },
             {
                 "move": "MOVE_SLASH",
-                "level": 38
+                "level": 43
             },
             {
                 "move": "MOVE_SCREECH",
-                "level": 43
+                "level": 46
             }
         ],
         "HMTMMoves": [
@@ -1557,6 +1609,10 @@
                 "level": 1
             },
             {
+                "move": "MOVE_RAZOR_LEAF",
+                "level": 1
+            },
+            {
                 "move": "MOVE_TACKLE",
                 "level": 1
             },
@@ -1566,39 +1622,39 @@
             },
             {
                 "move": "MOVE_SAND_ATTACK",
-                "level": 8
-            },
-            {
-                "move": "MOVE_RAZOR_LEAF",
-                "level": 15
+                "level": 5
             },
             {
                 "move": "MOVE_QUICK_ATTACK",
-                "level": 22
-            },
-            {
-                "move": "MOVE_SYNTHESIS",
-                "level": 29
-            },
-            {
-                "move": "MOVE_MAGICAL_LEAF",
-                "level": 36
-            },
-            {
-                "move": "MOVE_GIGA_DRAIN",
-                "level": 43
+                "level": 13
             },
             {
                 "move": "MOVE_GRASSWHISTLE",
-                "level": 57
+                "level": 17
+            },
+            {
+                "move": "MOVE_MAGICAL_LEAF",
+                "level": 20
+            },
+            {
+                "move": "MOVE_GIGA_DRAIN",
+                "level": 25
+            },
+            {
+                "move": "MOVE_SWORDS_DANCE",
+                "level": 29
+            },
+            {
+                "move": "MOVE_SYNTHESIS",
+                "level": 33
             },
             {
                 "move": "MOVE_SUNNY_DAY",
-                "level": 64
+                "level": 37
             },
             {
                 "move": "MOVE_LEAF_BLADE",
-                "level": 71
+                "level": 45
             }
         ],
         "HMTMMoves": [
@@ -1629,6 +1685,10 @@
                 "level": 1
             },
             {
+                "move": "MOVE_ICY_WIND",
+                "level": 1
+            },
+            {
                 "move": "MOVE_TACKLE",
                 "level": 1
             },
@@ -1638,31 +1698,31 @@
             },
             {
                 "move": "MOVE_SAND_ATTACK",
-                "level": 8
-            },
-            {
-                "move": "MOVE_ICY_WIND",
-                "level": 15
+                "level": 5
             },
             {
                 "move": "MOVE_QUICK_ATTACK",
-                "level": 22
+                "level": 13
             },
             {
                 "move": "MOVE_BITE",
+                "level": 17
+            },
+            {
+                "move": "MOVE_BARRIER",
                 "level": 29
             },
             {
                 "move": "MOVE_MIRROR_COAT",
-                "level": 57
+                "level": 33
             },
             {
                 "move": "MOVE_HAIL",
-                "level": 64
+                "level": 37
             },
             {
                 "move": "MOVE_BLIZZARD",
-                "level": 71
+                "level": 45
             }
         ],
         "HMTMMoves": [
@@ -1689,6 +1749,10 @@
         "pokemon": "Gliscor",
         "levelUpMoves": [
             {
+                "move": "MOVE_GUILLOTINE",
+                "level": 1
+            },
+            {
                 "move": "MOVE_HARDEN",
                 "level": 1
             },
@@ -1702,23 +1766,27 @@
             },
             {
                 "move": "MOVE_QUICK_ATTACK",
-                "level": 16
+                "level": 13
             },
             {
                 "move": "MOVE_FURY_CUTTER",
-                "level": 20
+                "level": 16
+            },
+            {
+                "move": "MOVE_FAINT_ATTACK",
+                "level": 19
             },
             {
                 "move": "MOVE_SCREECH",
-                "level": 27
+                "level": 35
+            },
+            {
+                "move": "MOVE_SKY_UPPERCUT",
+                "level": 45
             },
             {
                 "move": "MOVE_SWORDS_DANCE",
-                "level": 34
-            },
-            {
-                "move": "MOVE_GUILLOTINE",
-                "level": 45
+                "level": 50
             }
         ],
         "HMTMMoves": [
@@ -1758,6 +1826,10 @@
                 "level": 1
             },
             {
+                "move": "MOVE_FURY_ATTACK",
+                "level": 1
+            },
+            {
                 "move": "MOVE_MUD_SPORT",
                 "level": 1
             },
@@ -1774,36 +1846,40 @@
                 "level": 1
             },
             {
+                "move": "MOVE_SCARY_FACE",
+                "level": 1
+            },
+            {
                 "move": "MOVE_MUD_SLAP",
-                "level": 13
+                "level": 11
             },
             {
                 "move": "MOVE_ENDURE",
-                "level": 16
+                "level": 14
             },
             {
                 "move": "MOVE_HAIL",
-                "level": 25
+                "level": 21
             },
             {
                 "move": "MOVE_TAKE_DOWN",
-                "level": 32
-            },
-            {
-                "move": "MOVE_EARTHQUAKE",
-                "level": 40
+                "level": 28
             },
             {
                 "move": "MOVE_MIST",
-                "level": 48
+                "level": 37
+            },
+            {
+                "move": "MOVE_THRASH",
+                "level": 41
+            },
+            {
+                "move": "MOVE_EARTHQUAKE",
+                "level": 46
             },
             {
                 "move": "MOVE_BLIZZARD",
-                "level": 56
-            },
-            {
-                "move": "MOVE_SCARY_FACE",
-                "level": 65
+                "level": 52
             }
         ],
         "HMTMMoves": [
@@ -1847,7 +1923,15 @@
                 "level": 1
             },
             {
+                "move": "MOVE_MAGIC_COAT",
+                "level": 1
+            },
+            {
                 "move": "MOVE_TACKLE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_ZAP_CANNON",
                 "level": 1
             },
             {
@@ -1872,15 +1956,7 @@
             },
             {
                 "move": "MOVE_TRI_ATTACK",
-                "level": 51
-            },
-            {
-                "move": "MOVE_MAGIC_COAT",
-                "level": 56
-            },
-            {
-                "move": "MOVE_ZAP_CANNON",
-                "level": 62
+                "level": 50
             },
             {
                 "move": "MOVE_HYPER_BEAM",
@@ -1936,32 +2012,36 @@
                 "level": 1
             },
             {
+                "move": "MOVE_SLASH",
+                "level": 1
+            },
+            {
                 "move": "MOVE_TELEPORT",
                 "level": 1
             },
             {
                 "move": "MOVE_FURY_CUTTER",
+                "level": 14
+            },
+            {
+                "move": "MOVE_AERIAL_ACE",
                 "level": 17
             },
             {
-                "move": "MOVE_SLASH",
-                "level": 22
-            },
-            {
                 "move": "MOVE_SWORDS_DANCE",
-                "level": 25
+                "level": 26
             },
             {
                 "move": "MOVE_HELPING_HAND",
-                "level": 36
+                "level": 35
             },
             {
                 "move": "MOVE_FALSE_SWIPE",
-                "level": 45
+                "level": 44
             },
             {
                 "move": "MOVE_PROTECT",
-                "level": 50
+                "level": 49
             }
         ],
         "HMTMMoves": [
@@ -2011,28 +2091,40 @@
                 "level": 1
             },
             {
+                "move": "MOVE_TRI_ATTACK",
+                "level": 1
+            },
+            {
                 "move": "MOVE_THUNDER_WAVE",
-                "level": 25
-            },
-            {
-                "move": "MOVE_ROCK_SLIDE",
-                "level": 31
-            },
-            {
-                "move": "MOVE_SANDSTORM",
-                "level": 37
+                "level": 13
             },
             {
                 "move": "MOVE_REST",
+                "level": 16
+            },
+            {
+                "move": "MOVE_SPARK",
+                "level": 19
+            },
+            {
+                "move": "MOVE_ROCK_SLIDE",
+                "level": 22
+            },
+            {
+                "move": "MOVE_ROCK_BLAST",
+                "level": 28
+            },
+            {
+                "move": "MOVE_SANDSTORM",
+                "level": 34
+            },
+            {
+                "move": "MOVE_LOCK_ON",
                 "level": 43
             },
             {
                 "move": "MOVE_ZAP_CANNON",
-                "level": 61
-            },
-            {
-                "move": "MOVE_LOCK_ON",
-                "level": 67
+                "level": 43
             }
         ],
         "HMTMMoves": [
@@ -2065,6 +2157,10 @@
         "pokemon": "Dusknoir",
         "levelUpMoves": [
             {
+                "move": "MOVE_ASTONISH",
+                "level": 1
+            },
+            {
                 "move": "MOVE_BIND",
                 "level": 1
             },
@@ -2074,6 +2170,10 @@
             },
             {
                 "move": "MOVE_FIRE_PUNCH",
+                "level": 1
+            },
+            {
+                "move": "MOVE_FUTURE_SIGHT",
                 "level": 1
             },
             {
@@ -2089,44 +2189,40 @@
                 "level": 1
             },
             {
+                "move": "MOVE_SHADOW_PUNCH",
+                "level": 1
+            },
+            {
                 "move": "MOVE_THUNDERPUNCH",
                 "level": 1
             },
             {
                 "move": "MOVE_FORESIGHT",
-                "level": 9
-            },
-            {
-                "move": "MOVE_ASTONISH",
                 "level": 14
             },
             {
-                "move": "MOVE_CONFUSE_RAY",
-                "level": 17
-            },
-            {
                 "move": "MOVE_PURSUIT",
-                "level": 25
-            },
-            {
-                "move": "MOVE_CURSE",
-                "level": 30
+                "level": 22
             },
             {
                 "move": "MOVE_WILL_O_WISP",
+                "level": 25
+            },
+            {
+                "move": "MOVE_CONFUSE_RAY",
+                "level": 30
+            },
+            {
+                "move": "MOVE_CURSE",
                 "level": 33
             },
             {
-                "move": "MOVE_SHADOW_PUNCH",
-                "level": 37
+                "move": "MOVE_SHADOW_BALL",
+                "level": 45
             },
             {
                 "move": "MOVE_MEAN_LOOK",
-                "level": 43
-            },
-            {
-                "move": "MOVE_FUTURE_SIGHT",
-                "level": 61
+                "level": 52
             }
         ],
         "HMTMMoves": [
@@ -2167,7 +2263,7 @@
         "pokemon": "Froslass",
         "levelUpMoves": [
             {
-                "move": "MOVE_ASTONISH",
+                "move": "MOVE_DESTINY_BOND",
                 "level": 1
             },
             {
@@ -2184,23 +2280,31 @@
             },
             {
                 "move": "MOVE_ICY_WIND",
-                "level": 13
+                "level": 14
             },
             {
-                "move": "MOVE_CONFUSE_RAY",
+                "move": "MOVE_ASTONISH",
                 "level": 19
             },
             {
-                "move": "MOVE_HAIL",
-                "level": 40
+                "move": "MOVE_WILL_O_WISP",
+                "level": 28
+            },
+            {
+                "move": "MOVE_CONFUSE_RAY",
+                "level": 32
+            },
+            {
+                "move": "MOVE_SHADOW_BALL",
+                "level": 42
             },
             {
                 "move": "MOVE_BLIZZARD",
-                "level": 51
+                "level": 48
             },
             {
-                "move": "MOVE_DESTINY_BOND",
-                "level": 59
+                "move": "MOVE_HAIL",
+                "level": 54
             }
         ],
         "HMTMMoves": [
@@ -2291,6 +2395,18 @@
         "pokemon": "MegaVenusaur",
         "levelUpMoves": [
             {
+                "move": "MOVE_GROWL",
+                "level": 1
+            },
+            {
+                "move": "MOVE_LEECH_SEED",
+                "level": 1
+            },
+            {
+                "move": "MOVE_PETAL_DANCE",
+                "level": 1
+            },
+            {
                 "move": "MOVE_TACKLE",
                 "level": 1
             },
@@ -2299,56 +2415,40 @@
                 "level": 1
             },
             {
-                "move": "MOVE_GROWL",
-                "level": 1
-            },
-            {
-                "move": "MOVE_LEECH_SEED",
-                "level": 1
-            },
-            {
-                "move": "MOVE_GROWL",
-                "level": 4
-            },
-            {
-                "move": "MOVE_LEECH_SEED",
-                "level": 7
-            },
-            {
-                "move": "MOVE_VINE_WHIP",
-                "level": 10
-            },
-            {
                 "move": "MOVE_POISONPOWDER",
-                "level": 15
+                "level": 13
             },
             {
                 "move": "MOVE_SLEEP_POWDER",
+                "level": 13
+            },
+            {
+                "move": "MOVE_TAKE_DOWN",
                 "level": 15
             },
             {
                 "move": "MOVE_RAZOR_LEAF",
-                "level": 22
+                "level": 20
             },
             {
                 "move": "MOVE_SWEET_SCENT",
-                "level": 29
+                "level": 23
             },
             {
                 "move": "MOVE_GROWTH",
-                "level": 41
+                "level": 28
+            },
+            {
+                "move": "MOVE_DOUBLE_EDGE",
+                "level": 31
             },
             {
                 "move": "MOVE_SYNTHESIS",
-                "level": 53
+                "level": 45
             },
             {
                 "move": "MOVE_SOLARBEAM",
-                "level": 65
-            },
-            {
-                "move": "MOVE_FRENZY_PLANT",
-                "level": 99
+                "level": 53
             }
         ],
         "HMTMMoves": [
@@ -2382,7 +2482,11 @@
         "pokemon": "MegaCharizardX",
         "levelUpMoves": [
             {
-                "move": "MOVE_SMOKESCREEN",
+                "move": "MOVE_DRAGON_CLAW",
+                "level": 1
+            },
+            {
+                "move": "MOVE_EMBER",
                 "level": 1
             },
             {
@@ -2398,56 +2502,32 @@
                 "level": 1
             },
             {
-                "move": "MOVE_EMBER",
-                "level": 2
-            },
-            {
-                "move": "MOVE_METAL_CLAW",
-                "level": 2
-            },
-            {
-                "move": "MOVE_EMBER",
-                "level": 7
-            },
-            {
-                "move": "MOVE_METAL_CLAW",
-                "level": 13
-            },
-            {
-                "move": "MOVE_RAGE",
-                "level": 20
+                "move": "MOVE_WING_ATTACK",
+                "level": 1
             },
             {
                 "move": "MOVE_SMOKESCREEN",
-                "level": 20
-            },
-            {
-                "move": "MOVE_SCARY_FACE",
-                "level": 27
-            },
-            {
-                "move": "MOVE_FLAMETHROWER",
-                "level": 34
-            },
-            {
-                "move": "MOVE_WING_ATTACK",
-                "level": 36
-            },
-            {
-                "move": "MOVE_SLASH",
-                "level": 44
+                "level": 10
             },
             {
                 "move": "MOVE_DRAGON_RAGE",
-                "level": 54
+                "level": 17
+            },
+            {
+                "move": "MOVE_SCARY_FACE",
+                "level": 21
+            },
+            {
+                "move": "MOVE_SLASH",
+                "level": 41
+            },
+            {
+                "move": "MOVE_FLAMETHROWER",
+                "level": 47
             },
             {
                 "move": "MOVE_FIRE_SPIN",
-                "level": 64
-            },
-            {
-                "move": "MOVE_BLAST_BURN",
-                "level": 99
+                "level": 56
             }
         ],
         "HMTMMoves": [
@@ -2487,7 +2567,11 @@
         "pokemon": "MegaCharizardY",
         "levelUpMoves": [
             {
-                "move": "MOVE_SMOKESCREEN",
+                "move": "MOVE_DRAGON_CLAW",
+                "level": 1
+            },
+            {
+                "move": "MOVE_EMBER",
                 "level": 1
             },
             {
@@ -2503,56 +2587,32 @@
                 "level": 1
             },
             {
-                "move": "MOVE_EMBER",
-                "level": 2
-            },
-            {
-                "move": "MOVE_METAL_CLAW",
-                "level": 2
-            },
-            {
-                "move": "MOVE_EMBER",
-                "level": 7
-            },
-            {
-                "move": "MOVE_METAL_CLAW",
-                "level": 13
-            },
-            {
-                "move": "MOVE_RAGE",
-                "level": 20
+                "move": "MOVE_WING_ATTACK",
+                "level": 1
             },
             {
                 "move": "MOVE_SMOKESCREEN",
-                "level": 20
-            },
-            {
-                "move": "MOVE_SCARY_FACE",
-                "level": 27
-            },
-            {
-                "move": "MOVE_FLAMETHROWER",
-                "level": 34
-            },
-            {
-                "move": "MOVE_WING_ATTACK",
-                "level": 36
-            },
-            {
-                "move": "MOVE_SLASH",
-                "level": 44
+                "level": 10
             },
             {
                 "move": "MOVE_DRAGON_RAGE",
-                "level": 54
+                "level": 17
+            },
+            {
+                "move": "MOVE_SCARY_FACE",
+                "level": 21
+            },
+            {
+                "move": "MOVE_SLASH",
+                "level": 41
+            },
+            {
+                "move": "MOVE_FLAMETHROWER",
+                "level": 47
             },
             {
                 "move": "MOVE_FIRE_SPIN",
-                "level": 64
-            },
-            {
-                "move": "MOVE_BLAST_BURN",
-                "level": 99
+                "level": 56
             }
         ],
         "HMTMMoves": [
@@ -2592,64 +2652,56 @@
         "pokemon": "MegaBlastoise",
         "levelUpMoves": [
             {
-                "move": "MOVE_BUBBLE",
-                "level": 1
-            },
-            {
-                "move": "MOVE_WITHDRAW",
-                "level": 1
-            },
-            {
-                "move": "MOVE_TAIL_WHIP",
-                "level": 1
-            },
-            {
                 "move": "MOVE_TACKLE",
                 "level": 1
             },
             {
                 "move": "MOVE_TAIL_WHIP",
-                "level": 4
-            },
-            {
-                "move": "MOVE_BUBBLE",
-                "level": 7
-            },
-            {
-                "move": "MOVE_WITHDRAW",
-                "level": 10
+                "level": 1
             },
             {
                 "move": "MOVE_WATER_GUN",
+                "level": 1
+            },
+            {
+                "move": "MOVE_WITHDRAW",
+                "level": 1
+            },
+            {
+                "move": "MOVE_BUBBLE",
                 "level": 13
             },
             {
                 "move": "MOVE_BITE",
-                "level": 19
+                "level": 17
             },
             {
                 "move": "MOVE_RAPID_SPIN",
-                "level": 25
+                "level": 21
             },
             {
                 "move": "MOVE_PROTECT",
-                "level": 31
+                "level": 25
             },
             {
-                "move": "MOVE_RAIN_DANCE",
-                "level": 42
+                "move": "MOVE_WATER_PULSE",
+                "level": 29
             },
             {
                 "move": "MOVE_SKULL_BASH",
-                "level": 55
+                "level": 40
+            },
+            {
+                "move": "MOVE_IRON_DEFENSE",
+                "level": 47
+            },
+            {
+                "move": "MOVE_RAIN_DANCE",
+                "level": 54
             },
             {
                 "move": "MOVE_HYDRO_PUMP",
-                "level": 68
-            },
-            {
-                "move": "MOVE_HYDRO_CANNON",
-                "level": 99
+                "level": 60
             }
         ],
         "HMTMMoves": [
@@ -2692,36 +2744,32 @@
                 "level": 1
             },
             {
-                "move": "MOVE_FURY_ATTACK",
-                "level": 10
-            },
-            {
-                "move": "MOVE_FOCUS_ENERGY",
-                "level": 15
-            },
-            {
                 "move": "MOVE_TWINEEDLE",
-                "level": 20
+                "level": 1
             },
             {
                 "move": "MOVE_RAGE",
-                "level": 25
+                "level": 14
             },
             {
                 "move": "MOVE_PURSUIT",
-                "level": 30
+                "level": 17
+            },
+            {
+                "move": "MOVE_FOCUS_ENERGY",
+                "level": 20
             },
             {
                 "move": "MOVE_PIN_MISSILE",
-                "level": 35
+                "level": 32
             },
             {
                 "move": "MOVE_AGILITY",
-                "level": 40
+                "level": 38
             },
             {
                 "move": "MOVE_ENDEAVOR",
-                "level": 45
+                "level": 41
             }
         ],
         "HMTMMoves": [
@@ -2757,6 +2805,10 @@
                 "level": 1
             },
             {
+                "move": "MOVE_QUICK_ATTACK",
+                "level": 1
+            },
+            {
                 "move": "MOVE_SAND_ATTACK",
                 "level": 1
             },
@@ -2765,40 +2817,28 @@
                 "level": 1
             },
             {
-                "move": "MOVE_QUICK_ATTACK",
-                "level": 1
-            },
-            {
-                "move": "MOVE_SAND_ATTACK",
-                "level": 5
-            },
-            {
-                "move": "MOVE_GUST",
-                "level": 9
-            },
-            {
-                "move": "MOVE_QUICK_ATTACK",
-                "level": 13
-            },
-            {
                 "move": "MOVE_WHIRLWIND",
-                "level": 20
+                "level": 17
             },
             {
-                "move": "MOVE_WING_ATTACK",
-                "level": 27
+                "move": "MOVE_TWISTER",
+                "level": 22
             },
             {
                 "move": "MOVE_FEATHERDANCE",
-                "level": 34
+                "level": 27
             },
             {
                 "move": "MOVE_AGILITY",
-                "level": 48
+                "level": 32
+            },
+            {
+                "move": "MOVE_WING_ATTACK",
+                "level": 38
             },
             {
                 "move": "MOVE_MIRROR_MOVE",
-                "level": 62
+                "level": 56
             }
         ],
         "HMTMMoves": [
@@ -2827,20 +2867,16 @@
         "pokemon": "MegaAlakazam",
         "levelUpMoves": [
             {
+                "move": "MOVE_CONFUSION",
+                "level": 1
+            },
+            {
                 "move": "MOVE_KINESIS",
                 "level": 1
             },
             {
                 "move": "MOVE_TELEPORT",
                 "level": 1
-            },
-            {
-                "move": "MOVE_CONFUSION",
-                "level": 1
-            },
-            {
-                "move": "MOVE_CONFUSION",
-                "level": 16
             },
             {
                 "move": "MOVE_DISABLE",
@@ -2852,27 +2888,27 @@
             },
             {
                 "move": "MOVE_REFLECT",
-                "level": 23
+                "level": 26
             },
             {
                 "move": "MOVE_RECOVER",
-                "level": 25
-            },
-            {
-                "move": "MOVE_FUTURE_SIGHT",
-                "level": 30
-            },
-            {
-                "move": "MOVE_CALM_MIND",
-                "level": 33
+                "level": 31
             },
             {
                 "move": "MOVE_PSYCHIC",
-                "level": 36
+                "level": 38
+            },
+            {
+                "move": "MOVE_CALM_MIND",
+                "level": 41
+            },
+            {
+                "move": "MOVE_FUTURE_SIGHT",
+                "level": 43
             },
             {
                 "move": "MOVE_TRICK",
-                "level": 43
+                "level": 46
             }
         ],
         "HMTMMoves": [
@@ -2912,7 +2948,11 @@
         "pokemon": "MegaSlowbro",
         "levelUpMoves": [
             {
-                "move": "MOVE_YAWN",
+                "move": "MOVE_CURSE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_GROWL",
                 "level": 1
             },
             {
@@ -2920,48 +2960,52 @@
                 "level": 1
             },
             {
-                "move": "MOVE_GROWL",
+                "move": "MOVE_WITHDRAW",
                 "level": 1
             },
             {
-                "move": "MOVE_CURSE",
+                "move": "MOVE_YAWN",
                 "level": 1
-            },
-            {
-                "move": "MOVE_GROWL",
-                "level": 6
             },
             {
                 "move": "MOVE_WATER_GUN",
-                "level": 13
+                "level": 9
             },
             {
                 "move": "MOVE_CONFUSION",
-                "level": 17
+                "level": 14
             },
             {
                 "move": "MOVE_DISABLE",
-                "level": 24
+                "level": 19
             },
             {
                 "move": "MOVE_HEADBUTT",
-                "level": 29
+                "level": 23
             },
             {
-                "move": "MOVE_AMNESIA",
+                "move": "MOVE_WATER_PULSE",
+                "level": 28
+            },
+            {
+                "move": "MOVE_SLACK_OFF",
                 "level": 36
             },
             {
-                "move": "MOVE_WITHDRAW",
-                "level": 37
+                "move": "MOVE_AMNESIA",
+                "level": 43
             },
             {
                 "move": "MOVE_PSYCHIC",
-                "level": 44
+                "level": 49
+            },
+            {
+                "move": "MOVE_RAIN_DANCE",
+                "level": 55
             },
             {
                 "move": "MOVE_PSYCH_UP",
-                "level": 55
+                "level": 62
             }
         ],
         "HMTMMoves": [
@@ -3007,10 +3051,6 @@
         "pokemon": "MegaGengar",
         "levelUpMoves": [
             {
-                "move": "MOVE_SPITE",
-                "level": 1
-            },
-            {
                 "move": "MOVE_HYPNOSIS",
                 "level": 1
             },
@@ -3019,44 +3059,44 @@
                 "level": 1
             },
             {
+                "move": "MOVE_SHADOW_PUNCH",
+                "level": 1
+            },
+            {
                 "move": "MOVE_SPITE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_MEAN_LOOK",
                 "level": 8
             },
             {
                 "move": "MOVE_CURSE",
-                "level": 13
+                "level": 12
             },
             {
                 "move": "MOVE_NIGHT_SHADE",
-                "level": 16
+                "level": 15
             },
             {
                 "move": "MOVE_CONFUSE_RAY",
-                "level": 21
-            },
-            {
-                "move": "MOVE_SHADOW_PUNCH",
-                "level": 25
-            },
-            {
-                "move": "MOVE_DREAM_EATER",
-                "level": 31
-            },
-            {
-                "move": "MOVE_DESTINY_BOND",
-                "level": 39
+                "level": 19
             },
             {
                 "move": "MOVE_SHADOW_BALL",
-                "level": 45
+                "level": 33
+            },
+            {
+                "move": "MOVE_DREAM_EATER",
+                "level": 39
+            },
+            {
+                "move": "MOVE_DESTINY_BOND",
+                "level": 50
             },
             {
                 "move": "MOVE_NIGHTMARE",
-                "level": 53
-            },
-            {
-                "move": "MOVE_MEAN_LOOK",
-                "level": 64
+                "level": 61
             }
         ],
         "HMTMMoves": [
@@ -3096,44 +3136,52 @@
         "pokemon": "MegaKangaskhan",
         "levelUpMoves": [
             {
-                "move": "MOVE_LEER",
-                "level": 1
-            },
-            {
                 "move": "MOVE_COMET_PUNCH",
                 "level": 1
             },
             {
-                "move": "MOVE_BITE",
+                "move": "MOVE_LEER",
+                "level": 1
+            },
+            {
+                "move": "MOVE_FAKE_OUT",
                 "level": 7
             },
             {
                 "move": "MOVE_TAIL_WHIP",
+                "level": 10
+            },
+            {
+                "move": "MOVE_BITE",
                 "level": 13
             },
             {
-                "move": "MOVE_FAKE_OUT",
-                "level": 19
+                "move": "MOVE_RAGE",
+                "level": 22
             },
             {
                 "move": "MOVE_MEGA_PUNCH",
                 "level": 25
             },
             {
-                "move": "MOVE_RAGE",
-                "level": 31
+                "move": "MOVE_DIZZY_PUNCH",
+                "level": 34
             },
             {
-                "move": "MOVE_ENDURE",
+                "move": "MOVE_CRUNCH",
                 "level": 37
             },
             {
-                "move": "MOVE_DIZZY_PUNCH",
+                "move": "MOVE_ENDURE",
                 "level": 43
             },
             {
+                "move": "MOVE_OUTRAGE",
+                "level": 46
+            },
+            {
                 "move": "MOVE_REVERSAL",
-                "level": 49
+                "level": 50
             }
         ],
         "HMTMMoves": [
@@ -3183,6 +3231,10 @@
         "pokemon": "MegaPinsir",
         "levelUpMoves": [
             {
+                "move": "MOVE_BIND",
+                "level": 1
+            },
+            {
                 "move": "MOVE_FOCUS_ENERGY",
                 "level": 1
             },
@@ -3191,36 +3243,44 @@
                 "level": 1
             },
             {
-                "move": "MOVE_BIND",
-                "level": 7
-            },
-            {
                 "move": "MOVE_SEISMIC_TOSS",
-                "level": 13
+                "level": 8
             },
             {
                 "move": "MOVE_HARDEN",
-                "level": 19
+                "level": 11
             },
             {
                 "move": "MOVE_REVENGE",
-                "level": 25
+                "level": 15
+            },
+            {
+                "move": "MOVE_VITAL_THROW",
+                "level": 18
             },
             {
                 "move": "MOVE_BRICK_BREAK",
-                "level": 31
-            },
-            {
-                "move": "MOVE_GUILLOTINE",
-                "level": 37
+                "level": 26
             },
             {
                 "move": "MOVE_SUBMISSION",
-                "level": 43
+                "level": 33
             },
             {
                 "move": "MOVE_SWORDS_DANCE",
-                "level": 49
+                "level": 40
+            },
+            {
+                "move": "MOVE_THRASH",
+                "level": 43
+            },
+            {
+                "move": "MOVE_SUPERPOWER",
+                "level": 47
+            },
+            {
+                "move": "MOVE_GUILLOTINE",
+                "level": 50
             }
         ],
         "HMTMMoves": [
@@ -3255,40 +3315,48 @@
         "pokemon": "MegaGyarados",
         "levelUpMoves": [
             {
+                "move": "MOVE_BITE",
+                "level": 1
+            },
+            {
                 "move": "MOVE_THRASH",
                 "level": 1
             },
             {
-                "move": "MOVE_BITE",
-                "level": 20
-            },
-            {
-                "move": "MOVE_DRAGON_RAGE",
-                "level": 25
-            },
-            {
                 "move": "MOVE_LEER",
-                "level": 30
+                "level": 21
             },
             {
                 "move": "MOVE_TWISTER",
-                "level": 35
+                "level": 24
+            },
+            {
+                "move": "MOVE_SCARY_FACE",
+                "level": 33
+            },
+            {
+                "move": "MOVE_DRAGON_RAGE",
+                "level": 36
+            },
+            {
+                "move": "MOVE_CRUNCH",
+                "level": 39
             },
             {
                 "move": "MOVE_HYDRO_PUMP",
-                "level": 40
-            },
-            {
-                "move": "MOVE_RAIN_DANCE",
-                "level": 45
+                "level": 42
             },
             {
                 "move": "MOVE_DRAGON_DANCE",
-                "level": 50
+                "level": 45
+            },
+            {
+                "move": "MOVE_RAIN_DANCE",
+                "level": 51
             },
             {
                 "move": "MOVE_HYPER_BEAM",
-                "level": 55
+                "level": 54
             }
         ],
         "HMTMMoves": [
@@ -3330,36 +3398,48 @@
         "pokemon": "MegaAerodactyl",
         "levelUpMoves": [
             {
+                "move": "MOVE_BITE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_SCARY_FACE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_SUPERSONIC",
+                "level": 1
+            },
+            {
                 "move": "MOVE_WING_ATTACK",
                 "level": 1
             },
             {
+                "move": "MOVE_ROAR",
+                "level": 9
+            },
+            {
                 "move": "MOVE_AGILITY",
-                "level": 8
-            },
-            {
-                "move": "MOVE_BITE",
-                "level": 15
-            },
-            {
-                "move": "MOVE_SUPERSONIC",
-                "level": 22
+                "level": 17
             },
             {
                 "move": "MOVE_ANCIENTPOWER",
-                "level": 29
+                "level": 25
             },
             {
-                "move": "MOVE_SCARY_FACE",
-                "level": 36
+                "move": "MOVE_CRUNCH",
+                "level": 33
             },
             {
                 "move": "MOVE_TAKE_DOWN",
-                "level": 43
+                "level": 41
             },
             {
                 "move": "MOVE_HYPER_BEAM",
-                "level": 50
+                "level": 65
+            },
+            {
+                "move": "MOVE_ROCK_SLIDE",
+                "level": 73
             }
         ],
         "HMTMMoves": [
@@ -3400,48 +3480,52 @@
         "pokemon": "MegaMewtwoY",
         "levelUpMoves": [
             {
-                "move": "MOVE_DISABLE",
-                "level": 1
-            },
-            {
                 "move": "MOVE_CONFUSION",
                 "level": 1
             },
             {
-                "move": "MOVE_BARRIER",
-                "level": 11
+                "move": "MOVE_DISABLE",
+                "level": 1
             },
             {
-                "move": "MOVE_MIST",
-                "level": 22
-            },
-            {
-                "move": "MOVE_SWIFT",
-                "level": 33
-            },
-            {
-                "move": "MOVE_RECOVER",
-                "level": 44
+                "move": "MOVE_PSYWAVE",
+                "level": 1
             },
             {
                 "move": "MOVE_SAFEGUARD",
-                "level": 55
+                "level": 1
             },
             {
-                "move": "MOVE_PSYCHIC",
-                "level": 66
-            },
-            {
-                "move": "MOVE_PSYCH_UP",
-                "level": 77
+                "move": "MOVE_SWIFT",
+                "level": 8
             },
             {
                 "move": "MOVE_FUTURE_SIGHT",
-                "level": 88
+                "level": 15
+            },
+            {
+                "move": "MOVE_PSYCH_UP",
+                "level": 22
+            },
+            {
+                "move": "MOVE_RECOVER",
+                "level": 50
+            },
+            {
+                "move": "MOVE_PSYCHIC",
+                "level": 57
+            },
+            {
+                "move": "MOVE_BARRIER",
+                "level": 64
             },
             {
                 "move": "MOVE_AMNESIA",
-                "level": 99
+                "level": 79
+            },
+            {
+                "move": "MOVE_MIST",
+                "level": 86
             }
         ],
         "HMTMMoves": [
@@ -3496,48 +3580,52 @@
         "pokemon": "MegaMewtwoX",
         "levelUpMoves": [
             {
-                "move": "MOVE_DISABLE",
-                "level": 1
-            },
-            {
                 "move": "MOVE_CONFUSION",
                 "level": 1
             },
             {
-                "move": "MOVE_BARRIER",
-                "level": 11
+                "move": "MOVE_DISABLE",
+                "level": 1
             },
             {
-                "move": "MOVE_MIST",
-                "level": 22
-            },
-            {
-                "move": "MOVE_SWIFT",
-                "level": 33
-            },
-            {
-                "move": "MOVE_RECOVER",
-                "level": 44
+                "move": "MOVE_PSYWAVE",
+                "level": 1
             },
             {
                 "move": "MOVE_SAFEGUARD",
-                "level": 55
+                "level": 1
             },
             {
-                "move": "MOVE_PSYCHIC",
-                "level": 66
-            },
-            {
-                "move": "MOVE_PSYCH_UP",
-                "level": 77
+                "move": "MOVE_SWIFT",
+                "level": 8
             },
             {
                 "move": "MOVE_FUTURE_SIGHT",
-                "level": 88
+                "level": 15
+            },
+            {
+                "move": "MOVE_PSYCH_UP",
+                "level": 22
+            },
+            {
+                "move": "MOVE_RECOVER",
+                "level": 50
+            },
+            {
+                "move": "MOVE_PSYCHIC",
+                "level": 57
+            },
+            {
+                "move": "MOVE_BARRIER",
+                "level": 64
             },
             {
                 "move": "MOVE_AMNESIA",
-                "level": 99
+                "level": 79
+            },
+            {
+                "move": "MOVE_MIST",
+                "level": 86
             }
         ],
         "HMTMMoves": [
@@ -3592,15 +3680,7 @@
         "pokemon": "MegaAmpharos",
         "levelUpMoves": [
             {
-                "move": "MOVE_TACKLE",
-                "level": 1
-            },
-            {
-                "move": "MOVE_THUNDERSHOCK",
-                "level": 1
-            },
-            {
-                "move": "MOVE_THUNDER_WAVE",
+                "move": "MOVE_FIRE_PUNCH",
                 "level": 1
             },
             {
@@ -3608,28 +3688,52 @@
                 "level": 1
             },
             {
-                "move": "MOVE_THUNDERSHOCK",
-                "level": 9
-            },
-            {
-                "move": "MOVE_THUNDER_WAVE",
-                "level": 18
-            },
-            {
-                "move": "MOVE_COTTON_SPORE",
-                "level": 27
+                "move": "MOVE_TACKLE",
+                "level": 1
             },
             {
                 "move": "MOVE_THUNDERPUNCH",
-                "level": 30
+                "level": 1
+            },
+            {
+                "move": "MOVE_THUNDERSHOCK",
+                "level": 1
+            },
+            {
+                "move": "MOVE_THUNDER_WAVE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_ZAP_CANNON",
+                "level": 1
+            },
+            {
+                "move": "MOVE_COTTON_SPORE",
+                "level": 11
+            },
+            {
+                "move": "MOVE_CHARGE",
+                "level": 16
+            },
+            {
+                "move": "MOVE_TAKE_DOWN",
+                "level": 20
+            },
+            {
+                "move": "MOVE_CONFUSE_RAY",
+                "level": 29
+            },
+            {
+                "move": "MOVE_SIGNAL_BEAM",
+                "level": 51
             },
             {
                 "move": "MOVE_LIGHT_SCREEN",
-                "level": 42
+                "level": 57
             },
             {
                 "move": "MOVE_THUNDER",
-                "level": 57
+                "level": 62
             }
         ],
         "HMTMMoves": [
@@ -3663,7 +3767,15 @@
         "pokemon": "MegaSteelix",
         "levelUpMoves": [
             {
-                "move": "MOVE_SCREECH",
+                "move": "MOVE_BIND",
+                "level": 1
+            },
+            {
+                "move": "MOVE_HARDEN",
+                "level": 1
+            },
+            {
+                "move": "MOVE_MUD_SPORT",
                 "level": 1
             },
             {
@@ -3671,44 +3783,56 @@
                 "level": 1
             },
             {
-                "move": "MOVE_BIND",
-                "level": 8
+                "move": "MOVE_CURSE",
+                "level": 4
             },
             {
                 "move": "MOVE_ROCK_THROW",
-                "level": 12
+                "level": 7
             },
             {
-                "move": "MOVE_HARDEN",
-                "level": 19
+                "move": "MOVE_ROCK_TOMB",
+                "level": 10
             },
             {
                 "move": "MOVE_RAGE",
-                "level": 23
+                "level": 13
             },
             {
                 "move": "MOVE_DRAGONBREATH",
-                "level": 30
-            },
-            {
-                "move": "MOVE_SANDSTORM",
-                "level": 34
+                "level": 25
             },
             {
                 "move": "MOVE_SLAM",
-                "level": 41
+                "level": 28
             },
             {
-                "move": "MOVE_IRON_TAIL",
-                "level": 45
+                "move": "MOVE_SCREECH",
+                "level": 31
+            },
+            {
+                "move": "MOVE_ROCK_SLIDE",
+                "level": 34
             },
             {
                 "move": "MOVE_CRUNCH",
-                "level": 52
+                "level": 37
+            },
+            {
+                "move": "MOVE_IRON_TAIL",
+                "level": 40
+            },
+            {
+                "move": "MOVE_DIG",
+                "level": 43
             },
             {
                 "move": "MOVE_DOUBLE_EDGE",
-                "level": 56
+                "level": 49
+            },
+            {
+                "move": "MOVE_SANDSTORM",
+                "level": 52
             }
         ],
         "HMTMMoves": [
@@ -3743,52 +3867,52 @@
         "pokemon": "MegaScizor",
         "levelUpMoves": [
             {
-                "move": "MOVE_QUICK_ATTACK",
-                "level": 1
-            },
-            {
                 "move": "MOVE_LEER",
                 "level": 1
             },
             {
+                "move": "MOVE_QUICK_ATTACK",
+                "level": 1
+            },
+            {
                 "move": "MOVE_FOCUS_ENERGY",
-                "level": 6
+                "level": 5
             },
             {
                 "move": "MOVE_PURSUIT",
-                "level": 11
+                "level": 9
             },
             {
                 "move": "MOVE_FALSE_SWIPE",
-                "level": 16
+                "level": 13
             },
             {
                 "move": "MOVE_AGILITY",
-                "level": 21
+                "level": 17
             },
             {
                 "move": "MOVE_METAL_CLAW",
-                "level": 26
-            },
-            {
-                "move": "MOVE_SLASH",
-                "level": 31
-            },
-            {
-                "move": "MOVE_SWORDS_DANCE",
-                "level": 36
-            },
-            {
-                "move": "MOVE_DOUBLE_TEAM",
-                "level": 41
-            },
-            {
-                "move": "MOVE_IRON_DEFENSE",
-                "level": 41
+                "level": 21
             },
             {
                 "move": "MOVE_FURY_CUTTER",
-                "level": 46
+                "level": 25
+            },
+            {
+                "move": "MOVE_SLASH",
+                "level": 29
+            },
+            {
+                "move": "MOVE_RAZOR_WIND",
+                "level": 33
+            },
+            {
+                "move": "MOVE_IRON_DEFENSE",
+                "level": 37
+            },
+            {
+                "move": "MOVE_SWORDS_DANCE",
+                "level": 57
             }
         ],
         "HMTMMoves": [
@@ -3820,7 +3944,19 @@
         "pokemon": "MegaHeracross",
         "levelUpMoves": [
             {
-                "move": "MOVE_TACKLE",
+                "move": "MOVE_ARM_THRUST",
+                "level": 1
+            },
+            {
+                "move": "MOVE_BULLET_SEED",
+                "level": 1
+            },
+            {
+                "move": "MOVE_ENDURE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_HORN_ATTACK",
                 "level": 1
             },
             {
@@ -3828,36 +3964,40 @@
                 "level": 1
             },
             {
-                "move": "MOVE_HORN_ATTACK",
-                "level": 6
+                "move": "MOVE_TACKLE",
+                "level": 1
             },
             {
-                "move": "MOVE_ENDURE",
-                "level": 11
-            },
-            {
-                "move": "MOVE_FURY_ATTACK",
-                "level": 17
-            },
-            {
-                "move": "MOVE_BRICK_BREAK",
-                "level": 23
+                "move": "MOVE_AERIAL_ACE",
+                "level": 10
             },
             {
                 "move": "MOVE_COUNTER",
-                "level": 30
+                "level": 19
+            },
+            {
+                "move": "MOVE_FURY_ATTACK",
+                "level": 25
+            },
+            {
+                "move": "MOVE_BRICK_BREAK",
+                "level": 28
+            },
+            {
+                "move": "MOVE_PIN_MISSILE",
+                "level": 31
             },
             {
                 "move": "MOVE_TAKE_DOWN",
+                "level": 34
+            },
+            {
+                "move": "MOVE_MEGAHORN",
                 "level": 37
             },
             {
                 "move": "MOVE_REVERSAL",
-                "level": 45
-            },
-            {
-                "move": "MOVE_MEGAHORN",
-                "level": 53
+                "level": 46
             }
         ],
         "HMTMMoves": [
@@ -3892,6 +4032,10 @@
         "pokemon": "MegaHoundoom",
         "levelUpMoves": [
             {
+                "move": "MOVE_EMBER",
+                "level": 1
+            },
+            {
                 "move": "MOVE_HOWL",
                 "level": 1
             },
@@ -3900,40 +4044,36 @@
                 "level": 1
             },
             {
-                "move": "MOVE_EMBER",
+                "move": "MOVE_SMOG",
                 "level": 1
             },
             {
-                "move": "MOVE_HOWL",
-                "level": 7
-            },
-            {
-                "move": "MOVE_SMOG",
+                "move": "MOVE_ROAR",
                 "level": 13
             },
             {
-                "move": "MOVE_ROAR",
-                "level": 19
-            },
-            {
                 "move": "MOVE_BITE",
-                "level": 27
+                "level": 16
             },
             {
                 "move": "MOVE_ODOR_SLEUTH",
-                "level": 35
+                "level": 20
+            },
+            {
+                "move": "MOVE_BEAT_UP",
+                "level": 26
             },
             {
                 "move": "MOVE_FAINT_ATTACK",
-                "level": 43
+                "level": 35
             },
             {
                 "move": "MOVE_FLAMETHROWER",
-                "level": 51
+                "level": 50
             },
             {
                 "move": "MOVE_CRUNCH",
-                "level": 59
+                "level": 56
             }
         ],
         "HMTMMoves": [
@@ -3971,15 +4111,7 @@
         "pokemon": "MegaTyranitar",
         "levelUpMoves": [
             {
-                "move": "MOVE_SCREECH",
-                "level": 1
-            },
-            {
                 "move": "MOVE_BITE",
-                "level": 1
-            },
-            {
-                "move": "MOVE_SANDSTORM",
                 "level": 1
             },
             {
@@ -3988,23 +4120,23 @@
             },
             {
                 "move": "MOVE_SANDSTORM",
-                "level": 8
+                "level": 1
             },
             {
                 "move": "MOVE_SCREECH",
-                "level": 15
+                "level": 1
             },
             {
                 "move": "MOVE_ROCK_SLIDE",
-                "level": 22
-            },
-            {
-                "move": "MOVE_THRASH",
-                "level": 29
+                "level": 19
             },
             {
                 "move": "MOVE_SCARY_FACE",
-                "level": 38
+                "level": 23
+            },
+            {
+                "move": "MOVE_THRASH",
+                "level": 28
             },
             {
                 "move": "MOVE_CRUNCH",
@@ -4012,11 +4144,11 @@
             },
             {
                 "move": "MOVE_EARTHQUAKE",
-                "level": 61
+                "level": 54
             },
             {
                 "move": "MOVE_HYPER_BEAM",
-                "level": 75
+                "level": 73
             }
         ],
         "HMTMMoves": [
@@ -4069,7 +4201,7 @@
                 "level": 1
             },
             {
-                "move": "MOVE_QUICK_ATTACK",
+                "move": "MOVE_FURY_CUTTER",
                 "level": 1
             },
             {
@@ -4081,44 +4213,40 @@
                 "level": 1
             },
             {
-                "move": "MOVE_ABSORB",
-                "level": 6
-            },
-            {
                 "move": "MOVE_QUICK_ATTACK",
-                "level": 11
+                "level": 1
             },
             {
-                "move": "MOVE_FURY_CUTTER",
-                "level": 16
+                "move": "MOVE_MEGA_DRAIN",
+                "level": 13
             },
             {
                 "move": "MOVE_PURSUIT",
-                "level": 17
-            },
-            {
-                "move": "MOVE_SCREECH",
-                "level": 23
+                "level": 18
             },
             {
                 "move": "MOVE_LEAF_BLADE",
-                "level": 29
+                "level": 23
             },
             {
                 "move": "MOVE_AGILITY",
-                "level": 35
+                "level": 28
             },
             {
                 "move": "MOVE_SLAM",
-                "level": 43
+                "level": 33
             },
             {
                 "move": "MOVE_DETECT",
-                "level": 51
+                "level": 39
             },
             {
                 "move": "MOVE_FALSE_SWIPE",
-                "level": 59
+                "level": 51
+            },
+            {
+                "move": "MOVE_SCREECH",
+                "level": 69
             }
         ],
         "HMTMMoves": [
@@ -4159,15 +4287,11 @@
         "pokemon": "MegaBlaziken",
         "levelUpMoves": [
             {
-                "move": "MOVE_FOCUS_ENERGY",
+                "move": "MOVE_BLAZE_KICK",
                 "level": 1
             },
             {
-                "move": "MOVE_GROWL",
-                "level": 1
-            },
-            {
-                "move": "MOVE_SCRATCH",
+                "move": "MOVE_DOUBLE_KICK",
                 "level": 1
             },
             {
@@ -4176,51 +4300,47 @@
             },
             {
                 "move": "MOVE_FIRE_PUNCH",
-                "level": 2
+                "level": 1
             },
             {
-                "move": "MOVE_FOCUS_ENERGY",
-                "level": 7
+                "move": "MOVE_GROWL",
+                "level": 1
             },
             {
-                "move": "MOVE_EMBER",
-                "level": 13
-            },
-            {
-                "move": "MOVE_DOUBLE_KICK",
-                "level": 16
-            },
-            {
-                "move": "MOVE_PECK",
-                "level": 17
+                "move": "MOVE_HI_JUMP_KICK",
+                "level": 1
             },
             {
                 "move": "MOVE_SAND_ATTACK",
-                "level": 21
+                "level": 1
             },
             {
-                "move": "MOVE_BULK_UP",
-                "level": 28
+                "move": "MOVE_SCRATCH",
+                "level": 1
+            },
+            {
+                "move": "MOVE_PECK",
+                "level": 14
             },
             {
                 "move": "MOVE_QUICK_ATTACK",
-                "level": 32
+                "level": 25
             },
             {
-                "move": "MOVE_BLAZE_KICK",
-                "level": 36
+                "move": "MOVE_BULK_UP",
+                "level": 31
+            },
+            {
+                "move": "MOVE_FOCUS_ENERGY",
+                "level": 37
             },
             {
                 "move": "MOVE_SLASH",
-                "level": 42
-            },
-            {
-                "move": "MOVE_MIRROR_MOVE",
-                "level": 49
+                "level": 44
             },
             {
                 "move": "MOVE_SKY_UPPERCUT",
-                "level": 59
+                "level": 57
             }
         ],
         "HMTMMoves": [
@@ -4258,64 +4378,56 @@
         "pokemon": "MegaSwampert",
         "levelUpMoves": [
             {
-                "move": "MOVE_TACKLE",
-                "level": 1
-            },
-            {
-                "move": "MOVE_MUD_SLAP",
-                "level": 1
-            },
-            {
                 "move": "MOVE_GROWL",
                 "level": 1
             },
             {
-                "move": "MOVE_WATER_GUN",
+                "move": "MOVE_MUD_SHOT",
                 "level": 1
             },
             {
                 "move": "MOVE_MUD_SLAP",
-                "level": 6
+                "level": 1
+            },
+            {
+                "move": "MOVE_TACKLE",
+                "level": 1
             },
             {
                 "move": "MOVE_WATER_GUN",
-                "level": 10
-            },
-            {
-                "move": "MOVE_BIDE",
-                "level": 15
-            },
-            {
-                "move": "MOVE_MUD_SHOT",
-                "level": 16
+                "level": 1
             },
             {
                 "move": "MOVE_FORESIGHT",
-                "level": 20
+                "level": 12
             },
             {
-                "move": "MOVE_MUD_SPORT",
-                "level": 25
+                "move": "MOVE_BIDE",
+                "level": 18
             },
             {
-                "move": "MOVE_TAKE_DOWN",
-                "level": 31
+                "move": "MOVE_ROCK_SLIDE",
+                "level": 28
+            },
+            {
+                "move": "MOVE_PROTECT",
+                "level": 32
             },
             {
                 "move": "MOVE_MUDDY_WATER",
                 "level": 39
             },
             {
-                "move": "MOVE_PROTECT",
-                "level": 46
+                "move": "MOVE_TAKE_DOWN",
+                "level": 44
             },
             {
                 "move": "MOVE_EARTHQUAKE",
-                "level": 52
+                "level": 51
             },
             {
                 "move": "MOVE_ENDEAVOR",
-                "level": 61
+                "level": 56
             }
         ],
         "HMTMMoves": [
@@ -4355,11 +4467,11 @@
         "pokemon": "MegaGardevoir",
         "levelUpMoves": [
             {
-                "move": "MOVE_DOUBLE_TEAM",
+                "move": "MOVE_CONFUSION",
                 "level": 1
             },
             {
-                "move": "MOVE_TELEPORT",
+                "move": "MOVE_DOUBLE_TEAM",
                 "level": 1
             },
             {
@@ -4367,44 +4479,40 @@
                 "level": 1
             },
             {
-                "move": "MOVE_CONFUSION",
+                "move": "MOVE_TELEPORT",
                 "level": 1
             },
             {
-                "move": "MOVE_CONFUSION",
-                "level": 6
+                "move": "MOVE_WISH",
+                "level": 14
             },
             {
-                "move": "MOVE_DOUBLE_TEAM",
-                "level": 11
-            },
-            {
-                "move": "MOVE_TELEPORT",
-                "level": 16
+                "move": "MOVE_MAGICAL_LEAF",
+                "level": 17
             },
             {
                 "move": "MOVE_CALM_MIND",
-                "level": 21
-            },
-            {
-                "move": "MOVE_PSYCHIC",
                 "level": 26
             },
             {
+                "move": "MOVE_PSYCHIC",
+                "level": 31
+            },
+            {
                 "move": "MOVE_IMPRISON",
-                "level": 33
+                "level": 35
             },
             {
                 "move": "MOVE_FUTURE_SIGHT",
-                "level": 42
+                "level": 40
             },
             {
                 "move": "MOVE_HYPNOSIS",
-                "level": 51
+                "level": 49
             },
             {
                 "move": "MOVE_DREAM_EATER",
-                "level": 60
+                "level": 53
             }
         ],
         "HMTMMoves": [
@@ -4452,47 +4560,47 @@
             },
             {
                 "move": "MOVE_FORESIGHT",
-                "level": 5
+                "level": 4
             },
             {
                 "move": "MOVE_NIGHT_SHADE",
-                "level": 9
+                "level": 6
             },
             {
                 "move": "MOVE_ASTONISH",
-                "level": 13
+                "level": 9
             },
             {
                 "move": "MOVE_FURY_SWIPES",
-                "level": 17
+                "level": 11
+            },
+            {
+                "move": "MOVE_DETECT",
+                "level": 14
+            },
+            {
+                "move": "MOVE_FAINT_ATTACK",
+                "level": 19
             },
             {
                 "move": "MOVE_FAKE_OUT",
                 "level": 21
             },
             {
-                "move": "MOVE_DETECT",
-                "level": 25
-            },
-            {
-                "move": "MOVE_FAINT_ATTACK",
-                "level": 29
-            },
-            {
                 "move": "MOVE_KNOCK_OFF",
-                "level": 33
+                "level": 26
             },
             {
                 "move": "MOVE_CONFUSE_RAY",
-                "level": 37
+                "level": 31
             },
             {
                 "move": "MOVE_SHADOW_BALL",
-                "level": 41
+                "level": 39
             },
             {
                 "move": "MOVE_MEAN_LOOK",
-                "level": 45
+                "level": 46
             }
         ],
         "HMTMMoves": [
@@ -4537,48 +4645,56 @@
                 "level": 1
             },
             {
+                "move": "MOVE_GROWL",
+                "level": 1
+            },
+            {
+                "move": "MOVE_TAUNT",
+                "level": 1
+            },
+            {
                 "move": "MOVE_FAKE_TEARS",
-                "level": 6
+                "level": 5
             },
             {
                 "move": "MOVE_BITE",
-                "level": 11
+                "level": 9
             },
             {
                 "move": "MOVE_SWEET_SCENT",
-                "level": 16
+                "level": 13
             },
             {
                 "move": "MOVE_VICEGRIP",
-                "level": 21
+                "level": 17
             },
             {
                 "move": "MOVE_FAINT_ATTACK",
-                "level": 26
+                "level": 21
             },
             {
                 "move": "MOVE_BATON_PASS",
-                "level": 31
+                "level": 25
             },
             {
                 "move": "MOVE_CRUNCH",
-                "level": 36
+                "level": 29
             },
             {
                 "move": "MOVE_IRON_DEFENSE",
+                "level": 33
+            },
+            {
+                "move": "MOVE_SPIT_UP",
                 "level": 41
             },
             {
                 "move": "MOVE_STOCKPILE",
-                "level": 46
+                "level": 41
             },
             {
                 "move": "MOVE_SWALLOW",
-                "level": 46
-            },
-            {
-                "move": "MOVE_SPIT_UP",
-                "level": 46
+                "level": 41
             }
         ],
         "HMTMMoves": [
@@ -4624,56 +4740,52 @@
                 "level": 1
             },
             {
+                "move": "MOVE_MUD_SLAP",
+                "level": 1
+            },
+            {
                 "move": "MOVE_TACKLE",
                 "level": 1
             },
             {
-                "move": "MOVE_MUD_SLAP",
-                "level": 1
-            },
-            {
-                "move": "MOVE_HARDEN",
-                "level": 4
-            },
-            {
-                "move": "MOVE_MUD_SLAP",
-                "level": 7
-            },
-            {
-                "move": "MOVE_HEADBUTT",
+                "move": "MOVE_METAL_CLAW",
                 "level": 10
             },
             {
-                "move": "MOVE_METAL_CLAW",
+                "move": "MOVE_ROCK_TOMB",
                 "level": 13
             },
             {
-                "move": "MOVE_IRON_DEFENSE",
-                "level": 17
+                "move": "MOVE_PROTECT",
+                "level": 16
             },
             {
                 "move": "MOVE_ROAR",
-                "level": 21
+                "level": 19
             },
             {
-                "move": "MOVE_TAKE_DOWN",
+                "move": "MOVE_ROCK_SLIDE",
                 "level": 25
             },
             {
-                "move": "MOVE_IRON_TAIL",
-                "level": 29
-            },
-            {
-                "move": "MOVE_PROTECT",
-                "level": 37
+                "move": "MOVE_TAKE_DOWN",
+                "level": 28
             },
             {
                 "move": "MOVE_METAL_SOUND",
-                "level": 50
+                "level": 31
+            },
+            {
+                "move": "MOVE_IRON_TAIL",
+                "level": 35
+            },
+            {
+                "move": "MOVE_IRON_DEFENSE",
+                "level": 39
             },
             {
                 "move": "MOVE_DOUBLE_EDGE",
-                "level": 63
+                "level": 45
             }
         ],
         "HMTMMoves": [
@@ -4726,11 +4838,11 @@
                 "level": 1
             },
             {
-                "move": "MOVE_THUNDERPUNCH",
+                "move": "MOVE_CONFUSION",
                 "level": 1
             },
             {
-                "move": "MOVE_CONFUSION",
+                "move": "MOVE_DETECT",
                 "level": 1
             },
             {
@@ -4738,60 +4850,52 @@
                 "level": 1
             },
             {
-                "move": "MOVE_DETECT",
-                "level": 2
-            },
-            {
-                "move": "MOVE_MEDITATE",
-                "level": 2
-            },
-            {
                 "move": "MOVE_ICE_PUNCH",
-                "level": 2
+                "level": 1
             },
             {
                 "move": "MOVE_MEDITATE",
-                "level": 4
+                "level": 1
             },
             {
-                "move": "MOVE_CONFUSION",
-                "level": 9
+                "move": "MOVE_THUNDERPUNCH",
+                "level": 1
             },
             {
-                "move": "MOVE_DETECT",
+                "move": "MOVE_ENDURE",
                 "level": 12
             },
             {
                 "move": "MOVE_HIDDEN_POWER",
-                "level": 17
+                "level": 20
             },
             {
-                "move": "MOVE_SWAGGER",
-                "level": 20
+                "move": "MOVE_CALM_MIND",
+                "level": 23
             },
             {
                 "move": "MOVE_MIND_READER",
                 "level": 25
             },
             {
-                "move": "MOVE_CALM_MIND",
+                "move": "MOVE_HI_JUMP_KICK",
                 "level": 28
             },
             {
-                "move": "MOVE_HI_JUMP_KICK",
-                "level": 33
-            },
-            {
                 "move": "MOVE_PSYCH_UP",
-                "level": 36
+                "level": 31
             },
             {
                 "move": "MOVE_REVERSAL",
-                "level": 47
+                "level": 42
             },
             {
                 "move": "MOVE_RECOVER",
-                "level": 56
+                "level": 47
+            },
+            {
+                "move": "MOVE_COUNTER",
+                "level": 53
             }
         ],
         "HMTMMoves": [
@@ -4828,6 +4932,14 @@
         "pokemon": "MegaManectric",
         "levelUpMoves": [
             {
+                "move": "MOVE_HOWL",
+                "level": 1
+            },
+            {
+                "move": "MOVE_LEER",
+                "level": 1
+            },
+            {
                 "move": "MOVE_TACKLE",
                 "level": 1
             },
@@ -4836,52 +4948,32 @@
                 "level": 1
             },
             {
-                "move": "MOVE_HOWL",
-                "level": 1
-            },
-            {
-                "move": "MOVE_LEER",
-                "level": 1
-            },
-            {
-                "move": "MOVE_THUNDER_WAVE",
-                "level": 4
-            },
-            {
-                "move": "MOVE_LEER",
-                "level": 9
-            },
-            {
-                "move": "MOVE_HOWL",
-                "level": 11
-            },
-            {
                 "move": "MOVE_QUICK_ATTACK",
-                "level": 17
+                "level": 10
             },
             {
                 "move": "MOVE_SPARK",
-                "level": 20
+                "level": 13
             },
             {
                 "move": "MOVE_ODOR_SLEUTH",
-                "level": 25
-            },
-            {
-                "move": "MOVE_ROAR",
-                "level": 31
+                "level": 16
             },
             {
                 "move": "MOVE_BITE",
-                "level": 39
+                "level": 24
             },
             {
-                "move": "MOVE_THUNDER",
-                "level": 45
+                "move": "MOVE_ROAR",
+                "level": 36
             },
             {
                 "move": "MOVE_CHARGE",
-                "level": 53
+                "level": 48
+            },
+            {
+                "move": "MOVE_THUNDER",
+                "level": 54
             }
         ],
         "HMTMMoves": [
@@ -4913,10 +5005,6 @@
         "pokemon": "MegaSharpedo",
         "levelUpMoves": [
             {
-                "move": "MOVE_RAGE",
-                "level": 1
-            },
-            {
                 "move": "MOVE_BITE",
                 "level": 1
             },
@@ -4930,43 +5018,43 @@
             },
             {
                 "move": "MOVE_RAGE",
-                "level": 7
-            },
-            {
-                "move": "MOVE_FOCUS_ENERGY",
-                "level": 13
-            },
-            {
-                "move": "MOVE_SCARY_FACE",
-                "level": 16
-            },
-            {
-                "move": "MOVE_CRUNCH",
-                "level": 22
-            },
-            {
-                "move": "MOVE_SCREECH",
-                "level": 28
+                "level": 1
             },
             {
                 "move": "MOVE_SLASH",
-                "level": 33
+                "level": 1
             },
             {
-                "move": "MOVE_TAUNT",
-                "level": 38
+                "move": "MOVE_SCREECH",
+                "level": 18
             },
             {
                 "move": "MOVE_SWAGGER",
-                "level": 43
+                "level": 22
             },
             {
-                "move": "MOVE_SKULL_BASH",
-                "level": 48
+                "move": "MOVE_SCARY_FACE",
+                "level": 29
+            },
+            {
+                "move": "MOVE_POISON_FANG",
+                "level": 34
+            },
+            {
+                "move": "MOVE_CRUNCH",
+                "level": 40
             },
             {
                 "move": "MOVE_AGILITY",
-                "level": 53
+                "level": 45
+            },
+            {
+                "move": "MOVE_SKULL_BASH",
+                "level": 51
+            },
+            {
+                "move": "MOVE_TAUNT",
+                "level": 56
             }
         ],
         "HMTMMoves": [
@@ -5005,7 +5093,19 @@
         "pokemon": "MegaCamerupt",
         "levelUpMoves": [
             {
-                "move": "MOVE_TACKLE",
+                "move": "MOVE_EMBER",
+                "level": 1
+            },
+            {
+                "move": "MOVE_ERUPTION",
+                "level": 1
+            },
+            {
+                "move": "MOVE_FISSURE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_FOCUS_ENERGY",
                 "level": 1
             },
             {
@@ -5013,48 +5113,36 @@
                 "level": 1
             },
             {
-                "move": "MOVE_EMBER",
+                "move": "MOVE_ROCK_SLIDE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_TACKLE",
                 "level": 1
             },
             {
                 "move": "MOVE_MAGNITUDE",
-                "level": 1
-            },
-            {
-                "move": "MOVE_EMBER",
-                "level": 11
-            },
-            {
-                "move": "MOVE_MAGNITUDE",
-                "level": 19
-            },
-            {
-                "move": "MOVE_FOCUS_ENERGY",
-                "level": 25
-            },
-            {
-                "move": "MOVE_TAKE_DOWN",
-                "level": 29
+                "level": 12
             },
             {
                 "move": "MOVE_AMNESIA",
+                "level": 19
+            },
+            {
+                "move": "MOVE_CURSE",
+                "level": 29
+            },
+            {
+                "move": "MOVE_TAKE_DOWN",
                 "level": 31
             },
             {
-                "move": "MOVE_ROCK_SLIDE",
-                "level": 33
+                "move": "MOVE_YAWN",
+                "level": 39
             },
             {
                 "move": "MOVE_EARTHQUAKE",
-                "level": 37
-            },
-            {
-                "move": "MOVE_ERUPTION",
-                "level": 45
-            },
-            {
-                "move": "MOVE_FISSURE",
-                "level": 55
+                "level": 46
             }
         ],
         "HMTMMoves": [
@@ -5088,15 +5176,11 @@
         "pokemon": "MegaAltaria",
         "levelUpMoves": [
             {
-                "move": "MOVE_SING",
-                "level": 1
-            },
-            {
                 "move": "MOVE_ASTONISH",
                 "level": 1
             },
             {
-                "move": "MOVE_PECK",
+                "move": "MOVE_DRAGONBREATH",
                 "level": 1
             },
             {
@@ -5104,48 +5188,44 @@
                 "level": 1
             },
             {
-                "move": "MOVE_ASTONISH",
-                "level": 8
+                "move": "MOVE_PECK",
+                "level": 1
             },
             {
                 "move": "MOVE_SING",
-                "level": 11
-            },
-            {
-                "move": "MOVE_FURY_ATTACK",
-                "level": 18
-            },
-            {
-                "move": "MOVE_SAFEGUARD",
-                "level": 21
-            },
-            {
-                "move": "MOVE_MIST",
-                "level": 28
-            },
-            {
-                "move": "MOVE_TAKE_DOWN",
-                "level": 31
-            },
-            {
-                "move": "MOVE_DRAGONBREATH",
-                "level": 35
-            },
-            {
-                "move": "MOVE_DRAGON_DANCE",
-                "level": 40
-            },
-            {
-                "move": "MOVE_REFRESH",
-                "level": 45
-            },
-            {
-                "move": "MOVE_PERISH_SONG",
-                "level": 54
+                "level": 1
             },
             {
                 "move": "MOVE_SKY_ATTACK",
-                "level": 59
+                "level": 1
+            },
+            {
+                "move": "MOVE_FURY_ATTACK",
+                "level": 7
+            },
+            {
+                "move": "MOVE_SAFEGUARD",
+                "level": 9
+            },
+            {
+                "move": "MOVE_MIST",
+                "level": 14
+            },
+            {
+                "move": "MOVE_TAKE_DOWN",
+                "level": 23
+            },
+            {
+                "move": "MOVE_REFRESH",
+                "level": 26
+            },
+            {
+                "move": "MOVE_DRAGON_DANCE",
+                "level": 30
+            },
+            {
+                "move": "MOVE_PERISH_SONG",
+                "level": 46
             }
         ],
         "HMTMMoves": [
@@ -5184,64 +5264,48 @@
         "pokemon": "MegaBanette",
         "levelUpMoves": [
             {
-                "move": "MOVE_SCREECH",
-                "level": 1
-            },
-            {
-                "move": "MOVE_NIGHT_SHADE",
-                "level": 1
-            },
-            {
-                "move": "MOVE_CURSE",
-                "level": 1
-            },
-            {
                 "move": "MOVE_KNOCK_OFF",
                 "level": 1
             },
             {
-                "move": "MOVE_SCREECH",
-                "level": 8
-            },
-            {
-                "move": "MOVE_SCREECH",
-                "level": 8
-            },
-            {
                 "move": "MOVE_NIGHT_SHADE",
-                "level": 13
+                "level": 1
             },
             {
-                "move": "MOVE_NIGHT_SHADE",
-                "level": 13
-            },
-            {
-                "move": "MOVE_CURSE",
-                "level": 20
+                "move": "MOVE_SCREECH",
+                "level": 1
             },
             {
                 "move": "MOVE_SPITE",
-                "level": 25
+                "level": 1
             },
             {
                 "move": "MOVE_WILL_O_WISP",
-                "level": 32
+                "level": 16
             },
             {
                 "move": "MOVE_FAINT_ATTACK",
-                "level": 39
+                "level": 19
+            },
+            {
+                "move": "MOVE_CURSE",
+                "level": 26
             },
             {
                 "move": "MOVE_SHADOW_BALL",
-                "level": 48
+                "level": 30
             },
             {
                 "move": "MOVE_SNATCH",
-                "level": 55
+                "level": 46
             },
             {
                 "move": "MOVE_GRUDGE",
-                "level": 64
+                "level": 52
+            },
+            {
+                "move": "MOVE_TRICK",
+                "level": 58
             }
         ],
         "HMTMMoves": [
@@ -5278,48 +5342,56 @@
         "pokemon": "MegaAbsol",
         "levelUpMoves": [
             {
-                "move": "MOVE_SCRATCH",
+                "move": "MOVE_FUTURE_SIGHT",
                 "level": 1
             },
             {
                 "move": "MOVE_LEER",
-                "level": 5
-            },
-            {
-                "move": "MOVE_TAUNT",
-                "level": 9
-            },
-            {
-                "move": "MOVE_QUICK_ATTACK",
-                "level": 13
-            },
-            {
-                "move": "MOVE_RAZOR_WIND",
-                "level": 17
-            },
-            {
-                "move": "MOVE_BITE",
-                "level": 21
-            },
-            {
-                "move": "MOVE_SWORDS_DANCE",
-                "level": 26
-            },
-            {
-                "move": "MOVE_DOUBLE_TEAM",
-                "level": 31
-            },
-            {
-                "move": "MOVE_SLASH",
-                "level": 36
-            },
-            {
-                "move": "MOVE_FUTURE_SIGHT",
-                "level": 41
+                "level": 1
             },
             {
                 "move": "MOVE_PERISH_SONG",
-                "level": 46
+                "level": 1
+            },
+            {
+                "move": "MOVE_QUICK_ATTACK",
+                "level": 1
+            },
+            {
+                "move": "MOVE_SCRATCH",
+                "level": 1
+            },
+            {
+                "move": "MOVE_PURSUIT",
+                "level": 10
+            },
+            {
+                "move": "MOVE_TAUNT",
+                "level": 13
+            },
+            {
+                "move": "MOVE_BITE",
+                "level": 16
+            },
+            {
+                "move": "MOVE_DOUBLE_TEAM",
+                "level": 19
+            },
+            {
+                "move": "MOVE_SLASH",
+                "level": 22
+            },
+            {
+                "move": "MOVE_SWORDS_DANCE",
+                "level": 25
+            },
+            {
+                "move": "MOVE_DETECT",
+                "level": 33
+            },
+            {
+                "move": "MOVE_RAZOR_WIND",
+                "level": 49
             }
         ],
         "HMTMMoves": [
@@ -5370,7 +5442,7 @@
                 "level": 1
             },
             {
-                "move": "MOVE_BITE",
+                "move": "MOVE_LEER",
                 "level": 1
             },
             {
@@ -5378,48 +5450,36 @@
                 "level": 1
             },
             {
-                "move": "MOVE_LEER",
+                "move": "MOVE_SHEER_COLD",
                 "level": 1
             },
             {
-                "move": "MOVE_DOUBLE_TEAM",
-                "level": 7
+                "move": "MOVE_ICY_WIND",
+                "level": 14
             },
             {
                 "move": "MOVE_BITE",
-                "level": 10
-            },
-            {
-                "move": "MOVE_ICY_WIND",
-                "level": 16
-            },
-            {
-                "move": "MOVE_HEADBUTT",
                 "level": 19
             },
             {
-                "move": "MOVE_PROTECT",
-                "level": 25
-            },
-            {
-                "move": "MOVE_CRUNCH",
+                "move": "MOVE_HEADBUTT",
                 "level": 28
             },
             {
-                "move": "MOVE_ICE_BEAM",
-                "level": 34
+                "move": "MOVE_PROTECT",
+                "level": 32
             },
             {
-                "move": "MOVE_HAIL",
-                "level": 42
+                "move": "MOVE_CRUNCH",
+                "level": 41
             },
             {
                 "move": "MOVE_BLIZZARD",
-                "level": 53
+                "level": 48
             },
             {
-                "move": "MOVE_SHEER_COLD",
-                "level": 61
+                "move": "MOVE_HAIL",
+                "level": 54
             }
         ],
         "HMTMMoves": [
@@ -5454,28 +5514,32 @@
         "pokemon": "MegaSalamence",
         "levelUpMoves": [
             {
+                "move": "MOVE_BITE",
+                "level": 1
+            },
+            {
+                "move": "MOVE_EMBER",
+                "level": 1
+            },
+            {
+                "move": "MOVE_FLY",
+                "level": 1
+            },
+            {
+                "move": "MOVE_LEER",
+                "level": 1
+            },
+            {
+                "move": "MOVE_PROTECT",
+                "level": 1
+            },
+            {
                 "move": "MOVE_RAGE",
                 "level": 1
             },
             {
-                "move": "MOVE_BITE",
-                "level": 1
-            },
-            {
-                "move": "MOVE_HEADBUTT",
-                "level": 1
-            },
-            {
-                "move": "MOVE_LEER",
-                "level": 1
-            },
-            {
-                "move": "MOVE_BITE",
-                "level": 5
-            },
-            {
-                "move": "MOVE_LEER",
-                "level": 9
+                "move": "MOVE_DRAGONBREATH",
+                "level": 13
             },
             {
                 "move": "MOVE_HEADBUTT",
@@ -5486,36 +5550,24 @@
                 "level": 21
             },
             {
-                "move": "MOVE_EMBER",
+                "move": "MOVE_CRUNCH",
                 "level": 25
             },
             {
-                "move": "MOVE_PROTECT",
-                "level": 30
-            },
-            {
-                "move": "MOVE_DRAGONBREATH",
-                "level": 38
+                "move": "MOVE_DRAGON_CLAW",
+                "level": 29
             },
             {
                 "move": "MOVE_SCARY_FACE",
-                "level": 47
+                "level": 42
             },
             {
-                "move": "MOVE_FLY",
-                "level": 50
-            },
-            {
-                "move": "MOVE_CRUNCH",
-                "level": 61
-            },
-            {
-                "move": "MOVE_DRAGON_CLAW",
-                "level": 79
+                "move": "MOVE_FLAMETHROWER",
+                "level": 49
             },
             {
                 "move": "MOVE_DOUBLE_EDGE",
-                "level": 93
+                "level": 63
             }
         ],
         "HMTMMoves": [
@@ -5554,7 +5606,11 @@
         "pokemon": "MegaMetagross",
         "levelUpMoves": [
             {
-                "move": "MOVE_SCARY_FACE",
+                "move": "MOVE_CONFUSION",
+                "level": 1
+            },
+            {
+                "move": "MOVE_METAL_CLAW",
                 "level": 1
             },
             {
@@ -5562,48 +5618,32 @@
                 "level": 1
             },
             {
-                "move": "MOVE_CONFUSION",
-                "level": 1
-            },
-            {
-                "move": "MOVE_METAL_CLAW",
-                "level": 1
-            },
-            {
-                "move": "MOVE_CONFUSION",
-                "level": 20
-            },
-            {
-                "move": "MOVE_METAL_CLAW",
-                "level": 20
+                "move": "MOVE_PURSUIT",
+                "level": 23
             },
             {
                 "move": "MOVE_SCARY_FACE",
-                "level": 26
-            },
-            {
-                "move": "MOVE_PURSUIT",
-                "level": 32
+                "level": 35
             },
             {
                 "move": "MOVE_PSYCHIC",
                 "level": 38
             },
             {
-                "move": "MOVE_IRON_DEFENSE",
-                "level": 44
+                "move": "MOVE_AGILITY",
+                "level": 41
             },
             {
                 "move": "MOVE_METEOR_MASH",
-                "level": 55
+                "level": 44
             },
             {
-                "move": "MOVE_AGILITY",
-                "level": 66
+                "move": "MOVE_IRON_DEFENSE",
+                "level": 52
             },
             {
                 "move": "MOVE_HYPER_BEAM",
-                "level": 77
+                "level": 60
             }
         ],
         "HMTMMoves": [
@@ -5641,48 +5681,48 @@
         "pokemon": "MegaLatias",
         "levelUpMoves": [
             {
+                "move": "MOVE_HELPING_HAND",
+                "level": 1
+            },
+            {
                 "move": "MOVE_PSYWAVE",
                 "level": 1
             },
             {
-                "move": "MOVE_WISH",
-                "level": 5
-            },
-            {
-                "move": "MOVE_HELPING_HAND",
-                "level": 10
-            },
-            {
                 "move": "MOVE_SAFEGUARD",
-                "level": 15
+                "level": 1
+            },
+            {
+                "move": "MOVE_WISH",
+                "level": 1
+            },
+            {
+                "move": "MOVE_WATER_SPORT",
+                "level": 4
+            },
+            {
+                "move": "MOVE_CHARM",
+                "level": 7
+            },
+            {
+                "move": "MOVE_REFRESH",
+                "level": 13
             },
             {
                 "move": "MOVE_DRAGONBREATH",
                 "level": 20
             },
             {
-                "move": "MOVE_WATER_SPORT",
-                "level": 25
-            },
-            {
-                "move": "MOVE_REFRESH",
-                "level": 30
-            },
-            {
                 "move": "MOVE_MIST_BALL",
-                "level": 35
-            },
-            {
-                "move": "MOVE_PSYCHIC",
-                "level": 40
+                "level": 24
             },
             {
                 "move": "MOVE_RECOVER",
-                "level": 45
+                "level": 32
             },
             {
-                "move": "MOVE_CHARM",
-                "level": 50
+                "move": "MOVE_PSYCHIC",
+                "level": 51
             }
         ],
         "HMTMMoves": [
@@ -5731,48 +5771,48 @@
         "pokemon": "MegaLatios",
         "levelUpMoves": [
             {
-                "move": "MOVE_PSYWAVE",
+                "move": "MOVE_HELPING_HAND",
                 "level": 1
             },
             {
                 "move": "MOVE_MEMENTO",
-                "level": 5
+                "level": 1
             },
             {
-                "move": "MOVE_HELPING_HAND",
-                "level": 10
+                "move": "MOVE_PSYWAVE",
+                "level": 1
             },
             {
                 "move": "MOVE_SAFEGUARD",
-                "level": 15
+                "level": 1
+            },
+            {
+                "move": "MOVE_PROTECT",
+                "level": 4
+            },
+            {
+                "move": "MOVE_DRAGON_DANCE",
+                "level": 7
+            },
+            {
+                "move": "MOVE_REFRESH",
+                "level": 13
             },
             {
                 "move": "MOVE_DRAGONBREATH",
                 "level": 20
             },
             {
-                "move": "MOVE_PROTECT",
-                "level": 25
-            },
-            {
-                "move": "MOVE_REFRESH",
-                "level": 30
-            },
-            {
                 "move": "MOVE_LUSTER_PURGE",
-                "level": 35
-            },
-            {
-                "move": "MOVE_PSYCHIC",
-                "level": 40
+                "level": 24
             },
             {
                 "move": "MOVE_RECOVER",
-                "level": 45
+                "level": 32
             },
             {
-                "move": "MOVE_DRAGON_DANCE",
-                "level": 50
+                "move": "MOVE_PSYCHIC",
+                "level": 51
             }
         ],
         "HMTMMoves": [
@@ -5833,36 +5873,36 @@
                 "level": 15
             },
             {
-                "move": "MOVE_DRAGON_CLAW",
+                "move": "MOVE_CRUNCH",
                 "level": 20
             },
             {
-                "move": "MOVE_DRAGON_DANCE",
-                "level": 30
-            },
-            {
-                "move": "MOVE_CRUNCH",
+                "move": "MOVE_REST",
                 "level": 35
             },
             {
-                "move": "MOVE_FLY",
+                "move": "MOVE_EXTREMESPEED",
                 "level": 45
             },
             {
-                "move": "MOVE_REST",
-                "level": 50
-            },
-            {
-                "move": "MOVE_EXTREMESPEED",
+                "move": "MOVE_DRAGON_DANCE",
                 "level": 60
             },
             {
-                "move": "MOVE_OUTRAGE",
+                "move": "MOVE_FLY",
                 "level": 65
             },
             {
-                "move": "MOVE_HYPER_BEAM",
+                "move": "MOVE_HYPER_VOICE",
                 "level": 75
+            },
+            {
+                "move": "MOVE_OUTRAGE",
+                "level": 80
+            },
+            {
+                "move": "MOVE_HYPER_BEAM",
+                "level": 90
             }
         ],
         "HMTMMoves": [
@@ -5930,7 +5970,7 @@
                 "level": 6
             },
             {
-                "move": "MOVE_BONE_RUSH",
+                "move": "MOVE_SWORDS_DANCE",
                 "level": 19
             },
             {
@@ -5938,12 +5978,16 @@
                 "level": 24
             },
             {
-                "move": "MOVE_SWORDS_DANCE",
-                "level": 33
+                "move": "MOVE_BONE_RUSH",
+                "level": 29
+            },
+            {
+                "move": "MOVE_CALM_MIND",
+                "level": 47
             },
             {
                 "move": "MOVE_EXTREMESPEED",
-                "level": 51
+                "level": 65
             }
         ],
         "HMTMMoves": [
@@ -5994,32 +6038,36 @@
                 "level": 1
             },
             {
+                "move": "MOVE_SLASH",
+                "level": 1
+            },
+            {
                 "move": "MOVE_TELEPORT",
                 "level": 1
             },
             {
                 "move": "MOVE_FURY_CUTTER",
+                "level": 14
+            },
+            {
+                "move": "MOVE_AERIAL_ACE",
                 "level": 17
             },
             {
-                "move": "MOVE_SLASH",
-                "level": 22
-            },
-            {
                 "move": "MOVE_SWORDS_DANCE",
-                "level": 25
+                "level": 26
             },
             {
                 "move": "MOVE_HELPING_HAND",
-                "level": 36
+                "level": 35
             },
             {
                 "move": "MOVE_FALSE_SWIPE",
-                "level": 45
+                "level": 44
             },
             {
                 "move": "MOVE_PROTECT",
-                "level": 50
+                "level": 49
             }
         ],
         "HMTMMoves": [
@@ -6057,6 +6105,10 @@
         "pokemon": "PrimalKyogre",
         "levelUpMoves": [
             {
+                "move": "MOVE_ANCIENTPOWER",
+                "level": 1
+            },
+            {
                 "move": "MOVE_WATER_PULSE",
                 "level": 1
             },
@@ -6065,40 +6117,36 @@
                 "level": 5
             },
             {
-                "move": "MOVE_ANCIENTPOWER",
-                "level": 15
-            },
-            {
                 "move": "MOVE_BODY_SLAM",
                 "level": 20
-            },
-            {
-                "move": "MOVE_CALM_MIND",
-                "level": 30
             },
             {
                 "move": "MOVE_ICE_BEAM",
                 "level": 35
             },
             {
-                "move": "MOVE_HYDRO_PUMP",
-                "level": 45
-            },
-            {
-                "move": "MOVE_REST",
+                "move": "MOVE_CALM_MIND",
                 "level": 50
             },
             {
-                "move": "MOVE_SHEER_COLD",
+                "move": "MOVE_MUDDY_WATER",
                 "level": 60
             },
             {
-                "move": "MOVE_DOUBLE_EDGE",
+                "move": "MOVE_SHEER_COLD",
                 "level": 65
             },
             {
-                "move": "MOVE_WATER_SPOUT",
+                "move": "MOVE_HYDRO_PUMP",
                 "level": 75
+            },
+            {
+                "move": "MOVE_DOUBLE_EDGE",
+                "level": 80
+            },
+            {
+                "move": "MOVE_WATER_SPOUT",
+                "level": 90
             }
         ],
         "HMTMMoves": [
@@ -6139,6 +6187,10 @@
         "pokemon": "PrimalGroudon",
         "levelUpMoves": [
             {
+                "move": "MOVE_ANCIENTPOWER",
+                "level": 1
+            },
+            {
                 "move": "MOVE_MUD_SHOT",
                 "level": 1
             },
@@ -6147,15 +6199,7 @@
                 "level": 5
             },
             {
-                "move": "MOVE_ANCIENTPOWER",
-                "level": 15
-            },
-            {
-                "move": "MOVE_SLASH",
-                "level": 20
-            },
-            {
-                "move": "MOVE_BULK_UP",
+                "move": "MOVE_REST",
                 "level": 30
             },
             {
@@ -6163,24 +6207,24 @@
                 "level": 35
             },
             {
-                "move": "MOVE_FIRE_BLAST",
-                "level": 45
-            },
-            {
-                "move": "MOVE_REST",
+                "move": "MOVE_BULK_UP",
                 "level": 50
             },
             {
-                "move": "MOVE_FISSURE",
+                "move": "MOVE_SOLARBEAM",
                 "level": 60
             },
             {
-                "move": "MOVE_SOLARBEAM",
+                "move": "MOVE_FISSURE",
                 "level": 65
             },
             {
-                "move": "MOVE_ERUPTION",
+                "move": "MOVE_FIRE_BLAST",
                 "level": 75
+            },
+            {
+                "move": "MOVE_ERUPTION",
+                "level": 90
             }
         ],
         "HMTMMoves": [

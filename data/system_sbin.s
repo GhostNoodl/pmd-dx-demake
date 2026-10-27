@@ -18287,9 +18287,12 @@ gUnknown_8360BF4:
 .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 
 @ Address 0x360c06
-#include "monster/learnset/learnset_data.inc"
 #ifdef DX_RULES
+@ dx: Red's species learn their Gen 7 moves (tools/dxtest/gen_dx_learnsets.py): same labels as Red's file
+#include "monster/dx/red_learnset/learnset_data.inc"
 #include "monster/dx/learnset/learnset_data.inc"
+#else
+#include "monster/learnset/learnset_data.inc"
 #endif
 
 .global gUnknown_836791E

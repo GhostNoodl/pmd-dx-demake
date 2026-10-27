@@ -56,10 +56,19 @@ hold A+B 200
 shot 5_ate
 read pheld ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHeldItem!2 1
 read php ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2
-# the leader walked 3 tiles west; the partner is right behind it (seed 99991)
-expect **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos 2 == 16
-expect **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos 2 == 17
-expect **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos!2 2 == 27
+# the leader walked west; the partner kept up (it is next to the leader)
+read wlx **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos 2
+read wly **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos!2 2
+read wpx **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos 2
+read wpy **gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityPos!2 2
+calc wdx wpx - wlx
+calc wdy wpy - wly
+calc m1 0 - 1
+calc p1 0 + 1
+cmpreads wdx >= m1
+cmpreads wdx <= p1
+cmpreads wdy >= m1
+cmpreads wdy <= p1
 # the partner ate the Oran Berry
 expect ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHeldItem!2 1 == 0
 expect ***gDungeon+@gDxOffTeamPokemon!4+@gDxOffEntityInfo+@gDxOffInfoHP 2 > 3

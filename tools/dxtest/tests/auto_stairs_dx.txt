@@ -41,12 +41,13 @@ press L 4 20
 wait 30
 shot 2_auto_on
 expect gBgTilemaps+116 2 == -3431
-waitfor gBgTilemaps+116 2 != -3431 6000
-wait 60
+# the walk (42 steps here) ends on the stairs, where the stairs menu waits
+wait 2400
 shot 3_on_stairs
-# close the stairs menu: AUTO is gone from the HUD
+# close the stairs menu: auto-mode stops there (found the stairs) and AUTO is gone from the HUD
 press B
 wait 60
+waitfor sDxAutoExplore 1 == 0 600
 shot 4_menu_closed
 expect gBgTilemaps+116 2 != -3431
 read x1 **gDungeon+@gDxOffTeamPokemon+@gDxOffEntityPos 2

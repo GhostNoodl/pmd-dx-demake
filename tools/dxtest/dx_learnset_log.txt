@@ -1,0 +1,215 @@
+# Gen 7 (Ultra Sun/Ultra Moon) level-up moves Red has no move for, and how many learnsets drop each
+# (tools/dxtest/gen_dx_learnsets.py)
+  40 zen-headbutt
+  36 air-slash
+  33 feint
+  32 sucker-punch
+  30 ice-fang
+  30 night-slash
+  29 fire-fang
+  29 discharge
+  28 brine
+  26 aqua-tail
+  24 nasty-plot
+  23 thunder-fang
+  23 chip-away
+  23 payback
+  22 assurance
+  22 natural-gift
+  22 heal-pulse
+  21 wring-out
+  21 hammer-arm
+  20 gyro-ball
+  20 earth-power
+  20 stone-edge
+  19 close-combat
+  19 last-resort
+  18 mud-bomb
+  18 electro-ball
+  18 bulldoze
+  18 fling
+  18 dragon-pulse
+  17 inferno
+  17 captivate
+  17 poison-jab
+  17 hurricane
+  17 stored-power
+  17 play-rough
+  17 power-gem
+  17 me-first
+  17 double-hit
+  17 aqua-ring
+  17 lava-plume
+  16 flame-burst
+  16 flare-blitz
+  16 roost
+  16 quick-guard
+  16 x-scissor
+  15 bug-buzz
+  15 wake-up-slap
+  15 ice-shard
+  15 iron-head
+  14 hex
+  14 leaf-storm
+  14 heavy-slam
+  14 magnet-rise
+  13 disarming-voice
+  13 moonblast
+  13 healing-wish
+  13 copycat
+  13 embargo
+  12 worry-seed
+  12 bug-bite
+  12 toxic-spikes
+  12 lucky-chant
+  12 baby-doll-eyes
+  12 shadow-sneak
+  11 tailwind
+  11 belch
+  11 miracle-eye
+  11 smack-down
+  10 gastro-acid
+  10 bestow
+  10 punishment
+  10 psycho-cut
+  10 wide-guard
+  10 dark-pulse
+  10 synchronoise
+   9 petal-blizzard
+   9 soak
+   9 aqua-jet
+   9 shell-smash
+   9 draining-kiss
+   9 aura-sphere
+   9 psycho-shift
+   9 autotomize
+   8 quiver-dance
+   8 coil
+   8 gunk-shot
+   8 dual-chop
+   8 rock-polish
+   8 flame-charge
+   8 electric-terrain
+   8 brave-bird
+   8 charge-beam
+   8 guard-swap
+   8 power-swap
+   8 giga-impact
+   8 fairy-wind
+   8 heal-block
+   7 venoshock
+   7 pluck
+   7 play-nice
+   7 clear-smog
+   7 dragon-tail
+   7 echoed-voice
+   7 cotton-guard
+   7 u-turn
+   7 foul-play
+   7 force-palm
+   7 phantom-force
+   6 shadow-claw
+   6 flash-cannon
+   6 rage-powder
+   6 drill-run
+   6 acid-spray
+   6 stealth-rock
+   6 acrobatics
+   6 venom-drench
+   6 psyshock
+   6 magnetic-flux
+   6 bullet-punch
+   6 dragon-rush
+   6 power-trick
+   6 energy-ball
+   5 seed-bomb
+   5 fell-stinger
+   5 gravity
+   5 grassy-terrain
+   5 cross-poison
+   5 telekinesis
+   5 reflect-type
+   5 magnet-bomb
+   5 mirror-shot
+   5 acupressure
+   5 power-whip
+   5 freeze-dry
+   5 laser-focus
+   5 sticky-web
+   5 ion-deluge
+   5 ominous-wind
+   5 guard-split
+   5 power-split
+   4 wild-charge
+   4 spotlight
+   4 after-you
+   4 round
+   4 switcheroo
+   4 stomping-tantrum
+   4 final-gambit
+   4 leaf-tornado
+   4 sludge-wave
+   4 eerie-impulse
+   4 misty-terrain
+   4 burn-up
+   4 infestation
+   4 quash
+   4 metal-burst
+   3 nuzzle
+   3 wonder-room
+   3 retaliate
+   3 ally-switch
+   3 low-sweep
+   3 razor-shell
+   3 heart-stamp
+   3 work-up
+   3 trump-card
+   3 psystrike
+   3 head-smash
+   3 struggle-bug
+   3 hone-claws
+   3 boomburst
+   3 entrainment
+   3 frost-breath
+   2 rototiller
+   2 circle-throw
+   2 wood-hammer
+   2 vacuum-wave
+   2 avalanche
+   2 storm-throw
+   2 sky-drop
+   2 toxic-thread
+   2 tearful-look
+   2 incinerate
+   2 snarl
+   2 spiky-shield
+   2 origin-pulse
+   2 precipice-blades
+   2 power-up-punch
+   2 rock-wrecker
+   1 steamroller
+   1 icicle-crash
+   1 high-horsepower
+   1 flower-shield
+   1 noble-roar
+   1 magic-room
+   1 mystical-fire
+   1 trick-room
+
+# kept Red's learnset (no PokeAPI data): 
+
+# first damaging move moved to level 1 (DX: every Pokemon can attack from the start)
+Jigglypuff: POUND 5 -> 1
+Poliwag: WATER_GUN 5 -> 1
+Cubone: BONE_CLUB 7 -> 1
+Pinsir: BIND 4 -> 1
+Magikarp: TACKLE 15 -> 1
+Igglybuff: POUND 5 -> 1
+Togepi: ANCIENTPOWER 33 -> 1
+Ralts: CONFUSION 4 -> 1
+Wailmer: WATER_GUN 7 -> 1
+Spoink: PSYWAVE 7 -> 1
+Feebas: TACKLE 15 -> 1
+Wynaut: COUNTER 15 -> 1
+Bonsly: FLAIL 5 -> 1
+MegaPinsir: BIND 4 -> 1
